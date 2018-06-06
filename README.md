@@ -1,4 +1,4 @@
-# PHOEBE Workshop 
+# PHOEBE Workshop
 
 Villanova University | June 18-22, 2018
 
@@ -22,6 +22,7 @@ Day 2:
 * [Tutorial #10: Meshes](https://github.com/phoebe-project/phoebe2-workshop/blob/master/Intro_Tutorial_10_meshes.ipynb)
 * [Tutorial #11: Saving and Loading](https://github.com/phoebe-project/phoebe2-workshop/blob/master/Intro_Tutorial_11_saving_loading.ipynb)
 * [Tutorial #12: Hierarchies](https://github.com/phoebe-project/phoebe2-workshop/blob/master/Intro_Tutorial_12_hierarchies.ipynb)
+* [Tutorial #13: Spots](https://github.com/phoebe-project/phoebe2-workshop/blob/master/Intro_Tutorial_13_spots.ipynb)
 * [Exercises #2: Rossiter-McLaughlin](https://github.com/phoebe-project/phoebe2-workshop/blob/master/Exercises_02.ipynb)
 
 
