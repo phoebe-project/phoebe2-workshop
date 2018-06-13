@@ -37,7 +37,7 @@ Sciency Tutorials/Talks:
 * [Passband Luminosity, Third Light, and Distance](https://docs.google.com/presentation/d/e/2PACX-1vRP5ll1u1cLSsebsCF-x_5TzVRTkBHhGHlW-QJJDy9KKL3cyEs9feC5xJEsfXyWEpFed1ilO6TzG9lQ/pub?start=false&loop=false&delayms=5000)
 * Boosting and Gravitational Redshift
 * Apsidal Motion
-* Current State of Contacts
+* [Current State of Contacts](https://docs.google.com/presentation/d/e/2PACX-1vRRbJcCrlmN1J2-vQ6QDbI6blvqMkVW5I9QRTuCWAchGB0S9Jd4Su6Z1KM3Gsntq1hAzAgFdP8ZC61V/pub?start=false&loop=false&delayms=5000)
 * Atmospheres, Limb Darkening, Intensity Weighting, and Reflection | [tutorial](https://github.com/phoebe-project/phoebe2-workshop/blob/master/atm_ld_tutorial.ipynb)
 
 Fitting:
@@ -47,8 +47,8 @@ Fitting:
 Coming Soon:
 * [Upcoming Changes in PHOEBE 2.1](https://docs.google.com/presentation/d/e/2PACX-1vRzBboJAT1fMjyh7WuY0U-zY1hH2RpIGYl4m0Fz3j2FrZcO_p2O3IpSCjxMGRlWobDCt6C4VCaiwzBc/pub?start=false&loop=false&delayms=5000)
 * Extinction
-* Triples
+* [Triple and Higher-Order Systems](https://docs.google.com/presentation/d/e/2PACX-1vRfMVlmD4w0wzlAnhMAo-Q42OaU6wBcjqJp1mWrIhNqSUYGqK6MX8P6b9kbKUfuopsXpjUkDUw3WcDu/pub?start=false&loop=false&delayms=5000)
 * Convective Blueshift
 * Pulsations
-* Contact Binaries
+* [Contact Binaries](https://docs.google.com/presentation/d/e/2PACX-1vTqpLsCWT6Zx65jpRIqO6wYaVJm-6abm2Q5n-XmCQ02m0HL3K11kJJg3P4-6HlJYvR1anPMHGxv3P0M/pub?start=false&loop=false&delayms=5000)
 * GUI
