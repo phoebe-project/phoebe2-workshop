@@ -33,7 +33,7 @@ Day 2:
 * Screwing Up PHOEBE and How to Avoid It
 
 
-Sciency Tutorials/Talks:
+Science Topics:
 * [Passband Luminosity, Third Light, and Distance](https://docs.google.com/presentation/d/e/2PACX-1vRP5ll1u1cLSsebsCF-x_5TzVRTkBHhGHlW-QJJDy9KKL3cyEs9feC5xJEsfXyWEpFed1ilO6TzG9lQ/pub?start=false&loop=false&delayms=5000)
 * Boosting and Gravitational Redshift
 * Apsidal Motion
@@ -42,13 +42,13 @@ Sciency Tutorials/Talks:
 
 Fitting:
 * Bayesian Inference
-* Tutorial on Fitting
+* [Fitting in PHOEBE with emcee](https://docs.google.com/presentation/d/e/2PACX-1vTduJ_GC0jLgMvB8dPH-QoBrgceaSAjJ5-v_ztmYSbnhPO9fS8PZ1M55Ouwoyz6Yu2A8GhuKstlHlgL/pub?start=false&loop=false&delayms=5000)
 
-Coming Soon:
+Coming Soon in Future Releases:
 * [Upcoming Changes in PHOEBE 2.1](https://docs.google.com/presentation/d/e/2PACX-1vRzBboJAT1fMjyh7WuY0U-zY1hH2RpIGYl4m0Fz3j2FrZcO_p2O3IpSCjxMGRlWobDCt6C4VCaiwzBc/pub?start=false&loop=false&delayms=5000)
 * Extinction
 * [Triple and Higher-Order Systems](https://docs.google.com/presentation/d/e/2PACX-1vRfMVlmD4w0wzlAnhMAo-Q42OaU6wBcjqJp1mWrIhNqSUYGqK6MX8P6b9kbKUfuopsXpjUkDUw3WcDu/pub?start=false&loop=false&delayms=5000)
 * Convective Blueshift
 * Pulsations
 * [Contact Binaries](https://docs.google.com/presentation/d/e/2PACX-1vTqpLsCWT6Zx65jpRIqO6wYaVJm-6abm2Q5n-XmCQ02m0HL3K11kJJg3P4-6HlJYvR1anPMHGxv3P0M/pub?start=false&loop=false&delayms=5000)
-* GUI
+* [GUI](https://docs.google.com/presentation/d/e/2PACX-1vTL1EG7THOO-8ywdyHHfe_9RYTQ-d_Bqam1HRKU-qWyBRj66MxjZoMQVYAupR9pJqvTQ_gw3E4Rwg-G/pub?start=false&loop=false&delayms=5000)
