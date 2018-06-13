@@ -38,7 +38,7 @@ Sciency Tutorials/Talks:
 * Boosting and Gravitational Redshift
 * Apsidal Motion
 * Current State of Contacts
-* Atmospheres, Limb Darkening, Intensity Weighting, and Reflection
+* Atmospheres, Limb Darkening, Intensity Weighting, and Reflection | [tutorial](https://github.com/phoebe-project/phoebe2-workshop/blob/master/atm_ld_tutorial.ipynb)
 
 Fitting:
 * Bayesian Inference
