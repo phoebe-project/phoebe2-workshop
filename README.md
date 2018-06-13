@@ -28,4 +28,27 @@ Day 2:
 
 ## Talks
 
+* The Physics Behind Binary Modeling
 * [Inner-Workings of PHOEBE](https://docs.google.com/presentation/d/e/2PACX-1vRl9nKG_L7nC_GJT3rD5NcoJOMFN5yeh3FzY_HwYremcLD5MyQKI58-Wx1iKco_HMadPsTdbVMq_BqA/pub?start=false&loop=false&delayms=5000)
+* Screwing Up PHOEBE and How to Avoid It
+
+
+Sciency Tutorials/Talks:
+* [Passband Luminosity, Third Light, and Distance](https://docs.google.com/presentation/d/e/2PACX-1vRP5ll1u1cLSsebsCF-x_5TzVRTkBHhGHlW-QJJDy9KKL3cyEs9feC5xJEsfXyWEpFed1ilO6TzG9lQ/pub?start=false&loop=false&delayms=5000)
+* Boosting and Gravitational Redshift
+* Apsidal Motion
+* Current State of Contacts
+* Atmospheres, Limb Darkening, Intensity Weighting, and Reflection
+
+Fitting:
+* Bayesian Inference
+* Tutorial on Fitting
+
+Coming Soon:
+* [Upcoming Changes in PHOEBE 2.1](https://docs.google.com/presentation/d/e/2PACX-1vRzBboJAT1fMjyh7WuY0U-zY1hH2RpIGYl4m0Fz3j2FrZcO_p2O3IpSCjxMGRlWobDCt6C4VCaiwzBc/pub?start=false&loop=false&delayms=5000)
+* Extinction
+* Triples
+* Convective Blueshift
+* Pulsations
+* Contact Binaries
+* GUI
