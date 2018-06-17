@@ -4,8 +4,8 @@ Villanova University | June 18-22, 2018
 
 ## Introductory Talks
 
-* Welcome & Introduction
-* Introduction to PHOEBE
+* [Welcome & Introduction](https://docs.google.com/presentation/d/e/2PACX-1vSr-ch8lbmA5PRbrjCYVDUwI6K0RHAeW2h13zDRuI3TqmV_dlm2PrTY00QDdARAJv2bco5yGlIP5Mid/pub?start=false&loop=false&delayms=5000)
+* [PHOEBE Overview](https://docs.google.com/presentation/d/e/2PACX-1vS4eti6hdmxO25SaQSiZcadV_CRCYWEAUTcIEx9LCx9NoJj5isjvYrsmk_07cT6U-aa4ptuRNqXywmO/pub?start=false&loop=false&delayms=5000)
 
 ## Tutorials and Exercises
 
@@ -54,9 +54,10 @@ Day 2:
 ## Coming Soon in Future Releases
 
 * [Upcoming Changes in PHOEBE 2.1](https://docs.google.com/presentation/d/e/2PACX-1vRzBboJAT1fMjyh7WuY0U-zY1hH2RpIGYl4m0Fz3j2FrZcO_p2O3IpSCjxMGRlWobDCt6C4VCaiwzBc/pub?start=false&loop=false&delayms=5000)
-* Extinction
+* [Extinction](https://docs.google.com/presentation/d/e/2PACX-1vTfr5kiFT9NZlMyR1vfCGtDJ6mhuO0HnTIh8yaKSZbi07Brs29Yxzs7cm9xaKlGyQv5QOxeGs_aLQ6m/pub?start=false&loop=false&delayms=5000)
 * [Triple and Higher-Order Systems](https://docs.google.com/presentation/d/e/2PACX-1vRfMVlmD4w0wzlAnhMAo-Q42OaU6wBcjqJp1mWrIhNqSUYGqK6MX8P6b9kbKUfuopsXpjUkDUw3WcDu/pub?start=false&loop=false&delayms=5000)
 * Convective Blueshift
 * Pulsations
 * [Contact Binaries](https://docs.google.com/presentation/d/e/2PACX-1vTqpLsCWT6Zx65jpRIqO6wYaVJm-6abm2Q5n-XmCQ02m0HL3K11kJJg3P4-6HlJYvR1anPMHGxv3P0M/pub?start=false&loop=false&delayms=5000)
 * [GUI](https://docs.google.com/presentation/d/e/2PACX-1vTL1EG7THOO-8ywdyHHfe_9RYTQ-d_Bqam1HRKU-qWyBRj66MxjZoMQVYAupR9pJqvTQ_gw3E4Rwg-G/pub?start=false&loop=false&delayms=5000)
+* [Misc](https://docs.google.com/presentation/d/e/2PACX-1vSWZaktiXV10KzbAz96DJDrQMwFS5SOdCipnBAKfoRWCSD3vJSmYn8HePiDvyuGRcXu-gjn9S8aE552/pub?start=false&loop=false&delayms=5000)
