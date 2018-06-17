@@ -43,7 +43,7 @@ Day 2:
 * [Passband Luminosity, Third Light, and Distance](https://docs.google.com/presentation/d/e/2PACX-1vRP5ll1u1cLSsebsCF-x_5TzVRTkBHhGHlW-QJJDy9KKL3cyEs9feC5xJEsfXyWEpFed1ilO6TzG9lQ/pub?start=false&loop=false&delayms=5000)
 * Boosting and Gravitational Redshift
 * [Apsidal Motion](https://docs.google.com/presentation/d/e/2PACX-1vRWpXScVFSQQIzjLz1OP5j7wLhactyxkklOOZyOwnkE47__D3YEy6z-isnaTPHekzNduAbocExiukkE/pub?start=false&loop=false&delayms=5000)
-* [Current State of Contacts](https://docs.google.com/presentation/d/e/2PACX-1vRRbJcCrlmN1J2-vQ6QDbI6blvqMkVW5I9QRTuCWAchGB0S9Jd4Su6Z1KM3Gsntq1hAzAgFdP8ZC61V/pub?start=false&loop=false&delayms=5000)
+* [Current State of Contacts](https://docs.google.com/presentation/d/e/2PACX-1vRRbJcCrlmN1J2-vQ6QDbI6blvqMkVW5I9QRTuCWAchGB0S9Jd4Su6Z1KM3Gsntq1hAzAgFdP8ZC61V/pub?start=false&loop=false&delayms=5000) | [tutorial](https://github.com/phoebe-project/phoebe2-workshop/blob/master/contact_binary.ipynb)
 * [Atmospheres, Limb Darkening, Intensity Weighting, and Reflection](https://docs.google.com/presentation/d/e/2PACX-1vR4GVqR7bgKZsPmH4_IGFNIU-3ke7JetdyjLpFpEGSWReDsl-dSUy11KAo5x2W7c2mD88gmRwrP0-YW/pub?start=false&loop=false&delayms=5000) | [tutorial](https://github.com/phoebe-project/phoebe2-workshop/blob/master/atm_ld_tutorial.ipynb)
 
 ## Fitting
