@@ -41,7 +41,7 @@ Day 2:
 ## Science Topics
 
 * [Passband Luminosity, Third Light, and Distance](https://docs.google.com/presentation/d/e/2PACX-1vRP5ll1u1cLSsebsCF-x_5TzVRTkBHhGHlW-QJJDy9KKL3cyEs9feC5xJEsfXyWEpFed1ilO6TzG9lQ/pub?start=false&loop=false&delayms=5000)
-* Boosting and Gravitational Redshift
+* [Boosting and Gravitational Redshift](https://docs.google.com/presentation/d/e/2PACX-1vRX65d4gEJ4kD90sIq9Bvy_fZ2FSPuKx61unlpQwv-eJs3VXoNtwput8xS6UyV61fJ3eI1xw5FtXGBZ/pub?start=false&loop=false&delayms=5000)
 * [Apsidal Motion](https://docs.google.com/presentation/d/e/2PACX-1vRWpXScVFSQQIzjLz1OP5j7wLhactyxkklOOZyOwnkE47__D3YEy6z-isnaTPHekzNduAbocExiukkE/pub?start=false&loop=false&delayms=5000)
 * [Current State of Contacts](https://docs.google.com/presentation/d/e/2PACX-1vRRbJcCrlmN1J2-vQ6QDbI6blvqMkVW5I9QRTuCWAchGB0S9Jd4Su6Z1KM3Gsntq1hAzAgFdP8ZC61V/pub?start=false&loop=false&delayms=5000) | [tutorial](https://github.com/phoebe-project/phoebe2-workshop/blob/master/contacts_tutorial.ipynb)
 * [Atmospheres, Limb Darkening, Intensity Weighting, and Reflection](https://docs.google.com/presentation/d/e/2PACX-1vR4GVqR7bgKZsPmH4_IGFNIU-3ke7JetdyjLpFpEGSWReDsl-dSUy11KAo5x2W7c2mD88gmRwrP0-YW/pub?start=false&loop=false&delayms=5000) | [tutorial](https://github.com/phoebe-project/phoebe2-workshop/blob/master/atm_ld_tutorial.ipynb)
@@ -56,7 +56,7 @@ Day 2:
 * [Upcoming Changes in PHOEBE 2.1](https://docs.google.com/presentation/d/e/2PACX-1vRzBboJAT1fMjyh7WuY0U-zY1hH2RpIGYl4m0Fz3j2FrZcO_p2O3IpSCjxMGRlWobDCt6C4VCaiwzBc/pub?start=false&loop=false&delayms=5000)
 * [Extinction](https://docs.google.com/presentation/d/e/2PACX-1vTfr5kiFT9NZlMyR1vfCGtDJ6mhuO0HnTIh8yaKSZbi07Brs29Yxzs7cm9xaKlGyQv5QOxeGs_aLQ6m/pub?start=false&loop=false&delayms=5000)
 * [Triple and Higher-Order Systems](https://docs.google.com/presentation/d/e/2PACX-1vRfMVlmD4w0wzlAnhMAo-Q42OaU6wBcjqJp1mWrIhNqSUYGqK6MX8P6b9kbKUfuopsXpjUkDUw3WcDu/pub?start=false&loop=false&delayms=5000)
-* Convective Blueshift
+* [Convective Blueshift](https://docs.google.com/presentation/d/e/2PACX-1vRjyZQtujU2GqByCYtSR20Xs90BX4XUMRui8Z2nqNgsjf-itkKaLcgwRIPIInCZ6jP90gRQEGwXKBtF/pub?start=false&loop=false&delayms=5000)
 * Pulsations
 * [Contact Binaries](https://docs.google.com/presentation/d/e/2PACX-1vTqpLsCWT6Zx65jpRIqO6wYaVJm-6abm2Q5n-XmCQ02m0HL3K11kJJg3P4-6HlJYvR1anPMHGxv3P0M/pub?start=false&loop=false&delayms=5000)
 * [GUI](https://docs.google.com/presentation/d/e/2PACX-1vTL1EG7THOO-8ywdyHHfe_9RYTQ-d_Bqam1HRKU-qWyBRj66MxjZoMQVYAupR9pJqvTQ_gw3E4Rwg-G/pub?start=false&loop=false&delayms=5000)
