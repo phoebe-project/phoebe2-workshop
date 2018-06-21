@@ -48,8 +48,8 @@ Day 2:
 
 ## Fitting
 
-* Bayesian Inference
-* [Fitting in PHOEBE with emcee](https://docs.google.com/presentation/d/e/2PACX-1vTduJ_GC0jLgMvB8dPH-QoBrgceaSAjJ5-v_ztmYSbnhPO9fS8PZ1M55Ouwoyz6Yu2A8GhuKstlHlgL/pub?start=false&loop=false&delayms=5000)
+* [Introduction to Fitting](https://docs.google.com/presentation/d/e/2PACX-1vRWFJ-AdPWszN_wtX9sMkOu_NGIQ7N_Lsw0faZxdb15yz2Miz60VJ1LqzWFMI_C8WWMj55w8h1AGBOf/pub?start=false&loop=false&delayms=5000)
+* [Fitting in PHOEBE with emcee](https://docs.google.com/presentation/d/e/2PACX-1vTduJ_GC0jLgMvB8dPH-QoBrgceaSAjJ5-v_ztmYSbnhPO9fS8PZ1M55Ouwoyz6Yu2A8GhuKstlHlgL/pub?start=false&loop=false&delayms=5000) | [tutorial #1](https://github.com/phoebe-project/phoebe2-workshop/blob/master/phoebe_fitting_1.ipynb), [tutorial #2](https://github.com/phoebe-project/phoebe2-workshop/blob/master/phoebe_fitting_2.ipynb)
 
 ## Coming Soon in Future Releases
 
