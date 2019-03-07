@@ -1,6 +1,6 @@
 # Meeting Location
 
-The meeting will be held in 033 Bartley, Villanova University, 800 Lancaster Ave., Villanova, PA 19085
+The meeting will be held at Villanova University, 800 Lancaster Ave., Villanova, PA 19085
 
 # Accommodation
 ## Student Apartments
