@@ -4,4 +4,4 @@ This workshop is primarily intended for graduate students, postdocs and early ca
 # Registration
 Registration is free of charge; its organization is sponsored by Villanova University. The number of participants is limited to 16.
 
-Those interested are invited to fill out the registration form, which can be found [here](https://docs.google.com/forms/d/e/1FAIpQLSfjVAb4zAjdoO7GeEVTPCupxhkIrrk611__8a_3Ya6rqVNj4Q/viewform). Applicants will be contacted one week after the registration deadline with a decision on their selection.
+Those interested are invited to fill out the registration form, which can be found [here](https://docs.google.com/forms/d/e/1FAIpQLSfWKv6d69TFnBGM0PUbNPpRDpbgTjMs4DuBkUmEm4OdrcxOHg/viewform?usp=sf_link). Applicants will be contacted one week after the registration deadline with a decision on their selection.
