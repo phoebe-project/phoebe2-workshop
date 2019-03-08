@@ -21,5 +21,5 @@ Preliminary schedule (subject to change):
 * Time allocated for working on personal data
 
 ## Friday
-* Talks on Pulsations, Triples, Contacts and Misaligned Binaries
+* Talks on Pulsations, Triples and Contacts
 * Time allocated for working on personal data
