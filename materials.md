@@ -6,25 +6,25 @@
 # Tutorials and Exercises
 
 Day 1:
-* [Tutorial #0: Overview](https://github.com/phoebe-project/phoebe2-workshop/blob/master/Intro_Tutorial_00_overview.ipynb)
-* [Tutorial #1: Bundle Basics](https://github.com/phoebe-project/phoebe2-workshop/blob/master/Intro_Tutorial_01_bundle_basics.ipynb)
-* [Tutorial #2: Constraints](https://github.com/phoebe-project/phoebe2-workshop/blob/master/Intro_Tutorial_02_constraints.ipynb)
-* [Tutorial #3: Advanced Constraints](https://github.com/phoebe-project/phoebe2-workshop/blob/master/Intro_Tutorial_03_advanced_constraints.ipynb)
-* [Tutorial #4: Units](https://github.com/phoebe-project/phoebe2-workshop/blob/master/Intro_Tutorial_04_units.ipynb)
-* [Exercises #1: Building Systems](https://github.com/phoebe-project/phoebe2-workshop/blob/master/Exercises_01.ipynb)
+* [Tutorial #0: Overview](https://github.com/phoebe-project/phoebe2-workshop/blob/2019july/Intro_Tutorial_00_overview.ipynb)
+* [Tutorial #1: Bundle Basics](https://github.com/phoebe-project/phoebe2-workshop/blob/2019july/Intro_Tutorial_01_bundle_basics.ipynb)
+* [Tutorial #2: Constraints](https://github.com/phoebe-project/phoebe2-workshop/blob/2019july/Intro_Tutorial_02_constraints.ipynb)
+* [Tutorial #3: Advanced Constraints](https://github.com/phoebe-project/phoebe2-workshop/blob/2019july/Intro_Tutorial_03_advanced_constraints.ipynb)
+* [Tutorial #4: Units](https://github.com/phoebe-project/phoebe2-workshop/blob/2019july/Intro_Tutorial_04_units.ipynb)
+* [Exercises #1: Building Systems](https://github.com/phoebe-project/phoebe2-workshop/blob/2019july/Exercises_01.ipynb)
 
 
 Day 2:
-* [Tutorial #5: Datasets](https://github.com/phoebe-project/phoebe2-workshop/blob/master/Intro_Tutorial_05_datasets.ipynb)
-* [Tutorial #6: Time and Phase](https://github.com/phoebe-project/phoebe2-workshop/blob/master/Intro_Tutorial_06_time_and_phase.ipynb)
-* [Tutorial #7: Compute](https://github.com/phoebe-project/phoebe2-workshop/blob/master/Intro_Tutorial_07_compute.ipynb)
-* [Tutorial #8: Plotting](https://github.com/phoebe-project/phoebe2-workshop/blob/master/Intro_Tutorial_08_plotting.ipynb)
-* [Tutorial #9: Animating](https://github.com/phoebe-project/phoebe2-workshop/blob/master/Intro_Tutorial_09_animating.ipynb)
-* [Tutorial #10: Meshes](https://github.com/phoebe-project/phoebe2-workshop/blob/master/Intro_Tutorial_10_meshes.ipynb)
-* [Tutorial #11: Saving and Loading](https://github.com/phoebe-project/phoebe2-workshop/blob/master/Intro_Tutorial_11_saving_loading.ipynb)
-* [Tutorial #12: Hierarchies](https://github.com/phoebe-project/phoebe2-workshop/blob/master/Intro_Tutorial_12_hierarchies.ipynb)
-* [Tutorial #13: Spots](https://github.com/phoebe-project/phoebe2-workshop/blob/master/Intro_Tutorial_13_spots.ipynb)
-* [Exercises #2: Rossiter-McLaughlin](https://github.com/phoebe-project/phoebe2-workshop/blob/master/Exercises_02.ipynb)
+* [Tutorial #5: Datasets](https://github.com/phoebe-project/phoebe2-workshop/blob/2019july/Intro_Tutorial_05_datasets.ipynb)
+* [Tutorial #6: Time and Phase](https://github.com/phoebe-project/phoebe2-workshop/blob/2019july/Intro_Tutorial_06_time_and_phase.ipynb)
+* [Tutorial #7: Compute](https://github.com/phoebe-project/phoebe2-workshop/blob/2019july/Intro_Tutorial_07_compute.ipynb)
+* [Tutorial #8: Plotting](https://github.com/phoebe-project/phoebe2-workshop/blob/2019july/Intro_Tutorial_08_plotting.ipynb)
+* [Tutorial #9: Animating](https://github.com/phoebe-project/phoebe2-workshop/blob/2019july/Intro_Tutorial_09_animating.ipynb)
+* [Tutorial #10: Meshes](https://github.com/phoebe-project/phoebe2-workshop/blob/2019july/Intro_Tutorial_10_meshes.ipynb)
+* [Tutorial #11: Saving and Loading](https://github.com/phoebe-project/phoebe2-workshop/blob/2019july/Intro_Tutorial_11_saving_loading.ipynb)
+* [Tutorial #12: Hierarchies](https://github.com/phoebe-project/phoebe2-workshop/blob/2019july/Intro_Tutorial_12_hierarchies.ipynb)
+* [Tutorial #13: Spots](https://github.com/phoebe-project/phoebe2-workshop/blob/2019july/Intro_Tutorial_13_spots.ipynb)
+* [Exercises #2: Rossiter-McLaughlin](https://github.com/phoebe-project/phoebe2-workshop/blob/2019july/Exercises_02.ipynb)
 
 
 # Introductory Talks
@@ -39,13 +39,13 @@ Day 2:
 * [Passband Luminosity, Third Light, and Distance](https://docs.google.com/presentation/d/e/2PACX-1vRP5ll1u1cLSsebsCF-x_5TzVRTkBHhGHlW-QJJDy9KKL3cyEs9feC5xJEsfXyWEpFed1ilO6TzG9lQ/pub?start=false&loop=false&delayms=5000)
 * [Boosting and Gravitational Redshift](https://docs.google.com/presentation/d/e/2PACX-1vRX65d4gEJ4kD90sIq9Bvy_fZ2FSPuKx61unlpQwv-eJs3VXoNtwput8xS6UyV61fJ3eI1xw5FtXGBZ/pub?start=false&loop=false&delayms=5000)
 * [Apsidal Motion](https://docs.google.com/presentation/d/e/2PACX-1vRWpXScVFSQQIzjLz1OP5j7wLhactyxkklOOZyOwnkE47__D3YEy6z-isnaTPHekzNduAbocExiukkE/pub?start=false&loop=false&delayms=5000)
-* [Current State of Contacts](https://docs.google.com/presentation/d/e/2PACX-1vRRbJcCrlmN1J2-vQ6QDbI6blvqMkVW5I9QRTuCWAchGB0S9Jd4Su6Z1KM3Gsntq1hAzAgFdP8ZC61V/pub?start=false&loop=false&delayms=5000) | [tutorial](https://github.com/phoebe-project/phoebe2-workshop/blob/master/contacts_tutorial.ipynb)
-* [Atmospheres, Limb Darkening, Intensity Weighting, and Reflection](https://docs.google.com/presentation/d/e/2PACX-1vR4GVqR7bgKZsPmH4_IGFNIU-3ke7JetdyjLpFpEGSWReDsl-dSUy11KAo5x2W7c2mD88gmRwrP0-YW/pub?start=false&loop=false&delayms=5000) | [tutorial](https://github.com/phoebe-project/phoebe2-workshop/blob/master/atm_ld_tutorial.ipynb)
+* [Current State of Contacts](https://docs.google.com/presentation/d/e/2PACX-1vRRbJcCrlmN1J2-vQ6QDbI6blvqMkVW5I9QRTuCWAchGB0S9Jd4Su6Z1KM3Gsntq1hAzAgFdP8ZC61V/pub?start=false&loop=false&delayms=5000) | [tutorial](https://github.com/phoebe-project/phoebe2-workshop/blob/2019july/contacts_tutorial.ipynb)
+* [Atmospheres, Limb Darkening, Intensity Weighting, and Reflection](https://docs.google.com/presentation/d/e/2PACX-1vR4GVqR7bgKZsPmH4_IGFNIU-3ke7JetdyjLpFpEGSWReDsl-dSUy11KAo5x2W7c2mD88gmRwrP0-YW/pub?start=false&loop=false&delayms=5000) | [tutorial](https://github.com/phoebe-project/phoebe2-workshop/blob/2019july/atm_ld_tutorial.ipynb)
 
 # Fitting
 
 * [Introduction to Fitting](https://docs.google.com/presentation/d/e/2PACX-1vRWFJ-AdPWszN_wtX9sMkOu_NGIQ7N_Lsw0faZxdb15yz2Miz60VJ1LqzWFMI_C8WWMj55w8h1AGBOf/pub?start=false&loop=false&delayms=5000)
-* [Fitting in PHOEBE with emcee](https://docs.google.com/presentation/d/e/2PACX-1vTduJ_GC0jLgMvB8dPH-QoBrgceaSAjJ5-v_ztmYSbnhPO9fS8PZ1M55Ouwoyz6Yu2A8GhuKstlHlgL/pub?start=false&loop=false&delayms=5000) | [tutorial #1](https://github.com/phoebe-project/phoebe2-workshop/blob/master/phoebe_fitting_1.ipynb), [tutorial #2](https://github.com/phoebe-project/phoebe2-workshop/blob/master/phoebe_fitting_2.ipynb)
+* [Fitting in PHOEBE with emcee](https://docs.google.com/presentation/d/e/2PACX-1vTduJ_GC0jLgMvB8dPH-QoBrgceaSAjJ5-v_ztmYSbnhPO9fS8PZ1M55Ouwoyz6Yu2A8GhuKstlHlgL/pub?start=false&loop=false&delayms=5000) | [tutorial #1](https://github.com/phoebe-project/phoebe2-workshop/blob/2019july/phoebe_fitting_1.ipynb), [tutorial #2](https://github.com/phoebe-project/phoebe2-workshop/blob/2019july/phoebe_fitting_2.ipynb)
 
 # Coming Soon in Future Releases
 
