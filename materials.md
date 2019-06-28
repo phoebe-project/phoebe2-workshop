@@ -68,7 +68,7 @@ If you have any troubles before the meeting, please email us for assistance.  We
 * [Tutorial #7: Compute](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2019july/Intro_Tutorial_07_compute.ipynb) (Angela)
 * [Tutorial #8: Plotting](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2019july/Intro_Tutorial_08_plotting.ipynb) (Angela)
 * [Tutorial #9: Animating](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2019july/Intro_Tutorial_09_animating.ipynb) (Angela)
-* [Tutorial #10: Meshes](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2019july/Intro_Tutorial_10_meshes.ipynb) (Bert)
+* [Tutorial #10: Meshes](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2019july/Intro_Tutorial_10_meshes.ipynb) (Kyle)
 * [Tutorial #11: Saving and Loading](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2019july/Intro_Tutorial_11_saving_loading.ipynb) (Bert) 
 * [Tutorial #12: Hierarchies](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2019july/Intro_Tutorial_12_hierarchies.ipynb) (Angela)
 * [Tutorial #13: Spots](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2019july/Intro_Tutorial_13_spots.ipynb) (Bert)
