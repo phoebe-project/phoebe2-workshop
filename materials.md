@@ -29,7 +29,7 @@ To install PHOEBE (replace `python` with whatever is necessary to point to the v
 
 * make sure you're in the 'phoebe2' directory which contains 'setup.py'
 * `python setup.py build`
-* `python setup.py install --user` for a user-install or `sudo python setup.py install` for a global installation.
+* `python setup.py install --user` for a user-install or `sudo python setup.py install` for a global installation. Note that the --user flag may not be necessary for a local instal on a mac.
 
 Now check the following in a Python console (or Jupyter if you plan to use that at the workshop):
 
