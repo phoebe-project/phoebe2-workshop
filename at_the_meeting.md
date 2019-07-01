@@ -15,10 +15,16 @@ For alternative options, we can recommend the following local hotels:
 
 While local, both of these hotels are not within easy walking distance from the University, mostly because there are no pedestrian routes that connect them to the University. Participants who opt to stay in a hotel are responsible for their own travel to and from the University. Both hotels are within easy reach of the train, and a single stop separates them from the University.
 
-# Additional Information
+# Travel Considerations
 
 For your additional consideration, there is an on-campus train station with trains that go to 30th Street Station (Philadelphia Center City) via local towns such as Rosemont, Bryn Mawr, Haverford and Ardmore. For those of you that plan to stay on or near campus, the train will offer access to a wide variety of restaurants and evening entertainment.
 
 If you are travelling from outside the United States, please consider that you may require a visa to enter the United States of America, or at least a visa waiver (ESTA). For those of you applying for a visa, we are happy to provide you with a formal invitation. Please contact kelly.hambleton@villanova.edu to request your invitation.
 
 Another consideration for those of you who are traveling by plane is that Newark International Airport is ~1.5 hours from Villanova (compared to Philadelphia International Airport which is 30 minutes away) and that flights to Newark can be significantly cheaper. Other alternatives include JFK Airport in New York (2.5 hours away) and Washington Dulles (3 hours away). For those of you who do fly to Philadelphia International Airport, there is a train station situated just outside the airport. To get to Villanova, you will need to take a train to the 30th Street Station and then a second train to Villanova via the Paoli-Thorndale line (~$10 one-way). The typical travel time, including train change, is ~1 hour. Other options exist, namely taxi service (~$60 one-way), shuttles, and Uber/Lyft.
+
+# Local Map & Food Options
+
+Breakfast and lunch will be provided as a part of the workshop during the week.  Dinners and weekend meals will be on your own, and many of the [on-campus food locations](https://www1.villanova.edu/villanova/services/dining/hours/summer.html) have very limited menus/hours during the summer.  There are several restaraunts within walking distance of the apartments.  Additionally, nearby towns of Wayne and Rosemont which are easily accessible by train (note the commuter train will likely still cost ~$10 round-trip) or Uber/Lyft have many options.
+
+See [this Google map](https://drive.google.com/open?id=1ZEyr-H2dNQa62K-6-AO49YpmbjTe01va&usp=sharing) for the location of the apartments, workshop, food options, and campus train stations.
