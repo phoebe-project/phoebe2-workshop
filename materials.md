@@ -39,7 +39,9 @@ Now check the following in a Python console (or Jupyter if you plan to use that 
 If you have any troubles before the meeting, please email us for assistance.  We'll also have some time during the first morning/coffee break to deal with last-minute debugging.
 
 
+### Other Dependencies
 
+We'll also be using [emcee](https://emcee.readthedocs.io/en/stable/) for fitting, so make sure you have that installed in the version of Python you'll be using.
 
 
 # Monday
@@ -79,8 +81,8 @@ If you have any troubles before the meeting, please email us for assistance.  We
 * [Tutorial #12: Saving and Loading](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2019july/Intro_Tutorial_12_saving_loading.ipynb) (Bert) 
 * [Tutorial #13: Hierarchies](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2019july/Intro_Tutorial_13_hierarchies.ipynb) (Angela)
 * [Tutorial #14: Spots](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2019july/Intro_Tutorial_14_spots.ipynb) (Bert)
-* Contact Binaries (Angela)
-* Optimizing PHOEBE (Kyle)
+* Tutorial #15: Contact Binaries (Angela)
+* Tutorial #16: Optimizing PHOEBE (Kyle)
 
 
 ### Advanced Physics & Features
@@ -92,9 +94,9 @@ If you have any troubles before the meeting, please email us for assistance.  We
 ### Fitting
 * [Introduction to Fitting](https://docs.google.com/presentation/d/e/2PACX-1vRPMs4qfUborTwJUcBMDy393d7sOVsTT2jsiUFGZAzcWGhEl53cuzSSEpxhE1HDsTnceS6EAek24zfe/pub?start=false&loop=false&delayms=3000) (Andrej)
 * Finding Global Minimum vs Posteriors or something like that (Angela)
-* [Fitting in PHOEBE with emcee](https://docs.google.com/presentation/d/e/2PACX-1vQyUigkK0EwzbLmAOsdu8t1tgKMC-lyt5dGKUYACWqXFWNNa7N6DnJnauocY1cEBXvF2pdTo28psCvV/pub?start=false&loop=false&delayms=3000)
-* [Fitting Tutorial #1](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2019july/phoebe_fitting_1.ipynb)
-* [Fitting Tutorial #2](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2019july/phoebe_fitting_2.ipynb)
+* [Fitting in PHOEBE with emcee](https://docs.google.com/presentation/d/e/2PACX-1vQyUigkK0EwzbLmAOsdu8t1tgKMC-lyt5dGKUYACWqXFWNNa7N6DnJnauocY1cEBXvF2pdTo28psCvV/pub?start=false&loop=false&delayms=3000) (Kelly)
+* [Fitting Tutorial #1: fitting a line](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2019july/phoebe_fitting_1.ipynb) (Kelly)
+* [Fitting Tutorial #2: fitting with PHOEBE](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2019july/phoebe_fitting_2.ipynb) (Kelly)
 
 ### Workshop Dinner/Outing
 
