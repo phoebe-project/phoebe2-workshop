@@ -73,11 +73,13 @@ We'll also be using [emcee](https://emcee.readthedocs.io/en/stable/) for fitting
 * [Tutorial #10: Meshes](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2019july/Intro_Tutorial_10_meshes.ipynb) (Kyle)
 * [Exercises #2: Rossiter-McLaughlin](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2019july/Exercises_02.ipynb) (Kyle)
 
+### Downtown Outing
+
 
 # Wednesday
 
 ### Tutorials
-* Tutorial #11: Passband Luminosity, Third Light, and Distance (Kyle)
+* [Tutorial #11: Passband Luminosity, Third Light, and Distance](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2019july/Intro_Tutorial_11_pblum_l3_distance.ipynb) (Kyle)
 * [Tutorial #12: Saving and Loading](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2019july/Intro_Tutorial_12_saving_loading.ipynb) (Bert) 
 * [Tutorial #13: Hierarchies](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2019july/Intro_Tutorial_13_hierarchies.ipynb) (Angela)
 * [Tutorial #14: Spots](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2019july/Intro_Tutorial_14_spots.ipynb) (Bert)
@@ -87,6 +89,10 @@ We'll also be using [emcee](https://emcee.readthedocs.io/en/stable/) for fitting
 
 ### Advanced Physics & Features
 * [Atmospheres, Limb Darkening, Intensity Weighting, and Reflection](https://docs.google.com/presentation/d/e/2PACX-1vQ3LFDQrKAbEhieM3hUDyFgg-W9ozacQYAPmyBlmsb180qqjChf2kNsLonvDCE0iKAF5RdEFdxlC7Pr/pub?start=false&loop=false&delayms=3000) (Dave)
+
+### Building Systems & Forward Models
+
+The rest of the day is set aside to work on writing scripts to build your own systems.  If you don't have any specific systems you'd like to try, you can choose from the list below:
 
 
 # Thursday
@@ -98,7 +104,13 @@ We'll also be using [emcee](https://emcee.readthedocs.io/en/stable/) for fitting
 * [Fitting Tutorial #1: fitting a line](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2019july/phoebe_fitting_1.ipynb) (Kelly)
 * [Fitting Tutorial #2: fitting with PHOEBE](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2019july/phoebe_fitting_2.ipynb) (Kelly)
 
-### Workshop Dinner/Outing
+### Fitting to Fake (or Real) Data
+
+The rest of the day is set aside to work on writing script to fit your own data/systems.  You can also try fitting the following "fake" cases, which we designed to hopefully be cheap enough to complete in a fairly short amount of time:
+
+
+### Workshop Dinner @ Dave & Busters
+
 
 # Friday
 
