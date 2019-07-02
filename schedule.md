@@ -1,25 +1,35 @@
 # Schedule
+
 Preliminary schedule (subject to change):
 
 ## Monday
-* Introduction and Welcome (Talk)
-* Introduction to PHOEBE (Talk)
-* Tutorials
+
+* Welcome & Introduction
+* PHOEBE Overview: wdgui to PHOEBE
+* Introduction to PHOEBE 2: why so complicated?
+* Tutorials & Exercises
 
 ## Tuesday
-* Day dedicated to tutorials
+
+* Scientific Introduction to PHOEBE
+* Tutorials & Exercises
+* Downtown Outing
+
 
 ## Wednesday
-* The Physics Behind Binary Modeling (talk)
-* The Inner Workings of PHOEBE (talk)
-* Problems You Might Encounter (talk)
-* Tutorials dedicated to specific science goals
+
+* Tutorials & Exercises
+* Advanced Physics & Features
+* Building Systems & Forward Models
 
 ## Thursday
-* Fitting (talk)
-* Tutorial on Fitting
-* Time allocated for working on personal data
+
+* Fitting Talks
+* Fitting Tutorials & Exercises
+* Fitting to Fake (or Real) Data
+* Workshop Dinner @ Dave & Busters
 
 ## Friday
-* Talks on Pulsations, Triples and Contacts
-* Time allocated for working on personal data
+
+* Talks on "Future Features"
+* Discussion
