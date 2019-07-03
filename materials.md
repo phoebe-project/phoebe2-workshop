@@ -83,8 +83,9 @@ We'll also be using [emcee](https://emcee.readthedocs.io/en/stable/) for fitting
 * [Tutorial #12: Saving and Loading](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2019july/Intro_Tutorial_12_saving_loading.ipynb) (Bert) 
 * [Tutorial #13: Hierarchies](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2019july/Intro_Tutorial_13_hierarchies.ipynb) (Angela)
 * [Tutorial #14: Spots](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2019july/Intro_Tutorial_14_spots.ipynb) (Bert)
-* Tutorial #15: Contact Binaries (Angela)
-* Tutorial #16: Optimizing PHOEBE (Kyle)
+* Tutorial #15: Semi-detached binaries (???)
+* [Tutorial #16: Contact Binaries](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2019july/Intro_Tutorial_16_contact_binaries.ipynb) (Angela)
+* Tutorial #17: Optimizing PHOEBE (Kyle)
 
 
 ### Advanced Physics & Features
@@ -92,15 +93,25 @@ We'll also be using [emcee](https://emcee.readthedocs.io/en/stable/) for fitting
 
 ### Building Systems & Forward Models
 
-The rest of the day is set aside to work on writing scripts to build your own systems.  If you don't have any specific systems you'd like to try, you can choose from the list below:
+The rest of the day is set aside to work on writing scripts to build your own systems.  If you don't have any specific systems you'd like to try, you can choose any from the literature or from the [Caleb catalog of EBs](http://caleb.eastern.edu/query_stars_by_type_and_period.php).
+
+Note that the [morphology definitions in caleb](http://caleb.eastern.edu/binary_type_definitions.php) are slightly different than PHOEBE.  You may want to use the following:
+
+* Caleb's detached -> phoebe.default_binary()
+* Caleb's semi-detached or near-contact -> phoebe.default_binary() with semi-detached constraint on one component
+* Caleb's contact -> phoebe.default_binary() with semi-detached constraint on *both* components
+* Caleb's overcontact -> phoebe.default_binary(contact_binary=True)
+* Caleb's double-contact -> good luck! (you can try semi-detached constraints)
+
+
 
 
 # Thursday
 
 ### Fitting
 * [Introduction to Fitting](https://docs.google.com/presentation/d/e/2PACX-1vRPMs4qfUborTwJUcBMDy393d7sOVsTT2jsiUFGZAzcWGhEl53cuzSSEpxhE1HDsTnceS6EAek24zfe/pub?start=false&loop=false&delayms=3000) (Andrej)
-* Finding Global Minimum vs Posteriors or something like that (Angela)
 * [Fitting in PHOEBE with emcee](https://docs.google.com/presentation/d/e/2PACX-1vQyUigkK0EwzbLmAOsdu8t1tgKMC-lyt5dGKUYACWqXFWNNa7N6DnJnauocY1cEBXvF2pdTo28psCvV/pub?start=false&loop=false&delayms=3000) (Kelly)
+* Finding Global Minimum vs Posteriors or something like that (Angela)
 * [Fitting Tutorial #1: fitting a line](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2019july/phoebe_fitting_1.ipynb) (Kelly)
 * [Fitting Tutorial #2: fitting with PHOEBE](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2019july/phoebe_fitting_2.ipynb) (Kelly)
 
@@ -116,7 +127,7 @@ The rest of the day is set aside to work on writing script to fit your own data/
 
 ### Future Features
 * [Extinction (2.2 feature release)](https://docs.google.com/presentation/d/e/2PACX-1vTjWPSGagcIpOb-_ZJDE7AicGKnZqm5c81U_sAOpB-5CWe6xbUPzkeNB7pk1AkxS_t7xDBEas_AhH7O/pub?start=false&loop=false&delayms=3000) (Dave)
-* Blended Atmosphere Tables (2.2 feature release) (Andrej)
+* [Blended Atmosphere Tables (2.2 feature release)](https://docs.google.com/presentation/d/e/2PACX-1vRWc9Fdaeg6aSyV53D_--ebKS4aeHIMtAthozA6J-XVeYtQV8zA9DyBlf6j-Lp7rTDhkQiUiELFX654/pub?start=false&loop=false&delayms=3000) (Andrej)
 * [Pulsations](https://docs.google.com/presentation/d/e/2PACX-1vRjBQKKqGBy7pojNo3I3y1JzqEmweKpAUBVNW27glySsiuMWnaHrAdDLXskscu4Wh3g0irqQ3X7PgfU/pub?start=false&loop=false&delayms=3000) (Andrej)
 * [Triple and Higher-Order Systems](https://docs.google.com/presentation/d/e/2PACX-1vTfc9rEUzGDbvQ7E4GEa38m-JG6CgS67rPBHuCAABpTWJE9CQlAhXrUSqfApEHVwLR-it8Cs3SsYb8w/pub?start=false&loop=false&delayms=3000) (Kyle)
 * [Contact Binaries](https://docs.google.com/presentation/d/e/2PACX-1vR3Qz7TC-77pMzrqc-U57WNS_ec83A0fgxtV2JZ_Em34CbLvbcaCw87VOzW5dNlV3KUnR-nu6u6nZy3/pub?start=false&loop=false&delayms=3000) (Angela)
