@@ -71,7 +71,7 @@ We'll also be using [emcee](https://emcee.readthedocs.io/en/stable/) for fitting
 * [Tutorial #8: Plotting](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2019july/Intro_Tutorial_08_plotting.ipynb) (Angela)
 * [Tutorial #9: Animating](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2019july/Intro_Tutorial_09_animating.ipynb) (Angela)
 * [Tutorial #10: Meshes](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2019july/Intro_Tutorial_10_meshes.ipynb) (Kyle)
-* [Exercises #2: Rossiter-McLaughlin](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2019july/Exercises_02.ipynb) (Kyle)
+* [Exercises #2: Animations](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2019july/Exercises_02.ipynb) (Kyle)
 
 ### Downtown Outing
 
@@ -83,7 +83,7 @@ We'll also be using [emcee](https://emcee.readthedocs.io/en/stable/) for fitting
 * [Tutorial #12: Saving and Loading](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2019july/Intro_Tutorial_12_saving_loading.ipynb) (Bert) 
 * [Tutorial #13: Hierarchies](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2019july/Intro_Tutorial_13_hierarchies.ipynb) (Angela)
 * [Tutorial #14: Spots](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2019july/Intro_Tutorial_14_spots.ipynb) (Bert)
-* Tutorial #15: Semi-detached binaries (???)
+* Tutorial #15: Semi-Detached Binaries (???)
 * [Tutorial #16: Contact Binaries](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2019july/Intro_Tutorial_16_contact_binaries.ipynb) (Angela)
 * Tutorial #17: Optimizing PHOEBE (Kyle)
 
@@ -93,7 +93,7 @@ We'll also be using [emcee](https://emcee.readthedocs.io/en/stable/) for fitting
 
 ### Building Systems & Forward Models
 
-The rest of the day is set aside to work on writing scripts to build your own systems.  If you don't have any specific systems you'd like to try, you can choose any from the literature or from the [Caleb catalog of EBs](http://caleb.eastern.edu/query_stars_by_type_and_period.php).
+The rest of the day is set aside to work on writing scripts to build your own systems (or to continue working on the [animations exercises](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2019july/Exercises_02.ipynb), if you'd rather).  If you don't have any specific systems you'd like to try, you can choose any from the literature or from the [Caleb catalog of EBs](http://caleb.eastern.edu/query_stars_by_type.php).
 
 Note that the [morphology definitions in caleb](http://caleb.eastern.edu/binary_type_definitions.php) are slightly different than PHOEBE.  You may want to use the following:
 
