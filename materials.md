@@ -78,6 +78,11 @@ We'll also be using [emcee](https://emcee.readthedocs.io/en/stable/) for fitting
 
 # Wednesday
 
+
+### Advanced Physics & Features
+* [Atmospheres, Limb Darkening, Intensity Weighting, and Reflection](https://docs.google.com/presentation/d/e/2PACX-1vQ3LFDQrKAbEhieM3hUDyFgg-W9ozacQYAPmyBlmsb180qqjChf2kNsLonvDCE0iKAF5RdEFdxlC7Pr/pub?start=false&loop=false&delayms=3000) (Dave)
+
+
 ### Tutorials
 * [Tutorial #11: Passband Luminosity, Third Light, and Distance](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2019july/Intro_Tutorial_11_pblum_l3_distance.ipynb) (Kyle)
 * [Tutorial #12: Saving and Loading](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2019july/Intro_Tutorial_12_saving_loading.ipynb) (Bert) 
@@ -88,8 +93,6 @@ We'll also be using [emcee](https://emcee.readthedocs.io/en/stable/) for fitting
 * Tutorial #17: Optimizing PHOEBE (Kyle)
 
 
-### Advanced Physics & Features
-* [Atmospheres, Limb Darkening, Intensity Weighting, and Reflection](https://docs.google.com/presentation/d/e/2PACX-1vQ3LFDQrKAbEhieM3hUDyFgg-W9ozacQYAPmyBlmsb180qqjChf2kNsLonvDCE0iKAF5RdEFdxlC7Pr/pub?start=false&loop=false&delayms=3000) (Dave)
 
 ### Building Systems & Forward Models
 
