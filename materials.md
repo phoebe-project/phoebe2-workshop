@@ -114,7 +114,7 @@ Note that the [morphology definitions in caleb](http://caleb.eastern.edu/binary_
 ### Fitting
 * [Introduction to Fitting](https://docs.google.com/presentation/d/e/2PACX-1vRPMs4qfUborTwJUcBMDy393d7sOVsTT2jsiUFGZAzcWGhEl53cuzSSEpxhE1HDsTnceS6EAek24zfe/pub?start=false&loop=false&delayms=3000) (Andrej)
 * [Fitting in PHOEBE with emcee](https://docs.google.com/presentation/d/e/2PACX-1vQyUigkK0EwzbLmAOsdu8t1tgKMC-lyt5dGKUYACWqXFWNNa7N6DnJnauocY1cEBXvF2pdTo28psCvV/pub?start=false&loop=false&delayms=3000) (Kelly)
-* Finding Global Minimum vs Posteriors or something like that (Angela)
+* [MCMC Tips & Tricks](https://docs.google.com/presentation/d/e/2PACX-1vRoGy9U53Lnko-v7OKBsD1fIxa3-RYyo3wMwRle1xFekZNpBtSWAOvl9wKZ3oLAsvgkEpd2B3TxNrS1/pub?start=false&loop=false&delayms=3000) (Angela)
 * [Fitting Tutorial #1: fitting a line](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2019july/phoebe_fitting_1.ipynb) (Kelly)
 * [Fitting Tutorial #2: fitting with PHOEBE](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2019july/phoebe_fitting_2.ipynb) (Kelly)
 
