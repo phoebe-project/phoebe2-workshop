@@ -88,9 +88,9 @@ We'll also be using [emcee](https://emcee.readthedocs.io/en/stable/) for fitting
 * [Tutorial #12: Saving and Loading](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2019july/Intro_Tutorial_12_saving_loading.ipynb) (Bert) 
 * [Tutorial #13: Hierarchies](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2019july/Intro_Tutorial_13_hierarchies.ipynb) (Angela)
 * [Tutorial #14: Spots](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2019july/Intro_Tutorial_14_spots.ipynb) (Bert)
-* Tutorial #15: Semi-Detached Binaries (???)
+* Tutorial #15: Semi-Detached Binaries (Angela)
 * [Tutorial #16: Contact Binaries](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2019july/Intro_Tutorial_16_contact_binaries.ipynb) (Angela)
-* Tutorial #17: Optimizing PHOEBE (Kyle)
+* [Tutorial #17: Optimizing PHOEBE](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2019july/Intro_Tutorial_17_optimizing.ipynb) (Kyle)
 
 
 
