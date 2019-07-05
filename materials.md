@@ -120,7 +120,7 @@ Note that the [morphology definitions in caleb](http://caleb.eastern.edu/binary_
 
 ### Fitting to Fake (or Real) Data
 
-The rest of the day is set aside to work on writing script to fit your own data/systems.  You can also try fitting the following "fake" cases, which we designed to hopefully be cheap enough to complete in a fairly short amount of time:
+The rest of the day is set aside to work on writing script to fit your own data/systems.  If you don't have your own data or want to get some easier practive first you can try the [Fitting Exercise](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2019july/Exercises_03_Fitting.ipynb).
 
 
 ### Workshop Dinner @ Dave & Busters
