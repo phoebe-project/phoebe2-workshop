@@ -52,7 +52,6 @@ We'll also be using [emcee](https://emcee.readthedocs.io/en/stable/) for fitting
 * [Introduction to PHOEBE 2: why so complicated?](https://docs.google.com/presentation/d/e/2PACX-1vT5d5bzuzABHvERmmMfe_aq7fN2w9Q3ctcFib0KM1e8bD_gUpyVCDBk7d28OWgKBNlNYSK6CI5xK2VD/pub?start=false&loop=false&delayms=3000) (Kyle)
 
 ### Tutorials
-* [Tutorial #0: Overview](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2019july/Intro_Tutorial_00_overview.ipynb) (Kyle)
 * [Tutorial #1: Bundle Basics](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2019july/Intro_Tutorial_01_bundle_basics.ipynb) (Kyle)
 * [Tutorial #2: Constraints](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2019july/Intro_Tutorial_02_constraints.ipynb) (Kyle)
 * [Tutorial #3: Advanced Constraints](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2019july/Intro_Tutorial_03_advanced_constraints.ipynb) (Kyle)
