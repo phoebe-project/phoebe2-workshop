@@ -84,7 +84,7 @@ We'll also be using [emcee](https://emcee.readthedocs.io/en/stable/) for fitting
 
 ### Tutorials
 * [Tutorial #11: Passband Luminosity, Third Light, and Distance](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2019july/Intro_Tutorial_11_pblum_l3_distance.ipynb) (Kyle)
-* [Tutorial #12: Saving and Loading](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2019july/Intro_Tutorial_12_saving_loading.ipynb) (Bert) 
+* [Tutorial #12: Saving and Loading](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2019july/Intro_Tutorial_12_saving_loading.ipynb) (Bert)
 * [Tutorial #13: Hierarchies](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2019july/Intro_Tutorial_13_hierarchies.ipynb) (Angela)
 * [Tutorial #14: Spots](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2019july/Intro_Tutorial_14_spots.ipynb) (Bert)
 * [Tutorial #15: Semi-Detached Binaries](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2019july/Intro_Tutorial_15_semidetached.ipynb) (Angela)
@@ -117,10 +117,11 @@ Note that the [morphology definitions in caleb](http://caleb.eastern.edu/binary_
 * [MCMC Tips & Tricks](https://docs.google.com/presentation/d/e/2PACX-1vRoGy9U53Lnko-v7OKBsD1fIxa3-RYyo3wMwRle1xFekZNpBtSWAOvl9wKZ3oLAsvgkEpd2B3TxNrS1/pub?start=false&loop=false&delayms=3000) (Angela)
 * [Fitting Tutorial #1: fitting a line](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2019july/phoebe_fitting_1.ipynb) (Kelly)
 * [Fitting Tutorial #2: fitting with PHOEBE](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2019july/phoebe_fitting_2.ipynb) (Kelly)
+* [preview of npdists package (experimental)](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2019july/npdists_preview.ipynb) (Kyle)
 
 ### Fitting to Fake (or Real) Data
 
-The rest of the day is set aside to work on writing script to fit your own data/systems.  If you don't have your own data or want to get some easier practive first you can try the [Fitting Exercise](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2019july/Exercises_03_Fitting.ipynb).
+The rest of the day is set aside to work on writing script to fit your own data/systems.  If you don't have your own data or want to get some easier practive first you can try the [Fitting Exercise](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2019july/Exercises_03_fitting.ipynb).
 
 
 ### Workshop Dinner @ Dave & Busters
