@@ -84,7 +84,7 @@ We'll also be using [emcee](https://emcee.readthedocs.io/en/stable/) for fitting
 
 ### Tutorials
 * [Tutorial #11: Passband Luminosity, Third Light, and Distance](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2019july/Intro_Tutorial_11_pblum_l3_distance.ipynb) (Kyle)
-* [Tutorial #12: Saving and Loading](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2019july/Intro_Tutorial_12_saving_loading.ipynb) (Bert) 
+* [Tutorial #12: Saving and Loading](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2019july/Intro_Tutorial_12_saving_loading.ipynb) (Bert)
 * [Tutorial #13: Hierarchies](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2019july/Intro_Tutorial_13_hierarchies.ipynb) (Angela)
 * [Tutorial #14: Spots](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2019july/Intro_Tutorial_14_spots.ipynb) (Bert)
 * [Tutorial #15: Semi-Detached Binaries](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2019july/Intro_Tutorial_15_semidetached.ipynb) (Angela)
@@ -120,7 +120,7 @@ Note that the [morphology definitions in caleb](http://caleb.eastern.edu/binary_
 
 ### Fitting to Fake (or Real) Data
 
-The rest of the day is set aside to work on writing script to fit your own data/systems.  If you don't have your own data or want to get some easier practive first you can try the [Fitting Exercise](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2019july/Exercises_03_Fitting.ipynb).
+The rest of the day is set aside to work on writing script to fit your own data/systems.  If you don't have your own data or want to get some easier practive first you can try the [Fitting Exercise](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2019july/Exercises_03_fitting.ipynb).
 
 
 ### Workshop Dinner @ Dave & Busters
