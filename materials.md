@@ -91,6 +91,7 @@ We'll also be using [emcee](https://emcee.readthedocs.io/en/stable/) for fitting
 * [Tutorial #16: Contact Binaries](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2019july/Intro_Tutorial_16_contact_binaries.ipynb) (Angela)
 * [Tutorial #17: Optimizing PHOEBE](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2019july/Intro_Tutorial_17_optimizing.ipynb) (Kyle)
 * [Tutorial #18: Low-level access to passbands](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2019july/Intro_Tutorial_18_low_level_passbands.ipynb) (Andrej)
+* [Tutorial #19: Pulsations in PHOEBE](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2019july/Intro_Tutorial_19_pulsations.ipynb) (Andrej)
 
 
 
