@@ -4,4 +4,4 @@ This workshop is primarily intended for graduate students, postdocs and early ca
 # Registration
 Registration is $250, which includes the registration fee, breakfast, lunch, and the conference dinner; its organization is sponsored in-part by NASA and in-part by Villanova University's Department of Astronomy and Planetary Science. The number of participants is limited to 16.
 
-Those interested are invited to fill out the registration form, which can be found [here](https://docs.google.com/forms/d/e/1FAIpQLSfWKv6d69TFnBGM0PUbNPpRDpbgTjMs4DuBkUmEm4OdrcxOHg/viewform?usp=sf_link). Applicants will be contacted one week after the registration deadline with a decision on their selection.
+Those interested are invited to fill out the registration form, which can be found [here](https://docs.google.com/forms/d/e/1FAIpQLSeSzIgRb1M8VulyXsup1d_ZB5Mvox-MGf2-HP-JuMA5p2kAdg/viewform). Applicants will be contacted one week after the registration deadline with a decision on their selection.

@@ -1,5 +1,5 @@
 # Announcement
-The PHOEBE team is excited to announce the second PHOEBE 2 workshop that will take place on 8th – 12th July at Villanova University, Pennsylvania, USA.
+The PHOEBE team is excited to announce the third PHOEBE 2 workshop that will take place on June 22nd - July 3rd 2020 at Villanova University, Pennsylvania, USA.
 
 The aim of this week-long workshop is to give participants a thorough introduction to modeling binary systems using PHOEBE 2, as well as providing a closer look at some of the advanced features. By the end of the workshop participants will be proficient in using PHOEBE 2 for binary star modeling.
 
