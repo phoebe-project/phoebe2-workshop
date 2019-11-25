@@ -1,5 +1,3 @@
 # PHOEBE Workshop
 
-Villanova University | July 8-12, 2019
-
-Stay tuned for the official announcement and registration for the second PHOEBE Workshop.
+See http://phoebe-project.org/workshops or the markdown files and jupyter notebooks in this repo.
