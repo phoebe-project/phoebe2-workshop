@@ -1,5 +1,5 @@
 # Important Dates
 
-* Registration deadline: 15th April 2019
-* Notification of selection: 22nd April 2019
-* Meeting dates: 8-12th July 2019
+* Registration deadline: 14th February 2020
+* Notification of selection: 21st February 2020
+* Meeting dates: 22nd June - 3rd July 2020
