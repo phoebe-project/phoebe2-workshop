@@ -2,40 +2,40 @@
 
 Preliminary schedule (subject to change):
 
-# Week One:
+## Week One:
 
-## Monday
+### Monday
 
 * Welcome & Introduction
 * PHOEBE Overview: wdgui to PHOEBE
 * Introduction to PHOEBE 2: why so complicated?
 * Tutorials & Exercises
 
-## Tuesday
+### Tuesday
 
 * Scientific Introduction to PHOEBE
 * Tutorials & Exercises
 * Downtown Outing
 
 
-## Wednesday
+### Wednesday
 
 * Tutorials & Exercises
 * Advanced Physics & Features
 * Building Systems & Forward Models
 
-## Thursday
+### Thursday
 
 * Fitting Talks
 * Fitting Tutorials & Exercises
 * Fitting to Fake (or Real) Data
 * Workshop Dinner @ Dave & Busters
 
-## Friday
+### Friday
 
 * Talks on "Future Features"
 * Discussion
 
-# Week Two:
+## Week Two:
 
 The second week will be adjusted based on the priorities of the participants, but will be heavily focused on advanced fitting methods and have time aportioned to advanced features (including pulsations).
