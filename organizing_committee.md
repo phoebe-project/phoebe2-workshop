@@ -7,4 +7,5 @@
 * Bert Pablo
 * Dave Jones
 * Martin Horvat
+* Michael Abdul-Masih
 * Andrej Prša
