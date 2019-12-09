@@ -2,6 +2,8 @@
 
 Preliminary schedule (subject to change):
 
+# Week One:
+
 ## Monday
 
 * Welcome & Introduction
@@ -33,3 +35,7 @@ Preliminary schedule (subject to change):
 
 * Talks on "Future Features"
 * Discussion
+
+# Week Two:
+
+The second week will be adjusted based on the priorities of the participants, but will be heavily focused on advanced fitting methods and have time aportioned to advanced features (including pulsations).
