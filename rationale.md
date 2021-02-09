@@ -1,5 +1,5 @@
 # Announcement
-The PHOEBE team is excited to announce the Third PHOEBE 2 Workshop that will take place on June 22nd - July 3rd 2020 at Villanova University, Pennsylvania, USA.
+The PHOEBE team is excited to announce the Third PHOEBE 2 Workshop that will take place (virtually) on June 22nd - July 1st 2020.
 
 The aim of this two week-long workshop is to give participants a thorough introduction to modeling binary systems using PHOEBE 2, as well as providing a closer look at some of the advanced features. We decided to extend the workshop by a week (instead of hosting a one week-long workshop, as we have in the past) so that we can provide instruction on how to model advanced and intricate systems (in the second week), while still delivering the thorough introduction to PHOEBE 2.0 as we have previously, which will now take place in the first week. By the end of week one, the participants will be proficient in using PHOEBE 2 for binary star modeling. By the end of week two, the participants will be equipped to model binary stars with advanced physics (such as pulsations) and using advanced fitting techniques.
 
@@ -12,4 +12,3 @@ In week one, the participants of the workshop will be given introductory walk-th
 
 # Main Objectives
 By the end of week one the participants should be able to independently use PHOEBE 2 to model single stars and basic binary systems, have a working knowledge of some advanced features, and have working scripts to apply PHOEBE 2 to their own data. By the end of week two, the participants will have gained some hands on experience with advanced features, such as pulsations, and have a thorough understanding of advanced fitting methods. They should also have a working script to apply these advanced techniques to their own data.
-

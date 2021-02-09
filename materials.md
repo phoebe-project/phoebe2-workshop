@@ -8,134 +8,86 @@ The Jupyter notebooks (and talks) will all be linked below so that you can pull 
 
 ### Installing PHOEBE
 
-PHOEBE 2.2 (which will include multiple improvements, optimizations, and support for python 3) is almost, but not quite, ready to be released.  Instead of using PHOEBE 2.1 at the workshop and missing out on all these soon-to-be-released features, we will be using a pre-release development version of 2.2.  If you already have the latest version of 2.1 installed and would rather use the stable release version, we will try our best to point out the relevant changes and what won't work for you.
+We will be using the recently-released 2.3 version of PHOEBE during the workshop.  See the [installation instruction](http://phoebe-project.org/install/2.3) and make sure PHOEBE is successfully installed prior to the start of the workshop.
 
-Note about Python versions:
-
-* PHOEBE 2.2 adds support for Python 3, so feel free to use either 2.7+ or 3.6+ for the workshop.  If you'd rather use PHOEBE 2.1, you'll have to use Python 2.
-* Note for mac users: be careful not to use the *system* version of Python as that usually results in problems.
-
-Dependencies:
-
-* in whatever version of python you'd like to install PHOEBE (either python 2 or 3), make sure you have numpy, astropy, and matplotlib installed.
-
-To download the pre-release workshop version of PHOEBE 2.2:
-
-* using git (which will allow you to easily update for any bugfixes *during* the meeting via `git pull`, but you may need to install git if you don't already have it): `git clone --depth=1 --single-branch -b workshop https://github.com/phoebe-project/phoebe2.git`
-* alternatively, download and extract the zip file: [PHOEBE workshop zip](https://github.com/phoebe-project/phoebe2/archive/workshop.zip)
-
-
-To install PHOEBE (replace `python` with whatever is necessary to point to the version of Python you'd like to use):
-
-* make sure you're in the 'phoebe2' directory which contains 'setup.py'
-* `python setup.py build`
-* `python setup.py install --user` for a user-install or `sudo python setup.py install` for a global installation. Note that the --user flag may not be necessary for a local installation on a mac.
-
-Now check the following in a Python console (or Jupyter if you plan to use that at the workshop):
+You can check to make sure the correct version is installed in a Python console (or Jupyter if you plan to use that at the workshop):
 
 * `import phoebe`
-* `print(phoebe.__version__)` should print 'workshop'
+* `print(phoebe.__version__)`
 
-If you have any troubles before the meeting, please email us for assistance.  We'll also have some time during the first morning/coffee break to deal with last-minute debugging.
+(should be at least 2.3.20).
+
+If you have any troubles before the meeting, please email us for assistance.
 
 
 ### Other Dependencies
 
-We'll also be using [emcee](https://emcee.readthedocs.io/en/stable/) for fitting, so make sure you have that installed in the version of Python you'll be using.
+We'll also be using [emcee](https://emcee.readthedocs.io/en/stable/) for fitting, so make sure you have that installed as well.
 
 
-# Monday
+# Tuesday June 22: Overview and Building Systems in PHOEBE
 
-### Introduction Talks
-* [Welcome & Introduction](https://docs.google.com/presentation/d/e/2PACX-1vRjK8iEVZbdZkDBpW0d7XvfqUNq4_waFI9doIx_DAXQvgIYgendKSSeuWIZuUK59w2IN_hEoCm4lZtL/pub?start=false&loop=false&delayms=3000) (Kelly)
-* [PHOEBE Overview: wdgui to PHOEBE](https://docs.google.com/presentation/d/e/2PACX-1vRemPIyKkMmWOe_YAQlH3oKfaSBNt5MhNc0MyTfygJrIEBGhlGrki138KljRymM6sobkCayD2LkYfGw/pub?start=false&loop=false&delayms=3000) (Andrej)
-* [Introduction to PHOEBE 2: why so complicated?](https://docs.google.com/presentation/d/e/2PACX-1vT5d5bzuzABHvERmmMfe_aq7fN2w9Q3ctcFib0KM1e8bD_gUpyVCDBk7d28OWgKBNlNYSK6CI5xK2VD/pub?start=false&loop=false&delayms=3000) (Kyle)
+* [Welcome & Introduction](https://docs.google.com/presentation/d/e/2PACX-1vTPiLVRPAUJnrSyNgqpWXbuQduLDqp36RP6inq5-QdtYA0nnLTjsQN1FuyhVIgvW9fHkiz_FAEpNrjp/pub?start=false&loop=false&delayms=3000) (Kelly - **2021 - NEEDS UPDATING**)
+* [Talk: PHOEBE Overview - wdgui to PHOEBE](https://docs.google.com/presentation/d/e/2PACX-1vTeR0gdxhuHt7-rEQMK5SEM3bGETEF-ItWQHsvmr8cwt1bNqJuMflTABL8vvV6jrNEdPqRaIpL8-TiJ/pub?start=false&loop=false&delayms=3000) (Andrej - **2021 - NEEDS UPDATING**)
+* [Talk: Introduction to PHOEBE 2: why so complicated?](https://docs.google.com/presentation/d/e/2PACX-1vTdjGepiD4v0VvAv8DQsed_uCQ4SMYPqfUtCLzvR92PKjnSSeTZ9qWuZpVbzdNxWBE445BwigEg9Tv7/pub?start=false&loop=false&delayms=3000) (Kyle)
+* [Tutorial #1: General Concepts & Bundle Basics](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2021june/Tutorial_01_bundle_basics.ipynb) (Kyle)
+* [Tutorial #2: Constraints](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2021june/Tutorial_02_constraints.ipynb) (Kyle)
+* [Exercises #1: Building Systems](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2021june/Exercises_01_building_systems.ipynb) (Kyle)
 
-### Tutorials
-* [Tutorial #1: Bundle Basics](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2019july/Intro_Tutorial_01_bundle_basics.ipynb) (Kyle)
-* [Tutorial #2: Constraints](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2019july/Intro_Tutorial_02_constraints.ipynb) (Kyle)
-* [Tutorial #3: Advanced Constraints](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2019july/Intro_Tutorial_03_advanced_constraints.ipynb) (Kyle)
-* [Tutorial #4: Units](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2019july/Intro_Tutorial_04_units.ipynb) (Kyle)
-* [Exercises #1: Building Systems](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2019july/Exercises_01.ipynb) (Kyle)
+* TODO: include UI overview somewhere?
 
-# Tuesday
+# Wednesday June 23: Creating Forward Models
 
-### Introduction Talks
-* Scientific Introduction to PHOEBE (Andrej)
-
-### Tutorials
-* [Tutorial #5: Datasets](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2019july/Intro_Tutorial_05_datasets.ipynb) (Bert)
-* [Tutorial #6: Time and Phase](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2019july/Intro_Tutorial_06_time_and_phase.ipynb) (Bert)
-* [Tutorial #7: Compute](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2019july/Intro_Tutorial_07_compute.ipynb) (Angela)
-* [Tutorial #8: Plotting](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2019july/Intro_Tutorial_08_plotting.ipynb) (Angela)
-* [Tutorial #9: Animating](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2019july/Intro_Tutorial_09_animating.ipynb) (Angela)
-* [Tutorial #10: Meshes](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2019july/Intro_Tutorial_10_meshes.ipynb) (Kyle)
-* [Exercises #2: Animations](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2019july/Exercises_02.ipynb) (Kyle)
-
-### Downtown Outing
+* [Tutorial #3: Datasets](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2021june/Tutorial_03_datasets.ipynb) (Bert)
+* [Tutorial #4: Compute](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2021june/04_compute.ipynb) (Angela)
+* [Tutorial #4b: Time and Phase](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2021june/Tutorial_04b_time_and_phase.ipynb) (Bert)
+* Tutorial #5: Plotting
+* [Talk: Atmospheres, Limb Darkening, Intensity Weighting, Extinction, and Reflection](https://docs.google.com/presentation/d/e/2PACX-1vSrILRxT1eygipBOurKZ2trffr5KQBRbK3y1TxY0-oydV1t4SaoZAWvDLZfUCc4iIZDzaHhlkVW8meM/pub?start=false&loop=false&delayms=3000) (Dave - **NEEDS UPDATING AND ADD EXTINCTION**)
+* [Tutorial: Passband Luminosity, Third Light, and Distance](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2021june/Intro_Tutorial_11_pblum_l3_distance.ipynb) (Kyle)
+* [Exercises #2: Creating Forward Models](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2021june/Exercises_02_forward_models.ipynb)
 
 
-# Wednesday
-
-
-### Advanced Physics & Features
-* [Atmospheres, Limb Darkening, Intensity Weighting, and Reflection](https://docs.google.com/presentation/d/e/2PACX-1vQ3LFDQrKAbEhieM3hUDyFgg-W9ozacQYAPmyBlmsb180qqjChf2kNsLonvDCE0iKAF5RdEFdxlC7Pr/pub?start=false&loop=false&delayms=3000) (Dave)
-
-
-### Tutorials
-* [Tutorial #11: Passband Luminosity, Third Light, and Distance](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2019july/Intro_Tutorial_11_pblum_l3_distance.ipynb) (Kyle)
-* [Tutorial #12: Saving and Loading](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2019july/Intro_Tutorial_12_saving_loading.ipynb) (Bert)
-* [Tutorial #13: Hierarchies](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2019july/Intro_Tutorial_13_hierarchies.ipynb) (Angela)
-* [Tutorial #14: Spots](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2019july/Intro_Tutorial_14_spots.ipynb) (Bert)
-* [Tutorial #15: Semi-Detached Binaries](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2019july/Intro_Tutorial_15_semidetached.ipynb) (Angela)
-* [Tutorial #16: Contact Binaries](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2019july/Intro_Tutorial_16_contact_binaries.ipynb) (Angela)
-* [Tutorial #17: Optimizing PHOEBE](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2019july/Intro_Tutorial_17_optimizing.ipynb) (Kyle)
-* [Tutorial #18: Low-level access to passbands](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2019july/Intro_Tutorial_18_low_level_passbands.ipynb) (Andrej)
-* [Tutorial #19: Pulsations in PHOEBE](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2019july/Intro_Tutorial_19_pulsations.ipynb) (Andrej)
+# Thursday June 24: Advanced Physics & Features
+* Tutorial #5b: Animations
+* Tutorial #5c: Accessing and Plotting Meshes
+* [Exercises #3: Animations](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2021june/Exercises_03.ipynb) (Kyle)
+* Tutorial #6: Features (Spots & Gaussian Processes)
+* [Talk: In Development - Pulsations](https://docs.google.com/presentation/d/e/2PACX-1vR13F6t5UqxxLntwHs5_sVo8YW-xzRlq2BOm08KxRMYAETPqH8qHsmL6M8BvNNTXEzStFYcvKF-IjK5/pub?start=false&loop=false&delayms=3000) (Andrej - **NEEDS UPDATING**)
+* [Tutorial #6b: Pulsations (PREVIEW)](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2021june/Intro_Tutorial_19_pulsations.ipynb) (Andrej)
+* [Exercises #3: Forward Model Animations](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2021june/Exercises_03_animations.ipynb)
 
 
 
-### Building Systems & Forward Models
-
-The rest of the day is set aside to work on writing scripts to build your own systems (or to continue working on the [animations exercises](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2019july/Exercises_02.ipynb), if you'd rather).  If you don't have any specific systems you'd like to try, you can choose any from the literature or from the [Caleb catalog of EBs](http://caleb.eastern.edu/query_stars_by_type.php).
-
-Note that the [morphology definitions in caleb](http://caleb.eastern.edu/binary_type_definitions.php) are slightly different than PHOEBE.  You may want to use the following:
-
-* Caleb's detached -> phoebe.default_binary()
-* Caleb's semi-detached or near-contact -> phoebe.default_binary() with semi-detached constraint on one component
-* Caleb's contact -> phoebe.default_binary() with semi-detached constraint on *both* components
-* Caleb's overcontact -> phoebe.default_binary(contact_binary=True)
-* Caleb's double-contact -> good luck! (you can try semi-detached constraints)
+# Friday June 25: PHOEBE Development & Upcoming Releases
+* Talk: Scientific Introduction to PHOEBE (Andrej)
+* [Talk: In Development - Triple and Higher-Order Systems](https://docs.google.com/presentation/d/e/2PACX-1vSk1awjZ-mrvsSOQunNYikwGr6PjdAseIhPEnh84ABExkgAvAzZ1QF2WEMVIr04IMYPQYwEoPGDjir2/pub?start=false&loop=false&delayms=3000) (Kyle - **NEEDS UPDATING**)
+* [Talk: In Development - Blended Atmosphere Tables](https://docs.google.com/presentation/d/e/2PACX-1vRMJxgdwwWs-IF1OY9ligGgNVul2z1Kk_GjRgH9-hFpkN8gJqtFcQUG4D3wzrsN998pvqt4bMNTtrfB/pub?start=false&loop=false&delayms=3000) (Andrej - **NEEDS UPDATING**)
+* Exercises: finish or continue any of the previous exercises.  Next week we start fitting!
 
 
+# Monday June 28: Inverse Problem Overview
+* Talk: Introduction to the Inverse Problem (framing the inverse problem, why it isn't simple, parameterization, overview of what can be obtained given types of systems and observations)
+* Talk: Inverse Problem in PHOEBE (Kyle - explaining estimators vs optimizers vs samplers and role of distributions)
+* Tutorial #7: Distributions & Priors (Kyle)
+* Tutorial #8a: Estimators (Angela)
+* Tutorial #8b: Optimizers
+* Exercises #4: Estimators & Optimizers
 
+# Tuesday June 29: MCMC in PHOEBE
+* Talk: MCMC Introduction
+* Tutorial #8c: MCMC
+* Tutorial #8d: Export Solver Runs to External Machine
+* Tutorial #8e: Resampling/Continuing a Previous Run
+* Talk: Choice of Parameterization
+* Exercises #5: Setting up an MCMC Run
 
-# Thursday
+# Wednesday June 30: Advanced MCMC
+* Talk: Marginalizing over Nuisance Parameters
+* Tutorial: Noise Nuisance Parameter
+* Talk: Convergence Criteria
+* Tutorial: Accessing and Interpreting MCMC Chains & Posteriors
+* Exercises #6: Getting Posteriors
 
-### Fitting
-* [Introduction to Fitting](https://docs.google.com/presentation/d/e/2PACX-1vRPMs4qfUborTwJUcBMDy393d7sOVsTT2jsiUFGZAzcWGhEl53cuzSSEpxhE1HDsTnceS6EAek24zfe/pub?start=false&loop=false&delayms=3000) (Andrej)
-* [Fitting in PHOEBE with emcee](https://docs.google.com/presentation/d/e/2PACX-1vQyUigkK0EwzbLmAOsdu8t1tgKMC-lyt5dGKUYACWqXFWNNa7N6DnJnauocY1cEBXvF2pdTo28psCvV/pub?start=false&loop=false&delayms=3000) (Kelly)
-* [MCMC Tips & Tricks](https://docs.google.com/presentation/d/e/2PACX-1vRoGy9U53Lnko-v7OKBsD1fIxa3-RYyo3wMwRle1xFekZNpBtSWAOvl9wKZ3oLAsvgkEpd2B3TxNrS1/pub?start=false&loop=false&delayms=3000) (Angela)
-* [Fitting Tutorial #1: fitting a line](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2019july/phoebe_fitting_1.ipynb) (Kelly)
-* [Fitting Tutorial #2: fitting with PHOEBE](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2019july/phoebe_fitting_2.ipynb) (Kelly)
-* [preview of npdists package (experimental)](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2019july/npdists_preview.ipynb) (Kyle)
-
-### Fitting to Fake (or Real) Data
-
-The rest of the day is set aside to work on writing script to fit your own data/systems.  If you don't have your own data or want to get some easier practive first you can try the [Fitting Exercise](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2019july/Exercises_03_fitting.ipynb).
-
-
-### Workshop Dinner @ Dave & Busters
-
-
-# Friday
-
-### Future Features
-* [Extinction (2.2 feature release)](https://docs.google.com/presentation/d/e/2PACX-1vTjWPSGagcIpOb-_ZJDE7AicGKnZqm5c81U_sAOpB-5CWe6xbUPzkeNB7pk1AkxS_t7xDBEas_AhH7O/pub?start=false&loop=false&delayms=3000) (Dave)
-* [Blended Atmosphere Tables (2.2 feature release)](https://docs.google.com/presentation/d/e/2PACX-1vRWc9Fdaeg6aSyV53D_--ebKS4aeHIMtAthozA6J-XVeYtQV8zA9DyBlf6j-Lp7rTDhkQiUiELFX654/pub?start=false&loop=false&delayms=3000) (Andrej)
-* [Pulsations](https://docs.google.com/presentation/d/e/2PACX-1vRjBQKKqGBy7pojNo3I3y1JzqEmweKpAUBVNW27glySsiuMWnaHrAdDLXskscu4Wh3g0irqQ3X7PgfU/pub?start=false&loop=false&delayms=3000) (Andrej)
-* [Triple and Higher-Order Systems](https://docs.google.com/presentation/d/e/2PACX-1vTfc9rEUzGDbvQ7E4GEa38m-JG6CgS67rPBHuCAABpTWJE9CQlAhXrUSqfApEHVwLR-it8Cs3SsYb8w/pub?start=false&loop=false&delayms=3000) (Kyle)
-* [Contact Binaries](https://docs.google.com/presentation/d/e/2PACX-1vR3Qz7TC-77pMzrqc-U57WNS_ec83A0fgxtV2JZ_Em34CbLvbcaCw87VOzW5dNlV3KUnR-nu6u6nZy3/pub?start=false&loop=false&delayms=3000) (Angela)
-* [GUI](https://docs.google.com/presentation/d/e/2PACX-1vTJITJ26XNAlyvU6K656k9D9MCIaR6b3HpQ4yLNQSJptpOpSlf8vtz9FNFK6fg-ZVihS34VTS4e4yqj/pub?start=false&loop=false&delayms=3000) (Kyle)
-* [Misc](https://docs.google.com/presentation/d/e/2PACX-1vT8op_EoU1CZiemxhZ2XRixSc1SFZxVzKwUPrEAFGMCAoJJSUPeKxebukTC9bZk2JIFZNoJB0BPnCxf/pub?start=false&loop=false&delayms=3000) (Kyle)
-* Discussion (Kelly)
+# Thursday July 1:
+* Talk: Common Pitfalls when Fitting (Angela - PHOEBE specific things like atmosphere bounds, but also q-search, choice of priors, dataset noise, etc).
+* Fitting topics of interest
