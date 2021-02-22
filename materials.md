@@ -38,54 +38,56 @@ We'll also be using [emcee](https://emcee.readthedocs.io/en/stable/) for fitting
 # Wednesday June 23: Creating Forward Models
 
 * [Tutorial #3: Datasets](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2021june/Tutorial_03_datasets.ipynb) (Bert)
-* [Tutorial #4: Compute](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2021june/04_compute.ipynb) (Angela)
+* [Tutorial #4: Compute](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2021june/Tutorial_04_compute.ipynb) (Angela)
 * [Tutorial #4b: Time and Phase](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2021june/Tutorial_04b_time_and_phase.ipynb) (Bert)
-* Tutorial #5: Plotting
+* [Tutorial #5: Plotting](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2021june/Tutorial_05_plotting.ipynb) (Angela)
 * [Talk: Atmospheres, Limb Darkening, Intensity Weighting, Extinction, and Reflection](https://docs.google.com/presentation/d/e/2PACX-1vSrILRxT1eygipBOurKZ2trffr5KQBRbK3y1TxY0-oydV1t4SaoZAWvDLZfUCc4iIZDzaHhlkVW8meM/pub?start=false&loop=false&delayms=3000) (Dave - **NEEDS UPDATING AND ADD EXTINCTION**)
 * [Tutorial: Passband Luminosity, Third Light, and Distance](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2021june/Intro_Tutorial_11_pblum_l3_distance.ipynb) (Kyle)
-* [Exercises #2: Creating Forward Models](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2021june/Exercises_02_forward_models.ipynb)
+* [Exercises #2: Creating Forward Models](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2021june/Exercises_02_forward_models.ipynb) (Kyle)
 
 
 # Thursday June 24: Advanced Physics & Features
-* Tutorial #5b: Animations
-* Tutorial #5c: Accessing and Plotting Meshes
-* [Exercises #3: Animations](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2021june/Exercises_03.ipynb) (Kyle)
-* Tutorial #6: Features (Spots & Gaussian Processes)
-* [Talk: In Development - Pulsations](https://docs.google.com/presentation/d/e/2PACX-1vR13F6t5UqxxLntwHs5_sVo8YW-xzRlq2BOm08KxRMYAETPqH8qHsmL6M8BvNNTXEzStFYcvKF-IjK5/pub?start=false&loop=false&delayms=3000) (Andrej - **NEEDS UPDATING**)
-* [Tutorial #6b: Pulsations (PREVIEW)](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2021june/Intro_Tutorial_19_pulsations.ipynb) (Andrej)
-* [Exercises #3: Forward Model Animations](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2021june/Exercises_03_animations.ipynb)
+
+* Talk: Scientific Introduction to PHOEBE (Andrej)
+* [Tutorial #5b: Animations](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2021june/Tutorial_05b_animations.ipynb) (Angela)
+* [Tutorial #5c: Accessing and Plotting Meshes](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2021june/Tutorial_05c_meshes.ipynb) (Kyle)
+* [Tutorial #6: Features (Spots & Gaussian Processes)](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2021june/Tutorial_06_features.ipynb) (Kyle - **NEEDS UPDATING WITH GPs**)
+* [Exercises #3: Forward Model Animations](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2021june/Exercises_03_animations.ipynb) (Kyle)
 
 
 
 # Friday June 25: PHOEBE Development & Upcoming Releases
-* Talk: Scientific Introduction to PHOEBE (Andrej)
+
+* [Talk: In Development - Pulsations](https://docs.google.com/presentation/d/e/2PACX-1vR13F6t5UqxxLntwHs5_sVo8YW-xzRlq2BOm08KxRMYAETPqH8qHsmL6M8BvNNTXEzStFYcvKF-IjK5/pub?start=false&loop=false&delayms=3000) (Andrej - **NEEDS UPDATING**)
+* [Tutorial #6b: Pulsations (PREVIEW)](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2021june/Intro_Tutorial_19_pulsations.ipynb) (Andrej)
 * [Talk: In Development - Triple and Higher-Order Systems](https://docs.google.com/presentation/d/e/2PACX-1vSk1awjZ-mrvsSOQunNYikwGr6PjdAseIhPEnh84ABExkgAvAzZ1QF2WEMVIr04IMYPQYwEoPGDjir2/pub?start=false&loop=false&delayms=3000) (Kyle - **NEEDS UPDATING**)
 * [Talk: In Development - Blended Atmosphere Tables](https://docs.google.com/presentation/d/e/2PACX-1vRMJxgdwwWs-IF1OY9ligGgNVul2z1Kk_GjRgH9-hFpkN8gJqtFcQUG4D3wzrsN998pvqt4bMNTtrfB/pub?start=false&loop=false&delayms=3000) (Andrej - **NEEDS UPDATING**)
-* Exercises: finish or continue any of the previous exercises.  Next week we start fitting!
+* Exercises: finish or continue any of the previous exercises.  Next week we start fitting! (Andrej)
 
 
 # Monday June 28: Inverse Problem Overview
-* Talk: Introduction to the Inverse Problem (framing the inverse problem, why it isn't simple, parameterization, overview of what can be obtained given types of systems and observations)
+* Talk: Introduction to the Inverse Problem (Angela - framing the inverse problem, why it isn't simple, parameterization, overview of what can be obtained given types of systems and observations)
 * Talk: Inverse Problem in PHOEBE (Kyle - explaining estimators vs optimizers vs samplers and role of distributions)
 * Tutorial #7: Distributions & Priors (Kyle)
 * Tutorial #8a: Estimators (Angela)
-* Tutorial #8b: Optimizers
-* Exercises #4: Estimators & Optimizers
+* Tutorial #8b: Optimizers (Bert)
+* Exercises #4: Estimators & Optimizers (Bert)
 
 # Tuesday June 29: MCMC in PHOEBE
-* Talk: MCMC Introduction
-* Tutorial #8c: MCMC
-* Tutorial #8d: Export Solver Runs to External Machine
-* Tutorial #8e: Resampling/Continuing a Previous Run
-* Talk: Choice of Parameterization
-* Exercises #5: Setting up an MCMC Run
+* Talk: MCMC Introduction (Andrej)
+* Tutorial #8c: MCMC (Andrej)
+* Tutorial #8d: Export Solver Runs to External Machine (Andrej)
+* Tutorial #8e: Resampling/Continuing a Previous Run (Andrej)
+* Talk: Choice of Parameterization (**???**)
+* Exercises #5: Setting up an MCMC Run (Andrej)
 
 # Wednesday June 30: Advanced MCMC
-* Talk: Marginalizing over Nuisance Parameters
-* Tutorial: Noise Nuisance Parameter
-* Talk: Convergence Criteria
-* Tutorial: Accessing and Interpreting MCMC Chains & Posteriors
-* Exercises #6: Getting Posteriors
+* Talk: Marginalizing over Nuisance Parameters (Angela)
+* Tutorial: Noise Nuisance Parameter (Angela)
+* Talk: Convergence Criteria (Andrej)
+* Tutorial: Accessing and Interpreting MCMC Chains (Andrej)
+* Tutorial: Accessing and Propagating Posteriors (Kyle)
+* Exercises #6: Getting Posteriors (Kyle)
 
 # Thursday July 1:
 * Talk: Common Pitfalls when Fitting (Angela - PHOEBE specific things like atmosphere bounds, but also q-search, choice of priors, dataset noise, etc).
