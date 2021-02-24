@@ -22,8 +22,12 @@ If you have any troubles before the meeting, please email us for assistance.
 
 ### Other Dependencies
 
-We'll also be using [emcee](https://emcee.readthedocs.io/en/stable/) for fitting, so make sure you have that installed as well.
+We'll also be using [ellc](https://github.com/pmaxted/ellc) as an optional alternate backend and [emcee](https://emcee.readthedocs.io/en/stable/) for fitting, so make sure you have that installed as well (both are available from pip).
 
+
+### Testing Your Installation
+
+Please test your installation well in advance of the workshop by running the [test script](./test_install.py) (should take 10-60 seconds to run) and make sure it completes without any errors (warning messages are not a cause for concern).  If the script does not run successfully, please reach out to us so we can debug any installation issues in advance.
 
 # Tuesday June 22: Overview and Building Systems in PHOEBE
 
