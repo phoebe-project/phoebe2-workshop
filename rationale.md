@@ -1,5 +1,5 @@
 # Announcement
-The PHOEBE team is excited to announce the Third PHOEBE 2 Workshop that will take place (virtually) on June 22nd - July 1st 2020.
+The PHOEBE team is excited to announce the Third PHOEBE 2 Workshop that will take place (virtually) on June 22nd - July 1st 2021.
 
 The aim of this two week-long workshop is to give participants a thorough introduction to modeling binary systems using PHOEBE 2, as well as providing a closer look at some of the advanced features.
 

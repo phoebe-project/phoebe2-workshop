@@ -27,7 +27,7 @@ We'll also be using [ellc](https://github.com/pmaxted/ellc) as an optional alter
 
 ### Testing Your Installation
 
-Please test your installation well in advance of the workshop by running the [test script](./test_install.py) (should take 10-60 seconds to run) and make sure it completes without any errors (warning messages are not a cause for concern).  If the script does not run successfully, please reach out to us so we can debug any installation issues in advance.
+Please test your installation well in advance of the workshop by running the [test script](https://raw.githubusercontent.com/phoebe-project/phoebe2-workshop/2021june/test_install.py) (should take 10-60 seconds to run) and make sure it completes without any errors (warning messages are not a cause for concern).  If the script does not run successfully, please reach out to us so we can debug any installation issues in advance.
 
 # Tuesday June 22: Overview and Building Systems in PHOEBE
 
@@ -80,7 +80,7 @@ Please test your installation well in advance of the workshop by running the [te
 # Tuesday June 29: MCMC in PHOEBE
 * Talk: MCMC Introduction (Andrej)
 * Tutorial #8c: MCMC (Andrej)
-* Tutorial #8d: Export Solver Runs to External Machine (Andrej)
+* Tutorial #8d: Export Solver Runs to an External Machine (Andrej)
 * Tutorial #8e: Resampling/Continuing a Previous Run (Andrej)
 * Talk: Choice of Parameterization (**???**)
 * Exercises #5: Setting up an MCMC Run (Andrej)
@@ -94,5 +94,6 @@ Please test your installation well in advance of the workshop by running the [te
 * Exercises #6: Getting Posteriors (Kyle)
 
 # Thursday July 1:
-* Talk: Common Pitfalls when Fitting (Angela - PHOEBE specific things like atmosphere bounds, but also q-search, choice of priors, dataset noise, etc).
+* Talk: Common Pitfalls when Fitting (Angela - PHOEBE specific things like atmosphere bounds, but also q-search, choice of priors, dataset noise, etc)
+* Tutorial: Using PHOEBE with AWS (Kyle)
 * Fitting topics of interest
