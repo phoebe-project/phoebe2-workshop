@@ -15,7 +15,7 @@ You can check to make sure the correct version is installed in a Python console 
 * `import phoebe`
 * `print(phoebe.__version__)`
 
-(should be at least 2.3.20).
+(must be at least 2.3.30).
 
 If you have any troubles before the meeting, please email us for assistance.
 
@@ -29,7 +29,7 @@ We'll also be using [ellc](https://github.com/pmaxted/ellc) as an optional alter
 
 Please test your installation well in advance of the workshop by running the [test script](https://raw.githubusercontent.com/phoebe-project/phoebe2-workshop/2021june/test_install.py) (should take 10-60 seconds to run) and make sure it completes without any errors (warning messages are not a cause for concern).  If the script does not run successfully, please reach out to us so we can debug any installation issues in advance.
 
-# Tuesday June 22: Overview and Building Systems in PHOEBE
+# Tuesday June 15: Overview and Building Systems in PHOEBE
 
 * [Welcome & Introduction](https://docs.google.com/presentation/d/e/2PACX-1vTPiLVRPAUJnrSyNgqpWXbuQduLDqp36RP6inq5-QdtYA0nnLTjsQN1FuyhVIgvW9fHkiz_FAEpNrjp/pub?start=false&loop=false&delayms=3000) (Kelly - **2021 - NEEDS UPDATING**)
 * [Talk: PHOEBE Overview - wdgui to PHOEBE](https://docs.google.com/presentation/d/e/2PACX-1vTeR0gdxhuHt7-rEQMK5SEM3bGETEF-ItWQHsvmr8cwt1bNqJuMflTABL8vvV6jrNEdPqRaIpL8-TiJ/pub?start=false&loop=false&delayms=3000) (Andrej - **2021 - NEEDS UPDATING**)
@@ -39,18 +39,18 @@ Please test your installation well in advance of the workshop by running the [te
 * [Exercises #1: Building Systems](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2021june/Exercises_01_building_systems.ipynb) (Kyle)
 
 
-# Wednesday June 23: Creating Forward Models
+# Wednesday June 16: Creating Forward Models
 
 * [Tutorial #3: Datasets](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2021june/Tutorial_03_datasets.ipynb) (Bert)
 * [Tutorial #4: Compute](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2021june/Tutorial_04_compute.ipynb) (Angela)
 * [Tutorial #4b: Time and Phase](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2021june/Tutorial_04b_time_and_phase.ipynb) (Bert)
 * [Tutorial #5: Plotting](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2021june/Tutorial_05_plotting.ipynb) (Angela)
-* [Talk: Atmospheres, Limb Darkening, Intensity Weighting, Extinction, and Reflection](https://docs.google.com/presentation/d/e/2PACX-1vSrILRxT1eygipBOurKZ2trffr5KQBRbK3y1TxY0-oydV1t4SaoZAWvDLZfUCc4iIZDzaHhlkVW8meM/pub?start=false&loop=false&delayms=3000) (Dave - **NEEDS UPDATING AND ADD EXTINCTION**)
+* [Talk: Atmospheres, Limb Darkening, Intensity Weighting, Extinction, and Reflection](https://docs.google.com/presentation/d/e/2PACX-1vSrILRxT1eygipBOurKZ2trffr5KQBRbK3y1TxY0-oydV1t4SaoZAWvDLZfUCc4iIZDzaHhlkVW8meM/pub?start=false&loop=false&delayms=3000) (Dave)
 * [Tutorial: Passband Luminosity, Third Light, and Distance](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2021june/Intro_Tutorial_11_pblum_l3_distance.ipynb) (Kyle)
 * [Exercises #2: Creating Forward Models](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2021june/Exercises_02_forward_models.ipynb) (Kyle)
 
 
-# Thursday June 24: Advanced Physics & Features
+# Thursday June 17: Advanced Physics & Features
 
 * Talk: Scientific Introduction to PHOEBE (Andrej)
 * [Tutorial #5b: Animations](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2021june/Tutorial_05b_animations.ipynb) (Angela)
@@ -60,7 +60,7 @@ Please test your installation well in advance of the workshop by running the [te
 
 
 
-# Friday June 25: PHOEBE Development & Upcoming Releases
+# Friday June 18: PHOEBE Development & Upcoming Releases
 
 * [Talk: In Development - Pulsations](https://docs.google.com/presentation/d/e/2PACX-1vR13F6t5UqxxLntwHs5_sVo8YW-xzRlq2BOm08KxRMYAETPqH8qHsmL6M8BvNNTXEzStFYcvKF-IjK5/pub?start=false&loop=false&delayms=3000) (Andrej - **NEEDS UPDATING**)
 * [Tutorial #6b: Pulsations (PREVIEW)](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2021june/Intro_Tutorial_19_pulsations.ipynb) (Andrej)
@@ -69,7 +69,7 @@ Please test your installation well in advance of the workshop by running the [te
 * Exercises: finish or continue any of the previous exercises.  Next week we start fitting! (Andrej)
 
 
-# Monday June 28: Inverse Problem Overview
+# Monday June 22/29: Inverse Problem Overview
 * Talk: Introduction to the Inverse Problem (Angela - framing the inverse problem, why it isn't simple, parameterization, overview of what can be obtained given types of systems and observations)
 * Talk: Inverse Problem in PHOEBE (Kyle - explaining estimators vs optimizers vs samplers and role of distributions)
 * Tutorial #7: Distributions & Priors (Kyle)
@@ -77,7 +77,7 @@ Please test your installation well in advance of the workshop by running the [te
 * Tutorial #8b: Optimizers (Bert)
 * Exercises #4: Estimators & Optimizers (Bert)
 
-# Tuesday June 29: MCMC in PHOEBE
+# Tuesday June 23/30: MCMC in PHOEBE
 * Talk: MCMC Introduction (Andrej)
 * Tutorial #8c: MCMC (Andrej)
 * Tutorial #8d: Export Solver Runs to an External Machine (Andrej)
@@ -85,7 +85,7 @@ Please test your installation well in advance of the workshop by running the [te
 * Talk: Choice of Parameterization (**???**)
 * Exercises #5: Setting up an MCMC Run (Andrej)
 
-# Wednesday June 30: Advanced MCMC
+# Wednesday June 24/31: Advanced MCMC
 * Talk: Marginalizing over Nuisance Parameters (Angela)
 * Tutorial: Noise Nuisance Parameter (Angela)
 * Talk: Convergence Criteria (Andrej)
@@ -93,7 +93,7 @@ Please test your installation well in advance of the workshop by running the [te
 * Tutorial: Accessing and Propagating Posteriors (Kyle)
 * Exercises #6: Getting Posteriors (Kyle)
 
-# Thursday July 1:
+# Thursday June 25/July 1:
 * Talk: Common Pitfalls when Fitting (Angela - PHOEBE specific things like atmosphere bounds, but also q-search, choice of priors, dataset noise, etc)
 * Tutorial: Using PHOEBE with AWS (Kyle)
 * Fitting topics of interest
