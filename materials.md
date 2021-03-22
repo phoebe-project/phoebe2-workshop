@@ -46,7 +46,7 @@ Please test your installation well in advance of the workshop by running the [te
 * [Tutorial #4b: Time and Phase](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2021june/Tutorial_04b_time_and_phase.ipynb) (Bert)
 * [Tutorial #5: Plotting](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2021june/Tutorial_05_plotting.ipynb) (Angela)
 * [Talk: Atmospheres, Limb Darkening, Intensity Weighting, Extinction, and Reflection](https://docs.google.com/presentation/d/e/2PACX-1vSrILRxT1eygipBOurKZ2trffr5KQBRbK3y1TxY0-oydV1t4SaoZAWvDLZfUCc4iIZDzaHhlkVW8meM/pub?start=false&loop=false&delayms=3000) (Dave)
-* [Tutorial: Passband Luminosity, Third Light, and Distance](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2021june/Intro_Tutorial_11_pblum_l3_distance.ipynb) (Kyle)
+* Tutorial: Passband Luminosity, Third Light, and Distance (Kyle - **NEEDS UPDATING AND INCLUDING COLOR COUPLING**)
 * [Exercises #2: Creating Forward Models](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2021june/Exercises_02_forward_models.ipynb) (Kyle)
 
 
@@ -63,7 +63,7 @@ Please test your installation well in advance of the workshop by running the [te
 # Friday June 18: PHOEBE Development & Upcoming Releases
 
 * [Talk: In Development - Pulsations](https://docs.google.com/presentation/d/e/2PACX-1vR13F6t5UqxxLntwHs5_sVo8YW-xzRlq2BOm08KxRMYAETPqH8qHsmL6M8BvNNTXEzStFYcvKF-IjK5/pub?start=false&loop=false&delayms=3000) (Andrej - **NEEDS UPDATING**)
-* [Tutorial #6b: Pulsations (PREVIEW)](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2021june/Intro_Tutorial_19_pulsations.ipynb) (Andrej)
+* Tutorial #6b: Pulsations (PREVIEW) (Andrej - **NEEDS UPDATING/REWRITING**)
 * [Talk: In Development - Triple and Higher-Order Systems](https://docs.google.com/presentation/d/e/2PACX-1vSk1awjZ-mrvsSOQunNYikwGr6PjdAseIhPEnh84ABExkgAvAzZ1QF2WEMVIr04IMYPQYwEoPGDjir2/pub?start=false&loop=false&delayms=3000) (Kyle - **NEEDS UPDATING**)
 * [Talk: In Development - Blended Atmosphere Tables](https://docs.google.com/presentation/d/e/2PACX-1vRMJxgdwwWs-IF1OY9ligGgNVul2z1Kk_GjRgH9-hFpkN8gJqtFcQUG4D3wzrsN998pvqt4bMNTtrfB/pub?start=false&loop=false&delayms=3000) (Andrej - **NEEDS UPDATING**)
 * Exercises: finish or continue any of the previous exercises.  Next week we start fitting! (Andrej)

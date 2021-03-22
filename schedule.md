@@ -9,9 +9,9 @@ Preliminary schedule (subject to change):
 * Thursday: Advanced Physics & Features
 * Friday: PHOEBE Development & Upcoming Releases
 
-## Week Two (Inverse Problem):
+## Week Two/Three (Inverse Problem):
 
 * Monday: Inverse Problem Overview
 * Tuesday: MCMC in PHOEBE
 * Wednesday: Advanced MCMC
-* Thursday:
+* Thursday: Advanced Fitting Tips & Tricks
