@@ -73,9 +73,9 @@ Please test your installation well in advance of the workshop by running the [te
 * [Talk: Introduction to the Inverse Problem](https://docs.google.com/presentation/d/e/2PACX-1vTtiioAwAllKi9rycyklKPGbbji2cS9sf2wp9nvkccKtb7T_RaYHL7ByFUXy8fhvaM7MlOLi2eCYdtV/pub?start=false&loop=false&delayms=3000) (Angela - **NEEDS WRITING**: framing the inverse problem, why it isn't simple, parameterization, overview of what can be obtained given types of systems and observations)
 * [Talk: Inverse Problem in PHOEBE](https://docs.google.com/presentation/d/e/2PACX-1vQsVUENU9QuQSFu2f5qvfJy9HJfgn3EqodG1nxuHXR4gukbt5J39aXmI8XDXo40RMJ93omsTix826z5/pub?start=false&loop=false&delayms=3000) (Kyle)
 * [Tutorial: Distributions & Priors](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2021june/Tutorial_07_distributions.ipynb) (Kyle)
-* Tutorial: Estimators (Angela)
-* Tutorial: Optimizers (Bert)
-* Exercises: Estimators & Optimizers (Bert)
+* [Tutorial: Estimators](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2021june/Tutorial_08a_estimators.ipynb) (Angela)
+* [Tutorial: Optimizers](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2021june/Tutorial_08b_optimizers.ipynb) (Bert)
+* [Exercises: Estimators & Optimizers](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2021june/Exercises_05_estimators_optimizers.ipynb) (Bert)
 
 # Tuesday June 23/30: MCMC in PHOEBE
 * Talk: MCMC Introduction (Andrej)
