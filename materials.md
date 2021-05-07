@@ -75,20 +75,20 @@ Please test your installation well in advance of the workshop by running the [te
 * [Tutorial: Distributions & Priors](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2021june/Tutorial_07_distributions.ipynb) (Kyle)
 * [Tutorial: Estimators](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2021june/Tutorial_08a_estimators.ipynb) (Angela)
 * [Tutorial: Optimizers](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2021june/Tutorial_08b_optimizers.ipynb) (Bert)
-* [Exercises: Estimators & Optimizers](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2021june/Exercises_05_estimators_optimizers.ipynb) (Bert)
+* Tutorial: Running Jobs on External Compute Resources (Kyle)
+* [Exercises: Estimators & Optimizers](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2021june/Exercises_05_estimators_optimizers.ipynb) (Kyle)
 
 # Tuesday June 23/30: MCMC in PHOEBE
 * Talk: MCMC Introduction (Andrej)
-* Tutorial: MCMC (Andrej)
-* Tutorial: Export Solver Runs to an External Machine (Andrej)
-* Tutorial: Resampling/Continuing a Previous Run (Andrej)
+* Tutorial: MCMC Basics in PHOEBE (Andrej)
+* Tutorial: Resampling/Continuing an MCMC Run (Andrej)
 * Talk: Choice of Parameterization (**???**)
 * Exercises: Setting up an MCMC Run (Andrej)
 
 # Wednesday June 24/31: Advanced MCMC
 * Talk: Marginalizing over Nuisance Parameters (Angela)
 * Tutorial: Noise Nuisance Parameter (Angela)
-* Talk: Convergence Criteria (Andrej)
+* Talk: Convergence Criteria and Interpreting Parameter Uncertainties (Andrej)
 * Tutorial: Accessing and Interpreting MCMC Chains (Andrej)
 * Tutorial: Accessing and Propagating Posteriors (Kyle)
 * Exercises: Getting Posteriors (Kyle)
