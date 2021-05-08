@@ -75,7 +75,7 @@ Please test your installation well in advance of the workshop by running the [te
 * [Tutorial: Distributions & Priors](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2021june/Tutorial_07_distributions.ipynb) (Kyle)
 * [Tutorial: Estimators](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2021june/Tutorial_08a_estimators.ipynb) (Angela)
 * [Tutorial: Optimizers](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2021june/Tutorial_08b_optimizers.ipynb) (Bert)
-* Tutorial: Running Jobs on External Compute Resources (Kyle)
+* [Tutorial: Running Jobs on External Compute Resources](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2021june/Tutorial_09_server.ipynb) (Kyle)
 * [Exercises: Estimators & Optimizers](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2021june/Exercises_05_estimators_optimizers.ipynb) (Kyle)
 
 # Tuesday June 23/30: MCMC in PHOEBE
