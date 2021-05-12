@@ -80,7 +80,7 @@ Please test your installation well in advance of the workshop by running the [te
 
 # Tuesday June 23/30: MCMC in PHOEBE
 * Talk: MCMC Introduction (Andrej)
-* Tutorial: MCMC Basics in PHOEBE (Andrej)
+* [Tutorial: MCMC Basics in PHOEBE](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2021june/Tutorial_10_mcmc.ipynb) (Andrej)
 * Tutorial: Resampling/Continuing an MCMC Run (Andrej)
 * Talk: Choice of Parameterization (**???**)
 * Exercises: Setting up an MCMC Run (Andrej)
