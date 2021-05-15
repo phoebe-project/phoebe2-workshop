@@ -2,14 +2,14 @@
 
 Preliminary schedule (subject to change):
 
-## Week One (Forward Model):
+## Week 1 (Forward Model):
 
 * Tuesday: Overview and Building Systems in PHOEBE
 * Wednesday: Creating Forward Models
 * Thursday: Advanced Physics & Features
 * Friday: PHOEBE Development & Upcoming Releases
 
-## Week Two/Three (Inverse Problem):
+## Week 2a/2b (Inverse Problem):
 
 * Monday: Inverse Problem Overview
 * Tuesday: MCMC in PHOEBE
