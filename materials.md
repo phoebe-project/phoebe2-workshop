@@ -57,7 +57,7 @@ Please test your installation well in advance of the workshop by running the [te
 * [Tutorial: Compute](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2021june/Tutorial_04_compute.ipynb) (Angela)
 * [Tutorial: Time and Phase](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2021june/Tutorial_04b_time_and_phase.ipynb) (Bert)
 * [Tutorial: Plotting](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2021june/Tutorial_05_plotting.ipynb) (Angela)
-* [Tutorial: Flux Scaling - Passband Luminosity, Third Light, and Distance](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2021june/Tutorial_pblum_l3_distance.ipynb) (Kyle - **NEEDS REVIEWING/TESTING**)
+* [Tutorial: Flux Scaling - Passband Luminosity, Third Light, and Distance](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2021june/Tutorial_pblum_l3_distance.ipynb) (Kyle)
 * [Exercises: Creating Forward Models](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2021june/Exercises_02_forward_models.ipynb) (Kyle)
 
 
@@ -74,7 +74,6 @@ Please test your installation well in advance of the workshop by running the [te
 # Friday June 18: PHOEBE Development & Upcoming Releases
 
 * [Talk: In Development - Pulsations](https://docs.google.com/presentation/d/e/2PACX-1vR13F6t5UqxxLntwHs5_sVo8YW-xzRlq2BOm08KxRMYAETPqH8qHsmL6M8BvNNTXEzStFYcvKF-IjK5/pub?start=false&loop=false&delayms=3000) (Andrej - **NEEDS UPDATING**)
-* Tutorial: Pulsations (PREVIEW) (Andrej - **NEEDS UPDATING/REWRITING**)
 * [Talk: In Development - Triple and Higher-Order Systems](https://docs.google.com/presentation/d/e/2PACX-1vSk1awjZ-mrvsSOQunNYikwGr6PjdAseIhPEnh84ABExkgAvAzZ1QF2WEMVIr04IMYPQYwEoPGDjir2/pub?start=false&loop=false&delayms=3000) (Kyle - **NEEDS UPDATING**)
 * [Talk: In Development - Blended Atmosphere Tables](https://docs.google.com/presentation/d/e/2PACX-1vRMJxgdwwWs-IF1OY9ligGgNVul2z1Kk_GjRgH9-hFpkN8gJqtFcQUG4D3wzrsN998pvqt4bMNTtrfB/pub?start=false&loop=false&delayms=3000) (Andrej - **NEEDS UPDATING**)
 * Exercises: finish or continue any of the previous exercises.  Next week we start fitting! (Andrej)
@@ -93,7 +92,7 @@ Please test your installation well in advance of the workshop by running the [te
 * Talk: MCMC Introduction (Andrej)
 * [Tutorial: MCMC Basics in PHOEBE](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2021june/Tutorial_10_mcmc.ipynb) (Andrej)
 * Tutorial: Resampling/Continuing an MCMC Run (Andrej)
-* Talk: Choice of Parameterization (**???**)
+* Talk: Choice of Parameterization (Angela)
 * Exercises: Setting up an MCMC Run (Andrej)
 
 # Wednesday June 24/31: Advanced MCMC
