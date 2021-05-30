@@ -1,4 +1,6 @@
 import phoebe
+if phoebe.__version__ != 'workshop2021':
+    raise ImportError("PHOEBE version is not workshop2021")
 import numpy as np
 b = phoebe.default_binary()
 b.add_dataset('lc', compute_times=phoebe.linspace(0,1,5))
@@ -14,4 +16,5 @@ b.run_compute(kind='ellc', sample_from='mydist', sample_num=3)
 b.add_solver('optimizer.nelder_mead', fit_parameters='incl@binary', maxiter=10, maxfev=20, solver='nm_solver')
 b.run_solver('nm_solver')
 b.add_solver('sampler.emcee', init_from='mydist', nwalkers=4, niters=5, solver='emcee_solver')
-b.run_solver('emcee_solver')
+b.run_solver('emcee_solver', detach=True)
+b.attach_job()

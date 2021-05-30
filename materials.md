@@ -2,27 +2,38 @@
 
 ### Jupyter Notebooks
 
-The tutorials at the workshop will make heavy use of [Jupyter notebooks](https://jupyter.org/install).  If you'd prefer, you can copy and paste from the files into an interactive Python or IPython session, but if you'd like to follow along directly in Jupyter, please make sure that you have Jupyter up and running and can import phoebe (more on that next).
+The tutorials at the workshop will make heavy use of [Jupyter notebooks](https://jupyter.org/install).  If you'd prefer, you can copy and paste from the files into an interactive Python or IPython session, but if you'd like to follow along directly in Jupyter, please make sure that you have Jupyter up and running and can import PHOEBE (more on that next).
 
 The Jupyter notebooks (and talks) will all be linked below so that you can pull them up to view in the browser, or download and run locally on your own machine as we go through them.  We're still making changes to these between now and the workshop, so there should be no need to download them in advance.
 
 ### Installing PHOEBE
 
-We will be using the recently-released 2.3 version of PHOEBE during the workshop.  See the [installation instruction](http://phoebe-project.org/install/2.3) and make sure PHOEBE is successfully installed prior to the start of the workshop.
+During the workshop, we will be using a custom development branch based the recently-released 2.3 version of PHOEBE, but with the inclusion of a few features that won't officially be released until the upcoming 2.4 version.  The easiest way to install is via pip (you're welcome to install within a virtual or conda environment if you'd like, just make sure you know how to activate that environment from within Jupyter):
+
+```
+pip install numpy
+pip install https://github.com/phoebe-project/phoebe2/archive/refs/heads/workshop2021.zip --ignore-installed
+```
+
+Note that PHOEBE only supports Python 3.6+, so you may need to replace `pip` with `pip3` or even `python3 -m pip` depending on your system.  Also a "PEP 440 version" warning isn't a concern - this is just python complaining that "workshop2021" doesn't follow the standard version formatting.
+
+If you're on a newer mac system and PHOEBE fails to build, you may need to first install a supported compiler.  The easiest way to do this is to install PHOEBE within a conda environment where you first install a compiler (`conda install clangxx_osx-64`).  See the [mac install instructions for 2.3](http://phoebe-project.org/install/latest/mac/auto) for more details (and just swap out the `pip install phoebe` with the line above to install the workshop version).
+
+Similarly, if you are on a Linux system without `g++` or `python3-dev` installed by default, you may need to manually install a few dependencies.  See the [Linux install instructions for 2.3](http://phoebe-project.org/install/latest/linux/auto) and swap out the `pip install phoebe` with the line above to install the workshop version.
 
 You can check to make sure the correct version is installed in a Python console (or Jupyter if you plan to use that at the workshop):
 
 * `import phoebe`
 * `print(phoebe.__version__)`
 
-(must be at least 2.3.30).
+(must say 'workshop2021').
 
-If you have any troubles before the meeting, please email us for assistance.
+If you have any troubles before the meeting, please reach out to us for assistance.
 
 
 ### Other Dependencies
 
-We'll also be using [ellc](https://github.com/pmaxted/ellc) as an optional alternate backend and [emcee](https://emcee.readthedocs.io/en/stable/) for fitting, so make sure you have that installed as well (both are available from pip).
+We'll also be using [ellc](https://github.com/pmaxted/ellc) as an optional alternate backend and [emcee](https://emcee.readthedocs.io/en/stable/) for fitting, so make sure you have those installed as well (both are available from pip).
 
 
 ### Testing Your Installation
@@ -42,11 +53,11 @@ Please test your installation well in advance of the workshop by running the [te
 # Wednesday June 16: Creating Forward Models
 
 * [Tutorial: Datasets](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2021june/Tutorial_03_datasets.ipynb) (Bert)
+* [Talk: Atmospheres, Limb Darkening, Intensity Weighting, Extinction, and Reflection](https://docs.google.com/presentation/d/e/2PACX-1vSrILRxT1eygipBOurKZ2trffr5KQBRbK3y1TxY0-oydV1t4SaoZAWvDLZfUCc4iIZDzaHhlkVW8meM/pub?start=false&loop=false&delayms=3000) (Dave)
 * [Tutorial: Compute](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2021june/Tutorial_04_compute.ipynb) (Angela)
 * [Tutorial: Time and Phase](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2021june/Tutorial_04b_time_and_phase.ipynb) (Bert)
 * [Tutorial: Plotting](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2021june/Tutorial_05_plotting.ipynb) (Angela)
-* [Talk: Atmospheres, Limb Darkening, Intensity Weighting, Extinction, and Reflection](https://docs.google.com/presentation/d/e/2PACX-1vSrILRxT1eygipBOurKZ2trffr5KQBRbK3y1TxY0-oydV1t4SaoZAWvDLZfUCc4iIZDzaHhlkVW8meM/pub?start=false&loop=false&delayms=3000) (Dave)
-* [Tutorial: Flux Scaling - Passband Luminosity, Third Light, and Distance](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2021june/Tutorial_pblum_l3_distance.ipynb) (Kyle - **NEEDS REVIEWING/TESTING**)
+* [Tutorial: Flux Scaling - Passband Luminosity, Third Light, and Distance](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2021june/Tutorial_pblum_l3_distance.ipynb) (Kyle)
 * [Exercises: Creating Forward Models](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2021june/Exercises_02_forward_models.ipynb) (Kyle)
 
 
@@ -63,7 +74,6 @@ Please test your installation well in advance of the workshop by running the [te
 # Friday June 18: PHOEBE Development & Upcoming Releases
 
 * [Talk: In Development - Pulsations](https://docs.google.com/presentation/d/e/2PACX-1vR13F6t5UqxxLntwHs5_sVo8YW-xzRlq2BOm08KxRMYAETPqH8qHsmL6M8BvNNTXEzStFYcvKF-IjK5/pub?start=false&loop=false&delayms=3000) (Andrej - **NEEDS UPDATING**)
-* Tutorial: Pulsations (PREVIEW) (Andrej - **NEEDS UPDATING/REWRITING**)
 * [Talk: In Development - Triple and Higher-Order Systems](https://docs.google.com/presentation/d/e/2PACX-1vSk1awjZ-mrvsSOQunNYikwGr6PjdAseIhPEnh84ABExkgAvAzZ1QF2WEMVIr04IMYPQYwEoPGDjir2/pub?start=false&loop=false&delayms=3000) (Kyle - **NEEDS UPDATING**)
 * [Talk: In Development - Blended Atmosphere Tables](https://docs.google.com/presentation/d/e/2PACX-1vRMJxgdwwWs-IF1OY9ligGgNVul2z1Kk_GjRgH9-hFpkN8gJqtFcQUG4D3wzrsN998pvqt4bMNTtrfB/pub?start=false&loop=false&delayms=3000) (Andrej - **NEEDS UPDATING**)
 * Exercises: finish or continue any of the previous exercises.  Next week we start fitting! (Andrej)
@@ -82,7 +92,7 @@ Please test your installation well in advance of the workshop by running the [te
 * Talk: MCMC Introduction (Andrej)
 * [Tutorial: MCMC Basics in PHOEBE](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2021june/Tutorial_10_mcmc.ipynb) (Andrej)
 * Tutorial: Resampling/Continuing an MCMC Run (Andrej)
-* Talk: Choice of Parameterization (**???**)
+* Talk: Choice of Parameterization (Angela)
 * Exercises: Setting up an MCMC Run (Andrej)
 
 # Wednesday June 24/31: Advanced MCMC
