@@ -6,25 +6,25 @@
 # Tutorials and Exercises
 
 Day 1:
-* [Tutorial #0: Overview](https://github.com/phoebe-project/phoebe2-workshop/blob/2018june/Intro_Tutorial_00_overview.ipynb)
-* [Tutorial #1: Bundle Basics](https://github.com/phoebe-project/phoebe2-workshop/blob/2018june/Intro_Tutorial_01_bundle_basics.ipynb)
-* [Tutorial #2: Constraints](https://github.com/phoebe-project/phoebe2-workshop/blob/2018june/Intro_Tutorial_02_constraints.ipynb)
-* [Tutorial #3: Advanced Constraints](https://github.com/phoebe-project/phoebe2-workshop/blob/2018june/Intro_Tutorial_03_advanced_constraints.ipynb)
-* [Tutorial #4: Units](https://github.com/phoebe-project/phoebe2-workshop/blob/2018june/Intro_Tutorial_04_units.ipynb)
-* [Exercises #1: Building Systems](https://github.com/phoebe-project/phoebe2-workshop/blob/2018june/Exercises_01.ipynb)
+* [Tutorial #0: Overview](./Intro_Tutorial_00_overview.ipynb)
+* [Tutorial #1: Bundle Basics](./Intro_Tutorial_01_bundle_basics.ipynb)
+* [Tutorial #2: Constraints](./Intro_Tutorial_02_constraints.ipynb)
+* [Tutorial #3: Advanced Constraints](./Intro_Tutorial_03_advanced_constraints.ipynb)
+* [Tutorial #4: Units](./Intro_Tutorial_04_units.ipynb)
+* [Exercises #1: Building Systems](./Exercises_01.ipynb)
 
 
 Day 2:
-* [Tutorial #5: Datasets](https://github.com/phoebe-project/phoebe2-workshop/blob/2018june/Intro_Tutorial_05_datasets.ipynb)
-* [Tutorial #6: Time and Phase](https://github.com/phoebe-project/phoebe2-workshop/blob/2018june/Intro_Tutorial_06_time_and_phase.ipynb)
-* [Tutorial #7: Compute](https://github.com/phoebe-project/phoebe2-workshop/blob/2018june/Intro_Tutorial_07_compute.ipynb)
-* [Tutorial #8: Plotting](https://github.com/phoebe-project/phoebe2-workshop/blob/2018june/Intro_Tutorial_08_plotting.ipynb)
-* [Tutorial #9: Animating](https://github.com/phoebe-project/phoebe2-workshop/blob/2018june/Intro_Tutorial_09_animating.ipynb)
-* [Tutorial #10: Meshes](https://github.com/phoebe-project/phoebe2-workshop/blob/2018june/Intro_Tutorial_10_meshes.ipynb)
-* [Tutorial #11: Saving and Loading](https://github.com/phoebe-project/phoebe2-workshop/blob/2018june/Intro_Tutorial_11_saving_loading.ipynb)
-* [Tutorial #12: Hierarchies](https://github.com/phoebe-project/phoebe2-workshop/blob/2018june/Intro_Tutorial_12_hierarchies.ipynb)
-* [Tutorial #13: Spots](https://github.com/phoebe-project/phoebe2-workshop/blob/2018june/Intro_Tutorial_13_spots.ipynb)
-* [Exercises #2: Rossiter-McLaughlin](https://github.com/phoebe-project/phoebe2-workshop/blob/2018june/Exercises_02.ipynb)
+* [Tutorial #5: Datasets](./Intro_Tutorial_05_datasets.ipynb)
+* [Tutorial #6: Time and Phase](./Intro_Tutorial_06_time_and_phase.ipynb)
+* [Tutorial #7: Compute](./Intro_Tutorial_07_compute.ipynb)
+* [Tutorial #8: Plotting](./Intro_Tutorial_08_plotting.ipynb)
+* [Tutorial #9: Animating](./Intro_Tutorial_09_animating.ipynb)
+* [Tutorial #10: Meshes](./Intro_Tutorial_10_meshes.ipynb)
+* [Tutorial #11: Saving and Loading](./Intro_Tutorial_11_saving_loading.ipynb)
+* [Tutorial #12: Hierarchies](./Intro_Tutorial_12_hierarchies.ipynb)
+* [Tutorial #13: Spots](./Intro_Tutorial_13_spots.ipynb)
+* [Exercises #2: Rossiter-McLaughlin](./Exercises_02.ipynb)
 
 
 # Introductory Talks
@@ -39,13 +39,13 @@ Day 2:
 * [Passband Luminosity, Third Light, and Distance](https://docs.google.com/presentation/d/e/2PACX-1vRP5ll1u1cLSsebsCF-x_5TzVRTkBHhGHlW-QJJDy9KKL3cyEs9feC5xJEsfXyWEpFed1ilO6TzG9lQ/pub?start=false&loop=false&delayms=5000) | [video](https://vums-web.villanova.edu/Mediasite/Play/095740f0d1d44534bf796ba562709ae41d?catalog=94a4bf00-c3f2-4194-b7e0-9bb07d12e711)
 * [Boosting and Gravitational Redshift](https://docs.google.com/presentation/d/e/2PACX-1vRX65d4gEJ4kD90sIq9Bvy_fZ2FSPuKx61unlpQwv-eJs3VXoNtwput8xS6UyV61fJ3eI1xw5FtXGBZ/pub?start=false&loop=false&delayms=5000) | [video](https://vums-web.villanova.edu/Mediasite/Play/587662572cf84088b36d6fa09886692b1d?catalog=94a4bf00-c3f2-4194-b7e0-9bb07d12e711)
 * [Apsidal Motion](https://docs.google.com/presentation/d/e/2PACX-1vRWpXScVFSQQIzjLz1OP5j7wLhactyxkklOOZyOwnkE47__D3YEy6z-isnaTPHekzNduAbocExiukkE/pub?start=false&loop=false&delayms=5000) | [video](https://vums-web.villanova.edu/Mediasite/Play/4cc0d36c92784d5f822b8145d607938d1d?catalog=94a4bf00-c3f2-4194-b7e0-9bb07d12e711)
-* [Current State of Contacts](https://docs.google.com/presentation/d/e/2PACX-1vRRbJcCrlmN1J2-vQ6QDbI6blvqMkVW5I9QRTuCWAchGB0S9Jd4Su6Z1KM3Gsntq1hAzAgFdP8ZC61V/pub?start=false&loop=false&delayms=5000) | [tutorial](https://github.com/phoebe-project/phoebe2-workshop/blob/2018june/contacts_tutorial.ipynb) | [video](https://vums-web.villanova.edu/Mediasite/Play/099aa1bf857e4bdcb683cb12c9e20cc81d?catalog=94a4bf00-c3f2-4194-b7e0-9bb07d12e711)
-* [Atmospheres, Limb Darkening, Intensity Weighting, and Reflection](https://docs.google.com/presentation/d/e/2PACX-1vR4GVqR7bgKZsPmH4_IGFNIU-3ke7JetdyjLpFpEGSWReDsl-dSUy11KAo5x2W7c2mD88gmRwrP0-YW/pub?start=false&loop=false&delayms=5000) | [tutorial](https://github.com/phoebe-project/phoebe2-workshop/blob/2018june/atm_ld_tutorial.ipynb) | [video](https://vums-web.villanova.edu/Mediasite/Play/11c11f0e57c54b1296f385b8fbbdcf3c1d?catalog=94a4bf00-c3f2-4194-b7e0-9bb07d12e711)
+* [Current State of Contacts](https://docs.google.com/presentation/d/e/2PACX-1vRRbJcCrlmN1J2-vQ6QDbI6blvqMkVW5I9QRTuCWAchGB0S9Jd4Su6Z1KM3Gsntq1hAzAgFdP8ZC61V/pub?start=false&loop=false&delayms=5000) | [tutorial](./contacts_tutorial.ipynb) | [video](https://vums-web.villanova.edu/Mediasite/Play/099aa1bf857e4bdcb683cb12c9e20cc81d?catalog=94a4bf00-c3f2-4194-b7e0-9bb07d12e711)
+* [Atmospheres, Limb Darkening, Intensity Weighting, and Reflection](https://docs.google.com/presentation/d/e/2PACX-1vR4GVqR7bgKZsPmH4_IGFNIU-3ke7JetdyjLpFpEGSWReDsl-dSUy11KAo5x2W7c2mD88gmRwrP0-YW/pub?start=false&loop=false&delayms=5000) | [tutorial](./atm_ld_tutorial.ipynb) | [video](https://vums-web.villanova.edu/Mediasite/Play/11c11f0e57c54b1296f385b8fbbdcf3c1d?catalog=94a4bf00-c3f2-4194-b7e0-9bb07d12e711)
 
 # Fitting
 
 * [Introduction to Fitting](https://docs.google.com/presentation/d/e/2PACX-1vRWFJ-AdPWszN_wtX9sMkOu_NGIQ7N_Lsw0faZxdb15yz2Miz60VJ1LqzWFMI_C8WWMj55w8h1AGBOf/pub?start=false&loop=false&delayms=5000) | [video](https://vums-web.villanova.edu/Mediasite/Play/c4055ad01b5b4e8ab73a744d04951f2b1d?catalog=94a4bf00-c3f2-4194-b7e0-9bb07d12e711)
-* [Fitting in PHOEBE with emcee](https://docs.google.com/presentation/d/e/2PACX-1vTduJ_GC0jLgMvB8dPH-QoBrgceaSAjJ5-v_ztmYSbnhPO9fS8PZ1M55Ouwoyz6Yu2A8GhuKstlHlgL/pub?start=false&loop=false&delayms=5000) | [tutorial #1](https://github.com/phoebe-project/phoebe2-workshop/blob/2018june/phoebe_fitting_1.ipynb), [tutorial #2](https://github.com/phoebe-project/phoebe2-workshop/blob/2018june/phoebe_fitting_2.ipynb) | [video](https://vums-web.villanova.edu/Mediasite/Play/6710bbe5d17140bea47d54f16712902f1d?catalog=94a4bf00-c3f2-4194-b7e0-9bb07d12e711)
+* [Fitting in PHOEBE with emcee](https://docs.google.com/presentation/d/e/2PACX-1vTduJ_GC0jLgMvB8dPH-QoBrgceaSAjJ5-v_ztmYSbnhPO9fS8PZ1M55Ouwoyz6Yu2A8GhuKstlHlgL/pub?start=false&loop=false&delayms=5000) | [tutorial #1](./phoebe_fitting_1.ipynb), [tutorial #2](./phoebe_fitting_2.ipynb) | [video](https://vums-web.villanova.edu/Mediasite/Play/6710bbe5d17140bea47d54f16712902f1d?catalog=94a4bf00-c3f2-4194-b7e0-9bb07d12e711)
 
 # Coming Soon in Future Releases
 
