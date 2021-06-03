@@ -98,7 +98,7 @@ Please test your installation well in advance of the workshop by running the [te
 # Wednesday June 24/31: Advanced MCMC
 * Talk: Marginalizing and Nuisance Parameters (Angela)
 * Tutorial: Marginalizing over Additional Parameters (Angela)
-* Talk: Convergence Criteria and Interpreting Parameter Uncertainties (Andrej)
+* [Tutoritalk: Convergence Criteria and Interpreting Parameter Uncertainties](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2021june/Tutorial_12_convergence.ipynb) (Andrej)
 * [Tutorial: Interpreting Chains and Convergence in MCMC](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2021june/Tutorial_12_convergence.ipynb) (Andrej)
 * Tutorial: Accessing and Propagating Posteriors (Kyle/Andrej - short tutorial covering propagating posteriors through constraints and forward model)
 * Exercises: Getting Posteriors (Kyle/Andrej)
@@ -107,3 +107,4 @@ Please test your installation well in advance of the workshop by running the [te
 * Talk: Common Pitfalls when Fitting (Angela - PHOEBE specific things like atmosphere bounds, but also q-search, choice of priors, dataset noise, etc)
 * Tutorial: Using PHOEBE with AWS (Kyle)
 * Fitting topics of interest
+
