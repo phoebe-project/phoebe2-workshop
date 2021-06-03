@@ -91,17 +91,17 @@ Please test your installation well in advance of the workshop by running the [te
 # Tuesday June 23/30: MCMC in PHOEBE
 * Talk: MCMC Introduction (Andrej)
 * [Tutorial: MCMC Basics in PHOEBE](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2021june/Tutorial_10_mcmc.ipynb) (Andrej)
-* [Tutorial: MCMC Continue](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2021june/Tutorial_11_mcmc_continued.ipynb) (Andrej)
+* [Tutorial: Continuing/Resampling in MCMC](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2021june/Tutorial_11_mcmc_continued.ipynb) (Andrej)
 * Talk: Choice of Parameterization (Angela)
 * [Exercises: Setting up an MCMC Run](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2021june/Exercises_06_mcmc.ipynb) (Andrej)
 
 # Wednesday June 24/31: Advanced MCMC
-* Talk: Marginalizing over Nuisance Parameters (Angela)
-* Tutorial: Noise Nuisance Parameter (Angela)
+* Talk: Marginalizing and Nuisance Parameters (Angela)
+* Tutorial: Marginalizing over Additional Parameters (Angela)
 * Talk: Convergence Criteria and Interpreting Parameter Uncertainties (Andrej)
-* Tutorial: Accessing and Interpreting MCMC Chains (Andrej)
-* Tutorial: Accessing and Propagating Posteriors (Kyle)
-* Exercises: Getting Posteriors (Kyle)
+* [Tutorial: Interpreting Chains and Convergence in MCMC](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2021june/Tutorial_12_convergence.ipynb) (Andrej)
+* Tutorial: Accessing and Propagating Posteriors (Kyle/Andrej - short tutorial covering propagating posteriors through constraints and forward model)
+* Exercises: Getting Posteriors (Kyle/Andrej)
 
 # Thursday June 25/July 1:
 * Talk: Common Pitfalls when Fitting (Angela - PHOEBE specific things like atmosphere bounds, but also q-search, choice of priors, dataset noise, etc)
