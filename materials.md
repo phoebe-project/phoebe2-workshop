@@ -52,11 +52,11 @@ We'll also be using [emcee](https://emcee.readthedocs.io/en/stable/) for fitting
 * [Introduction to PHOEBE 2: why so complicated?](https://docs.google.com/presentation/d/e/2PACX-1vT5d5bzuzABHvERmmMfe_aq7fN2w9Q3ctcFib0KM1e8bD_gUpyVCDBk7d28OWgKBNlNYSK6CI5xK2VD/pub?start=false&loop=false&delayms=3000) (Kyle)
 
 ### Tutorials
-* [Tutorial #1: Bundle Basics](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2019july/Intro_Tutorial_01_bundle_basics.ipynb) (Kyle)
-* [Tutorial #2: Constraints](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2019july/Intro_Tutorial_02_constraints.ipynb) (Kyle)
-* [Tutorial #3: Advanced Constraints](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2019july/Intro_Tutorial_03_advanced_constraints.ipynb) (Kyle)
-* [Tutorial #4: Units](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2019july/Intro_Tutorial_04_units.ipynb) (Kyle)
-* [Exercises #1: Building Systems](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2019july/Exercises_01.ipynb) (Kyle)
+* [Tutorial #1: Bundle Basics](./Intro_Tutorial_01_bundle_basics.ipynb) (Kyle)
+* [Tutorial #2: Constraints](./Intro_Tutorial_02_constraints.ipynb) (Kyle)
+* [Tutorial #3: Advanced Constraints](./Intro_Tutorial_03_advanced_constraints.ipynb) (Kyle)
+* [Tutorial #4: Units](./Intro_Tutorial_04_units.ipynb) (Kyle)
+* [Exercises #1: Building Systems](./Exercises_01.ipynb) (Kyle)
 
 # Tuesday
 
@@ -64,13 +64,13 @@ We'll also be using [emcee](https://emcee.readthedocs.io/en/stable/) for fitting
 * Scientific Introduction to PHOEBE (Andrej)
 
 ### Tutorials
-* [Tutorial #5: Datasets](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2019july/Intro_Tutorial_05_datasets.ipynb) (Bert)
-* [Tutorial #6: Time and Phase](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2019july/Intro_Tutorial_06_time_and_phase.ipynb) (Bert)
-* [Tutorial #7: Compute](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2019july/Intro_Tutorial_07_compute.ipynb) (Angela)
-* [Tutorial #8: Plotting](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2019july/Intro_Tutorial_08_plotting.ipynb) (Angela)
-* [Tutorial #9: Animating](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2019july/Intro_Tutorial_09_animating.ipynb) (Angela)
-* [Tutorial #10: Meshes](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2019july/Intro_Tutorial_10_meshes.ipynb) (Kyle)
-* [Exercises #2: Animations](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2019july/Exercises_02.ipynb) (Kyle)
+* [Tutorial #5: Datasets](./Intro_Tutorial_05_datasets.ipynb) (Bert)
+* [Tutorial #6: Time and Phase](./Intro_Tutorial_06_time_and_phase.ipynb) (Bert)
+* [Tutorial #7: Compute](./Intro_Tutorial_07_compute.ipynb) (Angela)
+* [Tutorial #8: Plotting](./Intro_Tutorial_08_plotting.ipynb) (Angela)
+* [Tutorial #9: Animating](./Intro_Tutorial_09_animating.ipynb) (Angela)
+* [Tutorial #10: Meshes](./Intro_Tutorial_10_meshes.ipynb) (Kyle)
+* [Exercises #2: Animations](./Exercises_02.ipynb) (Kyle)
 
 ### Downtown Outing
 
@@ -83,21 +83,21 @@ We'll also be using [emcee](https://emcee.readthedocs.io/en/stable/) for fitting
 
 
 ### Tutorials
-* [Tutorial #11: Passband Luminosity, Third Light, and Distance](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2019july/Intro_Tutorial_11_pblum_l3_distance.ipynb) (Kyle)
-* [Tutorial #12: Saving and Loading](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2019july/Intro_Tutorial_12_saving_loading.ipynb) (Bert)
-* [Tutorial #13: Hierarchies](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2019july/Intro_Tutorial_13_hierarchies.ipynb) (Angela)
-* [Tutorial #14: Spots](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2019july/Intro_Tutorial_14_spots.ipynb) (Bert)
-* [Tutorial #15: Semi-Detached Binaries](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2019july/Intro_Tutorial_15_semidetached.ipynb) (Angela)
-* [Tutorial #16: Contact Binaries](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2019july/Intro_Tutorial_16_contact_binaries.ipynb) (Angela)
-* [Tutorial #17: Optimizing PHOEBE](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2019july/Intro_Tutorial_17_optimizing.ipynb) (Kyle)
-* [Tutorial #18: Low-level access to passbands](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2019july/Intro_Tutorial_18_low_level_passbands.ipynb) (Andrej)
-* [Tutorial #19: Pulsations in PHOEBE](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2019july/Intro_Tutorial_19_pulsations.ipynb) (Andrej)
+* [Tutorial #11: Passband Luminosity, Third Light, and Distance](./Intro_Tutorial_11_pblum_l3_distance.ipynb) (Kyle)
+* [Tutorial #12: Saving and Loading](./Intro_Tutorial_12_saving_loading.ipynb) (Bert)
+* [Tutorial #13: Hierarchies](./Intro_Tutorial_13_hierarchies.ipynb) (Angela)
+* [Tutorial #14: Spots](./Intro_Tutorial_14_spots.ipynb) (Bert)
+* [Tutorial #15: Semi-Detached Binaries](./Intro_Tutorial_15_semidetached.ipynb) (Angela)
+* [Tutorial #16: Contact Binaries](./Intro_Tutorial_16_contact_binaries.ipynb) (Angela)
+* [Tutorial #17: Optimizing PHOEBE](./Intro_Tutorial_17_optimizing.ipynb) (Kyle)
+* [Tutorial #18: Low-level access to passbands](./Intro_Tutorial_18_low_level_passbands.ipynb) (Andrej)
+* [Tutorial #19: Pulsations in PHOEBE](./Intro_Tutorial_19_pulsations.ipynb) (Andrej)
 
 
 
 ### Building Systems & Forward Models
 
-The rest of the day is set aside to work on writing scripts to build your own systems (or to continue working on the [animations exercises](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2019july/Exercises_02.ipynb), if you'd rather).  If you don't have any specific systems you'd like to try, you can choose any from the literature or from the [Caleb catalog of EBs](http://caleb.eastern.edu/query_stars_by_type.php).
+The rest of the day is set aside to work on writing scripts to build your own systems (or to continue working on the [animations exercises](./Exercises_02.ipynb), if you'd rather).  If you don't have any specific systems you'd like to try, you can choose any from the literature or from the [Caleb catalog of EBs](http://caleb.eastern.edu/query_stars_by_type.php).
 
 Note that the [morphology definitions in caleb](http://caleb.eastern.edu/binary_type_definitions.php) are slightly different than PHOEBE.  You may want to use the following:
 
@@ -116,13 +116,13 @@ Note that the [morphology definitions in caleb](http://caleb.eastern.edu/binary_
 * [Introduction to Fitting](https://docs.google.com/presentation/d/e/2PACX-1vRPMs4qfUborTwJUcBMDy393d7sOVsTT2jsiUFGZAzcWGhEl53cuzSSEpxhE1HDsTnceS6EAek24zfe/pub?start=false&loop=false&delayms=3000) (Andrej)
 * [Fitting in PHOEBE with emcee](https://docs.google.com/presentation/d/e/2PACX-1vQyUigkK0EwzbLmAOsdu8t1tgKMC-lyt5dGKUYACWqXFWNNa7N6DnJnauocY1cEBXvF2pdTo28psCvV/pub?start=false&loop=false&delayms=3000) (Kelly)
 * [MCMC Tips & Tricks](https://docs.google.com/presentation/d/e/2PACX-1vRoGy9U53Lnko-v7OKBsD1fIxa3-RYyo3wMwRle1xFekZNpBtSWAOvl9wKZ3oLAsvgkEpd2B3TxNrS1/pub?start=false&loop=false&delayms=3000) (Angela)
-* [Fitting Tutorial #1: fitting a line](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2019july/phoebe_fitting_1.ipynb) (Kelly)
-* [Fitting Tutorial #2: fitting with PHOEBE](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2019july/phoebe_fitting_2.ipynb) (Kelly)
-* [preview of npdists package (experimental)](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2019july/npdists_preview.ipynb) (Kyle)
+* [Fitting Tutorial #1: fitting a line](./phoebe_fitting_1.ipynb) (Kelly)
+* [Fitting Tutorial #2: fitting with PHOEBE](./phoebe_fitting_2.ipynb) (Kelly)
+* [preview of npdists package (experimental)](./npdists_preview.ipynb) (Kyle)
 
 ### Fitting to Fake (or Real) Data
 
-The rest of the day is set aside to work on writing script to fit your own data/systems.  If you don't have your own data or want to get some easier practive first you can try the [Fitting Exercise](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2019july/Exercises_03_fitting.ipynb).
+The rest of the day is set aside to work on writing script to fit your own data/systems.  If you don't have your own data or want to get some easier practive first you can try the [Fitting Exercise](./Exercises_03_fitting.ipynb).
 
 
 ### Workshop Dinner @ Dave & Busters
