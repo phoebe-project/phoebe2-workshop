@@ -4,7 +4,7 @@
 
 The tutorials at the workshop will make heavy use of [Jupyter notebooks](https://jupyter.org/install).  If you'd prefer, you can copy and paste from the files into an interactive Python or IPython session, but if you'd like to follow along directly in Jupyter, please make sure that you have Jupyter up and running and can import PHOEBE (more on that next).
 
-The Jupyter notebooks (and talks) will all be linked below so that you can pull them up to view in the browser, or download and run locally on your own machine as we go through them.  We're still making changes to these between now and the workshop, so there should be no need to download them in advance.
+The Jupyter notebooks (and talks) will all be linked below so that you can pull them up to view in the browser, or download and run locally on your own machine as we go through them (see the links to download on the top left of each tutorial).  We're still making changes to these between now and the workshop, so there should be no need to download them in advance.
 
 ### Installing PHOEBE
 
@@ -45,29 +45,29 @@ Please test your installation well in advance of the workshop by running the [te
 * [Welcome & Introduction](https://docs.google.com/presentation/d/e/2PACX-1vTPiLVRPAUJnrSyNgqpWXbuQduLDqp36RP6inq5-QdtYA0nnLTjsQN1FuyhVIgvW9fHkiz_FAEpNrjp/pub?start=false&loop=false&delayms=3000) (Kelly - **2021 - NEEDS UPDATING**)
 * [Talk: PHOEBE Overview - wdgui to PHOEBE](https://docs.google.com/presentation/d/e/2PACX-1vTeR0gdxhuHt7-rEQMK5SEM3bGETEF-ItWQHsvmr8cwt1bNqJuMflTABL8vvV6jrNEdPqRaIpL8-TiJ/pub?start=false&loop=false&delayms=3000) (Andrej)
 * [Talk: Introduction to PHOEBE 2: why so complicated?](https://docs.google.com/presentation/d/e/2PACX-1vTdjGepiD4v0VvAv8DQsed_uCQ4SMYPqfUtCLzvR92PKjnSSeTZ9qWuZpVbzdNxWBE445BwigEg9Tv7/pub?start=false&loop=false&delayms=3000) (Kyle)
-* [Tutorial: General Concepts & Bundle Basics](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2021june/Tutorial_01_bundle_basics.ipynb) (Kyle)
-* [Tutorial: Constraints](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2021june/Tutorial_02_constraints.ipynb) (Kyle)
-* [Exercises: Building Systems](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2021june/Exercises_01_building_systems.ipynb) (Kyle)
+* [Tutorial: General Concepts & Bundle Basics](./Tutorial_01_bundle_basics.ipynb) (Kyle)
+* [Tutorial: Constraints](./Tutorial_02_constraints.ipynb) (Kyle)
+* [Exercises: Building Systems](./Exercises_01_building_systems.ipynb) (Kyle)
 
 
 # Wednesday June 16: Creating Forward Models
 
-* [Tutorial: Datasets](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2021june/Tutorial_03_datasets.ipynb) (Bert)
+* [Tutorial: Datasets](./Tutorial_03_datasets.ipynb) (Bert)
 * [Talk: Atmospheres, Limb Darkening, Intensity Weighting, Extinction, and Reflection](https://docs.google.com/presentation/d/e/2PACX-1vSrILRxT1eygipBOurKZ2trffr5KQBRbK3y1TxY0-oydV1t4SaoZAWvDLZfUCc4iIZDzaHhlkVW8meM/pub?start=false&loop=false&delayms=3000) (Dave)
-* [Tutorial: Compute](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2021june/Tutorial_04_compute.ipynb) (Angela)
-* [Tutorial: Time and Phase](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2021june/Tutorial_04b_time_and_phase.ipynb) (Bert)
-* [Tutorial: Plotting](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2021june/Tutorial_05_plotting.ipynb) (Angela)
-* [Tutorial: Flux Scaling - Passband Luminosity, Third Light, and Distance](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2021june/Tutorial_pblum_l3_distance.ipynb) (Kyle)
-* [Exercises: Creating Forward Models](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2021june/Exercises_02_forward_models.ipynb) (Kyle)
+* [Tutorial: Compute](./Tutorial_04_compute.ipynb) (Angela)
+* [Tutorial: Time and Phase](./Tutorial_04b_time_and_phase.ipynb) (Bert)
+* [Tutorial: Plotting](./Tutorial_05_plotting.ipynb) (Angela)
+* [Tutorial: Flux Scaling - Passband Luminosity, Third Light, and Distance](./Tutorial_pblum_l3_distance.ipynb) (Kyle)
+* [Exercises: Creating Forward Models](./Exercises_02_forward_models.ipynb) (Kyle)
 
 
 # Thursday June 17: Animations & Features
 
 * Talk: Scientific Introduction to PHOEBE (Andrej)
-* [Tutorial: Animations](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2021june/Tutorial_05b_animations.ipynb) (Angela)
-* [Tutorial: Accessing and Plotting Meshes](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2021june/Tutorial_05c_meshes.ipynb) (Kyle)
-* [Tutorial: Features (Spots & Gaussian Processes)](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2021june/Tutorial_06_features.ipynb) (Kyle)
-* [Exercises: Forward Model Animations](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2021june/Exercises_03_animations.ipynb) (Kyle)
+* [Tutorial: Animations](./Tutorial_05b_animations.ipynb) (Angela)
+* [Tutorial: Accessing and Plotting Meshes](./Tutorial_05c_meshes.ipynb) (Kyle)
+* [Tutorial: Features (Spots & Gaussian Processes)](./Tutorial_06_features.ipynb) (Kyle)
+* [Exercises: Forward Model Animations](./Exercises_03_animations.ipynb) (Kyle)
 
 
 
@@ -82,24 +82,24 @@ Please test your installation well in advance of the workshop by running the [te
 # Monday June 22/29: Inverse Problem Overview
 * [Talk: Introduction to the Inverse Problem](https://docs.google.com/presentation/d/e/2PACX-1vTtiioAwAllKi9rycyklKPGbbji2cS9sf2wp9nvkccKtb7T_RaYHL7ByFUXy8fhvaM7MlOLi2eCYdtV/pub?start=false&loop=false&delayms=3000) (Angela - **NEEDS WRITING**: framing the inverse problem, why it isn't simple, parameterization, overview of what can be obtained given types of systems and observations)
 * [Talk: Inverse Problem in PHOEBE](https://docs.google.com/presentation/d/e/2PACX-1vQsVUENU9QuQSFu2f5qvfJy9HJfgn3EqodG1nxuHXR4gukbt5J39aXmI8XDXo40RMJ93omsTix826z5/pub?start=false&loop=false&delayms=3000) (Kyle)
-* [Tutorial: Distributions & Priors](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2021june/Tutorial_07_distributions.ipynb) (Kyle)
-* [Tutorial: Estimators](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2021june/Tutorial_08a_estimators.ipynb) (Angela)
-* [Tutorial: Optimizers](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2021june/Tutorial_08b_optimizers.ipynb) (Bert)
-* [Tutorial: Running Jobs on External Compute Resources](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2021june/Tutorial_09_server.ipynb) (Kyle)
-* [Exercises: Estimators & Optimizers](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2021june/Exercises_05_estimators_optimizers.ipynb) (Kyle)
+* [Tutorial: Distributions & Priors](./Tutorial_07_distributions.ipynb) (Kyle)
+* [Tutorial: Estimators](./Tutorial_08a_estimators.ipynb) (Angela)
+* [Tutorial: Optimizers](./Tutorial_08b_optimizers.ipynb) (Bert)
+* [Tutorial: Running Jobs on External Compute Resources](./Tutorial_09_server.ipynb) (Kyle)
+* [Exercises: Estimators & Optimizers](./Exercises_05_estimators_optimizers.ipynb) (Kyle)
 
 # Tuesday June 23/30: MCMC in PHOEBE
 * Talk: MCMC Introduction (Andrej)
-* [Tutorial: MCMC Basics in PHOEBE](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2021june/Tutorial_10_mcmc.ipynb) (Andrej)
-* [Tutorial: Continuing/Resampling in MCMC](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2021june/Tutorial_11_mcmc_continued.ipynb) (Andrej)
+* [Tutorial: MCMC Basics in PHOEBE](./Tutorial_10_mcmc.ipynb) (Andrej)
+* [Tutorial: Continuing/Resampling in MCMC](./Tutorial_11_mcmc_continued.ipynb) (Andrej)
 * Talk: Choice of Parameterization (Angela)
-* [Exercises: Setting up an MCMC Run](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2021june/Exercises_06_mcmc.ipynb) (Andrej)
+* [Exercises: Setting up an MCMC Run](./Exercises_06_mcmc.ipynb) (Andrej)
 
 # Wednesday June 24/31: Advanced MCMC
 * Talk: Marginalizing and Nuisance Parameters (Angela)
 * Tutorial: Marginalizing over Additional Parameters (Angela)
-* [Tutoritalk: Convergence Criteria and Interpreting Parameter Uncertainties](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2021june/Tutorial_12_convergence.ipynb) (Andrej)
-* [Tutorial: Interpreting Chains and Convergence in MCMC](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2021june/Tutorial_12_convergence.ipynb) (Andrej)
+* [Tutoritalk: Convergence Criteria and Interpreting Parameter Uncertainties](./Tutorial_12_convergence.ipynb) (Andrej)
+* [Tutorial: Interpreting Chains and Convergence in MCMC](./Tutorial_12_convergence.ipynb) (Andrej)
 * Tutorial: Accessing and Propagating Posteriors (Kyle/Andrej - short tutorial covering propagating posteriors through constraints and forward model)
 * Exercises: Getting Posteriors (Kyle/Andrej)
 
@@ -107,4 +107,3 @@ Please test your installation well in advance of the workshop by running the [te
 * Talk: Common Pitfalls when Fitting (Angela - PHOEBE specific things like atmosphere bounds, but also q-search, choice of priors, dataset noise, etc)
 * Tutorial: Using PHOEBE with AWS (Kyle)
 * Fitting topics of interest
-
