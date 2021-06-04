@@ -8,11 +8,12 @@ The Jupyter notebooks (and talks) will all be linked below so that you can pull 
 
 ### Installing PHOEBE
 
-During the workshop, we will be using a custom development branch based on the recently-released 2.3 version of PHOEBE, but with the inclusion of a few features that won't officially be released until the upcoming 2.4 version.  The easiest way to install is via pip (you're welcome to install within a virtual or conda environment if you'd like, just make sure you know how to activate that environment from within Jupyter):
+During the workshop, we will be using a custom development branch based on the recently-released 2.3 version of PHOEBE, but with the inclusion of a few features that won't officially be released until the upcoming 2.4 version.  We'll also be using `emcee` in the second week (feel free to remove emcee below if you're only attending the first week).  The easiest way to install is via pip (you're welcome to install within a virtual or conda environment if you'd like, just make sure you know how to activate that environment from within Jupyter):
 
 ```
 pip install numpy
 pip install https://github.com/phoebe-project/phoebe2/archive/refs/heads/workshop2021.zip --ignore-installed
+pip install emcee
 ```
 
 Note that PHOEBE only supports Python 3.6+, so you may need to replace `pip` with `pip3` or even `python3 -m pip` depending on your system.  Also a "PEP 440 version" warning isn't a concern - this is just python complaining that "workshop2021" doesn't follow the standard version formatting.
@@ -29,11 +30,6 @@ You can check to make sure the correct version is installed in a Python console 
 (must say 'workshop2021').
 
 If you have any troubles before the meeting, please reach out to us for assistance.
-
-
-### Other Dependencies
-
-We'll also be using [ellc](https://github.com/pmaxted/ellc) as an optional alternate backend and [emcee](https://emcee.readthedocs.io/en/stable/) for fitting, so make sure you have those installed as well (both are available from pip).
 
 
 ### Testing Your Installation
