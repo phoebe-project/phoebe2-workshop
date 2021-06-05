@@ -79,7 +79,7 @@ s.install_conda()
 # 
 # Note that once 2.4 is relased, PHOEBE will make sure that the version number on the remote machine is the same as that on the local installation.
 # 
-# You can always call [b.dependencies](http://phoebe-project.org/docs/development/api/phoebe.frontend.bundle.Bundle.dependencies) to see the required pip dependencies for a given bundle.
+# You can always call [b.dependencies](http://phoebe-project.org/docs/development/api/phoebe.frontend.bundle.Bundle.dependencies.md) to see the required pip dependencies for a given bundle.
 # 
 # **NOTE**: this line will take a few minutes to run, but only needs to be run once to setup the conda environment on the remote server.
 
@@ -127,7 +127,7 @@ print(b.get_server('terra'))
 # use_server parameters
 # --------------------------
 # 
-# compute and solver options both have `use_server` parameters that will then dictate how [b.run_compute](http://phoebe-project.org/docs/development/api/) and [b.run_solver](http://phoebe-project.org/docs/development/api/) should handle running on external resources.  
+# compute and solver options both have `use_server` parameters that will then dictate how [b.run_compute](http://phoebe-project.org/docs/development/api/phoebe.frontend.bundle.Bundle.run_compute.md) and [b.run_solver](http://phoebe-project.org/docs/development/api/phoebe.frontend.bundle.Bundle.run_solver.md) should handle running on external resources.  
 # 
 # If 'none' (as by default), the job is run in the current thread.  `use_server` in solver options are set to 'compute' by default, which means they will fallback on the `use_server` parameter in the referenced compute options.
 
@@ -145,7 +145,7 @@ print(b.filter(qualifier='use_server'))
 print(b.filter(qualifier='compute'))
 
 
-# As with any other parameter in compute or solver options, these can either be set or overridden as keyword arguments when calling [b.run_compute](http://phoebe-project.org/docs/development/api/) and [b.run_solver](http://phoebe-project.org/docs/development/api/), respectively.
+# As with any other parameter in compute or solver options, these can either be set or overridden as keyword arguments when calling [b.run_compute](http://phoebe-project.org/docs/development/api/phoebe.frontend.bundle.Bundle.run_compute.md) and [b.run_solver](http://phoebe-project.org/docs/development/api/phoebe.frontend.bundle.Bundle.run_solver.md), respectively.
 
 # Running External Jobs with crimpl
 # --------------------------------

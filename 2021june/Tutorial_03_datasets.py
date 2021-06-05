@@ -107,7 +107,7 @@ b.filter(dataset='rv01', context='dataset').qualifiers
 # 
 # Note that there are actually **2** `times` Parameters - one for each star.  When sending `times=np.linspace(...)` to `b.add_dataset`, both times Parameters received that value.  But, we could set separate times for the two components after by setting the values of the individual Parameters.
 # 
-# Note: Technically you can also send a dictionary when creating the dataset: `b.add_dataset('rv', times={'primary': [0,1,2], 'secondary': [1,2,3]})`
+# Note: You can also send a dictionary when creating the dataset: `b.add_dataset('rv', times={'primary': [0,1,2], 'secondary': [1,2,3]})` to send values to individual parameters.
 
 # In[ ]:
 
@@ -151,7 +151,7 @@ b.filter(dataset='orb01', context='compute').qualifiers
 
 # ## Line Profiles
 
-# [Line profiles](http://phoebe-project.org/docs/2.3/tutorials/LP) are time *and* wavelength dependent.  Note that the times cannot be changed after the dataset is created and attached to the bundle (although the wavelengths can).  **However**, `compute_times` can be changed.  In the case of line profiles this distinction is a bit more important - you probably only want to provide `times` if you want to attach your actual observations, otherwise just provide `compute_times`.
+# [Line profiles](http://phoebe-project.org/docs/2.3/tutorials/LP) are time *and* wavelength dependent.  Note that the times cannot be changed after the dataset is created and attached to the bundle (although the wavelengths can).  **However**, `compute_times` can be changed.  Because of this, the distinction between `times` and `compute_times` is a bit more important for line profiles - you probably only want to provide `times` if you want to attach your actual observations, otherwise just provide `compute_times`.
 
 # In[ ]:
 
@@ -176,7 +176,7 @@ b.filter(dataset='lp01', context='dataset').qualifiers
 print(b.filter(dataset='lp01', context='dataset'))
 
 
-# If we instead provide `compute_times`, we won't have all these extra "observational" parameters.
+# If we instead provide `compute_times`, we won't have all these extra per-time "observational" parameters.
 
 # In[ ]:
 
@@ -230,7 +230,7 @@ b.filter(dataset='mesh01', context='compute').qualifiers
 
 # # Exercise
 
-# What choices are available for `rv_method`, `passband`, `pblum_mode`, `ld_mode`, and `intens_weighting`?
+# What choices are available for `rv_method`, `passband`, `pblum_mode`, `ld_mode`, and `intens_weighting` (refer back to the [first tutorial](./Tutorial_01_bundle_basics.ipynb) if you've forgotten how to check the choices)?
 
 # In[ ]:
 
@@ -246,7 +246,7 @@ b.filter(dataset='mesh01', context='compute').qualifiers
 
 
 
-# Add another RV dataset.  Set the new RV dataset to have `rv_method='dynamical'` while keeping the original 'rv01' dataset with `rv_method='flux-weighted'`.
+# Add another RV dataset.  Set the new RV dataset to have `rv_method='dynamical'` while keeping the original 'rv01' dataset with `rv_method='flux-weighted'`.  (You'll notice there is a parameter per-component - you'll either need to set both manually or use [set_value_all](http://phoebe-project.org/docs/latest/api/phoebe.parameters.ParameterSet.set_value_all.md))
 
 # In[ ]:
 

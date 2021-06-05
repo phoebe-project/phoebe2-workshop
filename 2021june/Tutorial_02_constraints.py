@@ -178,7 +178,7 @@ b.get_value('sma', component='binary', context='component')
 
 # # Exercise
 
-# How q is defined: is it Mprimary/Msecondary or Msecondary/Mprimary?
+# How is q defined: is it Mprimary/Msecondary or Msecondary/Mprimary?
 # 
 # Hint: there are (at least) 2 ways to do this.  Try first by looking through the equations of the constraints if you feel a bit daring.  You can also change the value of q and see how the resulting constrained masses react.
 
@@ -188,7 +188,7 @@ b.get_value('sma', component='binary', context='component')
 
 
 
-# Flipping constraints could be particularly useful if you have an observational constraint on 'asini' (say from the amplitude of RVs) and want to leave asini fixed as you fit for the inclination.  Flip the constraint so it is possible to adjust the values of both 'asini' and 'incl'.  (**NOTE** you may want to either start fresh or re-flip the Kepler's third law constraint back to solve for mass first).
+# Flipping constraints could be particularly useful if you have an observational constraint on 'asini' (say from the amplitude of RVs) and want to leave asini fixed as you fit for the inclination.  Flip the constraint so it is possible to adjust the values of both 'asini' and 'incl'.  (**NOTE** you may want to either start from a fresh bundle or re-flip the Kepler's third law constraint back to solve for mass first).
 
 # In[ ]:
 

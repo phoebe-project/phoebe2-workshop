@@ -57,11 +57,11 @@ print(b.get_parameter(qualifier='pblum_mode').choices)
 
 # * **component-coupled** (default): provide the passband luminosity of *one* of the stars, the other is scaled automatically. See `pblum_component` and `pblum` parameters.
 # * **decoupled**: provide the passband luminosity of each star individually.  See `pblum` parameters.
-# * **dataset-coupled**: scale this dataset according to the scaling of another (accounting for passbands). See `pblum_dataset` parameter.
-# * **dataset-scaled**: scale the light curve to the provided observational data (NOTE: cannot access luminosities or intensities in this mode)
-# * **absolute**: don't provide passband luminosities - fluxes/luminosities will be in absolute units.
+# * **dataset-coupled**: scale this dataset according to the scaling of another (accounting for passbands). See `pblum_dataset` parameter.  Note: `pblum` parameters will be hidden.
+# * **dataset-scaled**: scale the light curve to the provided observational data (NOTE: cannot access luminosities or intensities in this mode).  Note: `pblum` parameters will be hidden.
+# * **absolute**: don't provide passband luminosities - fluxes/luminosities will be in absolute units.  Note: `pblum` parameters will be hidden.
 
-# For all modes (except dataset-scaled), we can compute the relative and absolute luminosities outside of `run_compute` by calling [compute_pblums](http://phoebe-project.org/docs/devel/api/phoebe.frontend.bundle.Bundle.compute_pblums.md).  Note that this is a completely option step to expose these quantities and doesn't need to be called.
+# For all modes (except dataset-scaled), we can compute the relative and absolute luminosities outside of `run_compute` by calling [compute_pblums](http://phoebe-project.org/docs/devel/api/phoebe.frontend.bundle.Bundle.compute_pblums.md).  Note that this is a completely optional step to expose these quantities and doesn't need to be called.
 
 # In[ ]:
 
@@ -89,7 +89,7 @@ print(b.get_parameter(qualifier='l3_mode').choices)
 # * **flux** (default): provide third light in units of flux.  See `l3` parameter.
 # * **fraction**: provide third light as a fraction of the total flux.  See `l3_frac` parameter.
 
-# Similarly to compute_pblums, we can compute and expose the translation between `l3` and `l3_frac` via [compute_l3s](http://phoebe-project.org/docs/2.3/api/phoebe.frontend.bundle.Bundle.compute_l3s.md).
+# Similarly to `compute_pblums`, we can compute and expose the translation between `l3` and `l3_frac` via [compute_l3s](http://phoebe-project.org/docs/2.3/api/phoebe.frontend.bundle.Bundle.compute_l3s.md).
 
 # In[ ]:
 
@@ -102,7 +102,7 @@ print(b.compute_l3s())
 # 
 # See the [distance tutorial](http://phoebe-project.org/docs/2.3/tutorials/distance) for more details.
 
-# The 'distance' parameter lives in the 'system' context and is simply the distance between the center of the coordinate system and the observer (at t0).
+# The `distance` parameter lives in the 'system' context and is simply the distance between the center of the coordinate system and the observer (at t0).
 
 # In[ ]:
 
@@ -112,7 +112,7 @@ print(b.get_parameter(qualifier='distance', context='system'))
 
 # # Exercises
 
-# **NOTE**: this tutorial is a bit of a tangent and will not be used directly in the following tutorials, so don't feel that it is necessary to complete all the exercises below.  
+# **NOTE**: this tutorial is a bit of a tangent and will not be used directly in the following tutorials, so don't feel that it is necessary to complete all the exercises below. For any that do seem interesting to you, you may need to dig a little deeper into the explanations in the linked online docs for details about how each option works and feel free to ask questions!
 # 
 # 
 # Make a plot of multiple light curves in different passbands.  Have one passband be set so that the out-of-eclipse flux is approximately one (using `pblum_mode='component-coupled'` and manually adjusting `pblum` and calling `run_compute` or `compute_pblums(pbflux=True)`) and the other light curves all coupled relative to that (using `'dataset-coupled'` and setting the `pblum_dataset` parameter).  Try naming the datasets appropriately and include labels on the plot.

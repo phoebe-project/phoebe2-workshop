@@ -217,7 +217,7 @@ b.run_compute(compute='preview', times=[0, 0.5, 1])
 # In[ ]:
 
 
-print("dataset times: ", b.get_value('times', dataset='lc01', context='dataset'))
+print("dataset times: ", b.get_value('compute_times', dataset='lc01', context='dataset'))
 print("model times: ", b.get_value('times', dataset='lc01', context='model'))
 
 
