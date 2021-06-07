@@ -38,6 +38,8 @@ Please test your installation well in advance of the workshop by running the [te
 
 # Tuesday June 15: Overview and Building Systems in PHOEBE
 
+Session Chair: Angela
+
 * [Welcome & Introduction](https://docs.google.com/presentation/d/e/2PACX-1vTPiLVRPAUJnrSyNgqpWXbuQduLDqp36RP6inq5-QdtYA0nnLTjsQN1FuyhVIgvW9fHkiz_FAEpNrjp/pub?start=false&loop=false&delayms=3000) (Kelly - **2021 - NEEDS UPDATING**)
 * [Talk: PHOEBE Overview - wdgui to PHOEBE](https://docs.google.com/presentation/d/e/2PACX-1vTeR0gdxhuHt7-rEQMK5SEM3bGETEF-ItWQHsvmr8cwt1bNqJuMflTABL8vvV6jrNEdPqRaIpL8-TiJ/pub?start=false&loop=false&delayms=3000) (Andrej)
 * [Talk: Introduction to PHOEBE 2: why so complicated?](https://docs.google.com/presentation/d/e/2PACX-1vTdjGepiD4v0VvAv8DQsed_uCQ4SMYPqfUtCLzvR92PKjnSSeTZ9qWuZpVbzdNxWBE445BwigEg9Tv7/pub?start=false&loop=false&delayms=3000) (Kyle)
@@ -47,6 +49,8 @@ Please test your installation well in advance of the workshop by running the [te
 
 
 # Wednesday June 16: Creating Forward Models
+
+Session Chair: Kelly
 
 * [Tutorial: Datasets](./Tutorial_03_datasets.ipynb) (Bert)
 * [Talk: Atmospheres, Limb Darkening, Intensity Weighting, Extinction, and Reflection](https://docs.google.com/presentation/d/e/2PACX-1vSrILRxT1eygipBOurKZ2trffr5KQBRbK3y1TxY0-oydV1t4SaoZAWvDLZfUCc4iIZDzaHhlkVW8meM/pub?start=false&loop=false&delayms=3000) (Dave)
@@ -59,19 +63,26 @@ Please test your installation well in advance of the workshop by running the [te
 
 # Thursday June 17: Animations & Features
 
+Session Chair: Kelly
+
 * Talk: Scientific Introduction to PHOEBE (Andrej)
 * [Tutorial: Animations](./Tutorial_05b_animations.ipynb) (Angela)
 * [Tutorial: Accessing and Plotting Meshes](./Tutorial_05c_meshes.ipynb) (Kyle)
 * [Tutorial: Features (Spots & Gaussian Processes)](./Tutorial_06_features.ipynb) (Kyle)
+* Tutorial: Optimizing PHOEBE Computations (Kyle)
 * [Exercises: Forward Model Animations](./Exercises_03_animations.ipynb) (Kyle)
 
 
 
 # Friday June 18: PHOEBE Development & Upcoming Releases
 
+Session Chair: Michael
+
+* Group Photo/Screenshot
 * [Talk: In Development - Pulsations](https://docs.google.com/presentation/d/e/2PACX-1vR13F6t5UqxxLntwHs5_sVo8YW-xzRlq2BOm08KxRMYAETPqH8qHsmL6M8BvNNTXEzStFYcvKF-IjK5/pub?start=false&loop=false&delayms=3000) (Andrej - **NEEDS UPDATING**)
 * [Talk: In Development - Triple and Higher-Order Systems](https://docs.google.com/presentation/d/e/2PACX-1vSk1awjZ-mrvsSOQunNYikwGr6PjdAseIhPEnh84ABExkgAvAzZ1QF2WEMVIr04IMYPQYwEoPGDjir2/pub?start=false&loop=false&delayms=3000) (Kyle)
 * [Talk: In Development - Blended Atmosphere Tables](https://docs.google.com/presentation/d/e/2PACX-1vRMJxgdwwWs-IF1OY9ligGgNVul2z1Kk_GjRgH9-hFpkN8gJqtFcQUG4D3wzrsN998pvqt4bMNTtrfB/pub?start=false&loop=false&delayms=3000) (Andrej - **NEEDS UPDATING**)
+* Wrap Up: volunteer wrap-up contributions and discussion
 * Exercises: finish or continue any of the previous exercises.  Next week we start fitting! (Andrej)
 
 
@@ -88,7 +99,7 @@ Please test your installation well in advance of the workshop by running the [te
 * Talk: MCMC Introduction (Andrej)
 * [Tutorial: MCMC Basics in PHOEBE](./Tutorial_10_mcmc.ipynb) (Andrej)
 * [Tutorial: Continuing/Resampling in MCMC](./Tutorial_11_mcmc_continued.ipynb) (Andrej)
-* Talk: Choice of Parameterization (Angela)
+* Tutorial: Choice of Parameterization (Angela)
 * [Exercises: Setting up an MCMC Run](./Exercises_06_mcmc.ipynb) (Andrej)
 
 # Wednesday June 24/31: Advanced MCMC
@@ -102,4 +113,4 @@ Please test your installation well in advance of the workshop by running the [te
 # Thursday June 25/July 1:
 * Talk: Common Pitfalls when Fitting (Angela - PHOEBE specific things like atmosphere bounds, but also q-search, choice of priors, dataset noise, etc)
 * Tutorial: Using PHOEBE with AWS (Kyle)
-* Fitting topics of interest
+* Wrap Up: volunteer wrap-up contributions and discussion
