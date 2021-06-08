@@ -144,7 +144,7 @@ b.add_compute(compute='preview')
 b.filter(context='compute', qualifier='ltte')
 
 
-# Now let's set a few options to turn off some effects. Let's first disable all the advanced physics (`ltte`, `rv_grav`, `irrad_method`).
+# Now let's set a few options to turn off some effects. Let's first disable all the advanced physics (`ltte`, `rv_grav`, `irrad_method`).  Note:  we'll discuss which of these effects are most expensive and how to determine which are safe to disable later in the week.
 
 # In[ ]:
 
