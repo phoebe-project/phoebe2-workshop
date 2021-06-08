@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# # Optimizing Computations
+# # Workshop Tutorial: Optimizing Computations
 # 
 # In this tutorial we'll discuss which parts of PHOEBE are the most computationally expensive and how to minimize this cost for individual systems by testing which expensive effects can safely be disabled.
 # 
