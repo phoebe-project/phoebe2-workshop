@@ -69,7 +69,7 @@ Session Chair: Kelly
 * [Tutorial: Animations](./Tutorial_05b_animations.ipynb) (Angela)
 * [Tutorial: Accessing and Plotting Meshes](./Tutorial_05c_meshes.ipynb) (Kyle)
 * [Tutorial: Features (Spots & Gaussian Processes)](./Tutorial_06_features.ipynb) (Kyle)
-* Tutorial: Optimizing PHOEBE Computations (Kyle)
+* [Tutorial: Optimizing PHOEBE Computations](./Tutorial_optimizing_computations.ipynb) (Kyle)
 * [Exercises: Forward Model Animations](./Exercises_03_animations.ipynb) (Kyle)
 
 
