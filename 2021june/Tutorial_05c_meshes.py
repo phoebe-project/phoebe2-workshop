@@ -60,6 +60,8 @@ b.add_dataset('mesh', compute_times=[0, 0.25, 0.5, 0.75], dataset='mesh01')
 print(b.get_parameter('columns', dataset='mesh01').choices)
 
 
+# To see an explanation of these various choices, see the [mesh dataset tutorial](http://phoebe-project.org/docs/2.3/tutorials/MESH).
+
 # In[ ]:
 
 
