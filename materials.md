@@ -86,7 +86,7 @@ Session Chair: Michael
 * Exercises: finish or continue any of the previous exercises.  Next week we start fitting! (Andrej)
 
 
-# Monday June 22/29: Inverse Problem Overview
+# Monday June 21/28: Inverse Problem Overview
 * [Talk: Introduction to the Inverse Problem](https://docs.google.com/presentation/d/e/2PACX-1vTtiioAwAllKi9rycyklKPGbbji2cS9sf2wp9nvkccKtb7T_RaYHL7ByFUXy8fhvaM7MlOLi2eCYdtV/pub?start=false&loop=false&delayms=3000) (Angela - **NEEDS WRITING**: framing the inverse problem, why it isn't simple, parameterization, overview of what can be obtained given types of systems and observations)
 * [Talk: Inverse Problem in PHOEBE](https://docs.google.com/presentation/d/e/2PACX-1vQsVUENU9QuQSFu2f5qvfJy9HJfgn3EqodG1nxuHXR4gukbt5J39aXmI8XDXo40RMJ93omsTix826z5/pub?start=false&loop=false&delayms=3000) (Kyle)
 * [Tutorial: Distributions & Priors](./Tutorial_07_distributions.ipynb) (Kyle)
@@ -95,14 +95,14 @@ Session Chair: Michael
 * [Tutorial: Running Jobs on External Compute Resources](./Tutorial_09_server.ipynb) (Kyle)
 * [Exercises: Estimators & Optimizers](./Exercises_05_estimators_optimizers.ipynb) (Kyle)
 
-# Tuesday June 23/30: MCMC in PHOEBE
+# Tuesday June 22/29: MCMC in PHOEBE
 * Talk: MCMC Introduction (Andrej)
 * [Tutorial: MCMC Basics in PHOEBE](./Tutorial_10_mcmc.ipynb) (Andrej)
 * [Tutorial: Continuing/Resampling in MCMC](./Tutorial_11_mcmc_continued.ipynb) (Andrej)
 * Tutorial: Choice of Parameterization (Angela)
 * [Exercises: Setting up an MCMC Run](./Exercises_06_mcmc.ipynb) (Andrej)
 
-# Wednesday June 24/31: Advanced MCMC
+# Wednesday June 23/30: Advanced MCMC
 * Talk: Marginalizing and Nuisance Parameters (Angela)
 * Tutorial: Marginalizing over Additional Parameters (Angela)
 * [Tutoritalk: Convergence Criteria and Interpreting Parameter Uncertainties](./Tutorial_12_convergence.ipynb) (Andrej)
@@ -110,7 +110,7 @@ Session Chair: Michael
 * Tutorial: Accessing and Propagating Posteriors (Kyle/Andrej - short tutorial covering propagating posteriors through constraints and forward model)
 * Exercises: Getting Posteriors (Kyle/Andrej)
 
-# Thursday June 25/July 1:
+# Thursday June 24/July 1:
 * Talk: Common Pitfalls when Fitting (Angela - PHOEBE specific things like atmosphere bounds, but also q-search, choice of priors, dataset noise, etc)
 * Tutorial: Using PHOEBE with AWS (Kyle)
 * Wrap Up: volunteer wrap-up contributions and discussion
