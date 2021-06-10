@@ -99,7 +99,7 @@ Session Chair: Michael
 * Talk: MCMC Introduction (Andrej)
 * [Tutorial: MCMC Basics in PHOEBE](./Tutorial_10_mcmc.ipynb) (Andrej)
 * [Tutorial: Continuing/Resampling in MCMC](./Tutorial_11_mcmc_continued.ipynb) (Andrej)
-* Tutorial: Choice of Parameterization (Angela)
+* [Tutorial: Choice of Parameterization](./Tutorial_parametrization.ipynb) (Angela)
 * [Exercises: Setting up an MCMC Run](./Exercises_06_mcmc.ipynb) (Andrej)
 
 # Wednesday June 23/30: Advanced MCMC
