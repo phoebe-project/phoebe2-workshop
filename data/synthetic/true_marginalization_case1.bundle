@@ -1,0 +1,6167 @@
+[
+{
+"Class": "FloatParameter",
+"context": "system",
+"copy_for": false,
+"default_unit": "d",
+"description": "Time at which all values are provided.  For values with time-derivatives, this defines their zero-point.",
+"latexfmt": "t_0",
+"limits": [
+null,
+null
+],
+"qualifier": "t0",
+"uniqueid": "rbHIpHpMnpYlEGXrgEumNTjihxYfXG",
+"value": 0.0
+},
+{
+"Class": "FloatParameter",
+"advanced": true,
+"context": "system",
+"copy_for": false,
+"default_unit": "deg",
+"description": "Right ascension",
+"latexfmt": "\\alpha",
+"limits": [
+null,
+null
+],
+"qualifier": "ra",
+"uniqueid": "bcWXrsCcVzvgwjfVfctwqYdNWIDHSl",
+"value": 0.0
+},
+{
+"Class": "FloatParameter",
+"advanced": true,
+"context": "system",
+"copy_for": false,
+"default_unit": "deg",
+"description": "Declination",
+"latexfmt": "\\delta",
+"limits": [
+null,
+null
+],
+"qualifier": "dec",
+"uniqueid": "qJXDmaUzoomwTuVCCuXvNMohoQqajx",
+"value": 0.0
+},
+{
+"Class": "FloatParameter",
+"context": "system",
+"copy_for": false,
+"default_unit": "m",
+"description": "Distance to the system",
+"latexfmt": "d",
+"limits": [
+null,
+null
+],
+"qualifier": "distance",
+"uniqueid": "TtKyWZaPnXSoUItVaSgXNHhZuwRVNt",
+"value": 1.0
+},
+{
+"Class": "FloatParameter",
+"context": "system",
+"copy_for": false,
+"default_unit": "km / s",
+"description": "Constant barycentric systemic velocity (in the direction of positive RV or negative vz)",
+"latexfmt": "v_\\gamma",
+"limits": [
+null,
+null
+],
+"qualifier": "vgamma",
+"uniqueid": "FegedxkDriidHZVPSiUPRKKxkShgLJ",
+"value": 25.0
+},
+{
+"Class": "FloatParameter",
+"context": "system",
+"copy_for": false,
+"default_unit": "",
+"description": "Extinction E(B-V)",
+"latexfmt": "E(B-V)",
+"limits": [
+null,
+null
+],
+"qualifier": "ebv",
+"uniqueid": "zTSisbQRIGQgAPHKFJYNSzTlwkMHYr",
+"value": 0.0
+},
+{
+"Class": "FloatParameter",
+"context": "system",
+"copy_for": false,
+"default_unit": "",
+"description": "Extinction Av",
+"latexfmt": "A_v",
+"limits": [
+null,
+null
+],
+"qualifier": "Av",
+"uniqueid": "DdPRBAICBAWOvRewKnvnHFAeSFlHfN",
+"value": 0.0
+},
+{
+"Class": "FloatParameter",
+"context": "system",
+"copy_for": false,
+"default_unit": "",
+"description": "Extinction law parameter",
+"latexfmt": "R_v",
+"limits": [
+null,
+null
+],
+"qualifier": "Rv",
+"uniqueid": "krDsuKXenCUTCHVNEPUgXlOKhsABNa",
+"value": 3.1
+},
+{
+"Class": "HierarchyParameter",
+"advanced": true,
+"context": "system",
+"copy_for": false,
+"description": "Hierarchy representation",
+"qualifier": "hierarchy",
+"uniqueid": "CZqslsytxtCkSkyYpPwSbuiUWMwCNM",
+"value": "orbit:binary(star:primary, star:secondary)"
+},
+{
+"Class": "FloatParameter",
+"component": "primary",
+"context": "component",
+"copy_for": false,
+"default_unit": "solRad",
+"description": "Equivalent radius",
+"kind": "star",
+"latexfmt": "R_{{ \\mathrm{{ equiv }}, \\mathrm{{ {component} }} }}",
+"limits": [
+1e-06,
+null
+],
+"qualifier": "requiv",
+"uniqueid": "YEsQCSEoTXcHmPEcxxiZIXuUfwNGNl",
+"value": 2.952164455234576
+},
+{
+"Class": "FloatParameter",
+"component": "primary",
+"context": "component",
+"copy_for": false,
+"default_unit": "solRad",
+"description": "Critical (maximum) value of the equivalent radius for the given morphology",
+"kind": "star",
+"latexfmt": "R_{{ \\mathrm{{ equiv }}, \\mathrm{{ max }}, \\mathrm{{ {component} }} }}",
+"limits": [
+0.0,
+null
+],
+"qualifier": "requiv_max",
+"uniqueid": "LOwIygcxGzNKmvaJIGcpcBbMaaiJHt",
+"value": 5.697948612842372
+},
+{
+"Class": "FloatParameter",
+"component": "primary",
+"context": "component",
+"copy_for": false,
+"default_unit": "solRad",
+"description": "Critical (minimum) value of the equivalent radius for the given morphology",
+"kind": "star",
+"latexfmt": "R_{{ \\mathrm{{ equiv }}, \\mathrm{{ min }}, \\mathrm{{ {component} }} }}",
+"limits": [
+0.0,
+null
+],
+"qualifier": "requiv_min",
+"uniqueid": "EFxoongBlovDoQdoRszmXFUivQEHvq",
+"value": 0.1,
+"visible_if": "hierarchy.is_contact_binary:True"
+},
+{
+"Class": "FloatParameter",
+"component": "primary",
+"context": "component",
+"copy_for": false,
+"default_unit": "K",
+"description": "Mean effective temperature",
+"kind": "star",
+"latexfmt": "T_{{ \\mathrm{{ eff }}, \\mathrm{{ {component} }} }}",
+"limits": [
+300.0,
+null
+],
+"qualifier": "teff",
+"uniqueid": "bDQUbvwFmfAhIPoPKoYDkNGufzVIfl",
+"value": 7500.0
+},
+{
+"Class": "FloatParameter",
+"component": "primary",
+"context": "component",
+"copy_for": false,
+"default_unit": "",
+"description": "Abundance/Metallicity",
+"kind": "star",
+"limits": [
+null,
+null
+],
+"qualifier": "abun",
+"uniqueid": "AdQxjQaiedAFaalPymoBLcMbKgpEdw",
+"value": 0.0,
+"visible_if": "hierarchy.is_contact_binary:False"
+},
+{
+"Class": "FloatParameter",
+"component": "primary",
+"context": "component",
+"copy_for": false,
+"default_unit": "",
+"description": "logg at requiv",
+"kind": "star",
+"latexfmt": "\\mathrm{{log}}g_\\mathrm{{ {component} }}",
+"limits": [
+null,
+null
+],
+"qualifier": "logg",
+"uniqueid": "eBRoDOsjbqJYAkfWJLEmNFPimWVwml",
+"value": 4.407284009796008
+},
+{
+"Class": "FloatParameter",
+"component": "primary",
+"context": "component",
+"copy_for": false,
+"default_unit": "",
+"description": "Synchronicity parameter",
+"kind": "star",
+"latexfmt": "F_\\mathrm{{ {component} }}",
+"limits": [
+0.0,
+null
+],
+"qualifier": "syncpar",
+"uniqueid": "TYNlXpFhicChNYAEPowVMEYnDNefHq",
+"value": 1.0,
+"visible_if": "hierarchy.is_binary:True"
+},
+{
+"Class": "FloatParameter",
+"advanced": true,
+"component": "primary",
+"context": "component",
+"copy_for": false,
+"default_unit": "d",
+"description": "Rotation period (wrt the sky)",
+"kind": "star",
+"latexfmt": "P_\\mathrm{{ {component} }}",
+"limits": [
+1e-06,
+null
+],
+"qualifier": "period",
+"uniqueid": "iwLNOMNWaBRgaIVcnvkgBUIUSWWGWU",
+"value": 1.67
+},
+{
+"Class": "FloatParameter",
+"advanced": true,
+"component": "primary",
+"context": "component",
+"copy_for": false,
+"default_unit": "rad / d",
+"description": "Rotation frequency (wrt the sky)",
+"kind": "star",
+"latexfmt": "f_\\mathrm{{ {component} }}",
+"limits": [
+0.0,
+null
+],
+"qualifier": "freq",
+"uniqueid": "dXNljsscGNbRTqArRrtplwVNjXXOnF",
+"value": 3.7623862275449103
+},
+{
+"Class": "FloatParameter",
+"advanced": true,
+"component": "primary",
+"context": "component",
+"copy_for": false,
+"default_unit": "deg",
+"description": "Pitch of the stellar rotation axis wrt the orbital inclination",
+"kind": "star",
+"limits": [
+null,
+null
+],
+"qualifier": "pitch",
+"uniqueid": "SYVFcHCMftCSixNJBYXVDaYxRWpVHG",
+"value": 0.0,
+"visible_if": "hierarchy.is_contact_binary:False,hierarchy.is_binary:True"
+},
+{
+"Class": "FloatParameter",
+"advanced": true,
+"component": "primary",
+"context": "component",
+"copy_for": false,
+"default_unit": "deg",
+"description": "Yaw of the stellar rotation axis wrt the orbital longitude of ascending node",
+"kind": "star",
+"limits": [
+null,
+null
+],
+"qualifier": "yaw",
+"uniqueid": "CzCksUuoZlYAbaBerfIRKYKcBFRzdk",
+"value": 0.0,
+"visible_if": "hierarchy.is_contact_binary:False,hierarchy.is_binary:True"
+},
+{
+"Class": "FloatParameter",
+"advanced": true,
+"component": "primary",
+"context": "component",
+"copy_for": false,
+"default_unit": "deg",
+"description": "Inclination of the stellar rotation axis",
+"kind": "star",
+"latexfmt": "i_\\mathrm{{ {component} }}",
+"limits": [
+null,
+null
+],
+"qualifier": "incl",
+"uniqueid": "JJvtciloWOTlLVFmgKqqZWtbjRjqRH",
+"value": 89.751,
+"visible_if": "hierarchy.is_contact_binary:False"
+},
+{
+"Class": "FloatParameter",
+"advanced": true,
+"component": "primary",
+"context": "component",
+"copy_for": false,
+"default_unit": "deg",
+"description": "Longitude of the ascending node (ie. equator) of the star",
+"kind": "star",
+"limits": [
+null,
+null
+],
+"qualifier": "long_an",
+"uniqueid": "gqFJYKoWMYLBiVCBAfprGTBddeLfnM",
+"value": 0.0,
+"visible_if": "hierarchy.is_contact_binary:False"
+},
+{
+"Class": "FloatParameter",
+"component": "primary",
+"context": "component",
+"copy_for": false,
+"default_unit": "",
+"description": "Bolometric gravity brightening",
+"kind": "star",
+"latexfmt": "\\Beta_{{ \\mathrm{{bol}}, \\mathrm{{ {component} }} }}",
+"limits": [
+0.0,
+1.0
+],
+"qualifier": "gravb_bol",
+"uniqueid": "DYjgxqoyljJUrYACJXBRruTXUjAYOG",
+"value": 0.32
+},
+{
+"Class": "FloatParameter",
+"component": "primary",
+"context": "component",
+"copy_for": false,
+"default_unit": "",
+"description": "ratio of incident bolometric light that is used for reflection/irradiation (heating without redistribution)",
+"kind": "star",
+"latexfmt": "A_{{ \\mathrm{{bol}}, \\mathrm{{ {component} }} }}",
+"limits": [
+0.0,
+1.0
+],
+"qualifier": "irrad_frac_refl_bol",
+"uniqueid": "axwbXsGFdrVXqMiRyAqSrbALFixaYH",
+"value": 0.6
+},
+{
+"Class": "FloatParameter",
+"advanced": true,
+"component": "primary",
+"context": "component",
+"copy_for": false,
+"default_unit": "",
+"description": "ratio of incident bolometric light that is lost/ignored",
+"kind": "star",
+"limits": [
+0.0,
+1.0
+],
+"qualifier": "irrad_frac_lost_bol",
+"uniqueid": "DxSjVQcxnsjquYVejcOXfXLCZdPsmq",
+"value": 0.4
+},
+{
+"Class": "ChoiceParameter",
+"choices": [
+"lookup",
+"manual"
+],
+"component": "primary",
+"context": "component",
+"copy_for": false,
+"description": "Mode to use for bolometric limb-darkening (used only for irradiation).",
+"kind": "star",
+"qualifier": "ld_mode_bol",
+"uniqueid": "gQWPBsYVRxrDflNknaoIeCgHMSILTK",
+"value": "lookup"
+},
+{
+"Class": "ChoiceParameter",
+"choices": [
+"linear",
+"logarithmic",
+"quadratic",
+"square_root",
+"power"
+],
+"component": "primary",
+"context": "component",
+"copy_for": false,
+"description": "Bolometric limb darkening model (used only for irradiation).",
+"kind": "star",
+"qualifier": "ld_func_bol",
+"uniqueid": "yTOpIUGLtDEMkhdnNoGAUqYRYXrxFc",
+"value": "logarithmic"
+},
+{
+"Class": "ChoiceParameter",
+"advanced": true,
+"choices": [
+"auto",
+"ck2004",
+"phoenix"
+],
+"component": "primary",
+"context": "component",
+"copy_for": false,
+"description": "Source for bolometric limb darkening coefficients (used only for irradiation; 'auto' to interpolate from the applicable table according to the 'atm' parameter, or the name of a specific atmosphere table)",
+"kind": "star",
+"qualifier": "ld_coeffs_source_bol",
+"uniqueid": "mmJinSekYVLLnbIWrPKLVKKzoZXJXk",
+"value": "auto",
+"visible_if": "ld_mode_bol:lookup"
+},
+{
+"Class": "FloatArrayParameter",
+"component": "primary",
+"context": "component",
+"copy_for": false,
+"default_unit": "",
+"description": "Bolometric limb darkening coefficients (used only for irradiation).",
+"kind": "star",
+"latexfmt": "\\mathrm{{ ldc }}_\\mathrm{{ bol, {component} }}",
+"qualifier": "ld_coeffs_bol",
+"required_shape": [
+null
+],
+"uniqueid": "dejEyArQrDTkiHjmuUPDgVSHmJUJCF",
+"value": [
+0.5,
+0.5
+],
+"visible_if": "ld_mode_bol:manual"
+},
+{
+"Class": "FloatParameter",
+"component": "primary",
+"context": "component",
+"copy_for": false,
+"default_unit": "solMass",
+"description": "Mass",
+"kind": "star",
+"latexfmt": "M_\\mathrm{{ {component} }}",
+"limits": [
+null,
+null
+],
+"qualifier": "mass",
+"uniqueid": "lTqKhtnPZaPFlQqWAsnrXOgaPuhaTG",
+"value": 8.118905217881775
+},
+{
+"Class": "FloatParameter",
+"component": "secondary",
+"context": "component",
+"copy_for": false,
+"default_unit": "solRad",
+"description": "Equivalent radius",
+"kind": "star",
+"latexfmt": "R_{{ \\mathrm{{ equiv }}, \\mathrm{{ {component} }} }}",
+"limits": [
+1e-06,
+null
+],
+"qualifier": "requiv",
+"uniqueid": "ddvOOIpqkTOkjjFSzpeVoeDwyjbOOx",
+"value": 1.8303419622454373
+},
+{
+"Class": "FloatParameter",
+"component": "secondary",
+"context": "component",
+"copy_for": false,
+"default_unit": "solRad",
+"description": "Critical (maximum) value of the equivalent radius for the given morphology",
+"kind": "star",
+"latexfmt": "R_{{ \\mathrm{{ equiv }}, \\mathrm{{ max }}, \\mathrm{{ {component} }} }}",
+"limits": [
+0.0,
+null
+],
+"qualifier": "requiv_max",
+"uniqueid": "SDpWsvNvTfHGgmTHZLytTaDmdURDJU",
+"value": 5.697948612842372
+},
+{
+"Class": "FloatParameter",
+"component": "secondary",
+"context": "component",
+"copy_for": false,
+"default_unit": "solRad",
+"description": "Critical (minimum) value of the equivalent radius for the given morphology",
+"kind": "star",
+"latexfmt": "R_{{ \\mathrm{{ equiv }}, \\mathrm{{ min }}, \\mathrm{{ {component} }} }}",
+"limits": [
+0.0,
+null
+],
+"qualifier": "requiv_min",
+"uniqueid": "SnZHAVnnniUXcUDflrjjYouaazZoeT",
+"value": 0.1,
+"visible_if": "hierarchy.is_contact_binary:True"
+},
+{
+"Class": "FloatParameter",
+"component": "secondary",
+"context": "component",
+"copy_for": false,
+"default_unit": "K",
+"description": "Mean effective temperature",
+"kind": "star",
+"latexfmt": "T_{{ \\mathrm{{ eff }}, \\mathrm{{ {component} }} }}",
+"limits": [
+300.0,
+null
+],
+"qualifier": "teff",
+"uniqueid": "cmxjxMCsxzTNtXMFbOXYVMICIFZJuY",
+"value": 7012.5
+},
+{
+"Class": "FloatParameter",
+"component": "secondary",
+"context": "component",
+"copy_for": false,
+"default_unit": "",
+"description": "Abundance/Metallicity",
+"kind": "star",
+"limits": [
+null,
+null
+],
+"qualifier": "abun",
+"uniqueid": "AxEkJYeCyjArAttWTsJNthxLcFJVDq",
+"value": 0.0,
+"visible_if": "hierarchy.is_contact_binary:False"
+},
+{
+"Class": "FloatParameter",
+"component": "secondary",
+"context": "component",
+"copy_for": false,
+"default_unit": "",
+"description": "logg at requiv",
+"kind": "star",
+"latexfmt": "\\mathrm{{log}}g_\\mathrm{{ {component} }}",
+"limits": [
+null,
+null
+],
+"qualifier": "logg",
+"uniqueid": "GQjkZfjkoXiKfwjbeRNSijaKgpCpmW",
+"value": 4.8225006307995
+},
+{
+"Class": "FloatParameter",
+"component": "secondary",
+"context": "component",
+"copy_for": false,
+"default_unit": "",
+"description": "Synchronicity parameter",
+"kind": "star",
+"latexfmt": "F_\\mathrm{{ {component} }}",
+"limits": [
+0.0,
+null
+],
+"qualifier": "syncpar",
+"uniqueid": "MnxbwNQHJysDZUPeOaugJqoBNZCINJ",
+"value": 1.0,
+"visible_if": "hierarchy.is_binary:True"
+},
+{
+"Class": "FloatParameter",
+"advanced": true,
+"component": "secondary",
+"context": "component",
+"copy_for": false,
+"default_unit": "d",
+"description": "Rotation period (wrt the sky)",
+"kind": "star",
+"latexfmt": "P_\\mathrm{{ {component} }}",
+"limits": [
+1e-06,
+null
+],
+"qualifier": "period",
+"uniqueid": "EqJpEVvfDFaAAcEdMVSolIyVIhYuGQ",
+"value": 1.67
+},
+{
+"Class": "FloatParameter",
+"advanced": true,
+"component": "secondary",
+"context": "component",
+"copy_for": false,
+"default_unit": "rad / d",
+"description": "Rotation frequency (wrt the sky)",
+"kind": "star",
+"latexfmt": "f_\\mathrm{{ {component} }}",
+"limits": [
+0.0,
+null
+],
+"qualifier": "freq",
+"uniqueid": "spYSkvsRzdzFJidNPtPjfAalcFYmpi",
+"value": 3.7623862275449103
+},
+{
+"Class": "FloatParameter",
+"advanced": true,
+"component": "secondary",
+"context": "component",
+"copy_for": false,
+"default_unit": "deg",
+"description": "Pitch of the stellar rotation axis wrt the orbital inclination",
+"kind": "star",
+"limits": [
+null,
+null
+],
+"qualifier": "pitch",
+"uniqueid": "JgkrRNJStuvyNqVhJJnkKGXWpbibJR",
+"value": 0.0,
+"visible_if": "hierarchy.is_contact_binary:False,hierarchy.is_binary:True"
+},
+{
+"Class": "FloatParameter",
+"advanced": true,
+"component": "secondary",
+"context": "component",
+"copy_for": false,
+"default_unit": "deg",
+"description": "Yaw of the stellar rotation axis wrt the orbital longitude of ascending node",
+"kind": "star",
+"limits": [
+null,
+null
+],
+"qualifier": "yaw",
+"uniqueid": "wIGaCWBuzAAYPsHTahtMbBCQcDAEly",
+"value": 0.0,
+"visible_if": "hierarchy.is_contact_binary:False,hierarchy.is_binary:True"
+},
+{
+"Class": "FloatParameter",
+"advanced": true,
+"component": "secondary",
+"context": "component",
+"copy_for": false,
+"default_unit": "deg",
+"description": "Inclination of the stellar rotation axis",
+"kind": "star",
+"latexfmt": "i_\\mathrm{{ {component} }}",
+"limits": [
+null,
+null
+],
+"qualifier": "incl",
+"uniqueid": "fNBLnlVoRLrvniuveWbNqWOxdAmGcb",
+"value": 89.751,
+"visible_if": "hierarchy.is_contact_binary:False"
+},
+{
+"Class": "FloatParameter",
+"advanced": true,
+"component": "secondary",
+"context": "component",
+"copy_for": false,
+"default_unit": "deg",
+"description": "Longitude of the ascending node (ie. equator) of the star",
+"kind": "star",
+"limits": [
+null,
+null
+],
+"qualifier": "long_an",
+"uniqueid": "KoDXDXvagfcrqMmcrdVHgLTYOPdKnz",
+"value": 0.0,
+"visible_if": "hierarchy.is_contact_binary:False"
+},
+{
+"Class": "FloatParameter",
+"component": "secondary",
+"context": "component",
+"copy_for": false,
+"default_unit": "",
+"description": "Bolometric gravity brightening",
+"kind": "star",
+"latexfmt": "\\Beta_{{ \\mathrm{{bol}}, \\mathrm{{ {component} }} }}",
+"limits": [
+0.0,
+1.0
+],
+"qualifier": "gravb_bol",
+"uniqueid": "gsqEZrJiiiJbmZIaEQArcEtXCrjoGC",
+"value": 0.32
+},
+{
+"Class": "FloatParameter",
+"component": "secondary",
+"context": "component",
+"copy_for": false,
+"default_unit": "",
+"description": "ratio of incident bolometric light that is used for reflection/irradiation (heating without redistribution)",
+"kind": "star",
+"latexfmt": "A_{{ \\mathrm{{bol}}, \\mathrm{{ {component} }} }}",
+"limits": [
+0.0,
+1.0
+],
+"qualifier": "irrad_frac_refl_bol",
+"uniqueid": "pKhFoWmyjAGIiQAuQXejuxlVZkdqQL",
+"value": 0.6
+},
+{
+"Class": "FloatParameter",
+"advanced": true,
+"component": "secondary",
+"context": "component",
+"copy_for": false,
+"default_unit": "",
+"description": "ratio of incident bolometric light that is lost/ignored",
+"kind": "star",
+"limits": [
+0.0,
+1.0
+],
+"qualifier": "irrad_frac_lost_bol",
+"uniqueid": "iGypmhSrQVxkSjyINUnHdErUsmRLqx",
+"value": 0.4
+},
+{
+"Class": "ChoiceParameter",
+"choices": [
+"lookup",
+"manual"
+],
+"component": "secondary",
+"context": "component",
+"copy_for": false,
+"description": "Mode to use for bolometric limb-darkening (used only for irradiation).",
+"kind": "star",
+"qualifier": "ld_mode_bol",
+"uniqueid": "LYgdzhecFHFlxrkDvqCDuOnIVFmVpZ",
+"value": "lookup"
+},
+{
+"Class": "ChoiceParameter",
+"choices": [
+"linear",
+"logarithmic",
+"quadratic",
+"square_root",
+"power"
+],
+"component": "secondary",
+"context": "component",
+"copy_for": false,
+"description": "Bolometric limb darkening model (used only for irradiation).",
+"kind": "star",
+"qualifier": "ld_func_bol",
+"uniqueid": "kDuSblCeaMwEtfWOKrQEHpLEYiMjvv",
+"value": "logarithmic"
+},
+{
+"Class": "ChoiceParameter",
+"advanced": true,
+"choices": [
+"auto",
+"ck2004",
+"phoenix"
+],
+"component": "secondary",
+"context": "component",
+"copy_for": false,
+"description": "Source for bolometric limb darkening coefficients (used only for irradiation; 'auto' to interpolate from the applicable table according to the 'atm' parameter, or the name of a specific atmosphere table)",
+"kind": "star",
+"qualifier": "ld_coeffs_source_bol",
+"uniqueid": "GFlDcYlbbJzHHtuXsMOwMMOzkRbQgK",
+"value": "auto",
+"visible_if": "ld_mode_bol:lookup"
+},
+{
+"Class": "FloatArrayParameter",
+"component": "secondary",
+"context": "component",
+"copy_for": false,
+"default_unit": "",
+"description": "Bolometric limb darkening coefficients (used only for irradiation).",
+"kind": "star",
+"latexfmt": "\\mathrm{{ ldc }}_\\mathrm{{ bol, {component} }}",
+"qualifier": "ld_coeffs_bol",
+"required_shape": [
+null
+],
+"uniqueid": "ydPoDmaIlGEjMDUvMOcLiLgLlGxvJx",
+"value": [
+0.5,
+0.5
+],
+"visible_if": "ld_mode_bol:manual"
+},
+{
+"Class": "FloatParameter",
+"component": "secondary",
+"context": "component",
+"copy_for": false,
+"default_unit": "solMass",
+"description": "Mass",
+"kind": "star",
+"latexfmt": "M_\\mathrm{{ {component} }}",
+"limits": [
+null,
+null
+],
+"qualifier": "mass",
+"uniqueid": "xDPnYTUZYOhieJbJJdMzUtJNzGgYlo",
+"value": 8.118905217881775
+},
+{
+"Class": "FloatParameter",
+"component": "binary",
+"context": "component",
+"copy_for": false,
+"default_unit": "d",
+"description": "Orbital period (defined at t0@system, sidereal: wrt the sky)",
+"kind": "orbit",
+"latexfmt": "P_\\mathrm{{ {component} }}",
+"limits": [
+1e-06,
+null
+],
+"qualifier": "period",
+"uniqueid": "yWbHOjGIPWSihdnMtRKSAlyrNKJxNo",
+"value": 1.67
+},
+{
+"Class": "FloatParameter",
+"component": "binary",
+"context": "component",
+"copy_for": false,
+"default_unit": "d",
+"description": "Anomalistic orbital period (defined at t0@system, anomalistic: time between two successive periastron passages)",
+"kind": "orbit",
+"latexfmt": "P_\\mathrm{{anom, {component} }}",
+"limits": [
+null,
+null
+],
+"qualifier": "period_anom",
+"uniqueid": "PdNoKrCvbLsJRtLnChfFmNDOVPQCvB",
+"value": 1.67,
+"visible_if": "dperdt:!0.0"
+},
+{
+"Class": "FloatParameter",
+"advanced": true,
+"component": "binary",
+"context": "component",
+"copy_for": false,
+"default_unit": "rad / d",
+"description": "Orbital frequency (sidereal)",
+"kind": "orbit",
+"latexfmt": "f_\\mathrm{{ {component} }}",
+"limits": [
+null,
+null
+],
+"qualifier": "freq",
+"uniqueid": "RZYlkPDpQpqNIfXXQtQtpmoFdHbjUi",
+"value": 3.7623862275449103
+},
+{
+"Class": "FloatParameter",
+"advanced": true,
+"component": "binary",
+"context": "component",
+"copy_for": false,
+"default_unit": "s / yr",
+"description": "Time derivative of orbital period (anomalistic), where period is defined at t0@system",
+"kind": "orbit",
+"latexfmt": "\\dot{{P}}_\\mathrm{{ {component} }}",
+"limits": [
+null,
+null
+],
+"qualifier": "dpdt",
+"uniqueid": "RgZMQNoCGQNZBjQsqzWEMeYLCGhhvA",
+"value": 0.0
+},
+{
+"Class": "FloatParameter",
+"component": "binary",
+"context": "component",
+"copy_for": false,
+"default_unit": "deg",
+"description": "Argument of periastron (defined at time t0@system)",
+"kind": "orbit",
+"latexfmt": "\\omega_{{0, \\mathrm{{ {component} }} }}",
+"limits": [
+null,
+null
+],
+"qualifier": "per0",
+"uniqueid": "WiOedjgrQvVEVrELEUYLTtNKgaMuyS",
+"value": 86.0
+},
+{
+"Class": "FloatParameter",
+"advanced": true,
+"component": "binary",
+"context": "component",
+"copy_for": false,
+"default_unit": "deg / yr",
+"description": "Time derivative of argument of periastron, where per0 is defined at t0@system",
+"kind": "orbit",
+"latexfmt": "\\dot{{\\omega}}_{{0, \\mathrm{{ {component} }}}}",
+"limits": [
+null,
+null
+],
+"qualifier": "dperdt",
+"uniqueid": "KjJJGQqEEeacjUJsTiHaGbWOHohOqS",
+"value": 0.0
+},
+{
+"Class": "FloatParameter",
+"component": "binary",
+"context": "component",
+"copy_for": false,
+"default_unit": "",
+"description": "Eccentricity",
+"kind": "orbit",
+"latexfmt": "e_\\mathrm{{ {component} }}",
+"limits": [
+0.0,
+0.999999
+],
+"qualifier": "ecc",
+"uniqueid": "IsWCfbUsvXLHwjSbPvGCoHNufIFcwy",
+"value": 0.0
+},
+{
+"Class": "FloatParameter",
+"component": "binary",
+"context": "component",
+"copy_for": false,
+"default_unit": "d",
+"description": "Zeropoint date at periastron passage of the primary component",
+"kind": "orbit",
+"latexfmt": "t_{{0, \\mathrm{{ perpass }}, \\mathrm{{ {component} }} }}",
+"limits": [
+null,
+null
+],
+"qualifier": "t0_perpass",
+"uniqueid": "qRdGqayXOOlpmINWCEXdJqoSZrZArA",
+"value": 1.2114444444444445
+},
+{
+"Class": "FloatParameter",
+"component": "binary",
+"context": "component",
+"copy_for": false,
+"default_unit": "d",
+"description": "Zeropoint date at superior conjunction of the primary component",
+"kind": "orbit",
+"latexfmt": "t_{{0, \\mathrm{{ supconj }}, \\mathrm{{ {component} }} }}",
+"limits": [
+null,
+null
+],
+"qualifier": "t0_supconj",
+"uniqueid": "dtclSnFWhVuQKKeisGlkGxVAlmUHEw",
+"value": 1.23
+},
+{
+"Class": "FloatParameter",
+"component": "binary",
+"context": "component",
+"copy_for": false,
+"default_unit": "d",
+"description": "Zeropoint date at reference point for the primary component",
+"kind": "orbit",
+"latexfmt": "t_{{0, _\\mathrm{{ ref }}, \\mathrm{{ {component} }} }}",
+"limits": [
+null,
+null
+],
+"qualifier": "t0_ref",
+"uniqueid": "kwDLDXQKfWLhFzqFTzWbBeBlJnrepN",
+"value": 1.23
+},
+{
+"Class": "FloatParameter",
+"advanced": true,
+"component": "binary",
+"context": "component",
+"copy_for": false,
+"default_unit": "deg",
+"description": "Mean anomaly at t0@system",
+"kind": "orbit",
+"limits": [
+null,
+null
+],
+"qualifier": "mean_anom",
+"uniqueid": "SSYFurubdFtVQGEZzrpyTZwzFnWkur",
+"value": 98.85031216858437
+},
+{
+"Class": "FloatParameter",
+"component": "binary",
+"context": "component",
+"copy_for": false,
+"default_unit": "deg",
+"description": "Orbital inclination angle",
+"kind": "orbit",
+"latexfmt": "i_\\mathrm{{ {component} }}",
+"limits": [
+0.0,
+180.0
+],
+"qualifier": "incl",
+"uniqueid": "UucKNfyvMxkTsfEBezpqwQKRFlsEwl",
+"value": 89.751
+},
+{
+"Class": "FloatParameter",
+"component": "binary",
+"context": "component",
+"copy_for": false,
+"default_unit": "",
+"description": "Mass ratio",
+"kind": "orbit",
+"latexfmt": "q_\\mathrm{{ {component} }}",
+"limits": [
+0.0,
+null
+],
+"qualifier": "q",
+"uniqueid": "aIKSZVLLxSWXzkQOHzHXXgRpurAXzw",
+"value": 1.0
+},
+{
+"Class": "FloatParameter",
+"component": "binary",
+"context": "component",
+"copy_for": false,
+"default_unit": "solRad",
+"description": "Semi-major axis of the orbit (defined at time t0@system)",
+"kind": "orbit",
+"latexfmt": "a_\\mathrm{{ {component} }}",
+"limits": [
+0.0,
+null
+],
+"qualifier": "sma",
+"uniqueid": "CKPnFgRyyftiYAlMJkxYGwTqfOrszn",
+"value": 15.0
+},
+{
+"Class": "FloatParameter",
+"component": "binary",
+"context": "component",
+"copy_for": false,
+"default_unit": "deg",
+"description": "Longitude of the ascending node",
+"kind": "orbit",
+"latexfmt": "\\Omega_\\mathrm{{ {component} }}",
+"limits": [
+null,
+null
+],
+"qualifier": "long_an",
+"uniqueid": "JvtubGCiALVeLEzOouYHjpIenVeHhe",
+"value": 0.0
+},
+{
+"Class": "FloatParameter",
+"component": "binary",
+"context": "component",
+"copy_for": false,
+"default_unit": "solRad",
+"description": "Projected semi major axis",
+"kind": "orbit",
+"latexfmt": "a_\\mathrm{{ {component} }} \\sin i_\\mathrm{{ {component} }}",
+"limits": [
+null,
+null
+],
+"qualifier": "asini",
+"uniqueid": "pQytiyjTzfIymgJfbzZcQeSlyndonf",
+"value": 14.999858350838108
+},
+{
+"Class": "FloatParameter",
+"component": "binary",
+"context": "component",
+"copy_for": false,
+"default_unit": "",
+"description": "Eccentricity times cos of argument of periastron",
+"kind": "orbit",
+"latexfmt": "e_\\mathrm{{ {component} }} \\cos \\omega_0",
+"limits": [
+-1.0,
+1.0
+],
+"qualifier": "ecosw",
+"uniqueid": "NaDlkzkyfEQqBjSDGTcZsaNfpXobRw",
+"value": 0.0
+},
+{
+"Class": "FloatParameter",
+"component": "binary",
+"context": "component",
+"copy_for": false,
+"default_unit": "",
+"description": "Eccentricity times sin of argument of periastron",
+"kind": "orbit",
+"latexfmt": "e_\\mathrm{{ {component} }} \\sin \\omega_0",
+"limits": [
+-1.0,
+1.0
+],
+"qualifier": "esinw",
+"uniqueid": "zOmDzyyQpgCnjhSLlBtOFsVUjDqblI",
+"value": 0.0
+},
+{
+"Class": "FloatParameter",
+"advanced": true,
+"component": "primary",
+"context": "component",
+"copy_for": false,
+"default_unit": "solRad",
+"description": "Semi major axis of the component in the orbit",
+"kind": "star",
+"latexfmt": "a_\\mathrm{{ {component} }}",
+"limits": [
+null,
+null
+],
+"qualifier": "sma",
+"uniqueid": "HylzExKFoDYMWlAbXuWEuzsapRYjdv",
+"value": 7.5
+},
+{
+"Class": "FloatParameter",
+"advanced": true,
+"component": "primary",
+"context": "component",
+"copy_for": false,
+"default_unit": "solRad",
+"description": "Projected semi major axis of the component in the orbit",
+"kind": "star",
+"latexfmt": "a_\\mathrm{{ {component} }} \\sin i_\\mathrm{{ {parent} }}",
+"limits": [
+null,
+null
+],
+"qualifier": "asini",
+"uniqueid": "XmdmifeQnHSjCFPmPuwnewPIQwIxQv",
+"value": 7.499929175419054
+},
+{
+"Class": "FloatParameter",
+"advanced": true,
+"component": "secondary",
+"context": "component",
+"copy_for": false,
+"default_unit": "solRad",
+"description": "Semi major axis of the component in the orbit",
+"kind": "star",
+"latexfmt": "a_\\mathrm{{ {component} }}",
+"limits": [
+null,
+null
+],
+"qualifier": "sma",
+"uniqueid": "fXgrUaXYWcZBhisnvPwYVVIeEMRmea",
+"value": 7.5
+},
+{
+"Class": "FloatParameter",
+"advanced": true,
+"component": "secondary",
+"context": "component",
+"copy_for": false,
+"default_unit": "solRad",
+"description": "Projected semi major axis of the component in the orbit",
+"kind": "star",
+"latexfmt": "a_\\mathrm{{ {component} }} \\sin i_\\mathrm{{ {parent} }}",
+"limits": [
+null,
+null
+],
+"qualifier": "asini",
+"uniqueid": "gDInxuEGCdFkjqZwCTtZbyzyGMDvFG",
+"value": 7.499929175419054
+},
+{
+"Class": "FloatParameter",
+"component": "binary",
+"context": "component",
+"copy_for": false,
+"default_unit": "",
+"description": "sum of fractional equivalent radii of children stars",
+"kind": "orbit",
+"latexfmt": "(R_\\mathrm{{ equiv, {children0} }} + R_\\mathrm{{ equiv, {children1} }}) / a_\\mathrm{{ {component} }}",
+"limits": [
+0.0,
+null
+],
+"qualifier": "requivsumfrac",
+"uniqueid": "hiwIvsFszqApJeBYQmnghwhTLKbCKO",
+"value": 0.31883376116533424
+},
+{
+"Class": "FloatParameter",
+"component": "binary",
+"context": "component",
+"copy_for": false,
+"default_unit": "",
+"description": "ratio between equivalent radii of children stars",
+"kind": "orbit",
+"latexfmt": "R_\\mathrm{{ equiv, {children1} }} / R_\\mathrm{{ equiv, {children0} }}",
+"limits": [
+0.0,
+null
+],
+"qualifier": "requivratio",
+"uniqueid": "RJHqDqJYwlPXEbuumIbJwnEXuVrSrC",
+"value": 0.62
+},
+{
+"Class": "FloatParameter",
+"component": "binary",
+"context": "component",
+"copy_for": false,
+"default_unit": "",
+"description": "ratio between effective temperatures of children stars",
+"kind": "orbit",
+"latexfmt": "T_\\mathrm{{ eff, {children1} }} / T_\\mathrm{{ eff, {children0} }}",
+"limits": [
+0.0,
+null
+],
+"qualifier": "teffratio",
+"uniqueid": "ZqwJKMnpnkcEbWNAAUdWtUhVDAZFXD",
+"value": 0.9349999999999999
+},
+{
+"Class": "FloatArrayParameter",
+"context": "dataset",
+"copy_for": false,
+"dataset": "lc01",
+"default_unit": "d",
+"description": "Observed times",
+"kind": "lc",
+"qualifier": "times",
+"required_shape": [
+null
+],
+"uniqueid": "rJbrDYjrvxbpqovThYvOyzRVxMAZEe",
+"value": [
+0.046954761925470656,
+0.11714084185001972,
+0.18521794460613972,
+0.18789800436355142,
+0.19193198309333526,
+0.20107546187493552,
+0.2021839744032572,
+0.31838929531307847,
+0.39187792254320675,
+0.5433798833925363,
+0.5802916032387562,
+0.6022547162926983,
+0.6414749634878436,
+0.6916699545513805,
+0.7103605819788694,
+0.8712929970154071,
+0.9394051075844168,
+0.9609840789396307,
+0.9710127579306127,
+1.0022688731230112,
+1.0204481074802807,
+1.1037514116430513,
+1.1827442586893322,
+1.1872771895424405,
+1.201965612131689,
+1.2381998284944151,
+1.289262976548533,
+1.3179786240439217,
+1.3547406422245023,
+1.381829513486138,
+1.433532874090464,
+1.4944830465799375,
+1.5896958364551972,
+1.6130951788499626,
+1.6249293467637482,
+1.6469415649791275,
+1.7162967726144052,
+1.8319136200711683,
+1.8619300588033616,
+1.965823616800535,
+1.9999652489640007,
+2.088767560948347,
+2.0984374897512215,
+2.103825610738409,
+2.230816326406183,
+2.239246880603801,
+2.274146279733232,
+2.3789282137450862,
+2.4442559200160274,
+2.48753143519958,
+2.532916025397821,
+2.5435648177039294,
+2.64555612104627,
+2.653894909394454,
+2.7000797319216483,
+2.828069625764096,
+2.894060929472011,
+2.9007760721044407,
+2.9614019752214493,
+2.9743695085513364,
+2.9828232595603077,
+3.0157481667454933,
+3.1194499547960186,
+3.1542835092418384,
+3.1798317939397602,
+3.1856895245132364,
+3.453516806969027,
+3.59507900573786,
+3.599780644783639,
+3.637107709426226,
+3.6756187004789656,
+3.687251706609641,
+3.8344151882577773,
+3.9650574084698462,
+3.9822106221609186,
+4.071832972259997,
+4.1426299451467,
+4.146619399905235,
+4.236547993389047,
+4.238550485581797,
+4.287687009457661,
+4.31418435433974,
+4.344166255581207,
+4.358649252656268,
+4.3703195379934145,
+4.375872112626925,
+4.386015134623204,
+4.471253786176273,
+4.5354268267806885,
+4.5615033221654855,
+4.6147936225293185,
+4.663107728563062,
+4.686512016477016,
+4.9045880861756705,
+5.013243819267022,
+5.210366062041293,
+5.218483217500717,
+5.232480534666997,
+5.288949197529044,
+5.356328030249583,
+5.448831829968968,
+5.4881350392732475,
+5.666014542065751,
+5.680445610939323,
+5.684339488686485,
+5.691007386145933,
+5.6996491070126485,
+5.701967704178797,
+5.722519057908734,
+5.743252488495788,
+5.759464955561793,
+5.761573344178369,
+5.772285886041676,
+5.812728726358587,
+5.865129348100831,
+5.89909976354571,
+5.908727612481732,
+5.920419312718391,
+6.027633760716439,
+6.04845519745046,
+6.063932141279244,
+6.120957227224214,
+6.13965955965896,
+6.155595642838442,
+6.169339968747569,
+6.176354970758771,
+6.180154289988415,
+6.214784014997635,
+6.399210213275238,
+6.439901992296374,
+6.458941130666561,
+6.521032700016889,
+6.531083254653984,
+6.5320081985713365,
+6.563295894652734,
+6.60173537492685,
+6.667667154456677,
+6.674103799636817,
+6.706378696181594,
+6.778165367962301,
+6.818202991034834,
+6.924721193700199,
+6.925315900777659,
+6.974287731445637,
+6.976311959272649,
+6.994792753175043,
+7.038885835403663,
+7.044144019235327,
+7.142412995491114,
+7.151893663724195,
+7.163272041185655,
+7.22055599470348,
+7.252542798196405,
+7.29990562424058,
+7.301220295167696,
+7.351940221225949,
+7.3926357939830165,
+7.395507950492876,
+7.742336894342166,
+7.781567509498505,
+7.805291762864554,
+7.917250380826646,
+7.936977033574206,
+7.9915856421672355,
+8.061939890460858,
+8.073189587250107,
+8.137978197024772,
+8.209932298479352,
+8.289400292173632,
+8.32619845547938,
+8.379449074988038,
+8.464086724711278,
+8.480082293222344,
+8.55803342392611,
+8.663823259286293,
+8.681260573682142,
+8.700121482468191,
+8.811031971111616,
+8.817353618548529,
+8.917730007820797,
+8.91923355015672,
+8.96546595851063,
+9.194826137446736,
+9.25596638292661,
+9.28081293465591,
+9.292961975762141,
+9.342139979247937,
+9.437480785146242,
+9.443723899839336,
+9.446689170495839,
+9.52749011516985,
+9.56083634723224,
+9.621885451174382,
+9.636627605010293,
+9.755215050028859,
+9.764594650133958,
+9.767610881903371,
+9.78618342232764,
+9.883738380592263,
+9.988470065678666
+]
+},
+{
+"Class": "FloatArrayParameter",
+"context": "dataset",
+"copy_for": false,
+"dataset": "lc01",
+"default_unit": "W / m2",
+"description": "Observed flux",
+"kind": "lc",
+"qualifier": "fluxes",
+"required_shape": [
+null
+],
+"uniqueid": "jmKgMFhVYNzxbFyijNvdZNoVQKESLm",
+"value": [
+1.5278537907764336,
+1.5265908599220335,
+1.5124751624884947,
+1.5311312862509892,
+1.5138158503947847,
+1.5181708597038976,
+1.5248500352348067,
+1.4928733001755594,
+1.171144819656564,
+1.5153445081777634,
+1.5245106480491741,
+1.5343476773151086,
+1.5251852561483425,
+1.522127952211199,
+1.5311693977967695,
+1.5273705346208384,
+1.527368697195567,
+1.5320886708751513,
+1.5219477349481565,
+1.5234983433764577,
+1.517895337645143,
+1.5158567964213752,
+1.2775081960088006,
+1.225780847111539,
+1.0768186814156049,
+0.9734477047673242,
+1.3810028399521839,
+1.5088071277032593,
+1.509542965899912,
+1.5174081677867668,
+1.5205862936052112,
+1.5371987475091544,
+1.5182195636829696,
+1.5315051730938745,
+1.5328211902446092,
+1.5379096891855377,
+1.5324345559486934,
+1.520265525924239,
+1.5227831187360235,
+1.5208372075224426,
+1.4451048955440116,
+1.188402475810708,
+1.2242819412530679,
+1.2781526420173497,
+1.5281443835475124,
+1.519509795532486,
+1.526058054891549,
+1.5286912576750495,
+1.5263141641454194,
+1.5315607570588692,
+1.535586327662579,
+1.5283918344883498,
+1.52330333185709,
+1.5242742298200347,
+1.5237662876504723,
+1.4761159692188586,
+0.9687157836793714,
+0.9714057460962452,
+1.4021437548778883,
+1.4726051381175043,
+1.5085311049116903,
+1.5153992210613048,
+1.5227994373213665,
+1.526999647283687,
+1.5167223052866228,
+1.527562982262792,
+1.5235652256321832,
+1.5124562794176195,
+1.5220573159894313,
+1.5217252454448116,
+1.4095158754371715,
+1.3372870186138652,
+1.5160884080414094,
+1.5243423163797842,
+1.5195286393998306,
+1.5372529862700521,
+1.5176196995711895,
+1.5306174902302672,
+1.532932220994819,
+1.5193358174161042,
+1.5260821359284418,
+1.5250010051046847,
+1.527476255555942,
+1.5286491008219323,
+1.5195659433406885,
+1.5142472485573801,
+1.527137626458588,
+1.5212607053600686,
+1.1437373790182,
+0.9768789679546688,
+1.2537617961202752,
+1.5178651684384084,
+1.5170996182820569,
+1.5366953188969759,
+1.5223020632410487,
+1.5276200164710159,
+1.5238425168779421,
+1.5200973787393028,
+1.5244619913397879,
+1.3279641207576174,
+1.3107404704169106,
+1.5167950427639803,
+1.52014354616839,
+1.5286984295328334,
+1.5251734801221395,
+1.5400455975749379,
+1.5368048658816613,
+1.5299246440784782,
+1.5249959353801663,
+1.5264411596605918,
+1.5282978914353964,
+1.5271145318514199,
+1.5258156564994692,
+1.5279571242382544,
+1.5292757595473458,
+1.527110529588038,
+1.5260046565232401,
+1.5243316941122864,
+1.5351934286038815,
+1.5135336505643182,
+1.5148076009872358,
+1.5183523517937811,
+1.5135929397557397,
+1.5152420405634761,
+1.466868456561069,
+1.4240195019157411,
+1.3926658694733602,
+1.0461165313420553,
+1.524205758622809,
+1.5127600416595866,
+1.5223250583153625,
+1.5245434126810582,
+1.5223504387952744,
+1.530663032763146,
+1.5282754296846395,
+1.5355890709290794,
+1.5238366187593053,
+1.535212910418744,
+1.5330150070953001,
+1.5284805105541974,
+1.5186891177110928,
+1.5189191265449717,
+1.5124094697138626,
+1.507742568887931,
+1.5345011970206746,
+1.5142043534205878,
+1.2598474334879732,
+1.2158185960160626,
+1.46299511299794,
+1.503389368970423,
+1.520517857558031,
+1.5198005806902712,
+1.5202159000276705,
+1.5134728657388725,
+1.526890956663481,
+1.5287034820091931,
+1.534186286025384,
+1.5272027054664647,
+1.5281026408186704,
+1.5145027638049595,
+1.509193614577794,
+0.9779893412486862,
+1.0656725409972567,
+1.501612612506307,
+1.5188461269512603,
+1.522875963684973,
+1.5248025372369063,
+1.5304985092051322,
+1.551290337446761,
+1.535309534641235,
+1.5380873467988614,
+1.5169979430904208,
+1.5280014165028624,
+1.525860534387212,
+1.5097113064208745,
+1.4348805995081813,
+1.3144115616381256,
+1.4505745882262457,
+1.4799837482735612,
+1.5268533955375088,
+1.5278777576424658,
+1.525145666572475,
+1.5285868532609368,
+1.5316330762564874,
+1.532125784971059,
+1.5303507072692963,
+1.5169901307461795,
+1.515954986570516,
+1.5190207902486186,
+1.5201073317324811,
+1.3308194646744567,
+1.0083657143389906,
+1.2166335665462662,
+1.3588266031187295,
+1.5137219472579266,
+1.5294515699358608,
+1.5216718267965432,
+1.524901284405437,
+1.5333494106032832,
+1.529575125685791
+]
+},
+{
+"Class": "ChoiceParameter",
+"choices": [
+"interp",
+"lookup",
+"manual"
+],
+"component": "_default",
+"context": "dataset",
+"copy_for": {
+"component": "*",
+"kind": [
+"star"
+]
+},
+"dataset": "lc01",
+"description": "Mode to use for limb-darkening",
+"kind": "lc",
+"qualifier": "ld_mode",
+"uniqueid": "flXOTyfIwRNtiUpXMRviJZpObToeRs",
+"value": "interp"
+},
+{
+"Class": "ChoiceParameter",
+"choices": [
+"linear",
+"logarithmic",
+"quadratic",
+"square_root",
+"power"
+],
+"component": "_default",
+"context": "dataset",
+"copy_for": {
+"component": "*",
+"kind": [
+"star"
+]
+},
+"dataset": "lc01",
+"description": "Limb darkening model",
+"kind": "lc",
+"qualifier": "ld_func",
+"uniqueid": "FHtIFIIHdwOylNumRDTnzuRXVoWnWp",
+"value": "logarithmic",
+"visible_if": "ld_mode:lookup|manual"
+},
+{
+"Class": "ChoiceParameter",
+"advanced": true,
+"choices": [
+"auto",
+"ck2004",
+"phoenix"
+],
+"component": "_default",
+"context": "dataset",
+"copy_for": {
+"component": "*",
+"kind": [
+"star"
+]
+},
+"dataset": "lc01",
+"description": "Source for limb darkening coefficients ('auto' to interpolate from the applicable table according to the 'atm' parameter, or the name of a specific atmosphere table)",
+"kind": "lc",
+"qualifier": "ld_coeffs_source",
+"uniqueid": "QsabLJFmAFdmhCmSEDNTdysRHkHHln",
+"value": "auto",
+"visible_if": "ld_mode:lookup"
+},
+{
+"Class": "FloatArrayParameter",
+"component": "_default",
+"context": "dataset",
+"copy_for": {
+"component": "*",
+"kind": [
+"star"
+]
+},
+"dataset": "lc01",
+"default_unit": "",
+"description": "Limb darkening coefficients",
+"kind": "lc",
+"latexfmt": "\\mathrm{{ ldc }}_\\mathrm{{ {dataset}, {component} }}",
+"qualifier": "ld_coeffs",
+"required_shape": [
+null
+],
+"uniqueid": "gRQvwTGNTmPCigQvUtfkjUOmeTcFKx",
+"value": [
+0.5,
+0.5
+],
+"visible_if": "ld_mode:manual"
+},
+{
+"Class": "ChoiceParameter",
+"choices": [
+"BRITE:red",
+"PanStarrs:g",
+"SDSS:u",
+"Stromgren:y",
+"Johnson:I",
+"Hipparcos:Hp",
+"Johnson:R",
+"SDSS:zprime",
+"Gaia:BP",
+"LSST:u",
+"TESS:T",
+"Tycho:V",
+"LSST:r",
+"Johnson:U",
+"PanStarrs:w",
+"Cousins:I",
+"LSST:i",
+"PanStarrs:r",
+"SDSS:z",
+"SDSS:r",
+"PanStarrs:i",
+"LSST:z",
+"Johnson:B",
+"SDSS:rprime",
+"PanStarrs:z",
+"LSST:g",
+"SDSS:g",
+"Stromgren:v",
+"Johnson:V",
+"SDSS:uprime",
+"Kepler:mean",
+"Gaia:G",
+"BRITE:blue",
+"PanStarrs:y",
+"Bolometric:900-40000",
+"Gaia:RVS",
+"Gaia:RP",
+"Tycho:B",
+"LSST:y3",
+"Cousins:R",
+"SWASP:pre2004",
+"PanStarrs:open",
+"SDSS:gprime",
+"Stromgren:u",
+"SDSS:i",
+"KELT:R",
+"SWASP:default",
+"SDSS:iprime",
+"Stromgren:b"
+],
+"context": "dataset",
+"copy_for": false,
+"dataset": "lc01",
+"description": "Passband",
+"kind": "lc",
+"qualifier": "passband",
+"uniqueid": "rJAamFCkoguLHKYHsGzYGNiGsoBijY",
+"value": "Johnson:V"
+},
+{
+"Class": "ChoiceParameter",
+"advanced": true,
+"choices": [
+"energy",
+"photon"
+],
+"context": "dataset",
+"copy_for": false,
+"dataset": "lc01",
+"description": "Whether passband intensities are weighted by energy or photons",
+"kind": "lc",
+"qualifier": "intens_weighting",
+"uniqueid": "JLucaEjHbluDnzqePMZpWbFidHlUMz",
+"value": "energy"
+},
+{
+"Class": "FloatArrayParameter",
+"context": "dataset",
+"copy_for": false,
+"dataset": "lc01",
+"default_unit": "d",
+"description": "Times to use during run_compute.  If empty, will use times parameter",
+"kind": "lc",
+"qualifier": "compute_times",
+"required_shape": [
+null
+],
+"uniqueid": "zkurPVJszKCLnRcBUkULTqIpRpiWgm",
+"value": []
+},
+{
+"Class": "FloatArrayParameter",
+"component": "binary",
+"context": "dataset",
+"copy_for": false,
+"dataset": "lc01",
+"default_unit": "",
+"description": "Phases associated with compute_times.",
+"kind": "lc",
+"qualifier": "compute_phases",
+"required_shape": [
+null
+],
+"uniqueid": "vHejJeTqfUCxjPhChKZyRdquwkZKQI",
+"value": []
+},
+{
+"Class": "ChoiceParameter",
+"advanced": true,
+"choices": [
+"period",
+"period_anom"
+],
+"component": "binary",
+"context": "dataset",
+"copy_for": false,
+"dataset": "lc01",
+"description": "period to use when converting between compute_times and compute_phases as well as when applying mask_phases",
+"kind": "lc",
+"qualifier": "phases_period",
+"uniqueid": "jghiHHVcHNofaTvXrIwKMDbCkFyQYk",
+"value": "period",
+"visible_if": "[dataset][context][kind]dperdt:!0.0,hierarchy.is_meshable:False"
+},
+{
+"Class": "ChoiceParameter",
+"advanced": true,
+"choices": [
+"dpdt",
+"none"
+],
+"component": "binary",
+"context": "dataset",
+"copy_for": false,
+"dataset": "lc01",
+"description": "dpdt to use when converting between compute_times and compute_phases as well as when applying mask_phases",
+"kind": "lc",
+"qualifier": "phases_dpdt",
+"uniqueid": "uMnbiPuoCXcBSVBTzmTYMhPqpCXmXK",
+"value": "dpdt",
+"visible_if": "[dataset][context][kind]dpdt:!0.0,hierarchy.is_meshable:False"
+},
+{
+"Class": "ChoiceParameter",
+"advanced": true,
+"choices": [
+"t0_supconj",
+"t0_perpass",
+"t0_ref"
+],
+"component": "binary",
+"context": "dataset",
+"copy_for": false,
+"dataset": "lc01",
+"description": "t0 to use when converting between compute_times and compute_phases as well as when applying mask_phases",
+"kind": "lc",
+"qualifier": "phases_t0",
+"uniqueid": "dfmujybzGsVZiefDitYKYEswTebKFu",
+"value": "t0_supconj",
+"visible_if": "hierarchy.is_meshable:False"
+},
+{
+"Class": "BoolParameter",
+"context": "dataset",
+"copy_for": false,
+"dataset": "lc01",
+"description": "Whether to apply the mask in mask_phases during plotting, calculate_residuals, calculate_chi2, calculate_lnlikelihood, and run_solver",
+"kind": "lc",
+"qualifier": "mask_enabled",
+"uniqueid": "yLFImCXzLMgERvQUjiKbGFdbsRkngI",
+"value": true
+},
+{
+"Class": "FloatArrayParameter",
+"component": "binary",
+"context": "dataset",
+"copy_for": false,
+"dataset": "lc01",
+"default_unit": "",
+"description": "List of phase-tuples.  Any observations inside the range set by any of the tuples will be included.",
+"kind": "lc",
+"qualifier": "mask_phases",
+"required_shape": [
+null,
+2
+],
+"uniqueid": "gwiBFZMxNQPmdWxsVEYhESbakzOtpL",
+"value": [],
+"visible_if": "[component]mask_enabled:True"
+},
+{
+"Class": "ChoiceParameter",
+"choices": [
+"auto",
+"compute_times",
+"times"
+],
+"context": "dataset",
+"copy_for": false,
+"dataset": "lc01",
+"description": "times to use within run_solver.  All options will properly account for masking from mask_times.  To see how this is parsed, see b.parse_solver_times.  auto: use compute_times if provided and shorter than times, otherwise use times.  compute_times: use compute_times if provided.  times: use times array.",
+"kind": "lc",
+"qualifier": "solver_times",
+"uniqueid": "OYbvfITNwubbHNgyRHLKMnKFgdZOxC",
+"value": "auto"
+},
+{
+"Class": "FloatArrayParameter",
+"context": "dataset",
+"copy_for": false,
+"dataset": "lc01",
+"default_unit": "W / m2",
+"description": "Observed uncertainty on flux",
+"kind": "lc",
+"qualifier": "sigmas",
+"required_shape": [
+null
+],
+"uniqueid": "PpBqJzSiCZeLzJVpQLhEpFauPEUbte",
+"value": [
+0.005,
+0.005,
+0.005,
+0.005,
+0.005,
+0.005,
+0.005,
+0.005,
+0.005,
+0.005,
+0.005,
+0.005,
+0.005,
+0.005,
+0.005,
+0.005,
+0.005,
+0.005,
+0.005,
+0.005,
+0.005,
+0.005,
+0.005,
+0.005,
+0.005,
+0.005,
+0.005,
+0.005,
+0.005,
+0.005,
+0.005,
+0.005,
+0.005,
+0.005,
+0.005,
+0.005,
+0.005,
+0.005,
+0.005,
+0.005,
+0.005,
+0.005,
+0.005,
+0.005,
+0.005,
+0.005,
+0.005,
+0.005,
+0.005,
+0.005,
+0.005,
+0.005,
+0.005,
+0.005,
+0.005,
+0.005,
+0.005,
+0.005,
+0.005,
+0.005,
+0.005,
+0.005,
+0.005,
+0.005,
+0.005,
+0.005,
+0.005,
+0.005,
+0.005,
+0.005,
+0.005,
+0.005,
+0.005,
+0.005,
+0.005,
+0.005,
+0.005,
+0.005,
+0.005,
+0.005,
+0.005,
+0.005,
+0.005,
+0.005,
+0.005,
+0.005,
+0.005,
+0.005,
+0.005,
+0.005,
+0.005,
+0.005,
+0.005,
+0.005,
+0.005,
+0.005,
+0.005,
+0.005,
+0.005,
+0.005,
+0.005,
+0.005,
+0.005,
+0.005,
+0.005,
+0.005,
+0.005,
+0.005,
+0.005,
+0.005,
+0.005,
+0.005,
+0.005,
+0.005,
+0.005,
+0.005,
+0.005,
+0.005,
+0.005,
+0.005,
+0.005,
+0.005,
+0.005,
+0.005,
+0.005,
+0.005,
+0.005,
+0.005,
+0.005,
+0.005,
+0.005,
+0.005,
+0.005,
+0.005,
+0.005,
+0.005,
+0.005,
+0.005,
+0.005,
+0.005,
+0.005,
+0.005,
+0.005,
+0.005,
+0.005,
+0.005,
+0.005,
+0.005,
+0.005,
+0.005,
+0.005,
+0.005,
+0.005,
+0.005,
+0.005,
+0.005,
+0.005,
+0.005,
+0.005,
+0.005,
+0.005,
+0.005,
+0.005,
+0.005,
+0.005,
+0.005,
+0.005,
+0.005,
+0.005,
+0.005,
+0.005,
+0.005,
+0.005,
+0.005,
+0.005,
+0.005,
+0.005,
+0.005,
+0.005,
+0.005,
+0.005,
+0.005,
+0.005,
+0.005,
+0.005,
+0.005,
+0.005,
+0.005,
+0.005,
+0.005,
+0.005,
+0.005,
+0.005,
+0.005,
+0.005,
+0.005,
+0.005,
+0.005,
+0.005,
+0.005
+]
+},
+{
+"Class": "FloatParameter",
+"context": "dataset",
+"copy_for": false,
+"dataset": "lc01",
+"default_unit": "",
+"description": "Natural log of the fractional amount to sigmas are underestimate (when calculating chi2/lnlikelihood)",
+"kind": "lc",
+"latexfmt": "\\sigma_\\mathrm{{ lnf, {dataset} }}",
+"limits": [
+null,
+null
+],
+"qualifier": "sigmas_lnf",
+"uniqueid": "JVhsymIWoFqSFswDepfvHhMTqnESrD",
+"value": -Infinity,
+"visible_if": "sigmas:<notempty>"
+},
+{
+"Class": "ChoiceParameter",
+"choices": [
+"decoupled",
+"component-coupled",
+"dataset-coupled",
+"dataset-scaled",
+"absolute"
+],
+"context": "dataset",
+"copy_for": false,
+"dataset": "lc01",
+"description": "Mode for scaling passband luminosities",
+"kind": "lc",
+"qualifier": "pblum_mode",
+"uniqueid": "OjubbYvrAXeJhaZdfGAuwDQMSWsIxH",
+"value": "dataset-scaled"
+},
+{
+"Class": "ChoiceParameter",
+"advanced": true,
+"choices": [
+"primary",
+"secondary"
+],
+"context": "dataset",
+"copy_for": false,
+"dataset": "lc01",
+"description": "Which component's pblum will be provided",
+"kind": "lc",
+"qualifier": "pblum_component",
+"uniqueid": "AWpNZeIGKMRUHOYxXOOBLLnlDldisi",
+"value": "primary",
+"visible_if": "pblum_mode:component-coupled"
+},
+{
+"Class": "FloatParameter",
+"component": "_default",
+"context": "dataset",
+"copy_for": {
+"component": "*",
+"kind": [
+"star"
+]
+},
+"dataset": "lc01",
+"default_unit": "W",
+"description": "Passband luminosity (defined at t0)",
+"kind": "lc",
+"latexfmt": "L_\\mathrm{{ pb, {dataset} }}",
+"limits": [
+null,
+null
+],
+"qualifier": "pblum",
+"uniqueid": "GXTPgOPdJHBLFhdSdhBoLSObkOIJSq",
+"value": 12.566370614359172,
+"visible_if": "[component]pblum_mode:decoupled||[component]pblum_mode:component-coupled,[component]pblum_component:<component>"
+},
+{
+"Class": "ChoiceParameter",
+"choices": [
+""
+],
+"context": "dataset",
+"copy_for": false,
+"dataset": "lc01",
+"description": "Dataset with which to couple luminosities based on color",
+"kind": "lc",
+"qualifier": "pblum_dataset",
+"uniqueid": "YgQYpOvPCZuqINjlTNgNCGtxXBiNyr",
+"value": "",
+"visible_if": "pblum_mode:dataset-coupled"
+},
+{
+"Class": "FloatParameter",
+"context": "dataset",
+"copy_for": false,
+"dataset": "lc01",
+"default_unit": "W / m2",
+"description": "Total inrinsic (excluding features and irradiation) passband flux (at t0, including l3 if pblum_mode='flux')",
+"kind": "lc",
+"limits": [
+null,
+null
+],
+"qualifier": "pbflux",
+"uniqueid": "fhtuDykDXybPjnngKjQvCkBAMFNJcd",
+"value": 1.0,
+"visible_if": "false"
+},
+{
+"Class": "ChoiceParameter",
+"choices": [
+"flux",
+"fraction"
+],
+"context": "dataset",
+"copy_for": false,
+"dataset": "lc01",
+"description": "Whether third light is given in units of flux or as a fraction of total light",
+"kind": "lc",
+"qualifier": "l3_mode",
+"uniqueid": "jBnyTnJgaSAhLBVCuiShhjbpFjCQBD",
+"value": "flux"
+},
+{
+"Class": "FloatParameter",
+"context": "dataset",
+"copy_for": false,
+"dataset": "lc01",
+"default_unit": "W / m2",
+"description": "Third light in flux units",
+"kind": "lc",
+"latexfmt": "l_\\mathrm{{ 3, {dataset} }}",
+"limits": [
+0.0,
+null
+],
+"qualifier": "l3",
+"uniqueid": "kBmJCGwhCHLpANAAOkYoffFtbGkqgt",
+"value": 0.0,
+"visible_if": "l3_mode:flux"
+},
+{
+"Class": "FloatParameter",
+"context": "dataset",
+"copy_for": false,
+"dataset": "lc01",
+"default_unit": "",
+"description": "Third light as a fraction of total flux (both system and third light)",
+"kind": "lc",
+"latexfmt": "l_\\mathrm{{ 3, frac, {dataset} }}",
+"limits": [
+0.0,
+1.0
+],
+"qualifier": "l3_frac",
+"uniqueid": "ojfLWPcsgroLTSIqOuEsUglVHJHTbG",
+"value": 0.0,
+"visible_if": "l3_mode:fraction"
+},
+{
+"Class": "FloatParameter",
+"context": "dataset",
+"copy_for": false,
+"dataset": "lc01",
+"default_unit": "s",
+"description": "Exposure time (time is defined as mid-exposure)",
+"kind": "lc",
+"limits": [
+null,
+null
+],
+"qualifier": "exptime",
+"uniqueid": "iNsXQFjdUBmDPFJPHlUdWtGXpdDqsA",
+"value": 0.0
+},
+{
+"Class": "ChoiceParameter",
+"choices": [
+"interp",
+"lookup",
+"manual"
+],
+"component": "primary",
+"context": "dataset",
+"copy_for": false,
+"dataset": "lc01",
+"description": "Mode to use for limb-darkening",
+"kind": "lc",
+"qualifier": "ld_mode",
+"uniqueid": "xSEyIbrbiLhkhcIoLKRNJLWBMPHAli",
+"value": "interp"
+},
+{
+"Class": "ChoiceParameter",
+"choices": [
+"interp",
+"lookup",
+"manual"
+],
+"component": "secondary",
+"context": "dataset",
+"copy_for": false,
+"dataset": "lc01",
+"description": "Mode to use for limb-darkening",
+"kind": "lc",
+"qualifier": "ld_mode",
+"uniqueid": "RKODrUAmHbroDaDzJzsmimwddYqDGX",
+"value": "interp"
+},
+{
+"Class": "ChoiceParameter",
+"choices": [
+"linear",
+"logarithmic",
+"quadratic",
+"square_root",
+"power"
+],
+"component": "primary",
+"context": "dataset",
+"copy_for": false,
+"dataset": "lc01",
+"description": "Limb darkening model",
+"kind": "lc",
+"qualifier": "ld_func",
+"uniqueid": "qXUVFphrIRiRIGGdNpvuiWgPVogeyN",
+"value": "logarithmic",
+"visible_if": "ld_mode:lookup|manual"
+},
+{
+"Class": "ChoiceParameter",
+"choices": [
+"linear",
+"logarithmic",
+"quadratic",
+"square_root",
+"power"
+],
+"component": "secondary",
+"context": "dataset",
+"copy_for": false,
+"dataset": "lc01",
+"description": "Limb darkening model",
+"kind": "lc",
+"qualifier": "ld_func",
+"uniqueid": "icVBHglkLRxejRcoUoIblKFOtKOMCi",
+"value": "logarithmic",
+"visible_if": "ld_mode:lookup|manual"
+},
+{
+"Class": "ChoiceParameter",
+"advanced": true,
+"choices": [
+"auto",
+"ck2004",
+"phoenix"
+],
+"component": "primary",
+"context": "dataset",
+"copy_for": false,
+"dataset": "lc01",
+"description": "Source for limb darkening coefficients ('auto' to interpolate from the applicable table according to the 'atm' parameter, or the name of a specific atmosphere table)",
+"kind": "lc",
+"qualifier": "ld_coeffs_source",
+"uniqueid": "iUFUyuqYpCnOulxIbRInkyNQnefRbt",
+"value": "auto",
+"visible_if": "ld_mode:lookup"
+},
+{
+"Class": "ChoiceParameter",
+"advanced": true,
+"choices": [
+"auto",
+"ck2004",
+"phoenix"
+],
+"component": "secondary",
+"context": "dataset",
+"copy_for": false,
+"dataset": "lc01",
+"description": "Source for limb darkening coefficients ('auto' to interpolate from the applicable table according to the 'atm' parameter, or the name of a specific atmosphere table)",
+"kind": "lc",
+"qualifier": "ld_coeffs_source",
+"uniqueid": "sbmlENclNPReuTAyiZOosHedsSYBzS",
+"value": "auto",
+"visible_if": "ld_mode:lookup"
+},
+{
+"Class": "FloatArrayParameter",
+"component": "primary",
+"context": "dataset",
+"copy_for": false,
+"dataset": "lc01",
+"default_unit": "",
+"description": "Limb darkening coefficients",
+"kind": "lc",
+"latexfmt": "\\mathrm{{ ldc }}_\\mathrm{{ {dataset}, {component} }}",
+"qualifier": "ld_coeffs",
+"required_shape": [
+null
+],
+"uniqueid": "yKnnmIzMBrbUTZopLezlsRLvDTcrrr",
+"value": [
+0.5,
+0.5
+],
+"visible_if": "ld_mode:manual"
+},
+{
+"Class": "FloatArrayParameter",
+"component": "secondary",
+"context": "dataset",
+"copy_for": false,
+"dataset": "lc01",
+"default_unit": "",
+"description": "Limb darkening coefficients",
+"kind": "lc",
+"latexfmt": "\\mathrm{{ ldc }}_\\mathrm{{ {dataset}, {component} }}",
+"qualifier": "ld_coeffs",
+"required_shape": [
+null
+],
+"uniqueid": "BMRNMOiaMiUqgfhCYRyLEMLmbUenqt",
+"value": [
+0.5,
+0.5
+],
+"visible_if": "ld_mode:manual"
+},
+{
+"Class": "FloatParameter",
+"component": "primary",
+"context": "dataset",
+"copy_for": false,
+"dataset": "lc01",
+"default_unit": "W",
+"description": "Passband luminosity (defined at t0)",
+"kind": "lc",
+"latexfmt": "L_\\mathrm{{ pb, {dataset} }}",
+"limits": [
+null,
+null
+],
+"qualifier": "pblum",
+"uniqueid": "jmGawRVwHfMrrShjdTGrvZyvMBqmdk",
+"value": 12.566370614359172,
+"visible_if": "[component]pblum_mode:decoupled||[component]pblum_mode:component-coupled,[component]pblum_component:<component>"
+},
+{
+"Class": "FloatParameter",
+"component": "secondary",
+"context": "dataset",
+"copy_for": false,
+"dataset": "lc01",
+"default_unit": "W",
+"description": "Passband luminosity (defined at t0)",
+"kind": "lc",
+"latexfmt": "L_\\mathrm{{ pb, {dataset} }}",
+"limits": [
+null,
+null
+],
+"qualifier": "pblum",
+"uniqueid": "axGlMIHDTSlEcxMKcUAYpnsukuFhXl",
+"value": 12.566370614359172,
+"visible_if": "[component]pblum_mode:decoupled||[component]pblum_mode:component-coupled,[component]pblum_component:<component>"
+},
+{
+"Class": "ConstraintParameter",
+"constraint_addl_vars": [],
+"constraint_func": "extinction",
+"constraint_kwargs": {},
+"context": "constraint",
+"default_unit": "",
+"description": "expression that determines the constraint",
+"in_solar_units": true,
+"kind": "extinction",
+"qualifier": "ebv",
+"uniqueid": "HZlQxDfZHxtJWVSIOYRVftlljWvIrN",
+"value": "{Av@system} / {Rv@system}"
+},
+{
+"Class": "ConstraintParameter",
+"component": "primary",
+"constraint_addl_vars": [],
+"constraint_func": "freq",
+"constraint_kwargs": {
+"component": "primary"
+},
+"context": "constraint",
+"default_unit": "rad / d",
+"description": "expression that determines the constraint",
+"in_solar_units": true,
+"kind": "star",
+"qualifier": "freq",
+"uniqueid": "PwPLGxQuvmraCTylhHpMkZFaBReNNd",
+"value": "6.283185 / {period@primary@component}"
+},
+{
+"Class": "ConstraintParameter",
+"component": "primary",
+"constraint_addl_vars": [],
+"constraint_func": "logg",
+"constraint_kwargs": {
+"component": "primary"
+},
+"context": "constraint",
+"default_unit": "",
+"description": "expression that determines the constraint",
+"in_solar_units": true,
+"kind": "star",
+"qualifier": "logg",
+"uniqueid": "ieIsxohrZQTexKJFJnGdoQBwymOrSG",
+"value": "log10((({mass@primary@component} / ({requiv@primary@component} ** 2.000000)) * 2942.206218) * 9.319541)"
+},
+{
+"Class": "ConstraintParameter",
+"component": "primary",
+"constraint_addl_vars": [],
+"constraint_func": "irrad_frac",
+"constraint_kwargs": {
+"component": "primary"
+},
+"context": "constraint",
+"default_unit": "",
+"description": "expression that determines the constraint",
+"in_solar_units": true,
+"kind": "star",
+"qualifier": "irrad_frac_lost_bol",
+"uniqueid": "FrConZQbIQITsCcfdrHcAOVlvAKeoq",
+"value": "1.000000 - {irrad_frac_refl_bol@primary@component}"
+},
+{
+"Class": "ConstraintParameter",
+"component": "secondary",
+"constraint_addl_vars": [],
+"constraint_func": "freq",
+"constraint_kwargs": {
+"component": "secondary"
+},
+"context": "constraint",
+"default_unit": "rad / d",
+"description": "expression that determines the constraint",
+"in_solar_units": true,
+"kind": "star",
+"qualifier": "freq",
+"uniqueid": "fiXJjnxmClaZmtWOPmUzUxryEzWDZj",
+"value": "6.283185 / {period@secondary@component}"
+},
+{
+"Class": "ConstraintParameter",
+"component": "secondary",
+"constraint_addl_vars": [],
+"constraint_func": "logg",
+"constraint_kwargs": {
+"component": "secondary"
+},
+"context": "constraint",
+"default_unit": "",
+"description": "expression that determines the constraint",
+"in_solar_units": true,
+"kind": "star",
+"qualifier": "logg",
+"uniqueid": "bMtYrJmSbFJbiGXJjScYBmIuqYMgae",
+"value": "log10((({mass@secondary@component} / ({requiv@secondary@component} ** 2.000000)) * 2942.206218) * 9.319541)"
+},
+{
+"Class": "ConstraintParameter",
+"component": "secondary",
+"constraint_addl_vars": [],
+"constraint_func": "irrad_frac",
+"constraint_kwargs": {
+"component": "secondary"
+},
+"context": "constraint",
+"default_unit": "",
+"description": "expression that determines the constraint",
+"in_solar_units": true,
+"kind": "star",
+"qualifier": "irrad_frac_lost_bol",
+"uniqueid": "clfPsxchJRgcOOQaviqBPgULSQxtyt",
+"value": "1.000000 - {irrad_frac_refl_bol@secondary@component}"
+},
+{
+"Class": "ConstraintParameter",
+"component": "binary",
+"constraint_addl_vars": [],
+"constraint_func": "asini",
+"constraint_kwargs": {
+"orbit": "binary"
+},
+"context": "constraint",
+"default_unit": "solRad",
+"description": "expression that determines the constraint",
+"in_solar_units": true,
+"kind": "orbit",
+"qualifier": "asini",
+"uniqueid": "siWbLckYnIkXvyqhiqbbHJxVbzHlvN",
+"value": "{sma@binary@component} * (sin({incl@binary@component}))"
+},
+{
+"Class": "ConstraintParameter",
+"component": "binary",
+"constraint_addl_vars": [],
+"constraint_func": "t0_perpass_supconj",
+"constraint_kwargs": {
+"orbit": "binary"
+},
+"context": "constraint",
+"default_unit": "d",
+"description": "expression that determines the constraint",
+"in_solar_units": true,
+"kind": "orbit",
+"qualifier": "t0_perpass",
+"uniqueid": "GwSvYRUlYtNRAluetXqzCxaijTMhtV",
+"value": "t0_supconj_to_perpass({t0_supconj@binary@component}, {period@binary@component}, {ecc@binary@component}, {per0@binary@component}, {dpdt@binary@component}, {dperdt@binary@component}, {t0@system})"
+},
+{
+"Class": "ConstraintParameter",
+"component": "binary",
+"constraint_addl_vars": [],
+"constraint_func": "t0_ref_supconj",
+"constraint_kwargs": {
+"orbit": "binary"
+},
+"context": "constraint",
+"default_unit": "d",
+"description": "expression that determines the constraint",
+"in_solar_units": true,
+"kind": "orbit",
+"qualifier": "t0_ref",
+"uniqueid": "OuQRHduGSoJOtiiGwYRHiIRnZFUMSt",
+"value": "t0_supconj_to_ref({t0_supconj@binary@component}, {period@binary@component}, {ecc@binary@component}, {per0@binary@component}, {dpdt@binary@component}, {dperdt@binary@component}, {t0@system})"
+},
+{
+"Class": "ConstraintParameter",
+"component": "binary",
+"constraint_addl_vars": [],
+"constraint_func": "period_anom",
+"constraint_kwargs": {
+"orbit": "binary"
+},
+"context": "constraint",
+"default_unit": "d",
+"description": "expression that determines the constraint",
+"in_solar_units": true,
+"kind": "orbit",
+"qualifier": "period_anom",
+"uniqueid": "HTbgBcvUTvTtOCQrTBwuxwfdlyHMnK",
+"value": "{period@binary@component} / ((((-1.000000 * {period@binary@component}) * {dperdt@binary@component}) / 6.283185307179586231995926937088) + 1.000000000000000000000000000000)"
+},
+{
+"Class": "ConstraintParameter",
+"component": "binary",
+"constraint_addl_vars": [],
+"constraint_func": "mean_anom",
+"constraint_kwargs": {
+"orbit": "binary"
+},
+"context": "constraint",
+"default_unit": "deg",
+"description": "expression that determines the constraint",
+"in_solar_units": true,
+"kind": "orbit",
+"qualifier": "mean_anom",
+"uniqueid": "lwIQbNXMvTMbhxiFpCmICMtpRemGeo",
+"value": "(6.283185 * ({t0@system} - {t0_perpass@binary@component})) / {period@binary@component}"
+},
+{
+"Class": "ConstraintParameter",
+"component": "binary",
+"constraint_addl_vars": [
+"esinw@binary@orbit@component",
+"ecosw@binary@orbit@component",
+"ecc@binary@orbit@component",
+"per0@binary@orbit@component"
+],
+"constraint_func": "ecosw",
+"constraint_kwargs": {
+"orbit": "binary"
+},
+"context": "constraint",
+"default_unit": "",
+"description": "expression that determines the constraint",
+"in_solar_units": true,
+"kind": "orbit",
+"qualifier": "ecosw",
+"uniqueid": "uJLBBzYvmhZCPgjhDbWdLcVZzZLhKR",
+"value": "{ecc@binary@component} * (cos({per0@binary@component}))"
+},
+{
+"Class": "ConstraintParameter",
+"component": "binary",
+"constraint_addl_vars": [
+"esinw@binary@orbit@component",
+"ecosw@binary@orbit@component",
+"ecc@binary@orbit@component",
+"per0@binary@orbit@component"
+],
+"constraint_func": "esinw",
+"constraint_kwargs": {
+"orbit": "binary"
+},
+"context": "constraint",
+"default_unit": "",
+"description": "expression that determines the constraint",
+"in_solar_units": true,
+"kind": "orbit",
+"qualifier": "esinw",
+"uniqueid": "BWjLhQzAsVpjuEjHCGdTGANlBlCnZI",
+"value": "{ecc@binary@component} * (sin({per0@binary@component}))"
+},
+{
+"Class": "ConstraintParameter",
+"component": "binary",
+"constraint_addl_vars": [],
+"constraint_func": "freq",
+"constraint_kwargs": {
+"component": "binary"
+},
+"context": "constraint",
+"default_unit": "rad / d",
+"description": "expression that determines the constraint",
+"in_solar_units": true,
+"kind": "orbit",
+"qualifier": "freq",
+"uniqueid": "IuobzgzGVwdsCWHJdxNyCAdmvBVruh",
+"value": "6.283185 / {period@binary@component}"
+},
+{
+"Class": "ConstraintParameter",
+"component": "primary",
+"constraint_addl_vars": [
+"mass@secondary@star@component",
+"period@binary@orbit@component",
+"sma@binary@orbit@component",
+"q@binary@orbit@component"
+],
+"constraint_func": "mass",
+"constraint_kwargs": {
+"component": "primary"
+},
+"context": "constraint",
+"default_unit": "solMass",
+"description": "expression that determines the constraint",
+"in_solar_units": true,
+"kind": "star",
+"qualifier": "mass",
+"uniqueid": "DCGQEIcAJFhhZmkzYKDRIIXdZFmLwU",
+"value": "(39.478418 * ({sma@binary@component} ** 3.000000)) / ((({period@binary@component} ** 2.000000) * ({q@binary@component} + 1.000000)) * 2942.206217504419328179210424423218)"
+},
+{
+"Class": "ConstraintParameter",
+"component": "primary",
+"constraint_addl_vars": [],
+"constraint_func": "comp_sma",
+"constraint_kwargs": {
+"component": "primary"
+},
+"context": "constraint",
+"default_unit": "solRad",
+"description": "expression that determines the constraint",
+"in_solar_units": true,
+"kind": "star",
+"qualifier": "sma",
+"uniqueid": "sGdCkCUIFjeFsPnctcXyyADjGivvbw",
+"value": "{sma@binary@component} / ((1.000000 / {q@binary@component}) + 1.000000)"
+},
+{
+"Class": "ConstraintParameter",
+"component": "primary",
+"constraint_addl_vars": [],
+"constraint_func": "comp_asini",
+"constraint_kwargs": {
+"component": "primary"
+},
+"context": "constraint",
+"default_unit": "solRad",
+"description": "expression that determines the constraint",
+"in_solar_units": true,
+"kind": "star",
+"qualifier": "asini",
+"uniqueid": "xScJHHMWtkKiNlbjRRjEAEnOCCJHFV",
+"value": "({sma@binary@component} * (sin({incl@binary@component}))) / ((1.000000 / {q@binary@component}) + 1.000000)"
+},
+{
+"Class": "ConstraintParameter",
+"component": "primary",
+"constraint_addl_vars": [],
+"constraint_func": "rotation_period",
+"constraint_kwargs": {
+"component": "primary"
+},
+"context": "constraint",
+"default_unit": "d",
+"description": "expression that determines the constraint",
+"in_solar_units": true,
+"kind": "star",
+"qualifier": "period",
+"uniqueid": "YevdWYdOaamCiOVEIZFNduBJqRDUhy",
+"value": "{period@binary@component} / {syncpar@primary@component}"
+},
+{
+"Class": "ConstraintParameter",
+"component": "primary",
+"constraint_addl_vars": [],
+"constraint_func": "pitch",
+"constraint_kwargs": {
+"component": "primary"
+},
+"context": "constraint",
+"default_unit": "deg",
+"description": "expression that determines the constraint",
+"in_solar_units": true,
+"kind": "star",
+"qualifier": "incl",
+"uniqueid": "ltmJZVTrPITqsCeHuQTTCULMgFamdG",
+"value": "{incl@binary@component} + {pitch@primary@component}"
+},
+{
+"Class": "ConstraintParameter",
+"component": "primary",
+"constraint_addl_vars": [],
+"constraint_func": "yaw",
+"constraint_kwargs": {
+"component": "primary"
+},
+"context": "constraint",
+"default_unit": "deg",
+"description": "expression that determines the constraint",
+"in_solar_units": true,
+"kind": "star",
+"qualifier": "long_an",
+"uniqueid": "xOBazJyFPVitrFaxEKaKmKdGcmQfwE",
+"value": "{long_an@binary@component} + {yaw@primary@component}"
+},
+{
+"Class": "ConstraintParameter",
+"component": "primary",
+"constraint_addl_vars": [],
+"constraint_func": "requiv_detached_max",
+"constraint_kwargs": {
+"component": "primary"
+},
+"context": "constraint",
+"default_unit": "solRad",
+"description": "expression that determines the constraint",
+"in_solar_units": true,
+"kind": "star",
+"qualifier": "requiv_max",
+"uniqueid": "lVHvpHpcEWbLZciLyDuRSwAOXeaCQq",
+"value": "requiv_L1({q@binary@component}, {syncpar@primary@component}, {ecc@binary@component}, {sma@binary@component}, {incl@primary@component}, {long_an@primary@component}, {incl@binary@component}, {long_an@binary@component}, 1)"
+},
+{
+"Class": "ConstraintParameter",
+"component": "secondary",
+"constraint_addl_vars": [
+"mass@primary@star@component",
+"period@binary@orbit@component",
+"sma@binary@orbit@component",
+"q@binary@orbit@component"
+],
+"constraint_func": "mass",
+"constraint_kwargs": {
+"component": "secondary"
+},
+"context": "constraint",
+"default_unit": "solMass",
+"description": "expression that determines the constraint",
+"in_solar_units": true,
+"kind": "star",
+"qualifier": "mass",
+"uniqueid": "KShzlUHEwlSCCtOJxGcKEhkPoPHLYG",
+"value": "(39.478418 * ({sma@binary@component} ** 3.000000)) / ((({period@binary@component} ** 2.000000) * ((1.000000 / {q@binary@component}) + 1.000000)) * 2942.206217504419328179210424423218)"
+},
+{
+"Class": "ConstraintParameter",
+"component": "secondary",
+"constraint_addl_vars": [],
+"constraint_func": "comp_sma",
+"constraint_kwargs": {
+"component": "secondary"
+},
+"context": "constraint",
+"default_unit": "solRad",
+"description": "expression that determines the constraint",
+"in_solar_units": true,
+"kind": "star",
+"qualifier": "sma",
+"uniqueid": "RhyMqcQMGnfWouyZBFmTlpyXaNNSVb",
+"value": "{sma@binary@component} / ({q@binary@component} + 1.000000)"
+},
+{
+"Class": "ConstraintParameter",
+"component": "secondary",
+"constraint_addl_vars": [],
+"constraint_func": "comp_asini",
+"constraint_kwargs": {
+"component": "secondary"
+},
+"context": "constraint",
+"default_unit": "solRad",
+"description": "expression that determines the constraint",
+"in_solar_units": true,
+"kind": "star",
+"qualifier": "asini",
+"uniqueid": "RMvPpeNkZezjrgUyIUnEwIUXBXeVCX",
+"value": "({sma@binary@component} * (sin({incl@binary@component}))) / ({q@binary@component} + 1.000000)"
+},
+{
+"Class": "ConstraintParameter",
+"component": "secondary",
+"constraint_addl_vars": [],
+"constraint_func": "rotation_period",
+"constraint_kwargs": {
+"component": "secondary"
+},
+"context": "constraint",
+"default_unit": "d",
+"description": "expression that determines the constraint",
+"in_solar_units": true,
+"kind": "star",
+"qualifier": "period",
+"uniqueid": "eoBZaqPEhpYPpfGQDgNJEgOuBgcdsX",
+"value": "{period@binary@component} / {syncpar@secondary@component}"
+},
+{
+"Class": "ConstraintParameter",
+"component": "secondary",
+"constraint_addl_vars": [],
+"constraint_func": "pitch",
+"constraint_kwargs": {
+"component": "secondary"
+},
+"context": "constraint",
+"default_unit": "deg",
+"description": "expression that determines the constraint",
+"in_solar_units": true,
+"kind": "star",
+"qualifier": "incl",
+"uniqueid": "PYpGGbOqxSCZmzjpPsglfMiasfjZZW",
+"value": "{incl@binary@component} + {pitch@secondary@component}"
+},
+{
+"Class": "ConstraintParameter",
+"component": "secondary",
+"constraint_addl_vars": [],
+"constraint_func": "yaw",
+"constraint_kwargs": {
+"component": "secondary"
+},
+"context": "constraint",
+"default_unit": "deg",
+"description": "expression that determines the constraint",
+"in_solar_units": true,
+"kind": "star",
+"qualifier": "long_an",
+"uniqueid": "RAUaiIDdWadsyytpkLQPzxbgmtayKQ",
+"value": "{long_an@binary@component} + {yaw@secondary@component}"
+},
+{
+"Class": "ConstraintParameter",
+"component": "secondary",
+"constraint_addl_vars": [],
+"constraint_func": "requiv_detached_max",
+"constraint_kwargs": {
+"component": "secondary"
+},
+"context": "constraint",
+"default_unit": "solRad",
+"description": "expression that determines the constraint",
+"in_solar_units": true,
+"kind": "star",
+"qualifier": "requiv_max",
+"uniqueid": "AGBfcqnyMiVTDUKJSyVYbiJIUALTco",
+"value": "requiv_L1({q@binary@component}, {syncpar@secondary@component}, {ecc@binary@component}, {sma@binary@component}, {incl@secondary@component}, {long_an@secondary@component}, {incl@binary@component}, {long_an@binary@component}, 2)"
+},
+{
+"Class": "ConstraintParameter",
+"component": "binary",
+"constraint_addl_vars": [],
+"constraint_func": "compute_phases",
+"constraint_kwargs": {
+"component": "binary",
+"dataset": "lc01"
+},
+"context": "constraint",
+"dataset": "lc01",
+"default_unit": "",
+"description": "expression that determines the constraint",
+"in_solar_units": true,
+"kind": "lc",
+"qualifier": "compute_phases",
+"uniqueid": "iWVNFabjQpPRypxUovlyPrHhvOFIfA",
+"value": "times_to_phases({compute_times@lc01@dataset}, {phases_period@lc01@dataset}, {period@binary@component}, {period_anom@binary@component}, {phases_dpdt@lc01@dataset}, {dpdt@binary@component}, {phases_t0@lc01@dataset}, {t0_supconj@binary@component}, {t0_perpass@binary@component}, {t0_ref@binary@component})"
+},
+{
+"Class": "ConstraintParameter",
+"component": "primary",
+"constraint_addl_vars": [
+"requivsumfrac@binary@orbit@component",
+"requiv@primary@star@component",
+"requiv@secondary@star@component",
+"sma@binary@orbit@component",
+"requivratio@binary@orbit@component"
+],
+"constraint_func": "requivsumfrac",
+"constraint_kwargs": {
+"orbit": "binary",
+"requivratio_constrained": false
+},
+"context": "constraint",
+"default_unit": "solRad",
+"description": "expression that determines the constraint",
+"in_solar_units": true,
+"kind": "star",
+"qualifier": "requiv",
+"uniqueid": "xvBOGxqymDkBHLvcDtBURMYJPsGpcJ",
+"value": "({requivsumfrac@binary@component} * {sma@binary@component}) / ({requivratio@binary@component} + 1.000000)"
+},
+{
+"Class": "ConstraintParameter",
+"component": "secondary",
+"constraint_addl_vars": [
+"requivratio@binary@orbit@component",
+"requivsumfrac@binary@orbit@component",
+"requiv@primary@star@component",
+"requiv@secondary@star@component",
+"sma@binary@orbit@component"
+],
+"constraint_func": "requivratio",
+"constraint_kwargs": {
+"orbit": "binary"
+},
+"context": "constraint",
+"default_unit": "solRad",
+"description": "expression that determines the constraint",
+"in_solar_units": true,
+"kind": "star",
+"qualifier": "requiv",
+"uniqueid": "hPCTkFVCHQCqzGfbZhfChsraXemmjB",
+"value": "(({requivratio@binary@component} * {requivsumfrac@binary@component}) * {sma@binary@component}) / ({requivratio@binary@component} + 1.000000)"
+},
+{
+"Class": "ConstraintParameter",
+"component": "secondary",
+"constraint_addl_vars": [],
+"constraint_func": "teffratio",
+"constraint_kwargs": {
+"orbit": "binary"
+},
+"context": "constraint",
+"default_unit": "K",
+"description": "expression that determines the constraint",
+"in_solar_units": true,
+"kind": "star",
+"qualifier": "teff",
+"uniqueid": "rmimoEjoZmnPRAUjMkiFgZBwRRtKcy",
+"value": "{teffratio@binary@component} * {teff@primary@component}"
+},
+{
+"Class": "DistributionParameter",
+"component": "binary",
+"context": "distribution",
+"copy_for": false,
+"description": "distribution for the referenced parameter",
+"distribution": "fixed_wrong",
+"qualifier": "requivsumfrac",
+"uniqueid": "sccWzxFzXCGBEwBHwTuTgLFMvrnuBU",
+"value": {
+"distl": "Gaussian_Around",
+"distl.version": "0.3.1",
+"frac": false,
+"scale": 0.01,
+"uniqueid": "wdEcKqgLWquhmILpuqou",
+"unit": "",
+"value": 0.31883376116533424
+}
+},
+{
+"Class": "DistributionParameter",
+"component": "binary",
+"context": "distribution",
+"copy_for": false,
+"description": "distribution for the referenced parameter",
+"distribution": "fixed_wrong",
+"qualifier": "requivratio",
+"uniqueid": "RSTsfzJyKLVDUQUdvSTNatfQfzpYLq",
+"value": {
+"distl": "Gaussian_Around",
+"distl.version": "0.3.1",
+"frac": false,
+"scale": 0.1,
+"uniqueid": "wKsuCSpgDCMpvMqdiAeI",
+"unit": "",
+"value": 0.62
+}
+},
+{
+"Class": "DistributionParameter",
+"component": "binary",
+"context": "distribution",
+"copy_for": false,
+"description": "distribution for the referenced parameter",
+"distribution": "fixed_wrong",
+"qualifier": "teffratio",
+"uniqueid": "qPupDoyGZBkBXKHAvLwSdRmlFXnGvO",
+"value": {
+"distl": "Gaussian_Around",
+"distl.version": "0.3.1",
+"frac": false,
+"scale": 0.1,
+"uniqueid": "XjTWBmgySIsFHBNXdLTj",
+"unit": "",
+"value": 0.9349999999999999
+}
+},
+{
+"Class": "DistributionParameter",
+"component": "binary",
+"context": "distribution",
+"copy_for": false,
+"description": "distribution for the referenced parameter",
+"distribution": "fixed_wrong",
+"qualifier": "incl",
+"uniqueid": "cmGCRJbdKnpCTAQxvuwZtkEmpAiOMV",
+"value": {
+"distl": "Gaussian_Around",
+"distl.version": "0.3.1",
+"frac": false,
+"scale": 0.01,
+"uniqueid": "ZdusJUacBzWQqFEWbQRj",
+"unit": "deg",
+"value": 89.751
+}
+},
+{
+"Class": "DistributionParameter",
+"component": "binary",
+"context": "distribution",
+"copy_for": false,
+"description": "distribution for the referenced parameter",
+"distribution": "marginalization",
+"qualifier": "requivsumfrac",
+"uniqueid": "sCnEgAcEGgrTAbYBCSBctMzCbvRPll",
+"value": {
+"distl": "Gaussian_Around",
+"distl.version": "0.3.1",
+"frac": false,
+"scale": 0.01,
+"uniqueid": "ZmYjLbpVNVcCXtuVgfMx",
+"unit": "",
+"value": 0.31883376116533424
+}
+},
+{
+"Class": "DistributionParameter",
+"component": "binary",
+"context": "distribution",
+"copy_for": false,
+"description": "distribution for the referenced parameter",
+"distribution": "marginalization",
+"qualifier": "requivratio",
+"uniqueid": "iFzGpMaHcxusmUJHYhHcBxweZuooOf",
+"value": {
+"distl": "Gaussian_Around",
+"distl.version": "0.3.1",
+"frac": false,
+"scale": 0.1,
+"uniqueid": "LcSwAfGeoMspCnSoZNGS",
+"unit": "",
+"value": 0.62
+}
+},
+{
+"Class": "DistributionParameter",
+"component": "binary",
+"context": "distribution",
+"copy_for": false,
+"description": "distribution for the referenced parameter",
+"distribution": "marginalization",
+"qualifier": "teffratio",
+"uniqueid": "YtnylTUVRVPgzofTxNzPggCUkgEWVN",
+"value": {
+"distl": "Gaussian_Around",
+"distl.version": "0.3.1",
+"frac": false,
+"scale": 0.1,
+"uniqueid": "JlOKILrBQzWHBLdLzlRB",
+"unit": "",
+"value": 0.9349999999999999
+}
+},
+{
+"Class": "DistributionParameter",
+"component": "binary",
+"context": "distribution",
+"copy_for": false,
+"description": "distribution for the referenced parameter",
+"distribution": "marginalization",
+"qualifier": "incl",
+"uniqueid": "isQSIiUnDwlnTkbdTWzqHpAlNEABpl",
+"value": {
+"distl": "Gaussian_Around",
+"distl.version": "0.3.1",
+"frac": false,
+"scale": 0.5,
+"uniqueid": "fmdTcUQcBWuMPsfDVHfr",
+"unit": "deg",
+"value": 89.751
+}
+},
+{
+"Class": "DistributionParameter",
+"component": "binary",
+"context": "distribution",
+"copy_for": false,
+"description": "distribution for the referenced parameter",
+"distribution": "marginalization",
+"qualifier": "q",
+"uniqueid": "XYTyOEDdLizqFIYOkWXfktqfOWgcOO",
+"value": {
+"distl": "Gaussian_Around",
+"distl.version": "0.3.1",
+"frac": false,
+"scale": 0.25,
+"uniqueid": "ZXqvDnHVWddffJTrFjYy",
+"unit": "",
+"value": 1.0
+}
+},
+{
+"Class": "DistributionParameter",
+"component": "binary",
+"context": "distribution",
+"copy_for": false,
+"description": "distribution for the referenced parameter",
+"distribution": "marginalization",
+"qualifier": "sma",
+"uniqueid": "myvpHNTqWDXnLlYeKcYjztGtCjKCHC",
+"value": {
+"distl": "Gaussian_Around",
+"distl.version": "0.3.1",
+"frac": false,
+"scale": 5.0,
+"uniqueid": "yTMlmchmzzWjMncWxmDy",
+"unit": "solRad",
+"value": 15.0
+}
+},
+{
+"Class": "DistributionParameter",
+"component": "primary",
+"context": "distribution",
+"copy_for": false,
+"description": "distribution for the referenced parameter",
+"distribution": "marginalization",
+"qualifier": "teff",
+"uniqueid": "thnAjKHMkKptLSKEsSpcksftaUgdaf",
+"value": {
+"distl": "Gaussian_Around",
+"distl.version": "0.3.1",
+"frac": false,
+"scale": 500.0,
+"uniqueid": "MnkstsNmAJkHXgikRdNP",
+"unit": "K",
+"value": 7500.0
+}
+},
+{
+"Class": "SelectParameter",
+"choices": [
+"fixed_wrong",
+"marginalization",
+"mcmc_fixed_wrong_solution"
+],
+"compute": "phoebe01",
+"context": "compute",
+"copy_for": false,
+"description": "distributions or solutions to use for sampling.  If pointing to a solution, adopt_solution(as_distributions=True, **kwargs) will be called to create a temporary distribution which will be removed automatically.  If all distributions are delta functions (face-values), sample_mode and sample_num will be ignored with a warning.",
+"kind": "phoebe",
+"qualifier": "sample_from",
+"uniqueid": "GWYyYdFbdxwbcCwhCCJokIQxRtEXRx",
+"value": []
+},
+{
+"Class": "ChoiceParameter",
+"choices": [
+"first"
+],
+"compute": "phoebe01",
+"context": "compute",
+"copy_for": false,
+"description": "Method to use to combine multiple distributions from sample_from for the same parameter.  first: ignore duplicate entries and take the first in the sample_from parameter",
+"kind": "phoebe",
+"qualifier": "sample_from_combine",
+"uniqueid": "JCPuRPKSVrAkcThRqOUzgQVjmKEiUG",
+"value": "first",
+"visible_if": "sample_from:<notempty>"
+},
+{
+"Class": "IntParameter",
+"compute": "phoebe01",
+"context": "compute",
+"copy_for": false,
+"description": "Number of forward models to run sampling from the distributions defined in sample_from and sample_from_combine.",
+"kind": "phoebe",
+"limits": [
+8,
+1000000.0
+],
+"qualifier": "sample_num",
+"uniqueid": "MCmLBzoisSZFDGtLTfIUCysDxtBAql",
+"value": 10,
+"visible_if": "sample_from:<notempty>"
+},
+{
+"Class": "ChoiceParameter",
+"choices": [
+"all",
+"median",
+"1-sigma",
+"3-sigma",
+"5-sigma"
+],
+"compute": "phoebe01",
+"context": "compute",
+"copy_for": false,
+"description": "Mode to use when exposing model after sampling.  all: expose all sampled forward-models.  median: only return the median of all sampled models.  1/3/5-sigma: expose the synthetic variable at the median and +/- n-sigma.",
+"kind": "phoebe",
+"qualifier": "sample_mode",
+"uniqueid": "qxSGEtjxoJQtCYOayEDfQKgeOXZUAs",
+"value": "1-sigma",
+"visible_if": "sample_from:<notempty>"
+},
+{
+"Class": "BoolParameter",
+"compute": "phoebe01",
+"context": "compute",
+"copy_for": false,
+"description": "Whether to expose failed samples along with the simplified error messages.",
+"kind": "phoebe",
+"qualifier": "expose_samples",
+"uniqueid": "ilCdkELusfvgqBONPSDkNerQnzWrFu",
+"value": true,
+"visible_if": "sample_from:<notempty>"
+},
+{
+"Class": "BoolParameter",
+"compute": "phoebe01",
+"context": "compute",
+"copy_for": false,
+"description": "Whether to expose failed samples along with the simplified error messages.",
+"kind": "phoebe",
+"qualifier": "expose_failed",
+"uniqueid": "qTCevIoGkaVMKygaXEGCnOAQhgTlxa",
+"value": true,
+"visible_if": "sample_from:<notempty>"
+},
+{
+"Class": "StringParameter",
+"compute": "phoebe01",
+"context": "compute",
+"copy_for": false,
+"description": "User-provided comments for these compute-options.  Feel free to place any notes here - if not overridden, they will be copied to any resulting models.",
+"kind": "phoebe",
+"qualifier": "comments",
+"uniqueid": "CYYIkvsLHcAqnNWRmxnxWJDIAlKZHm",
+"value": ""
+},
+{
+"Class": "ChoiceParameter",
+"choices": [
+"none",
+"clusty"
+],
+"compute": "phoebe01",
+"context": "compute",
+"copy_for": false,
+"description": "Server to use when running the forward model (or \"none\" to run locally) via run_compute.",
+"kind": "phoebe",
+"qualifier": "use_server",
+"uniqueid": "GCtPyMTtpQRYikJmOQJlRIUwLBVRNn",
+"value": "none"
+},
+{
+"Class": "BoolParameter",
+"compute": "phoebe01",
+"context": "compute",
+"copy_for": {
+"context": "dataset",
+"dataset": "*"
+},
+"dataset": "_default",
+"description": "Whether to create synthetics in compute/solver run",
+"kind": "phoebe",
+"qualifier": "enabled",
+"uniqueid": "SESgOKTuZbZNSOEsdvMZIgbWXOYzxq",
+"value": true
+},
+{
+"Class": "BoolParameter",
+"compute": "phoebe01",
+"context": "compute",
+"copy_for": {
+"context": "feature",
+"feature": "*"
+},
+"description": "Whether to enable the feature in compute/solver run",
+"feature": "_default",
+"kind": "phoebe",
+"qualifier": "enabled",
+"uniqueid": "qWbXTLwUSFCQLiDvbFGcNhHcVDqEOQ",
+"value": true
+},
+{
+"Class": "ChoiceParameter",
+"choices": [
+"keplerian"
+],
+"compute": "phoebe01",
+"context": "compute",
+"copy_for": false,
+"description": "Which method to use to determine the dynamics of components",
+"kind": "phoebe",
+"qualifier": "dynamics_method",
+"uniqueid": "MZeMstZBSuEKtnaMtvLeKlzAUvbvAb",
+"value": "keplerian"
+},
+{
+"Class": "BoolParameter",
+"compute": "phoebe01",
+"context": "compute",
+"copy_for": false,
+"description": "Correct for light travel time effects",
+"kind": "phoebe",
+"qualifier": "ltte",
+"uniqueid": "rbuWYGOrxyVXAWkXBCneAjoIlEFAUi",
+"value": false
+},
+{
+"Class": "ChoiceParameter",
+"choices": [
+"none",
+"wilson",
+"horvat"
+],
+"compute": "phoebe01",
+"context": "compute",
+"copy_for": false,
+"description": "Which method to use to handle all irradiation effects (reflection, redistribution)",
+"kind": "phoebe",
+"qualifier": "irrad_method",
+"uniqueid": "BxuLqUtWOESKesTrzwPYNDdSIJPhzX",
+"value": "none"
+},
+{
+"Class": "ChoiceParameter",
+"advanced": true,
+"choices": [
+"none"
+],
+"compute": "phoebe01",
+"context": "compute",
+"copy_for": false,
+"description": "Type of boosting method",
+"kind": "phoebe",
+"qualifier": "boosting_method",
+"uniqueid": "FIqCFpRmdwDgCJLFDMPINcFGXJtKKg",
+"value": "none"
+},
+{
+"Class": "ChoiceParameter",
+"choices": [
+"marching"
+],
+"component": "_default",
+"compute": "phoebe01",
+"context": "compute",
+"copy_for": {
+"component": "*",
+"kind": [
+"star",
+"envelope"
+]
+},
+"description": "Which method to use for discretizing the surface",
+"kind": "phoebe",
+"qualifier": "mesh_method",
+"uniqueid": "LagPpAOMcSPKepNGUURsLqkClrNCsI",
+"value": "marching",
+"visible_if": "hierarchy.is_meshable:true"
+},
+{
+"Class": "IntParameter",
+"component": "_default",
+"compute": "phoebe01",
+"context": "compute",
+"copy_for": {
+"component": "*",
+"kind": [
+"star",
+"envelope"
+]
+},
+"description": "Requested number of triangles (won't be exact).",
+"kind": "phoebe",
+"limits": [
+100,
+null
+],
+"qualifier": "ntriangles",
+"uniqueid": "iQellOkRdkeKKPXvDHRJmrizGlRLiT",
+"value": 1500,
+"visible_if": "mesh_method:marching,hierarchy.is_meshable:true"
+},
+{
+"Class": "ChoiceParameter",
+"choices": [
+"roche",
+"rotstar",
+"sphere",
+"none"
+],
+"component": "_default",
+"compute": "phoebe01",
+"context": "compute",
+"copy_for": {
+"component": "*",
+"kind": [
+"star"
+]
+},
+"description": "Method to use for distorting stars",
+"kind": "phoebe",
+"qualifier": "distortion_method",
+"uniqueid": "SGRBJtzVVwqZyYonlhtgqDcfZMWNap",
+"value": "roche",
+"visible_if": "mesh_method:marching,hierarchy.is_meshable:true"
+},
+{
+"Class": "ChoiceParameter",
+"advanced": true,
+"choices": [
+"native",
+"only_horizon"
+],
+"compute": "phoebe01",
+"context": "compute",
+"copy_for": false,
+"description": "Type of eclipse algorithm",
+"kind": "phoebe",
+"qualifier": "eclipse_method",
+"uniqueid": "QkWikPUNuOLCbIIRnvllOcwXrugUpX",
+"value": "native"
+},
+{
+"Class": "ChoiceParameter",
+"advanced": true,
+"choices": [
+"boolean"
+],
+"compute": "phoebe01",
+"context": "compute",
+"copy_for": false,
+"description": "Type of horizon method",
+"kind": "phoebe",
+"qualifier": "horizon_method",
+"uniqueid": "crCsHzTVMOgFBvJcQKuBKZXiVtdfrR",
+"value": "boolean",
+"visible_if": "eclipse_method:native"
+},
+{
+"Class": "ChoiceParameter",
+"choices": [
+"ck2004",
+"blackbody",
+"extern_atmx",
+"extern_planckint",
+"phoenix"
+],
+"component": "_default",
+"compute": "phoebe01",
+"context": "compute",
+"copy_for": {
+"component": "*",
+"kind": [
+"star"
+]
+},
+"description": "Atmosphere table",
+"kind": "phoebe",
+"qualifier": "atm",
+"uniqueid": "NOhpjVpgTzDWkkBidHwuDZAJQruYEM",
+"value": "ck2004"
+},
+{
+"Class": "ChoiceParameter",
+"choices": [
+"none",
+"oversample"
+],
+"compute": "phoebe01",
+"context": "compute",
+"copy_for": {
+"dataset": "*",
+"kind": [
+"lc"
+]
+},
+"dataset": "_default",
+"description": "How to handle finite-time integration (when non-zero exptime)",
+"kind": "phoebe",
+"qualifier": "fti_method",
+"uniqueid": "ZRGFCYZWlDZNprxAyILEZAHpnitPkj",
+"value": "none"
+},
+{
+"Class": "IntParameter",
+"compute": "phoebe01",
+"context": "compute",
+"copy_for": {
+"dataset": "*",
+"kind": [
+"lc"
+]
+},
+"dataset": "_default",
+"description": "Number of times to sample per-datapoint for finite-time integration",
+"kind": "phoebe",
+"limits": [
+1,
+null
+],
+"qualifier": "fti_oversample",
+"uniqueid": "xBkqyuQnSPfohrEwpYoCqSafveQmEa",
+"value": 5,
+"visible_if": "fti_method:oversample"
+},
+{
+"Class": "ChoiceParameter",
+"choices": [
+"flux-weighted",
+"dynamical"
+],
+"component": "_default",
+"compute": "phoebe01",
+"context": "compute",
+"copy_for": {
+"component": {
+"kind": "star"
+},
+"dataset": {
+"kind": "rv"
+}
+},
+"dataset": "_default",
+"description": "Method to use for computing RVs (must be flux-weighted for Rossiter-McLaughlin effects)",
+"kind": "phoebe",
+"qualifier": "rv_method",
+"uniqueid": "TiTDUonNkthmGRNHcOPBPqzlpXqgWB",
+"value": "flux-weighted"
+},
+{
+"Class": "BoolParameter",
+"component": "_default",
+"compute": "phoebe01",
+"context": "compute",
+"copy_for": {
+"component": {
+"kind": "star"
+},
+"dataset": {
+"kind": "rv"
+}
+},
+"dataset": "_default",
+"description": "Whether gravitational redshift effects are enabled for RVs",
+"kind": "phoebe",
+"qualifier": "rv_grav",
+"uniqueid": "EQVlMtnSjlVcimJOAVgLCioSMKNvtq",
+"value": false,
+"visible_if": "rv_method:flux-weighted"
+},
+{
+"Class": "ChoiceParameter",
+"choices": [
+"marching"
+],
+"component": "primary",
+"compute": "phoebe01",
+"context": "compute",
+"copy_for": false,
+"description": "Which method to use for discretizing the surface",
+"kind": "phoebe",
+"qualifier": "mesh_method",
+"uniqueid": "YrMcLnUblGltvVvIHRjoESaXciaFqc",
+"value": "marching",
+"visible_if": "hierarchy.is_meshable:true"
+},
+{
+"Class": "ChoiceParameter",
+"choices": [
+"marching"
+],
+"component": "secondary",
+"compute": "phoebe01",
+"context": "compute",
+"copy_for": false,
+"description": "Which method to use for discretizing the surface",
+"kind": "phoebe",
+"qualifier": "mesh_method",
+"uniqueid": "zcbVTGoyMomTceVvpMqECDEyrGXBQd",
+"value": "marching",
+"visible_if": "hierarchy.is_meshable:true"
+},
+{
+"Class": "IntParameter",
+"component": "primary",
+"compute": "phoebe01",
+"context": "compute",
+"copy_for": false,
+"description": "Requested number of triangles (won't be exact).",
+"kind": "phoebe",
+"limits": [
+100,
+null
+],
+"qualifier": "ntriangles",
+"uniqueid": "PbKiXTZelgmjHkUsHVSSBGEUysOqpf",
+"value": 1500,
+"visible_if": "mesh_method:marching,hierarchy.is_meshable:true"
+},
+{
+"Class": "IntParameter",
+"component": "secondary",
+"compute": "phoebe01",
+"context": "compute",
+"copy_for": false,
+"description": "Requested number of triangles (won't be exact).",
+"kind": "phoebe",
+"limits": [
+100,
+null
+],
+"qualifier": "ntriangles",
+"uniqueid": "TxlzalMlhqrWabiiVRPbZQFWqSWzlE",
+"value": 1500,
+"visible_if": "mesh_method:marching,hierarchy.is_meshable:true"
+},
+{
+"Class": "ChoiceParameter",
+"choices": [
+"roche",
+"rotstar",
+"sphere",
+"none"
+],
+"component": "primary",
+"compute": "phoebe01",
+"context": "compute",
+"copy_for": false,
+"description": "Method to use for distorting stars",
+"kind": "phoebe",
+"qualifier": "distortion_method",
+"uniqueid": "XzvTkcrqkLPkIVVqCTzhcnFIHvDKvY",
+"value": "roche",
+"visible_if": "mesh_method:marching,hierarchy.is_meshable:true"
+},
+{
+"Class": "ChoiceParameter",
+"choices": [
+"roche",
+"rotstar",
+"sphere",
+"none"
+],
+"component": "secondary",
+"compute": "phoebe01",
+"context": "compute",
+"copy_for": false,
+"description": "Method to use for distorting stars",
+"kind": "phoebe",
+"qualifier": "distortion_method",
+"uniqueid": "dhsXEfLwZfCAxZaWZtgsaKunukGtQk",
+"value": "roche",
+"visible_if": "mesh_method:marching,hierarchy.is_meshable:true"
+},
+{
+"Class": "ChoiceParameter",
+"choices": [
+"ck2004",
+"blackbody",
+"extern_atmx",
+"extern_planckint",
+"phoenix"
+],
+"component": "primary",
+"compute": "phoebe01",
+"context": "compute",
+"copy_for": false,
+"description": "Atmosphere table",
+"kind": "phoebe",
+"qualifier": "atm",
+"uniqueid": "VrWLociRSqhARVdtqQtjlwVrhZPaBm",
+"value": "ck2004"
+},
+{
+"Class": "ChoiceParameter",
+"choices": [
+"ck2004",
+"blackbody",
+"extern_atmx",
+"extern_planckint",
+"phoenix"
+],
+"component": "secondary",
+"compute": "phoebe01",
+"context": "compute",
+"copy_for": false,
+"description": "Atmosphere table",
+"kind": "phoebe",
+"qualifier": "atm",
+"uniqueid": "cJBtNXpbrpiZlVdtMYEbCGedjGJUZo",
+"value": "ck2004"
+},
+{
+"Class": "BoolParameter",
+"compute": "phoebe01",
+"context": "compute",
+"copy_for": false,
+"dataset": "lc01",
+"description": "Whether to create synthetics in compute/solver run",
+"kind": "phoebe",
+"qualifier": "enabled",
+"uniqueid": "doiFotMvsEYRVTgfArNuMSfitbSbCF",
+"value": true
+},
+{
+"Class": "ChoiceParameter",
+"choices": [
+"none",
+"oversample"
+],
+"compute": "phoebe01",
+"context": "compute",
+"copy_for": false,
+"dataset": "lc01",
+"description": "How to handle finite-time integration (when non-zero exptime)",
+"kind": "phoebe",
+"qualifier": "fti_method",
+"uniqueid": "TSzclFaqdjLPXWfVeTXsUyjbyTfodd",
+"value": "none"
+},
+{
+"Class": "IntParameter",
+"compute": "phoebe01",
+"context": "compute",
+"copy_for": false,
+"dataset": "lc01",
+"description": "Number of times to sample per-datapoint for finite-time integration",
+"kind": "phoebe",
+"limits": [
+1,
+null
+],
+"qualifier": "fti_oversample",
+"uniqueid": "oofIxpmcjacEDnEIadINTKXuzXoHEX",
+"value": 5,
+"visible_if": "fti_method:oversample"
+},
+{
+"Class": "FloatArrayParameter",
+"compute": "phoebe01",
+"context": "model",
+"copy_for": {},
+"dataset": "lc01",
+"default_unit": "d",
+"description": "Model (synthetic) times",
+"kind": "lc",
+"model": "latest",
+"qualifier": "times",
+"readonly": true,
+"required_shape": [
+null
+],
+"uniqueid": "PoPtsHgowewgMneGNSPknckIrNJfHl",
+"value": [
+0.046954761925470656,
+0.11714084185001972,
+0.18521794460613972,
+0.18789800436355142,
+0.19193198309333526,
+0.20107546187493552,
+0.2021839744032572,
+0.31838929531307847,
+0.39187792254320675,
+0.5433798833925363,
+0.5802916032387562,
+0.6022547162926983,
+0.6414749634878436,
+0.6916699545513805,
+0.7103605819788694,
+0.8712929970154071,
+0.9394051075844168,
+0.9609840789396307,
+0.9710127579306127,
+1.0022688731230112,
+1.0204481074802807,
+1.1037514116430513,
+1.1827442586893322,
+1.1872771895424405,
+1.201965612131689,
+1.2381998284944151,
+1.289262976548533,
+1.3179786240439217,
+1.3547406422245023,
+1.381829513486138,
+1.433532874090464,
+1.4944830465799375,
+1.5896958364551972,
+1.6130951788499626,
+1.6249293467637482,
+1.6469415649791275,
+1.7162967726144052,
+1.8319136200711683,
+1.8619300588033616,
+1.965823616800535,
+1.9999652489640007,
+2.088767560948347,
+2.0984374897512215,
+2.103825610738409,
+2.230816326406183,
+2.239246880603801,
+2.274146279733232,
+2.3789282137450862,
+2.4442559200160274,
+2.48753143519958,
+2.532916025397821,
+2.5435648177039294,
+2.64555612104627,
+2.653894909394454,
+2.7000797319216483,
+2.828069625764096,
+2.894060929472011,
+2.9007760721044407,
+2.9614019752214493,
+2.9743695085513364,
+2.9828232595603077,
+3.0157481667454933,
+3.1194499547960186,
+3.1542835092418384,
+3.1798317939397602,
+3.1856895245132364,
+3.453516806969027,
+3.59507900573786,
+3.599780644783639,
+3.637107709426226,
+3.6756187004789656,
+3.687251706609641,
+3.8344151882577773,
+3.9650574084698462,
+3.9822106221609186,
+4.071832972259997,
+4.1426299451467,
+4.146619399905235,
+4.236547993389047,
+4.238550485581797,
+4.287687009457661,
+4.31418435433974,
+4.344166255581207,
+4.358649252656268,
+4.3703195379934145,
+4.375872112626925,
+4.386015134623204,
+4.471253786176273,
+4.5354268267806885,
+4.5615033221654855,
+4.6147936225293185,
+4.663107728563062,
+4.686512016477016,
+4.9045880861756705,
+5.013243819267022,
+5.210366062041293,
+5.218483217500717,
+5.232480534666997,
+5.288949197529044,
+5.356328030249583,
+5.448831829968968,
+5.4881350392732475,
+5.666014542065751,
+5.680445610939323,
+5.684339488686485,
+5.691007386145933,
+5.6996491070126485,
+5.701967704178797,
+5.722519057908734,
+5.743252488495788,
+5.759464955561793,
+5.761573344178369,
+5.772285886041676,
+5.812728726358587,
+5.865129348100831,
+5.89909976354571,
+5.908727612481732,
+5.920419312718391,
+6.027633760716439,
+6.04845519745046,
+6.063932141279244,
+6.120957227224214,
+6.13965955965896,
+6.155595642838442,
+6.169339968747569,
+6.176354970758771,
+6.180154289988415,
+6.214784014997635,
+6.399210213275238,
+6.439901992296374,
+6.458941130666561,
+6.521032700016889,
+6.531083254653984,
+6.5320081985713365,
+6.563295894652734,
+6.60173537492685,
+6.667667154456677,
+6.674103799636817,
+6.706378696181594,
+6.778165367962301,
+6.818202991034834,
+6.924721193700199,
+6.925315900777659,
+6.974287731445637,
+6.976311959272649,
+6.994792753175043,
+7.038885835403663,
+7.044144019235327,
+7.142412995491114,
+7.151893663724195,
+7.163272041185655,
+7.22055599470348,
+7.252542798196405,
+7.29990562424058,
+7.301220295167696,
+7.351940221225949,
+7.3926357939830165,
+7.395507950492876,
+7.742336894342166,
+7.781567509498505,
+7.805291762864554,
+7.917250380826646,
+7.936977033574206,
+7.9915856421672355,
+8.061939890460858,
+8.073189587250107,
+8.137978197024772,
+8.209932298479352,
+8.289400292173632,
+8.32619845547938,
+8.379449074988038,
+8.464086724711278,
+8.480082293222344,
+8.55803342392611,
+8.663823259286293,
+8.681260573682142,
+8.700121482468191,
+8.811031971111616,
+8.817353618548529,
+8.917730007820797,
+8.91923355015672,
+8.96546595851063,
+9.194826137446736,
+9.25596638292661,
+9.28081293465591,
+9.292961975762141,
+9.342139979247937,
+9.437480785146242,
+9.443723899839336,
+9.446689170495839,
+9.52749011516985,
+9.56083634723224,
+9.621885451174382,
+9.636627605010293,
+9.755215050028859,
+9.764594650133958,
+9.767610881903371,
+9.78618342232764,
+9.883738380592263,
+9.988470065678666
+]
+},
+{
+"Class": "FloatArrayParameter",
+"compute": "phoebe01",
+"context": "model",
+"copy_for": {},
+"dataset": "lc01",
+"default_unit": "W / m2",
+"description": "Model (synthetic) flux",
+"kind": "lc",
+"model": "latest",
+"qualifier": "fluxes",
+"readonly": true,
+"uniqueid": "ptoFcCyjlfTrLQjaldcQTPLoIdsgJx",
+"value": [
+1.532672406662661,
+1.5278545728314517,
+1.5221109310782943,
+1.521825913233261,
+1.5213417420615714,
+1.5207750695066986,
+1.5206649897296074,
+1.4938227460304652,
+1.170096634330214,
+1.5169307030063632,
+1.5198308592828014,
+1.5218481586723902,
+1.5251049461084267,
+1.5293533792974514,
+1.5305065874398538,
+1.533815253923853,
+1.5298807686445342,
+1.5280703664384807,
+1.527105315237254,
+1.5242447667822454,
+1.5224961502688057,
+1.514555350843377,
+1.274596028251049,
+1.230557200046737,
+1.083994853031698,
+0.9898936962081187,
+1.3801848677348023,
+1.5117986634608445,
+1.5145303490218596,
+1.5166960960145017,
+1.521912112867003,
+1.5277612680493204,
+1.5338474079591717,
+1.5344650113694536,
+1.5346615331515874,
+1.5346267234879987,
+1.5326950047104697,
+1.5241022564783528,
+1.52134043070398,
+1.5140147780728155,
+1.440932255790963,
+1.1791924916867114,
+1.2304310111439998,
+1.2664874905164445,
+1.5183115758081316,
+1.5190564909965052,
+1.521935978552362,
+1.5305281799759187,
+1.533764700885578,
+1.5347722650576827,
+1.534198227541394,
+1.533774033420311,
+1.5267783711207938,
+1.5258487633935773,
+1.5213404953825478,
+1.4655910935861913,
+0.9877818645884339,
+0.9854188781621535,
+1.3968654433298242,
+1.4778564775686829,
+1.5074872806356683,
+1.5137122661769864,
+1.5234619055463767,
+1.5268423841261443,
+1.5291278978968257,
+1.529535198879601,
+1.5281011135011482,
+1.5164862353951285,
+1.516139279716136,
+1.5138173482531714,
+1.4076542613572736,
+1.329507372139812,
+1.513846892623341,
+1.523651667812175,
+1.5252378554281625,
+1.5318664901230488,
+1.5345485753784311,
+1.5346059275552104,
+1.532731120776949,
+1.5326363617078675,
+1.5292108735002417,
+1.5268581858117525,
+1.5239750413316533,
+1.522645752174405,
+1.5213092946641118,
+1.5209949814286001,
+1.519913667811312,
+1.5125800082591907,
+1.1487656083245563,
+0.9902759790968568,
+1.2509006336757844,
+1.5122154688214793,
+1.5138144096038064,
+1.5326039740999535,
+1.5344584411612272,
+1.52082749242841,
+1.5200807460700416,
+1.5189138870201309,
+1.5148521299167503,
+1.3360512525305943,
+1.3017411564559564,
+1.5101219750146393,
+1.5264126319377445,
+1.5275350081697243,
+1.5277928112051573,
+1.5284023246723188,
+1.5292122912027102,
+1.5293664761068968,
+1.5307849916213625,
+1.53189181962878,
+1.5329366914042635,
+1.5330144984236145,
+1.533571342511046,
+1.5345495996249108,
+1.534381802550838,
+1.5328194799446224,
+1.5326266493514502,
+1.5319259725723484,
+1.522729206553184,
+1.5206730496171328,
+1.5191635590159087,
+1.514037358757604,
+1.5126128982641518,
+1.5100386034360371,
+1.4585236358006193,
+1.4133729735714342,
+1.3848560906196725,
+1.0579060700611171,
+1.5174864695501318,
+1.5215247070593487,
+1.52341660262169,
+1.5291408925535759,
+1.5300072071700406,
+1.5300935921564347,
+1.5320003927898103,
+1.5340009241422168,
+1.5347929194198222,
+1.5344338967970828,
+1.5336100160710255,
+1.5293507899595116,
+1.5261069400587333,
+1.5172613247152396,
+1.517147309236502,
+1.5141087397947532,
+1.5139802945436536,
+1.5043635822049624,
+1.2478962242708778,
+1.2144314722567167,
+1.4539383899159706,
+1.494667535393234,
+1.513295256450445,
+1.516780674763841,
+1.5192664681066923,
+1.52323571988489,
+1.5233348079435793,
+1.5276523104485824,
+1.530792190698645,
+1.5308582405974929,
+1.5182690264452028,
+1.5146950660858363,
+1.512918029964502,
+0.9888691049648511,
+1.074026702537309,
+1.5045858028210841,
+1.516707668604643,
+1.5179196399941757,
+1.5242863965154347,
+1.5305430879295192,
+1.5342654137623617,
+1.5347559295802458,
+1.5334440205572364,
+1.5280720533034649,
+1.52684304590126,
+1.5201281949669376,
+1.5066586890022786,
+1.433721519792365,
+1.3091260291358033,
+1.4466522559741313,
+1.4773825293047849,
+1.5189464639945367,
+1.519055181935498,
+1.5229187515281164,
+1.5346469238491616,
+1.532139776734491,
+1.5305775038461609,
+1.529531652988528,
+1.5251773189106839,
+1.5160274797013307,
+1.51547799236484,
+1.5152175779679622,
+1.3231428630060058,
+1.0144695347736024,
+1.222335350857758,
+1.3587118065771842,
+1.5190136590701788,
+1.5200348441302138,
+1.5202956997763553,
+1.5222264676407526,
+1.5307327662530446,
+1.5347774370883394
+]
+},
+{
+"Class": "FloatParameter",
+"compute": "phoebe01",
+"context": "model",
+"copy_for": false,
+"dataset": "lc01",
+"default_unit": "",
+"description": "scaling applied to fluxes (intensities/luminosities) due to dataset-scaling",
+"limits": [
+null,
+null
+],
+"model": "latest",
+"qualifier": "flux_scale",
+"readonly": true,
+"uniqueid": "alAXcMQkAcFwvGknvLuzlglwkkXtQp",
+"value": 1.2257072600581655e-26
+},
+{
+"Class": "StringParameter",
+"compute": "phoebe01",
+"context": "model",
+"copy_for": false,
+"description": "User-provided comments for this model.  Feel free to place any notes here.",
+"model": "latest",
+"qualifier": "comments",
+"uniqueid": "DvLizvmaqtrZPKdRZxftabnjNDmpGp",
+"value": ""
+},
+{
+"Class": "StringParameter",
+"context": "solver",
+"copy_for": false,
+"description": "User-provided comments for these solver-options.  Feel free to place any notes here - if not overridden, they will be copied to any resulting solutions.",
+"kind": "emcee",
+"qualifier": "comments",
+"solver": "mcmc_fixed_wrong",
+"uniqueid": "McJyHnRxSdUoepNxPjaLaaNOqaKLcL",
+"value": ""
+},
+{
+"Class": "ChoiceParameter",
+"choices": [
+"none",
+"compute",
+"clusty"
+],
+"context": "solver",
+"copy_for": false,
+"description": "Server to use when running the solver (or \"none\" to run locally).  If \"compute\", will use the server settings in the referenced compute options.",
+"kind": "emcee",
+"qualifier": "use_server",
+"solver": "mcmc_fixed_wrong",
+"uniqueid": "pWiocXUBYvUNeiUcryUNhVtbrJfVdX",
+"value": "compute"
+},
+{
+"Class": "ChoiceParameter",
+"choices": [
+"phoebe01"
+],
+"context": "solver",
+"copy_for": false,
+"description": "compute options to use for forward model",
+"kind": "emcee",
+"qualifier": "compute",
+"solver": "mcmc_fixed_wrong",
+"uniqueid": "JqOyIGUgQldkmpaJGFVDrtsKTinpqd",
+"value": "phoebe01"
+},
+{
+"Class": "ChoiceParameter",
+"choices": [
+"None"
+],
+"context": "solver",
+"copy_for": false,
+"description": "continue the MCMC run from an existing emcee solution.  Chains will be appended to existing chains (so it is safe to overwrite the existing solution).  If None, will start a new run using init_from.",
+"kind": "emcee",
+"qualifier": "continue_from",
+"solver": "mcmc_fixed_wrong",
+"uniqueid": "RdbmuCOZOjzNzQXKJyIIikkOShWyDN",
+"value": "None"
+},
+{
+"Class": "SelectParameter",
+"choices": [
+"fixed_wrong",
+"marginalization"
+],
+"context": "solver",
+"copy_for": false,
+"description": "distribution(s) to initialize samples from (all unconstrained parameters with attached distributions will be sampled/fitted, constrained parameters will be ignored, covariances will be respected)",
+"kind": "emcee",
+"qualifier": "init_from",
+"solver": "mcmc_fixed_wrong",
+"uniqueid": "xsLJUxfJfupEormPCvFvRPmanTEFAU",
+"value": [
+"fixed_wrong"
+],
+"visible_if": "continue_from:None"
+},
+{
+"Class": "ChoiceParameter",
+"advanced": true,
+"choices": [
+"first",
+"and",
+"or"
+],
+"context": "solver",
+"copy_for": false,
+"description": "Method to use to combine multiple distributions from init_from for the same parameter.  first: ignore duplicate entries and take the first in the init_from parameter. and: combine duplicate entries via AND logic, dropping covariances.  or: combine duplicate entries via OR logic, dropping covariances.",
+"kind": "emcee",
+"qualifier": "init_from_combine",
+"solver": "mcmc_fixed_wrong",
+"uniqueid": "FLTkaXObJquKrgbfJQnbzczjWLSHOx",
+"value": "first",
+"visible_if": "continue_from:None,init_from:<notempty>"
+},
+{
+"Class": "SelectParameter",
+"choices": [
+"limits",
+"checks",
+"compute",
+"priors"
+],
+"context": "solver",
+"copy_for": false,
+"description": "Requirements to apply to the initializing distribution.  Including all checks prevents walkers from initializing at lnprob=-inf, but does add overhead.  limits: apply parameter limits (cheap if init_from are univariates, otherwise requires testing samples).  priors: apply prior limits (directly if priors are uniform, otherwise from ppf at 1e-6 limits.  Cheap if init_from are univariates and priors do not contain OR logic, otherwise requires testing samples).  checks: test each sample to make sure it passes compute checks (and therefore includes limits).  compute: test each sample to make sure it successfully runs a forward model (and therefore includes checks and limits).",
+"kind": "emcee",
+"qualifier": "init_from_requires",
+"solver": "mcmc_fixed_wrong",
+"uniqueid": "UfGsXDVaDloDBFQOoKfolBlqxVXQJp",
+"value": [
+"limits",
+"priors"
+],
+"visible_if": "contine_from:None,init_from:<notempty>"
+},
+{
+"Class": "SelectParameter",
+"choices": [
+"fixed_wrong",
+"marginalization"
+],
+"context": "solver",
+"copy_for": false,
+"description": "distribution(s) to use for priors (constrained and unconstrained parameters will be included, covariances will be respected except for distributions merge via priors_combine)",
+"kind": "emcee",
+"qualifier": "priors",
+"solver": "mcmc_fixed_wrong",
+"uniqueid": "MqoKjLsjebRscnPaDaTemQeIlVeSEi",
+"value": []
+},
+{
+"Class": "ChoiceParameter",
+"advanced": true,
+"choices": [
+"first",
+"and",
+"or"
+],
+"context": "solver",
+"copy_for": false,
+"description": "Method to use to combine multiple distributions from priors for the same parameter.  first: ignore duplicate entries and take the first in the priors parameter. and: combine duplicate entries via AND logic, dropping covariances.  or: combine duplicate entries via OR logic, dropping covariances.",
+"kind": "emcee",
+"qualifier": "priors_combine",
+"solver": "mcmc_fixed_wrong",
+"uniqueid": "MjzwWDJvxvpIYRuzcoIGacSDRaOUea",
+"value": "and",
+"visible_if": "priors:<notempty>"
+},
+{
+"Class": "IntParameter",
+"context": "solver",
+"copy_for": false,
+"description": "Number of walkers",
+"kind": "emcee",
+"limits": [
+1,
+100000.0
+],
+"qualifier": "nwalkers",
+"solver": "mcmc_fixed_wrong",
+"uniqueid": "EpUGzLqfskMKfljUeobexOcQSzYpFe",
+"value": 48,
+"visible_if": "continue_from:None"
+},
+{
+"Class": "IntParameter",
+"context": "solver",
+"copy_for": false,
+"description": "Number of iterations",
+"kind": "emcee",
+"limits": [
+1,
+1000000000000.0
+],
+"qualifier": "niters",
+"solver": "mcmc_fixed_wrong",
+"uniqueid": "duADKpkAptppvoyXUcQvEbJRtQgdPQ",
+"value": 500
+},
+{
+"Class": "FloatParameter",
+"context": "solver",
+"copy_for": false,
+"default_unit": "",
+"description": "factor of max(autocorr_times) to apply for the default solution burnin (burnin not applied until adopting the solution)",
+"kind": "emcee",
+"limits": [
+1.0,
+1000.0
+],
+"qualifier": "burnin_factor",
+"solver": "mcmc_fixed_wrong",
+"uniqueid": "LwrUjEDTvOntrtltlOfIZJygAUzGJE",
+"value": 2.0
+},
+{
+"Class": "FloatParameter",
+"context": "solver",
+"copy_for": false,
+"default_unit": "",
+"description": "factor of min(autocorr_times) to apply for the default solution thinning (thinning not applied until adopting the solution)",
+"kind": "emcee",
+"limits": [
+0.001,
+1000.0
+],
+"qualifier": "thin_factor",
+"solver": "mcmc_fixed_wrong",
+"uniqueid": "vXByhpqBYWPBhckkWItcgNHpIFLjnt",
+"value": 0.5
+},
+{
+"Class": "FloatParameter",
+"context": "solver",
+"copy_for": false,
+"default_unit": "",
+"description": "factor of max(autocorr_times) to apply for the default solution nlags.  nlags only applied when accessing/plotting the autocorrelation function and will not default to larger than niters-burnin. If 0, nlags will default to 0 which will in turn default to nlags=niters-burnin.",
+"kind": "emcee",
+"limits": [
+0.0,
+1000.0
+],
+"qualifier": "nlags_factor",
+"solver": "mcmc_fixed_wrong",
+"uniqueid": "vpYqICfwAhbkXIXjrjqntYjLuvJDJO",
+"value": 3.0
+},
+{
+"Class": "IntParameter",
+"context": "solver",
+"copy_for": false,
+"description": "save the progress of the solution every n iterations.  The solution can only be recovered from an early termination by loading the bundle from a saved file and then calling b.import_solution(filename).  The filename of the saved file will default to solution.ps.progress within run_solver, or the output filename provided to export_solver suffixed with .progress.  If using detach=True within run_solver, attach job will load the progress and allow re-attaching until the job is completed.  If 0 will not save and will only return after completion.",
+"kind": "emcee",
+"limits": [
+0,
+1000000.0
+],
+"qualifier": "progress_every_niters",
+"solver": "mcmc_fixed_wrong",
+"uniqueid": "huIlmfpWvgBzZCyWOIAIWfpgJunpXB",
+"value": 50
+},
+{
+"Class": "BoolParameter",
+"context": "solver",
+"copy_for": false,
+"description": "whether to expose dictionary of failed samples and their error messages.  Note: depending on the number of failed samples, this could add overhead.",
+"kind": "emcee",
+"qualifier": "expose_failed",
+"solver": "mcmc_fixed_wrong",
+"uniqueid": "DgxEAujYKVvmqPrbcunYMpiBgEqgRK",
+"value": true,
+"visible_if": "continue_from:None"
+},
+{
+"Class": "StringParameter",
+"context": "solver",
+"copy_for": false,
+"description": "User-provided comments for these solver-options.  Feel free to place any notes here - if not overridden, they will be copied to any resulting solutions.",
+"kind": "emcee",
+"qualifier": "comments",
+"solver": "mcmc_marginalization",
+"uniqueid": "rleVCAYcOtjNiWRIVOOqZOfJejsxsw",
+"value": ""
+},
+{
+"Class": "ChoiceParameter",
+"choices": [
+"none",
+"compute",
+"clusty"
+],
+"context": "solver",
+"copy_for": false,
+"description": "Server to use when running the solver (or \"none\" to run locally).  If \"compute\", will use the server settings in the referenced compute options.",
+"kind": "emcee",
+"qualifier": "use_server",
+"solver": "mcmc_marginalization",
+"uniqueid": "tPoFicvvMGJbHxqNrxWhnHRcuvSZjx",
+"value": "compute"
+},
+{
+"Class": "ChoiceParameter",
+"choices": [
+"phoebe01"
+],
+"context": "solver",
+"copy_for": false,
+"description": "compute options to use for forward model",
+"kind": "emcee",
+"qualifier": "compute",
+"solver": "mcmc_marginalization",
+"uniqueid": "vVNcJvaRXvNrcQqfgBrQevLYiCMKVa",
+"value": "phoebe01"
+},
+{
+"Class": "ChoiceParameter",
+"choices": [
+"None"
+],
+"context": "solver",
+"copy_for": false,
+"description": "continue the MCMC run from an existing emcee solution.  Chains will be appended to existing chains (so it is safe to overwrite the existing solution).  If None, will start a new run using init_from.",
+"kind": "emcee",
+"qualifier": "continue_from",
+"solver": "mcmc_marginalization",
+"uniqueid": "bKtNctdrzBTCnMHWMExajJzhxbOhmO",
+"value": "None"
+},
+{
+"Class": "SelectParameter",
+"choices": [
+"fixed_wrong",
+"marginalization"
+],
+"context": "solver",
+"copy_for": false,
+"description": "distribution(s) to initialize samples from (all unconstrained parameters with attached distributions will be sampled/fitted, constrained parameters will be ignored, covariances will be respected)",
+"kind": "emcee",
+"qualifier": "init_from",
+"solver": "mcmc_marginalization",
+"uniqueid": "McWIsVeGiPUQYkeTmDiMUsMzmZiTVd",
+"value": [
+"marginalization"
+],
+"visible_if": "continue_from:None"
+},
+{
+"Class": "ChoiceParameter",
+"advanced": true,
+"choices": [
+"first",
+"and",
+"or"
+],
+"context": "solver",
+"copy_for": false,
+"description": "Method to use to combine multiple distributions from init_from for the same parameter.  first: ignore duplicate entries and take the first in the init_from parameter. and: combine duplicate entries via AND logic, dropping covariances.  or: combine duplicate entries via OR logic, dropping covariances.",
+"kind": "emcee",
+"qualifier": "init_from_combine",
+"solver": "mcmc_marginalization",
+"uniqueid": "qHZKFJKikcVoEHNiXvltzENNlZaMUG",
+"value": "first",
+"visible_if": "continue_from:None,init_from:<notempty>"
+},
+{
+"Class": "SelectParameter",
+"choices": [
+"limits",
+"checks",
+"compute",
+"priors"
+],
+"context": "solver",
+"copy_for": false,
+"description": "Requirements to apply to the initializing distribution.  Including all checks prevents walkers from initializing at lnprob=-inf, but does add overhead.  limits: apply parameter limits (cheap if init_from are univariates, otherwise requires testing samples).  priors: apply prior limits (directly if priors are uniform, otherwise from ppf at 1e-6 limits.  Cheap if init_from are univariates and priors do not contain OR logic, otherwise requires testing samples).  checks: test each sample to make sure it passes compute checks (and therefore includes limits).  compute: test each sample to make sure it successfully runs a forward model (and therefore includes checks and limits).",
+"kind": "emcee",
+"qualifier": "init_from_requires",
+"solver": "mcmc_marginalization",
+"uniqueid": "NUIzoqmTXBDqJHuPMlwlHRxPxdmJjC",
+"value": [
+"limits",
+"priors"
+],
+"visible_if": "contine_from:None,init_from:<notempty>"
+},
+{
+"Class": "SelectParameter",
+"choices": [
+"fixed_wrong",
+"marginalization"
+],
+"context": "solver",
+"copy_for": false,
+"description": "distribution(s) to use for priors (constrained and unconstrained parameters will be included, covariances will be respected except for distributions merge via priors_combine)",
+"kind": "emcee",
+"qualifier": "priors",
+"solver": "mcmc_marginalization",
+"uniqueid": "apZFaZprJqQHAyMvdURWCpUCHVprgc",
+"value": []
+},
+{
+"Class": "ChoiceParameter",
+"advanced": true,
+"choices": [
+"first",
+"and",
+"or"
+],
+"context": "solver",
+"copy_for": false,
+"description": "Method to use to combine multiple distributions from priors for the same parameter.  first: ignore duplicate entries and take the first in the priors parameter. and: combine duplicate entries via AND logic, dropping covariances.  or: combine duplicate entries via OR logic, dropping covariances.",
+"kind": "emcee",
+"qualifier": "priors_combine",
+"solver": "mcmc_marginalization",
+"uniqueid": "qIqWtlzSwgZCHYSmdmUvGrdWssJthd",
+"value": "and",
+"visible_if": "priors:<notempty>"
+},
+{
+"Class": "IntParameter",
+"context": "solver",
+"copy_for": false,
+"description": "Number of walkers",
+"kind": "emcee",
+"limits": [
+1,
+100000.0
+],
+"qualifier": "nwalkers",
+"solver": "mcmc_marginalization",
+"uniqueid": "nrpfgShjMbLgrqQbTNUOPpUWjguHlW",
+"value": 48,
+"visible_if": "continue_from:None"
+},
+{
+"Class": "IntParameter",
+"context": "solver",
+"copy_for": false,
+"description": "Number of iterations",
+"kind": "emcee",
+"limits": [
+1,
+1000000000000.0
+],
+"qualifier": "niters",
+"solver": "mcmc_marginalization",
+"uniqueid": "WUjwlvsPJyBBuQKkpUDjgSiUnvcLRC",
+"value": 500
+},
+{
+"Class": "FloatParameter",
+"context": "solver",
+"copy_for": false,
+"default_unit": "",
+"description": "factor of max(autocorr_times) to apply for the default solution burnin (burnin not applied until adopting the solution)",
+"kind": "emcee",
+"limits": [
+1.0,
+1000.0
+],
+"qualifier": "burnin_factor",
+"solver": "mcmc_marginalization",
+"uniqueid": "GSeNSRchLGYzORaqMMbAzDIssfizph",
+"value": 2.0
+},
+{
+"Class": "FloatParameter",
+"context": "solver",
+"copy_for": false,
+"default_unit": "",
+"description": "factor of min(autocorr_times) to apply for the default solution thinning (thinning not applied until adopting the solution)",
+"kind": "emcee",
+"limits": [
+0.001,
+1000.0
+],
+"qualifier": "thin_factor",
+"solver": "mcmc_marginalization",
+"uniqueid": "JuLJvtpdtEJoTQoTMXMUfRygSXqsfi",
+"value": 0.5
+},
+{
+"Class": "FloatParameter",
+"context": "solver",
+"copy_for": false,
+"default_unit": "",
+"description": "factor of max(autocorr_times) to apply for the default solution nlags.  nlags only applied when accessing/plotting the autocorrelation function and will not default to larger than niters-burnin. If 0, nlags will default to 0 which will in turn default to nlags=niters-burnin.",
+"kind": "emcee",
+"limits": [
+0.0,
+1000.0
+],
+"qualifier": "nlags_factor",
+"solver": "mcmc_marginalization",
+"uniqueid": "yqRNkRYmsWjcVKmsNpCpOERTIZaqTa",
+"value": 3.0
+},
+{
+"Class": "IntParameter",
+"context": "solver",
+"copy_for": false,
+"description": "save the progress of the solution every n iterations.  The solution can only be recovered from an early termination by loading the bundle from a saved file and then calling b.import_solution(filename).  The filename of the saved file will default to solution.ps.progress within run_solver, or the output filename provided to export_solver suffixed with .progress.  If using detach=True within run_solver, attach job will load the progress and allow re-attaching until the job is completed.  If 0 will not save and will only return after completion.",
+"kind": "emcee",
+"limits": [
+0,
+1000000.0
+],
+"qualifier": "progress_every_niters",
+"solver": "mcmc_marginalization",
+"uniqueid": "CaXEgCbdLzvuCiNVkPssBLonTzIRnf",
+"value": 50
+},
+{
+"Class": "BoolParameter",
+"context": "solver",
+"copy_for": false,
+"description": "whether to expose dictionary of failed samples and their error messages.  Note: depending on the number of failed samples, this could add overhead.",
+"kind": "emcee",
+"qualifier": "expose_failed",
+"solver": "mcmc_marginalization",
+"uniqueid": "euXXhkWedMSggzTGcGedQhmcEMrdkC",
+"value": true,
+"visible_if": "continue_from:None"
+},
+{
+"Class": "JobParameter",
+"context": "solution",
+"description": "",
+"job_name": "2021.06.10-18.13.36",
+"qualifier": "detached_job",
+"readonly": true,
+"server": "clusty",
+"solution": "mcmc_fixed_wrong_solution",
+"solver": "mcmc_fixed_wrong",
+"uniqueid": "UDnucgesFskHbvdVGZIVhBarnPxCzw",
+"value": "unknown"
+},
+{
+"Class": "StringParameter",
+"context": "solution",
+"copy_for": false,
+"description": "User-provided comments for this solution.  Feel free to place any notes here.",
+"qualifier": "comments",
+"solution": "mcmc_fixed_wrong_solution",
+"solver": "mcmc_fixed_wrong",
+"uniqueid": "xTgjIhcTNWIyjEOhzRAmQcvSKAMsKC",
+"value": ""
+},
+{
+"Class": "JobParameter",
+"context": "solution",
+"description": "",
+"job_name": "2021.06.10-18.15.47",
+"qualifier": "detached_job",
+"readonly": true,
+"server": "clusty",
+"solution": "mcmc_marginalization_solution",
+"solver": "mcmc_marginalization",
+"uniqueid": "gciCIdpzSAhpOZUzycQZQFgyIaMdgW",
+"value": "unknown"
+},
+{
+"Class": "StringParameter",
+"context": "solution",
+"copy_for": false,
+"description": "User-provided comments for this solution.  Feel free to place any notes here.",
+"qualifier": "comments",
+"solution": "mcmc_marginalization_solution",
+"solver": "mcmc_marginalization",
+"uniqueid": "ureoUztxFpisomimHcszjaqPNWuPll",
+"value": ""
+},
+{
+"Class": "ChoiceParameter",
+"choices": [
+"None",
+"manual",
+"t0_perpass@binary",
+"t0_supconj@binary",
+"t0_ref@binary",
+"t0@system"
+],
+"context": "figure",
+"copy_for": false,
+"description": "Source to use for highlight/uncover time for any figure in which time_source is set to default.",
+"qualifier": "default_time_source",
+"uniqueid": "PqLSdWgngTWMDkQqftdvHZVofliRfC",
+"value": "None"
+},
+{
+"Class": "FloatParameter",
+"context": "figure",
+"copy_for": false,
+"default_unit": "d",
+"description": "Times to use for highlighting/uncovering if default_time_source=manual.",
+"limits": [
+null,
+null
+],
+"qualifier": "default_time",
+"uniqueid": "lTjMFJYByRkmLqQuEZKetKOeacFQpR",
+"value": 0.0,
+"visible_if": "default_time_source:manual"
+},
+{
+"Class": "StringParameter",
+"component": "primary",
+"context": "figure",
+"copy_for": false,
+"description": "Representation to use in place of the component label when rendering latex representations of parameters.  If blank, will use the labels directly.",
+"kind": "star",
+"qualifier": "latex_repr",
+"uniqueid": "hiLRxRJLESBkSoSbSZtgnGsLyEuyDw",
+"value": ""
+},
+{
+"Class": "ChoiceParameter",
+"choices": [
+"black",
+"blue",
+"orange",
+"green",
+"red",
+"purple",
+"ping",
+"pink",
+"yellow"
+],
+"component": "primary",
+"context": "figure",
+"copy_for": false,
+"description": "Color to use for figures in which color_source is set to component",
+"kind": "star",
+"qualifier": "color",
+"uniqueid": "AGMQaBRGTJQDgFaFjQssAqqfyEcoub",
+"value": "blue"
+},
+{
+"Class": "ChoiceParameter",
+"choices": [
+"None",
+".",
+"o",
+"+",
+"s",
+"*",
+"x",
+"v",
+"^",
+"<",
+">",
+"p",
+"h",
+"o",
+"D"
+],
+"component": "primary",
+"context": "figure",
+"copy_for": false,
+"description": "Marker (datasets only, not models) to use for figures in which marker_source is set to component",
+"kind": "star",
+"qualifier": "marker",
+"uniqueid": "fqSmFzzBzUkqVHLraqRlbcpbrblrzb",
+"value": "."
+},
+{
+"Class": "ChoiceParameter",
+"choices": [
+"None",
+"solid",
+"dashed",
+"dotted",
+"dashdot"
+],
+"component": "primary",
+"context": "figure",
+"copy_for": false,
+"description": "Linestyle to use for figures in which linestyle_source is set to component",
+"kind": "star",
+"qualifier": "linestyle",
+"uniqueid": "aeJksMGGwcVneImPjEyYURuaZrXKQo",
+"value": "solid"
+},
+{
+"Class": "StringParameter",
+"component": "secondary",
+"context": "figure",
+"copy_for": false,
+"description": "Representation to use in place of the component label when rendering latex representations of parameters.  If blank, will use the labels directly.",
+"kind": "star",
+"qualifier": "latex_repr",
+"uniqueid": "hfXrPghXZCwnfnMCAOlhfAIaYVedWO",
+"value": ""
+},
+{
+"Class": "ChoiceParameter",
+"choices": [
+"black",
+"blue",
+"orange",
+"green",
+"red",
+"purple",
+"ping",
+"pink",
+"yellow"
+],
+"component": "secondary",
+"context": "figure",
+"copy_for": false,
+"description": "Color to use for figures in which color_source is set to component",
+"kind": "star",
+"qualifier": "color",
+"uniqueid": "bQFdiJatAVUKOfPGnscgzvmAttXECn",
+"value": "orange"
+},
+{
+"Class": "ChoiceParameter",
+"choices": [
+"None",
+".",
+"o",
+"+",
+"s",
+"*",
+"x",
+"v",
+"^",
+"<",
+">",
+"p",
+"h",
+"o",
+"D"
+],
+"component": "secondary",
+"context": "figure",
+"copy_for": false,
+"description": "Marker (datasets only, not models) to use for figures in which marker_source is set to component",
+"kind": "star",
+"qualifier": "marker",
+"uniqueid": "wPPopOYgSqsrUcxqYuGVJMiIsPfuHA",
+"value": "o"
+},
+{
+"Class": "ChoiceParameter",
+"choices": [
+"None",
+"solid",
+"dashed",
+"dotted",
+"dashdot"
+],
+"component": "secondary",
+"context": "figure",
+"copy_for": false,
+"description": "Linestyle to use for figures in which linestyle_source is set to component",
+"kind": "star",
+"qualifier": "linestyle",
+"uniqueid": "vkIBEPPoviXGKpgXqjKRkLaANzxoIi",
+"value": "dashed"
+},
+{
+"Class": "StringParameter",
+"component": "binary",
+"context": "figure",
+"copy_for": false,
+"description": "Representation to use in place of the component label when rendering latex representations of parameters.  If blank, will use the labels directly.",
+"kind": "orbit",
+"qualifier": "latex_repr",
+"uniqueid": "uzxDrrxlvplZVhIuydJcjHqnWalSll",
+"value": ""
+},
+{
+"Class": "StringParameter",
+"context": "figure",
+"copy_for": false,
+"dataset": "lc01",
+"description": "Representation to use in place of the dataset label when rendering latex representations of parameters.  If blank, will use the labels directly.",
+"kind": "lc",
+"qualifier": "latex_repr",
+"uniqueid": "BpjmJbGHkKmDChlybhBkspBHccYoMv",
+"value": ""
+},
+{
+"Class": "ChoiceParameter",
+"choices": [
+"black",
+"blue",
+"orange",
+"green",
+"red",
+"purple",
+"ping",
+"pink",
+"yellow"
+],
+"context": "figure",
+"copy_for": false,
+"dataset": "lc01",
+"description": "Color to use for figures in which color_source is set to dataset",
+"kind": "lc",
+"qualifier": "color",
+"uniqueid": "vljRrHpdJCYmJlcNNAuzGFsYMgNYRV",
+"value": "black"
+},
+{
+"Class": "ChoiceParameter",
+"choices": [
+"None",
+".",
+"o",
+"+",
+"s",
+"*",
+"x",
+"v",
+"^",
+"<",
+">",
+"p",
+"h",
+"o",
+"D"
+],
+"context": "figure",
+"copy_for": false,
+"dataset": "lc01",
+"description": "Marker (datasets only, not models) to use for figures in which marker_source is set to dataset",
+"kind": "lc",
+"qualifier": "marker",
+"uniqueid": "RyvmaUKDCkBMASKMbzjCHnabjskwxQ",
+"value": "."
+},
+{
+"Class": "ChoiceParameter",
+"choices": [
+"None",
+"solid",
+"dashed",
+"dotted",
+"dashdot"
+],
+"context": "figure",
+"copy_for": false,
+"dataset": "lc01",
+"description": "Linestyle to use for figures in which linestyle_source is set to dataset",
+"kind": "lc",
+"qualifier": "linestyle",
+"uniqueid": "gPXHTImctqJCxrrAISXHjAPePaBnHF",
+"value": "solid"
+},
+{
+"Class": "SelectParameter",
+"choices": [
+"dataset",
+"model"
+],
+"context": "figure",
+"copy_for": false,
+"description": "Contexts to include in the plot",
+"figure": "lcfig01",
+"kind": "lc",
+"qualifier": "contexts",
+"uniqueid": "aWrdDbADhnOarxPMkmXaVrASUjpEmd",
+"value": [
+"*"
+]
+},
+{
+"Class": "SelectParameter",
+"choices": [
+"lc01"
+],
+"context": "figure",
+"copy_for": false,
+"description": "Datasets to include in the plot",
+"figure": "lcfig01",
+"kind": "lc",
+"qualifier": "datasets",
+"uniqueid": "FwFmzeOeDgORhqnQbORtCsocpqoXDu",
+"value": [
+"*"
+]
+},
+{
+"Class": "SelectParameter",
+"choices": [
+"latest"
+],
+"context": "figure",
+"copy_for": false,
+"description": "Models to include in the plot",
+"figure": "lcfig01",
+"kind": "lc",
+"qualifier": "models",
+"uniqueid": "rPGYGAjTeMybNLKHjIxnbgglNpJDLd",
+"value": [
+"*"
+]
+},
+{
+"Class": "ChoiceParameter",
+"choices": [
+"times",
+"phases"
+],
+"context": "figure",
+"copy_for": false,
+"description": "Array to plot along x-axis",
+"figure": "lcfig01",
+"kind": "lc",
+"qualifier": "x",
+"uniqueid": "aZtPfGSAyOMwOxAspLZPIgCTbbrNdI",
+"value": "times"
+},
+{
+"Class": "ChoiceParameter",
+"advanced": true,
+"choices": [
+"period",
+"period_anom"
+],
+"context": "figure",
+"copy_for": false,
+"description": "Period to use when phasing for x-axis",
+"figure": "lcfig01",
+"kind": "lc",
+"qualifier": "period",
+"uniqueid": "qgqASOWYrvbpdyWiTXQCmCdIfMvsDt",
+"value": "period",
+"visible_if": "[context][figure][kind]dperdt:!0.0,x:phases"
+},
+{
+"Class": "ChoiceParameter",
+"advanced": true,
+"choices": [
+"dpdt",
+"none"
+],
+"context": "figure",
+"copy_for": false,
+"description": "dpdt to use when phasing for x-axis",
+"figure": "lcfig01",
+"kind": "lc",
+"qualifier": "dpdt",
+"uniqueid": "zIkDoTNaxVZazTjpRaaCFrwNeyWdjn",
+"value": "dpdt",
+"visible_if": "[context][figure][kind]dpdt:!0.0,x:phases"
+},
+{
+"Class": "ChoiceParameter",
+"advanced": true,
+"choices": [
+"t0_supconj",
+"t0_perpass",
+"t0_ref"
+],
+"context": "figure",
+"copy_for": false,
+"description": "t0 to use when phasing for x-axis",
+"figure": "lcfig01",
+"kind": "lc",
+"qualifier": "t0",
+"uniqueid": "LaaCVWfqpWfZxOsIaYiSzMturBAPDY",
+"value": "t0_supconj",
+"visible_if": "x:phases"
+},
+{
+"Class": "ChoiceParameter",
+"choices": [
+"fluxes",
+"residuals"
+],
+"context": "figure",
+"copy_for": false,
+"description": "Array to plot along y-axis",
+"figure": "lcfig01",
+"kind": "lc",
+"qualifier": "y",
+"uniqueid": "QBTXASsqguUdLYAQhZJfjxaTDRYLOr",
+"value": "fluxes"
+},
+{
+"Class": "ChoiceParameter",
+"advanced": true,
+"choices": [
+"auto",
+"manual"
+],
+"context": "figure",
+"copy_for": false,
+"description": "Whether to automatically or manually provide label for the x-axis",
+"figure": "lcfig01",
+"kind": "lc",
+"qualifier": "xlabel_source",
+"uniqueid": "NsCrswsTjqHZnrHPFYNOzJqOJzZyDD",
+"value": "auto"
+},
+{
+"Class": "StringParameter",
+"advanced": true,
+"context": "figure",
+"copy_for": false,
+"description": "Custom label for the x-axis",
+"figure": "lcfig01",
+"kind": "lc",
+"qualifier": "xlabel",
+"uniqueid": "mgjWgOUOSiITAIRfYndiqFcADyIKAM",
+"value": "xlabel",
+"visible_if": "xlabel_source:manual"
+},
+{
+"Class": "ChoiceParameter",
+"advanced": true,
+"choices": [
+"auto",
+"manual"
+],
+"context": "figure",
+"copy_for": false,
+"description": "Whether to automatically or manually set the x-units.",
+"figure": "lcfig01",
+"kind": "lc",
+"qualifier": "xunit_source",
+"uniqueid": "gnhjFcAJPERlXtqOFMiBJumavpnXUB",
+"value": "auto"
+},
+{
+"Class": "ChoiceParameter",
+"advanced": true,
+"choices": [
+"auto",
+"manual"
+],
+"context": "figure",
+"copy_for": false,
+"description": "Whether to automatically or manually set the x-limits.",
+"figure": "lcfig01",
+"kind": "lc",
+"qualifier": "xlim_source",
+"uniqueid": "ZXZzMPYvUDuNLPzmYJxAZPbAiWJreF",
+"value": "auto"
+},
+{
+"Class": "UnitParameter",
+"context": "figure",
+"copy_for": false,
+"description": "Unit for x-axis",
+"figure": "lcfig01",
+"kind": "lc",
+"qualifier": "xunit",
+"uniqueid": "MseOMIOKIDroTyWPiFnimfcssevftt",
+"value": "d",
+"visible_if": "xunit_source:manual,x:times"
+},
+{
+"Class": "FloatArrayParameter",
+"context": "figure",
+"copy_for": false,
+"default_unit": "d",
+"description": "Limit for the x-axis",
+"figure": "lcfig01",
+"kind": "lc",
+"qualifier": "xlim",
+"uniqueid": "oOsOXpnHJSmJHrJKkSKYFNYGYdhCdR",
+"value": [],
+"visible_if": "xlim_source:manual,x:times"
+},
+{
+"Class": "UnitParameter",
+"context": "figure",
+"copy_for": false,
+"description": "Unit for x-axis",
+"figure": "lcfig01",
+"kind": "lc",
+"qualifier": "xunit",
+"uniqueid": "MaRqQZXYiTTQqdzcbcYqnVjjeMJsXI",
+"value": "",
+"visible_if": "xunit_source:manual,x:!times"
+},
+{
+"Class": "FloatArrayParameter",
+"context": "figure",
+"copy_for": false,
+"default_unit": "",
+"description": "Limit for the x-axis",
+"figure": "lcfig01",
+"kind": "lc",
+"qualifier": "xlim",
+"uniqueid": "AeCufNuVQCSByRqMyNZZqivnehAZmr",
+"value": [],
+"visible_if": "xlim_source:manual,x:!times"
+},
+{
+"Class": "ChoiceParameter",
+"advanced": true,
+"choices": [
+"auto",
+"manual"
+],
+"context": "figure",
+"copy_for": false,
+"description": "Whether to automatically or manually provide label for the y-axis",
+"figure": "lcfig01",
+"kind": "lc",
+"qualifier": "ylabel_source",
+"uniqueid": "xsLNpzTzFbEuEGaxXYThgTdniLwksM",
+"value": "auto"
+},
+{
+"Class": "StringParameter",
+"advanced": true,
+"context": "figure",
+"copy_for": false,
+"description": "Custom label for the y-axis",
+"figure": "lcfig01",
+"kind": "lc",
+"qualifier": "ylabel",
+"uniqueid": "cDLmEzUZpmWanWtUphbdDYufrJiFXY",
+"value": "ylabel",
+"visible_if": "ylabel_source:manual"
+},
+{
+"Class": "ChoiceParameter",
+"advanced": true,
+"choices": [
+"auto",
+"manual"
+],
+"context": "figure",
+"copy_for": false,
+"description": "Whether to automatically or manually set the y-units.",
+"figure": "lcfig01",
+"kind": "lc",
+"qualifier": "yunit_source",
+"uniqueid": "kVDbUCnXWqGPxXmwkIEyruQaeNdoyn",
+"value": "auto"
+},
+{
+"Class": "ChoiceParameter",
+"advanced": true,
+"choices": [
+"auto",
+"manual"
+],
+"context": "figure",
+"copy_for": false,
+"description": "Whether to automatically or manually set the y-limits.",
+"figure": "lcfig01",
+"kind": "lc",
+"qualifier": "ylim_source",
+"uniqueid": "EQsAHikqIPfuakukluJebFWMGVxoNz",
+"value": "auto"
+},
+{
+"Class": "UnitParameter",
+"context": "figure",
+"copy_for": false,
+"description": "Unit for y-axis",
+"figure": "lcfig01",
+"kind": "lc",
+"qualifier": "yunit",
+"uniqueid": "nsBVjDZerewakfTgAvRuQjcvJMycDk",
+"value": "W / m2",
+"visible_if": "yunit_source:manual"
+},
+{
+"Class": "FloatArrayParameter",
+"context": "figure",
+"copy_for": false,
+"default_unit": "W / m2",
+"description": "Limit for the y-axis",
+"figure": "lcfig01",
+"kind": "lc",
+"qualifier": "ylim",
+"uniqueid": "lvhqnTtNePMdyXFSJHZOAGoCuxycxs",
+"value": [],
+"visible_if": "ylim_source:manual"
+},
+{
+"Class": "ChoiceParameter",
+"choices": [
+"dataset",
+"model",
+"component",
+"manual"
+],
+"context": "figure",
+"copy_for": false,
+"description": "Source to use for color.  For manual, see the c parameter in the figure context.  Otherwise, see the c parameters tagged with the corresponding dataset/model/component.",
+"figure": "lcfig01",
+"kind": "lc",
+"qualifier": "color_source",
+"uniqueid": "WBoxGBYxCVEtHuneORImqECtStUrfK",
+"value": "model"
+},
+{
+"Class": "ChoiceParameter",
+"choices": [
+"black",
+"blue",
+"orange",
+"green",
+"red",
+"purple",
+"ping",
+"pink",
+"yellow"
+],
+"context": "figure",
+"copy_for": false,
+"description": "Default color when plotted via run_figure",
+"figure": "lcfig01",
+"kind": "lc",
+"qualifier": "color",
+"uniqueid": "RNSOObzPvxpUQEAOaFHLrlFFmdEUhv",
+"value": "black",
+"visible_if": "color_source:manual"
+},
+{
+"Class": "ChoiceParameter",
+"choices": [
+"dataset",
+"component",
+"manual"
+],
+"context": "figure",
+"copy_for": false,
+"description": "Source to use for marker (datasets only, not models).  For manual, see the marker parameter in the figure context.  Otherwise, see the marker parameters tagged with the corresponding dataset/model/component.",
+"figure": "lcfig01",
+"kind": "lc",
+"qualifier": "marker_source",
+"uniqueid": "HOhjyAHDQITYnaqBchZFdjfjGWDIWo",
+"value": "manual"
+},
+{
+"Class": "ChoiceParameter",
+"choices": [
+"None",
+".",
+"o",
+"+",
+"s",
+"*",
+"x",
+"v",
+"^",
+"<",
+">",
+"p",
+"h",
+"o",
+"D"
+],
+"context": "figure",
+"copy_for": false,
+"description": "Default marker (datasets only, not models) when plotted via run_figure",
+"figure": "lcfig01",
+"kind": "lc",
+"qualifier": "marker",
+"uniqueid": "LCrzCgOHaBbakzBttMEDeFPKDKyNSo",
+"value": ".",
+"visible_if": "marker_source:manual"
+},
+{
+"Class": "ChoiceParameter",
+"choices": [
+"dataset",
+"model",
+"component",
+"manual"
+],
+"context": "figure",
+"copy_for": false,
+"description": "Source to use for linestyle.  For manual, see the linestyle parameter in the figure context.  Otherwise, see the linestyle parameters tagged with the corresponding dataset/model/component.",
+"figure": "lcfig01",
+"kind": "lc",
+"qualifier": "linestyle_source",
+"uniqueid": "ResQcWNvkIMxZVJQMZMZxJCUAaxtBw",
+"value": "manual"
+},
+{
+"Class": "ChoiceParameter",
+"choices": [
+"None",
+"solid",
+"dashed",
+"dotted",
+"dashdot"
+],
+"context": "figure",
+"copy_for": false,
+"description": "Default linestyle when plotted via run_figure",
+"figure": "lcfig01",
+"kind": "lc",
+"qualifier": "linestyle",
+"uniqueid": "JRlRUfYtnEYejmFbYiMHornuJZKYsB",
+"value": "solid",
+"visible_if": "linestyle_source:manual"
+},
+{
+"Class": "BoolParameter",
+"advanced": true,
+"context": "figure",
+"copy_for": false,
+"description": "Whether to draw the legend",
+"figure": "lcfig01",
+"kind": "lc",
+"qualifier": "legend",
+"uniqueid": "QPAakVySGCRPbvARqVwZWMhlIbHDeX",
+"value": true
+},
+{
+"Class": "BoolParameter",
+"advanced": true,
+"context": "figure",
+"copy_for": false,
+"description": "Whether to uncover up to the current time(s) (see times_source and times parameters).",
+"figure": "lcfig01",
+"kind": "lc",
+"qualifier": "uncover",
+"uniqueid": "rzQhNiOsxfuDvQDdmHJNKgBmYgvTBg",
+"value": false
+},
+{
+"Class": "BoolParameter",
+"advanced": true,
+"context": "figure",
+"copy_for": false,
+"description": "Whether to higlight the current time(s) (see times_source and times parameters).",
+"figure": "lcfig01",
+"kind": "lc",
+"qualifier": "highlight",
+"uniqueid": "kIkLoEVoRxFKDswUjNfMhaFmiwHrch",
+"value": true
+},
+{
+"Class": "ChoiceParameter",
+"choices": [
+"None",
+"default",
+"manual",
+"t0_perpass@binary",
+"t0_supconj@binary",
+"t0_ref@binary",
+"t0@system"
+],
+"context": "figure",
+"copy_for": false,
+"description": "Source to use for highlight/uncover time for this individual figure (or set to default to respect the default_time_source parameter).",
+"figure": "lcfig01",
+"kind": "lc",
+"qualifier": "time_source",
+"uniqueid": "kIkcPlDfmFXudyhGuNRqmYRRciNCLD",
+"value": "default"
+},
+{
+"Class": "FloatParameter",
+"context": "figure",
+"copy_for": false,
+"default_unit": "d",
+"description": "Times to use for highlighting/uncovering if time_source=manual.",
+"figure": "lcfig01",
+"kind": "lc",
+"limits": [
+null,
+null
+],
+"qualifier": "time",
+"uniqueid": "zxUuASVFaIFxYootGBJlQNZcuBlsOG",
+"value": 0.0,
+"visible_if": "time_source:manual"
+},
+{
+"Class": "ChoiceParameter",
+"choices": [
+"black",
+"blue",
+"orange",
+"green",
+"red",
+"purple",
+"ping",
+"pink",
+"yellow"
+],
+"context": "figure",
+"copy_for": false,
+"description": "Color to use for figures in which color_source is set to model",
+"model": "latest",
+"qualifier": "color",
+"uniqueid": "sUolQttfyzaMmqeFAAMbQgHWEzRgei",
+"value": "blue"
+},
+{
+"Class": "ChoiceParameter",
+"choices": [
+"None",
+"solid",
+"dashed",
+"dotted",
+"dashdot"
+],
+"context": "figure",
+"copy_for": false,
+"description": "Linestyle to use for figures in which linestyle_source is set to model",
+"model": "latest",
+"qualifier": "linestyle",
+"uniqueid": "XbkDNVOGZLWyEmBhyUoInuJoPuBzqr",
+"value": "solid"
+},
+{
+"Class": "StringParameter",
+"context": "server",
+"copy_for": false,
+"description": "Name of server saved in crimpl.  Must be available on the local machine.  See docs for more details.",
+"kind": "remoteslurm",
+"qualifier": "crimpl_name",
+"server": "clusty",
+"uniqueid": "UaOpRFtGJYKlGUHyeofAtYRfxKwtln",
+"value": "clusty"
+},
+{
+"Class": "BoolParameter",
+"context": "server",
+"copy_for": false,
+"description": "Whether to use a conda environment on the server.",
+"kind": "remoteslurm",
+"qualifier": "use_conda",
+"server": "clusty",
+"uniqueid": "QKYCrYwCPbLkmhLVAAFICKNmYqOhfd",
+"value": true
+},
+{
+"Class": "StringParameter",
+"context": "server",
+"copy_for": false,
+"description": "Name of conda environment on remote machine to run jobs.  Will be created if does not exist.",
+"kind": "remoteslurm",
+"qualifier": "conda_env",
+"server": "clusty",
+"uniqueid": "ScnbRhZbiElnGMysiOlwStzzZScTVi",
+"value": "phoebe-workshop",
+"visible_if": "use_conda:true"
+},
+{
+"Class": "BoolParameter",
+"advanced": true,
+"context": "server",
+"copy_for": false,
+"description": "Whether to clone the conda_env environment per-job.",
+"kind": "remoteslurm",
+"qualifier": "isolate_env",
+"server": "clusty",
+"uniqueid": "cVZOIBolWPHCvRyozUjqDlLfnJjOAV",
+"value": false,
+"visible_if": "use_conda:true"
+},
+{
+"Class": "IntParameter",
+"context": "server",
+"copy_for": false,
+"description": "Number of processors to allocate to each job",
+"kind": "remoteslurm",
+"limits": [
+null,
+null
+],
+"qualifier": "nprocs",
+"server": "clusty",
+"uniqueid": "XspsRUuDDOoIIajfCrAbvSAuuvlPHG",
+"value": 48
+},
+{
+"Class": "BoolParameter",
+"context": "server",
+"copy_for": false,
+"description": "Whether to use mpi on the remote machine",
+"kind": "remoteslurm",
+"qualifier": "use_mpi",
+"server": "clusty",
+"uniqueid": "NfRrQzevFolwNZidcrxqaEFEvNqfUt",
+"value": true
+},
+{
+"Class": "BoolParameter",
+"context": "server",
+"copy_for": false,
+"description": "Whether to ensure required dependencies are installed in conda_env on the remote machine (adds some overhead)",
+"kind": "remoteslurm",
+"qualifier": "install_deps",
+"server": "clusty",
+"uniqueid": "obsgsIlOCsyxgGRtXYlITjsiMzkvHC",
+"value": true
+},
+{
+"Class": "StringParameter",
+"context": "server",
+"copy_for": false,
+"description": "Jobname to use within slurm on the remote machine (optional)",
+"kind": "remoteslurm",
+"qualifier": "slurm_job_name",
+"server": "clusty",
+"uniqueid": "sHzgpnYfhNFasXrFyaHmksDtKOHtsr",
+"value": ""
+},
+{
+"Class": "FloatParameter",
+"context": "server",
+"copy_for": false,
+"default_unit": "h",
+"description": "Walltime to allocate to each job",
+"kind": "remoteslurm",
+"limits": [
+0.0,
+null
+],
+"qualifier": "walltime",
+"server": "clusty",
+"uniqueid": "WtxSoLdhxPOuEJufeklCWvxTCPnMiS",
+"value": 48.0
+},
+{
+"Class": "StringParameter",
+"context": "server",
+"copy_for": false,
+"description": "Email to have slurm notify about events matching mail_type",
+"kind": "remoteslurm",
+"qualifier": "mail_user",
+"server": "clusty",
+"uniqueid": "sgWcLdCaZkWMTfTswpgGWuqyjKTBDk",
+"value": ""
+},
+{
+"Class": "SelectParameter",
+"choices": [
+"BEGIN",
+"END",
+"FAIL",
+"REQUEUE",
+"ALL"
+],
+"context": "server",
+"copy_for": false,
+"description": "Scenarios in which to request slurm to notify mail_user by email",
+"kind": "remoteslurm",
+"qualifier": "mail_type",
+"server": "clusty",
+"uniqueid": "ukiHAnhQQAlNyoVWuWOhBalSUlpAzJ",
+"value": [
+"END",
+"FAIL"
+],
+"visible_if": "mail_user:<notempty>"
+},
+{
+"Class": "StringParameter",
+"advanced": true,
+"context": "setting",
+"copy_for": false,
+"description": "Version of PHOEBE",
+"qualifier": "phoebe_version",
+"readonly": true,
+"uniqueid": "oXasYZVkiXGyUhgmWbfjncAkvmMiBg",
+"value": "workshop2021"
+},
+{
+"Class": "DictParameter",
+"advanced": true,
+"context": "setting",
+"copy_for": false,
+"description": "Filters to use when using dictionary access",
+"qualifier": "dict_filter",
+"uniqueid": "UeFDOpcItjEVNuBUovvryOqRzuSyCX",
+"value": {}
+},
+{
+"Class": "BoolParameter",
+"advanced": true,
+"context": "setting",
+"copy_for": false,
+"description": "Whether to set all values for dictionary access that returns more than 1 result",
+"qualifier": "dict_set_all",
+"uniqueid": "OHDUncxOzioTBfXuVLrNhNJOHJJRcq",
+"value": false
+},
+{
+"Class": "SelectParameter",
+"choices": [
+"phoebe01"
+],
+"context": "setting",
+"copy_for": false,
+"description": "Compute options to use when calling run_checks/run_checks_compute or within interactive checks.",
+"qualifier": "run_checks_compute",
+"uniqueid": "afxDUtvpaDWREVBvbmDyxFWSmbDtxs",
+"value": [
+"*"
+]
+},
+{
+"Class": "SelectParameter",
+"choices": [
+"mcmc_fixed_wrong",
+"mcmc_marginalization"
+],
+"context": "setting",
+"copy_for": false,
+"description": "Solver options to use when calling run_checks/run_checks_solver or within interactive checks.",
+"qualifier": "run_checks_solver",
+"uniqueid": "UuqCHtMntccFYbzcyPgDiHtHucBXog",
+"value": [
+"*"
+]
+},
+{
+"Class": "SelectParameter",
+"choices": [],
+"context": "setting",
+"copy_for": false,
+"description": "Solutions to use when calling run_checks/run_checks_solution or within interactive checks.",
+"qualifier": "run_checks_solution",
+"uniqueid": "reEcoScsiYbtJMWbhspTOXNYBTbBnb",
+"value": [
+"*"
+]
+},
+{
+"Class": "SelectParameter",
+"choices": [
+"lcfig01"
+],
+"context": "setting",
+"copy_for": false,
+"description": "Figures to use when calling run_checks/run_checks_figure or within interactive checks.",
+"qualifier": "run_checks_figure",
+"uniqueid": "BAmdgrbpYmemCCVrdWqRgdzPCWmutW",
+"value": [
+"*"
+]
+},
+{
+"Class": "SelectParameter",
+"choices": [
+"clusty"
+],
+"context": "setting",
+"copy_for": false,
+"description": "Servers to use when calling run_checks/run_checks_server or within interactive checks.",
+"qualifier": "run_checks_server",
+"uniqueid": "UEnvPDCMdQZzpfcictAAxFNbpCAysu",
+"value": [
+"*"
+]
+},
+{
+"Class": "BoolParameter",
+"context": "setting",
+"copy_for": false,
+"description": "Whether to automatically add figure parameters when a dataset is added with a new dataset type, or a solution is added.",
+"qualifier": "auto_add_figure",
+"uniqueid": "TXSAgzyGTFqcKDxCBOUikfAzUhVBWe",
+"value": true
+},
+{
+"Class": "BoolParameter",
+"context": "setting",
+"copy_for": false,
+"description": "Whether to automatically remove figure parameters when the referenced dataset/solution are removed.",
+"qualifier": "auto_remove_figure",
+"uniqueid": "tcmAlZozqJbILSIAcqJsQsnWjMgjQB",
+"value": true
+},
+{
+"Class": "BoolParameter",
+"advanced": true,
+"context": "setting",
+"copy_for": false,
+"description": "Whether to default to using the web-client over a locally installed desktop-client when opening the UI from the desktop client.",
+"qualifier": "web_client",
+"uniqueid": "DrHXlqFEsAPGzSgAUUQLpjZOlanQMW",
+"value": false
+},
+{
+"Class": "StringParameter",
+"advanced": true,
+"context": "setting",
+"copy_for": false,
+"description": "Default location of web-client.  Will only be used if web_client is True.",
+"qualifier": "web_client_url",
+"uniqueid": "vvUbpsfpafrpZTlqQhUvlBbYKZZzyn",
+"value": "ui.phoebe-project.org"
+}
+]
