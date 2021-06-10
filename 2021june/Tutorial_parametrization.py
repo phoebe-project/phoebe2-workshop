@@ -103,7 +103,7 @@ b.add_distribution({
 
 
 # ______________________________________________________
-# Let's load the bundle with the solution after 1000 solutions and see how it's performed. Keep in mind that all parameters are set to their *true* values and we initialized the MCMC sample *around the true values* of the sampled parameters.
+# Let's load the bundle with the solution after 1000 solutions and see how it performed. Keep in mind that all parameters are set to their *true* values and we initialized the MCMC sample *around the true values* of the sampled parameters.
 
 # In[9]:
 
