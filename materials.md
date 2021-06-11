@@ -104,8 +104,8 @@ Session Chair: Michael
 
 # Wednesday June 23/30: Advanced MCMC
 * Talk: Marginalizing and Nuisance Parameters (Angela)
-* Tutorial: Marginalizing over Additional Parameters (Angela)
-* [Tutoritalk: Convergence Criteria and Interpreting Parameter Uncertainties](./Tutorial_12_convergence.ipynb) (Andrej)
+* [Tutorial: Marginalizing over Additional Parameters](./Tutorial_marginalization.ipynb) (Angela)
+* Tutoritalk: Convergence Criteria and Interpreting Parameter Uncertainties (Andrej)
 * [Tutorial: Interpreting Chains and Convergence in MCMC](./Tutorial_12_convergence.ipynb) (Andrej)
 * Tutorial: Accessing and Propagating Posteriors (Kyle/Andrej - short tutorial covering propagating posteriors through constraints and forward model)
 * Exercises: Getting Posteriors (Kyle/Andrej)
