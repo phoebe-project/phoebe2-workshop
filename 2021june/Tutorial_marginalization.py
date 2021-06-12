@@ -303,15 +303,15 @@ b.add_distribution({
 #b.save('data/synthetic/true_marginalization_case2.bundle')
 
 
-# In[14]:
+# In[19]:
 
 
-b = phoebe.load('data/synthetic/true_marginalization_case2.bundle')
-b.load_job_progress(solution='mcmc_nonoisenuis_solution')
-b.load_job_progress(solution='mcmc_withnoisenuis_solution')
-b.plot(solution='mcmc_nonoisenuis_solution', style='trace', burnin=0, show=True)
-b.plot(solution='mcmc_withnoisenuis_solution', style='trace', burnin=0, show=True)
-b.save('data/synthetic/true_marginalization_case2.bundle')
+# b = phoebe.load('data/synthetic/true_marginalization_case2.bundle')
+# b.load_job_progress(solution='mcmc_nonoisenuis_solution')
+# b.load_job_progress(solution='mcmc_withnoisenuis_solution')
+# b.plot(solution='mcmc_nonoisenuis_solution', style='trace', burnin=0, show=True)
+# b.plot(solution='mcmc_withnoisenuis_solution', style='trace', burnin=0, show=True)
+# b.save('data/synthetic/true_marginalization_case2.bundle')
 
 
 # In[15]:
