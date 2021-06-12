@@ -20,7 +20,7 @@ import matplotlib.pyplot as plt
 get_ipython().run_line_magic('matplotlib', 'inline')
 
 
-# In[2]:
+# In[4]:
 
 
 lc = np.loadtxt('data/synthetic/lc.data')
@@ -32,7 +32,7 @@ b.set_value('pblum_mode', 'dataset-scaled')
 b.set_value_all('irrad_method', 'none')
 
 
-# In[3]:
+# In[5]:
 
 
 b.flip_constraint('q', solve_for='mass@secondary')
@@ -49,7 +49,7 @@ b.flip_constraint('teffratio', solve_for='teff@secondary@component')
 
 # We'll need the true values to compare our solutions later:
 
-# In[106]:
+# In[6]:
 
 
 true_values = [
@@ -166,7 +166,7 @@ b.add_distribution({
 # b.save('data/synthetic/true_marginalization_case1.bundle')
 
 
-# In[113]:
+# In[13]:
 
 
 # b = phoebe.load('data/synthetic/true_marginalization_case1.bundle')
@@ -174,19 +174,25 @@ b.add_distribution({
 # b.load_job_progress(solution='mcmc_marginalization_solution')
 # b.plot(solution='mcmc_fixed_wrong_solution', style='trace', burnin=0, show=True)
 # b.plot(solution='mcmc_marginalization_solution', style='trace', burnin=0, show=True)
-# # b.save('data/synthetic/true_marginalization_case1.bundle')
+# b.save('data/synthetic/true_marginalization_case1.bundle')
 
 
-# In[79]:
+# In[ ]:
 
 
-b.plot(solution='mcmc_fixed_wrong_solution', style='corner', burnin=50, truths=true_values[:4], show=True)
+b = phoebe.load('data/synthetic/true_marginalization_case1.bundle')
 
 
-# In[82]:
+# In[9]:
 
 
-b.plot(solution='mcmc_marginalization_solution', style='corner', burnin=50, truths=true_values[:-1], show=True)
+b.plot(solution='mcmc_fixed_wrong_solution', style='corner', burnin=300, truths=true_values[:4], show=True)
+
+
+# In[12]:
+
+
+b.plot(solution='mcmc_marginalization_solution', style='corner', burnin=400, truths=true_values[:-1], show=True)
 
 
 # #### Case 2: noise nuisance parameter
@@ -297,28 +303,41 @@ b.add_distribution({
 #b.save('data/synthetic/true_marginalization_case2.bundle')
 
 
-# In[112]:
+# In[14]:
 
 
-# b = phoebe.load('data/synthetic/true_marginalization_case2.bundle')
-# b.load_job_progress(solution='mcmc_nonoisenuis_solution')
-# b.load_job_progress(solution='mcmc_withnoisenuis_solution')
-# b.plot(solution='mcmc_nonoisenuis_solution', style='trace', burnin=0, show=True)
-# b.plot(solution='mcmc_withnoisenuis_solution', style='trace', burnin=0, show=True)
-# b.save('data/synthetic/true_marginalization_case2.bundle')
+b = phoebe.load('data/synthetic/true_marginalization_case2.bundle')
+b.load_job_progress(solution='mcmc_nonoisenuis_solution')
+b.load_job_progress(solution='mcmc_withnoisenuis_solution')
+b.plot(solution='mcmc_nonoisenuis_solution', style='trace', burnin=0, show=True)
+b.plot(solution='mcmc_withnoisenuis_solution', style='trace', burnin=0, show=True)
+b.save('data/synthetic/true_marginalization_case2.bundle')
 
 
-# In[90]:
+# In[15]:
 
 
-b.plot(solution='mcmc_nonoisenuis_solution', style='corner', truths=true_values[:4], burnin=100, show=True)
+b = phoebe.load('data/synthetic/true_marginalization_case2.bundle')
 
 
-# In[108]:
+# In[16]:
 
 
-b.plot(solution='mcmc_withnoisenuis_solution', style='corner', burnin=100, truths=true_values[:4]+[true_values[-1]], lnprob_cutoff=375, show=True)
+b.plot(solution='mcmc_nonoisenuis_solution', style='corner', truths=true_values[:4], burnin=800, show=True)
 
+
+# In[18]:
+
+
+b.plot(solution='mcmc_withnoisenuis_solution', style='corner', burnin=800, 
+       truths=true_values[:4]+[true_values[-1]], lnprob_cutoff=375, show=True)
+
+
+# ### Exercises
+# 
+# *Discussion*: Why do you think the requivratio was the most difficult parameter to "get right", even in the cases where we marginalize over additional parameters and noise nuisance? Can you think of other parameters that may affect it that we should account for?
+# 
+# *Exercise*: Implement your proposed solution. You can start either from scratch, loading the true.bundle or one of the solutions with resampling the distributions to add your proposed changes.
 
 # In[ ]:
 
