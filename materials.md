@@ -52,22 +52,24 @@ Session Chair: Angela
 
 Session Chair: Kelly
 
-* [Talk: Atmospheres, Limb Darkening, Intensity Weighting, Extinction, and Reflection](https://docs.google.com/presentation/d/e/2PACX-1vSrILRxT1eygipBOurKZ2trffr5KQBRbK3y1TxY0-oydV1t4SaoZAWvDLZfUCc4iIZDzaHhlkVW8meM/pub?start=false&loop=false&delayms=3000) (Dave)
-* [Tutorial: Datasets](./Tutorial_03_datasets.ipynb) (Bert)
-* [Tutorial: Compute](./Tutorial_04_compute.ipynb) (Angela)
-* [Tutorial: Time and Phase](./Tutorial_04b_time_and_phase.ipynb) (Bert)
+* [Talk: Atmospheres, Limb Darkening, Intensity Weighting, Extinction, and Reflection](https://docs.google.com/presentation/d/e/2PACX-1vSrILRxT1eygipBOurKZ2trffr5KQBRbK3y1TxY0-oydV1t4SaoZAWvDLZfUCc4iIZDzaHhlkVW8meM/pub?start=false&loop=false&delayms=3000) (Dave | [recording](http://phoebe-project.org/static/workshops/2021june/2021.06.16.01_atm_ld_extinction.mp4))
+* [Tutorial: Datasets](./Tutorial_03_datasets.ipynb) (Bert | [recording](http://phoebe-project.org/static/workshops/2021june/2021.06.16.02_datasets.mp4))
+* [Tutorial: Compute](./Tutorial_04_compute.ipynb) (Angela | [recording](http://phoebe-project.org/static/workshops/2021june/2021.06.16.03_compute.mp4))
+* [Tutorial: Time and Phase](./Tutorial_04b_time_and_phase.ipynb) (Bert | [recording](http://phoebe-project.org/static/workshops/2021june/2021.06.16.05_time_phase.mp4))
 * [Tutorial: Plotting](./Tutorial_05_plotting.ipynb) (Angela)
-* [Tutorial: Flux Scaling - Passband Luminosity, Third Light, and Distance](./Tutorial_pblum_l3_distance.ipynb) (Kyle)
 * [Exercises: Creating Forward Models](./Exercises_02_forward_models.ipynb) (Kyle)
 
 
 # Thursday June 17: Animations & Features
+
+* Optional Breakout Session: Contact Binaries (12:00 UTC | Angela)
 
 Session Chair: Kelly
 
 * Talk: Scientific Introduction to PHOEBE (Andrej)
 * [Tutorial: Animations](./Tutorial_05b_animations.ipynb) (Angela)
 * [Tutorial: Accessing and Plotting Meshes](./Tutorial_05c_meshes.ipynb) (Kyle)
+* [Tutorial: Flux Scaling - Passband Luminosity, Third Light, and Distance](./Tutorial_pblum_l3_distance.ipynb) (Kyle)
 * [Tutorial: Features (Spots & Gaussian Processes)](./Tutorial_06_features.ipynb) (Kyle)
 * [Tutorial: Optimizing PHOEBE Computations](./Tutorial_optimizing_computations.ipynb) (Kyle)
 * [Exercises: Forward Model Animations](./Exercises_03_animations.ipynb) (Kyle)
