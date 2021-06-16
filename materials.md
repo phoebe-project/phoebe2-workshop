@@ -62,7 +62,7 @@ Session Chair: Kelly
 
 # Thursday June 17: Animations & Features
 
-* Optional Breakout Session: Contact Binaries (12:00 UTC | Angela)
+* [Optional Breakout Session: Contact Binaries](./Tutorial_Semidetached_Contact.ipynb) (12:00 UTC | Angela)
 
 Session Chair: Kelly
 
