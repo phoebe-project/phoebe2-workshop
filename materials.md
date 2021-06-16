@@ -52,8 +52,8 @@ Session Chair: Angela
 
 Session Chair: Kelly
 
-* [Tutorial: Datasets](./Tutorial_03_datasets.ipynb) (Bert)
 * [Talk: Atmospheres, Limb Darkening, Intensity Weighting, Extinction, and Reflection](https://docs.google.com/presentation/d/e/2PACX-1vSrILRxT1eygipBOurKZ2trffr5KQBRbK3y1TxY0-oydV1t4SaoZAWvDLZfUCc4iIZDzaHhlkVW8meM/pub?start=false&loop=false&delayms=3000) (Dave)
+* [Tutorial: Datasets](./Tutorial_03_datasets.ipynb) (Bert)
 * [Tutorial: Compute](./Tutorial_04_compute.ipynb) (Angela)
 * [Tutorial: Time and Phase](./Tutorial_04b_time_and_phase.ipynb) (Bert)
 * [Tutorial: Plotting](./Tutorial_05_plotting.ipynb) (Angela)
