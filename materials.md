@@ -40,34 +40,36 @@ Please test your installation well in advance of the workshop by running the [te
 
 Session Chair: Angela
 
-* [Welcome & Introduction](https://docs.google.com/presentation/d/e/2PACX-1vTPiLVRPAUJnrSyNgqpWXbuQduLDqp36RP6inq5-QdtYA0nnLTjsQN1FuyhVIgvW9fHkiz_FAEpNrjp/pub?start=false&loop=false&delayms=3000) (Kelly - **2021 - NEEDS UPDATING**)
-* [Talk: PHOEBE Overview - wdgui to PHOEBE](https://docs.google.com/presentation/d/e/2PACX-1vTeR0gdxhuHt7-rEQMK5SEM3bGETEF-ItWQHsvmr8cwt1bNqJuMflTABL8vvV6jrNEdPqRaIpL8-TiJ/pub?start=false&loop=false&delayms=3000) (Andrej)
-* [Talk: Introduction to PHOEBE 2: why so complicated?](https://docs.google.com/presentation/d/e/2PACX-1vTdjGepiD4v0VvAv8DQsed_uCQ4SMYPqfUtCLzvR92PKjnSSeTZ9qWuZpVbzdNxWBE445BwigEg9Tv7/pub?start=false&loop=false&delayms=3000) (Kyle)
-* [Tutorial: General Concepts & Bundle Basics](./Tutorial_01_bundle_basics.ipynb) (Kyle)
-* [Tutorial: Constraints](./Tutorial_02_constraints.ipynb) (Kyle)
-* [Exercises: Building Systems](./Exercises_01_building_systems.ipynb) (Kyle)
+* [Welcome & Introduction](https://docs.google.com/presentation/d/e/2PACX-1vTPiLVRPAUJnrSyNgqpWXbuQduLDqp36RP6inq5-QdtYA0nnLTjsQN1FuyhVIgvW9fHkiz_FAEpNrjp/pub?start=false&loop=false&delayms=3000) (Kelly | [recording](http://phoebe-project.org/static/workshops/2021june/2021.06.15.01_welcome.mp4))
+* [Talk: PHOEBE Overview - wdgui to PHOEBE](https://docs.google.com/presentation/d/e/2PACX-1vTeR0gdxhuHt7-rEQMK5SEM3bGETEF-ItWQHsvmr8cwt1bNqJuMflTABL8vvV6jrNEdPqRaIpL8-TiJ/pub?start=false&loop=false&delayms=3000) (Andrej | [recording](http://phoebe-project.org/static/workshops/2021june/2021.06.15.02_overview.mp4))
+* [Talk: Introduction to PHOEBE 2: why so complicated?](https://docs.google.com/presentation/d/e/2PACX-1vTdjGepiD4v0VvAv8DQsed_uCQ4SMYPqfUtCLzvR92PKjnSSeTZ9qWuZpVbzdNxWBE445BwigEg9Tv7/pub?start=false&loop=false&delayms=3000) (Kyle | [recording](http://phoebe-project.org/static/workshops/2021june/2021.06.15.03_intro.mp4))
+* [Tutorial: General Concepts & Bundle Basics](./Tutorial_01_bundle_basics.ipynb) (Kyle | [recording](http://phoebe-project.org/static/workshops/2021june/2021.06.15.04_general_concepts.mp4))
+* [Tutorial: Constraints](./Tutorial_02_constraints.ipynb) (Kyle | [recording](http://phoebe-project.org/static/workshops/2021june/2021.06.15.05_constraints.mp4))
+* [Exercises: Building Systems](./Exercises_01_building_systems.ipynb) (Kyle | [recording](http://phoebe-project.org/static/workshops/2021june/2021.06.15.06_exercises.mp4))
 
 
 # Wednesday June 16: Creating Forward Models
 
 Session Chair: Kelly
 
-* [Tutorial: Datasets](./Tutorial_03_datasets.ipynb) (Bert)
-* [Talk: Atmospheres, Limb Darkening, Intensity Weighting, Extinction, and Reflection](https://docs.google.com/presentation/d/e/2PACX-1vSrILRxT1eygipBOurKZ2trffr5KQBRbK3y1TxY0-oydV1t4SaoZAWvDLZfUCc4iIZDzaHhlkVW8meM/pub?start=false&loop=false&delayms=3000) (Dave)
-* [Tutorial: Compute](./Tutorial_04_compute.ipynb) (Angela)
-* [Tutorial: Time and Phase](./Tutorial_04b_time_and_phase.ipynb) (Bert)
-* [Tutorial: Plotting](./Tutorial_05_plotting.ipynb) (Angela)
-* [Tutorial: Flux Scaling - Passband Luminosity, Third Light, and Distance](./Tutorial_pblum_l3_distance.ipynb) (Kyle)
-* [Exercises: Creating Forward Models](./Exercises_02_forward_models.ipynb) (Kyle)
+* [Talk: Atmospheres, Limb Darkening, Intensity Weighting, Extinction, and Reflection](https://docs.google.com/presentation/d/e/2PACX-1vSrILRxT1eygipBOurKZ2trffr5KQBRbK3y1TxY0-oydV1t4SaoZAWvDLZfUCc4iIZDzaHhlkVW8meM/pub?start=false&loop=false&delayms=3000) (Dave | [recording](http://phoebe-project.org/static/workshops/2021june/2021.06.16.01_atm_ld_extinction.mp4))
+* [Tutorial: Datasets](./Tutorial_03_datasets.ipynb) (Bert | [recording](http://phoebe-project.org/static/workshops/2021june/2021.06.16.02_datasets.mp4))
+* [Tutorial: Compute](./Tutorial_04_compute.ipynb) (Angela | [recording](http://phoebe-project.org/static/workshops/2021june/2021.06.16.03_compute.mp4))
+* [Tutorial: Time and Phase](./Tutorial_04b_time_and_phase.ipynb) (Bert | [recording](http://phoebe-project.org/static/workshops/2021june/2021.06.16.04_time_phase.mp4))
+* [Tutorial: Plotting](./Tutorial_05_plotting.ipynb) (Angela | [recording](http://phoebe-project.org/static/workshops/2021june/2021.06.16.05_plotting.mp4))
+* [Exercises: Creating Forward Models](./Exercises_02_forward_models.ipynb) (Angela | [recording](http://phoebe-project.org/static/workshops/2021june/2021.06.16.06_exercises.mp4))
 
 
 # Thursday June 17: Animations & Features
+
+* Optional Breakout Session: Contact Binaries (12:00 UTC | Angela)
 
 Session Chair: Kelly
 
 * Talk: Scientific Introduction to PHOEBE (Andrej)
 * [Tutorial: Animations](./Tutorial_05b_animations.ipynb) (Angela)
 * [Tutorial: Accessing and Plotting Meshes](./Tutorial_05c_meshes.ipynb) (Kyle)
+* [Tutorial: Flux Scaling - Passband Luminosity, Third Light, and Distance](./Tutorial_pblum_l3_distance.ipynb) (Kyle)
 * [Tutorial: Features (Spots & Gaussian Processes)](./Tutorial_06_features.ipynb) (Kyle)
 * [Tutorial: Optimizing PHOEBE Computations](./Tutorial_optimizing_computations.ipynb) (Kyle)
 * [Exercises: Forward Model Animations](./Exercises_03_animations.ipynb) (Kyle)
@@ -112,6 +114,7 @@ Session Chair: Michael
 * [Exercises: Getting Posteriors](./Exercises_07_posteriors.ipynb) (Angela)
 
 # Thursday June 24/July 1:
+* Group Photo/Screenshot
 * [Talk: Common Pitfalls when Fitting](https://docs.google.com/presentation/d/e/2PACX-1vQ7tNOfVPpBuOn49D0jChGsKALZpgCbYUHGRYVbO4EV8kYo_eQbIaOwzOu7pDP0-5A7bjrsxvUphKIk/pub?start=false&loop=false&delayms=3000) (Angela - **NEEDS WRITING** PHOEBE specific things like atmosphere bounds, data far from t0, but also q-search, choice of priors, dataset noise, etc)
 * Tutorial: Using PHOEBE with AWS (Kyle)
 * Wrap Up: volunteer wrap-up contributions and discussion
