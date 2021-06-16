@@ -55,9 +55,9 @@ Session Chair: Kelly
 * [Talk: Atmospheres, Limb Darkening, Intensity Weighting, Extinction, and Reflection](https://docs.google.com/presentation/d/e/2PACX-1vSrILRxT1eygipBOurKZ2trffr5KQBRbK3y1TxY0-oydV1t4SaoZAWvDLZfUCc4iIZDzaHhlkVW8meM/pub?start=false&loop=false&delayms=3000) (Dave | [recording](http://phoebe-project.org/static/workshops/2021june/2021.06.16.01_atm_ld_extinction.mp4))
 * [Tutorial: Datasets](./Tutorial_03_datasets.ipynb) (Bert | [recording](http://phoebe-project.org/static/workshops/2021june/2021.06.16.02_datasets.mp4))
 * [Tutorial: Compute](./Tutorial_04_compute.ipynb) (Angela | [recording](http://phoebe-project.org/static/workshops/2021june/2021.06.16.03_compute.mp4))
-* [Tutorial: Time and Phase](./Tutorial_04b_time_and_phase.ipynb) (Bert | [recording](http://phoebe-project.org/static/workshops/2021june/2021.06.16.05_time_phase.mp4))
-* [Tutorial: Plotting](./Tutorial_05_plotting.ipynb) (Angela)
-* [Exercises: Creating Forward Models](./Exercises_02_forward_models.ipynb) (Kyle)
+* [Tutorial: Time and Phase](./Tutorial_04b_time_and_phase.ipynb) (Bert | [recording](http://phoebe-project.org/static/workshops/2021june/2021.06.16.04_time_phase.mp4))
+* [Tutorial: Plotting](./Tutorial_05_plotting.ipynb) (Angela | [recording](http://phoebe-project.org/static/workshops/2021june/2021.06.16.05_plotting.mp4))
+* [Exercises: Creating Forward Models](./Exercises_02_forward_models.ipynb) (Angela | [recording](http://phoebe-project.org/static/workshops/2021june/2021.06.16.06_exercises.mp4))
 
 
 # Thursday June 17: Animations & Features
