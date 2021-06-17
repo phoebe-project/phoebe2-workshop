@@ -45,7 +45,7 @@ Session Chair: Angela
 * [Talk: Introduction to PHOEBE 2: why so complicated?](https://docs.google.com/presentation/d/e/2PACX-1vTdjGepiD4v0VvAv8DQsed_uCQ4SMYPqfUtCLzvR92PKjnSSeTZ9qWuZpVbzdNxWBE445BwigEg9Tv7/pub?start=false&loop=false&delayms=3000) (Kyle | [recording](http://phoebe-project.org/static/workshops/2021june/2021.06.15.03_intro.mp4))
 * [Tutorial: General Concepts & Bundle Basics](./Tutorial_01_bundle_basics.ipynb) (Kyle | [recording](http://phoebe-project.org/static/workshops/2021june/2021.06.15.04_general_concepts.mp4) | [example solutions](./Tutorial_01_bundle_basics_solutions.ipynb))
 * [Tutorial: Constraints](./Tutorial_02_constraints.ipynb) (Kyle | [recording](http://phoebe-project.org/static/workshops/2021june/2021.06.15.05_constraints.mp4) | [example solutions](./Tutorial_02_constraints_solutions.ipynb))
-* [Exercises: Building Systems](./Exercises_01_building_systems.ipynb) (Kyle | [recording](http://phoebe-project.org/static/workshops/2021june/2021.06.15.06_exercises.mp4))
+* [Exercises: Building Systems](./Exercises_01_building_systems.ipynb) (Kyle | [recording](http://phoebe-project.org/static/workshops/2021june/2021.06.15.06_exercises.mp4) | [example solutions](./Exercises_01_building_systems_solutions.ipynb))
 
 
 # Wednesday June 16: Creating Forward Models
@@ -57,7 +57,7 @@ Session Chair: Kelly
 * [Tutorial: Compute](./Tutorial_04_compute.ipynb) (Angela | [recording](http://phoebe-project.org/static/workshops/2021june/2021.06.16.03_compute.mp4) | [example solutions](./Tutorial_04_compute_solutions.ipynb))
 * [Tutorial: Time and Phase](./Tutorial_04b_time_and_phase.ipynb) (Bert | [recording](http://phoebe-project.org/static/workshops/2021june/2021.06.16.04_time_and_phase.mp4) | [example solutions](./Tutorial_04b_time_and_phase_solutions.ipynb))
 * [Tutorial: Plotting](./Tutorial_05_plotting.ipynb) (Angela | [recording](http://phoebe-project.org/static/workshops/2021june/2021.06.16.05_plotting.mp4) | [example solutions](./Tutorial_05_plotting_solutions.ipynb))
-* [Exercises: Creating Forward Models](./Exercises_02_forward_models.ipynb) (Angela | [recording](http://phoebe-project.org/static/workshops/2021june/2021.06.16.06_exercises.mp4))
+* [Exercises: Creating Forward Models](./Exercises_02_forward_models.ipynb) (Angela | [recording](http://phoebe-project.org/static/workshops/2021june/2021.06.16.06_exercises.mp4) | [example solution](./Exercises_02_forward_models_solutions.ipynb))
 
 
 # Thursday June 17: Animations & Features
@@ -72,7 +72,7 @@ Session Chair: Kelly
 * [Tutorial: Flux Scaling (Passband Luminosity, Third Light, and Distance)](./Tutorial_pblum_l3_distance.ipynb) (Kyle | [recording](http://phoebe-project.org/static/workshops/2021june/2021.06.17.04_flux_scaling.mp4) | [example solutions](./Tutorial_pblum_l3_distance_solutions.ipynb))
 * [Tutorial: Features (Spots & Gaussian Processes)](./Tutorial_06_features.ipynb) (Kyle | [recording](http://phoebe-project.org/static/workshops/2021june/2021.06.17.05_features.mp4) | [example solutions](./Tutorial_06_features_solutions.ipynb))
 * [Tutorial: Optimizing PHOEBE Computations](./Tutorial_optimizing_computations.ipynb) (Kyle | [recording](http://phoebe-project.org/static/workshops/2021june/2021.06.17.06_optimizing_compute.mp4))
-* [Exercises: Forward Model Animations](./Exercises_03_animations.ipynb) (Kyle | [recording](http://phoebe-project.org/static/workshops/2021june/2021.06.17.07_exercises.mp4))
+* [Exercises: Forward Model Animations](./Exercises_03_animations.ipynb) (Kyle | [recording](http://phoebe-project.org/static/workshops/2021june/2021.06.17.07_exercises.mp4) | [example solutions](./Exercises_03_animations_solutions.ipynb))
 
 
 
@@ -81,12 +81,13 @@ Session Chair: Kelly
 Session Chair: Michael
 
 * Group Photo/Screenshot
-* [Talk: In Development - Pulsations](https://docs.google.com/presentation/d/e/2PACX-1vR13F6t5UqxxLntwHs5_sVo8YW-xzRlq2BOm08KxRMYAETPqH8qHsmL6M8BvNNTXEzStFYcvKF-IjK5/pub?start=false&loop=false&delayms=3000) (Andrej - **NEEDS UPDATING**)
+* [Talk: In Development - Pulsations](https://docs.google.com/presentation/d/e/2PACX-1vR13F6t5UqxxLntwHs5_sVo8YW-xzRlq2BOm08KxRMYAETPqH8qHsmL6M8BvNNTXEzStFYcvKF-IjK5/pub?start=false&loop=false&delayms=3000) (Andrej)
 * Talk: Gyre Pulsations (Rich Townsend)
+* [Talk: Line Profiles with PHOEBE and SPAMMS](https://docs.google.com/presentation/d/e/2PACX-1vSo-SUbwSx1-5PBwsx_jGKYTihsJsZc4sCauEVi96CT57ZAo-XUdmagSvcCoN_tmhQBT-FaLoeAYR2U/pub?start=false&loop=false&delayms=3000) (Michael)
 * [Talk: In Development - Triple and Higher-Order Systems](https://docs.google.com/presentation/d/e/2PACX-1vSk1awjZ-mrvsSOQunNYikwGr6PjdAseIhPEnh84ABExkgAvAzZ1QF2WEMVIr04IMYPQYwEoPGDjir2/pub?start=false&loop=false&delayms=3000) (Kyle)
-* [Talk: In Development - Blended Atmosphere Tables](https://docs.google.com/presentation/d/e/2PACX-1vRMJxgdwwWs-IF1OY9ligGgNVul2z1Kk_GjRgH9-hFpkN8gJqtFcQUG4D3wzrsN998pvqt4bMNTtrfB/pub?start=false&loop=false&delayms=3000) (Andrej - **NEEDS UPDATING**)
+* [Talk: In Development - Blended Atmosphere Tables](https://docs.google.com/presentation/d/e/2PACX-1vRMJxgdwwWs-IF1OY9ligGgNVul2z1Kk_GjRgH9-hFpkN8gJqtFcQUG4D3wzrsN998pvqt4bMNTtrfB/pub?start=false&loop=false&delayms=3000) (Andrej)
 * Wrap Up: volunteer wrap-up contributions and discussion
-* Exercises: finish or continue any of the previous exercises.  Next week we start fitting! (Andrej)
+* Exercises: finish or continue any of the previous exercises.  Next week we start fitting!
 
 
 # Monday June 21/28: Inverse Problem Overview
