@@ -143,6 +143,8 @@ afig, mplfig = b.filter(kind='mesh').plot(time=0.25, fc='abs_normal_intensities'
                                           ec="face", show=True)
 
 
+# You can also change the colormaps by passing `fcmap` or `ecmap` as a valid [matplotlib colormap name](https://matplotlib.org/stable/tutorials/colors/colormaps.html) and can show the scale of the colormaps by passing `draw_sidebars=True` when plotting.
+
 # # Exercise
 
 # Make a mesh plot (at any single time) to show the limb-darkening across the surface of the star.  Play with changing the underlying limb-darkening model and re-plotting.

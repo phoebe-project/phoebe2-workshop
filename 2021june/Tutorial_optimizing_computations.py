@@ -56,6 +56,10 @@ b.add_dataset('rv', compute_times=phoebe.linspace(0,1,26))
 # 
 # For systems without time-dependence (no apsidal motion, etc), it can therefore be quite advantageous to compute the forward model sampled in phase-space and interpolate when comparing to the observations (PHOEBE will handle this interpolation for you).  Just check to make sure that you sample sufficiently in phase that the linear interpolation won't introduce artifacts.
 
+# # Number of Triangles
+# 
+# Similarly, the expense of building meshes scales with the number of triangles (and so does the expense of irradiation which we'll mention later).  The default number of triangles in PHOEBE is quite low, for this reason.  However, an insufficient number of triangles can result in numerical noise both on the horizon and during the eclipse.  In some cases, it may be worth some extra up-front effort to determine the (approximate) minimum number of triangles needed to achieve the desired signal to noise in the model.
+
 # # Eclipse Detection
 # 
 # For more details, see [Eclipse Detection](http://phoebe-project.org/docs/2.3/tutorials/eclipse.ipynb).

@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# # Flux Scaling: pblum, third light, and distance
+# # Workshop Tutorial: Flux Scaling (pblum, third light, and distance)
 # 
 # In this tutorial we'll cover how to handle passband luminosities, third light, and distance.
 # 
@@ -116,6 +116,8 @@ print(b.get_parameter(qualifier='distance', context='system'))
 # 
 # 
 # Make a plot of multiple light curves in different passbands.  Have one passband be set so that the out-of-eclipse flux is approximately one (using `pblum_mode='component-coupled'` and manually adjusting `pblum` and calling `run_compute` or `compute_pblums(pbflux=True)`) and the other light curves all coupled relative to that (using `'dataset-coupled'` and setting the `pblum_dataset` parameter).  Try naming the datasets appropriately and include labels on the plot.
+# 
+# You can find the [compute_pblums API docs here](http://phoebe-project.org/docs/2.3/api/phoebe.frontend.bundle.Bundle.compute_pblums).
 
 # In[ ]:
 
@@ -123,7 +125,7 @@ print(b.get_parameter(qualifier='distance', context='system'))
 
 
 
-# Set `pblum_mode` to `'component-coupled'` or `'absolute'` and show how third light (either in flux or fractional units) affects a light curve and the luminosities.  You can also try passing `pbflux=True` to [compute_pblums](http://phoebe-project.org/docs/2.3/api/phoebe.frontend.bundle.Bundle.compute_pblums) to see how the estimated flux-levels are also affected.
+# Set `pblum_mode` to `'component-coupled'` or `'absolute'` and show how third light (either in flux or fractional units) affects a light curve and the luminosities.  (**NOTE**: `pbflux=True` is _intrinsic_ only and so does not account for third light)
 
 # In[ ]:
 
@@ -131,7 +133,7 @@ print(b.get_parameter(qualifier='distance', context='system'))
 
 
 
-# Do the same for `distance` as you just did for third light: set `pblum_mode` to `'component-coupled'` or `'absolute'` and show how changing the distance affects the flux-levels in a light curve. 
+# Do the same for `distance` as you just did for third light: set `pblum_mode` to `'component-coupled'` or `'absolute'` and show how changing the distance affects the flux-levels in a light curve. (**NOTE**: `pbflux=True` is _intrinsic_ only and so does not account for distance)
 
 # In[ ]:
 
