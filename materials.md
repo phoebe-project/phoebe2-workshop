@@ -55,22 +55,22 @@ Session Chair: Kelly
 * [Talk: Atmospheres, Limb Darkening, Intensity Weighting, Extinction, and Reflection](https://docs.google.com/presentation/d/e/2PACX-1vSrILRxT1eygipBOurKZ2trffr5KQBRbK3y1TxY0-oydV1t4SaoZAWvDLZfUCc4iIZDzaHhlkVW8meM/pub?start=false&loop=false&delayms=3000) (Dave | [recording](http://phoebe-project.org/static/workshops/2021june/2021.06.16.01_atm_ld_extinction.mp4))
 * [Tutorial: Datasets](./Tutorial_03_datasets.ipynb) (Bert | [recording](http://phoebe-project.org/static/workshops/2021june/2021.06.16.02_datasets.mp4) | [example solutions](./Tutorial_03_datasets_solutions.ipynb))
 * [Tutorial: Compute](./Tutorial_04_compute.ipynb) (Angela | [recording](http://phoebe-project.org/static/workshops/2021june/2021.06.16.03_compute.mp4) | [example solutions](./Tutorial_04_compute_solutions.ipynb))
-* [Tutorial: Time and Phase](./Tutorial_04b_time_and_phase.ipynb) (Bert | [recording](http://phoebe-project.org/static/workshops/2021june/2021.06.16.04_time_phase.mp4) | [example solutions](./Tutorial_04b_time_and_phase_solutions.ipynb))
+* [Tutorial: Time and Phase](./Tutorial_04b_time_and_phase.ipynb) (Bert | [recording](http://phoebe-project.org/static/workshops/2021june/2021.06.16.04_time_and_phase.mp4) | [example solutions](./Tutorial_04b_time_and_phase_solutions.ipynb))
 * [Tutorial: Plotting](./Tutorial_05_plotting.ipynb) (Angela | [recording](http://phoebe-project.org/static/workshops/2021june/2021.06.16.05_plotting.mp4) | [example solutions](./Tutorial_05_plotting_solutions.ipynb))
 * [Exercises: Creating Forward Models](./Exercises_02_forward_models.ipynb) (Angela | [recording](http://phoebe-project.org/static/workshops/2021june/2021.06.16.06_exercises.mp4))
 
 
 # Thursday June 17: Animations & Features
 
-* [Optional Breakout Session: Contact Binaries](./Tutorial_Semidetached_Contact.ipynb) (12:00 UTC | Angela)
+* [Optional Breakout Session: Contact Binaries](./Tutorial_Semidetached_Contact.ipynb) (Angela | [recording](http://phoebe-project.org/static/workshops/2021june/2021.06.17.00_breakout_semidetached_contacts.mp4))
 
 Session Chair: Kelly
 
 * Talk: Scientific Introduction to PHOEBE (Andrej)
-* [Tutorial: Animations](./Tutorial_05b_animations.ipynb) (Angela | [example solutions](./Tutorial_05b_animations_solutions.ipynb))
+* [Tutorial: Animations](./Tutorial_05b_animations.ipynb) (Angela | [recording](http://phoebe-project.org/static/workshops/2021june/2021.06.17.02_animations.mp4) | [example solutions](./Tutorial_05b_animations_solutions.ipynb))
 * [Tutorial: Accessing and Plotting Meshes](./Tutorial_05c_meshes.ipynb) (Kyle | [example solutions](./Tutorial_05c_meshes_solutions.ipynb))
-* [Tutorial: Flux Scaling - Passband Luminosity, Third Light, and Distance](./Tutorial_pblum_l3_distance.ipynb) (Kyle)
-* [Tutorial: Features (Spots & Gaussian Processes)](./Tutorial_06_features.ipynb) (Kyle)
+* [Tutorial: Flux Scaling (Passband Luminosity, Third Light, and Distance)](./Tutorial_pblum_l3_distance.ipynb) (Kyle | [example solutions](./Tutorial_pblum_l3_distance_solutions.ipynb))
+* [Tutorial: Features (Spots & Gaussian Processes)](./Tutorial_06_features.ipynb) (Kyle | [example solutions](./Tutorial_06_features_solutions.ipynb))
 * [Tutorial: Optimizing PHOEBE Computations](./Tutorial_optimizing_computations.ipynb) (Kyle)
 * [Exercises: Forward Model Animations](./Exercises_03_animations.ipynb) (Kyle)
 
