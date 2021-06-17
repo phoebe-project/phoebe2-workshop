@@ -67,8 +67,8 @@ Session Chair: Kelly
 Session Chair: Kelly
 
 * Talk: Scientific Introduction to PHOEBE (Andrej)
-* [Tutorial: Animations](./Tutorial_05b_animations.ipynb) (Angela)
-* [Tutorial: Accessing and Plotting Meshes](./Tutorial_05c_meshes.ipynb) (Kyle)
+* [Tutorial: Animations](./Tutorial_05b_animations.ipynb) (Angela | [example solutions](./Tutorial_05b_animations_solutions.ipynb))
+* [Tutorial: Accessing and Plotting Meshes](./Tutorial_05c_meshes.ipynb) (Kyle | [example solutions](./Tutorial_05c_meshes_solutions.ipynb))
 * [Tutorial: Flux Scaling - Passband Luminosity, Third Light, and Distance](./Tutorial_pblum_l3_distance.ipynb) (Kyle)
 * [Tutorial: Features (Spots & Gaussian Processes)](./Tutorial_06_features.ipynb) (Kyle)
 * [Tutorial: Optimizing PHOEBE Computations](./Tutorial_optimizing_computations.ipynb) (Kyle)
