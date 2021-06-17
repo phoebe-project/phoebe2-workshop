@@ -68,11 +68,11 @@ Session Chair: Kelly
 
 * Talk: Scientific Introduction to PHOEBE (Andrej)
 * [Tutorial: Animations](./Tutorial_05b_animations.ipynb) (Angela | [recording](http://phoebe-project.org/static/workshops/2021june/2021.06.17.02_animations.mp4) | [example solutions](./Tutorial_05b_animations_solutions.ipynb))
-* [Tutorial: Accessing and Plotting Meshes](./Tutorial_05c_meshes.ipynb) (Kyle | [example solutions](./Tutorial_05c_meshes_solutions.ipynb))
-* [Tutorial: Flux Scaling (Passband Luminosity, Third Light, and Distance)](./Tutorial_pblum_l3_distance.ipynb) (Kyle | [example solutions](./Tutorial_pblum_l3_distance_solutions.ipynb))
-* [Tutorial: Features (Spots & Gaussian Processes)](./Tutorial_06_features.ipynb) (Kyle | [example solutions](./Tutorial_06_features_solutions.ipynb))
-* [Tutorial: Optimizing PHOEBE Computations](./Tutorial_optimizing_computations.ipynb) (Kyle)
-* [Exercises: Forward Model Animations](./Exercises_03_animations.ipynb) (Kyle)
+* [Tutorial: Accessing and Plotting Meshes](./Tutorial_05c_meshes.ipynb) (Kyle | [recording](http://phoebe-project.org/static/workshops/2021june/2021.06.17.03_meshes.mp4) | [example solutions](./Tutorial_05c_meshes_solutions.ipynb))
+* [Tutorial: Flux Scaling (Passband Luminosity, Third Light, and Distance)](./Tutorial_pblum_l3_distance.ipynb) (Kyle | [recording](http://phoebe-project.org/static/workshops/2021june/2021.06.17.04_flux_scaling.mp4) | [example solutions](./Tutorial_pblum_l3_distance_solutions.ipynb))
+* [Tutorial: Features (Spots & Gaussian Processes)](./Tutorial_06_features.ipynb) (Kyle | [recording](http://phoebe-project.org/static/workshops/2021june/2021.06.17.05_features.mp4) | [example solutions](./Tutorial_06_features_solutions.ipynb))
+* [Tutorial: Optimizing PHOEBE Computations](./Tutorial_optimizing_computations.ipynb) (Kyle | [recording](http://phoebe-project.org/static/workshops/2021june/2021.06.17.06_optimizing_compute.mp4))
+* [Exercises: Forward Model Animations](./Exercises_03_animations.ipynb) (Kyle | [recording](http://phoebe-project.org/static/workshops/2021june/2021.06.17.07_exercises.mp4))
 
 
 
