@@ -12,7 +12,7 @@ import phoebe
 b = phoebe.default_binary()
 
 
-# Add an orbit dataset and plot different projections of the orbit (u vs w, u vs v, w vs v).  Try changing orbital Parameters (q, incl, long_an), rerun compute, and see the changes to the plots.
+# **Add an orbit dataset and plot different projections of the orbit (u vs w, u vs v, w vs v).  Try changing orbital Parameters (q, incl, long_an), rerun compute, and see the changes to the plots.**
 
 # In[2]:
 
@@ -47,4 +47,4 @@ b.run_compute(model='changed_incl')
 _ = b.plot(x='us', y='vs', legend=True, show=True)
 
 
-# Play with plotting.  If you want to try more advanced options, feel free to look at the [plotting tutorial](http://phoebe-project.org/docs/2.3/tutorials/plotting/) in the official docs.
+# **Play with plotting.  If you want to try more advanced options, feel free to look at the [plotting tutorial](http://phoebe-project.org/docs/2.3/tutorials/plotting/) in the official docs.**

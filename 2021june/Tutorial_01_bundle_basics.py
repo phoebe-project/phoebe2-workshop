@@ -292,6 +292,20 @@ b['compute'].twigs
 
 # Since the more verbose method without twigs is a bit clearer to read, most of the tutorials will show that syntax, but feel free to use twigs if they make more sense to you
 
+# To see a nice representation of the names (twigs or qualifier) of all the parameters and their descriptions, we can call `info` on any bundle or ParameterSet.
+
+# In[ ]:
+
+
+print(b.info)
+
+
+# In[ ]:
+
+
+print(b.filter(context='component').info)
+
+
 # ## Units
 # 
 # Each FloatParameter has an associated unit. Let's look at the 'sma' Parameter for the binary orbit.

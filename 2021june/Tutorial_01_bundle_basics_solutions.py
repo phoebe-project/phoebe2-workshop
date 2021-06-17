@@ -12,7 +12,7 @@ import phoebe
 b = phoebe.default_binary()
 
 
-# Find and access the value of the effective temperature of the primary star via filtering and twig access.
+# **Find and access the value of the effective temperature of the primary star via filtering and twig access.**
 
 # In[2]:
 
@@ -26,7 +26,7 @@ print(b.filter(component='primary'))
 print(b.get_parameter(qualifier='teff', component='primary'))
 
 
-# Find the choices for the `atm` Parameter
+# **Find the choices for the `atm` Parameter**
 
 # In[4]:
 
@@ -40,7 +40,7 @@ b.filter(qualifier='atm')
 print(b.get_parameter(qualifier='atm', component='primary').choices)
 
 
-# Find what the `ltte` Parameter stands for.  Does it have choices?
+# **Find what the `ltte` Parameter stands for.  Does it have choices?**
 
 # In[6]:
 
@@ -66,7 +66,7 @@ print(b.get_parameter(qualifier='ltte').get_description())
 type(b.get_parameter(qualifier='ltte'))
 
 
-# Change the default unit of the argument of periastron from degrees to radians and print the result with the new units.
+# **Change the default unit of the argument of periastron from degrees to radians and print the result with the new units.**
 
 # In[10]:
 
@@ -98,7 +98,7 @@ b.get_parameter(qualifier='per0').set_default_unit(phoebe.u.rad)
 print(b.get_quantity(qualifier='per0'))
 
 
-# Set the default_unit for all radii and smas of all components to AU and then show their values. (Hint: you can also call set_default_unit_all to act on a ParameterSet instead of a Parameter)
+# **Set the default_unit for all radii and smas of all components to AU and then show their values. (Hint: you can also call set_default_unit_all to act on a ParameterSet instead of a Parameter)**
 
 # In[15]:
 
@@ -124,7 +124,7 @@ b.filter(qualifier=['sma', 'requiv'], context='component').set_default_unit_all(
 print(b.filter(qualifier=['sma', 'requiv'], context='component'))
 
 
-# Find and set the following Parameters:
+# **Find and set the following Parameters:**
 # * effective temperature of the secondary star to 5500 K
 # * inclination of the binary to 86 degrees
 
@@ -152,4 +152,4 @@ print(b.filter(qualifier='incl'))
 b.set_value(qualifier='incl', component='binary', value=86)
 
 
-# You likely noticed that there are several (5!) Parameters in the Bundle for inclination.  This is because there is an inclination for the orbit as well as for each of the two stars in the binary system.  The other 2 are called Constraints which relate these Parameters to each other... which will be the topic of the next tutorial.
+# **You likely noticed that there are several (5!) Parameters in the Bundle for inclination.  This is because there is an inclination for the orbit as well as for each of the two stars in the binary system.  The other 2 are called Constraints which relate these Parameters to each other... which will be the topic of the next tutorial.**

@@ -15,9 +15,7 @@ b.add_dataset('lc', compute_times=phoebe.linspace(0,1,51), dataset='lc01')
 b.add_dataset('rv', compute_times=phoebe.linspace(0,1,21), dataset='rv01')
 
 
-# # Exercise
-
-# Add another set of compute options (called, say, 'robust') and set whatever values you think might be necessary.  Run a model and see how much longer it takes to run.
+# **Add another set of compute options (called, say, 'robust') and set whatever values you think might be necessary.  Run a model and see how much longer it takes to run.**
 
 # In[2]:
 
@@ -55,3 +53,5 @@ b.run_compute(compute='phoebe01', model='default_options')
 
 b.run_compute(compute='robust', model='custom_options')
 
+
+# (note the iterations per-second from the progressbar!)

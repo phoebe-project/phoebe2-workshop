@@ -12,9 +12,7 @@ import phoebe
 b = phoebe.default_binary()
 
 
-# # Exercise
-
-# Find and print the constraints between the various t0s.
+# **Find and print the constraints between the various t0s.**
 
 # In[3]:
 
@@ -22,7 +20,7 @@ b = phoebe.default_binary()
 print(b.filter(qualifier='t0*', context='constraint'))
 
 
-# Set the orbital period of the system to something other than 1 day and `t0_supconj` to something other than 0.0.  Then add a light curve dataset such that the times sample 1-orbital period with 100 points.
+# **Set the orbital period of the system to something other than 1 day and `t0_supconj` to something other than 0.0.  Then add a light curve dataset such that the times sample 1-orbital period with 100 points.**
 
 # In[4]:
 

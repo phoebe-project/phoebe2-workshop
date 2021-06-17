@@ -8,6 +8,8 @@
 # # \#1: System from Exercises #1
 # 
 # Pick up where you left off from the [previous exercises](Exercises_01_building_systems.ipynb) and take the systems you created and build and plot forward models.
+# 
+# Note that PHOEBE isn't well-suited for modeling transiting systems (with planets)... so although you will be able to build forward models for the Sun-Earth and Sun-Jupiter systems, you will need to do so with a large number of triangles and will still be left with significant noise.
 
 # In[ ]:
 

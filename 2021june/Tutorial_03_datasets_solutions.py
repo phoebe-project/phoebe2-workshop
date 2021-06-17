@@ -24,7 +24,7 @@ b.add_dataset('rv')
 b.add_dataset('lc')
 
 
-# What choices are available for `rv_method`, `passband`, `pblum_mode`, `ld_mode`, and `intens_weighting` (refer back to the [first tutorial](./Tutorial_01_bundle_basics.ipynb) if you've forgotten how to check the choices)?
+# **What choices are available for `rv_method`, `passband`, `pblum_mode`, `ld_mode`, and `intens_weighting` (refer back to the [first tutorial](./Tutorial_01_bundle_basics.ipynb) if you've forgotten how to check the choices)?**
 
 # In[4]:
 
@@ -86,7 +86,7 @@ print(b.filter(qualifier='intens_weighting'))
 print(b.get_parameter(qualifier='intens_weighting', dataset='lc01').choices)
 
 
-# Let's say we had a single-lined binary system.  Set the times on the RV dataset such that only the primary star would be computed.
+# **Let's say we had a single-lined binary system.  Set the times on the RV dataset such that only the primary star would be computed.**
 
 # In[14]:
 
@@ -117,7 +117,7 @@ b.add_dataset('rv', times=phoebe.linspace(0,1,101), component='primary', dataset
 print(b.filter(qualifier='times', dataset='rv03'))
 
 
-# Add another RV dataset.  Set the new RV dataset to have `rv_method='dynamical'` while keeping the original 'rv01' dataset with `rv_method='flux-weighted'`.  (You'll notice there is a parameter per-component - you'll either need to set both manually or use [set_value_all](http://phoebe-project.org/docs/latest/api/phoebe.parameters.ParameterSet.set_value_all.md))
+# **Add another RV dataset.  Set the new RV dataset to have `rv_method='dynamical'` while keeping the original 'rv01' dataset with `rv_method='flux-weighted'`.  (You'll notice there is a parameter per-component - you'll either need to set both manually or use [set_value_all](http://phoebe-project.org/docs/latest/api/phoebe.parameters.ParameterSet.set_value_all.md))**
 
 # In[17]:
 
