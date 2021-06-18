@@ -19,7 +19,7 @@ import phoebe
 # In[2]:
 
 
-get_ipython().magic(u'matplotlib inline')
+get_ipython().run_line_magic('matplotlib', 'inline')
 
 
 # To demonstrate pulsations, we will use a single star as it keeps things simple. Let's initialize a default star:

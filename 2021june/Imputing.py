@@ -217,11 +217,11 @@ lo = np.array((axes[0][9], axes[1][8], axes[2][5]))
 hi = np.array((axes[0][10], axes[1][9], axes[2][6]))
 fv = ints[9:11,8:10,5:7,-1].reshape(-1, 1)
 print('time cost with copying fv by the interpolator:')
-get_ipython().magic(u'timeit ndpolate(x, lo, hi, fv, copy_data=True)')
+get_ipython().run_line_magic('timeit', 'ndpolate(x, lo, hi, fv, copy_data=True)')
 
 print('time cost without copying fv by the interpolator:')
 fv = ints[9:11,8:10,5:7,-1].copy().reshape(-1, 1)
-get_ipython().magic(u'timeit ndpolate(x, lo, hi, fv, copy_data=False)')
+get_ipython().run_line_magic('timeit', 'ndpolate(x, lo, hi, fv, copy_data=False)')
 
 
 # It turns out that the two approaches are equivalent in terms of execution time, so it makes sense to go with the simpler, first option.
