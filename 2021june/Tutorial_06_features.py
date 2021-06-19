@@ -60,6 +60,8 @@ b.add_spot(component='secondary', feature='spot02')
 # # Gaussian Processes
 # 
 # Similarly to spots, multiple [gaussian process features](http://phoebe-project.org/docs/2.3/api/phoebe.parameters.feature.gaussian_process.md) can be attached - but instead of being attached to a Star (component), they are attached to a light curve (dataset).
+# 
+# **NOTE**: gaussian processes requires [celerite](https://celerite.readthedocs.io) to be installed _before_ importing phoebe (you can install with `pip install celerite` and may need to restart the kernel/notebook).
 
 # In[7]:
 
