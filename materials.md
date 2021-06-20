@@ -100,7 +100,7 @@ Session Chair: Michael
 * [Exercises: Estimators & Optimizers](./Exercises_05_estimators_optimizers.ipynb) (Kyle)
 
 # Tuesday June 22/29: MCMC in PHOEBE
-* [Talk: MCMC Introduction](https://docs.google.com/presentation/d/e/2PACX-1vTJlHTQlJFSTIcGhvfQHoNWOS8q6xlOVFX3uYOytQxvJKwePgg0m5mWbXA20WvtH0YlOhniKeM6-U2l/pub?start=false&loop=false&delayms=3000) (Andrej - **NEEDS WRITING**)
+* [Talk: MCMC Introduction](./mcmc_generic.ipynb) (Andrej)
 * [Tutorial: MCMC Basics in PHOEBE](./Tutorial_10_mcmc.ipynb) (Andrej)
 * [Tutorial: Continuing/Resampling in MCMC](./Tutorial_11_mcmc_continued.ipynb) (Andrej)
 * [Tutorial: Choice of Parameterization](./Tutorial_parametrization.ipynb) (Angela)
