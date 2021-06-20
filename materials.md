@@ -107,8 +107,8 @@ Session Chair: Michael
 * [Exercises: Setting up an MCMC Run](./Exercises_06_mcmc.ipynb) (Andrej)
 
 # Wednesday June 23/30: Advanced MCMC
-* Tutoritalk: Convergence Criteria and Interpreting Parameter Uncertainties (Andrej)
-* [Tutorial: Interpreting Chains and Convergence in MCMC](./Tutorial_12_convergence.ipynb) (Andrej)
+<!-- * Tutoritalk: Convergence Criteria and Interpreting Parameter Uncertainties (Andrej) -->
+* [Tutoritalk: Interpreting Chains and Convergence in MCMC](./Tutorial_12_convergence.ipynb) (Andrej)
 * Tutorial: Posteriors and Parameter Uncertainties (Andrej)
 * Tutorial: Propagating Posteriors (Kyle)
 * [Tutorial: Marginalizing over Additional Parameters](./Tutorial_marginalization.ipynb) (Angela)
