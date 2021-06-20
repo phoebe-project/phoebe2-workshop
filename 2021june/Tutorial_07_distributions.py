@@ -44,7 +44,7 @@ b.add_dataset('lc', compute_phases=phoebe.linspace(0,1,101))
 print(b.get_adjustable_parameters())
 
 
-# The values of the [DistributionParameters](http://phoebe-project.org/docs/2.3/api/phoebe.parameters.DistributionParameter.md) are (distl)[http://phoebe-project.org/docs/2.3/api/phoebe.parameters.DistributionParameter.md] distribution objects -- the most common of which are conveniently available at the top-level of PHOEBE:
+# The values of the [DistributionParameters](http://phoebe-project.org/docs/2.3/api/phoebe.parameters.DistributionParameter.md) are [distl](https://distl.readthedocs.io) distribution objects -- the most common of which are conveniently available at the top-level of PHOEBE:
 # 
 # * [phoebe.gaussian](http://phoebe-project.org/docs/2.3/api/phoebe.gaussian.md)
 # * [phoebe.gaussian_around](http://phoebe-project.org/docs/2.3/api/phoebe.gaussian_around.md)
