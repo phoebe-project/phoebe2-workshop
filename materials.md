@@ -91,23 +91,35 @@ Session Chair: Michael
 
 
 # Monday June 21/28: Inverse Problem Overview
+
+Session Chair: Andrej
+
 * [Talk: Introduction to the Inverse Problem](https://docs.google.com/presentation/d/e/2PACX-1vTtiioAwAllKi9rycyklKPGbbji2cS9sf2wp9nvkccKtb7T_RaYHL7ByFUXy8fhvaM7MlOLi2eCYdtV/pub?start=false&loop=false&delayms=3000) (Angela)
 * [Talk: Inverse Problem in PHOEBE](https://docs.google.com/presentation/d/e/2PACX-1vQsVUENU9QuQSFu2f5qvfJy9HJfgn3EqodG1nxuHXR4gukbt5J39aXmI8XDXo40RMJ93omsTix826z5/pub?start=false&loop=false&delayms=3000) (Kyle)
 * [Tutorial: Distributions & Priors](./Tutorial_07_distributions.ipynb) (Kyle)
+* break to work through exercises
 * [Tutorial: Estimators](./Tutorial_08a_estimators.ipynb) (Angela)
+* break to work through exercises
 * [Tutorial: Optimizers](./Tutorial_08b_optimizers.ipynb) (Bert)
 * [Tutorial: Running Jobs on External Compute Resources](./Tutorial_09_server.ipynb) (Kyle)
 * [Exercises: Estimators & Optimizers](./Exercises_05_estimators_optimizers.ipynb) (Kyle)
 
 # Tuesday June 22/29: MCMC in PHOEBE
+
+Session Chair:
+
 * [Talk: MCMC Introduction](./mcmc_generic.ipynb) (Andrej)
 * [Tutorial: MCMC Basics in PHOEBE](./Tutorial_10_mcmc.ipynb) (Andrej)
+* break to work through exercises
 * [Tutorial: Continuing/Resampling in MCMC](./Tutorial_11_mcmc_continued.ipynb) (Andrej)
+* break to work through exercises
 * [Tutorial: Choice of Parameterization](./Tutorial_parametrization.ipynb) (Angela)
 * [Exercises: Setting up an MCMC Run](./Exercises_06_mcmc.ipynb) (Andrej)
 
 # Wednesday June 23/30: Advanced MCMC
-<!-- * Tutoritalk: Convergence Criteria and Interpreting Parameter Uncertainties (Andrej) -->
+
+Session Chair:
+
 * [Tutoritalk: Interpreting Chains and Convergence in MCMC](./Tutorial_12_convergence.ipynb) (Andrej)
 * Tutorial: Posteriors and Parameter Uncertainties (Andrej)
 * Tutorial: Propagating Posteriors (Kyle)
@@ -115,6 +127,9 @@ Session Chair: Michael
 * [Exercises: Getting Posteriors](./Exercises_07_posteriors.ipynb) (Angela)
 
 # Thursday June 24/July 1:
+
+Session Chair:
+
 * Group Photo/Screenshot
 * [Talk: Common Pitfalls when Fitting](https://docs.google.com/presentation/d/e/2PACX-1vQ7tNOfVPpBuOn49D0jChGsKALZpgCbYUHGRYVbO4EV8kYo_eQbIaOwzOu7pDP0-5A7bjrsxvUphKIk/pub?start=false&loop=false&delayms=3000) (Angela - **NEEDS WRITING** PHOEBE specific things like atmosphere bounds, data far from t0, but also q-search, choice of priors, dataset noise, etc)
 * Tutorial: Using PHOEBE with AWS (Kyle)
