@@ -92,7 +92,7 @@ Session Chair: Michael
 
 # Monday June 21/28: Inverse Problem Overview
 
-Session Chair: Andrej
+Session Chair: Kelly
 
 * [Talk: Introduction to the Inverse Problem](https://docs.google.com/presentation/d/e/2PACX-1vTtiioAwAllKi9rycyklKPGbbji2cS9sf2wp9nvkccKtb7T_RaYHL7ByFUXy8fhvaM7MlOLi2eCYdtV/pub?start=false&loop=false&delayms=3000) (Angela)
 * [Talk: Inverse Problem in PHOEBE](https://docs.google.com/presentation/d/e/2PACX-1vQsVUENU9QuQSFu2f5qvfJy9HJfgn3EqodG1nxuHXR4gukbt5J39aXmI8XDXo40RMJ93omsTix826z5/pub?start=false&loop=false&delayms=3000) (Kyle)
@@ -121,7 +121,7 @@ Session Chair:
 Session Chair:
 
 * [Tutoritalk: Interpreting Chains and Convergence in MCMC](./Tutorial_12_convergence.ipynb) (Andrej)
-* [Tutorial: Posteriors and Parameter Uncertainties](./Tutorial_13_posteriors.ipynb) (Andrej)
+* Tutorial: Posteriors and Parameter Uncertainties (Andrej)
 * Tutorial: Propagating Posteriors (Kyle)
 * [Tutorial: Marginalizing over Additional Parameters](./Tutorial_marginalization.ipynb) (Angela)
 * [Exercises: Getting Posteriors](./Exercises_07_posteriors.ipynb) (Angela)
