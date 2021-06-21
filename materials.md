@@ -94,16 +94,15 @@ Session Chair: Michael
 
 Session Chair: Kelly
 
-* [Talk: Introduction to the Inverse Problem](https://docs.google.com/presentation/d/e/2PACX-1vTtiioAwAllKi9rycyklKPGbbji2cS9sf2wp9nvkccKtb7T_RaYHL7ByFUXy8fhvaM7MlOLi2eCYdtV/pub?start=false&loop=false&delayms=3000) (Angela)
-* [Talk: Inverse Problem in PHOEBE](https://docs.google.com/presentation/d/e/2PACX-1vQsVUENU9QuQSFu2f5qvfJy9HJfgn3EqodG1nxuHXR4gukbt5J39aXmI8XDXo40RMJ93omsTix826z5/pub?start=false&loop=false&delayms=3000) (Kyle)
-* [Tutorial: Estimators](./Tutorial_08a_estimators.ipynb) (Angela)
+* [Talk: Introduction to the Inverse Problem](https://docs.google.com/presentation/d/e/2PACX-1vTtiioAwAllKi9rycyklKPGbbji2cS9sf2wp9nvkccKtb7T_RaYHL7ByFUXy8fhvaM7MlOLi2eCYdtV/pub?start=false&loop=false&delayms=3000) (Angela | [recording week A](http://phoebe-project.org/static/workshops/2021june/2021.06.21.01_inverse_problem.mp4))
+* [Talk: Inverse Problem in PHOEBE](https://docs.google.com/presentation/d/e/2PACX-1vQsVUENU9QuQSFu2f5qvfJy9HJfgn3EqodG1nxuHXR4gukbt5J39aXmI8XDXo40RMJ93omsTix826z5/pub?start=false&loop=false&delayms=3000) (Kyle | [recording A](http://phoebe-project.org/static/workshops/2021june/2021.06.21.02_phoebe_solvers.mp4))
+* [Tutorial: Estimators](./Tutorial_08a_estimators.ipynb) (Angela | [recording A](http://phoebe-project.org/static/workshops/2021june/2021.06.21.03_estimators.mp4))
 * break to work through exercises
-* [Tutorial: Optimizers](./Tutorial_08b_optimizers.ipynb) (Bert)
+* [Tutorial: Optimizers](./Tutorial_08b_optimizers.ipynb) (Bert | [recording A](http://phoebe-project.org/static/workshops/2021june/2021.06.21.04_optimizers.mp4))
 * break to work through exercises
-* [Tutorial: Running Jobs on External Compute Resources](./Tutorial_09_server.ipynb) (Kyle)
-* [Tutorial: Distributions & Priors](./Tutorial_07_distributions.ipynb) (Kyle)
-* break to work through exercises
-* [Exercises: Estimators & Optimizers](./Exercises_05_estimators_optimizers.ipynb) (Kyle)
+* [Tutorial: Running Jobs on External Compute Resources](./Tutorial_09_server.ipynb) (Kyle | [recording A](http://phoebe-project.org/static/workshops/2021june/2021.06.21.05_servers.mp4))
+* [Tutorial: Distributions & Priors](./Tutorial_07_distributions.ipynb) (Kyle | [recording A](http://phoebe-project.org/static/workshops/2021june/2021.06.21.06_distributions.mp4))
+* [Exercises: Estimators & Optimizers](./Exercises_05_estimators_optimizers.ipynb) (Kyle | [recording A](http://phoebe-project.org/static/workshops/2021june/2021.06.21.07_exercises.mp4))
 
 # Tuesday June 22/29: MCMC in PHOEBE
 
