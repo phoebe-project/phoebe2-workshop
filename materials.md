@@ -122,7 +122,7 @@ Session Chair:
 
 * [Tutoritalk: Interpreting Chains and Convergence in MCMC](./Tutorial_12_convergence.ipynb) (Andrej)
 * [Tutorial: Posteriors and Parameter Uncertainties](./Tutorial_13_posteriors.ipynb) (Andrej)
-* Tutorial: Propagating Posteriors (Kyle)
+* [Tutorial: Propagating Posteriors](./Tutorial_posterior_propagation.ipynb) (Kyle)
 * [Tutorial: Marginalizing over Additional Parameters](./Tutorial_marginalization.ipynb) (Angela)
 * [Exercises: Getting Posteriors](./Exercises_07_posteriors.ipynb) (Angela)
 
