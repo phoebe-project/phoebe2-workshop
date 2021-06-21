@@ -250,7 +250,9 @@ b.plot(kind='lc', x='phases', model='after_nmlc', xlim=[-0.2,0.2], show=True, le
 b.plot(kind='lc', x='phases', model='after_nmlc', xlim=[-0.2,0.2], y='residuals', show=True, legend=True, marker = 'o')
 
 
-# Exercise: Combine both light and rv curves to achieve a better fit, primarily within the eclipse. Hint: It's often better to fit a small number of parameters first. 
+# # Exercise
+# 
+# Combine both light and rv curves to achieve a better fit, primarily within the eclipse. Hint: It's often better to fit a small number of parameters first. 
 
 # In[ ]:
 
