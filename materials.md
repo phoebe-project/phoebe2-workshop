@@ -96,12 +96,13 @@ Session Chair: Kelly
 
 * [Talk: Introduction to the Inverse Problem](https://docs.google.com/presentation/d/e/2PACX-1vTtiioAwAllKi9rycyklKPGbbji2cS9sf2wp9nvkccKtb7T_RaYHL7ByFUXy8fhvaM7MlOLi2eCYdtV/pub?start=false&loop=false&delayms=3000) (Angela)
 * [Talk: Inverse Problem in PHOEBE](https://docs.google.com/presentation/d/e/2PACX-1vQsVUENU9QuQSFu2f5qvfJy9HJfgn3EqodG1nxuHXR4gukbt5J39aXmI8XDXo40RMJ93omsTix826z5/pub?start=false&loop=false&delayms=3000) (Kyle)
-* [Tutorial: Distributions & Priors](./Tutorial_07_distributions.ipynb) (Kyle)
-* break to work through exercises
 * [Tutorial: Estimators](./Tutorial_08a_estimators.ipynb) (Angela)
 * break to work through exercises
 * [Tutorial: Optimizers](./Tutorial_08b_optimizers.ipynb) (Bert)
+* break to work through exercises
 * [Tutorial: Running Jobs on External Compute Resources](./Tutorial_09_server.ipynb) (Kyle)
+* [Tutorial: Distributions & Priors](./Tutorial_07_distributions.ipynb) (Kyle)
+* break to work through exercises
 * [Exercises: Estimators & Optimizers](./Exercises_05_estimators_optimizers.ipynb) (Kyle)
 
 # Tuesday June 22/29: MCMC in PHOEBE
