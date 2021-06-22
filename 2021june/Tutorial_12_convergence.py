@@ -36,21 +36,21 @@ b = phoebe.load('./data/synthetic/after_terra.bundle')
 # 
 # Say we have $N$ walkers. Each walker has a corresponding log-probability ($\log p$) at each iteration. We can then calculate the mean and standard deviation of all $\log p$ values at each iteration $i$ and plot that as $\langle \log p (i) \rangle \pm \sigma(i)$:
 
-# In[8]:
+# In[4]:
 
 
 b.plot(solution='round_3', style='lnprobabilities_spread', c='b', show=True)
 
 
-# The blue curve is the mean log-probability and the shaded spread is the $\pm$1-$\sigma$ deviation. Analgously, we can do the same for the trace plot: 
+# The blue curve is the mean log-probability and the shaded spread is the $\pm$1-$\sigma$ deviation. Analogously, we can do the same for the trace plot: 
 
-# In[9]:
+# In[5]:
 
 
 b.plot(solution='round_3', style='trace_spread', c='b', show=True)
 
 
-# These plots might be more helpful in identifying any remaining trends. If there are any trends, chances are that the solution is not fully converged yet. In our case, there seems to be a slight upwards trend in $q$ and a slight downwards trend in $\omega$. Of course, we strongly discourage this "chi-by-eye" to be the ultimate guidance for any decision-making, but it can prove helpful in spotting problems that might otherwise be elusive. 
+# These plots might be helpful in identifying any remaining trends. If there are any trends, chances are that the solution is not fully converged yet. In our case, there seems to be a slight trend in $q$, $v_\gamma$ and $e$. Of course, we strongly discourage this "chi-by-eye" to be the ultimate guidance for any decision-making, but it can prove helpful in spotting problems that might otherwise be elusive. 
 
 # Fortunately, we can do better than that. Thoughout the fitting tutorials you've seen that as a "unit of measure" we use autocorrelation times (for example, `burnin` = `burnin_factor` * `max(autocorr_times)`). It's time to shed some light on the whole autocorrelation concept and provide a bit of context on how to interpret that.
 # 
@@ -82,7 +82,7 @@ b.plot(solution='round_3', style='trace_spread', c='b', show=True)
 # 
 # Now let's implement this, along with one bell and whistle: [Bartlett's formula](https://en.wikipedia.org/wiki/Correlogram). This will give us an uncertainty estimate for autocorrelation as a function of iteration.
 
-# In[10]:
+# In[6]:
 
 
 def acf(ts, lags=0, submean=False, normed=True, p=0.05, bartlett=True):
@@ -107,7 +107,7 @@ def acf(ts, lags=0, submean=False, normed=True, p=0.05, bartlett=True):
 
 # Let's try this in action! Let's take the first walker past the burn-in point:
 
-# In[5]:
+# In[7]:
 
 
 w1 = b['value@lnprobabilities@round_3'][b['value@burnin@round_3']:,0]
@@ -115,7 +115,7 @@ w1 = b['value@lnprobabilities@round_3'][b['value@burnin@round_3']:,0]
 
 # Let's plot it:
 
-# In[6]:
+# In[8]:
 
 
 plt.plot(w1, 'b-')
@@ -123,7 +123,7 @@ plt.plot(w1, 'b-')
 
 # Now we can use this timeseries to calculate the autocorrelation function:
 
-# In[7]:
+# In[9]:
 
 
 acf_w1, acf_w1_ci = acf(w1, lags=65, normed=True)
@@ -131,7 +131,7 @@ acf_w1, acf_w1_ci = acf(w1, lags=65, normed=True)
 
 # Finally, let's plot it and work on interpreting the results:
 
-# In[8]:
+# In[10]:
 
 
 plt.figure(figsize=(16,6))
@@ -142,13 +142,13 @@ plt.fill_between(np.arange(1, len(acf_w1_ci))-0.5, -acf_w1_ci[1:], acf_w1_ci[1:]
 
 # Whatever points are within the Bartlett boundaries, assuming that the timeseries can be described as a moving average (MA) process, their autocorrelation is not statistically significant. The autocorrelation of those points that lie outside the Bartlett boundaries, on the other hand, is statistically significant. The lag at which the function crosses the Bartlett boundary is the *autocorrelation time*.
 
-# In[10]:
+# In[11]:
 
 
 acfs = [acf(b['value@lnprobabilities@round_3'][400:,k], lags=100, normed=True) for k in range(16)]
 
 
-# In[11]:
+# In[12]:
 
 
 plt.figure(figsize=(16,6))
@@ -161,13 +161,13 @@ plt.fill_between(np.arange(len(acfs[0][1]))-0.5, -acfs[0][1], acfs[0][1], color=
 
 # Now let's try the parameters!
 
-# In[12]:
+# In[13]:
 
 
 b['value@samples@round_3'].shape
 
 
-# In[13]:
+# In[14]:
 
 
 for i in range(5):
@@ -178,156 +178,81 @@ for i in range(5):
         plt.fill_between(np.arange(len(acfs[k][1]))-0.5, -acfs[k][1], acfs[k][1], color='b', alpha=0.01)
 
 
-# In[14]:
+# In[15]:
 
 
 b.plot(solution='round_3', style='trace', burnin=400, show=True)
 
 
-# A-ha! So we're not converged yet! Let's do another round on terra!
+# While this looks reasonable, it is still dubious whether convergence has been fully reached. Let's do one more run on terra to see whether another 500 iterations will have an impact on the results. For a refresher on deploying a sampling job on an external resource please refer to the [server tutorial](http://phoebe-project.org/workshops/2021june/Tutorial_09_server.ipynb).
 
-# In[15]:
+# In[16]:
 
 
 b['continue_from@mcmc'] = 'round_3'
 
 
-# In[28]:
+# In[17]:
 
 
-b.run_solver('mcmc', solution='round_4', use_mpi=False, nprocs=48, niters=500)
+# b.run_solver('mcmc', solution='round_4', use_mpi=False, nprocs=24, niters=500)
+# b.save('./data/synthetic/after_terra_2.bundle')
 
 
-# In[29]:
-
-
-b.save('./data/synthetic/after_terra_2.bundle')
-
-
-# In[30]:
-
-
-b.plot(solution='round_4', style='corner', burnin=400, show=True)
-
-
-# In[31]:
-
-
-acfs = [acf(b['value@lnprobabilities@round_4'][400:,k], lags=100, normed=True) for k in range(16)]
-
-
-# In[33]:
-
-
-plt.figure(figsize=(16,6))
-for k in range(16):
-    plt.plot(acfs[k][0], '-')
-
-
-# In[34]:
-
-
-b.plot(solution='round_4', style='trace', burnin=400, show=True)
-
-
-# In[2]:
+# In[20]:
 
 
 b = phoebe.load('./data/synthetic/after_terra_2.bundle')
 
 
-# In[3]:
+# In[21]:
+
+
+b.plot(solution='round_4', style='corner', burnin=400, show=True)
+
+
+# In[25]:
 
 
 b.plot(solution='round_4', style='acf_lnprobabilities', nlags=100, burnin=400, show=True)
 
 
-# In[4]:
+# In[24]:
+
+
+b.plot(solution='round_4', style='trace', burnin=400, show=True)
+
+
+# In[26]:
 
 
 b.plot(solution='round_4', style='acf', nlags=100, burnin=400, show=True)
 
 
-# In[3]:
+# This already looks quite good, let's just get the posteriors into a final shape by running another 1500 iterations.
+
+# In[31]:
 
 
-print(b['terra'])
+# b['continue_from@mcmc'] = 'round_4'
+# b.run_solver('mcmc',
+#              solution='final_round',
+#              continue_from='round_4',
+#              niters=1500,
+#              use_server='terra',
+#              nprocs=48,
+#              walltime=(48,'hr'),
+#              overwrite=True)
+# b.save('./data/synthetic/after_final_round.bundle')
 
 
-# In[3]:
+# In[35]:
 
 
-b['continue_from@mcmc'] = 'round_4'
-b.run_solver('mcmc',
-             solution='final_round',
-             continue_from='round_4',
-             niters=1500,
-             use_server='terra',
-             progress_every_niters=100, 
-             nprocs=384,
-             walltime=(48,'hr'),
-             detach=True)
+b = phoebe.load('./data/synthetic/after_final_round.bundle')
 
 
-# In[4]:
-
-
-print(b.get_solution('final_round'))
-
-
-# In[6]:
-
-
-print(b['continue_from@mcmc'])
-
-
-# In[5]:
-
-
-b.get_job_status(solution='final_round')
-
-
-# In[6]:
-
-
-b.load_job_progress(solution='final_round')
-
-
-# In[9]:
-
-
-b.plot(solution='final_round', style='lnprobabilities', show=True)
-
-
-# In[10]:
-
-
-b.plot(solution='final_round', style='corner', burnin=500, show=True)
-
-
-# In[11]:
-
-
-b.plot(solution='final_round', style='trace', burnin=500, show=True)
-
-
-# In[13]:
-
-
-b.plot(solution='final_round', style='acf_lnprobabilities', nlags=100, burnin=500, show=True)
-
-
-# In[16]:
-
-
-b.plot(solution='final_round', style='acf', nlags=100, burnin=500, show=True)
-
-
-# In[18]:
-
-
-b.save('./data/synthetic/after_final_round.bundle')
-
+# **Exercise 1**: Explore all relevant tracers for this final round. Plot log-probability plot, corner plot, and the autocorrelation function for log-probability and parameters. What can you say about convergence?
 
 # In[ ]:
 
