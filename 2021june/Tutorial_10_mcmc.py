@@ -1,9 +1,9 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# ### MCMC basics with PHOEBE
+# # Workshop Tutorial: MCMC basics with PHOEBE
 # 
-# In this tutorial we will continue our investigation of the synthesized EB data that we used to [estimate parameters](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2021june/Tutorial_08a_estimators.ipynb) and to [optimize them using NMS](https://nbviewer.jupyter.org/github/phoebe-project/phoebe2-workshop/blob/2021june/Tutorial_08b_optimizers.ipynb). We have *a* solution at hand, now we need to sample the parameter space in order to understand its topology and take steps towards heuristic uncertainties for our parameters.
+# In this tutorial we will continue our investigation of the synthesized EB data that we used to [estimate parameters](./Tutorial_08a_estimators.ipynb) and to [optimize them using NMS](./Tutorial_08b_optimizers.ipynb). We have *a* solution at hand, now we need to sample the parameter space in order to understand its topology and take steps towards heuristic uncertainties for our parameters.
 
 # Let's start by the usual imports:
 
@@ -56,7 +56,7 @@ b.models
 b.computes
 
 
-# Instead of overwriting any of them, we will create a new one for the MCMC run. Sampling a parameter space is an expensive task in terms of processing power and wall time, so for the purposes of this tutorial we will limit ourselves to the simplest possible model. We will disable the light curve and fit dynamical (i.e., point-mass) radial velocity curves to RV data. In a [later tutorial](http://phoebe-project.org/workshops/2021june/Tutorial_11_mcmc_continued.ipynb) we will explain how to farm out the computation to a computer cluster.
+# Instead of overwriting any of them, we will create a new one for the MCMC run. Sampling a parameter space is an expensive task in terms of processing power and wall time, so for the purposes of this tutorial we will limit ourselves to the simplest possible model. We will disable the light curve and fit dynamical (i.e., point-mass) radial velocity curves to RV data. In a [later tutorial](./Tutorial_11_mcmc_continued.ipynb) we will explain how to farm out the computation to a computer cluster.
 # 
 # So let's get going; let's initialize a new compute option, disable the LC and change the RV function from flux-weighted to dynamical:
 
@@ -146,7 +146,7 @@ print(b['mcmc'])
 # 
 # **compute**: label for the compute options to be used by the sampler. If not provided, it uses the first compute option-set in `b.computes`;
 # 
-# **continue_from**: state of the sampler to continue from, we will address this in [the next tutorial](http://phoebe-project.org/workshops/2021june/Tutorial_11_mcmc_continued.ipynb).
+# **continue_from**: state of the sampler to continue from, we will address this in [the next tutorial](./Tutorial_11_mcmc_continued.ipynb).
 # 
 # **init_from**: a set of parameter distributions from which initial samples will be drawn, we are using our N-dimensional gaussian distribution for this;
 # 
@@ -221,6 +221,8 @@ b.save('./data/synthetic/after_initial_sampling.bundle')
 
 
 # This concludes the basics of MCMC with PHOEBE! Now you can try it out yourself with these exercises!
+# 
+# # Exercises
 
 # **Exercise 1**: generate your own initial state with uniform distributions instead of gaussian distributions. Think about the appropriateness of such a decision.
 

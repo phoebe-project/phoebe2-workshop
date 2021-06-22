@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# ### Tutorial 12: Convergence
+# # Workshop Tutorial: MCMC Convergence
 # 
 # In the previous tutorial we ran a sampler several times, either by continuing the previous run or resampling from the latest solution. In this tutorial we will focus on assessing convergence. This will be an inevitably disappointing experience because it turns out that there is no robust way to estimate convergence. Instead, we will inspect the usual diagnostic plots and introduce a new type of plot, autocorrelation function, that will be used to *qualify* (rather than *quantify*) convergence.
 # 
@@ -252,6 +252,8 @@ b.plot(solution='round_4', style='acf', nlags=100, burnin=400, show=True)
 b = phoebe.load('./data/synthetic/after_final_round.bundle')
 
 
+# # Exercises
+# 
 # **Exercise 1**: Explore all relevant tracers for this final round. Plot log-probability plot, corner plot, and the autocorrelation function for log-probability and parameters. What can you say about convergence?
 
 # In[ ]:

@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# ### Tutorial 11: Fun with MCMC continued!
+# # Workshop Tutorial: Fun with MCMC continued!
 # 
 # In the previous tutorial we started scratching the surface of sampling the parameter space with MCMC. In this tutorial we will focus on convergence (or lack thereof) and on offloading computations to an external computing cluster.
 # 
@@ -43,7 +43,7 @@ print(b['round_1'].qualifiers)
 # 
 # `adopt_distributions`: should distributions be stored;
 # 
-# `distributions_convert`: should a simplified representation of the distributions be stored; we will return to this in [Tutorial 13](http://phoebe-project.org/workshops/2021june/Tutorial_13_posteriors.ipynb);
+# `distributions_convert`: should a simplified representation of the distributions be stored; we will return to this in a [later tutorial](./Tutorial_13_posteriors.ipynb);
 # 
 # `adopt_values`: should face values be stored;
 # 
@@ -309,7 +309,9 @@ b.plot(solution='round_3', style='corner', burnin=400, show=True)
 b.plot(solution='round_3', style='trace', show=True)
 
 
-# So how do we know when to stop? Is it converged yet? We will explore that in our [next tutorial](Tutorial_12_convergence.ipynb).
+# So how do we know when to stop? Is it converged yet? We will explore that in our [next tutorial](./Tutorial_12_convergence.ipynb).
+# 
+# # Exercises
 
 # **Exercise 1**: increase the number of walkers to 48 and run 100 iterations on terra, using 48 processors. Compare the results from above to the results you obtained. What conclusions can you draw from the comparison?
 

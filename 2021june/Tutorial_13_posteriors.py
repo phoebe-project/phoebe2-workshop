@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# ### Tutorial 13: Posteriors
+# # Workshop Tutorial: Posteriors
 # 
 # In this tutorial we will focus on posterior probability density functions (pdfs), also known as posteriors. These inform us of the parameter distributions that underlie the topology of the parameter space.
 # 
@@ -159,6 +159,8 @@ _ = b.plot_distribution_collection('ndg_final')
 _ = b.plot('final_round', style='corner', distributions_convert='mvgaussian')
 
 
+# # Exercises
+# 
 # **Exercise 1**: We used the posterior on eccentricity to discuss what phoebe can do for us. Now run the same type of analysis on other parameters.
 
 # In[ ]:
