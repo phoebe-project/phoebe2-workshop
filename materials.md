@@ -106,10 +106,10 @@ Session Chair: Kelly
 
 # Tuesday June 22/29: MCMC in PHOEBE
 
-Session Chair:
+Session Chair: Kelly
 
-* [Tutoritalk: MCMC Introduction](./mcmc_generic.ipynb) (Andrej)
-* [Tutorial: MCMC Basics in PHOEBE](./Tutorial_10_mcmc.ipynb) (Andrej)
+* [Tutoritalk: MCMC Introduction](./mcmc_generic.ipynb) (Andrej | [recording A](http://phoebe-project.org/static/workshops/2021june/2021.06.22.01_mcmc_general.mp4))
+* [Tutorial: MCMC Basics in PHOEBE](./Tutorial_10_mcmc.ipynb) (Andrej | [recording A](http://phoebe-project.org/static/workshops/2021june/2021.06.22.02_mcmc_phoebe.mp4))
 * break to work through exercises
 * [Tutorial: Continuing/Resampling in MCMC](./Tutorial_11_mcmc_continued.ipynb) (Andrej)
 * break to work through exercises
