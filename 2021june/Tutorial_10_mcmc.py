@@ -24,7 +24,7 @@ import warnings
 warnings.filterwarnings("ignore", category=UserWarning)
 
 
-# Now let's pick up where we left off: load the bundle that contains optimization results:
+# Now let's pick up where we left off: load the [bundle that contains optimization results](https://github.com/phoebe-project/phoebe2-workshop/raw/2021june/data/synthetic/after_optimizers.bundle):
 
 # In[3]:
 

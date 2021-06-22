@@ -18,6 +18,8 @@ import matplotlib.pyplot as plt
 import scipy.stats as st
 
 
+# And load the [bundle from the previous tutorial](https://github.com/phoebe-project/phoebe2-workshop/raw/2021june/data/synthetic/after_final_round.bundle):
+
 # In[2]:
 
 

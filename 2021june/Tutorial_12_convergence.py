@@ -24,7 +24,7 @@ from scipy.special import erfinv
 from scipy.stats import norm
 
 
-# Load the data from the previous run:
+# Load the [data from the previous run](https://github.com/phoebe-project/phoebe2-workshop/raw/2021june/data/synthetic/after_terra.bundle):
 
 # In[3]:
 
