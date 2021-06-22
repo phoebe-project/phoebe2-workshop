@@ -108,7 +108,7 @@ Session Chair: Kelly
 
 Session Chair:
 
-* [Talk: MCMC Introduction](./mcmc_generic.ipynb) (Andrej)
+* [Tutoritalk: MCMC Introduction](./mcmc_generic.ipynb) (Andrej)
 * [Tutorial: MCMC Basics in PHOEBE](./Tutorial_10_mcmc.ipynb) (Andrej)
 * break to work through exercises
 * [Tutorial: Continuing/Resampling in MCMC](./Tutorial_11_mcmc_continued.ipynb) (Andrej)
