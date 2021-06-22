@@ -107,6 +107,8 @@ b.add_distribution({
 
 # ______________________________________________________
 # Let's load the bundle with the solution after 1000 solutions and see how it performed. Keep in mind that all parameters are set to their *true* values and we initialized the MCMC sample *around the true values* of the sampled parameters.
+# 
+# Download bundle: [true_mcmc_physical.bundle](https://github.com/phoebe-project/phoebe2-workshop/raw/2021june/data/synthetic/true_mcmc_physical.bundle)
 
 # In[9]:
 
@@ -135,7 +137,6 @@ b.plot(solution='mcmc_physical_solution', style='corner', burnin=600, show=True)
 b = phoebe.load('data/synthetic/true.bundle')
 b.add_dataset('lc', times=lc[:,0], fluxes=lc[:,1], sigmas=lc[:,2], passband='Johnson:V')
 b.set_value('pblum_mode', 'dataset-scaled')
-b.run_compute()
 
 
 # In[12]:
@@ -197,7 +198,7 @@ b.add_distribution({
 
 # ______________________________________________________
 
-# The solution:
+# Download the bundle with solution: [true_mcmc_sum_ratios.bundle](https://github.com/phoebe-project/phoebe2-workshop/raw/2021june/data/synthetic/true_mcmc_sum_ratios.bundle)
 
 # In[18]:
 
@@ -309,6 +310,8 @@ b.plot(x='phase', show=True)
 # b.load_job_progress(solution='mcmc_rvs_solution')
 # b.save('data/synthetic/true_mcmc_rvs.bundle')
 
+
+# Download the bundle with RV solutions: [true_mcmc_rvs.bundle](https://github.com/phoebe-project/phoebe2-workshop/raw/2021june/data/synthetic/true_mcmc_rvs.bundle)
 
 # In[31]:
 
