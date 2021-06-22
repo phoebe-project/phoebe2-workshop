@@ -111,9 +111,8 @@ Session Chair: Kelly
 * [Tutoritalk: MCMC Introduction](./mcmc_generic.ipynb) (Andrej | [recording A](http://phoebe-project.org/static/workshops/2021june/2021.06.22.01_mcmc_general.mp4))
 * [Tutorial: MCMC Basics in PHOEBE](./Tutorial_10_mcmc.ipynb) (Andrej | [recording A](http://phoebe-project.org/static/workshops/2021june/2021.06.22.02_mcmc_phoebe.mp4))
 * break to work through exercises
-* [Tutorial: Continuing/Resampling in MCMC](./Tutorial_11_mcmc_continued.ipynb) (Andrej)
+* [Tutorial: Continuing/Resampling in MCMC](./Tutorial_11_mcmc_continued.ipynb) (Andrej | [recording A](http://phoebe-project.org/static/workshops/2021june/2021.06.22.03_mcmc_continued.mp4))
 * break to work through exercises
-* [Tutorial: Choice of Parameterization](./Tutorial_parametrization.ipynb) (Angela)
 * [Exercises: Setting up an MCMC Run](./Exercises_06_mcmc.ipynb) (Andrej)
 
 # Wednesday June 23/30: Advanced MCMC
@@ -121,9 +120,11 @@ Session Chair: Kelly
 Session Chair:
 
 * [Tutoritalk: Interpreting Chains and Convergence in MCMC](./Tutorial_12_convergence.ipynb) (Andrej)
+* break to work through exercises
 * [Tutorial: Posteriors and Parameter Uncertainties](./Tutorial_13_posteriors.ipynb) (Andrej)
 * [Tutorial: Propagating Posteriors](./Tutorial_posterior_propagation.ipynb) (Kyle)
-* [Tutorial: Marginalizing over Additional Parameters](./Tutorial_marginalization.ipynb) (Angela)
+* break to work through exercises
+* [Tutorial: Choice of Parameterization](./Tutorial_parametrization.ipynb) (Angela)
 * [Exercises: Getting Posteriors](./Exercises_07_posteriors.ipynb) (Angela)
 
 # Thursday June 24/July 1:
@@ -131,6 +132,7 @@ Session Chair:
 Session Chair:
 
 * Group Photo/Screenshot
+* [Tutorial: Marginalizing over Additional Parameters](./Tutorial_marginalization.ipynb) (Angela)
 * [Talk: Common Pitfalls when Fitting](https://docs.google.com/presentation/d/e/2PACX-1vQ7tNOfVPpBuOn49D0jChGsKALZpgCbYUHGRYVbO4EV8kYo_eQbIaOwzOu7pDP0-5A7bjrsxvUphKIk/pub?start=false&loop=false&delayms=3000) (Angela - **NEEDS WRITING** PHOEBE specific things like atmosphere bounds, data far from t0, but also q-search, choice of priors, dataset noise, etc)
 * Tutorial: Using PHOEBE with AWS (Kyle)
 * Wrap Up: volunteer wrap-up contributions and discussion
