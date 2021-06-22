@@ -40,6 +40,9 @@ rv2 = np.loadtxt('data/synthetic/rv2.data')
 # ### Case 1: only a light curve
 # 
 # Let's load the bundle that has all with all parameters set to their true values. This bundle has no datasets attached to it, so we'll have to add them here, depending on the case we're considering. We'll also set the pblum_mode to dataset-scaled to avoid effects of marginalization over pblum in the light curve.
+# 
+# You can download the bundle here:
+# [true.bundle](https://github.com/phoebe-project/phoebe2-workshop/raw/2021june/data/synthetic/true.bundle)
 
 # In[3]:
 
