@@ -120,16 +120,17 @@ Session Chair: Kelly
 
 ### Wednesday June 23/30: Advanced MCMC
 
-* Optional Breakout Session: Fitting Contact Binaries (Angela | [recording A]((http://phoebe-project.org/static/workshops/2021june/2021.06.23.00_breakout_contacts_fitting.mp4)))
+* Optional Breakout Session: Fitting Contact Binaries (Angela | [recording A](http://phoebe-project.org/static/workshops/2021june/2021.06.23.00_breakout_contacts_fitting.mp4))
 
 Session Chair: Joe
 
 * [Tutorial: Interpreting Chains and Convergence in MCMC](./Tutorial_12_convergence.ipynb) (Andrej | [recording A](http://phoebe-project.org/static/workshops/2021june/2021.06.23.01_convergence.mp4))
 * break to work through exercises
-* [Tutorial: Posteriors and Parameter Uncertainties](./Tutorial_13_posteriors.ipynb) (Andrej)
-* [Tutorial: Propagating Posteriors](./Tutorial_posterior_propagation.ipynb) (Kyle)
+* [Tutorial: Posteriors and Parameter Uncertainties](./Tutorial_13_posteriors.ipynb) (Andrej | [recording A](http://phoebe-project.org/static/workshops/2021june/2021.06.23.02_posteriors.mp4))
+* [Tutorial: Propagating Posteriors](./Tutorial_posterior_propagation.ipynb) (Kyle | [recording A](http://phoebe-project.org/static/workshops/2021june/2021.06.23.03_posterior_propagation.mp4))
 * break to work through exercises
 * [Tutorial: Choice of Parameterization](./Tutorial_parametrization.ipynb) (Angela)
+* [Tutorial: Marginalizing over Additional Parameters](./Tutorial_marginalization.ipynb) (Angela)
 * [Exercises: Getting Posteriors](./Exercises_07_posteriors.ipynb) (Angela)
 
 ### Thursday June 24/July 1:
@@ -137,7 +138,6 @@ Session Chair: Joe
 Session Chair:
 
 * Group Photo/Screenshot
-* [Tutorial: Marginalizing over Additional Parameters](./Tutorial_marginalization.ipynb) (Angela)
 * [Tutorial: Running on OTHER Compute Resources](./Tutorial_server_other.ipynb) (Kyle)
 * [Talk: Common Pitfalls when Fitting](https://docs.google.com/presentation/d/e/2PACX-1vQ7tNOfVPpBuOn49D0jChGsKALZpgCbYUHGRYVbO4EV8kYo_eQbIaOwzOu7pDP0-5A7bjrsxvUphKIk/pub?start=false&loop=false&delayms=3000) (Angela - **NEEDS WRITING** PHOEBE specific things like atmosphere bounds, data far from t0, but also q-search, choice of priors, dataset noise, etc)
 * Wrap Up: volunteer wrap-up contributions and discussion
