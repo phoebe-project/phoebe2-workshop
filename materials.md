@@ -120,7 +120,7 @@ Session Chair: Kelly
 
 ### Wednesday June 23/30: Advanced MCMC
 
-* Optional Breakout Session: Fitting Contact Binaries (Angela | [recording A](http://phoebe-project.org/static/workshops/2021june/2021.06.23.00_breakout_contacts_fitting.mp4))
+* [Optional Breakout Session: Fitting Contact Binaries](https://docs.google.com/presentation/d/e/2PACX-1vR_mh-aCjbC35E2Hi0FMSNnESuh2wDzvZzk0xf0By3mjmVywMiRQ_HlxlN1YA0qwNOArJ2O4eIXIjXC/pub?start=false&loop=false&delayms=3000) (Angela | [recording A](http://phoebe-project.org/static/workshops/2021june/2021.06.23.00_breakout_contacts_fitting.mp4))
 
 Session Chair: Joe
 
@@ -129,8 +129,8 @@ Session Chair: Joe
 * [Tutorial: Posteriors and Parameter Uncertainties](./Tutorial_13_posteriors.ipynb) (Andrej | [recording A](http://phoebe-project.org/static/workshops/2021june/2021.06.23.02_posteriors.mp4))
 * [Tutorial: Propagating Posteriors](./Tutorial_posterior_propagation.ipynb) (Kyle | [recording A](http://phoebe-project.org/static/workshops/2021june/2021.06.23.03_posterior_propagation.mp4))
 * break to work through exercises
-* [Tutorial: Choice of Parameterization](./Tutorial_parametrization.ipynb) (Angela)
-* [Tutorial: Marginalizing over Additional Parameters](./Tutorial_marginalization.ipynb) (Angela)
+* [Tutorial: Choice of Parameterization](./Tutorial_parametrization.ipynb) (Angela | [recording A](http://phoebe-project.org/static/workshops/2021june/2021.06.23.04_parameterization.mp4))
+* [Tutorial: Marginalizing over Additional Parameters](./Tutorial_marginalization.ipynb) (Angela | [recording A](http://phoebe-project.org/static/workshops/2021june/2021.06.23.05_marginalization.mp4))
 * [Exercises: Getting Posteriors](./Exercises_07_posteriors.ipynb) (Angela)
 
 ### Thursday June 24/July 1:
