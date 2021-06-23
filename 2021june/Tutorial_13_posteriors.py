@@ -1,11 +1,16 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# # Workshop Tutorial: Posteriors
+# # Workshop Tutorial: Posteriors & Parameter Uncertainties
 # 
 # In this tutorial we will focus on posterior probability density functions (pdfs), also known as posteriors. These inform us of the parameter distributions that underlie the topology of the parameter space.
 # 
 # We will not be doing any new computations. Instead, we will use the results from our final round of sampling and interpret them in the context of posterior pdfs.
+# 
+# This interactive workshop tutorial covers many of the same topics as the corresponding online tutorial(s):
+# 
+# * [Advanced: EMCEE Sampler](http://phoebe-project.org/docs/2.3/tutorials/emcee.ipynb)
+# * [Advanced: Convert Posterior Distributions from EMCEE](http://phoebe-project.org/docs/2.3/tutorials/emcee_distributions_convert.ipynb)
 # 
 # As usual, we do the imports first.
 

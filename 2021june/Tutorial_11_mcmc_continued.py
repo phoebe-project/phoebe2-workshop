@@ -5,6 +5,13 @@
 # 
 # In the previous tutorial we started scratching the surface of sampling the parameter space with MCMC. In this tutorial we will focus on convergence (or lack thereof) and on offloading computations to an external computing cluster.
 # 
+# This interactive workshop tutorial covers many of the same topics as the corresponding online tutorial(s):
+# 
+# * [Advanced: EMCEE Sampler](http://phoebe-project.org/docs/2.3/tutorials/emcee.ipynb)
+# * [Advanced: Running Solvers on an External Machine](http://phoebe-project.org/docs/2.3/tutorials/export_solver.ipynb)
+# * [Advanced: Continuing EMCEE from a Previous Run](http://phoebe-project.org/docs/2.3/tutorials/emcee_continue_from.ipynb)
+# * [Advanced: Resampling EMCEE from a Previous Run](http://phoebe-project.org/docs/2.3/tutorials/emcee_resampling.ipynb)
+# 
 # Let's start with the usual imports.
 
 # In[1]:

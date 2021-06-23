@@ -4,6 +4,11 @@
 # # Workshop Tutorial: MCMC basics with PHOEBE
 # 
 # In this tutorial we will continue our investigation of the synthesized EB data that we used to [estimate parameters](./Tutorial_08a_estimators.ipynb) and to [optimize them using NMS](./Tutorial_08b_optimizers.ipynb). We have *a* solution at hand, now we need to sample the parameter space in order to understand its topology and take steps towards heuristic uncertainties for our parameters.
+# 
+# This interactive workshop tutorial covers many of the same topics as the corresponding online tutorial(s):
+# 
+# * [Advanced: EMCEE Sampler](http://phoebe-project.org/docs/2.3/tutorials/emcee.ipynb)
+# 
 
 # Let's start by the usual imports:
 
