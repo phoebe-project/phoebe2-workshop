@@ -120,9 +120,11 @@ Session Chair: Kelly
 
 ### Wednesday June 23/30: Advanced MCMC
 
+* Optional Breakout Session: Fitting Contact Binaries (Angela | [recording A]((http://phoebe-project.org/static/workshops/2021june/2021.06.23.00_breakout_contacts_fitting.mp4)))
+
 Session Chair: Joe
 
-* [Tutorial: Interpreting Chains and Convergence in MCMC](./Tutorial_12_convergence.ipynb) (Andrej)
+* [Tutorial: Interpreting Chains and Convergence in MCMC](./Tutorial_12_convergence.ipynb) (Andrej | [recording A](http://phoebe-project.org/static/workshops/2021june/2021.06.23.01_convergence.mp4))
 * break to work through exercises
 * [Tutorial: Posteriors and Parameter Uncertainties](./Tutorial_13_posteriors.ipynb) (Andrej)
 * [Tutorial: Propagating Posteriors](./Tutorial_posterior_propagation.ipynb) (Kyle)
