@@ -36,7 +36,9 @@ If you have any troubles before the meeting, please reach out to us for assistan
 
 Please test your installation well in advance of the workshop by running the [test script](https://raw.githubusercontent.com/phoebe-project/phoebe2-workshop/2021june/test_install.py) (should take 10-60 seconds to run) and make sure it completes without any errors (warning messages are not a cause for concern).  If the script does not run successfully, please reach out to us so we can debug any installation issues in advance.
 
-# Tuesday June 15: Overview and Building Systems in PHOEBE
+# Week 1
+
+### Tuesday June 15: Overview and Building Systems in PHOEBE
 
 Session Chair: Angela
 
@@ -48,7 +50,7 @@ Session Chair: Angela
 * [Exercises: Building Systems](./Exercises_01_building_systems.ipynb) (Kyle | [recording](http://phoebe-project.org/static/workshops/2021june/2021.06.15.06_exercises.mp4) | [example solutions](./Exercises_01_building_systems_solutions.ipynb))
 
 
-# Wednesday June 16: Creating Forward Models
+### Wednesday June 16: Creating Forward Models
 
 Session Chair: Kelly
 
@@ -60,7 +62,7 @@ Session Chair: Kelly
 * [Exercises: Creating Forward Models](./Exercises_02_forward_models.ipynb) (Angela | [recording](http://phoebe-project.org/static/workshops/2021june/2021.06.16.06_exercises.mp4) | [example solution](./Exercises_02_forward_models_solutions.ipynb))
 
 
-# Thursday June 17: Animations & Features
+### Thursday June 17: Animations & Features
 
 * [Optional Breakout Session: Contact Binaries](./Tutorial_Semidetached_Contact.ipynb) (Angela | [recording](http://phoebe-project.org/static/workshops/2021june/2021.06.17.00_breakout_semidetached_contacts.mp4))
 
@@ -76,7 +78,7 @@ Session Chair: Kelly
 
 
 
-# Friday June 18: PHOEBE Development & Upcoming Releases
+### Friday June 18: PHOEBE Development & Upcoming Releases
 
 Session Chair: Michael
 
@@ -89,8 +91,9 @@ Session Chair: Michael
 * Wrap Up: volunteer wrap-up contributions and discussion
 * Exercises: finish or continue any of the previous exercises.  Next week we start fitting!
 
+# Week 2
 
-# Monday June 21/28: Inverse Problem Overview
+### Monday June 21/28: Inverse Problem Overview
 
 Session Chair: Kelly
 
@@ -104,7 +107,7 @@ Session Chair: Kelly
 * [Tutorial: Distributions & Priors](./Tutorial_07_distributions.ipynb) (Kyle | [recording A](http://phoebe-project.org/static/workshops/2021june/2021.06.21.06_distributions.mp4))
 * [Exercises: Estimators & Optimizers](./Exercises_05_estimators_optimizers.ipynb) (Kyle | [recording A](http://phoebe-project.org/static/workshops/2021june/2021.06.21.07_exercises.mp4))
 
-# Tuesday June 22/29: MCMC in PHOEBE
+### Tuesday June 22/29: MCMC in PHOEBE
 
 Session Chair: Kelly
 
@@ -115,11 +118,11 @@ Session Chair: Kelly
 * break to work through exercises
 * [Exercises: Setting up an MCMC Run](./Exercises_06_mcmc.ipynb) (Andrej)
 
-# Wednesday June 23/30: Advanced MCMC
+### Wednesday June 23/30: Advanced MCMC
 
-Session Chair:
+Session Chair: Joe
 
-* [Tutoritalk: Interpreting Chains and Convergence in MCMC](./Tutorial_12_convergence.ipynb) (Andrej)
+* [Tutorial: Interpreting Chains and Convergence in MCMC](./Tutorial_12_convergence.ipynb) (Andrej)
 * break to work through exercises
 * [Tutorial: Posteriors and Parameter Uncertainties](./Tutorial_13_posteriors.ipynb) (Andrej)
 * [Tutorial: Propagating Posteriors](./Tutorial_posterior_propagation.ipynb) (Kyle)
@@ -127,12 +130,12 @@ Session Chair:
 * [Tutorial: Choice of Parameterization](./Tutorial_parametrization.ipynb) (Angela)
 * [Exercises: Getting Posteriors](./Exercises_07_posteriors.ipynb) (Angela)
 
-# Thursday June 24/July 1:
+### Thursday June 24/July 1:
 
 Session Chair:
 
 * Group Photo/Screenshot
 * [Tutorial: Marginalizing over Additional Parameters](./Tutorial_marginalization.ipynb) (Angela)
+* [Tutorial: Running on OTHER Compute Resources](./Tutorial_server_other.ipynb) (Kyle)
 * [Talk: Common Pitfalls when Fitting](https://docs.google.com/presentation/d/e/2PACX-1vQ7tNOfVPpBuOn49D0jChGsKALZpgCbYUHGRYVbO4EV8kYo_eQbIaOwzOu7pDP0-5A7bjrsxvUphKIk/pub?start=false&loop=false&delayms=3000) (Angela - **NEEDS WRITING** PHOEBE specific things like atmosphere bounds, data far from t0, but also q-search, choice of priors, dataset noise, etc)
-* Tutorial: Using PHOEBE with AWS (Kyle)
 * Wrap Up: volunteer wrap-up contributions and discussion
