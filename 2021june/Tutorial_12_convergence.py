@@ -201,6 +201,8 @@ b['continue_from@mcmc'] = 'round_3'
 # b.save('./data/synthetic/after_terra_2.bundle')
 
 
+# We'll skip and load the [pre-computed results](https://github.com/phoebe-project/phoebe2-workshop/raw/2021june/data/synthetic/after_terra_2.bundle)
+
 # In[20]:
 
 
@@ -247,6 +249,8 @@ b.plot(solution='round_4', style='acf', nlags=100, burnin=400, show=True)
 #              overwrite=True)
 # b.save('./data/synthetic/after_final_round.bundle')
 
+
+# Again, let's load the [pre-computed results](https://github.com/phoebe-project/phoebe2-workshop/raw/2021june/data/synthetic/after_final_round.bundle)
 
 # In[35]:
 
