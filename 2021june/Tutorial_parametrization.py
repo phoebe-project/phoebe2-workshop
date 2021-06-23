@@ -345,7 +345,7 @@ b.plot(solution='mcmc_rvs_solution', style='corner', burnin=250, show=True)
 
 # **Exercise 3**. Try the physical parameter vs. sum/ratios sampling using all available data. What's different when we add the RVs?
 
-# ***Bonus exercise (refer back to it after the "propagating distributions" tutorial)***: *Use the physical parameters distribution and propagate them to get distributions on requivsumfrac, requivratio, q and teffratio. How do they compare to the results when we directly sample them?*
+# **Exercise 4.**: Use the physical parameters distribution and propagate them to get distributions on requivsumfrac, requivratio, q and teffratio. How do they compare to the results when we directly sample them?
 
 # In[ ]:
 
