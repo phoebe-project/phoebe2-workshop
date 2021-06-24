@@ -91,51 +91,103 @@ Session Chair: Michael
 * Wrap Up: volunteer wrap-up contributions and discussion
 * Exercises: finish or continue any of the previous exercises.  Next week we start fitting!
 
-# Week 2
+# Week 2A
 
-### Monday June 21/28: Inverse Problem Overview
-
-Session Chair: Kelly
-
-* [Talk: Introduction to the Inverse Problem](https://docs.google.com/presentation/d/e/2PACX-1vTtiioAwAllKi9rycyklKPGbbji2cS9sf2wp9nvkccKtb7T_RaYHL7ByFUXy8fhvaM7MlOLi2eCYdtV/pub?start=false&loop=false&delayms=3000) (Angela | [recording week A](http://phoebe-project.org/static/workshops/2021june/2021.06.21.01_inverse_problem.mp4))
-* [Talk: Inverse Problem in PHOEBE](https://docs.google.com/presentation/d/e/2PACX-1vQsVUENU9QuQSFu2f5qvfJy9HJfgn3EqodG1nxuHXR4gukbt5J39aXmI8XDXo40RMJ93omsTix826z5/pub?start=false&loop=false&delayms=3000) (Kyle | [recording A](http://phoebe-project.org/static/workshops/2021june/2021.06.21.02_phoebe_solvers.mp4))
-* [Tutorial: Estimators](./Tutorial_08a_estimators.ipynb) (Angela | [recording A](http://phoebe-project.org/static/workshops/2021june/2021.06.21.03_estimators.mp4))
-* break to work through exercises
-* [Tutorial: Optimizers](./Tutorial_08b_optimizers.ipynb) (Bert | [recording A](http://phoebe-project.org/static/workshops/2021june/2021.06.21.04_optimizers.mp4))
-* break to work through exercises
-* [Tutorial: Running Jobs on External Compute Resources](./Tutorial_09_server.ipynb) (Kyle | [recording A](http://phoebe-project.org/static/workshops/2021june/2021.06.21.05_servers.mp4))
-* [Tutorial: Distributions & Priors](./Tutorial_07_distributions.ipynb) (Kyle | [recording A](http://phoebe-project.org/static/workshops/2021june/2021.06.21.06_distributions.mp4))
-* [Exercises: Estimators & Optimizers](./Exercises_05_estimators_optimizers.ipynb) (Kyle | [recording A](http://phoebe-project.org/static/workshops/2021june/2021.06.21.07_exercises.mp4))
-
-### Tuesday June 22/29: MCMC in PHOEBE
+### Monday June 21: Inverse Problem Overview
 
 Session Chair: Kelly
 
-* [Tutoritalk: MCMC Introduction](./mcmc_generic.ipynb) (Andrej | [recording A](http://phoebe-project.org/static/workshops/2021june/2021.06.22.01_mcmc_general.mp4))
-* [Tutorial: MCMC Basics in PHOEBE](./Tutorial_10_mcmc.ipynb) (Andrej | [recording A](http://phoebe-project.org/static/workshops/2021june/2021.06.22.02_mcmc_phoebe.mp4))
+* [Talk: Introduction to the Inverse Problem](https://docs.google.com/presentation/d/e/2PACX-1vTtiioAwAllKi9rycyklKPGbbji2cS9sf2wp9nvkccKtb7T_RaYHL7ByFUXy8fhvaM7MlOLi2eCYdtV/pub?start=false&loop=false&delayms=3000) (Angela | [recording](http://phoebe-project.org/static/workshops/2021june/2021.06.21.01_inverse_problem.mp4))
+* [Talk: Inverse Problem in PHOEBE](https://docs.google.com/presentation/d/e/2PACX-1vQsVUENU9QuQSFu2f5qvfJy9HJfgn3EqodG1nxuHXR4gukbt5J39aXmI8XDXo40RMJ93omsTix826z5/pub?start=false&loop=false&delayms=3000) (Kyle | [recording](http://phoebe-project.org/static/workshops/2021june/2021.06.21.02_phoebe_solvers.mp4))
+* [Tutorial: Estimators](./Tutorial_08a_estimators.ipynb) (Angela | [recording](http://phoebe-project.org/static/workshops/2021june/2021.06.21.03_estimators.mp4))
 * break to work through exercises
-* [Tutorial: Continuing/Resampling in MCMC](./Tutorial_11_mcmc_continued.ipynb) (Andrej | [recording A](http://phoebe-project.org/static/workshops/2021june/2021.06.22.03_mcmc_continued.mp4))
+* [Tutorial: Optimizers](./Tutorial_08b_optimizers.ipynb) (Bert | [recording](http://phoebe-project.org/static/workshops/2021june/2021.06.21.04_optimizers.mp4))
+* break to work through exercises
+* [Tutorial: Running Jobs on External Compute Resources](./Tutorial_09_server.ipynb) (Kyle | [recording](http://phoebe-project.org/static/workshops/2021june/2021.06.21.05_servers.mp4))
+* [Tutorial: Distributions & Priors](./Tutorial_07_distributions.ipynb) (Kyle | [recording](http://phoebe-project.org/static/workshops/2021june/2021.06.21.06_distributions.mp4))
+* [Exercises: Estimators & Optimizers](./Exercises_05_estimators_optimizers.ipynb) (Kyle | [recording](http://phoebe-project.org/static/workshops/2021june/2021.06.21.07_exercises.mp4))
+
+### Tuesday June 22: MCMC in PHOEBE
+
+Session Chair: Kelly
+
+* [Tutoritalk: MCMC Introduction](./mcmc_generic.ipynb) (Andrej | [recording](http://phoebe-project.org/static/workshops/2021june/2021.06.22.01_mcmc_general.mp4))
+* [Tutorial: MCMC Basics in PHOEBE](./Tutorial_10_mcmc.ipynb) (Andrej | [recording](http://phoebe-project.org/static/workshops/2021june/2021.06.22.02_mcmc_phoebe.mp4))
+* break to work through exercises
+* [Tutorial: Continuing/Resampling in MCMC](./Tutorial_11_mcmc_continued.ipynb) (Andrej | [recording](http://phoebe-project.org/static/workshops/2021june/2021.06.22.03_mcmc_continued.mp4))
 * break to work through exercises
 * [Exercises: Setting up an MCMC Run](./Exercises_06_mcmc.ipynb) (Andrej)
 
-### Wednesday June 23/30: Advanced MCMC
+### Wednesday June 23: Advanced MCMC
 
-* [Optional Breakout Session: Fitting Contact Binaries](https://docs.google.com/presentation/d/e/2PACX-1vR_mh-aCjbC35E2Hi0FMSNnESuh2wDzvZzk0xf0By3mjmVywMiRQ_HlxlN1YA0qwNOArJ2O4eIXIjXC/pub?start=false&loop=false&delayms=3000) (Angela | [recording A](http://phoebe-project.org/static/workshops/2021june/2021.06.23.00_breakout_contacts_fitting.mp4))
+* [Optional Breakout Session: Fitting Contact Binaries](https://docs.google.com/presentation/d/e/2PACX-1vR_mh-aCjbC35E2Hi0FMSNnESuh2wDzvZzk0xf0By3mjmVywMiRQ_HlxlN1YA0qwNOArJ2O4eIXIjXC/pub?start=false&loop=false&delayms=3000) (Angela | [recording](http://phoebe-project.org/static/workshops/2021june/2021.06.23.00_breakout_contacts_fitting.mp4))
 
 Session Chair: Joe
 
-* [Tutorial: Interpreting Chains and Convergence in MCMC](./Tutorial_12_convergence.ipynb) (Andrej | [recording A](http://phoebe-project.org/static/workshops/2021june/2021.06.23.01_convergence.mp4))
+* [Tutorial: Interpreting Chains and Convergence in MCMC](./Tutorial_12_convergence.ipynb) (Andrej | [recording](http://phoebe-project.org/static/workshops/2021june/2021.06.23.01_convergence.mp4))
 * break to work through exercises
-* [Tutorial: Posteriors and Parameter Uncertainties](./Tutorial_13_posteriors.ipynb) (Andrej | [recording A](http://phoebe-project.org/static/workshops/2021june/2021.06.23.02_posteriors.mp4))
-* [Tutorial: Propagating Posteriors](./Tutorial_posterior_propagation.ipynb) (Kyle | [recording A](http://phoebe-project.org/static/workshops/2021june/2021.06.23.03_posterior_propagation.mp4))
+* [Tutorial: Posteriors and Parameter Uncertainties](./Tutorial_13_posteriors.ipynb) (Andrej | [recording](http://phoebe-project.org/static/workshops/2021june/2021.06.23.02_posteriors.mp4))
+* [Tutorial: Propagating Posteriors](./Tutorial_posterior_propagation.ipynb) (Kyle | [recording](http://phoebe-project.org/static/workshops/2021june/2021.06.23.03_posterior_propagation.mp4))
 * break to work through exercises
-* [Tutorial: Choice of Parameterization](./Tutorial_parametrization.ipynb) (Angela | [recording A](http://phoebe-project.org/static/workshops/2021june/2021.06.23.04_parameterization.mp4))
-* [Tutorial: Marginalizing over Additional Parameters](./Tutorial_marginalization.ipynb) (Angela | [recording A](http://phoebe-project.org/static/workshops/2021june/2021.06.23.05_marginalization.mp4))
+* [Tutorial: Choice of Parameterization](./Tutorial_parametrization.ipynb) (Angela | [recording](http://phoebe-project.org/static/workshops/2021june/2021.06.23.04_parameterization.mp4))
+* [Tutorial: Marginalizing over Additional Parameters](./Tutorial_marginalization.ipynb) (Angela | [recording](http://phoebe-project.org/static/workshops/2021june/2021.06.23.05_marginalization.mp4))
 * [Exercises: Getting Posteriors](./Exercises_07_posteriors.ipynb) (Angela)
 
-### Thursday June 24/July 1:
+### Thursday June 24:
 
-Session Chair:
+Session Chair: Michael
+
+* Group Photo/Screenshot
+* [Tutorial: Running on OTHER Compute Resources](./Tutorial_server_other.ipynb) (Kyle | [recording](http://phoebe-project.org/static/workshops/2021june/2021.06.24.01_servers_other.mp4))
+* [Talk: Common Pitfalls when Fitting](https://docs.google.com/presentation/d/e/2PACX-1vQ7tNOfVPpBuOn49D0jChGsKALZpgCbYUHGRYVbO4EV8kYo_eQbIaOwzOu7pDP0-5A7bjrsxvUphKIk/pub?start=false&loop=false&delayms=3000) (Angela | [recording](http://phoebe-project.org/static/workshops/2021june/2021.06.24.02_fitting_pitfalls.mp4))
+* Wrap Up: volunteer wrap-up contributions and discussion
+
+
+# Week 2B
+
+### Monday June 28: Inverse Problem Overview
+
+Session Chair: Kelly
+
+* [Talk: Introduction to the Inverse Problem](https://docs.google.com/presentation/d/e/2PACX-1vTtiioAwAllKi9rycyklKPGbbji2cS9sf2wp9nvkccKtb7T_RaYHL7ByFUXy8fhvaM7MlOLi2eCYdtV/pub?start=false&loop=false&delayms=3000) (Angela)
+* [Talk: Inverse Problem in PHOEBE](https://docs.google.com/presentation/d/e/2PACX-1vQsVUENU9QuQSFu2f5qvfJy9HJfgn3EqodG1nxuHXR4gukbt5J39aXmI8XDXo40RMJ93omsTix826z5/pub?start=false&loop=false&delayms=3000) (Kyle)
+* [Tutorial: Estimators](./Tutorial_08a_estimators.ipynb) (Angela)
+* break to work through exercises
+* [Tutorial: Optimizers](./Tutorial_08b_optimizers.ipynb) (Bert)
+* break to work through exercises
+* [Tutorial: Running Jobs on External Compute Resources](./Tutorial_09_server.ipynb) (Kyle)
+* [Tutorial: Distributions & Priors](./Tutorial_07_distributions.ipynb) (Kyle)
+* [Exercises: Estimators & Optimizers](./Exercises_05_estimators_optimizers.ipynb) (Kyle)
+
+### Tuesday June 29: MCMC in PHOEBE
+
+Session Chair: Kelly
+
+* [Tutoritalk: MCMC Introduction](./mcmc_generic.ipynb) (Andrej)
+* [Tutorial: MCMC Basics in PHOEBE](./Tutorial_10_mcmc.ipynb) (Andrej)
+* break to work through exercises
+* [Tutorial: Continuing/Resampling in MCMC](./Tutorial_11_mcmc_continued.ipynb) (Andrej)
+* break to work through exercises
+* [Exercises: Setting up an MCMC Run](./Exercises_06_mcmc.ipynb) (Andrej)
+
+### Wednesday June 30: Advanced MCMC
+
+* [Optional Breakout Session: Fitting Contact Binaries](https://docs.google.com/presentation/d/e/2PACX-1vR_mh-aCjbC35E2Hi0FMSNnESuh2wDzvZzk0xf0By3mjmVywMiRQ_HlxlN1YA0qwNOArJ2O4eIXIjXC/pub?start=false&loop=false&delayms=3000) (Angela)
+
+Session Chair: Joe
+
+* [Tutorial: Interpreting Chains and Convergence in MCMC](./Tutorial_12_convergence.ipynb) (Andrej)
+* break to work through exercises
+* [Tutorial: Posteriors and Parameter Uncertainties](./Tutorial_13_posteriors.ipynb) (Andrej)
+* [Tutorial: Propagating Posteriors](./Tutorial_posterior_propagation.ipynb) (Kyle)
+* break to work through exercises
+* [Tutorial: Choice of Parameterization](./Tutorial_parametrization.ipynb) (Angela)
+* [Tutorial: Marginalizing over Additional Parameters](./Tutorial_marginalization.ipynb) (Angela)
+* [Exercises: Getting Posteriors](./Exercises_07_posteriors.ipynb) (Angela)
+
+### Thursday July 1:
+
+Session Chair: Michael
 
 * Group Photo/Screenshot
 * [Tutorial: Running on OTHER Compute Resources](./Tutorial_server_other.ipynb) (Kyle)
