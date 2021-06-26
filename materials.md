@@ -104,7 +104,7 @@ Session Chair: Kelly
 * [Tutorial: Optimizers](./Tutorial_08b_optimizers.ipynb) (Bert | [recording](http://phoebe-project.org/static/workshops/2021june/2021.06.21.04_optimizers.mp4))
 * break to work through exercises
 * [Tutorial: Running Jobs on External Compute Resources](./Tutorial_09_server.ipynb) (Kyle | [recording](http://phoebe-project.org/static/workshops/2021june/2021.06.21.05_servers.mp4))
-* [Tutorial: Distributions & Priors](./Tutorial_07_distributions.ipynb) (Kyle | [recording](http://phoebe-project.org/static/workshops/2021june/2021.06.21.06_distributions.mp4))
+* [Tutorial: Distributions & Priors](./Tutorial_07_distributions_A.ipynb) (Kyle | [recording](http://phoebe-project.org/static/workshops/2021june/2021.06.21.06_distributions.mp4))
 * [Exercises: Estimators & Optimizers](./Exercises_05_estimators_optimizers.ipynb) (Kyle | [recording](http://phoebe-project.org/static/workshops/2021june/2021.06.21.07_exercises.mp4))
 
 ### Tuesday June 22: MCMC in PHOEBE
