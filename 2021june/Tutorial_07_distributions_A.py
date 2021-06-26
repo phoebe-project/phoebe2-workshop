@@ -117,84 +117,6 @@ _ = b.get_value(context='distribution', qualifier='teff').plot(show=True)
 _ = b.plot_distribution_collection(distribution='mydist', show=True)
 
 
-# # Using Distributions as Priors
-# 
-# Most solvers that include the forward model (estimators & samplers) have a `priors` parameter which accepts a list of distribution tags which will then be used as priors in the merit function.
-# 
-# `lnprobability = lnlikelihood + lnpriors`
-# 
-# The `lnlikelihood` is `-0.5 * chi^2` (see [b.calculate_residuals](http://phoebe-project.org/docs/2.3/api/phoebe.parameters.ParameterSet.calculate_residuals.md), [b.calculate_chi2](http://phoebe-project.org/docs/2.3/api/phoebe.parameters.ParameterSet.calculate_chi2.md), [b.calculate_lnlikelihood](http://phoebe-project.org/docs/2.3/api/phoebe.parameters.ParameterSet.calculate_lnlikelihood.md))
-# 
-# `lnpriors` is the probability of drawing the _current parameter face-values_ from the distributions assigned as priors.  We can expose the probability of drawing the current values from our `'mydist'` distribution with [b.calculate_lnp](http://phoebe-project.org/docs/2.3/api/phoebe.frontend.bundle.Bundle.calculate_lnp.md).  But note that this _only_ becomes the `lnpriors` when `'mydist'` is included within the `priors` parameter of a given solver.
-
-# In[ ]:
-
-
-b.calculate_lnp(distribution='mydist')
-
-
-# In[ ]:
-
-
-b.add_solver('optimizer.nelder_mead', solver='nm_solver')
-
-
-# In[ ]:
-
-
-print(b.get_parameter('priors', solver='nm_solver'))
-
-
-# In[ ]:
-
-
-b.set_value('priors', value=['mydist'])
-
-
-# In[ ]:
-
-
-print(b.filter(qualifier='priors*'))
-
-
-# As a shortcut, we can pass a pointer to the `priors` parameter itself.  This will automatically account for combining multiple distributions as defined by `priors_combine` and will ensure that constrained parameters are included (`include_constrained=True`, which is the default for `calculate_lnp`):
-
-# In[ ]:
-
-
-b.calculate_lnp('priors@nm_solver')
-
-
-# Now if we change a face-value of one of the parameters within this distribution, we'll see the probability change.
-
-# In[ ]:
-
-
-b.set_value('teff', component='primary', context='component', value=5500)
-
-
-# In[ ]:
-
-
-b.calculate_lnp('priors@nm_solver')
-
-
-# If we do the same of an _uninformative_ (uniform) distribution, we'll get -inf returned, which within an optimizer or sampler would immediately reject that step before even running the forward model
-
-# In[ ]:
-
-
-b.set_value('incl', component='binary', context='component', value=87)
-
-
-# In[ ]:
-
-
-b.calculate_lnp('priors@nm_solver')
-
-
-# This allows using _uninformative_ (uniform) distributions as priors to set artificial limits on parameters - but should _only_ be done for good reason!
-
 # # Propagating Distributions through Constraints
 # 
 # We can pass a list of parameters (as twigs) to the `parameters` keyword argument to only plot a subset of the available parameters, but also to propagate distributions through constraints linking parameters together.
@@ -256,14 +178,6 @@ _ = b.plot(show=True)
 
 
 # Try setting distributions on parameters in Kepler's third law, flip constraints as necessary, and propagate the distributions through the Kepler's third law constraint.
-
-# In[ ]:
-
-
-
-
-
-# Try adding multiple distributions (with different `distribution` labels), set as priors, and play with the different options for `priors_combine`.
 
 # In[ ]:
 
