@@ -163,10 +163,10 @@ Session Chair: Kelly
 
 Session Chair: Angela
 
-* [Tutoritalk: MCMC Introduction](./mcmc_generic.ipynb) (Andrej)
-* [Tutorial: MCMC Basics in PHOEBE](./Tutorial_10_mcmc.ipynb) (Andrej)
+* [Tutoritalk: MCMC Introduction](./mcmc_generic.ipynb) (Andrej | [recording](http://phoebe-project.org/static/workshops/2021june/2021.06.29.01_mcmc_general.mp4))
+* [Tutorial: MCMC Basics in PHOEBE](./Tutorial_10_mcmc.ipynb) (Andrej | [recording](http://phoebe-project.org/static/workshops/2021june/2021.06.29.02_mcmc_phoebe.mp4))
 * break to work through exercises
-* [Tutorial: Continuing/Resampling in MCMC](./Tutorial_11_mcmc_continued.ipynb) (Andrej)
+* [Tutorial: Continuing/Resampling in MCMC](./Tutorial_11_mcmc_continued.ipynb) (Andrej | [recording](http://phoebe-project.org/static/workshops/2021june/2021.06.29.03_mcmc_continued.mp4))
 * break to work through exercises
 * [Exercises: Setting up an MCMC Run](./Exercises_06_mcmc.ipynb) (Andrej)
 
