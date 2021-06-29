@@ -19,7 +19,7 @@
 # 
 # For the purpose of this tutorial we will use [emcee](https://emcee.readthedocs.io/en/stable/), a popular mcmc sampler written by [Dan Foreman-Mackey](https://github.com/dfm), but the principles apply equally to any other implementation out there. Let's get started by importing relevant modules:
 
-# In[1]:
+# In[ ]:
 
 
 import numpy as np
@@ -29,7 +29,7 @@ import matplotlib.pyplot as plt
 
 # Now let's write a data generator function; to start with, we will use a straight line with some white noise added to it, and we will make this function more feature-rich as we go along.
 
-# In[2]:
+# In[ ]:
 
 
 def data_generator(x, b=0.7, c=-0.25, s=0.05):
@@ -39,7 +39,7 @@ def data_generator(x, b=0.7, c=-0.25, s=0.05):
 
 # Here, `x` is the input array of x-values, `b` and `c` are slope and intercept, respectively, and `s` is per-point standard deviation. The function returns a `(len(x), 3)`-shaped array with `x`, `y` and `s` for the three columns. We now generate data on the unit interval and plot it to see what it looks like:
 
-# In[3]:
+# In[ ]:
 
 
 d = data_generator(x=np.linspace(0, 1, 101))
@@ -57,7 +57,7 @@ _ = plt.errorbar(d[:,0], d[:,1], yerr=d[:,2], fmt='b.')
 # 
 # Let's codify it:
 
-# In[4]:
+# In[ ]:
 
 
 def logp(x, d):
@@ -66,7 +66,7 @@ def logp(x, d):
 
 # The emcee sampler is an *ensemble* sampler, meaning that it distributes sampling across *walkers*. Each walker traverses the parameter space, with each subsequent step being informed by the position of all other walkers in the ensemble. Thus, emcee needs to know how many walkers to use, what is the dimension of the parameter space, and what are the starting values for each walker. Let's set those up! The dimension of the parameter space in our case is, of course, 2 (spun by $b$ and $c$). The number of walkers is not critical as long as it's larger than several times the dimension of the parameter space. As for the starting values, we will draw them from a uniform distribution $\mathcal U(-1, 1)$.
 
-# In[5]:
+# In[ ]:
 
 
 nwalkers = 32
@@ -77,7 +77,7 @@ r0 = np.random.uniform(low=-1, high=1, size=(nwalkers, ndim))
 
 # Next, initialize emcee's Ensemble sampler; we pass the number of walkers, parameter space dimension, the log-probability function and any other arguments that the log-likelihood function needs, in our case the data:
 
-# In[6]:
+# In[ ]:
 
 
 sampler = emcee.EnsembleSampler(nwalkers, ndim, logp, args=[d])
@@ -85,7 +85,7 @@ sampler = emcee.EnsembleSampler(nwalkers, ndim, logp, args=[d])
 
 # We are now set to run the sampler. Given that we used a uniform distribution to draw starting points for both parameters and each of the 32 walkers, we expect that initial values will be all over the place. We will discard those later -- this is called "burn-in". Let's run the sampler for, say, 2,100 iterations: 100 iterations are burn-in and another 2000 iterations to achieve convergence. We will evaluate below if that was sufficient.
 
-# In[7]:
+# In[ ]:
 
 
 state = sampler.run_mcmc(r0, 2100)
@@ -96,7 +96,7 @@ r = sampler.get_chain(flat=True, thin=1, discard=100)
 # 
 # Let's take a look at the histogram of our parameter values:
 
-# In[8]:
+# In[ ]:
 
 
 plt.figure(figsize=(16,6))
@@ -111,14 +111,14 @@ _ = plt.hist(r, 100, histtype='step')
 # 
 # In terms of code, we have these readily available:
 
-# In[9]:
+# In[ ]:
 
 
 af = np.mean(sampler.acceptance_fraction)
 print(f'Acceptance fraction: {af:3.3f}')
 
 
-# In[10]:
+# In[ ]:
 
 
 at = np.mean(sampler.get_autocorr_time())
@@ -127,7 +127,7 @@ print(f'Autocorrelation time: {at:3.1f} iterations')
 
 # Looking at these two values we see that choosing 2,100 iterations was quite suitable to achieve convergence. We can visualize convergence by plotting all walkers' chains as a function of iteration:
 
-# In[11]:
+# In[ ]:
 
 
 fig, axes = plt.subplots(2, figsize=(16, 5), sharex=True)
@@ -140,7 +140,7 @@ axes[1].set_ylabel(r'$c$')
 
 # Now let us replot parameter distributions in a corner plot. For that we will need another module, [corner](https://corner.readthedocs.io/en/latest/):
 
-# In[12]:
+# In[ ]:
 
 
 import corner
@@ -156,7 +156,7 @@ print(f'c = {best_fit_c: 3.3f} +/- {uncert_c:3.3f}')
 
 # We can now use posterior probability density functions (PDFs) to sample the values for $b$ and $c$ and plot the $y(\mathbf x; \mathbf r)$ model. Let's write a function that will average a given number of random draws from the entire chain and return their mean and 1-$\sigma$ deviation:
 
-# In[13]:
+# In[ ]:
 
 
 def draw_subsample(r, size=1000):
@@ -180,7 +180,7 @@ def plot_subsample(model_mean, model_std, fig=None, yerr=True):
 
 # Plot a subsample with, say, 1000 samples:
 
-# In[14]:
+# In[ ]:
 
 
 model_mean, model_std = draw_subsample(r)
@@ -191,7 +191,7 @@ plot_subsample(model_mean, model_std)
 
 # It is instructive to calculate the reduced $\chi^2$ at this point, to see that the best-fit model adequately fits the data:
 
-# In[15]:
+# In[ ]:
 
 
 chi2 = np.sum(((d[:,1]-best_fit_b*d[:,0]-best_fit_c)/d[:,2])**2)
@@ -204,7 +204,7 @@ print(f'reduced chi2: {rchi2:3.3f}')
 
 # Now let's address a problem that the spread plot above demonstrates. The width of the posterior scales with $\sqrt{N}$, where $N$ is the number of data points. This means that the $\pm$1-$\sigma$ spread will include progressively fewer data points as, under the assumption of identically and independently distributed errors and following from the central limit theorem, $\sigma_p^2 = \sigma^2 / N$. We can put this to test by comparing the distribution of data residuals normalized to observed per-point uncertainty and normalized to the posterior width uncertainty, corrected for $\sqrt N$:
 
-# In[16]:
+# In[ ]:
 
 
 fig = plt.figure(figsize=(16,6))
@@ -228,7 +228,7 @@ _ = plt.legend()
 
 # ### Rescaling log-likelihood?
 
-# In[17]:
+# In[ ]:
 
 
 def logp(x, d):
@@ -278,7 +278,7 @@ _ = plt.legend()
 
 # ### Adding "fuzz" to the likelihood function?
 
-# In[18]:
+# In[ ]:
 
 
 def logp(x, d, sigma=0.05):
@@ -305,7 +305,7 @@ print(f'Acceptance fraction: {af:3.3f}')
 
 # ### Adding a pedestal?
 
-# In[19]:
+# In[ ]:
 
 
 def logp(x, d, p=0.2):
@@ -357,7 +357,7 @@ _ = plt.legend()
 
 # Now let's see what happens if we leave the data as they are but we artificially increase per-point sigmas:
 
-# In[20]:
+# In[ ]:
 
 
 fig = plt.figure(figsize=(16,6))
@@ -376,7 +376,7 @@ for s in range(1, 6):
 
 # To wrap up, let's reset the uncertainty to its true value:
 
-# In[21]:
+# In[ ]:
 
 
 d[:,2] = 0.05
@@ -386,7 +386,7 @@ d[:,2] = 0.05
 # 
 # How about if we add another parameter that is 100% correlated, for example $y = kx+n+c$?
 
-# In[22]:
+# In[ ]:
 
 
 def logp2(x, d):
@@ -408,7 +408,7 @@ fig = corner.corner(flat_samples, labels=[r'k', r'n', r'c'], show_titles=True)
 # 
 # Now imagine we have a poor model that cannot adequately describe the data. Will that show up in the posteriors? To demonstrate this, let's redefine our data generator function to synthesize quadratic data, but we will still fit them with a linear function.
 
-# In[23]:
+# In[ ]:
 
 
 def data_generator(x, a=-1.0, b=0.7, c=-0.25, s=0.05):
@@ -418,7 +418,7 @@ def data_generator(x, a=-1.0, b=0.7, c=-0.25, s=0.05):
 
 # Let's get a data sample to work with and plot it to see what it looks like:
 
-# In[24]:
+# In[ ]:
 
 
 d = data_generator(x=np.linspace(0, 1, 101))
@@ -427,7 +427,7 @@ _ = plt.errorbar(d[:,0], d[:,1], yerr=d[:,2], fmt='b.')
 
 # We now do what we did above: fit a linear function and look at convergence and the posteriors *without* looking at the fit:
 
-# In[25]:
+# In[ ]:
 
 
 nwalkers = 32
@@ -455,7 +455,7 @@ print(f'c = {best_fit_c: 3.3f} +/- {uncert_c:3.3f}')
 
 # Pretty convincing, right? Yet the fit itself is total garbage:
 
-# In[26]:
+# In[ ]:
 
 
 model_mean, model_std = draw_subsample(r)
@@ -464,7 +464,7 @@ plot_subsample(model_mean, model_std)
 
 # Distribution of the residuals is equally bad:
 
-# In[27]:
+# In[ ]:
 
 
 fig = plt.figure(figsize=(16,6))
@@ -479,7 +479,7 @@ _ = plt.legend()
 
 # Thus, we have to estimate the goodness of fit *in addition* to getting the posteriors as those are useful *only* if the model itself describes the data well. The obvious metric is the reduced chi2:
 
-# In[28]:
+# In[ ]:
 
 
 chi2 = np.sum(((d[:,1]-best_fit_b*d[:,0]-best_fit_c)/d[:,2])**2)

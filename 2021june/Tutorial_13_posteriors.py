@@ -14,7 +14,7 @@
 # 
 # As usual, we do the imports first.
 
-# In[1]:
+# In[ ]:
 
 
 import phoebe
@@ -25,7 +25,7 @@ import scipy.stats as st
 
 # And load the [bundle from the previous tutorial](https://github.com/phoebe-project/phoebe2-workshop/raw/2021june/data/synthetic/after_final_round.bundle):
 
-# In[2]:
+# In[ ]:
 
 
 b = phoebe.load('./data/synthetic/after_final_round.bundle')
@@ -33,7 +33,7 @@ b = phoebe.load('./data/synthetic/after_final_round.bundle')
 
 # Let's take a closer look at, say, eccentricity:
 
-# In[3]:
+# In[ ]:
 
 
 print(b['ecc@binary@distribution'])
@@ -41,7 +41,7 @@ print(b['ecc@binary@distribution'])
 
 # Why is the final round missing? Because we haven't adopted the solution yet:
 
-# In[5]:
+# In[ ]:
 
 
 b.adopt_solution(solution='final_round',
@@ -53,7 +53,7 @@ b.adopt_solution(solution='final_round',
 
 # If we print it again, there it is:
 
-# In[6]:
+# In[ ]:
 
 
 print(b['ecc@binary@distribution'])
@@ -61,7 +61,7 @@ print(b['ecc@binary@distribution'])
 
 # Now let's take a closer look at the samples, so that we can follow the logic built into phoebe:
 
-# In[9]:
+# In[ ]:
 
 
 print(b['value@ecc@binary@distribution@ndg_final'].samples)
@@ -69,7 +69,7 @@ print(b['value@ecc@binary@distribution@ndg_final'].samples)
 
 # This particular structure is an MVSamplesSlice from the distl module. It's always a good idea to acquaint yourself with it first:
 
-# In[10]:
+# In[ ]:
 
 
 help(b['value@ecc@ndg_final@distribution'])
@@ -77,7 +77,7 @@ help(b['value@ecc@ndg_final@distribution'])
 
 # Now that we have the samples, we can extract them and plot a histogram:
 
-# In[11]:
+# In[ ]:
 
 
 plt.hist(b['value@ecc@binary@distribution@ndg_final'].samples, bins=50)
@@ -86,7 +86,7 @@ plt.show()
 
 # Excellent! Now let's overplot a gaussian:
 
-# In[12]:
+# In[ ]:
 
 
 mean = b['value@ecc@binary@distribution@ndg_final'].mean()
@@ -95,7 +95,7 @@ print('Mean: ', mean)
 print('Stdev:', stdev)
 
 
-# In[13]:
+# In[ ]:
 
 
 vals, bins, _ = plt.hist(b['value@ecc@binary@distribution@ndg_final'].samples, bins=50, density=True)
@@ -106,7 +106,7 @@ plt.show()
 
 # As you can imagine, this functionality is built into phoebe; to see the supported methods, run a `dir` on the sample:
 
-# In[14]:
+# In[ ]:
 
 
 dir(b['value@ecc@binary@distribution@ndg_final'])
@@ -114,19 +114,19 @@ dir(b['value@ecc@binary@distribution@ndg_final'])
 
 # Thus, it is straight-forward to reproduce the above two plots:
 
-# In[15]:
+# In[ ]:
 
 
 ecc_posterior = b['value@ecc@binary@distribution@ndg_final']
 
 
-# In[16]:
+# In[ ]:
 
 
 _ = ecc_posterior.plot_sample(bins=50)
 
 
-# In[17]:
+# In[ ]:
 
 
 _ = ecc_posterior.plot_gaussian()
@@ -134,25 +134,25 @@ _ = ecc_posterior.plot_gaussian()
 
 # We can also use a `plot()` method to combine the plots and make them even nicer:
 
-# In[18]:
+# In[ ]:
 
 
 help(ecc_posterior.plot)
 
 
-# In[19]:
+# In[ ]:
 
 
 _ = ecc_posterior.plot(plot_pdf=True)
 
 
-# In[20]:
+# In[ ]:
 
 
 _ = ecc_posterior.plot(plot_sample=True, plot_sample_kwargs={'bins': 50}, plot_gaussian=True, plot_uncertainties=True)
 
 
-# In[21]:
+# In[ ]:
 
 
 _ = b.plot_distribution_collection('ndg_final')
@@ -160,7 +160,7 @@ _ = b.plot_distribution_collection('ndg_final')
 
 # And finally, we can convert distributions to multivariate gaussians, thus "polishing" the posteriors:
 
-# In[22]:
+# In[ ]:
 
 
 _ = b.plot('final_round', style='corner', distributions_convert='mvgaussian')
