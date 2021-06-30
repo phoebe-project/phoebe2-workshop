@@ -172,17 +172,17 @@ Session Chair: Angela
 
 ### Wednesday June 30: Advanced MCMC
 
-* [Optional Breakout Session: Fitting Contact Binaries](https://docs.google.com/presentation/d/e/2PACX-1vR_mh-aCjbC35E2Hi0FMSNnESuh2wDzvZzk0xf0By3mjmVywMiRQ_HlxlN1YA0qwNOArJ2O4eIXIjXC/pub?start=false&loop=false&delayms=3000) (Angela)
+* [Optional Breakout Session: Fitting Contact Binaries](https://docs.google.com/presentation/d/e/2PACX-1vR_mh-aCjbC35E2Hi0FMSNnESuh2wDzvZzk0xf0By3mjmVywMiRQ_HlxlN1YA0qwNOArJ2O4eIXIjXC/pub?start=false&loop=false&delayms=3000) (Angela | [recording](http://phoebe-project.org/static/workshops/2021june/2021.06.30.00_breakouts_contacts_fitting.mp4))
 
 Session Chair: Joe
 
-* [Tutorial: Interpreting Chains and Convergence in MCMC](./Tutorial_12_convergence.ipynb) (Andrej)
+* [Tutorial: Interpreting Chains and Convergence in MCMC](./Tutorial_12_convergence.ipynb) (Andrej | [recording](http://phoebe-project.org/static/workshops/2021june/2021.06.30.01_convergence.mp4))
 * break to work through exercises
-* [Tutorial: Posteriors and Parameter Uncertainties](./Tutorial_13_posteriors.ipynb) (Andrej)
-* [Tutorial: Propagating Posteriors](./Tutorial_posterior_propagation.ipynb) (Kyle)
+* [Tutorial: Posteriors and Parameter Uncertainties](./Tutorial_13_posteriors.ipynb) (Andrej | [recording](http://phoebe-project.org/static/workshops/2021june/2021.06.30.02_posteriors.mp4))
+* [Tutorial: Propagating Posteriors](./Tutorial_posterior_propagation.ipynb) (Kyle | [recording](http://phoebe-project.org/static/workshops/2021june/2021.06.30.03_posterior_propagation.mp4))
 * break to work through exercises
-* [Tutorial: Choice of Parameterization](./Tutorial_parametrization.ipynb) (Angela)
-* [Tutorial: Marginalizing over Additional Parameters](./Tutorial_marginalization.ipynb) (Angela)
+* [Tutorial: Choice of Parameterization](./Tutorial_parametrization.ipynb) (Angela | [recording](http://phoebe-project.org/static/workshops/2021june/2021.06.30.04_parameterization.mp4))
+* [Tutorial: Marginalizing over Additional Parameters](./Tutorial_marginalization.ipynb) (Angela | [recording](http://phoebe-project.org/static/workshops/2021june/2021.06.30.05_marginalization.mp4))
 * [Exercises: Getting Posteriors](./Exercises_07_posteriors.ipynb) (Angela)
 
 ### Thursday July 1:
