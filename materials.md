@@ -1,3 +1,7 @@
+<div style="text-align: center">
+<a href="http://phoebe-project.org/static/workshops/PHOEBE_workshop_2.jpg" target="_blank" rel="noopener noreferrer"><img src="http://phoebe-project.org/static/workshops/PHOEBE_workshop_2.jpg" height="200" maxWidth="80%"/></a>
+</div>
+
 # Installing & Setup
 
 ### Jupyter Notebooks
