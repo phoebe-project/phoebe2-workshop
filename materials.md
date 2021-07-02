@@ -1,3 +1,8 @@
+
+<div style="text-align: center">
+<a href="http://phoebe-project.org/static/workshops/PHOEBE_workshop_3.png" target="_blank" rel="noopener noreferrer"><img src="http://phoebe-project.org/images/workshops/PHOEBE_workshop_3_thumb.png" height="200" maxWidth="80%"/></a>
+</div>
+
 # Installing & Setup
 
 ### Jupyter Notebooks
@@ -190,6 +195,6 @@ Session Chair: Joe
 Session Chair: Kelly
 
 * Group Photo/Screenshot
-* [Tutorial: Running on OTHER Compute Resources](./Tutorial_server_other.ipynb) (Kyle)
-* [Talk: Common Pitfalls when Fitting](https://docs.google.com/presentation/d/e/2PACX-1vQ7tNOfVPpBuOn49D0jChGsKALZpgCbYUHGRYVbO4EV8kYo_eQbIaOwzOu7pDP0-5A7bjrsxvUphKIk/pub?start=false&loop=false&delayms=3000) (Angela)
+* [Tutorial: Running on OTHER Compute Resources](./Tutorial_server_other.ipynb) (Kyle | [recording](http://phoebe-project.org/static/workshops/2021june/2021.07.01.01_servers_other.mp4))
+* [Talk: Common Pitfalls when Fitting](https://docs.google.com/presentation/d/e/2PACX-1vQ7tNOfVPpBuOn49D0jChGsKALZpgCbYUHGRYVbO4EV8kYo_eQbIaOwzOu7pDP0-5A7bjrsxvUphKIk/pub?start=false&loop=false&delayms=3000) (Angela | [recording](http://phoebe-project.org/static/workshops/2021june/2021.07.01.02_fitting_pitfalls.mp4))
 * Wrap Up: volunteer wrap-up contributions and discussion
