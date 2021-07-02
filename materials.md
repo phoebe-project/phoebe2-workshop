@@ -1,3 +1,7 @@
+<div style="text-align: center">
+<a href="http://phoebe-project.org/static/workshops/PHOEBE_workshop_1.jpg" target="_blank" rel="noopener noreferrer"><img src="http://phoebe-project.org/static/workshops/PHOEBE_workshop_1.jpg" height="200" maxWidth="80%"/></a>
+</div>
+
 # Introductory Talks
 
 * [Welcome & Introduction](https://docs.google.com/presentation/d/e/2PACX-1vSr-ch8lbmA5PRbrjCYVDUwI6K0RHAeW2h13zDRuI3TqmV_dlm2PrTY00QDdARAJv2bco5yGlIP5Mid/pub?start=false&loop=false&delayms=5000)
