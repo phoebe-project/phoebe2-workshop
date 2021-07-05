@@ -15,26 +15,26 @@
 
 # Uncomment the line below if your Jupyter version requires matplotlib inline.
 
-# In[ ]:
+# In[1]:
 
 
 #%matplotlib inline
 
 
-# In[ ]:
+# In[2]:
 
 
 import phoebe
 from phoebe import u,c
 
 
-# In[ ]:
+# In[3]:
 
 
 logger = phoebe.logger(clevel='WARNING')
 
 
-# In[ ]:
+# In[4]:
 
 
 b = phoebe.default_binary()
@@ -44,19 +44,19 @@ b = phoebe.default_binary()
 
 # Let's first re-add some simple datasets and run the models
 
-# In[ ]:
+# In[5]:
 
 
 b.add_dataset('lc', compute_times=phoebe.linspace(0,1,51), dataset='lc01')
 
 
-# In[ ]:
+# In[6]:
 
 
 b.add_dataset('rv', compute_times=phoebe.linspace(0,1,21), dataset='rv01')
 
 
-# In[ ]:
+# In[7]:
 
 
 b.run_compute()
@@ -64,7 +64,7 @@ b.run_compute()
 
 # Calling `b.plot` will attempt to plot all datasets and models in the Bundle, splitting into subplots when needed
 
-# In[ ]:
+# In[8]:
 
 
 afig, mplfig = b.plot(show=True)
@@ -72,7 +72,7 @@ afig, mplfig = b.plot(show=True)
 
 # If we don't want to plot EVERYTHING, we can filter either before or within the plot command
 
-# In[ ]:
+# In[9]:
 
 
 afig, mplfig = b.filter(dataset='lc01').plot(show=True)
@@ -82,13 +82,13 @@ afig, mplfig = b.filter(dataset='lc01').plot(show=True)
 
 # By default, PHOEBE will plot flux vs time for light curves and RV vs time for radial velocity datasets.  To override this, we can send the name of the column to `x` or `y`.  In addition to the Parameter names, we can also request `'phase'`.  This will use the ephemeris of the system and will use `t0_supconj` by default.
 
-# In[ ]:
+# In[10]:
 
 
 afig, mplfig = b.filter(dataset='rv01').plot(x='phase', show=True)
 
 
-# In[ ]:
+# In[11]:
 
 
 afig, mplfig = b.filter(dataset='rv01').plot(x='phase', t0='t0_perpass', show=True)
@@ -98,7 +98,7 @@ afig, mplfig = b.filter(dataset='rv01').plot(x='phase', t0='t0_perpass', show=Tr
 
 # If you pass a time to the plot call, that time will be highlighted in all datasets.
 
-# In[ ]:
+# In[12]:
 
 
 afig, mplfig = b.plot(time=0.65, show=True)

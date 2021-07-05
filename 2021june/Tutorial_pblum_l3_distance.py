@@ -14,26 +14,26 @@
 
 # # Setup
 
-# In[ ]:
+# In[1]:
 
 
 import phoebe
 from phoebe import u,c
 
 
-# In[ ]:
+# In[2]:
 
 
 logger = phoebe.logger(clevel='WARNING')
 
 
-# In[ ]:
+# In[3]:
 
 
 b = phoebe.default_binary()
 
 
-# In[ ]:
+# In[4]:
 
 
 b.add_dataset('lc', compute_times=phoebe.linspace(0,1,101))
@@ -43,13 +43,13 @@ b.add_dataset('lc', compute_times=phoebe.linspace(0,1,101))
 # 
 # For more details, see the [pblum tutorial](http://phoebe-project.org/docs/2.3/tutorials/pblum).
 
-# In[ ]:
+# In[5]:
 
 
 print(b.get_parameter(qualifier='pblum_mode'))
 
 
-# In[ ]:
+# In[6]:
 
 
 print(b.get_parameter(qualifier='pblum_mode').choices)
@@ -63,7 +63,7 @@ print(b.get_parameter(qualifier='pblum_mode').choices)
 
 # For all modes (except dataset-scaled), we can compute the relative and absolute luminosities outside of `run_compute` by calling [compute_pblums](http://phoebe-project.org/docs/devel/api/phoebe.frontend.bundle.Bundle.compute_pblums.md).  Note that this is a completely optional step to expose these quantities and doesn't need to be called.
 
-# In[ ]:
+# In[7]:
 
 
 print(b.compute_pblums())
@@ -74,13 +74,13 @@ print(b.compute_pblums())
 # 
 # See the [third light tutorial](http://phoebe-project.org/docs/2.3/tutorials/l3) for more details.
 
-# In[ ]:
+# In[8]:
 
 
 print(b.get_parameter(qualifier='l3_mode'))
 
 
-# In[ ]:
+# In[9]:
 
 
 print(b.get_parameter(qualifier='l3_mode').choices)
@@ -91,7 +91,7 @@ print(b.get_parameter(qualifier='l3_mode').choices)
 
 # Similarly to `compute_pblums`, we can compute and expose the translation between `l3` and `l3_frac` via [compute_l3s](http://phoebe-project.org/docs/2.3/api/phoebe.frontend.bundle.Bundle.compute_l3s.md).
 
-# In[ ]:
+# In[10]:
 
 
 print(b.compute_l3s())
@@ -104,7 +104,7 @@ print(b.compute_l3s())
 
 # The `distance` parameter lives in the 'system' context and is simply the distance between the center of the coordinate system and the observer (at t0).
 
-# In[ ]:
+# In[11]:
 
 
 print(b.get_parameter(qualifier='distance', context='system'))

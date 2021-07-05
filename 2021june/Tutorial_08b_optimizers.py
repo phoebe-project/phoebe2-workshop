@@ -15,7 +15,7 @@
 # 
 # 
 
-# In[ ]:
+# In[1]:
 
 
 import phoebe
@@ -28,34 +28,34 @@ logger = phoebe.logger('error')
 
 # You may need to update the path below to where you saved the bundle from the previous tutorial, or you can download [after_estimators.bundle](https://github.com/phoebe-project/phoebe2-workshop/raw/2021june/data/synthetic/after_estimators.bundle).
 
-# In[ ]:
+# In[2]:
 
 
 #Load Previous Bundle
 b = phoebe.open('data/synthetic/after_estimators.bundle')
 
 
-# In[ ]:
+# In[3]:
 
 
 #First let's look at our final fit from the previous bundle
 b.run_compute('phoebe01', model='after_estimators')
 
 
-# In[ ]:
+# In[4]:
 
 
 b.plot(model='after_estimators', x='phases', show=True)
 
 
-# In[ ]:
+# In[5]:
 
 
 #Create a new compute parameter set 
 b.add_compute(compute='nm_fit')
 
 
-# In[ ]:
+# In[6]:
 
 
 # Change fitting options for faster model computation
@@ -64,7 +64,7 @@ b.set_value_all('rv_method', compute='nm_fit', value='dynamical')
 b.set_value_all('distortion_method', compute='nm_fit', value='sphere')
 
 
-# In[ ]:
+# In[7]:
 
 
 # Add compute phases and reduce model computation speed
@@ -83,14 +83,14 @@ b.set_value_all('compute_phases', dataset='rv01', value=comp_phases)
 # 
 # In most cases nelder_mead is the most efficient and useful so this is the one we will use moving forward. However, the logic is almost identical if you would like to try a different one. 
 
-# In[ ]:
+# In[8]:
 
 
 #Add optimizer
 b.add_solver('optimizer.nelder_mead',  solver='nm_solver', compute='nm_fit')
 
 
-# In[ ]:
+# In[9]:
 
 
 
@@ -98,28 +98,28 @@ b.add_solver('optimizer.nelder_mead',  solver='nm_solver', compute='nm_fit')
 b.set_value('maxiter', solver='nm_solver', value=20)
 
 
-# In[ ]:
+# In[10]:
 
 
 #disable lc and fit rvs
 b.disable_dataset('lc01')
 
 
-# In[ ]:
+# In[11]:
 
 
 #check rv values and adjust
 print(b.filter('ecc@binary'))
 
 
-# In[ ]:
+# In[12]:
 
 
 #set ecc to 0
 b.set_value('ecc', component='binary', value=0.)
 
 
-# In[ ]:
+# In[13]:
 
 
 #set fit parameters
@@ -127,7 +127,7 @@ fit_params = ['vgamma@system', 't0_supconj@binary', 'q@binary', 'asini@binary']
 b.set_value('fit_parameters', fit_params)
 
 
-# In[ ]:
+# In[14]:
 
 
 #run solver
@@ -136,14 +136,14 @@ b.run_solver('nm_solver', solution='nm_solution', overwrite=True)
 
 # We can check on the reasonableness of the fit with the keyword trial_run = True. This let's us see what the new values are without having to adopt them first. 
 
-# In[ ]:
+# In[15]:
 
 
 #check updated fitted parameters
 print(b.adopt_solution('nm_solution', trial_run=True))
 
 
-# In[ ]:
+# In[16]:
 
 
 #compute model and check fit
@@ -152,20 +152,20 @@ b.run_compute('nm_fit', solution='nm_solution', model='after_nm', sample_num=1)
 
 # You'll notice a new parameter in run computer "sample_num". When you are computing values from a solution it will generally compute multiple times, which is useful when the parameters have an associated distribution.  This will be useful for mcmc, but for now we will just set it to 1.
 
-# In[ ]:
+# In[17]:
 
 
 b.plot(kind='rv', model='after_nm', x='phases', show=True, legend=True, marker = 'o')
 b.plot( kind='rv', model='after_nm', x='phases', y='residuals', show=True, legend=True, marker = 'o')
 
 
-# In[ ]:
+# In[18]:
 
 
 b.adopt_solution('nm_solution')
 
 
-# In[ ]:
+# In[19]:
 
 
 #fit lc
@@ -175,13 +175,13 @@ b.enable_dataset('lc01')
 
 # Now we want to reduce the number of points that we need to compute. One easy way to do this is to only fit the eclipses. So let's  use our previous lc geometry solution to mask everything else. 
 
-# In[ ]:
+# In[20]:
 
 
 print(b.filter('lcgeom_solution'))
 
 
-# In[ ]:
+# In[21]:
 
 
 adopt_parameters = ['mask_phases']
@@ -190,46 +190,46 @@ b.set_value(solution = 'lcgeom_solution', qualifier='adopt_parameters',
 b.adopt_solution('lcgeom_solution')
 
 
-# In[ ]:
+# In[22]:
 
 
 b.plot(kind='lc', model='after_estimators', x='phases', show='True')
 
 
-# In[ ]:
+# In[23]:
 
 
 #switch back from requivsumfrac to a primary radius
 b.flip_constraint('requiv@primary', solve_for='requivsumfrac@binary')
 
 
-# In[ ]:
+# In[24]:
 
 
 fit_params = ['teffratio@binary', 't0_supconj@binary', 'incl@binary']
 b.set_value('fit_parameters', fit_params)
 
 
-# In[ ]:
+# In[25]:
 
 
 #change max iterations
 b.set_value('maxiter', solver='nm_solver', value=15)
 
 
-# In[ ]:
+# In[26]:
 
 
 b.run_solver('nm_solver', solution='nm_solution', overwrite=True)
 
 
-# In[ ]:
+# In[27]:
 
 
 print(b.adopt_solution('nm_solution', trial_run=True))
 
 
-# In[ ]:
+# In[28]:
 
 
 b.run_compute('nm_fit', solution='nm_solution', model='after_nmlc', sample_num=1)
@@ -238,13 +238,13 @@ b.plot(kind='lc', model='after_nmlc', x='phases', show=True, legend=True, marker
 b.plot(kind='lc', model='after_nmlc', x='phases', y='residuals', show=True, legend=True, marker = 'o')
 
 
-# In[ ]:
+# In[29]:
 
 
 b.adopt_solution('nm_solution')
 
 
-# In[ ]:
+# In[30]:
 
 
 #look more closely at the primary eclipse

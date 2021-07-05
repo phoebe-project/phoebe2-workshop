@@ -15,20 +15,20 @@
 
 # # Setup
 
-# In[ ]:
+# In[1]:
 
 
 import phoebe
 from phoebe import u,c
 
 
-# In[ ]:
+# In[2]:
 
 
 logger = phoebe.logger(clevel='WARNING')
 
 
-# In[ ]:
+# In[3]:
 
 
 b = phoebe.default_binary()
@@ -38,13 +38,13 @@ b = phoebe.default_binary()
 
 # Let's first re-add some simple datasets so that we can create the models.
 
-# In[ ]:
+# In[4]:
 
 
 b.add_dataset('lc', compute_times=phoebe.linspace(0,1,51), dataset='lc01')
 
 
-# In[ ]:
+# In[5]:
 
 
 b.add_dataset('rv', compute_times=phoebe.linspace(0,1,21), dataset='rv01')
@@ -52,7 +52,7 @@ b.add_dataset('rv', compute_times=phoebe.linspace(0,1,21), dataset='rv01')
 
 # Now that we have datasets, we could compute the forward model with all the defaults by calling [run_compute](http://phoebe-project.org/docs/2.3/api/phoebe.frontend.bundle.Bundle.run_compute).
 
-# In[ ]:
+# In[6]:
 
 
 b.run_compute()
@@ -60,13 +60,13 @@ b.run_compute()
 
 # This creates synthetic versions of each dataset copied into the with `context='model'`.  Let's filter to see what we can find in the model.
 
-# In[ ]:
+# In[7]:
 
 
 b.filter(context='model').datasets
 
 
-# In[ ]:
+# In[8]:
 
 
 b.filter(context='model', dataset='lc01')
@@ -76,7 +76,7 @@ b.filter(context='model', dataset='lc01')
 # 
 # If we instead were to manually tag the model by passing `model='mymodel'`, for example, then future calls to `run_compute` would either require a unique model name or explicitly passing `overwrite=True`.  Thus, 'latest' does not really refer to the latest run of `b.run_compute()`, it merely labels an overwrite-friendly unnamed instant of the model.
 
-# In[ ]:
+# In[9]:
 
 
 b.models
@@ -84,13 +84,13 @@ b.models
 
 # For light curves, the synthetic model consists of the `times` (copied directly from the `compute_times` or `times` parameter in the dataset) and the synthetic fluxes.
 
-# In[ ]:
+# In[10]:
 
 
 b.get_parameter(context='model', dataset='lc01', qualifier='times')
 
 
-# In[ ]:
+# In[11]:
 
 
 b.get_parameter(context='model', dataset='lc01', qualifier='fluxes')
@@ -98,19 +98,19 @@ b.get_parameter(context='model', dataset='lc01', qualifier='fluxes')
 
 # For radial velocities, the synthetic model consists again of the `times`, as well as the `rvs` for both stars in the system.  Therefore, we also need to provide the component tag in order to access a single Parameter.
 
-# In[ ]:
+# In[12]:
 
 
 b.filter(context='model', dataset='rv01').qualifiers
 
 
-# In[ ]:
+# In[13]:
 
 
 b.get_parameter(context='model', datset='rv01', component='primary', qualifier='rvs')
 
 
-# In[ ]:
+# In[14]:
 
 
 b.get_parameter(context='model', datset='rv01', component='secondary', qualifier='rvs')
@@ -120,7 +120,7 @@ b.get_parameter(context='model', datset='rv01', component='secondary', qualifier
 
 # As we mentioned earlier when adding datasets, Parameters with `context='compute'` control options for how the model is computed.  With a default Bundle, there is already a single set of compute options attached (these were what was used when we called run_compute above).
 
-# In[ ]:
+# In[15]:
 
 
 print(b.filter(context='compute').qualifiers)
@@ -130,7 +130,7 @@ print(b.filter(context='compute').qualifiers)
 # 
 # Similar to datasets, we can add additional sets of compute options.  So let's create one set of compute options for quick-and-dirty computations (and tag it `compute='preview'`)
 
-# In[ ]:
+# In[16]:
 
 
 b.add_compute(compute='preview')
@@ -138,7 +138,7 @@ b.add_compute(compute='preview')
 
 # Now if we filter for any of the Parameters with `context='compute'`, we'll see that there is a copy for each of our created set of compute options as well as the original default set.
 
-# In[ ]:
+# In[17]:
 
 
 b.filter(context='compute', qualifier='ltte')
@@ -146,7 +146,7 @@ b.filter(context='compute', qualifier='ltte')
 
 # Now let's set a few options to turn off some effects. Let's first disable all the advanced physics (`ltte`, `rv_grav`, `irrad_method`).  Note:  we'll discuss which of these effects are most expensive and how to determine which are safe to disable later in the week.
 
-# In[ ]:
+# In[18]:
 
 
 b.get_parameter(context='compute', compute='preview', qualifier='ltte').set_value(False)
@@ -154,7 +154,7 @@ b.get_parameter(context='compute', compute='preview', qualifier='ltte').set_valu
 
 # If we try to do the same as above, but use `qualifier='rv_grav'`, we'll get an error saying there are 2 results found.  This is because `rv_grav` can be enabled/disabled for each individual star.  We can see this is the case by doing a filter.
 
-# In[ ]:
+# In[19]:
 
 
 b.filter(context='compute', compute='preview', qualifier='rv_grav')
@@ -162,19 +162,19 @@ b.filter(context='compute', compute='preview', qualifier='rv_grav')
 
 # We could either set the value for `component='primary'` and `component='secondary'` separately, or we can set them both at once by using `set_value_all` (this sets the value for all Parameters in a ParameterSet)
 
-# In[ ]:
+# In[20]:
 
 
 b.filter(context='compute', compute='preview', qualifier='rv_grav').set_value_all(False)
 
 
-# In[ ]:
+# In[21]:
 
 
 b.get_parameter(context='compute', compute='preview', qualifier='irrad_method').choices
 
 
-# In[ ]:
+# In[22]:
 
 
 b.get_parameter(context='compute', compute='preview', qualifier='irrad_method').set_value('none')
@@ -182,7 +182,7 @@ b.get_parameter(context='compute', compute='preview', qualifier='irrad_method').
 
 # And let's also decrease the number of triangles used in the meshes.  Again, we can use set_value_all since there is an entry for each star.
 
-# In[ ]:
+# In[23]:
 
 
 b.filter(context='compute', compute='preview', qualifier='ntriangles').set_value_all(800)
@@ -190,7 +190,7 @@ b.filter(context='compute', compute='preview', qualifier='ntriangles').set_value
 
 # Now if we want to call `run_compute` again, we **must** also pass which set of compute options we want to use (the default 'phoebe01', or our new 'preview' options)
 
-# In[ ]:
+# In[24]:
 
 
 b.run_compute(compute='preview')
@@ -200,7 +200,7 @@ b.run_compute(compute='preview')
 
 # Any of these compute options can be overridden as keyword arguments to `run_compute`.  These won't change the Parameter values, and will only apply to that single call of `run_compute`.
 
-# In[ ]:
+# In[25]:
 
 
 b.run_compute(compute='preview', irrad_method='horvat')
@@ -208,13 +208,13 @@ b.run_compute(compute='preview', irrad_method='horvat')
 
 # In addition to the compute options, you can also _temporarily_ override the times across **all** datasets (without changing the values in the parameters in the dataset).
 
-# In[ ]:
+# In[26]:
 
 
 b.run_compute(compute='preview', times=[0, 0.5, 1])
 
 
-# In[ ]:
+# In[27]:
 
 
 print("dataset times: ", b.get_value('compute_times', dataset='lc01', context='dataset'))
@@ -229,13 +229,13 @@ print("model times: ", b.get_value('times', dataset='lc01', context='model'))
 # 
 # NOTE: calling `run_compute` with one of these alternate backends will fail unless you have the necessary code installed on your machine.
 
-# In[ ]:
+# In[28]:
 
 
 b.add_compute('legacy', compute='legacycompute')
 
 
-# In[ ]:
+# In[29]:
 
 
 print(b.filter(compute='legacycompute'))

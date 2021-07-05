@@ -5,7 +5,7 @@
 # 
 # PHOEBE currently (in the `workshop2021` version) supports running jobs on [external compute resources running a slurm scheduler](./Tutorial_09_server.ipynb).  But until we add support for more configurations, you can always manually run jobs on an external machine.
 
-# In[ ]:
+# In[1]:
 
 
 import phoebe
@@ -16,7 +16,7 @@ b.add_dataset('lc', compute_phases=phoebe.linspace(0,1,501))
 
 # Instead of calling `run_compute`, call [export_compute](http://phoebe-project.org/docs/2.3/api/phoebe.frontend.bundle.Bundle.export_compute.md) (or [export_solver](http://phoebe-project.org/docs/2.3/api/phoebe.frontend.bundle.Bundle.export_solver.md) instead of `run_solver`).  These take the same arguments, _except_ that the first argument is the filename of a script that will be produced.
 
-# In[ ]:
+# In[2]:
 
 
 b.export_compute('export_compute.py', irrad_method='none')
@@ -26,7 +26,7 @@ b.export_compute('export_compute.py', irrad_method='none')
 # 
 # Let's take a quick peak at what's in this script.
 
-# In[ ]:
+# In[3]:
 
 
 get_ipython().system('cat export_compute.py')
@@ -36,7 +36,7 @@ get_ipython().system('cat export_compute.py')
 # 
 # For the sake of this tutorial, we'll just run it locally in the notebook (you may need to make sure this runs in the same environment or change `python3` to whatever you use on your system for phoebe).
 
-# In[ ]:
+# In[4]:
 
 
 get_ipython().system('python3 export_compute.py')
@@ -46,13 +46,13 @@ get_ipython().system('python3 export_compute.py')
 # 
 # If you already passed `model` or `solution` to the export method, that tag will be used by default.  But you can also override during import.
 
-# In[ ]:
+# In[5]:
 
 
 b.import_model('export_compute.py.out', model='model_from_export')
 
 
-# In[ ]:
+# In[6]:
 
 
 _ = b.plot(model='model_from_export', show=True)
@@ -64,13 +64,13 @@ _ = b.plot(model='model_from_export', show=True)
 # 
 # Follow the [crimpl AWS configuration steps](https://crimpl.readthedocs.io/en/latest/AWSEC2.html) and create and save a crimpl configuration called `'aws'`.
 
-# In[ ]:
+# In[7]:
 
 
 b.add_server('awsec2', crimpl_name='aws', server='aws')
 
 
-# In[ ]:
+# In[8]:
 
 
 print(b.filter(server='aws'))
@@ -78,7 +78,7 @@ print(b.filter(server='aws'))
 
 # `terminate_on_complete`: if `True` the AWS EC2 instance will immediately terminate once the job is completed, but the volume will remain active.  Retrieving the results will then spawn a new EC2 instance on the fly.  This is useful for long jobs where you may not be checking the results quickly, but adds extra overhead (and cost) for short jobs.
 
-# In[ ]:
+# In[9]:
 
 
 b.set_value('terminate_on_complete', False)

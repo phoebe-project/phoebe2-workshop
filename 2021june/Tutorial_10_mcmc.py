@@ -12,7 +12,7 @@
 
 # Let's start by the usual imports:
 
-# In[ ]:
+# In[1]:
 
 
 import phoebe
@@ -21,7 +21,7 @@ import numpy as np
 
 # Matplotlib's and numpy's deprecation warnings are quite... verbose, so we will turn them off until we've had the chance to address them properly:
 
-# In[ ]:
+# In[2]:
 
 
 # logger = phoebe.logger()
@@ -31,7 +31,7 @@ warnings.filterwarnings("ignore", category=UserWarning)
 
 # Now let's pick up where we left off: load the [bundle that contains optimization results](https://github.com/phoebe-project/phoebe2-workshop/raw/2021june/data/synthetic/after_optimizers.bundle):
 
-# In[ ]:
+# In[3]:
 
 
 b = phoebe.load('./data/synthetic/after_optimizers.bundle')
@@ -39,7 +39,7 @@ b = phoebe.load('./data/synthetic/after_optimizers.bundle')
 
 # To remind ourselves, let's plot the phased light and RV curves, along with all the models that are stored in the bundle:
 
-# In[ ]:
+# In[4]:
 
 
 b.plot(x='phase', show=True)
@@ -47,7 +47,7 @@ b.plot(x='phase', show=True)
 
 # We are curious to see which models there are; phoebe keeps them all labeled, and we can get a list by issuing:
 
-# In[ ]:
+# In[5]:
 
 
 b.models
@@ -55,7 +55,7 @@ b.models
 
 # Similarly, we can take a look at what compute options have been defined:
 
-# In[ ]:
+# In[6]:
 
 
 b.computes
@@ -65,7 +65,7 @@ b.computes
 # 
 # So let's get going; let's initialize a new compute option, disable the LC and change the RV function from flux-weighted to dynamical:
 
-# In[ ]:
+# In[7]:
 
 
 b.add_compute(compute='dyn_rv')
@@ -77,7 +77,7 @@ b['irrad_method@dyn_rv'] = 'none'
 
 # Take a quick look to see if we are happy with all compute options:
 
-# In[ ]:
+# In[8]:
 
 
 print(b['dyn_rv'])
@@ -85,7 +85,7 @@ print(b['dyn_rv'])
 
 # We can now put these compute options to work! The parameters that influence RV curves are the projected semi-major axis `asini`, mass ratio `q`, barycentric velocity `vgamma`, eccentricity `ecc` and argument of periastron `per0`. Their face values are:
 
-# In[ ]:
+# In[9]:
 
 
 print(
@@ -98,7 +98,7 @@ print(
 
 # Let's create an N-dimensional gaussian distribution (ndg) around the optimized values, draw a given number of combinations and calculate the models for them:
 
-# In[ ]:
+# In[10]:
 
 
 b.add_distribution({
@@ -112,7 +112,7 @@ b.add_distribution({
 
 # Now we can run `run_compute()` by sampling from this distribution for, say, 50 samples:
 
-# In[ ]:
+# In[11]:
 
 
 b.run_compute(compute='dyn_rv', sample_from='ndg', sample_num=50, model='from_ndg', overwrite=True)
@@ -120,7 +120,7 @@ b.run_compute(compute='dyn_rv', sample_from='ndg', sample_num=50, model='from_nd
 
 # We can now take a look at the spread of models computed by using parameters drawn from this N-dimensional gaussian:
 
-# In[ ]:
+# In[12]:
 
 
 b.plot(model='from_ndg', x='phase', show=True)
@@ -129,7 +129,7 @@ b.plot(model='from_ndg', x='phase', y='residuals', show=True)
 
 # The spread looks good, so now we can proceed with adding a sampler. We do that in much the same way as we did for the estimators and optimizers, by running `b.add_solver()`. We will pass our newly initialized compute option-set to it so that the sampler knows what options to use, and our N-dimensional gaussian distribution so that the sampler initializes its starting points from it:
 
-# In[ ]:
+# In[13]:
 
 
 b.add_solver('sampler.emcee', solver='mcmc', compute='dyn_rv', init_from='ndg')
@@ -137,7 +137,7 @@ b.add_solver('sampler.emcee', solver='mcmc', compute='dyn_rv', init_from='ndg')
 
 # Let's take a closer look at the sampler options; we will print them here and discuss them while the sampler is running.
 
-# In[ ]:
+# In[14]:
 
 
 print(b['mcmc'])
@@ -175,7 +175,7 @@ print(b['mcmc'])
 # 
 # We can now plan a quick coffee break as we run an initial, 100-iteration mcmc run:
 
-# In[ ]:
+# In[15]:
 
 
 b.run_solver('mcmc', solution='round_1')
@@ -185,7 +185,7 @@ b.run_solver('mcmc', solution='round_1')
 
 # Let us first look at the log-probability plot:
 
-# In[ ]:
+# In[16]:
 
 
 b.plot(solution='round_1', style='lnprobability', burnin=0, thin=1, show=True)
@@ -193,7 +193,7 @@ b.plot(solution='round_1', style='lnprobability', burnin=0, thin=1, show=True)
 
 # Here we can see that the burn-in phase is ~50 iterations, as walkers settle to the most probable part of the parameter space. So let's replot, but this time let's remove the burn-in part:
 
-# In[ ]:
+# In[17]:
 
 
 b.plot(solution='round_1', style='lnprobability', burnin=50, thin=1, show=True)
@@ -201,7 +201,7 @@ b.plot(solution='round_1', style='lnprobability', burnin=50, thin=1, show=True)
 
 # The solution is still quite clearly converging, but the up side is that all walkers are spaghetti'd together. Let's take at the posterior plot:
 
-# In[ ]:
+# In[18]:
 
 
 b.plot(solution='round_1', style='corner', burnin=50, thin=1, show=True)
@@ -209,7 +209,7 @@ b.plot(solution='round_1', style='corner', burnin=50, thin=1, show=True)
 
 # Given that we are computing posteriors and cross-sections for only 50 iterations, the ruggedness should not surprise us; that will get much better with additional iterations. Finally, let's take a look at trace plots:
 
-# In[ ]:
+# In[19]:
 
 
 b.plot(solution='round_1', style='trace', burnin=0, thin=1, show=True)
@@ -219,7 +219,7 @@ b.plot(solution='round_1', style='trace', burnin=0, thin=1, show=True)
 
 # Let's save the bundle to have it ready for the next tutorial:
 
-# In[ ]:
+# In[20]:
 
 
 b.save('./data/synthetic/after_initial_sampling.bundle')

@@ -14,20 +14,20 @@
 
 # # Setup
 
-# In[ ]:
+# In[1]:
 
 
 import phoebe
 from phoebe import u,c
 
 
-# In[ ]:
+# In[2]:
 
 
 logger = phoebe.logger(clevel='WARNING')
 
 
-# In[ ]:
+# In[3]:
 
 
 b = phoebe.default_binary()
@@ -38,7 +38,7 @@ b.add_dataset('lc', compute_phases=phoebe.linspace(0,1,101))
 # 
 # Distributions can be attached to most any FloatParameter in the Bundle. To see a list of these available parameters, we can call [b.get_adjustable_parameters](http://phoebe-project.org/docs/2.3/api/phoebe.frontend.bundle.Bundle.get_adjustable_parameters.md). Note the `exclude_constrained` option which defaults to `True`: we can set distributions on constrained parameters (for priors, for example), but those will not be able to be sampled from in the forward model or while fitting. We'll come back to this in the next tutorial when looking at priors.
 
-# In[ ]:
+# In[4]:
 
 
 print(b.get_adjustable_parameters())
@@ -55,7 +55,7 @@ print(b.get_adjustable_parameters())
 # 
 # Now let's attach a gaussian distribution on the temperature of the primary star.
 
-# In[ ]:
+# In[5]:
 
 
 b.add_distribution(qualifier='teff', component='primary', 
@@ -65,7 +65,7 @@ b.add_distribution(qualifier='teff', component='primary',
 
 # We can now add additional distributions (to other parameters) with this same distribution label.  In addition to the single-distribution syntax above, multiple distributions can be attached in a single call as follows:
 
-# In[ ]:
+# In[6]:
 
 
 b.add_distribution({'requiv@primary': phoebe.gaussian(1, 0.2),
@@ -78,13 +78,13 @@ b.add_distribution({'requiv@primary': phoebe.gaussian(1, 0.2),
 # 
 # The parameters we've created and attached are [DistributionParameters](http://phoebe-project.org/docs/2.3/api/phoebe.parameters.DistributionParameter.md) and live in `context='distribution'`, with all other tags matching the parameter they're referencing. For example, let's filter and look at the distributions we've added.
 
-# In[ ]:
+# In[7]:
 
 
 print(b.filter(context='distribution'))
 
 
-# In[ ]:
+# In[8]:
 
 
 print(b.get_parameter(context='distribution', qualifier='teff'))
@@ -92,7 +92,7 @@ print(b.get_parameter(context='distribution', qualifier='teff'))
 
 # The "value" of the parameter, is the [distl](https://distl.readthedocs.io/) distributon object itself.
 
-# In[ ]:
+# In[9]:
 
 
 b.get_value(context='distribution', qualifier='teff')
@@ -100,7 +100,7 @@ b.get_value(context='distribution', qualifier='teff')
 
 # And because of that, we can call any method on the distl object, including plotting the distribution.
 
-# In[ ]:
+# In[10]:
 
 
 _ = b.get_value(context='distribution', qualifier='teff').plot(show=True)
@@ -111,7 +111,7 @@ _ = b.get_value(context='distribution', qualifier='teff').plot(show=True)
 # * [b.get_distribution_collection](http://phoebe-project.org/docs/2.3/api/phoebe.frontend.bundle.Bundle.get_distribution_collection.md)
 # * [b.plot_distribution_collection](http://phoebe-project.org/docs/2.3/api/phoebe.frontend.bundle.Bundle.plot_distribution_collection.md)
 
-# In[ ]:
+# In[11]:
 
 
 _ = b.plot_distribution_collection(distribution='mydist', show=True)
@@ -127,31 +127,31 @@ _ = b.plot_distribution_collection(distribution='mydist', show=True)
 # 
 # `lnpriors` is the probability of drawing the _current parameter face-values_ from the distributions assigned as priors.  We can expose the probability of drawing the current values from our `'mydist'` distribution with [b.calculate_lnp](http://phoebe-project.org/docs/2.3/api/phoebe.frontend.bundle.Bundle.calculate_lnp.md).  But note that this _only_ becomes the `lnpriors` when `'mydist'` is included within the `priors` parameter of a given solver.
 
-# In[ ]:
+# In[12]:
 
 
 b.calculate_lnp(distribution='mydist')
 
 
-# In[ ]:
+# In[13]:
 
 
 b.add_solver('optimizer.nelder_mead', solver='nm_solver')
 
 
-# In[ ]:
+# In[14]:
 
 
 print(b.get_parameter('priors', solver='nm_solver'))
 
 
-# In[ ]:
+# In[15]:
 
 
 b.set_value('priors', value=['mydist'])
 
 
-# In[ ]:
+# In[16]:
 
 
 print(b.filter(qualifier='priors*'))
@@ -159,7 +159,7 @@ print(b.filter(qualifier='priors*'))
 
 # As a shortcut, we can pass a pointer to the `priors` parameter itself.  This will automatically account for combining multiple distributions as defined by `priors_combine` and will ensure that constrained parameters are included (`include_constrained=True`, which is the default for `calculate_lnp`):
 
-# In[ ]:
+# In[17]:
 
 
 b.calculate_lnp('priors@nm_solver')
@@ -167,13 +167,13 @@ b.calculate_lnp('priors@nm_solver')
 
 # Now if we change a face-value of one of the parameters within this distribution, we'll see the probability change.
 
-# In[ ]:
+# In[18]:
 
 
 b.set_value('teff', component='primary', context='component', value=5500)
 
 
-# In[ ]:
+# In[19]:
 
 
 b.calculate_lnp('priors@nm_solver')
@@ -181,13 +181,13 @@ b.calculate_lnp('priors@nm_solver')
 
 # If we do the same of an _uninformative_ (uniform) distribution, we'll get -inf returned, which within an optimizer or sampler would immediately reject that step before even running the forward model
 
-# In[ ]:
+# In[20]:
 
 
 b.set_value('incl', component='binary', context='component', value=87)
 
 
-# In[ ]:
+# In[21]:
 
 
 b.calculate_lnp('priors@nm_solver')
@@ -199,7 +199,7 @@ b.calculate_lnp('priors@nm_solver')
 # 
 # We can pass a list of parameters (as twigs) to the `parameters` keyword argument to only plot a subset of the available parameters, but also to propagate distributions through constraints linking parameters together.
 
-# In[ ]:
+# In[22]:
 
 
 _ = b.plot_distribution_collection(distribution='mydist', 
@@ -211,7 +211,7 @@ _ = b.plot_distribution_collection(distribution='mydist',
 # 
 # Lastly, we can have PHOEBE automatically draw from a "distribution collection" multiple times and expose the distribution of the model itself.
 
-# In[ ]:
+# In[23]:
 
 
 print(b.get_parameter(qualifier='sample_from', context='compute'))
@@ -219,13 +219,13 @@ print(b.get_parameter(qualifier='sample_from', context='compute'))
 
 # Once `sample_from` is set, `sample_num` and `sample_mode` are exposed as visible parameters
 
-# In[ ]:
+# In[24]:
 
 
 b.set_value('sample_from', value='mydist')
 
 
-# In[ ]:
+# In[25]:
 
 
 print(b.filter(qualifier='sample*'))
@@ -233,13 +233,13 @@ print(b.filter(qualifier='sample*'))
 
 # Now when we call [run_compute](http://phoebe-project.org/docs/2.3/api/phoebe.frontend.bundle.Bundle.run_compute.md), 10 different instances of the forward model will be computed from 10 random draws from the "distribution collection" but only the median and 1-sigma uncertainties will be exposed in the model.
 
-# In[ ]:
+# In[26]:
 
 
 b.run_compute(irrad_method='none')
 
 
-# In[ ]:
+# In[27]:
 
 
 _ = b.plot(show=True)

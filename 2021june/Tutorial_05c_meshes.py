@@ -13,26 +13,26 @@
 
 # Uncomment the line below if necessary to see inline plots
 
-# In[ ]:
+# In[1]:
 
 
 #%matplotlib inline
 
 
-# In[ ]:
+# In[2]:
 
 
 import phoebe
 from phoebe import u,c
 
 
-# In[ ]:
+# In[3]:
 
 
 logger = phoebe.logger(clevel='WARNING')
 
 
-# In[ ]:
+# In[4]:
 
 
 b = phoebe.default_binary()
@@ -42,19 +42,19 @@ b = phoebe.default_binary()
 
 # We already covered adding a mesh dataset, but now let's look at what gets returned by the model and how to plot meshes.
 
-# In[ ]:
+# In[5]:
 
 
 b.add_dataset('lc', compute_times=phoebe.linspace(0,1,101), dataset='lc01')
 
 
-# In[ ]:
+# In[6]:
 
 
 b.add_dataset('mesh', compute_times=[0, 0.25, 0.5, 0.75], dataset='mesh01')
 
 
-# In[ ]:
+# In[7]:
 
 
 print(b.get_parameter('columns', dataset='mesh01').choices)
@@ -62,25 +62,25 @@ print(b.get_parameter('columns', dataset='mesh01').choices)
 
 # To see an explanation of these various choices, see the [mesh dataset tutorial](http://phoebe-project.org/docs/2.3/tutorials/MESH).
 
-# In[ ]:
+# In[8]:
 
 
 b.set_value('columns', value=['teffs', 'loggs', '*intensities*'])
 
 
-# In[ ]:
+# In[9]:
 
 
 b.get_value('columns')
 
 
-# In[ ]:
+# In[10]:
 
 
 b.get_value('columns', expand=True)
 
 
-# In[ ]:
+# In[11]:
 
 
 b.run_compute()
@@ -88,7 +88,7 @@ b.run_compute()
 
 # Let's look at the Parameters in the model that have been tagged with our mesh dataset.
 
-# In[ ]:
+# In[12]:
 
 
 b.filter(context='model', dataset='mesh01').qualifiers
@@ -98,7 +98,7 @@ b.filter(context='model', dataset='mesh01').qualifiers
 # 
 # Let's look at the default mesh plot.  Since we have meshes stored at several times, we should provide a single time at which we want the meshes drawn.  Let's choose quarter-phase so that we can see both stars.
 
-# In[ ]:
+# In[13]:
 
 
 afig, mplfig = b.filter(dataset='mesh01').plot(time=0.25, show=True)
@@ -106,7 +106,7 @@ afig, mplfig = b.filter(dataset='mesh01').plot(time=0.25, show=True)
 
 # Now if we want to, we can choose separate columns for facecolor (`fc`) and edgecolor (`ec`).  To turn off edges entirely pass `ec="None"` (as a string) or `ec="face"` to use the same color as the faces.
 
-# In[ ]:
+# In[14]:
 
 
 afig, mplfig = b.filter(dataset='mesh01').plot(time=0.25, fc='teffs', ec="face", show=True)
@@ -114,7 +114,7 @@ afig, mplfig = b.filter(dataset='mesh01').plot(time=0.25, fc='teffs', ec="face",
 
 # If we wanted, we can even override the default "mesh" plot and plot any two columns against each other in a scatter plot.
 
-# In[ ]:
+# In[15]:
 
 
 afig, mplfig = b.filter(dataset='mesh01').plot(time=0.25, x='loggs', y='teffs', show=True)
@@ -122,13 +122,13 @@ afig, mplfig = b.filter(dataset='mesh01').plot(time=0.25, x='loggs', y='teffs', 
 
 # All the Parameters tagged in the model with `dataset='mesh01'` are passband-*independent*.  Passband-*dependent* Parameters are exposed as well, but they are tagged with the lc/rv dataset instead (but still with `kind='mesh'` instead of `kind='lc'` or `'rv'`).  To see all of these, let's filter on `kind='mesh'` instead of `dataset='mesh01'`.  These will only be available for times that occur in **both** the lc and mesh datasets.
 
-# In[ ]:
+# In[16]:
 
 
 b.filter(context='model', kind='mesh').datasets
 
 
-# In[ ]:
+# In[17]:
 
 
 b.filter(context='model', kind='mesh', dataset='lc01').qualifiers
@@ -136,7 +136,7 @@ b.filter(context='model', kind='mesh', dataset='lc01').qualifiers
 
 # Here we see the Parameters for our light curve.  These are the local quantities needed to obtain the final integrated flux at this single time.  We can use these as facecolor/edgecolor as well, but need to change our filter a bit so that they're included.
 
-# In[ ]:
+# In[18]:
 
 
 afig, mplfig = b.filter(kind='mesh').plot(time=0.25, fc='abs_normal_intensities', 

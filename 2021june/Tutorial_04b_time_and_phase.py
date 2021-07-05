@@ -13,20 +13,20 @@
 
 # # Setup
 
-# In[ ]:
+# In[1]:
 
 
 import phoebe
 from phoebe import u,c
 
 
-# In[ ]:
+# In[2]:
 
 
 logger = phoebe.logger(clevel='WARNING')
 
 
-# In[ ]:
+# In[3]:
 
 
 b = phoebe.default_binary()
@@ -48,19 +48,19 @@ b = phoebe.default_binary()
 # 
 # `t0_supconj`, `t0_perpass`, and `t0_ref` are all defined within the orbit (so `context='component', component='binary'` for our default binary).  By default, `t0_supconj` is the free Parameter, with `t0_perpass` and `t0_ref` being constrained by a multiple other parameters.
 
-# In[ ]:
+# In[4]:
 
 
 b.get_parameter(qualifier='t0_supconj', context='component')
 
 
-# In[ ]:
+# In[5]:
 
 
 b.get_parameter(qualifier='t0_perpass', context='component')
 
 
-# In[ ]:
+# In[6]:
 
 
 b.get_parameter(qualifier='t0_ref', context='component')
@@ -68,7 +68,7 @@ b.get_parameter(qualifier='t0_ref', context='component')
 
 # Just so that the period and phases aren't identical, we'll use an example with an orbital period other than the default of 1 day.
 
-# In[ ]:
+# In[7]:
 
 
 b.set_value(qualifier='period', component='binary', value=2.5)
@@ -76,19 +76,19 @@ b.set_value(qualifier='period', component='binary', value=2.5)
 
 # We can access the current ephemeris of our system using any of these t0s or a custom-time.
 
-# In[ ]:
+# In[8]:
 
 
 b.get_ephemeris(t0='t0_supconj')
 
 
-# In[ ]:
+# In[9]:
 
 
 b.get_ephemeris(t0='t0_perpass')
 
 
-# In[ ]:
+# In[10]:
 
 
 b.get_ephemeris(t0=5)
@@ -96,13 +96,13 @@ b.get_ephemeris(t0=5)
 
 # Similarly, we can transform any time (float or list/array) to phase using any of these ephemerides
 
-# In[ ]:
+# In[11]:
 
 
 b.to_phase([0,0.1], t0='t0_supconj')
 
 
-# In[ ]:
+# In[12]:
 
 
 b.to_phase([0,0.1], t0='t0_perpass')
@@ -110,13 +110,13 @@ b.to_phase([0,0.1], t0='t0_perpass')
 
 # We can also translate from phase to time (where the returned time will be the first instance of that phase after the provided t0)
 
-# In[ ]:
+# In[13]:
 
 
 b.to_time(0.5, t0='t0_supconj')
 
 
-# In[ ]:
+# In[14]:
 
 
 b.to_time(0.5, t0=2455000)
@@ -129,25 +129,25 @@ b.to_time(0.5, t0=2455000)
 # 
 # If you have observational data in phases, you should **not** use this to convert your observational times and phases (and PHOEBE won't let you as the `times` array will be required if `fluxes` or `rvs` are provided).  Rather you should convert your observational data to times using the best information you have on the ephemeris that was originally used on the dataset to convert to phases.
 
-# In[ ]:
+# In[15]:
 
 
 b.add_dataset('lc', compute_phases=phoebe.linspace(0,1,101), dataset='lc01')
 
 
-# In[ ]:
+# In[16]:
 
 
 print(b.filter(qualifier=['compute_times', 'compute_phases'], context='dataset'))
 
 
-# In[ ]:
+# In[17]:
 
 
 b.set_value('period', component='binary', value=3.14)
 
 
-# In[ ]:
+# In[18]:
 
 
 print(b.filter(qualifier=['compute_times', 'compute_phases'], context='dataset'))

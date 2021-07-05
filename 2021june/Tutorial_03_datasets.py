@@ -12,20 +12,20 @@
 
 # # Setup
 
-# In[ ]:
+# In[1]:
 
 
 import phoebe
 from phoebe import u,c
 
 
-# In[ ]:
+# In[2]:
 
 
 logger = phoebe.logger(clevel='WARNING')
 
 
-# In[ ]:
+# In[3]:
 
 
 b = phoebe.default_binary()
@@ -47,7 +47,7 @@ b = phoebe.default_binary()
 
 # ## Light Curves
 
-# In[ ]:
+# In[4]:
 
 
 b.add_dataset('lc', times=phoebe.linspace(0,1,51), dataset='lc01')
@@ -55,7 +55,7 @@ b.add_dataset('lc', times=phoebe.linspace(0,1,51), dataset='lc01')
 
 # This attaches a set of new Parameters to the Bundle.  Most have the context='dataset', but a few have context='compute', 'figure', 'constraint', etc.  The 'times' Parameter is set with the provided array, and all Parameters are tagged with dataset='lc01'.
 
-# In[ ]:
+# In[5]:
 
 
 b.filter(dataset='lc01').contexts
@@ -63,7 +63,7 @@ b.filter(dataset='lc01').contexts
 
 # Let's look at the new Parameters (for our light curve) with context='dataset'.
 
-# In[ ]:
+# In[6]:
 
 
 b.filter(dataset='lc01', context='dataset').qualifiers
@@ -75,7 +75,7 @@ b.filter(dataset='lc01', context='dataset').qualifiers
 
 # Now let's quickly look at the Parameters with `context='compute'`
 
-# In[ ]:
+# In[7]:
 
 
 b.filter(dataset='lc01', context='compute').qualifiers
@@ -87,7 +87,7 @@ b.filter(dataset='lc01', context='compute').qualifiers
 
 # Now let's do the same for a [radial velocity (rv) dataset](http://phoebe-project.org/docs/2.3/tutorials/RV.ipynb).
 
-# In[ ]:
+# In[8]:
 
 
 b.add_dataset('rv', times=phoebe.linspace(0,1,11), dataset='rv01')
@@ -95,7 +95,7 @@ b.add_dataset('rv', times=phoebe.linspace(0,1,11), dataset='rv01')
 
 # Let's look at the Parameters for a radial velocity dataset with `context='dataset'`
 
-# In[ ]:
+# In[9]:
 
 
 b.filter(dataset='rv01', context='dataset').qualifiers
@@ -109,7 +109,7 @@ b.filter(dataset='rv01', context='dataset').qualifiers
 # 
 # Note: You can also send a dictionary when creating the dataset: `b.add_dataset('rv', times={'primary': [0,1,2], 'secondary': [1,2,3]})` to send values to individual parameters.
 
-# In[ ]:
+# In[10]:
 
 
 b.filter(dataset='rv01', context='dataset', qualifier='times').components
@@ -117,7 +117,7 @@ b.filter(dataset='rv01', context='dataset', qualifier='times').components
 
 # And now look at the added Parameters with context='compute'.
 
-# In[ ]:
+# In[11]:
 
 
 b.filter(dataset='rv01', context='compute').qualifiers
@@ -129,7 +129,7 @@ b.filter(dataset='rv01', context='compute').qualifiers
 
 # Although you're unlikely to have observational data on an orbit, the [orb dataset](http://phoebe-project.org/docs/2.3/tutorials/ORB.ipynb) allows you to expose the orbital information of the stars in a system at any given time, which can be useful for visualization or debugging purposes.
 
-# In[ ]:
+# In[12]:
 
 
 b.add_dataset('orb', compute_times=phoebe.linspace(0,1,101), dataset='orb01')
@@ -137,13 +137,13 @@ b.add_dataset('orb', compute_times=phoebe.linspace(0,1,101), dataset='orb01')
 
 # There are no options for orbits besides providing the compute times/phases and enabling/disabling.  Note that there is no `times` parameter, as there are no observations.  However, if you pass `times` to `add_dataset`, they will be adopted automatically as `compute_times`.
 
-# In[ ]:
+# In[13]:
 
 
 b.filter(dataset='orb01', context='dataset').qualifiers
 
 
-# In[ ]:
+# In[14]:
 
 
 b.filter(dataset='orb01', context='compute').qualifiers
@@ -153,7 +153,7 @@ b.filter(dataset='orb01', context='compute').qualifiers
 
 # [Line profiles](http://phoebe-project.org/docs/2.3/tutorials/LP) are time *and* wavelength dependent.  Note that the times cannot be changed after the dataset is created and attached to the bundle (although the wavelengths can).  **However**, `compute_times` can be changed.  Because of this, the distinction between `times` and `compute_times` is a bit more important for line profiles - you probably only want to provide `times` if you want to attach your actual observations, otherwise just provide `compute_times`.
 
-# In[ ]:
+# In[15]:
 
 
 b.add_dataset('lp', 
@@ -164,13 +164,13 @@ b.add_dataset('lp',
 
 # Let's look at the Parameters for a line profile dataset with `context='dataset'`
 
-# In[ ]:
+# In[16]:
 
 
 b.filter(dataset='lp01', context='dataset').qualifiers
 
 
-# In[ ]:
+# In[17]:
 
 
 print(b.filter(dataset='lp01', context='dataset'))
@@ -178,7 +178,7 @@ print(b.filter(dataset='lp01', context='dataset'))
 
 # If we instead provide `compute_times`, we won't have all these extra per-time "observational" parameters.
 
-# In[ ]:
+# In[18]:
 
 
 b.add_dataset('lp', 
@@ -188,7 +188,7 @@ b.add_dataset('lp',
               overwrite=True)
 
 
-# In[ ]:
+# In[19]:
 
 
 print(b.filter(dataset='lp01', context='dataset'))
@@ -196,7 +196,7 @@ print(b.filter(dataset='lp01', context='dataset'))
 
 # And now look at the added Parameters with `context='compute'`.
 
-# In[ ]:
+# In[20]:
 
 
 b.filter(dataset='lp01', context='compute').qualifiers
@@ -208,7 +208,7 @@ b.filter(dataset='lp01', context='compute').qualifiers
 # 
 # Meshes can't have observational data, so *only* have a `compute_times`.  But if you try to pass `times`, it will accept those as `compute_times` with a warning in the logger.
 
-# In[ ]:
+# In[21]:
 
 
 b.add_dataset('mesh', 
@@ -216,13 +216,13 @@ b.add_dataset('mesh',
               dataset='mesh01')
 
 
-# In[ ]:
+# In[22]:
 
 
 b.filter(dataset='mesh01', context='dataset').qualifiers
 
 
-# In[ ]:
+# In[23]:
 
 
 b.filter(dataset='mesh01', context='compute').qualifiers

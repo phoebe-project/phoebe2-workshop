@@ -18,14 +18,14 @@
 
 # # Setup
 
-# In[ ]:
+# In[1]:
 
 
 import phoebe
 from phoebe import u,c
 
 
-# In[ ]:
+# In[2]:
 
 
 logger = phoebe.logger(clevel='WARNING')
@@ -35,7 +35,7 @@ logger = phoebe.logger(clevel='WARNING')
 
 # Everything for our system will be stored in a single Python object that we call the "Bundle".  Let's start just by creating the default binary system and store it in a Bundle-object which we'll call "b" (short for bundle).
 
-# In[ ]:
+# In[3]:
 
 
 b = phoebe.default_binary()
@@ -43,7 +43,7 @@ b = phoebe.default_binary()
 
 # The Bundle is just a collection of Parameter objects along with some callable methods.  Here we can see that the default binary Bundle consists of over 100 individual parameters.
 
-# In[ ]:
+# In[4]:
 
 
 b
@@ -51,7 +51,7 @@ b
 
 # If we want to view or edit a Parameter in the Bundle, we first need to know how to access it.  Each Parameter object has a number of tags which can be used to filter (similar to a database query).  When filtering the Bundle, a ParameterSet is returned - this is essentially just a subset of the Parameters in the Bundle and can be further filtered until eventually accessing a single Parameter.
 
-# In[ ]:
+# In[5]:
 
 
 b.filter(context='compute')
@@ -59,7 +59,7 @@ b.filter(context='compute')
 
 # Here we filtered on the context tag for all Parameters with context='compute' (i.e. the options for computing a model).  If we want to see all the available options for this tag in the Bundle, we can use the plural form of the tag.
 
-# In[ ]:
+# In[6]:
 
 
 b.contexts
@@ -77,7 +77,7 @@ b.contexts
 
 # Accessing the plural form of the tag as an attribute also works on a filtered ParameterSet
 
-# In[ ]:
+# In[7]:
 
 
 b.filter(context='compute').components
@@ -85,7 +85,7 @@ b.filter(context='compute').components
 
 # This then tells us what can be used to filter further.
 
-# In[ ]:
+# In[8]:
 
 
 b.filter(context='compute').filter(component='primary')
@@ -93,7 +93,7 @@ b.filter(context='compute').filter(component='primary')
 
 # The qualifier tag is the shorthand name of the Parameter itself.  If you don't know what you're looking for, it is often useful to list all the qualifiers of the Bundle or a given ParameterSet.
 
-# In[ ]:
+# In[9]:
 
 
 b.filter(context='compute', component='primary').qualifiers
@@ -101,7 +101,7 @@ b.filter(context='compute', component='primary').qualifiers
 
 # Now that we know the options for qualifier within this filter, we can choose to filter on one of those.  Let's filter by the `ntriangles` qualifier.
 
-# In[ ]:
+# In[10]:
 
 
 b.filter(context='compute', component='primary', qualifier='ntriangles')
@@ -109,7 +109,7 @@ b.filter(context='compute', component='primary', qualifier='ntriangles')
 
 # Once we filter far enough to get to a single Parameter, we can use get_parameter to return the Parameter object itself (instead of a ParameterSet).
 
-# In[ ]:
+# In[11]:
 
 
 b.filter(context='compute', component='primary', qualifier='ntriangles').get_parameter()
@@ -117,7 +117,7 @@ b.filter(context='compute', component='primary', qualifier='ntriangles').get_par
 
 # As a shortcut, get_parameter also takes filtering keywords.  So the above line is also equivalent to the following:
 
-# In[ ]:
+# In[12]:
 
 
 b.get_parameter(context='compute', component='primary', qualifier='ntriangles')
@@ -125,13 +125,13 @@ b.get_parameter(context='compute', component='primary', qualifier='ntriangles')
 
 # Each Parameter object contains several keys that provide information about that Parameter.  The keys "description" and "value" are always included, with additional keys available depending on the type of Parameter.
 
-# In[ ]:
+# In[13]:
 
 
 b.get_parameter(context='compute', component='primary', qualifier='ntriangles').get_value()
 
 
-# In[ ]:
+# In[14]:
 
 
 b.get_parameter(context='compute', component='primary', qualifier='ntriangles').get_description()
@@ -139,7 +139,7 @@ b.get_parameter(context='compute', component='primary', qualifier='ntriangles').
 
 # Since the Parameter for `ntriangles` is an IntegerParameter, it also includes a key for the allowable limits.
 
-# In[ ]:
+# In[15]:
 
 
 b.get_parameter(context='compute', component='primary', qualifier='ntriangles').get_limits()
@@ -149,13 +149,13 @@ b.get_parameter(context='compute', component='primary', qualifier='ntriangles').
 # 
 # If we wanted a finer mesh, we could change the value.
 
-# In[ ]:
+# In[16]:
 
 
 b.get_parameter(context='compute', component='primary', qualifier='ntriangles').set_value(2000)
 
 
-# In[ ]:
+# In[17]:
 
 
 b.get_parameter(context='compute', component='primary', qualifier='ntriangles')
@@ -163,19 +163,19 @@ b.get_parameter(context='compute', component='primary', qualifier='ntriangles')
 
 # If we choose the `distortion_method` qualifier from that same ParameterSet, we'll see that it has a few different keys in addition to description and value.
 
-# In[ ]:
+# In[18]:
 
 
 b.get_parameter(context='compute', component='primary', qualifier='distortion_method')
 
 
-# In[ ]:
+# In[19]:
 
 
 b.get_parameter(context='compute', component='primary', qualifier='distortion_method').get_value()
 
 
-# In[ ]:
+# In[20]:
 
 
 b.get_parameter(context='compute', component='primary', qualifier='distortion_method').get_description()
@@ -183,7 +183,7 @@ b.get_parameter(context='compute', component='primary', qualifier='distortion_me
 
 # Since the `distortion_method` Parameter is a ChoiceParameter, it contains a key for the allowable choices.
 
-# In[ ]:
+# In[21]:
 
 
 b.get_parameter(context='compute', component='primary', qualifier='distortion_method').get_choices()
@@ -191,13 +191,13 @@ b.get_parameter(context='compute', component='primary', qualifier='distortion_me
 
 # We can only set a value if it is contained within this list - if you attempt to set a non-valid value, an error will be raised.
 
-# In[ ]:
+# In[22]:
 
 
 b.get_parameter(context='compute', component='primary', qualifier='distortion_method').set_value('rotstar')
 
 
-# In[ ]:
+# In[23]:
 
 
 b.get_parameter(context='compute', component='primary', qualifier='distortion_method').get_value()
@@ -222,19 +222,19 @@ b.get_parameter(context='compute', component='primary', qualifier='distortion_me
 # 
 # For example, the following lines give identical results:
 
-# In[ ]:
+# In[24]:
 
 
 b.filter(context='compute', component='primary')
 
 
-# In[ ]:
+# In[25]:
 
 
 b['primary@compute']
 
 
-# In[ ]:
+# In[26]:
 
 
 b['compute@primary']
@@ -242,13 +242,13 @@ b['compute@primary']
 
 # However, this dictionary-style twig access will never return a ParameterSet with a single Parameter, instead it will return the Parameter itself.  This can be seen in the different output between the following two lines:
 
-# In[ ]:
+# In[27]:
 
 
 b.filter(context='compute', component='primary', qualifier='distortion_method')
 
 
-# In[ ]:
+# In[28]:
 
 
 b['distortion_method@primary@compute']
@@ -256,13 +256,13 @@ b['distortion_method@primary@compute']
 
 # This dictionary-style access can also set the value directly:
 
-# In[ ]:
+# In[29]:
 
 
 b['distortion_method@primary@compute'] = 'roche'
 
 
-# In[ ]:
+# In[30]:
 
 
 print(b['distortion_method@primary@compute'])
@@ -270,13 +270,13 @@ print(b['distortion_method@primary@compute'])
 
 # And can even provide direct access to the keys/attributes of the Parameter (value, description, limits, etc)
 
-# In[ ]:
+# In[31]:
 
 
 print(b['value@distortion_method@primary@compute'])
 
 
-# In[ ]:
+# In[32]:
 
 
 print(b['description@distortion_method@primary@compute'])
@@ -284,7 +284,7 @@ print(b['description@distortion_method@primary@compute'])
 
 # As with the tags, you can call .twigs on any ParameterSet to see the "smallest unique twigs" of the contained Parameters
 
-# In[ ]:
+# In[33]:
 
 
 b['compute'].twigs
@@ -294,13 +294,13 @@ b['compute'].twigs
 
 # To see a nice representation of the names (twigs or qualifier) of all the parameters and their descriptions, we can call `info` on any bundle or ParameterSet.
 
-# In[ ]:
+# In[34]:
 
 
 print(b.info)
 
 
-# In[ ]:
+# In[35]:
 
 
 print(b.filter(context='component').info)
@@ -310,7 +310,7 @@ print(b.filter(context='component').info)
 # 
 # Each FloatParameter has an associated unit. Let's look at the 'sma' Parameter for the binary orbit.
 
-# In[ ]:
+# In[36]:
 
 
 b.get_parameter(qualifier='sma', component='binary', context='component')
@@ -318,7 +318,7 @@ b.get_parameter(qualifier='sma', component='binary', context='component')
 
 # From the representation above, we can already see that the units are in solar radii. We can access the units directly via get_default_unit.
 
-# In[ ]:
+# In[37]:
 
 
 b.get_parameter(qualifier='sma', component='binary', context='component').get_default_unit()
@@ -326,7 +326,7 @@ b.get_parameter(qualifier='sma', component='binary', context='component').get_de
 
 # Calling get_value returns only the float of the value in these units.
 
-# In[ ]:
+# In[38]:
 
 
 b.get_parameter(qualifier='sma', component='binary', context='component').get_value()
@@ -334,7 +334,7 @@ b.get_parameter(qualifier='sma', component='binary', context='component').get_va
 
 # Alternatively, you can access an astropy quantity object that contains the value and unit by calling get_quantity.
 
-# In[ ]:
+# In[39]:
 
 
 b.get_parameter(qualifier='sma', component='binary', context='component').get_quantity()
@@ -342,7 +342,7 @@ b.get_parameter(qualifier='sma', component='binary', context='component').get_qu
 
 # Both get_value and get_quantity also accept a unit argument which will return the value or quantity in the requested units (if able to convert). This unit argument takes either a unit object (we imported a forked version of astropy units from within PHOEBE) or a string representation that can be parsed.
 
-# In[ ]:
+# In[40]:
 
 
 b.get_parameter(qualifier='sma', component='binary', context='component').get_value(unit=u.km)
@@ -350,19 +350,19 @@ b.get_parameter(qualifier='sma', component='binary', context='component').get_va
 
 # If for some reason you want to change the default units, you can, but just be careful that this could cause some float-point precision issue
 
-# In[ ]:
+# In[41]:
 
 
 b.get_parameter(qualifier='sma', component='binary', context='component').set_default_unit('mm')
 
 
-# In[ ]:
+# In[42]:
 
 
 b.get_parameter(qualifier='sma', component='binary', context='component').get_quantity()
 
 
-# In[ ]:
+# In[43]:
 
 
 b.get_parameter(qualifier='sma', component='binary', context='component').get_quantity(unit='solRad')
@@ -372,13 +372,13 @@ b.get_parameter(qualifier='sma', component='binary', context='component').get_qu
 
 # The entire bundle object can be saved to (and reloaded from) and ASCII file.
 
-# In[ ]:
+# In[44]:
 
 
 b.save('test.phoebe')
 
 
-# In[ ]:
+# In[45]:
 
 
 b = phoebe.load('test.phoebe')

@@ -19,7 +19,7 @@
 # 
 # We'll load our bunde from the previous tutorial to show examples of running both a forward-model and solver remotely on terra.
 
-# In[ ]:
+# In[1]:
 
 
 import phoebe
@@ -43,7 +43,7 @@ b = phoebe.open('data/synthetic/after_optimizers.bundle')
 # 
 # For the workshop, you've already created a temporary account with passwordless ssh to terra, so we'll configure that server within crimpl now.
 
-# In[ ]:
+# In[2]:
 
 
 from phoebe.dependencies import crimpl
@@ -51,13 +51,13 @@ from phoebe.dependencies import crimpl
 
 # Note that whatever you put as `host` needs to be ssh-able without a password.  If you don't have `terra` as an alias in your ssh config, you may need `host="username@terra.villanova.edu"` instead.
 
-# In[ ]:
+# In[3]:
 
 
 s = crimpl.RemoteSlurmServer(host='terra')
 
 
-# In[ ]:
+# In[4]:
 
 
 print(s)
@@ -65,7 +65,7 @@ print(s)
 
 # We'll be using conda on the remote server to manage installing any necessary dependencies.  You can manually install and configure conda, or let `crimpl` do it for you (if conda is already detected as installed, this won't do any harm to call again).
 
-# In[ ]:
+# In[5]:
 
 
 s.install_conda()
@@ -83,14 +83,14 @@ s.install_conda()
 # 
 # **NOTE**: this line will take a few minutes to run, but only needs to be run once to setup the conda environment on the remote server.
 
-# In[ ]:
+# In[6]:
 
 
 #s.run_script(['pip install https://github.com/phoebe-project/phoebe2/archive/refs/heads/workshop2021.zip mpi4py emcee --ignore-installed'], 
 #             conda_env='phoebe_workshop')
 
 
-# In[ ]:
+# In[7]:
 
 
 s.save('terra', overwrite=True)
@@ -107,7 +107,7 @@ s.save('terra', overwrite=True)
 # * [remoteslurm](http://phoebe-project.org/docs/development/api/phoebe.parameters.server.remoteslurm.md)
 # * [awsec2](http://phoebe-project.org/docs/development/api/phoebe.parameters.server.awsec2.md)
 
-# In[ ]:
+# In[8]:
 
 
 b.add_server('remoteslurm', crimpl_name='terra',
@@ -118,7 +118,7 @@ b.add_server('remoteslurm', crimpl_name='terra',
 
 # Note that there are a few other useful options here, including `walltime`.  We'll leave that at the default 30 minutes for now, but for longer jobs, you'll likely want to extend this to a reasonable value (terra allows up to 48 hours walltime per-job).
 
-# In[ ]:
+# In[9]:
 
 
 print(b.get_server('terra'))
@@ -131,7 +131,7 @@ print(b.get_server('terra'))
 # 
 # If 'none' (as by default), the job is run in the current thread.  `use_server` in solver options are set to 'compute' by default, which means they will fallback on the `use_server` parameter in the referenced compute options.
 
-# In[ ]:
+# In[10]:
 
 
 print(b.filter(qualifier='use_server'))
@@ -139,7 +139,7 @@ print(b.filter(qualifier='use_server'))
 
 # So in this case, if running the `nm_solver`, PHOEBE will use the solver options for the `nm_fit` compute options.
 
-# In[ ]:
+# In[11]:
 
 
 print(b.filter(qualifier='compute'))
@@ -158,13 +158,13 @@ print(b.filter(qualifier='compute'))
 # 
 # Once the job is submitted, PHOEBE will poll to check its status, and retrieve the results once complete (or failed).
 
-# In[ ]:
+# In[14]:
 
 
 b.run_compute(compute='phoebe01', use_server='terra', model='terra_model')
 
 
-# In[ ]:
+# In[15]:
 
 
 _ = b.plot(model='terra_model', x='phases', show=True)
@@ -176,13 +176,13 @@ _ = b.plot(model='terra_model', x='phases', show=True)
 # 
 # This is particularly useful for long solver runs as it allows you to monitor their progress *as* they're running, killing the job early if necessary.  In order to do that, we need to set `progress_every_niters` in the solver options (not available for all solvers).  This tells the solver to dump the progress to a file every set number of iterations, which can then be retrieved, loaded, and inspected.  Note that this does come with some overhead, so you don't want to necessarily set this to 1.
 
-# In[ ]:
+# In[16]:
 
 
 print(b.get_solver('nm_solver'))
 
 
-# In[ ]:
+# In[17]:
 
 
 print(b.get_parameter(qualifier='progress_every_niters', solver='nm_solver'))
@@ -190,7 +190,7 @@ print(b.get_parameter(qualifier='progress_every_niters', solver='nm_solver'))
 
 # Here we'll set `progress_every_niters=10`, `maxiter=1e6`, and `fatol=xatol=1e-12`... essentially telling the optimizer to continue running until its manually terminated or exceeds the walltime.
 
-# In[ ]:
+# In[18]:
 
 
 b.set_value('progress_every_niters', solver='nm_solver', value=10)
@@ -199,14 +199,14 @@ b.set_value('xatol', solver='nm_solver', value=1e-12)
 b.set_value('fatol', solver='nm_solver', value=1e-12)
 
 
-# In[ ]:
+# In[19]:
 
 
 b.run_solver(solver='nm_solver', use_server='terra', 
              solution='nm_solution_progress', detach=True)
 
 
-# In[ ]:
+# In[20]:
 
 
 print(b.get_solution('nm_solution_progress'))
@@ -214,7 +214,7 @@ print(b.get_solution('nm_solution_progress'))
 
 # We can now (optionally) save the bundle, turn off our local machine, start a new python session, load the bundle, and all necessary information to check the job's status and retrieve results are handled automatically (with job information in the detached_job parameter and server setup/credentials in the crimpl configuration to avoid any security concerns when sharing bundles).
 
-# In[ ]:
+# In[21]:
 
 
 b.save('running_job.phoebe')
@@ -234,7 +234,7 @@ b = phoebe.open('running_job.phoebe')
 # 
 # Here we'll call [b.get_job_status](http://phoebe-project.org/docs/development/api/phoebe.frontend.bundle.Bundle.get_job_status.md) to confirm that the job has started running.
 
-# In[ ]:
+# In[22]:
 
 
 b.get_job_status(solution='nm_solution_progress')
@@ -242,33 +242,33 @@ b.get_job_status(solution='nm_solution_progress')
 
 # Calling [b.load_job_progress](http://phoebe-project.org/docs/development/api/phoebe.frontend.bundle.Bundle.load_job_progress.md) will fail until the first progress file is written, so just for the sake of letting the notebook run by executing all cells, we'll force sleeping for 2 minutes.  Once it does succeed, it will download the latest dumped progress file and import it into the solution.
 
-# In[ ]:
+# In[23]:
 
 
 from time import sleep
 sleep(120)
 
 
-# In[ ]:
+# In[24]:
 
 
 b.load_job_progress(solution='nm_solution_progress')
 
 
-# In[ ]:
+# In[25]:
 
 
 print(b.filter(qualifier=['fitted_twigs', '*_values', '*_lnprobability', 'niter', 'message'], 
                solution='nm_solution_progress'))
 
 
-# In[ ]:
+# In[26]:
 
 
 b.run_compute(compute='nm_fit', solution='nm_solution_progress', model='progress_model')
 
 
-# In[ ]:
+# In[27]:
 
 
 _ = b.plot(model='progress_model', x='phases', show=True)
@@ -278,7 +278,7 @@ _ = b.plot(model='progress_model', x='phases', show=True)
 # 
 # If we're happy with the results before `maxiter`, `xatol`, `fatol` or the server's `walltime` have been reached, we can kill the job.  
 
-# In[ ]:
+# In[28]:
 
 
 b.kill_job(solution='nm_solution_progress')
