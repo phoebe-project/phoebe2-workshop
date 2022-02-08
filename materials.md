@@ -1,8 +1,4 @@
 
-<div style="text-align: center">
-<a href="http://phoebe-project.org/static/workshops/PHOEBE_workshop_3.png" target="_blank" rel="noopener noreferrer"><img src="http://phoebe-project.org/images/workshops/PHOEBE_workshop_3_thumb.png" height="200" maxWidth="80%"/></a>
-</div>
-
 # Installing & Setup
 
 ### Jupyter Notebooks
@@ -41,45 +37,45 @@ If you have any troubles before the meeting, please reach out to us for assistan
 
 Please test your installation well in advance of the workshop by running the [test script](https://raw.githubusercontent.com/phoebe-project/phoebe2-workshop/2021june/test_install.py) (should take 10-60 seconds to run) and make sure it completes without any errors (warning messages are not a cause for concern).  If the script does not run successfully, please reach out to us so we can debug any installation issues in advance.
 
-# Week 1
+# Part 1
 
 ### Tuesday June 15: Overview and Building Systems in PHOEBE
 
 Session Chair: Angela
 
-* [Welcome & Introduction](https://docs.google.com/presentation/d/e/2PACX-1vTPiLVRPAUJnrSyNgqpWXbuQduLDqp36RP6inq5-QdtYA0nnLTjsQN1FuyhVIgvW9fHkiz_FAEpNrjp/pub?start=false&loop=false&delayms=3000) (Kelly | [recording](http://phoebe-project.org/static/workshops/2021june/2021.06.15.01_welcome.mp4))
-* [Talk: PHOEBE Overview - wdgui to PHOEBE](https://docs.google.com/presentation/d/e/2PACX-1vTeR0gdxhuHt7-rEQMK5SEM3bGETEF-ItWQHsvmr8cwt1bNqJuMflTABL8vvV6jrNEdPqRaIpL8-TiJ/pub?start=false&loop=false&delayms=3000) (Andrej | [recording](http://phoebe-project.org/static/workshops/2021june/2021.06.15.02_overview.mp4))
-* [Talk: Introduction to PHOEBE 2: why so complicated?](https://docs.google.com/presentation/d/e/2PACX-1vTdjGepiD4v0VvAv8DQsed_uCQ4SMYPqfUtCLzvR92PKjnSSeTZ9qWuZpVbzdNxWBE445BwigEg9Tv7/pub?start=false&loop=false&delayms=3000) (Kyle | [recording](http://phoebe-project.org/static/workshops/2021june/2021.06.15.03_intro.mp4))
-* [Tutorial: General Concepts & Bundle Basics](./Tutorial_01_bundle_basics.ipynb) (Kyle | [recording](http://phoebe-project.org/static/workshops/2021june/2021.06.15.04_general_concepts.mp4) | [example solutions](./Tutorial_01_bundle_basics_solutions.ipynb))
-* [Tutorial: Constraints](./Tutorial_02_constraints.ipynb) (Kyle | [recording](http://phoebe-project.org/static/workshops/2021june/2021.06.15.05_constraints.mp4) | [example solutions](./Tutorial_02_constraints_solutions.ipynb))
-* [Exercises: Building Systems](./Exercises_01_building_systems.ipynb) (Kyle | [recording](http://phoebe-project.org/static/workshops/2021june/2021.06.15.06_exercises.mp4) | [example solutions](./Exercises_01_building_systems_solutions.ipynb))
+* [Welcome & Introduction](https://docs.google.com/presentation/d/e/2PACX-1vTPiLVRPAUJnrSyNgqpWXbuQduLDqp36RP6inq5-QdtYA0nnLTjsQN1FuyhVIgvW9fHkiz_FAEpNrjp/pub?start=false&loop=false&delayms=3000) (Kelly)
+* [Talk: PHOEBE Overview - wdgui to PHOEBE](https://docs.google.com/presentation/d/e/2PACX-1vTeR0gdxhuHt7-rEQMK5SEM3bGETEF-ItWQHsvmr8cwt1bNqJuMflTABL8vvV6jrNEdPqRaIpL8-TiJ/pub?start=false&loop=false&delayms=3000) (Andrej)
+* [Talk: Introduction to PHOEBE 2: why so complicated?](https://docs.google.com/presentation/d/e/2PACX-1vTdjGepiD4v0VvAv8DQsed_uCQ4SMYPqfUtCLzvR92PKjnSSeTZ9qWuZpVbzdNxWBE445BwigEg9Tv7/pub?start=false&loop=false&delayms=3000) (Kyle)
+* [Tutorial: General Concepts & Bundle Basics](./Tutorial_01_bundle_basics.ipynb) (Kyle)
+* [Tutorial: Constraints](./Tutorial_02_constraints.ipynb) (Kyle)
+* [Exercises: Building Systems](./Exercises_01_building_systems.ipynb) (Kyle)
 
 
 ### Wednesday June 16: Creating Forward Models
 
 Session Chair: Kelly
 
-* [Talk: Atmospheres, Limb Darkening, Intensity Weighting, Extinction, and Reflection](https://docs.google.com/presentation/d/e/2PACX-1vSrILRxT1eygipBOurKZ2trffr5KQBRbK3y1TxY0-oydV1t4SaoZAWvDLZfUCc4iIZDzaHhlkVW8meM/pub?start=false&loop=false&delayms=3000) (Dave | [recording](http://phoebe-project.org/static/workshops/2021june/2021.06.16.01_atm_ld_extinction.mp4))
-* [Tutorial: Datasets](./Tutorial_03_datasets.ipynb) (Bert | [recording](http://phoebe-project.org/static/workshops/2021june/2021.06.16.02_datasets.mp4) | [example solutions](./Tutorial_03_datasets_solutions.ipynb))
-* [Tutorial: Compute](./Tutorial_04_compute.ipynb) (Angela | [recording](http://phoebe-project.org/static/workshops/2021june/2021.06.16.03_compute.mp4) | [example solutions](./Tutorial_04_compute_solutions.ipynb))
-* [Tutorial: Time and Phase](./Tutorial_04b_time_and_phase.ipynb) (Bert | [recording](http://phoebe-project.org/static/workshops/2021june/2021.06.16.04_time_and_phase.mp4) | [example solutions](./Tutorial_04b_time_and_phase_solutions.ipynb))
-* [Tutorial: Plotting](./Tutorial_05_plotting.ipynb) (Angela | [recording](http://phoebe-project.org/static/workshops/2021june/2021.06.16.05_plotting.mp4) | [example solutions](./Tutorial_05_plotting_solutions.ipynb))
-* [Exercises: Creating Forward Models](./Exercises_02_forward_models.ipynb) (Angela | [recording](http://phoebe-project.org/static/workshops/2021june/2021.06.16.06_exercises.mp4) | [example solution](./Exercises_02_forward_models_solutions.ipynb))
+* [Talk: Atmospheres, Limb Darkening, Intensity Weighting, Extinction, and Reflection](https://docs.google.com/presentation/d/e/2PACX-1vSrILRxT1eygipBOurKZ2trffr5KQBRbK3y1TxY0-oydV1t4SaoZAWvDLZfUCc4iIZDzaHhlkVW8meM/pub?start=false&loop=false&delayms=3000) (Dave)
+* [Tutorial: Datasets](./Tutorial_03_datasets.ipynb) (Bert)
+* [Tutorial: Compute](./Tutorial_04_compute.ipynb) (Angela)
+* [Tutorial: Time and Phase](./Tutorial_04b_time_and_phase.ipynb) (Bert)
+* [Tutorial: Plotting](./Tutorial_05_plotting.ipynb) (Angela)
+* [Exercises: Creating Forward Models](./Exercises_02_forward_models.ipynb) (Angela)
 
 
 ### Thursday June 17: Animations & Features
 
-* [Optional Breakout Session: Contact Binaries](./Tutorial_Semidetached_Contact.ipynb) (Angela | [recording](http://phoebe-project.org/static/workshops/2021june/2021.06.17.00_breakout_semidetached_contacts.mp4))
+* [Optional Breakout Session: Contact Binaries](./Tutorial_Semidetached_Contact.ipynb) (Angela)
 
 Session Chair: Kelly
 
 * Talk: Scientific Introduction to PHOEBE (Andrej)
-* [Tutorial: Animations](./Tutorial_05b_animations.ipynb) (Angela | [recording](http://phoebe-project.org/static/workshops/2021june/2021.06.17.02_animations.mp4) | [example solutions](./Tutorial_05b_animations_solutions.ipynb))
-* [Tutorial: Accessing and Plotting Meshes](./Tutorial_05c_meshes.ipynb) (Kyle | [recording](http://phoebe-project.org/static/workshops/2021june/2021.06.17.03_meshes.mp4) | [example solutions](./Tutorial_05c_meshes_solutions.ipynb))
-* [Tutorial: Flux Scaling (Passband Luminosity, Third Light, and Distance)](./Tutorial_pblum_l3_distance.ipynb) (Kyle | [recording](http://phoebe-project.org/static/workshops/2021june/2021.06.17.04_flux_scaling.mp4) | [example solutions](./Tutorial_pblum_l3_distance_solutions.ipynb))
-* [Tutorial: Features (Spots & Gaussian Processes)](./Tutorial_06_features.ipynb) (Kyle | [recording](http://phoebe-project.org/static/workshops/2021june/2021.06.17.05_features.mp4) | [example solutions](./Tutorial_06_features_solutions.ipynb))
-* [Tutorial: Optimizing PHOEBE Computations](./Tutorial_optimizing_computations.ipynb) (Kyle | [recording](http://phoebe-project.org/static/workshops/2021june/2021.06.17.06_optimizing_compute.mp4))
-* [Exercises: Forward Model Animations](./Exercises_03_animations.ipynb) (Kyle | [recording](http://phoebe-project.org/static/workshops/2021june/2021.06.17.07_exercises.mp4) | [example solutions](./Exercises_03_animations_solutions.ipynb))
+* [Tutorial: Animations](./Tutorial_05b_animations.ipynb) (Angela)
+* [Tutorial: Accessing and Plotting Meshes](./Tutorial_05c_meshes.ipynb) (Kyle)
+* [Tutorial: Flux Scaling (Passband Luminosity, Third Light, and Distance)](./Tutorial_pblum_l3_distance.ipynb) (Kyle)
+* [Tutorial: Features (Spots & Gaussian Processes)](./Tutorial_06_features.ipynb) (Kyle)
+* [Tutorial: Optimizing PHOEBE Computations](./Tutorial_optimizing_computations.ipynb) (Kyle)
+* [Exercises: Forward Model Animations](./Exercises_03_animations.ipynb) (Kyle)
 
 
 
@@ -88,106 +84,54 @@ Session Chair: Kelly
 Session Chair: Michael
 
 * Group Photo/Screenshot
-* [Talk: In Development - Pulsations](https://docs.google.com/presentation/d/e/2PACX-1vR13F6t5UqxxLntwHs5_sVo8YW-xzRlq2BOm08KxRMYAETPqH8qHsmL6M8BvNNTXEzStFYcvKF-IjK5/pub?start=false&loop=false&delayms=3000) (Andrej | [preview notebook](./Pulsations_preview.ipynb) | [recording](http://phoebe-project.org/static/workshops/2021june/2021.06.18.01_pulsations.mp4))
-* Talk: Gyre Pulsations (Rich Townsend | [recording](http://phoebe-project.org/static/workshops/2021june/2021.06.18.02_gyre.mp4))
-* [Talk: Line Profiles with PHOEBE and SPAMMS](https://docs.google.com/presentation/d/e/2PACX-1vSo-SUbwSx1-5PBwsx_jGKYTihsJsZc4sCauEVi96CT57ZAo-XUdmagSvcCoN_tmhQBT-FaLoeAYR2U/pub?start=false&loop=false&delayms=3000) (Michael | [recording](http://phoebe-project.org/static/workshops/2021june/2021.06.18.03_spamms.mp4))
-* [Talk: In Development - Triple and Higher-Order Systems](https://docs.google.com/presentation/d/e/2PACX-1vSk1awjZ-mrvsSOQunNYikwGr6PjdAseIhPEnh84ABExkgAvAzZ1QF2WEMVIr04IMYPQYwEoPGDjir2/pub?start=false&loop=false&delayms=3000) (Kyle | [recording](http://phoebe-project.org/static/workshops/2021june/2021.06.18.04_triples.mp4))
-* [Talk: In Development - Blended Atmosphere Tables](https://docs.google.com/presentation/d/e/2PACX-1vRMJxgdwwWs-IF1OY9ligGgNVul2z1Kk_GjRgH9-hFpkN8gJqtFcQUG4D3wzrsN998pvqt4bMNTtrfB/pub?start=false&loop=false&delayms=3000) (Andrej | [preview notebook](./Imputing.ipynb) | [recording](http://phoebe-project.org/static/workshops/2021june/2021.06.18.05_blending.mp4))
+* [Talk: In Development - Pulsations](https://docs.google.com/presentation/d/e/2PACX-1vR13F6t5UqxxLntwHs5_sVo8YW-xzRlq2BOm08KxRMYAETPqH8qHsmL6M8BvNNTXEzStFYcvKF-IjK5/pub?start=false&loop=false&delayms=3000) (Andrej)
+* Talk: Gyre Pulsations (Rich Townsend)
+* [Talk: Line Profiles with PHOEBE and SPAMMS](https://docs.google.com/presentation/d/e/2PACX-1vSo-SUbwSx1-5PBwsx_jGKYTihsJsZc4sCauEVi96CT57ZAo-XUdmagSvcCoN_tmhQBT-FaLoeAYR2U/pub?start=false&loop=false&delayms=3000) (Michael)
+* [Talk: In Development - Triple and Higher-Order Systems](https://docs.google.com/presentation/d/e/2PACX-1vSk1awjZ-mrvsSOQunNYikwGr6PjdAseIhPEnh84ABExkgAvAzZ1QF2WEMVIr04IMYPQYwEoPGDjir2/pub?start=false&loop=false&delayms=3000) (Kyle)
+* [Talk: In Development - Blended Atmosphere Tables](https://docs.google.com/presentation/d/e/2PACX-1vRMJxgdwwWs-IF1OY9ligGgNVul2z1Kk_GjRgH9-hFpkN8gJqtFcQUG4D3wzrsN998pvqt4bMNTtrfB/pub?start=false&loop=false&delayms=3000) (Andrej)
 * Wrap Up: volunteer wrap-up contributions and discussion
 * Exercises: finish or continue any of the previous exercises.  Next week we start fitting!
 
-# Week 2A
-
-### Monday June 21: Inverse Problem Overview
-
-Session Chair: Kelly
-
-* [Talk: Introduction to the Inverse Problem](https://docs.google.com/presentation/d/e/2PACX-1vTtiioAwAllKi9rycyklKPGbbji2cS9sf2wp9nvkccKtb7T_RaYHL7ByFUXy8fhvaM7MlOLi2eCYdtV/pub?start=false&loop=false&delayms=3000) (Angela | [recording](http://phoebe-project.org/static/workshops/2021june/2021.06.21.01_inverse_problem.mp4))
-* [Talk: Inverse Problem in PHOEBE](https://docs.google.com/presentation/d/e/2PACX-1vQsVUENU9QuQSFu2f5qvfJy9HJfgn3EqodG1nxuHXR4gukbt5J39aXmI8XDXo40RMJ93omsTix826z5/pub?start=false&loop=false&delayms=3000) (Kyle | [recording](http://phoebe-project.org/static/workshops/2021june/2021.06.21.02_phoebe_solvers.mp4))
-* [Tutorial: Estimators](./Tutorial_08a_estimators.ipynb) (Angela | [recording](http://phoebe-project.org/static/workshops/2021june/2021.06.21.03_estimators.mp4))
-* break to work through exercises
-* [Tutorial: Optimizers](./Tutorial_08b_optimizers.ipynb) (Bert | [recording](http://phoebe-project.org/static/workshops/2021june/2021.06.21.04_optimizers.mp4))
-* break to work through exercises
-* [Tutorial: Running Jobs on External Compute Resources](./Tutorial_09_server.ipynb) (Kyle | [recording](http://phoebe-project.org/static/workshops/2021june/2021.06.21.05_servers.mp4))
-* [Tutorial: Distributions & Priors](./Tutorial_07_distributions_A.ipynb) (Kyle | [recording](http://phoebe-project.org/static/workshops/2021june/2021.06.21.06_distributions.mp4))
-* [Exercises: Estimators & Optimizers](./Exercises_05_estimators_optimizers.ipynb) (Kyle | [recording](http://phoebe-project.org/static/workshops/2021june/2021.06.21.07_exercises.mp4))
-
-### Tuesday June 22: MCMC in PHOEBE
-
-Session Chair: Kelly
-
-* [Tutoritalk: MCMC Introduction](./mcmc_generic.ipynb) (Andrej | [recording](http://phoebe-project.org/static/workshops/2021june/2021.06.22.01_mcmc_general.mp4))
-* [Tutorial: MCMC Basics in PHOEBE](./Tutorial_10_mcmc.ipynb) (Andrej | [recording](http://phoebe-project.org/static/workshops/2021june/2021.06.22.02_mcmc_phoebe.mp4))
-* break to work through exercises
-* [Tutorial: Continuing/Resampling in MCMC](./Tutorial_11_mcmc_continued.ipynb) (Andrej | [recording](http://phoebe-project.org/static/workshops/2021june/2021.06.22.03_mcmc_continued.mp4))
-* break to work through exercises
-* [Exercises: Setting up an MCMC Run](./Exercises_06_mcmc.ipynb) (Andrej)
-
-### Wednesday June 23: Advanced MCMC
-
-* [Optional Breakout Session: Fitting Contact Binaries](https://docs.google.com/presentation/d/e/2PACX-1vR_mh-aCjbC35E2Hi0FMSNnESuh2wDzvZzk0xf0By3mjmVywMiRQ_HlxlN1YA0qwNOArJ2O4eIXIjXC/pub?start=false&loop=false&delayms=3000) (Angela | [recording](http://phoebe-project.org/static/workshops/2021june/2021.06.23.00_breakout_contacts_fitting.mp4))
-
-Session Chair: Joe
-
-* [Tutorial: Interpreting Chains and Convergence in MCMC](./Tutorial_12_convergence.ipynb) (Andrej | [recording](http://phoebe-project.org/static/workshops/2021june/2021.06.23.01_convergence.mp4))
-* break to work through exercises
-* [Tutorial: Posteriors and Parameter Uncertainties](./Tutorial_13_posteriors.ipynb) (Andrej | [recording](http://phoebe-project.org/static/workshops/2021june/2021.06.23.02_posteriors.mp4))
-* [Tutorial: Propagating Posteriors](./Tutorial_posterior_propagation.ipynb) (Kyle | [recording](http://phoebe-project.org/static/workshops/2021june/2021.06.23.03_posterior_propagation.mp4))
-* break to work through exercises
-* [Tutorial: Choice of Parameterization](./Tutorial_parametrization.ipynb) (Angela | [recording](http://phoebe-project.org/static/workshops/2021june/2021.06.23.04_parameterization.mp4))
-* [Tutorial: Marginalizing over Additional Parameters](./Tutorial_marginalization.ipynb) (Angela | [recording](http://phoebe-project.org/static/workshops/2021june/2021.06.23.05_marginalization.mp4))
-* [Exercises: Getting Posteriors](./Exercises_07_posteriors.ipynb) (Angela)
-
-### Thursday June 24:
-
-Session Chair: Michael
-
-* Group Photo/Screenshot
-* [Tutorial: Running on OTHER Compute Resources](./Tutorial_server_other.ipynb) (Kyle | [recording](http://phoebe-project.org/static/workshops/2021june/2021.06.24.01_servers_other.mp4))
-* [Talk: Common Pitfalls when Fitting](https://docs.google.com/presentation/d/e/2PACX-1vQ7tNOfVPpBuOn49D0jChGsKALZpgCbYUHGRYVbO4EV8kYo_eQbIaOwzOu7pDP0-5A7bjrsxvUphKIk/pub?start=false&loop=false&delayms=3000) (Angela | [recording](http://phoebe-project.org/static/workshops/2021june/2021.06.24.02_fitting_pitfalls.mp4))
-* Wrap Up: volunteer wrap-up contributions and discussion
-
-
-# Week 2B
+# Part 2
 
 ### Monday June 28: Inverse Problem Overview
 
 Session Chair: Kelly
 
-* [Talk: Introduction to the Inverse Problem](https://docs.google.com/presentation/d/e/2PACX-1vTtiioAwAllKi9rycyklKPGbbji2cS9sf2wp9nvkccKtb7T_RaYHL7ByFUXy8fhvaM7MlOLi2eCYdtV/pub?start=false&loop=false&delayms=3000) (Angela | [recording](http://phoebe-project.org/static/workshops/2021june/2021.06.28.01_inverse_problem.mp4))
-* [Talk: Inverse Problem in PHOEBE](https://docs.google.com/presentation/d/e/2PACX-1vQsVUENU9QuQSFu2f5qvfJy9HJfgn3EqodG1nxuHXR4gukbt5J39aXmI8XDXo40RMJ93omsTix826z5/pub?start=false&loop=false&delayms=3000) (Kyle | [recording](http://phoebe-project.org/static/workshops/2021june/2021.06.28.02_phoebe_solvers.mp4))
-* [Tutorial: Estimators](./Tutorial_08a_estimators.ipynb) (Angela | [recording](http://phoebe-project.org/static/workshops/2021june/2021.06.28.03_estimators.mp4))
+* [Talk: Introduction to the Inverse Problem](https://docs.google.com/presentation/d/e/2PACX-1vTtiioAwAllKi9rycyklKPGbbji2cS9sf2wp9nvkccKtb7T_RaYHL7ByFUXy8fhvaM7MlOLi2eCYdtV/pub?start=false&loop=false&delayms=3000) (Angela)
+* [Talk: Inverse Problem in PHOEBE](https://docs.google.com/presentation/d/e/2PACX-1vQsVUENU9QuQSFu2f5qvfJy9HJfgn3EqodG1nxuHXR4gukbt5J39aXmI8XDXo40RMJ93omsTix826z5/pub?start=false&loop=false&delayms=3000) (Kyle)
+* [Tutorial: Estimators](./Tutorial_08a_estimators.ipynb) (Angela)
 * break to work through exercises
-* [Tutorial: Optimizers](./Tutorial_08b_optimizers.ipynb) (Bert | [recording](http://phoebe-project.org/static/workshops/2021june/2021.06.28.04_optimizers.mp4))
+* [Tutorial: Optimizers](./Tutorial_08b_optimizers.ipynb) (Bert)
 * break to work through exercises
-* [Tutorial: Running Jobs on External Compute Resources](./Tutorial_09_server.ipynb) (Kyle | [recording](http://phoebe-project.org/static/workshops/2021june/2021.06.28.05_servers.mp4))
-* [Tutorial: Distributions & Priors](./Tutorial_07_distributions.ipynb) (Kyle | [recording](http://phoebe-project.org/static/workshops/2021june/2021.06.28.06_distributions.mp4))
+* [Tutorial: Running Jobs on External Compute Resources](./Tutorial_09_server.ipynb) (Kyle)
+* [Tutorial: Distributions & Priors](./Tutorial_07_distributions.ipynb) (Kyle)
 * [Exercises: Estimators & Optimizers](./Exercises_05_estimators_optimizers.ipynb) (Kyle)
 
 ### Tuesday June 29: MCMC in PHOEBE
 
 Session Chair: Angela
 
-* [Tutoritalk: MCMC Introduction](./mcmc_generic.ipynb) (Andrej | [recording](http://phoebe-project.org/static/workshops/2021june/2021.06.29.01_mcmc_general.mp4))
-* [Tutorial: MCMC Basics in PHOEBE](./Tutorial_10_mcmc.ipynb) (Andrej | [recording](http://phoebe-project.org/static/workshops/2021june/2021.06.29.02_mcmc_phoebe.mp4))
+* [Tutoritalk: MCMC Introduction](./mcmc_generic.ipynb) (Andrej )
+* [Tutorial: MCMC Basics in PHOEBE](./Tutorial_10_mcmc.ipynb) (Andrej)
 * break to work through exercises
-* [Tutorial: Continuing/Resampling in MCMC](./Tutorial_11_mcmc_continued.ipynb) (Andrej | [recording](http://phoebe-project.org/static/workshops/2021june/2021.06.29.03_mcmc_continued.mp4))
+* [Tutorial: Continuing/Resampling in MCMC](./Tutorial_11_mcmc_continued.ipynb) (Andrej)
 * break to work through exercises
 * [Exercises: Setting up an MCMC Run](./Exercises_06_mcmc.ipynb) (Andrej)
 
 ### Wednesday June 30: Advanced MCMC
 
-* [Optional Breakout Session: Fitting Contact Binaries](https://docs.google.com/presentation/d/e/2PACX-1vR_mh-aCjbC35E2Hi0FMSNnESuh2wDzvZzk0xf0By3mjmVywMiRQ_HlxlN1YA0qwNOArJ2O4eIXIjXC/pub?start=false&loop=false&delayms=3000) (Angela | [recording](http://phoebe-project.org/static/workshops/2021june/2021.06.30.00_breakouts_contacts_fitting.mp4))
+* [Optional Breakout Session: Fitting Contact Binaries](https://docs.google.com/presentation/d/e/2PACX-1vR_mh-aCjbC35E2Hi0FMSNnESuh2wDzvZzk0xf0By3mjmVywMiRQ_HlxlN1YA0qwNOArJ2O4eIXIjXC/pub?start=false&loop=false&delayms=3000) (Angela)
 
 Session Chair: Joe
 
-* [Tutorial: Interpreting Chains and Convergence in MCMC](./Tutorial_12_convergence.ipynb) (Andrej | [recording](http://phoebe-project.org/static/workshops/2021june/2021.06.30.01_convergence.mp4))
+* [Tutorial: Interpreting Chains and Convergence in MCMC](./Tutorial_12_convergence.ipynb) (Andrej)
 * break to work through exercises
-* [Tutorial: Posteriors and Parameter Uncertainties](./Tutorial_13_posteriors.ipynb) (Andrej | [recording](http://phoebe-project.org/static/workshops/2021june/2021.06.30.02_posteriors.mp4))
-* [Tutorial: Propagating Posteriors](./Tutorial_posterior_propagation.ipynb) (Kyle | [recording](http://phoebe-project.org/static/workshops/2021june/2021.06.30.03_posterior_propagation.mp4))
+* [Tutorial: Posteriors and Parameter Uncertainties](./Tutorial_13_posteriors.ipynb) (Andrej)
+* [Tutorial: Propagating Posteriors](./Tutorial_posterior_propagation.ipynb) (Kyle)
 * break to work through exercises
-* [Tutorial: Choice of Parameterization](./Tutorial_parametrization.ipynb) (Angela | [recording](http://phoebe-project.org/static/workshops/2021june/2021.06.30.04_parameterization.mp4))
-* [Tutorial: Marginalizing over Additional Parameters](./Tutorial_marginalization.ipynb) (Angela | [recording](http://phoebe-project.org/static/workshops/2021june/2021.06.30.05_marginalization.mp4))
+* [Tutorial: Choice of Parameterization](./Tutorial_parametrization.ipynb) (Angela)
+* [Tutorial: Marginalizing over Additional Parameters](./Tutorial_marginalization.ipynb) (Angela)
 * [Exercises: Getting Posteriors](./Exercises_07_posteriors.ipynb) (Angela)
 
 ### Thursday July 1:
@@ -195,6 +139,6 @@ Session Chair: Joe
 Session Chair: Kelly
 
 * Group Photo/Screenshot
-* [Tutorial: Running on OTHER Compute Resources](./Tutorial_server_other.ipynb) (Kyle | [recording](http://phoebe-project.org/static/workshops/2021june/2021.07.01.01_servers_other.mp4))
-* [Talk: Common Pitfalls when Fitting](https://docs.google.com/presentation/d/e/2PACX-1vQ7tNOfVPpBuOn49D0jChGsKALZpgCbYUHGRYVbO4EV8kYo_eQbIaOwzOu7pDP0-5A7bjrsxvUphKIk/pub?start=false&loop=false&delayms=3000) (Angela | [recording](http://phoebe-project.org/static/workshops/2021june/2021.07.01.02_fitting_pitfalls.mp4))
+* [Tutorial: Running on OTHER Compute Resources](./Tutorial_server_other.ipynb) (Kyle)
+* [Talk: Common Pitfalls when Fitting](https://docs.google.com/presentation/d/e/2PACX-1vQ7tNOfVPpBuOn49D0jChGsKALZpgCbYUHGRYVbO4EV8kYo_eQbIaOwzOu7pDP0-5A7bjrsxvUphKIk/pub?start=false&loop=false&delayms=3000) (Angela)
 * Wrap Up: volunteer wrap-up contributions and discussion
