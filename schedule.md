@@ -2,16 +2,18 @@
 
 Preliminary schedule (subject to change):
 
-## Week 1 (Forward Model):
+## The First Component (Forward Model):
 
-* Tuesday: Overview and Building Systems in PHOEBE
-* Wednesday: Creating Forward Models
-* Thursday: Advanced Physics & Features
+* Monday: Overview and Building Systems in PHOEBE
+* Tuesday: Creating Forward Models
+* Wednesday:  Advanced Physics & Features
+* Thursday: Introduction to fitting
 * Friday: PHOEBE Development & Upcoming Releases
 
-## Week 2a/2b (Inverse Problem):
+## The Second Component (Inverse Problem):
 
-* Monday: Inverse Problem Overview
-* Tuesday: MCMC in PHOEBE
-* Wednesday: Advanced MCMC
-* Thursday: Advanced Fitting Tips & Tricks
+* Week 1: Optimizers
+* Week 2: Estimators
+* Week 3: MCMC in PHOEBE
+* Week 4: Advanced MCMC
+* Week 5: Gaussian Processes
