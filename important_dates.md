@@ -1,4 +1,6 @@
 # Important Dates
 
-* Registration deadline: 15th April 2021
-* Meeting dates: 15th-19th June (first week), 21st-24th June or 28th June - 1st July (second week)
+* Registration deadline: 14th March 2022
+* Notification of selection: 21st March 2022
+* Meeting dates (in-person): 20th - 24th June 2022 
+* Meeting dates (on-line): Every Tuesday from 28th June - 26th July 2022
