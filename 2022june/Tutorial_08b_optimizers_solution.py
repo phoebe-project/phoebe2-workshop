@@ -30,7 +30,6 @@ b.enable_dataset('rv01')
 # In[4]:
 
 
-
 fit_params = ['t0_supconj@binary', 'teffratio@binary', 'asini@binary', 'incl@binary']
 b.set_value('fit_parameters', fit_params)
 
@@ -50,13 +49,10 @@ print(b.adopt_solution('nm_solution', trial_run=True))
 # In[7]:
 
 
-
-
 b.run_compute('nm_fit', sample_from='nm_solution', sample_num=1)
 
 
 # In[8]:
-
 
 
 b.plot(kind='lc', x='phases', show=True, legend=True, marker = 'o')
@@ -99,7 +95,6 @@ b.run_compute('nm_fit', sample_from='nm_solution', sample_num=1)
 
 
 # In[14]:
-
 
 
 b.plot(kind='lc', x='phases', xlim=[-0.08,0.08], show=True, legend=True, marker = 'o')

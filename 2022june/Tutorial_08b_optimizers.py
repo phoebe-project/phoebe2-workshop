@@ -93,7 +93,6 @@ b.add_solver('optimizer.nelder_mead',  solver='nm_solver', compute='nm_fit')
 # In[9]:
 
 
-
 #change max iterations
 b.set_value('maxiter', solver='nm_solver', value=20)
 
