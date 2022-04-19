@@ -12,8 +12,8 @@ Preliminary schedule (subject to change):
 
 ## The Second Component (Inverse Problem):
 
-* Week 1: Optimizers
-* Week 2: Estimators
+* Week 1: Estimators 
+* Week 2: Optimizers
 * Week 3: MCMC in PHOEBE
 * Week 4: Advanced MCMC
 * Week 5: Gaussian Processes
