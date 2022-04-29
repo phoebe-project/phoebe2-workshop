@@ -101,12 +101,12 @@ Session Chair: **[XXXXX]**
 Session Chair: **[XXXXX]**
 
 * [Talk: Introduction to the Inverse Problem](https://docs.google.com/presentation/d/e/2PACX-1vR-fRxNcn5PEMQ6Rvq5dEHALVIDs62OqGDDaWr2liCNMrtcP-h6u4WztVxUhGoGvKQTh9DXyN9xXLYh/pub?start=false&loop=false&delayms=3000) ***(XXXX - needs updating)***
-* [Talk: Inverse Problem in PHOEBE](https://docs.google.com/presentation/d/e/2PACX-1vT_GwcoD_0Tz-5V1dEolYYFCMp2qxrfKqfySOCI9QU3rpMuR7ANGY_rDiLRZbXnrvTN57x6qndroC0Z/pub?start=false&loop=false&delayms=3000) (Andrej Prša)
+* [Talk: Inverse Problem in PHOEBE](https://docs.google.com/presentation/d/e/2PACX-1vT_GwcoD_0Tz-5V1dEolYYFCMp2qxrfKqfySOCI9QU3rpMuR7ANGY_rDiLRZbXnrvTN57x6qndroC0Z/pub?start=false&loop=false&delayms=3000) (Andrej Prša ***revisit chi2 definition***)
 * ***[Detrending (???)]***
 * [Tutorial: Estimators](./Tutorial_08a_estimators.ipynb) ***(XXXX - needs updating)***
 * ***[Degeneracies (???)]***
 * [Tutorial: Optimizers](./Tutorial_08b_optimizers.ipynb) ***(XXXX - needs updating)***
-* [Tutorial: Running Jobs on External Compute Resources](./Tutorial_09_server.ipynb) ***(XXXX - needs updating)***
+* [Tutorial: Running Jobs on External Compute Resources](./Tutorial_09_server.ipynb) (Andrej Prsa)
 * [Tutorial: Distributions & Priors](./Tutorial_07_distributions.ipynb) ***(XXXX - needs updating)***
 * [Exercises: Estimators & Optimizers](./Exercises_05_estimators_optimizers.ipynb) ***(XXXX - needs updating, splitting between sessions)***
 
@@ -121,9 +121,9 @@ Session Chair: **[XXXXX]**
 Session Chair: **[XXXXX]**
 
 * [Tutoritalk: MCMC Introduction](./mcmc_generic.ipynb) ***(XXXX - needs updating)***
-* [Tutorial: MCMC Basics in PHOEBE](./Tutorial_10_mcmc.ipynb) ***(XXXX - needs updating)***
+* [Tutorial: MCMC Basics in PHOEBE](./Tutorial_10_mcmc.ipynb) (Andrej Prsa)
 * [Tutorial: Continuing/Resampling in MCMC](./Tutorial_11_mcmc_continued.ipynb) ***(XXXX - needs updating)***
-* [Exercises: Setting up an MCMC Run](./Exercises_06_mcmc.ipynb) ***(XXXX - needs updating)***
+* [Exercises: Setting up an MCMC Run](./Exercises_06_mcmc.ipynb) (Andrej Prsa)
 
 ### Tuesday July 19: Advanced MCMC
 
