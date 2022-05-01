@@ -119,7 +119,7 @@ _ = b.plot_distribution_collection(distribution='mydist', show=True)
 
 # # Using Distributions as Priors
 # 
-# Most solvers that include the forward model (estimators & samplers) have a `priors` parameter which accepts a list of distribution tags which will then be used as priors in the merit function.
+# Most solvers that include the forward model (optimizers & samplers) have a `priors` parameter which accepts a list of distribution tags which will then be used as priors in the merit function.
 # 
 # `lnprobability = lnlikelihood + lnpriors`
 # 
