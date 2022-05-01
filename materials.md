@@ -41,7 +41,7 @@ Please test your installation well in advance of the workshop by running the [te
 
 ### Monday June 20: Overview and Building Systems in PHOEBE
 
-Session Chair: **[XXXXX]**
+Session Chair: **XXXXX**
 
 * [Welcome & Introduction](https://docs.google.com/presentation/d/e/2PACX-1vRMXSVmy3BlJDXqQnmC_PPvuO-kQ1-NAPWEz-gk5laHL0w7kSC75EcXInDY6ZHMPsTJopfPCAfX5z-g/pub?start=false&loop=false&delayms=3000) ***(XXXX - needs updating)***
 * [Talk: PHOEBE Overview - wdgui to PHOEBE](https://docs.google.com/presentation/d/e/2PACX-1vTcg5sbS9wdqg5b5g1fwe_VoyMG1THPX6mQx4VDbvZOUfKMS6FAd8pYcBl0HeyN5prpDzi54nNZfVB7/pub?start=false&loop=false&delayms=3000) ***(XXXX - needs updating)***
@@ -53,7 +53,7 @@ Session Chair: **[XXXXX]**
 
 ### Tuesday June 21: Creating Forward Models
 
-Session Chair: **[XXXXX]**
+Session Chair: **XXXXX**
 
 * [Talk: Atmospheres, Limb Darkening, Intensity Weighting, Extinction, and Reflection](https://docs.google.com/presentation/d/e/2PACX-1vTX__cTcowjUGuJ18jYY85tWX9VjjYEu7ISEkLgMMFKSFUNNFPHRreGW_LaUjSsQF62-M5od-J37LAu/pub?start=false&loop=false&delayms=3000) (Dave - **needs updating**)
 * [Tutorial: Datasets](./Tutorial_03_datasets.ipynb) ***(XXXX - needs updating)***
@@ -67,7 +67,7 @@ Session Chair: **[XXXXX]**
 
 * [Optional Breakout Session: Contact Binaries](./Tutorial_Semidetached_Contact.ipynb) (Angela - **needs updating**)
 
-Session Chair: **[XXXXX]**
+Session Chair: **XXXXX**
 
 * Talk: Scientific Introduction to PHOEBE (Andrej)
 * [Tutorial: Animations](./Tutorial_05b_animations.ipynb) ***(XXXX - needs updating)***
@@ -81,11 +81,11 @@ Session Chair: **[XXXXX]**
 
 ### Thursday June 23: Introduction to Fitting
 
-Session Chair: **[XXXXX]**
+Session Chair: **XXXXX**
 
 ### Friday June 24: PHOEBE Development & Upcoming Releases
 
-Session Chair: **[XXXXX]**
+Session Chair: **XXXXX**
 
 * Group Photo/Screenshot
 * [Talk: In Development - Pulsations](https://docs.google.com/presentation/d/e/2PACX-1vTY9f-XjDgw5knxFRDKpwNzNp8OMFMsH0nC9zYN1_TBxndnFuRSoKejpuDK34JJ_b0wrkfTlu5hy1Ki/pub?start=false&loop=false&delayms=3000) ***(XXXX - needs updating)***
@@ -98,27 +98,29 @@ Session Chair: **[XXXXX]**
 
 ### Tuesday June 28: Inverse Problem Overview 
 
-Session Chair: **[XXXXX]**
+Session Chair: **XXXXX**
 
 * [Talk: Introduction to the Inverse Problem](https://docs.google.com/presentation/d/e/2PACX-1vR-fRxNcn5PEMQ6Rvq5dEHALVIDs62OqGDDaWr2liCNMrtcP-h6u4WztVxUhGoGvKQTh9DXyN9xXLYh/pub?start=false&loop=false&delayms=3000) ***(XXXX - needs updating)***
 * [Talk: Inverse Problem in PHOEBE](https://docs.google.com/presentation/d/e/2PACX-1vT_GwcoD_0Tz-5V1dEolYYFCMp2qxrfKqfySOCI9QU3rpMuR7ANGY_rDiLRZbXnrvTN57x6qndroC0Z/pub?start=false&loop=false&delayms=3000) (Andrej Prša ***revisit chi2 definition***)
-* ***[Detrending (???)]***
+* ***Detrending (???)***
 * [Tutorial: Estimators](./Tutorial_08a_estimators.ipynb) ***(XXXX - needs updating)***
-* ***[Degeneracies (???)]***
-* [Tutorial: Optimizers](./Tutorial_08b_optimizers.ipynb) ***(XXXX - needs updating)***
-* [Tutorial: Running Jobs on External Compute Resources](./Tutorial_09_server.ipynb) (Andrej Prsa)
-* [Exercises: Estimators & Optimizers](./Exercises_05_estimators_optimizers.ipynb) ***(XXXX - needs updating, splitting between sessions)***
+* ***Degeneracies (???)***
+* [Exercises: Estimators](./Exercises_04_estimators.ipynb) ***(XXX - needs updating)***
+
 
 ### Tuesday July 5: Optimizers
 
-Session Chair: **[XXXXX]**
+Session Chair: **XXXXX**
 
+* [Tutorial: Optimizers](./Tutorial_08b_optimizers.ipynb) ***(XXXX - needs updating)***
+* [Tutorial: Running Jobs on External Compute Resources](./Tutorial_09_server.ipynb) (Andrej Prsa)
 * [Tutorial: Distributions & Priors](./Tutorial_07_distributions.ipynb) (Kyle)
+* [Exercises: Optimizers](./Exercises_05_optimizers.ipynb) ***(XXXX - needs updating)***
 
 
 ### Tuesday July 12: MCMC in PHOEBE
 
-Session Chair: **[XXXXX]**
+Session Chair: **XXXXX**
 
 * [Tutoritalk: MCMC Introduction](./mcmc_generic.ipynb) ***(XXXX - needs updating)***
 * [Tutorial: MCMC Basics in PHOEBE](./Tutorial_10_mcmc.ipynb) (Andrej Prsa)
@@ -129,7 +131,7 @@ Session Chair: **[XXXXX]**
 
 * [Optional Breakout Session: Fitting Contact Binaries](https://docs.google.com/presentation/d/e/2PACX-1vRrcYeotz37WyqXCmBQqwqH7dkHBUi-D6SMvAiZketoqlkGCmZ7vWhPgD46dx_pl_SCs3nPrNB4bOgV/pub?start=false&loop=false&delayms=3000) ***(XXXX - needs updating)***
 
-Session Chair: **[XXXXX]**
+Session Chair: **XXXXX**
 
 
 * [Tutorial: Interpreting Chains and Convergence in MCMC](./Tutorial_12_convergence.ipynb) ***(XXXX - needs updating)***
@@ -142,9 +144,9 @@ Session Chair: **[XXXXX]**
 
 ### Tuesday July 26: Gaussian Processes
 
-Session Chair: **[XXXXX]**
+Session Chair: **XXXXX**
 
-* ***[GAUSSIAN PROCESSES TUTORIALS/TALKS]***
+* ***GAUSSIAN PROCESSES TUTORIALS/TALKS***
 * Group Photo/Screenshot
 * [Tutorial: Running on OTHER Compute Resources](./Tutorial_server_other.ipynb) ***(XXXX - needs updating)***
 * [Talk: Common Pitfalls when Fitting](https://docs.google.com/presentation/d/e/2PACX-1vTI2tTM7K307S8KRn_agtd_4IoXfwgA2_e4yfH47UzlwEdn0sl59tKSibZxHlfgbF43KPfWCgxgA1Fx/pub?start=false&loop=false&delayms=3000) ***(XXXX - needs updating)***
