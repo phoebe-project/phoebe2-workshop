@@ -107,13 +107,13 @@ Session Chair: **[XXXXX]**
 * ***[Degeneracies (???)]***
 * [Tutorial: Optimizers](./Tutorial_08b_optimizers.ipynb) ***(XXXX - needs updating)***
 * [Tutorial: Running Jobs on External Compute Resources](./Tutorial_09_server.ipynb) (Andrej Prsa)
-* [Tutorial: Distributions & Priors](./Tutorial_07_distributions.ipynb) ***(XXXX - needs updating)***
 * [Exercises: Estimators & Optimizers](./Exercises_05_estimators_optimizers.ipynb) ***(XXXX - needs updating, splitting between sessions)***
 
 ### Tuesday July 5: Optimizers
 
 Session Chair: **[XXXXX]**
 
+* [Tutorial: Distributions & Priors](./Tutorial_07_distributions.ipynb) (Kyle)
 
 
 ### Tuesday July 12: MCMC in PHOEBE
