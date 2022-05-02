@@ -115,7 +115,7 @@ Session Chair: **XXXXX**
 * [Tutorial: Optimizers](./Tutorial_08b_optimizers.ipynb) (Andrej)
 * [Tutorial: Running Jobs on External Compute Resources](./Tutorial_09_server.ipynb) (Andrej)
 * [Tutorial: Distributions & Priors](./Tutorial_07_distributions.ipynb) (Kyle)
-* [Exercises: Optimizers](./Exercises_05_optimizers.ipynb) ***(XXXX - needs updating)***
+* [Exercises: Optimizers](./Exercises_05_optimizers.ipynb) (Andrej)
 
 
 ### Tuesday July 12: MCMC in PHOEBE
