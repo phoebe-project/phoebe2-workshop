@@ -6035,7 +6035,7 @@ null
 "qualifier": "phoebe_version",
 "readonly": true,
 "uniqueid": "guBzvMLLSDxYHVsASQYPiMIFPIVSaT",
-"value": "workshop2021"
+"value": "2.4.0.dev1"
 },
 {
 "Class": "DictParameter",

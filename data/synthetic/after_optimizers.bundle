@@ -45263,7 +45263,7 @@ null
 "qualifier": "phoebe_version",
 "readonly": true,
 "uniqueid": "BECaughBQyLhVAPRZWTHqKGVDcUdqG",
-"value": "devel"
+"value": "2.4.0.dev1"
 },
 {
 "Class": "DictParameter",
