@@ -102,7 +102,7 @@ Session Chair: **XXXXX**
 
 * [Talk: Introduction to the Inverse Problem](https://docs.google.com/presentation/d/e/2PACX-1vR-fRxNcn5PEMQ6Rvq5dEHALVIDs62OqGDDaWr2liCNMrtcP-h6u4WztVxUhGoGvKQTh9DXyN9xXLYh/pub?start=false&loop=false&delayms=3000) ***(XXXX - needs updating)***
 * [Talk: Inverse Problem in PHOEBE](https://docs.google.com/presentation/d/e/2PACX-1vT_GwcoD_0Tz-5V1dEolYYFCMp2qxrfKqfySOCI9QU3rpMuR7ANGY_rDiLRZbXnrvTN57x6qndroC0Z/pub?start=false&loop=false&delayms=3000) (Andrej Prša ***revisit chi2 definition***)
-* ***Detrending (???)***
+* [Tutorial: Detrending](./Tutorial_14_detrending.ipynb) (Andrej)
 * [Tutorial: Estimators](./Tutorial_08a_estimators.ipynb) ***(XXXX - needs updating)***
 * ***Degeneracies (???)***
 * [Exercises: Estimators](./Exercises_04_estimators.ipynb) ***(XXX - needs updating)***
@@ -125,7 +125,7 @@ Session Chair: **XXXXX**
 * [Tutoritalk: MCMC Introduction](./mcmc_generic.ipynb) ***(XXXX - needs updating)***
 * [Tutorial: MCMC Basics in PHOEBE](./Tutorial_10_mcmc.ipynb) (Andrej)
 * [Tutorial: Continuing/Resampling in MCMC](./Tutorial_11_mcmc_continued.ipynb) (Andrej)
-* [Exercises: Setting up an MCMC Run](./Exercises_06_mcmc.ipynb) (Andrej Prsa)
+* [Exercises: Setting up an MCMC Run](./Exercises_06_mcmc.ipynb) (Andrej)
 
 ### Tuesday July 19: Advanced MCMC
 
