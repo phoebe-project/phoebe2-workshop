@@ -199,23 +199,23 @@ b.plot(x='phase', legend=True, show=True)
 
 # ### EBAI
 
-# The EBAI (Eclipsing Binaries Aritifical Intelligence) estimator relies on a trained neural network to return estimates of the sum of radii, inclination, temperature ratio, esinw and ecosw from the light curve.
+# The EBAI (Eclipsing Binaries Aritifical Intelligence) estimator relies on machine learning methods to return estimates of the sum of radii, inclination, temperature ratio, esinw and ecosw from the light curve. There are two methods available in EBAI as of PHOEBE 2.4: 'mlp', which uses a trained neural network, and 'knn', which uses a k-Nearest Neighbors regressor.
 
 # Now we're ready to add and run EBAI:
 
 # In[14]:
 
 
-b.add_solver('estimator.ebai', solver='ebai_est')
-b.run_solver('ebai_est', solution='ebai_solution')
+b.add_solver('estimator.ebai', ebai_method='mlp', solver='ebai_mlp_est')
+b.run_solver('ebai_mlp_est', solution='ebai_mlp_solution')
 
 
 # In[15]:
 
 
-for param, value, unit in zip(b.get_value('fitted_twigs', solution='ebai_solution'),
-                       b.get_value('fitted_values', solution='ebai_solution'),
-                        b.get_value('fitted_units', solution='ebai_solution')):
+for param, value, unit in zip(b.get_value('fitted_twigs', solution='ebai_mlp_solution'),
+                       b.get_value('fitted_values', solution='ebai_mlp_solution'),
+                        b.get_value('fitted_units', solution='ebai_mlp_solution')):
      print('%s = %.2f %s' % (param,value,unit))
 
 
@@ -225,30 +225,56 @@ for param, value, unit in zip(b.get_value('fitted_twigs', solution='ebai_solutio
 b.flip_constraint('esinw', solve_for='ecc')
 b.flip_constraint('ecosw', solve_for='per0')
 
-b.adopt_solution('ebai_solution')
-b.run_compute(model='ebai_model')
+b.adopt_solution('ebai_mlp_solution')
+b.run_compute(model='ebai_mlp_model')
 b.plot(x='phase', legend=True, show=True)
 
 
-# We can see that EBAI is not particularly good at estimating esinw and ecosw. Luckily, we can use lc_geometry to improve on those particular values:
+# We can see that EBAI with the 'mlp' method is not particularly good at estimating esinw and ecosw. Let's try the same with the 'knn' method:
 
 # In[17]:
+
+
+b.add_solver('estimator.ebai', ebai_method='knn', solver='ebai_knn_est')
+b.run_solver('ebai_knn_est', solution='ebai_knn_solution')
+
+
+# In[18]:
+
+
+for param, value, unit in zip(b.get_value('fitted_twigs', solution='ebai_knn_solution'),
+                       b.get_value('fitted_values', solution='ebai_knn_solution'),
+                        b.get_value('fitted_units', solution='ebai_knn_solution')):
+     print('%s = %.2f %s' % (param,value,unit))
+
+
+# In[19]:
+
+
+b.adopt_solution('ebai_knn_solution')
+b.run_compute(model='ebai_knn_model')
+b.plot(x='phase', legend=True, show=True)
+
+
+# We can see that the 'knn' estimator does a better job at estimating esinw, ecosw and teffratio! Let's finally compare the results of these two machine learning models with a model based on the light curve geometry (lc_geometry), which estimates all of the parameters that EBAI does, with the exception of inclination:
+
+# In[20]:
 
 
 b.add_solver('estimator.lc_geometry', solver='lcgeom')
 b.run_solver('lcgeom', solution='lcgeom_solution')
 
 
-# In[18]:
+# In[24]:
 
 
-for param, value, unit in zip(b.get_value('fitted_twigs', solution='lcgeom_solution')[:3],
-                       b.get_value('fitted_values', solution='lcgeom_solution')[:3],
-                        b.get_value('fitted_units', solution='lcgeom_solution')[:3]):
+for param, value, unit in zip(b.get_value('fitted_twigs', solution='lcgeom_solution')[:5],
+                       b.get_value('fitted_values', solution='lcgeom_solution')[:5],
+                        b.get_value('fitted_units', solution='lcgeom_solution')[:5]):
      print('%s = %.2f %s' % (param,value,unit))
 
 
-# In[19]:
+# In[25]:
 
 
 b.flip_constraint('ecc', solve_for='esinw')
@@ -258,9 +284,11 @@ b.run_compute(model='lcgeom_model')
 b.plot(x='phase', legend=True, show=True)
 
 
+# That looks great! lc_geometry further improved on the eclipse fits and we now have a good starting position for optimizers.
+
 # Finally, let's return the atmosphere parameters to their default PHOEBE values and ensure that our solution is within the atmosphere table bounds. (Moving forward to optimiziers and samplers, we want to make sure that we're starting from a somewhat physical solution!)
 
-# In[20]:
+# In[26]:
 
 
 b.set_value_all('atm', 'ck2004')
@@ -270,7 +298,7 @@ b.run_compute()
 b.plot(['dataset', 'latest'], x='phase', show=True)
 
 
-# In[ ]:
+# In[27]:
 
 
 b.save('data/synthetic/after_estimators.bundle')
@@ -287,6 +315,14 @@ b.save('data/synthetic/after_estimators.bundle')
 
 
 # 2. Initialize a new bundle. Load only the primary radial velocity data. Set the period to 1.67 and t0 to 1.23. Add an rv_geometry estimatator and examine how the output is different compared to the output in the tutorial, where we had both RVs.
+
+# In[ ]:
+
+
+
+
+
+# 3. (Optional) The lc_geometry estimator offers two analytical models that can be fitted to the light curve to estimate the eclipse parameters (and from that, the parameters of interest). In the same bundle used in the example above, add a new lc_geometry estimator and change the analytical model from 'two-gaussian' to 'polyfit'. Plot the resulting light curves from both and try to determine if one model performs better than the other for this case!
 
 # In[ ]:
 
