@@ -100,12 +100,12 @@ Session Chair: **XXXXX**
 
 Session Chair: **XXXXX**
 
-* [Talk: Introduction to the Inverse Problem](https://docs.google.com/presentation/d/e/2PACX-1vR-fRxNcn5PEMQ6Rvq5dEHALVIDs62OqGDDaWr2liCNMrtcP-h6u4WztVxUhGoGvKQTh9DXyN9xXLYh/pub?start=false&loop=false&delayms=3000) ***(XXXX - needs updating)***
+* [Talk: Introduction to the Inverse Problem](https://docs.google.com/presentation/d/e/2PACX-1vR-fRxNcn5PEMQ6Rvq5dEHALVIDs62OqGDDaWr2liCNMrtcP-h6u4WztVxUhGoGvKQTh9DXyN9xXLYh/pub?start=false&loop=false&delayms=3000) (Angela - ***update section on EBAI and examples with paper testcase***)
 * [Talk: Inverse Problem in PHOEBE](https://docs.google.com/presentation/d/e/2PACX-1vT_GwcoD_0Tz-5V1dEolYYFCMp2qxrfKqfySOCI9QU3rpMuR7ANGY_rDiLRZbXnrvTN57x6qndroC0Z/pub?start=false&loop=false&delayms=3000) (Andrej Prša ***revisit chi2 definition***)
 * [Tutorial: Detrending](./Tutorial_14_detrending.ipynb) (Andrej)
-* [Tutorial: Estimators](./Tutorial_08a_estimators.ipynb) ***(XXXX - needs updating)***
+* [Tutorial: Estimators](./Tutorial_08a_estimators.ipynb) (Angela)
 * ***Degeneracies (???)***
-* [Exercises: Estimators](./Exercises_04_estimators.ipynb) ***(XXX - needs updating)***
+* [Exercises: Estimators](./Exercises_04_estimators.ipynb) (Angela)
 
 
 ### Tuesday July 5: Optimizers
@@ -129,16 +129,16 @@ Session Chair: **XXXXX**
 
 ### Tuesday July 19: Advanced MCMC
 
-* [Optional Breakout Session: Fitting Contact Binaries](https://docs.google.com/presentation/d/e/2PACX-1vRrcYeotz37WyqXCmBQqwqH7dkHBUi-D6SMvAiZketoqlkGCmZ7vWhPgD46dx_pl_SCs3nPrNB4bOgV/pub?start=false&loop=false&delayms=3000) ***(XXXX - needs updating)***
+* [Optional Breakout Session: Fitting Contact Binaries](https://docs.google.com/presentation/d/e/2PACX-1vRrcYeotz37WyqXCmBQqwqH7dkHBUi-D6SMvAiZketoqlkGCmZ7vWhPgD46dx_pl_SCs3nPrNB4bOgV/pub?start=false&loop=false&delayms=3000) ***(Angela - needs updating)***
 
 Session Chair: **XXXXX**
 
 
 * [Tutorial: Interpreting Chains and Convergence in MCMC](./Tutorial_12_convergence.ipynb) ***(XXXX - needs updating)***
-* [Tutorial: Posteriors and Parameter Uncertainties](./Tutorial_13_posteriors.ipynb) ***(XXXX - needs updating)***
-* [Tutorial: Propagating Posteriors](./Tutorial_posterior_propagation.ipynb) ***(XXXX - needs updating)***
-* [Tutorial: Choice of Parameterization](./Tutorial_parametrization.ipynb) ***(XXXX - needs updating)***
-* [Tutorial: Marginalizing over Additional Parameters](./Tutorial_marginalization.ipynb) ***(XXXX - needs updating)***
+* [Tutorial: Posteriors and Parameter Uncertainties](./Tutorial_13_posteriors.ipynb) ***(Angela - needs updating)***
+* [Tutorial: Propagating Posteriors](./Tutorial_posterior_propagation.ipynb) ***(Angela - needs updating)***
+* [Tutorial: Choice of Parameterization](./Tutorial_parametrization.ipynb) ***(Angela - needs updating)***
+* [Tutorial: Marginalizing over Additional Parameters](./Tutorial_marginalization.ipynb) ***(Angela - needs updating)***
 * [Exercises: Getting Posteriors](./Exercises_07_posteriors.ipynb) ***(XXXX - needs updating)***
 
 
