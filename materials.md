@@ -101,7 +101,7 @@ Session Chair: **XXXXX**
 Session Chair: **XXXXX**
 
 * [Talk: Introduction to the Inverse Problem](https://docs.google.com/presentation/d/e/2PACX-1vR-fRxNcn5PEMQ6Rvq5dEHALVIDs62OqGDDaWr2liCNMrtcP-h6u4WztVxUhGoGvKQTh9DXyN9xXLYh/pub?start=false&loop=false&delayms=3000) (Angela - ***update section on EBAI and examples with paper testcase***)
-* [Talk: Inverse Problem in PHOEBE](https://docs.google.com/presentation/d/e/2PACX-1vT_GwcoD_0Tz-5V1dEolYYFCMp2qxrfKqfySOCI9QU3rpMuR7ANGY_rDiLRZbXnrvTN57x6qndroC0Z/pub?start=false&loop=false&delayms=3000) (Andrej Prša ***revisit chi2 definition***)
+* [Talk: Inverse Problem in PHOEBE](https://docs.google.com/presentation/d/e/2PACX-1vT_GwcoD_0Tz-5V1dEolYYFCMp2qxrfKqfySOCI9QU3rpMuR7ANGY_rDiLRZbXnrvTN57x6qndroC0Z/pub?start=false&loop=false&delayms=3000) (Andrej ***revisit chi2 definition***)
 * [Tutorial: Detrending](./Tutorial_14_detrending.ipynb) (Andrej)
 * [Tutorial: Estimators](./Tutorial_08a_estimators.ipynb) (Angela)
 * [Tutorial: Degeneracies](./Tutorial_degeneracy.ipynb) ***(Andrej -- WIP!)***
