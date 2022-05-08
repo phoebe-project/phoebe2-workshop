@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# # Detrending photometric timeseries
+# # Workshop Tutorial: Detrending Photometry Time Series
 # 
 # One of the fundamental issues in computational modeling in general, and fitting lightcurve data in particular, is the presence of unknown trends in the data. These trends can be instrumental (for example, spatially and/or temporally varying detector sensitivity, pointing/tracking accuracy, electronic cross-talk, reduction anomalies, etc.), observational (atmospheric scintillation, variable cloud coverage, stray light, background light contamination, etc.) or astrophysical (stellar surface prominences, pulsations, extraneous body interactions, interstellar scattering, etc.).
 # 
@@ -180,7 +180,7 @@ print(abbe)
 
 # This quantification allows us to optimize our detrending parameters; things to try is to optimize the order of the Legendre series and/or sigma-clipping regions, use contiguous subsections of the lightcurve seperately, provide a better baseline model, etc. The approach will ultimately depend on the lightcurve at hand.
 
-# **Exercises:**
+# # Exercises
 # 
 # * Write a small loop that changes the order of the Legendre series from 20 to 60 and plot $d$ and $\mathcal A$ vs. order.
 
@@ -197,5 +197,3 @@ print(abbe)
 
 
 
-
-# 
