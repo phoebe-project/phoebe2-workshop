@@ -11,7 +11,7 @@ null,
 null
 ],
 "qualifier": "t0",
-"uniqueid": "rbHIpHpMnpYlEGXrgEumNTjihxYfXG",
+"uniqueid": "yYFUGUIdbxXySBjBFodNWxeejKQXrq",
 "value": 0.0
 },
 {
@@ -27,7 +27,7 @@ null,
 null
 ],
 "qualifier": "ra",
-"uniqueid": "bcWXrsCcVzvgwjfVfctwqYdNWIDHSl",
+"uniqueid": "MRvKIvZMzdXthSRFkyZXRJeXwYmehc",
 "value": 0.0
 },
 {
@@ -43,7 +43,7 @@ null,
 null
 ],
 "qualifier": "dec",
-"uniqueid": "qJXDmaUzoomwTuVCCuXvNMohoQqajx",
+"uniqueid": "xWsZFFHYMWrekzQHaQGPYRhoiWTjvh",
 "value": 0.0
 },
 {
@@ -58,7 +58,7 @@ null,
 null
 ],
 "qualifier": "distance",
-"uniqueid": "TtKyWZaPnXSoUItVaSgXNHhZuwRVNt",
+"uniqueid": "fkCqICTAFnRwTAkXwCSEjxenjYyARk",
 "value": 1.0
 },
 {
@@ -73,7 +73,7 @@ null,
 null
 ],
 "qualifier": "vgamma",
-"uniqueid": "FegedxkDriidHZVPSiUPRKKxkShgLJ",
+"uniqueid": "HoqzAGZdoieimzVDABsXlzEyNMNYcA",
 "value": 25.0
 },
 {
@@ -88,7 +88,7 @@ null,
 null
 ],
 "qualifier": "ebv",
-"uniqueid": "zTSisbQRIGQgAPHKFJYNSzTlwkMHYr",
+"uniqueid": "jenVqESIBJoyUluhudYHOUWIDiEHZE",
 "value": 0.0
 },
 {
@@ -103,7 +103,7 @@ null,
 null
 ],
 "qualifier": "Av",
-"uniqueid": "DdPRBAICBAWOvRewKnvnHFAeSFlHfN",
+"uniqueid": "btIEejrnJwDBCRzfSAXnLXFMVaIpNg",
 "value": 0.0
 },
 {
@@ -118,7 +118,7 @@ null,
 null
 ],
 "qualifier": "Rv",
-"uniqueid": "krDsuKXenCUTCHVNEPUgXlOKhsABNa",
+"uniqueid": "kMZKjYAryhCoWBmOROvNMFEFcjkJTh",
 "value": 3.1
 },
 {
@@ -128,7 +128,7 @@ null
 "copy_for": false,
 "description": "Hierarchy representation",
 "qualifier": "hierarchy",
-"uniqueid": "CZqslsytxtCkSkyYpPwSbuiUWMwCNM",
+"uniqueid": "vRELLRohSfoeHdPCENEbtIWpFZVLmq",
 "value": "orbit:binary(star:primary, star:secondary)"
 },
 {
@@ -145,7 +145,7 @@ null
 null
 ],
 "qualifier": "requiv",
-"uniqueid": "YEsQCSEoTXcHmPEcxxiZIXuUfwNGNl",
+"uniqueid": "dnWrecnEPAMqwOSfrwYtSTeEIWFIKR",
 "value": 1.5
 },
 {
@@ -162,7 +162,7 @@ null
 null
 ],
 "qualifier": "requiv_max",
-"uniqueid": "LOwIygcxGzNKmvaJIGcpcBbMaaiJHt",
+"uniqueid": "EsJRGCtSfilxTRgotpcQToOiMuMxxV",
 "value": 3.0678186543944057
 },
 {
@@ -179,7 +179,7 @@ null
 null
 ],
 "qualifier": "requiv_min",
-"uniqueid": "EFxoongBlovDoQdoRszmXFUivQEHvq",
+"uniqueid": "fDbTwMckDPkphRwQmDDhbyTZJwIImT",
 "value": 0.1,
 "visible_if": "hierarchy.is_contact_binary:True"
 },
@@ -197,7 +197,7 @@ null
 null
 ],
 "qualifier": "teff",
-"uniqueid": "bDQUbvwFmfAhIPoPKoYDkNGufzVIfl",
+"uniqueid": "yOiseAcrFfdcuunRnxrKqhZJuIQexu",
 "value": 6000.0
 },
 {
@@ -213,7 +213,7 @@ null,
 null
 ],
 "qualifier": "abun",
-"uniqueid": "AdQxjQaiedAFaalPymoBLcMbKgpEdw",
+"uniqueid": "zmkuapiDOQsTHmppuWEhIwFDyCXnth",
 "value": 0.0,
 "visible_if": "hierarchy.is_contact_binary:False"
 },
@@ -231,7 +231,7 @@ null,
 null
 ],
 "qualifier": "logg",
-"uniqueid": "eBRoDOsjbqJYAkfWJLEmNFPimWVwml",
+"uniqueid": "YrpWJyjiSqFUUggYbRjlgQdFJbUBRC",
 "value": 4.165066360202714
 },
 {
@@ -248,7 +248,7 @@ null
 null
 ],
 "qualifier": "syncpar",
-"uniqueid": "TYNlXpFhicChNYAEPowVMEYnDNefHq",
+"uniqueid": "dkCnGxMtoyZBbnvypdVlTZOnZfCZWw",
 "value": 1.0,
 "visible_if": "hierarchy.is_binary:True"
 },
@@ -267,7 +267,7 @@ null
 null
 ],
 "qualifier": "period",
-"uniqueid": "iwLNOMNWaBRgaIVcnvkgBUIUSWWGWU",
+"uniqueid": "VziExMyDDdnRiUnbapuUXxHpLoskkD",
 "value": 1.67
 },
 {
@@ -285,7 +285,7 @@ null
 null
 ],
 "qualifier": "freq",
-"uniqueid": "dXNljsscGNbRTqArRrtplwVNjXXOnF",
+"uniqueid": "SbdlwGTuFlUEIKCpdRYcbLBmdRVDYn",
 "value": 3.7623862275449103
 },
 {
@@ -302,7 +302,7 @@ null,
 null
 ],
 "qualifier": "pitch",
-"uniqueid": "SYVFcHCMftCSixNJBYXVDaYxRWpVHG",
+"uniqueid": "hNeIFirThIYpwTBgZWBUkQVsLmlBWX",
 "value": 0.0,
 "visible_if": "hierarchy.is_contact_binary:False,hierarchy.is_binary:True"
 },
@@ -320,7 +320,7 @@ null,
 null
 ],
 "qualifier": "yaw",
-"uniqueid": "CzCksUuoZlYAbaBerfIRKYKcBFRzdk",
+"uniqueid": "EwXhobJuZNjGMNwVSjBQVtHziILLBz",
 "value": 0.0,
 "visible_if": "hierarchy.is_contact_binary:False,hierarchy.is_binary:True"
 },
@@ -339,7 +339,7 @@ null,
 null
 ],
 "qualifier": "incl",
-"uniqueid": "JJvtciloWOTlLVFmgKqqZWtbjRjqRH",
+"uniqueid": "BPZSoUKOxfpKALKYkgjpHVldiIyzmc",
 "value": 89.751,
 "visible_if": "hierarchy.is_contact_binary:False"
 },
@@ -357,7 +357,7 @@ null,
 null
 ],
 "qualifier": "long_an",
-"uniqueid": "gqFJYKoWMYLBiVCBAfprGTBddeLfnM",
+"uniqueid": "rqyxtejWCocHlKWasehhsuMeGiVtfA",
 "value": 0.0,
 "visible_if": "hierarchy.is_contact_binary:False"
 },
@@ -369,13 +369,13 @@ null
 "default_unit": "",
 "description": "Bolometric gravity brightening",
 "kind": "star",
-"latexfmt": "\\Beta_{{ \\mathrm{{bol}}, \\mathrm{{ {component} }} }}",
+"latexfmt": "\\beta_{{ \\mathrm{{bol}}, \\mathrm{{ {component} }} }}",
 "limits": [
 0.0,
 1.0
 ],
 "qualifier": "gravb_bol",
-"uniqueid": "DYjgxqoyljJUrYACJXBRruTXUjAYOG",
+"uniqueid": "eoEasVKeUxIwQgTpxsDKIYkmTXuoeU",
 "value": 0.32
 },
 {
@@ -392,7 +392,7 @@ null
 1.0
 ],
 "qualifier": "irrad_frac_refl_bol",
-"uniqueid": "axwbXsGFdrVXqMiRyAqSrbALFixaYH",
+"uniqueid": "GJOQDOifHwopMISfhJAwVQAEHzGAoT",
 "value": 0.6
 },
 {
@@ -409,7 +409,7 @@ null
 1.0
 ],
 "qualifier": "irrad_frac_lost_bol",
-"uniqueid": "DxSjVQcxnsjquYVejcOXfXLCZdPsmq",
+"uniqueid": "AuguqKDDnKUSZVeRhrqOdQdnPQWlQQ",
 "value": 0.4
 },
 {
@@ -424,7 +424,7 @@ null
 "description": "Mode to use for bolometric limb-darkening (used only for irradiation).",
 "kind": "star",
 "qualifier": "ld_mode_bol",
-"uniqueid": "gQWPBsYVRxrDflNknaoIeCgHMSILTK",
+"uniqueid": "QqUveAbriAtKPcXTsjZuWlkwSOAaMJ",
 "value": "lookup"
 },
 {
@@ -442,7 +442,7 @@ null
 "description": "Bolometric limb darkening model (used only for irradiation).",
 "kind": "star",
 "qualifier": "ld_func_bol",
-"uniqueid": "yTOpIUGLtDEMkhdnNoGAUqYRYXrxFc",
+"uniqueid": "BfGbybNdDjFbbUnBHIoBdNQmPpQRiJ",
 "value": "logarithmic"
 },
 {
@@ -459,7 +459,7 @@ null
 "description": "Source for bolometric limb darkening coefficients (used only for irradiation; 'auto' to interpolate from the applicable table according to the 'atm' parameter, or the name of a specific atmosphere table)",
 "kind": "star",
 "qualifier": "ld_coeffs_source_bol",
-"uniqueid": "mmJinSekYVLLnbIWrPKLVKKzoZXJXk",
+"uniqueid": "BOVPNyDGfifZzxXNNTBmiBPVXntULk",
 "value": "auto",
 "visible_if": "ld_mode_bol:lookup"
 },
@@ -476,7 +476,7 @@ null
 "required_shape": [
 null
 ],
-"uniqueid": "dejEyArQrDTkiHjmuUPDgVSHmJUJCF",
+"uniqueid": "VomhMRGZJHOIyKIqjUpPkaSQXQhjgd",
 "value": [
 0.5,
 0.5
@@ -497,7 +497,7 @@ null,
 null
 ],
 "qualifier": "mass",
-"uniqueid": "lTqKhtnPZaPFlQqWAsnrXOgaPuhaTG",
+"uniqueid": "FfdpIoStviOEasBJkYbopZIxvkYUCL",
 "value": 1.2
 },
 {
@@ -514,7 +514,7 @@ null
 null
 ],
 "qualifier": "requiv",
-"uniqueid": "ddvOOIpqkTOkjjFSzpeVoeDwyjbOOx",
+"uniqueid": "ISbllXGVEiArOaVakdRpeWtNTQlhrt",
 "value": 0.93
 },
 {
@@ -531,7 +531,7 @@ null
 null
 ],
 "qualifier": "requiv_max",
-"uniqueid": "SDpWsvNvTfHGgmTHZLytTaDmdURDJU",
+"uniqueid": "JsXmpgGLWaxajSZqWxRdoaSpUMYdSS",
 "value": 2.7255126939353826
 },
 {
@@ -548,7 +548,7 @@ null
 null
 ],
 "qualifier": "requiv_min",
-"uniqueid": "SnZHAVnnniUXcUDflrjjYouaazZoeT",
+"uniqueid": "PTbMZmsbfdHvurZzVwzHjtykMpMBYy",
 "value": 0.1,
 "visible_if": "hierarchy.is_contact_binary:True"
 },
@@ -566,7 +566,7 @@ null
 null
 ],
 "qualifier": "teff",
-"uniqueid": "cmxjxMCsxzTNtXMFbOXYVMICIFZJuY",
+"uniqueid": "NjDYjURbfvFTXmEzUtHjzJWWMUdYCJ",
 "value": 5610.0
 },
 {
@@ -582,7 +582,7 @@ null,
 null
 ],
 "qualifier": "abun",
-"uniqueid": "AxEkJYeCyjArAttWTsJNthxLcFJVDq",
+"uniqueid": "VzcHfkxTAJOpuYaRbYGfFNcBuKwLgU",
 "value": 0.0,
 "visible_if": "hierarchy.is_contact_binary:False"
 },
@@ -600,7 +600,7 @@ null,
 null
 ],
 "qualifier": "logg",
-"uniqueid": "GQjkZfjkoXiKfwjbeRNSijaKgpCpmW",
+"uniqueid": "cBEXeKqeodgZImNntNXdnryrPUafui",
 "value": 4.469584683712517
 },
 {
@@ -617,7 +617,7 @@ null
 null
 ],
 "qualifier": "syncpar",
-"uniqueid": "MnxbwNQHJysDZUPeOaugJqoBNZCINJ",
+"uniqueid": "amrQxvQYvCTudOAOzcqXawyEQQLTHv",
 "value": 1.0,
 "visible_if": "hierarchy.is_binary:True"
 },
@@ -636,7 +636,7 @@ null
 null
 ],
 "qualifier": "period",
-"uniqueid": "EqJpEVvfDFaAAcEdMVSolIyVIhYuGQ",
+"uniqueid": "kjolVzwkoWHwkTifqPzxqHtAKwZeFd",
 "value": 1.67
 },
 {
@@ -654,7 +654,7 @@ null
 null
 ],
 "qualifier": "freq",
-"uniqueid": "spYSkvsRzdzFJidNPtPjfAalcFYmpi",
+"uniqueid": "RUddvIpkQFLPrqeJIXKIBEYwvcFIds",
 "value": 3.7623862275449103
 },
 {
@@ -671,7 +671,7 @@ null,
 null
 ],
 "qualifier": "pitch",
-"uniqueid": "JgkrRNJStuvyNqVhJJnkKGXWpbibJR",
+"uniqueid": "kkLuQQhponAUbibhiGCnPsdkqyfoEv",
 "value": 0.0,
 "visible_if": "hierarchy.is_contact_binary:False,hierarchy.is_binary:True"
 },
@@ -689,7 +689,7 @@ null,
 null
 ],
 "qualifier": "yaw",
-"uniqueid": "wIGaCWBuzAAYPsHTahtMbBCQcDAEly",
+"uniqueid": "IqBNJtQWtWNHrFPxoKApaYragzqiCK",
 "value": 0.0,
 "visible_if": "hierarchy.is_contact_binary:False,hierarchy.is_binary:True"
 },
@@ -708,7 +708,7 @@ null,
 null
 ],
 "qualifier": "incl",
-"uniqueid": "fNBLnlVoRLrvniuveWbNqWOxdAmGcb",
+"uniqueid": "lfRhTMUindhNBFzRNpSFYGaRsaYrth",
 "value": 89.751,
 "visible_if": "hierarchy.is_contact_binary:False"
 },
@@ -726,7 +726,7 @@ null,
 null
 ],
 "qualifier": "long_an",
-"uniqueid": "KoDXDXvagfcrqMmcrdVHgLTYOPdKnz",
+"uniqueid": "APDpjNrkHKLMCdbgMNcRSbPmaZTrHQ",
 "value": 0.0,
 "visible_if": "hierarchy.is_contact_binary:False"
 },
@@ -738,13 +738,13 @@ null
 "default_unit": "",
 "description": "Bolometric gravity brightening",
 "kind": "star",
-"latexfmt": "\\Beta_{{ \\mathrm{{bol}}, \\mathrm{{ {component} }} }}",
+"latexfmt": "\\beta_{{ \\mathrm{{bol}}, \\mathrm{{ {component} }} }}",
 "limits": [
 0.0,
 1.0
 ],
 "qualifier": "gravb_bol",
-"uniqueid": "gsqEZrJiiiJbmZIaEQArcEtXCrjoGC",
+"uniqueid": "unjRUlJVlljrIJBeZNxoelwFkRfopu",
 "value": 0.32
 },
 {
@@ -761,7 +761,7 @@ null
 1.0
 ],
 "qualifier": "irrad_frac_refl_bol",
-"uniqueid": "pKhFoWmyjAGIiQAuQXejuxlVZkdqQL",
+"uniqueid": "oTeGgeNSWsiGLevuBXHUcUtpyZGXwK",
 "value": 0.6
 },
 {
@@ -778,7 +778,7 @@ null
 1.0
 ],
 "qualifier": "irrad_frac_lost_bol",
-"uniqueid": "iGypmhSrQVxkSjyINUnHdErUsmRLqx",
+"uniqueid": "foMHRTayCBIHJBVXrcLkoeTuKZlleF",
 "value": 0.4
 },
 {
@@ -793,7 +793,7 @@ null
 "description": "Mode to use for bolometric limb-darkening (used only for irradiation).",
 "kind": "star",
 "qualifier": "ld_mode_bol",
-"uniqueid": "LYgdzhecFHFlxrkDvqCDuOnIVFmVpZ",
+"uniqueid": "djJePMDtBGFzqkOiEsptfcAfWgwKEC",
 "value": "lookup"
 },
 {
@@ -811,7 +811,7 @@ null
 "description": "Bolometric limb darkening model (used only for irradiation).",
 "kind": "star",
 "qualifier": "ld_func_bol",
-"uniqueid": "kDuSblCeaMwEtfWOKrQEHpLEYiMjvv",
+"uniqueid": "BhrIEmqPVBhTeCpykyykBGLKtnreLu",
 "value": "logarithmic"
 },
 {
@@ -828,7 +828,7 @@ null
 "description": "Source for bolometric limb darkening coefficients (used only for irradiation; 'auto' to interpolate from the applicable table according to the 'atm' parameter, or the name of a specific atmosphere table)",
 "kind": "star",
 "qualifier": "ld_coeffs_source_bol",
-"uniqueid": "GFlDcYlbbJzHHtuXsMOwMMOzkRbQgK",
+"uniqueid": "uMDSADouqhXAbFrYBUyPUDgcSHMYgV",
 "value": "auto",
 "visible_if": "ld_mode_bol:lookup"
 },
@@ -845,7 +845,7 @@ null
 "required_shape": [
 null
 ],
-"uniqueid": "ydPoDmaIlGEjMDUvMOcLiLgLlGxvJx",
+"uniqueid": "iDipnYCjFRexncmdrlqTpzVxuzArry",
 "value": [
 0.5,
 0.5
@@ -866,7 +866,7 @@ null,
 null
 ],
 "qualifier": "mass",
-"uniqueid": "xDPnYTUZYOhieJbJJdMzUtJNzGgYlo",
+"uniqueid": "RLuQKXrEkgciKzaPUlaKhJNjOguqFu",
 "value": 0.93
 },
 {
@@ -883,7 +883,7 @@ null
 null
 ],
 "qualifier": "period",
-"uniqueid": "yWbHOjGIPWSihdnMtRKSAlyrNKJxNo",
+"uniqueid": "diSdMBjRpMFrfoZtvcZIJNQrzKEWuM",
 "value": 1.67
 },
 {
@@ -900,7 +900,7 @@ null,
 null
 ],
 "qualifier": "period_anom",
-"uniqueid": "PdNoKrCvbLsJRtLnChfFmNDOVPQCvB",
+"uniqueid": "pudZrWjhQQDQirMlhSnqdhhklgvTzL",
 "value": 1.67,
 "visible_if": "dperdt:!0.0"
 },
@@ -919,7 +919,7 @@ null,
 null
 ],
 "qualifier": "freq",
-"uniqueid": "RZYlkPDpQpqNIfXXQtQtpmoFdHbjUi",
+"uniqueid": "mjAUtfTPKyewLEepXzVOWEwkGKZvXJ",
 "value": 3.7623862275449103
 },
 {
@@ -937,7 +937,7 @@ null,
 null
 ],
 "qualifier": "dpdt",
-"uniqueid": "RgZMQNoCGQNZBjQsqzWEMeYLCGhhvA",
+"uniqueid": "IWAhPVcPripKidNTbNgbtoppBdPrtn",
 "value": 0.0
 },
 {
@@ -954,7 +954,7 @@ null,
 null
 ],
 "qualifier": "per0",
-"uniqueid": "WiOedjgrQvVEVrELEUYLTtNKgaMuyS",
+"uniqueid": "yeRSrmNjUslcUzmrSxEBispZSeBftW",
 "value": 86.0
 },
 {
@@ -972,7 +972,7 @@ null,
 null
 ],
 "qualifier": "dperdt",
-"uniqueid": "KjJJGQqEEeacjUJsTiHaGbWOHohOqS",
+"uniqueid": "MLZYVCxvhLzqYaNtDKQvIYUyvyjuLC",
 "value": 0.0
 },
 {
@@ -989,7 +989,7 @@ null
 0.999999
 ],
 "qualifier": "ecc",
-"uniqueid": "IsWCfbUsvXLHwjSbPvGCoHNufIFcwy",
+"uniqueid": "hCUWbYqBxYyWdkpsrjHlLIRNpJrIaH",
 "value": 0.0
 },
 {
@@ -1006,7 +1006,7 @@ null,
 null
 ],
 "qualifier": "t0_perpass",
-"uniqueid": "qRdGqayXOOlpmINWCEXdJqoSZrZArA",
+"uniqueid": "IrqPuKCAzcZWBGlQMQFeFidWyMqZOr",
 "value": 1.2114444444444445
 },
 {
@@ -1023,7 +1023,7 @@ null,
 null
 ],
 "qualifier": "t0_supconj",
-"uniqueid": "dtclSnFWhVuQKKeisGlkGxVAlmUHEw",
+"uniqueid": "orFcwSYnldRnsaqMLZDkBvbYWokHYz",
 "value": 1.23
 },
 {
@@ -1040,7 +1040,7 @@ null,
 null
 ],
 "qualifier": "t0_ref",
-"uniqueid": "kwDLDXQKfWLhFzqFTzWbBeBlJnrepN",
+"uniqueid": "pGYszgmXqxHVlgnkrXicyUSkbgJlPl",
 "value": 1.23
 },
 {
@@ -1057,7 +1057,7 @@ null,
 null
 ],
 "qualifier": "mean_anom",
-"uniqueid": "SSYFurubdFtVQGEZzrpyTZwzFnWkur",
+"uniqueid": "ZWLunOycONeKRwTjhbmHVCcikFqNAD",
 "value": 98.85031216858437
 },
 {
@@ -1074,7 +1074,7 @@ null
 180.0
 ],
 "qualifier": "incl",
-"uniqueid": "UucKNfyvMxkTsfEBezpqwQKRFlsEwl",
+"uniqueid": "ccNJgygrZQbbtbbJIwTqxMfXHTXpWH",
 "value": 89.751
 },
 {
@@ -1091,7 +1091,7 @@ null
 null
 ],
 "qualifier": "q",
-"uniqueid": "aIKSZVLLxSWXzkQOHzHXXgRpurAXzw",
+"uniqueid": "UtszuiaEUAJIQqdSeAueOpeMxZCCoB",
 "value": 0.775
 },
 {
@@ -1108,7 +1108,7 @@ null
 null
 ],
 "qualifier": "sma",
-"uniqueid": "CKPnFgRyyftiYAlMJkxYGwTqfOrszn",
+"uniqueid": "nHDOWWqBxSEwmgEbvzyrrefSLaUCXF",
 "value": 7.621526626033498
 },
 {
@@ -1125,7 +1125,7 @@ null,
 null
 ],
 "qualifier": "long_an",
-"uniqueid": "JvtubGCiALVeLEzOouYHjpIenVeHhe",
+"uniqueid": "UvtOdTIbAvwDwhwApOxBCswjSgvGUS",
 "value": 0.0
 },
 {
@@ -1142,7 +1142,7 @@ null,
 null
 ],
 "qualifier": "asini",
-"uniqueid": "pQytiyjTzfIymgJfbzZcQeSlyndonf",
+"uniqueid": "HXcljWyiGxuUMsclMCyRUIVmoiZfju",
 "value": 7.621454653842904
 },
 {
@@ -1159,7 +1159,7 @@ null
 1.0
 ],
 "qualifier": "ecosw",
-"uniqueid": "NaDlkzkyfEQqBjSDGTcZsaNfpXobRw",
+"uniqueid": "tMwrvHQxXaZAXQfDAIasWgOKdSPRWI",
 "value": 0.0
 },
 {
@@ -1176,7 +1176,7 @@ null
 1.0
 ],
 "qualifier": "esinw",
-"uniqueid": "zOmDzyyQpgCnjhSLlBtOFsVUjDqblI",
+"uniqueid": "IJHIERPUgrDIEJzTPFDzvYJaTHxTWZ",
 "value": 0.0
 },
 {
@@ -1194,7 +1194,7 @@ null,
 null
 ],
 "qualifier": "sma",
-"uniqueid": "HylzExKFoDYMWlAbXuWEuzsapRYjdv",
+"uniqueid": "zEgmDCXZYIqGBeDnhedryPAdifxwNs",
 "value": 3.3277088085498376
 },
 {
@@ -1212,7 +1212,7 @@ null,
 null
 ],
 "qualifier": "asini",
-"uniqueid": "XmdmifeQnHSjCFPmPuwnewPIQwIxQv",
+"uniqueid": "bpaGFTkzzsVrTfkxImfVAQCGzoYdNb",
 "value": 3.3276773840722544
 },
 {
@@ -1230,7 +1230,7 @@ null,
 null
 ],
 "qualifier": "sma",
-"uniqueid": "fXgrUaXYWcZBhisnvPwYVVIeEMRmea",
+"uniqueid": "fEFvIojTRPACJIaCsWoVKufiGlXpos",
 "value": 4.293817817483661
 },
 {
@@ -1248,7 +1248,7 @@ null,
 null
 ],
 "qualifier": "asini",
-"uniqueid": "gDInxuEGCdFkjqZwCTtZbyzyGMDvFG",
+"uniqueid": "pYffjnvjUtayknCAgzmfdsGlZbUaDJ",
 "value": 4.293777269770651
 },
 {
@@ -1262,7 +1262,7 @@ null
 "in_solar_units": true,
 "kind": "extinction",
 "qualifier": "ebv",
-"uniqueid": "HZlQxDfZHxtJWVSIOYRVftlljWvIrN",
+"uniqueid": "EZDaKRrppMSTHsGEJurVJeayZzdSms",
 "value": "{Av@system} / {Rv@system}"
 },
 {
@@ -1279,7 +1279,7 @@ null
 "in_solar_units": true,
 "kind": "star",
 "qualifier": "freq",
-"uniqueid": "PwPLGxQuvmraCTylhHpMkZFaBReNNd",
+"uniqueid": "YiRoHzudIwEihWXLmGEVWQzJDwwTbE",
 "value": "6.283185 / {period@primary@component}"
 },
 {
@@ -1296,7 +1296,7 @@ null
 "in_solar_units": true,
 "kind": "star",
 "qualifier": "logg",
-"uniqueid": "ieIsxohrZQTexKJFJnGdoQBwymOrSG",
+"uniqueid": "ewoMONCWiktDBKAvkGVDGfSbYbqXRj",
 "value": "log10((({mass@primary@component} / ({requiv@primary@component} ** 2.000000)) * 2942.206218) * 9.319541)"
 },
 {
@@ -1313,7 +1313,7 @@ null
 "in_solar_units": true,
 "kind": "star",
 "qualifier": "irrad_frac_lost_bol",
-"uniqueid": "FrConZQbIQITsCcfdrHcAOVlvAKeoq",
+"uniqueid": "JaelkAbiLclkYyTfbpTGWhISkQaLPq",
 "value": "1.000000 - {irrad_frac_refl_bol@primary@component}"
 },
 {
@@ -1330,7 +1330,7 @@ null
 "in_solar_units": true,
 "kind": "star",
 "qualifier": "freq",
-"uniqueid": "fiXJjnxmClaZmtWOPmUzUxryEzWDZj",
+"uniqueid": "LWOAaoJsiOxbKDcPjOPIUxkWSykVcX",
 "value": "6.283185 / {period@secondary@component}"
 },
 {
@@ -1347,7 +1347,7 @@ null
 "in_solar_units": true,
 "kind": "star",
 "qualifier": "logg",
-"uniqueid": "bMtYrJmSbFJbiGXJjScYBmIuqYMgae",
+"uniqueid": "wBvtCWZoeNBiOCcjlQFIiQyxotjDBv",
 "value": "log10((({mass@secondary@component} / ({requiv@secondary@component} ** 2.000000)) * 2942.206218) * 9.319541)"
 },
 {
@@ -1364,7 +1364,7 @@ null
 "in_solar_units": true,
 "kind": "star",
 "qualifier": "irrad_frac_lost_bol",
-"uniqueid": "clfPsxchJRgcOOQaviqBPgULSQxtyt",
+"uniqueid": "sAjhJuwNbdPYlMdpzWFTmObSJAbYeh",
 "value": "1.000000 - {irrad_frac_refl_bol@secondary@component}"
 },
 {
@@ -1381,7 +1381,7 @@ null
 "in_solar_units": true,
 "kind": "orbit",
 "qualifier": "asini",
-"uniqueid": "siWbLckYnIkXvyqhiqbbHJxVbzHlvN",
+"uniqueid": "bMbzzDSuwfWrajkTohCtiyfMeOSTrG",
 "value": "{sma@binary@component} * (sin({incl@binary@component}))"
 },
 {
@@ -1398,7 +1398,7 @@ null
 "in_solar_units": true,
 "kind": "orbit",
 "qualifier": "t0_perpass",
-"uniqueid": "GwSvYRUlYtNRAluetXqzCxaijTMhtV",
+"uniqueid": "JrnizzJTGMscXNSEkXENNcjZtFPkSa",
 "value": "t0_supconj_to_perpass({t0_supconj@binary@component}, {period@binary@component}, {ecc@binary@component}, {per0@binary@component}, {dpdt@binary@component}, {dperdt@binary@component}, {t0@system})"
 },
 {
@@ -1415,7 +1415,7 @@ null
 "in_solar_units": true,
 "kind": "orbit",
 "qualifier": "t0_ref",
-"uniqueid": "OuQRHduGSoJOtiiGwYRHiIRnZFUMSt",
+"uniqueid": "EawhdGCUxJPegMwTtWaJZjXpCAUVth",
 "value": "t0_supconj_to_ref({t0_supconj@binary@component}, {period@binary@component}, {ecc@binary@component}, {per0@binary@component}, {dpdt@binary@component}, {dperdt@binary@component}, {t0@system})"
 },
 {
@@ -1432,7 +1432,7 @@ null
 "in_solar_units": true,
 "kind": "orbit",
 "qualifier": "period_anom",
-"uniqueid": "HTbgBcvUTvTtOCQrTBwuxwfdlyHMnK",
+"uniqueid": "ZXPeQfUJdbOiUzyTBpNGzhXUGdbBsG",
 "value": "{period@binary@component} / ((((-1.000000 * {period@binary@component}) * {dperdt@binary@component}) / 6.283185307179586231995926937088) + 1.000000000000000000000000000000)"
 },
 {
@@ -1449,7 +1449,7 @@ null
 "in_solar_units": true,
 "kind": "orbit",
 "qualifier": "mean_anom",
-"uniqueid": "lwIQbNXMvTMbhxiFpCmICMtpRemGeo",
+"uniqueid": "kIAicCscMVMPnlpIyLmeIWDcUvrgzP",
 "value": "(6.283185 * ({t0@system} - {t0_perpass@binary@component})) / {period@binary@component}"
 },
 {
@@ -1471,7 +1471,7 @@ null
 "in_solar_units": true,
 "kind": "orbit",
 "qualifier": "ecosw",
-"uniqueid": "uJLBBzYvmhZCPgjhDbWdLcVZzZLhKR",
+"uniqueid": "yuNSFKUHtXPyMixeCQqTaXHdPvePZw",
 "value": "{ecc@binary@component} * (cos({per0@binary@component}))"
 },
 {
@@ -1493,7 +1493,7 @@ null
 "in_solar_units": true,
 "kind": "orbit",
 "qualifier": "esinw",
-"uniqueid": "BWjLhQzAsVpjuEjHCGdTGANlBlCnZI",
+"uniqueid": "zmvVLCnaJqjucHkHvVbdjdxEDAHeBl",
 "value": "{ecc@binary@component} * (sin({per0@binary@component}))"
 },
 {
@@ -1510,7 +1510,7 @@ null
 "in_solar_units": true,
 "kind": "orbit",
 "qualifier": "freq",
-"uniqueid": "IuobzgzGVwdsCWHJdxNyCAdmvBVruh",
+"uniqueid": "qenvtiUghYRhFcOBvVyWBhtpMOAzhN",
 "value": "6.283185 / {period@binary@component}"
 },
 {
@@ -1532,7 +1532,7 @@ null
 "in_solar_units": true,
 "kind": "orbit",
 "qualifier": "sma",
-"uniqueid": "DCGQEIcAJFhhZmkzYKDRIIXdZFmLwU",
+"uniqueid": "DzhZHJWyqZSqLaLCpXidAJDeVwRRpd",
 "value": "(((({mass@primary@component} * ({period@binary@component} ** 2.000000)) * ({q@binary@component} + 1.000000)) * 2942.206217504419328179210424423218) / 39.478418) ** (1./3)"
 },
 {
@@ -1549,7 +1549,7 @@ null
 "in_solar_units": true,
 "kind": "star",
 "qualifier": "sma",
-"uniqueid": "sGdCkCUIFjeFsPnctcXyyADjGivvbw",
+"uniqueid": "EcYOsNBvVrEXUIFagJHnaQoMlapTSp",
 "value": "{sma@binary@component} / ((1.000000 / {q@binary@component}) + 1.000000)"
 },
 {
@@ -1566,7 +1566,7 @@ null
 "in_solar_units": true,
 "kind": "star",
 "qualifier": "asini",
-"uniqueid": "xScJHHMWtkKiNlbjRRjEAEnOCCJHFV",
+"uniqueid": "SrHAngfoZScUdAymxiqteowlTbUkFC",
 "value": "({sma@binary@component} * (sin({incl@binary@component}))) / ((1.000000 / {q@binary@component}) + 1.000000)"
 },
 {
@@ -1583,7 +1583,7 @@ null
 "in_solar_units": true,
 "kind": "star",
 "qualifier": "period",
-"uniqueid": "YevdWYdOaamCiOVEIZFNduBJqRDUhy",
+"uniqueid": "RnzVMHHgKRdHeZTDSzhnVojdTRPGTD",
 "value": "{period@binary@component} / {syncpar@primary@component}"
 },
 {
@@ -1600,7 +1600,7 @@ null
 "in_solar_units": true,
 "kind": "star",
 "qualifier": "incl",
-"uniqueid": "ltmJZVTrPITqsCeHuQTTCULMgFamdG",
+"uniqueid": "jQbRDsnQrvhowYyZuJMtJDvYBlisfl",
 "value": "{incl@binary@component} + {pitch@primary@component}"
 },
 {
@@ -1617,7 +1617,7 @@ null
 "in_solar_units": true,
 "kind": "star",
 "qualifier": "long_an",
-"uniqueid": "xOBazJyFPVitrFaxEKaKmKdGcmQfwE",
+"uniqueid": "dFnmqQoQCNnWULLUobyxVVkyFjlAlr",
 "value": "{long_an@binary@component} + {yaw@primary@component}"
 },
 {
@@ -1634,7 +1634,7 @@ null
 "in_solar_units": true,
 "kind": "star",
 "qualifier": "requiv_max",
-"uniqueid": "lVHvpHpcEWbLZciLyDuRSwAOXeaCQq",
+"uniqueid": "jBsljLfHwycvuZNelarhrSEdUIiPWv",
 "value": "requiv_L1({q@binary@component}, {syncpar@primary@component}, {ecc@binary@component}, {sma@binary@component}, {incl@primary@component}, {long_an@primary@component}, {incl@binary@component}, {long_an@binary@component}, 1)"
 },
 {
@@ -1656,7 +1656,7 @@ null
 "in_solar_units": true,
 "kind": "orbit",
 "qualifier": "q",
-"uniqueid": "KShzlUHEwlSCCtOJxGcKEhkPoPHLYG",
+"uniqueid": "qdjiYUucSFnYhMbYtUuzrQFziQkpnZ",
 "value": "{mass@secondary@component} / {mass@primary@component}"
 },
 {
@@ -1673,7 +1673,7 @@ null
 "in_solar_units": true,
 "kind": "star",
 "qualifier": "sma",
-"uniqueid": "RhyMqcQMGnfWouyZBFmTlpyXaNNSVb",
+"uniqueid": "XlwTueaMuHzMhiBcTkFavEnJKyXrTj",
 "value": "{sma@binary@component} / ({q@binary@component} + 1.000000)"
 },
 {
@@ -1690,7 +1690,7 @@ null
 "in_solar_units": true,
 "kind": "star",
 "qualifier": "asini",
-"uniqueid": "RMvPpeNkZezjrgUyIUnEwIUXBXeVCX",
+"uniqueid": "BBmEWrwJldtxdvRpRIOZjpggojtLXq",
 "value": "({sma@binary@component} * (sin({incl@binary@component}))) / ({q@binary@component} + 1.000000)"
 },
 {
@@ -1707,7 +1707,7 @@ null
 "in_solar_units": true,
 "kind": "star",
 "qualifier": "period",
-"uniqueid": "eoBZaqPEhpYPpfGQDgNJEgOuBgcdsX",
+"uniqueid": "AWGswAggPVRvbunbejxiepWuYAQygX",
 "value": "{period@binary@component} / {syncpar@secondary@component}"
 },
 {
@@ -1724,7 +1724,7 @@ null
 "in_solar_units": true,
 "kind": "star",
 "qualifier": "incl",
-"uniqueid": "PYpGGbOqxSCZmzjpPsglfMiasfjZZW",
+"uniqueid": "DoSxJYzhLUuflCassSylemjqTdZHlv",
 "value": "{incl@binary@component} + {pitch@secondary@component}"
 },
 {
@@ -1741,7 +1741,7 @@ null
 "in_solar_units": true,
 "kind": "star",
 "qualifier": "long_an",
-"uniqueid": "RAUaiIDdWadsyytpkLQPzxbgmtayKQ",
+"uniqueid": "xOsHbgPrELYnTuUTcZWNBzwmEBmczy",
 "value": "{long_an@binary@component} + {yaw@secondary@component}"
 },
 {
@@ -1758,7 +1758,7 @@ null
 "in_solar_units": true,
 "kind": "star",
 "qualifier": "requiv_max",
-"uniqueid": "AGBfcqnyMiVTDUKJSyVYbiJIUALTco",
+"uniqueid": "MwgWkgylgJtrMpfdYmEouibhmFxjJR",
 "value": "requiv_L1({q@binary@component}, {syncpar@secondary@component}, {ecc@binary@component}, {sma@binary@component}, {incl@secondary@component}, {long_an@secondary@component}, {incl@binary@component}, {long_an@binary@component}, 2)"
 },
 {
@@ -1770,7 +1770,7 @@ null
 "description": "distributions or solutions to use for sampling.  If pointing to a solution, adopt_solution(as_distributions=True, **kwargs) will be called to create a temporary distribution which will be removed automatically.  If all distributions are delta functions (face-values), sample_mode and sample_num will be ignored with a warning.",
 "kind": "phoebe",
 "qualifier": "sample_from",
-"uniqueid": "OnHncsczcUhKeJbhGfEEMGwPYpnxZs",
+"uniqueid": "ZHyBHaVGZRYwktrVNWUuAgXszYrbeg",
 "value": []
 },
 {
@@ -1784,7 +1784,7 @@ null
 "description": "Method to use to combine multiple distributions from sample_from for the same parameter.  first: ignore duplicate entries and take the first in the sample_from parameter",
 "kind": "phoebe",
 "qualifier": "sample_from_combine",
-"uniqueid": "KVnlQldAISqsiGVNUcoybOkZmLsXvf",
+"uniqueid": "xCtpJhBElCHpQOvpnDeHFFRuxIrOpB",
 "value": "first",
 "visible_if": "sample_from:<notempty>"
 },
@@ -1800,7 +1800,7 @@ null
 1000000.0
 ],
 "qualifier": "sample_num",
-"uniqueid": "hTWxFmaYAHqqqgSXHAKHLOxldXgkrZ",
+"uniqueid": "KHmhIaSleLuNyTraSItsHhXipggbMs",
 "value": 10,
 "visible_if": "sample_from:<notempty>"
 },
@@ -1819,7 +1819,7 @@ null
 "description": "Mode to use when exposing model after sampling.  all: expose all sampled forward-models.  median: only return the median of all sampled models.  1/3/5-sigma: expose the synthetic variable at the median and +/- n-sigma.",
 "kind": "phoebe",
 "qualifier": "sample_mode",
-"uniqueid": "wUESncmiXLcCAevIZQzAzCAnQpeRQK",
+"uniqueid": "VHKEnyHSKnnzFkqQaXgpeZPGugpcKz",
 "value": "1-sigma",
 "visible_if": "sample_from:<notempty>"
 },
@@ -1831,7 +1831,7 @@ null
 "description": "Whether to expose failed samples along with the simplified error messages.",
 "kind": "phoebe",
 "qualifier": "expose_samples",
-"uniqueid": "nKFbtGLZGOQISHVZQWVIxtbcJJVMVr",
+"uniqueid": "ghGcoGaFUCaDHbSSLbDgUAiSSwIVlH",
 "value": true,
 "visible_if": "sample_from:<notempty>"
 },
@@ -1843,7 +1843,7 @@ null
 "description": "Whether to expose failed samples along with the simplified error messages.",
 "kind": "phoebe",
 "qualifier": "expose_failed",
-"uniqueid": "SovsfwvTcnLQXUzYbnSrgxwqfPiqTX",
+"uniqueid": "OZlHcgeZPFTMsEsBlZaWsarZrEuPSW",
 "value": true,
 "visible_if": "sample_from:<notempty>"
 },
@@ -1855,7 +1855,7 @@ null
 "description": "User-provided comments for these compute-options.  Feel free to place any notes here - if not overridden, they will be copied to any resulting models.",
 "kind": "phoebe",
 "qualifier": "comments",
-"uniqueid": "eBKwYCKPxQnlveGSdvKJiZwEjZPxQc",
+"uniqueid": "eYmTAYHbNhWotqFQCPKQBCclLMycBd",
 "value": ""
 },
 {
@@ -1869,7 +1869,7 @@ null
 "description": "Server to use when running the forward model (or \"none\" to run locally) via run_compute.",
 "kind": "phoebe",
 "qualifier": "use_server",
-"uniqueid": "FFbqDyYkjwIDDUhteGDyhvbRLealHv",
+"uniqueid": "sGPSxIcMeCnfBSjVdJVAnYanzirqzj",
 "value": "none"
 },
 {
@@ -1884,7 +1884,7 @@ null
 "description": "Whether to create synthetics in compute/solver run",
 "kind": "phoebe",
 "qualifier": "enabled",
-"uniqueid": "uYZhYooPhKWCShBThwrOmUvDhdquGv",
+"uniqueid": "xiyoQsCHPIktqWmRHgYUHsgEgCRvCY",
 "value": true
 },
 {
@@ -1899,7 +1899,7 @@ null
 "feature": "_default",
 "kind": "phoebe",
 "qualifier": "enabled",
-"uniqueid": "JjNPsUVqfBlIHmsqrTMaAsLqRjoeHC",
+"uniqueid": "zIGbnYJCmPBciblVorEnJZTToBrCgm",
 "value": true
 },
 {
@@ -1913,7 +1913,7 @@ null
 "description": "Which method to use to determine the dynamics of components",
 "kind": "phoebe",
 "qualifier": "dynamics_method",
-"uniqueid": "eFOZDopruotdedJtcacvEwNjIZscTM",
+"uniqueid": "HmbkmobFRqLYwJAgFdllBDKrtNMiKC",
 "value": "keplerian"
 },
 {
@@ -1924,7 +1924,7 @@ null
 "description": "Correct for light travel time effects",
 "kind": "phoebe",
 "qualifier": "ltte",
-"uniqueid": "KRLdPMIhFhNTZCfVBQfzSNFOKmChrh",
+"uniqueid": "QiuFPntsslzZnglIsAfQOqrXxaYfyQ",
 "value": false
 },
 {
@@ -1940,7 +1940,7 @@ null
 "description": "Which method to use to handle all irradiation effects (reflection, redistribution)",
 "kind": "phoebe",
 "qualifier": "irrad_method",
-"uniqueid": "qGmqEurLdJDqypXmCHhnTARMadrYHN",
+"uniqueid": "bSOHCLRkHEZfmXfGsKvFUUFGQTUDTG",
 "value": "horvat"
 },
 {
@@ -1955,7 +1955,7 @@ null
 "description": "Type of boosting method",
 "kind": "phoebe",
 "qualifier": "boosting_method",
-"uniqueid": "CNTkOtbQlRVvpvrsrTxFSmYmBUvQTj",
+"uniqueid": "aBhnKhnBcNBarYNRbbqadogSyQvuMe",
 "value": "none"
 },
 {
@@ -1976,7 +1976,7 @@ null
 "description": "Which method to use for discretizing the surface",
 "kind": "phoebe",
 "qualifier": "mesh_method",
-"uniqueid": "uKEzGRUtknAIPmeATqyHmiocZbsBNx",
+"uniqueid": "XoIddzzIfJPQWIfeNaFEClDyxWLNFg",
 "value": "marching",
 "visible_if": "hierarchy.is_meshable:true"
 },
@@ -1999,7 +1999,7 @@ null
 null
 ],
 "qualifier": "ntriangles",
-"uniqueid": "nOlToAzZrFDnoKPrtpMEhHYNboxtXK",
+"uniqueid": "BQMLpZusGYxcRpnIXbngFDyOQuRirn",
 "value": 1500,
 "visible_if": "mesh_method:marching,hierarchy.is_meshable:true"
 },
@@ -2023,7 +2023,7 @@ null
 "description": "Method to use for distorting stars",
 "kind": "phoebe",
 "qualifier": "distortion_method",
-"uniqueid": "myKNNNbSPUynyTQxqkEUKJEeOQPYJe",
+"uniqueid": "UqZlZlNutjYwBBacrGQtNnIXpYuXvO",
 "value": "roche",
 "visible_if": "mesh_method:marching,hierarchy.is_meshable:true"
 },
@@ -2040,7 +2040,7 @@ null
 "description": "Type of eclipse algorithm",
 "kind": "phoebe",
 "qualifier": "eclipse_method",
-"uniqueid": "pJQLEWoUplQVnfQOMNJeaDTMtoDsju",
+"uniqueid": "YMYdVENZKqAzZZAXnthmMuqaUUhkJN",
 "value": "native"
 },
 {
@@ -2055,16 +2055,16 @@ null
 "description": "Type of horizon method",
 "kind": "phoebe",
 "qualifier": "horizon_method",
-"uniqueid": "OVvNLxsFJQOSAgsQKXhMSuRZNhVULA",
+"uniqueid": "hVsXMEiHezNIjtxpEjCjMpDBxYXOkL",
 "value": "boolean",
 "visible_if": "eclipse_method:native"
 },
 {
 "Class": "ChoiceParameter",
 "choices": [
-"extern_planckint",
-"ck2004",
 "blackbody",
+"ck2004",
+"extern_planckint",
 "phoenix",
 "extern_atmx"
 ],
@@ -2080,7 +2080,7 @@ null
 "description": "Atmosphere table",
 "kind": "phoebe",
 "qualifier": "atm",
-"uniqueid": "dXzLrwvLcmgpgyDwHSPIRYtJgtMXXn",
+"uniqueid": "opTtuqZLHqQvxfsGcMbdlnEEeYDpCO",
 "value": "ck2004"
 },
 {
@@ -2101,7 +2101,7 @@ null
 "description": "How to handle finite-time integration (when non-zero exptime)",
 "kind": "phoebe",
 "qualifier": "fti_method",
-"uniqueid": "AUSNeszlQKVpmPQIvRmbyYVuIhmzPS",
+"uniqueid": "hLJlINmCvAAidSAsbvQHGAZzQpOtzs",
 "value": "none"
 },
 {
@@ -2122,7 +2122,7 @@ null
 null
 ],
 "qualifier": "fti_oversample",
-"uniqueid": "fOSMJiuUUWSjPzSYjKazJTerDyfMPn",
+"uniqueid": "JywibwrSLzZgDVMjDXXhChtbbNlmUZ",
 "value": 5,
 "visible_if": "fti_method:oversample"
 },
@@ -2147,7 +2147,7 @@ null
 "description": "Method to use for computing RVs (must be flux-weighted for Rossiter-McLaughlin effects)",
 "kind": "phoebe",
 "qualifier": "rv_method",
-"uniqueid": "XeEfwNOYXtgkbXNhSuNmvxAVhNckil",
+"uniqueid": "rXfgFJZqCyIRSVOpmvJBJolYIvVfyJ",
 "value": "flux-weighted"
 },
 {
@@ -2167,7 +2167,7 @@ null
 "description": "Whether gravitational redshift effects are enabled for RVs",
 "kind": "phoebe",
 "qualifier": "rv_grav",
-"uniqueid": "TYBlbEMEhRmQfHwkBSRmQGvBhfNdQe",
+"uniqueid": "RPrpxBMQEIWYkUDzpOVuQXuHFTiHGx",
 "value": false,
 "visible_if": "rv_method:flux-weighted"
 },
@@ -2183,7 +2183,7 @@ null
 "description": "Which method to use for discretizing the surface",
 "kind": "phoebe",
 "qualifier": "mesh_method",
-"uniqueid": "sGrCwHbhHvtUATTBNNvghaYDOdZNxD",
+"uniqueid": "OzrwTpHWNZOZfwGIIojZQGIhMQOprd",
 "value": "marching",
 "visible_if": "hierarchy.is_meshable:true"
 },
@@ -2199,7 +2199,7 @@ null
 "description": "Which method to use for discretizing the surface",
 "kind": "phoebe",
 "qualifier": "mesh_method",
-"uniqueid": "AGHVBIrrblaVIFRmDjtjNCKLBlkKYa",
+"uniqueid": "qULwyYmAbpYDQCWloWgOmXXTAAhzIC",
 "value": "marching",
 "visible_if": "hierarchy.is_meshable:true"
 },
@@ -2216,7 +2216,7 @@ null
 null
 ],
 "qualifier": "ntriangles",
-"uniqueid": "foeMJOXAHXJrTwRnhSUYgMoYbTgilw",
+"uniqueid": "jtqsYcywnLNQeyeKmneudnLJflqAwS",
 "value": 1500,
 "visible_if": "mesh_method:marching,hierarchy.is_meshable:true"
 },
@@ -2233,7 +2233,7 @@ null
 null
 ],
 "qualifier": "ntriangles",
-"uniqueid": "FBCmXUHOZKDFQjmiWnfrZFGwACrnqh",
+"uniqueid": "YndTpwWmAhKPmrGIEcORAfAzwZReAk",
 "value": 1500,
 "visible_if": "mesh_method:marching,hierarchy.is_meshable:true"
 },
@@ -2252,7 +2252,7 @@ null
 "description": "Method to use for distorting stars",
 "kind": "phoebe",
 "qualifier": "distortion_method",
-"uniqueid": "PxiFnbbSZkoeNAjuKEmlfBGLkQvOSq",
+"uniqueid": "MFhohyIilhFiqwCJOWVsqEEiFsafnw",
 "value": "roche",
 "visible_if": "mesh_method:marching,hierarchy.is_meshable:true"
 },
@@ -2271,16 +2271,16 @@ null
 "description": "Method to use for distorting stars",
 "kind": "phoebe",
 "qualifier": "distortion_method",
-"uniqueid": "UMGURWAjFemeWoFZWKKrPEwYNrlohv",
+"uniqueid": "zzqrNMCOpGXQuCRtYhKDYSlquGxKOi",
 "value": "roche",
 "visible_if": "mesh_method:marching,hierarchy.is_meshable:true"
 },
 {
 "Class": "ChoiceParameter",
 "choices": [
-"extern_planckint",
-"ck2004",
 "blackbody",
+"ck2004",
+"extern_planckint",
 "phoenix",
 "extern_atmx"
 ],
@@ -2291,15 +2291,15 @@ null
 "description": "Atmosphere table",
 "kind": "phoebe",
 "qualifier": "atm",
-"uniqueid": "xpJsBIAtZWACRkAHlHPAJQSRfyjPjP",
+"uniqueid": "xDBdMuhAGiPHQdcqXnsbxaGiRuuRbJ",
 "value": "ck2004"
 },
 {
 "Class": "ChoiceParameter",
 "choices": [
-"extern_planckint",
-"ck2004",
 "blackbody",
+"ck2004",
+"extern_planckint",
 "phoenix",
 "extern_atmx"
 ],
@@ -2310,7 +2310,7 @@ null
 "description": "Atmosphere table",
 "kind": "phoebe",
 "qualifier": "atm",
-"uniqueid": "dOTkhRCTZUHBtIXTPugrwwMuPVRYUI",
+"uniqueid": "SuYMFuqbDOmmQefnMztFytUcLqrOmb",
 "value": "ck2004"
 },
 {
@@ -2323,7 +2323,7 @@ null
 "copy_for": false,
 "description": "Source to use for highlight/uncover time for any figure in which time_source is set to default.",
 "qualifier": "default_time_source",
-"uniqueid": "PqLSdWgngTWMDkQqftdvHZVofliRfC",
+"uniqueid": "qecffRFCdnPuvlFvZEivNxKozzcofD",
 "value": "None"
 },
 {
@@ -2337,7 +2337,7 @@ null,
 null
 ],
 "qualifier": "default_time",
-"uniqueid": "lTjMFJYByRkmLqQuEZKetKOeacFQpR",
+"uniqueid": "VambLOwXrGKIcspTZsPISPjBNkNYbc",
 "value": 0.0,
 "visible_if": "default_time_source:manual"
 },
@@ -2349,7 +2349,7 @@ null
 "description": "Representation to use in place of the component label when rendering latex representations of parameters.  If blank, will use the labels directly.",
 "kind": "star",
 "qualifier": "latex_repr",
-"uniqueid": "hiLRxRJLESBkSoSbSZtgnGsLyEuyDw",
+"uniqueid": "IOTNjVkbfTnptsBjvcDEsXCksjgrhs",
 "value": ""
 },
 {
@@ -2371,7 +2371,7 @@ null
 "description": "Color to use for figures in which color_source is set to component",
 "kind": "star",
 "qualifier": "color",
-"uniqueid": "AGMQaBRGTJQDgFaFjQssAqqfyEcoub",
+"uniqueid": "OGAYKczGDpLHNOeXdBFXhOAjzitNxg",
 "value": "blue"
 },
 {
@@ -2399,7 +2399,7 @@ null
 "description": "Marker (datasets only, not models) to use for figures in which marker_source is set to component",
 "kind": "star",
 "qualifier": "marker",
-"uniqueid": "fqSmFzzBzUkqVHLraqRlbcpbrblrzb",
+"uniqueid": "fXYkDfZmmXjvaDPOcsOZaajsdXDnoy",
 "value": "."
 },
 {
@@ -2417,7 +2417,7 @@ null
 "description": "Linestyle to use for figures in which linestyle_source is set to component",
 "kind": "star",
 "qualifier": "linestyle",
-"uniqueid": "aeJksMGGwcVneImPjEyYURuaZrXKQo",
+"uniqueid": "wrwwaOjHYYvDaoYGpUPrzmOAvHKPdp",
 "value": "solid"
 },
 {
@@ -2428,7 +2428,7 @@ null
 "description": "Representation to use in place of the component label when rendering latex representations of parameters.  If blank, will use the labels directly.",
 "kind": "star",
 "qualifier": "latex_repr",
-"uniqueid": "hfXrPghXZCwnfnMCAOlhfAIaYVedWO",
+"uniqueid": "rAeQOoqsbZqbKryVhfIDVOJyWAPAQJ",
 "value": ""
 },
 {
@@ -2450,7 +2450,7 @@ null
 "description": "Color to use for figures in which color_source is set to component",
 "kind": "star",
 "qualifier": "color",
-"uniqueid": "bQFdiJatAVUKOfPGnscgzvmAttXECn",
+"uniqueid": "DUEQzzZxzrebEfYCarSkrBICxkOjLh",
 "value": "orange"
 },
 {
@@ -2478,7 +2478,7 @@ null
 "description": "Marker (datasets only, not models) to use for figures in which marker_source is set to component",
 "kind": "star",
 "qualifier": "marker",
-"uniqueid": "wPPopOYgSqsrUcxqYuGVJMiIsPfuHA",
+"uniqueid": "aBpUIrQafXbDEBvlxHysvrnrNcYXiu",
 "value": "o"
 },
 {
@@ -2496,7 +2496,7 @@ null
 "description": "Linestyle to use for figures in which linestyle_source is set to component",
 "kind": "star",
 "qualifier": "linestyle",
-"uniqueid": "vkIBEPPoviXGKpgXqjKRkLaANzxoIi",
+"uniqueid": "wBsmiFsMSuVanFUABccbclfJWlOXdw",
 "value": "dashed"
 },
 {
@@ -2507,7 +2507,7 @@ null
 "description": "Representation to use in place of the component label when rendering latex representations of parameters.  If blank, will use the labels directly.",
 "kind": "orbit",
 "qualifier": "latex_repr",
-"uniqueid": "uzxDrrxlvplZVhIuydJcjHqnWalSll",
+"uniqueid": "WjHXwoLJgdIlxfgJKUkYsWCmyEkiXx",
 "value": ""
 },
 {
@@ -2518,8 +2518,8 @@ null
 "description": "Version of PHOEBE",
 "qualifier": "phoebe_version",
 "readonly": true,
-"uniqueid": "fxXWxbmLiymihHiOCMlKQpPgmVpKJZ",
-"value": "workshop2021"
+"uniqueid": "MzlRVswxbfCQbsNzoWKLLiiVqytmLc",
+"value": "2.4.0.dev1+phoebe_2.4dev"
 },
 {
 "Class": "DictParameter",
@@ -2528,7 +2528,7 @@ null
 "copy_for": false,
 "description": "Filters to use when using dictionary access",
 "qualifier": "dict_filter",
-"uniqueid": "VsmAMIaXdaswRMHGbSkyMqqpGXcKEJ",
+"uniqueid": "EKHTMhfqbCrhqrtkiCszHKduVZOVWg",
 "value": {}
 },
 {
@@ -2538,7 +2538,7 @@ null
 "copy_for": false,
 "description": "Whether to set all values for dictionary access that returns more than 1 result",
 "qualifier": "dict_set_all",
-"uniqueid": "PYfgKMBjyqGQGoPwnohqlihmFcxglK",
+"uniqueid": "IyfuAPHCTIfjKLmnHvKIpWBTqFhlMS",
 "value": false
 },
 {
@@ -2550,7 +2550,7 @@ null
 "copy_for": false,
 "description": "Compute options to use when calling run_checks/run_checks_compute or within interactive checks.",
 "qualifier": "run_checks_compute",
-"uniqueid": "etAwbKvXwSuPKqqRbBfhiplAubKQcE",
+"uniqueid": "kOllYLmuqWlPrjnrnmKYoogwnjbauk",
 "value": [
 "*"
 ]
@@ -2562,7 +2562,7 @@ null
 "copy_for": false,
 "description": "Solver options to use when calling run_checks/run_checks_solver or within interactive checks.",
 "qualifier": "run_checks_solver",
-"uniqueid": "vJXDAvSsrNEfTXZanAzsZxiPODVcFw",
+"uniqueid": "CpJmVlfGeBlnVPEXaokEAXRFhCEiRq",
 "value": [
 "*"
 ]
@@ -2574,7 +2574,7 @@ null
 "copy_for": false,
 "description": "Solutions to use when calling run_checks/run_checks_solution or within interactive checks.",
 "qualifier": "run_checks_solution",
-"uniqueid": "DlBWtXrLMcWESYmERbCWQlQeNBvzbE",
+"uniqueid": "PmYVogRFStsKBAPcgdsneIpaTDePfH",
 "value": [
 "*"
 ]
@@ -2586,7 +2586,7 @@ null
 "copy_for": false,
 "description": "Figures to use when calling run_checks/run_checks_figure or within interactive checks.",
 "qualifier": "run_checks_figure",
-"uniqueid": "hwjNnquebTFUMxZwuWAvdJgtHfxnoe",
+"uniqueid": "qWEgbwbPfCioOOyKSqLOplfQLuBCca",
 "value": [
 "*"
 ]
@@ -2598,7 +2598,7 @@ null
 "copy_for": false,
 "description": "Servers to use when calling run_checks/run_checks_server or within interactive checks.",
 "qualifier": "run_checks_server",
-"uniqueid": "FmwiIGbPAAkGeUpFOjjejRlOuokijY",
+"uniqueid": "pkKJHGPwzxXRvplwziRihnOZUBOKuL",
 "value": [
 "*"
 ]
@@ -2609,7 +2609,7 @@ null
 "copy_for": false,
 "description": "Whether to automatically add figure parameters when a dataset is added with a new dataset type, or a solution is added.",
 "qualifier": "auto_add_figure",
-"uniqueid": "uwVDSehDBcjsrCUMSBkGIHsaRSQHTM",
+"uniqueid": "SkEArReCLfwsvmKNCaMlYChELzmBgr",
 "value": true
 },
 {
@@ -2618,7 +2618,7 @@ null
 "copy_for": false,
 "description": "Whether to automatically remove figure parameters when the referenced dataset/solution are removed.",
 "qualifier": "auto_remove_figure",
-"uniqueid": "THQiWILyCYqAwFcRYXzxRClgAsJETz",
+"uniqueid": "LNEcGocyRjdykEZBOwGvdGSxCDlpQU",
 "value": true
 },
 {
@@ -2628,7 +2628,7 @@ null
 "copy_for": false,
 "description": "Whether to default to using the web-client over a locally installed desktop-client when opening the UI from the desktop client.",
 "qualifier": "web_client",
-"uniqueid": "MyZoDXfTXbxPzZkxnhaVMVnQQndgnB",
+"uniqueid": "kpbUTFXqPgoZpWXXYRipmTuuFVzCBt",
 "value": false
 },
 {
@@ -2638,7 +2638,7 @@ null
 "copy_for": false,
 "description": "Default location of web-client.  Will only be used if web_client is True.",
 "qualifier": "web_client_url",
-"uniqueid": "JHZJMbFDGPgZMzMttVPcsjvpYeIojh",
+"uniqueid": "uRbgZjJESqDULpQDwsDlDDzqsHUQcu",
 "value": "ui.phoebe-project.org"
 }
 ]
