@@ -7,16 +7,15 @@
 
 # #### Case 1: parameters insensitive to data
 
-# So let's look at the one light curve scenario. As we've seen before, a light curve does not constrain well parameters related to individual masses,  radii and temperatures. So when we reparametrize to fit for the sum and ratio of fractional radii and the temperature ratio, should we omit q, sma@binary and teff@primary from the fitted parameters? 
+# Let's look at the one light curve scenario. As we've seen before, a light curve does not constrain well parameters related to individual masses,  radii and temperatures. 
 # 
-# **== DISCUSSION ON SLACK ==**
-# 
+# So when we reparametrize to fit for the sum and ratio of fractional radii and the temperature ratio, should we omit q, sma@binary and teff@primary from the fitted parameters? 
+
 # You can download the true bundle and data here if you haven't already:
 # * [true.bundle](https://github.com/phoebe-project/phoebe2-workshop/raw/2021june/data/synthetic/true.bundle)
 # * [lc.data](https://github.com/phoebe-project/phoebe2-workshop/raw/2021june/data/synthetic/lc.data)
 # * [rv1.data](https://github.com/phoebe-project/phoebe2-workshop/raw/2021june/data/synthetic/rv1.data)
 # * [rv2.data](https://github.com/phoebe-project/phoebe2-workshop/raw/2021june/data/synthetic/rv2.data)
-# 
 
 # In[1]:
 

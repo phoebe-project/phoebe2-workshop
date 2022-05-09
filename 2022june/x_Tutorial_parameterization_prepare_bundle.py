@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[3]:
+# In[1]:
 
 
 import numpy as np
@@ -9,7 +9,7 @@ import phoebe
 import matplotlib.pyplot as plt
 
 
-# In[4]:
+# In[2]:
 
 
 params = {'period@binary': 1.67,
@@ -37,7 +37,7 @@ rv1 = np.loadtxt('data/synthetic/rv1.data')
 rv2 = np.loadtxt('data/synthetic/rv2.data')
 
 
-# In[5]:
+# In[4]:
 
 
 b = phoebe.default_binary()
@@ -62,17 +62,17 @@ b.run_checks()
 # In[5]:
 
 
-b.run_compute()
+# b.run_compute()
 
 
 # In[6]:
 
 
-get_ipython().run_line_magic('matplotlib', 'inline')
-b.plot(x='phase', show=True)
+# %matplotlib inline
+# b.plot(x='phase', show=True)
 
 
-# In[6]:
+# In[7]:
 
 
 b.save('data/synthetic/true.bundle')
