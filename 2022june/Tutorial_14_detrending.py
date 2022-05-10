@@ -13,7 +13,7 @@
 
 # To begin, let us import numpy and pyplot:
 
-# In[1]:
+# In[2]:
 
 
 import numpy as np
@@ -23,10 +23,10 @@ plt.style.use('jupyter')
 
 # Next, we load a TESS lightcurve of [TIC 91961](http://tessEBs.villanova.edu/91961). Let's take a look at what we're working with:
 
-# In[2]:
+# In[4]:
 
 
-data = np.loadtxt('test.lc')
+data = np.loadtxt('data/noise_examples/tic91961.lc')
 
 plt.xlabel('Timestamp')
 plt.ylabel('Normalized flux')
