@@ -13,17 +13,17 @@
 
 # To begin, let us import numpy and pyplot:
 
-# In[2]:
+# In[1]:
 
 
 import numpy as np
 import matplotlib.pyplot as plt
-plt.style.use('jupyter')
+plt.style.use('./jupyter.mplstyle')
 
 
 # Next, we load a TESS lightcurve of [TIC 91961](http://tessEBs.villanova.edu/91961). Let's take a look at what we're working with:
 
-# In[4]:
+# In[2]:
 
 
 data = np.loadtxt('data/noise_examples/tic91961.lc')
@@ -125,7 +125,7 @@ plt.show()
 
 # The baseline is our approximation for the trend. One final step is to divide the data by the baseline (i.e., detrend the data) and rescale the temporal axis back:
 
-# In[11]:
+# In[10]:
 
 
 times = tmin + data[:,0]*tmax
@@ -137,7 +137,7 @@ plt.show()
 
 # This is certainly better than it was initially, but remaining trends are still quite obvious. One aspect worth checking is the distribution of the residuals about the fitted baseline:
 
-# In[13]:
+# In[11]:
 
 
 _ = plt.hist(culled_data[:,1]-baseline, bins=50)
@@ -147,7 +147,7 @@ _ = plt.hist(culled_data[:,1]-baseline, bins=50)
 # 
 # Let's start by plotting the residual timeseries:
 
-# In[14]:
+# In[12]:
 
 
 residuals = culled_data[:,1]-baseline
@@ -164,14 +164,14 @@ plt.plot(culled_data[:,0], residuals, 'b-')
 # 
 # where $r$ is the array of the residuals, $N$ is the number of data points, and $\bar r$ is the mean value of the residuals. The value of $d$ is between 0 and 4; if $d$ is close to 2, then there is no significant serial correlation in the residuals; for $d < 2$ we have positive correlation and for $d > 2$ we have negative correlation. For the Abbe value, if $\mathcal A$ is close to 1, there is no significant correlation; for smaller values of $\mathcal A$ there is serial correlation in the residuals.
 
-# In[15]:
+# In[13]:
 
 
 dw = np.sum((residuals[1:]-residuals[:-1])**2)/np.sum(residuals**2)
 print(dw)
 
 
-# In[16]:
+# In[14]:
 
 
 abbe = len(residuals)/2/(len(residuals)-1) * np.sum((residuals[1:]-residuals[:-1])**2)/np.sum((residuals-np.mean(residuals))**2)
