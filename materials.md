@@ -55,7 +55,7 @@ Session Chair: **XXXXX**
 
 Session Chair: **XXXXX**
 
-* [Talk: Atmospheres, Limb Darkening, Intensity Weighting, Extinction, and Reflection](https://docs.google.com/presentation/d/e/2PACX-1vTX__cTcowjUGuJ18jYY85tWX9VjjYEu7ISEkLgMMFKSFUNNFPHRreGW_LaUjSsQF62-M5od-J37LAu/pub?start=false&loop=false&delayms=3000) (Dave - **needs updating**)
+* [Talk: Atmospheres, Limb Darkening, Intensity Weighting, Extinction, and Reflection](https://docs.google.com/presentation/d/e/2PACX-1vTX__cTcowjUGuJ18jYY85tWX9VjjYEu7ISEkLgMMFKSFUNNFPHRreGW_LaUjSsQF62-M5od-J37LAu/pub?start=false&loop=false&delayms=3000) (Dave)
 * [Tutorial: Datasets](./Tutorial_03_datasets.ipynb) ***(XXXX - needs updating)***
 * [Tutorial: Compute](./Tutorial_04_compute.ipynb) ***(XXXX - needs updating)***
 * [Tutorial: Time and Phase](./Tutorial_04b_time_and_phase.ipynb) ***(XXXX - needs updating)***
