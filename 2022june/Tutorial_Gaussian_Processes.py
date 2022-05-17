@@ -134,14 +134,14 @@ b.plot(model='gps_rbf', y='fluxes_nogps', legend=True)
 b.plot(model='gps_rbf', y='gps', legend=True, show=True)
 
 
-# Uh-oh, what happened? Remember how GPs can model anything under the Sun? Well, in this case, they detected large residuals in the eclipses because our estimator did a poor job of fitting those, so GPs tried to minimize those residuals instead! This behavior can easily get out of hand and have GPs fit the entire light curve instead of PHOEBE - something we refer to as 'signal stealing from GPs'. To aid in avoiding this, we have implemented an `exclude_phases` parameter, which allows one to exclude entire chunks of the light curve from being fitted with GPs. 
+# Uh-oh, what happened? Remember how GPs can model anything under the Sun? Well, in this case, they detected large residuals in the eclipses because our estimator did a poor job of fitting those, so GPs tried to minimize those residuals instead! This behavior can easily get out of hand and have GPs fit the entire light curve instead of PHOEBE - something we refer to as 'signal stealing from GPs'. To aid in avoiding this, we have implemented an `gp_exclude_phases` parameter, which allows one to exclude entire chunks of the light curve from being fitted with GPs. 
 # 
-# Let's set that parameter to the `mask_phases` values returned from the lc_geometry estimator. Note that here the behavior is reversed compared to the standard PHOEBE use of `mask_phases`: in the PHOEBE model, all points but those in `mask_phases` are excluded, while in GPs, the points we pass on to `exclude_phases` are ommited, while all others are kept for fitting.
+# Let's set that parameter to the `mask_phases` values returned from the lc_geometry estimator. Note that here the behavior is reversed compared to the standard PHOEBE use of `mask_phases`: in the PHOEBE model, all points but those in `mask_phases` are excluded, while in GPs, the points we pass on to `gp_exclude_phases` are ommited, while all others are kept for fitting.
 
 # In[13]:
 
 
-b['exclude_phases@lc01'] = b.get_value('fitted_values@lcgeom_sol')[-1]
+b['gp_exclude_phases@lc01'] = b.get_value('fitted_values@lcgeom_sol')[-1]
 
 
 # Let's re-compute our model with this addition:
@@ -192,14 +192,14 @@ b.disable_feature('gp_sklearn01')
 # In[19]:
 
 
-b['exclude_phases_enabled@lc01'] = False
+b['gp_exclude_phases_enabled@lc01'] = False
 b.run_compute(model='gps_celerite2', overwrite=True)
 
 
 # In[20]:
 
 
-b['exclude_phases_enabled@lc01'] = True
+b['gp_exclude_phases_enabled@lc01'] = True
 b.run_compute(model='gps_celerite2_noeclipses')
 
 
@@ -324,7 +324,7 @@ print(b['gp_sklearn02'])
 # In[31]:
 
 
-b['exclude_phases@lc01'] = [[-0.4,-0.2]]
+b['gp_exclude_phases@lc01'] = [[-0.4,-0.2]]
 b.run_compute(model='gps_sklearn_model')
 
 
