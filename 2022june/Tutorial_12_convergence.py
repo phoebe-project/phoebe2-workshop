@@ -5,8 +5,6 @@
 # 
 # In the previous tutorial we ran a sampler several times, either by continuing the previous run or resampling from the latest solution. In this tutorial we will focus on assessing convergence. This will be an inevitably disappointing experience because it turns out that there is no robust way to estimate convergence. Instead, we will inspect the usual diagnostic plots and introduce a new type of plot, autocorrelation function, that will be used to *qualify* (rather than *quantify*) convergence.
 # 
-# **NOTE**: much of the functionality introduced here in this tutorial is new since the 2.3 release and may undergo minor changes before officially being released in the 2.4 release.
-# 
 # Let's start with the usual imports.
 
 # In[1]:
