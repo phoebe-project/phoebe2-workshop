@@ -135,11 +135,10 @@ Session Chair: **XXXXX**
 
 
 * [Tutorial: Interpreting Chains and Convergence in MCMC](./Tutorial_12_convergence.ipynb) ***(XXXX - needs updating)***
-* [Tutorial: Posteriors and Parameter Uncertainties](./Tutorial_13_posteriors.ipynb) ***(Angela - needs updating)***
-* [Tutorial: Propagating Posteriors](./Tutorial_posterior_propagation.ipynb) ***(Angela - needs updating)***
-* [Tutorial: Choice of Parameterization](./Tutorial_parametrization.ipynb) ***(Angela - needs updating)***
-* [Tutorial: Marginalizing over Additional Parameters](./Tutorial_marginalization.ipynb) ***(Angela - needs updating)***
-* [Exercises: Getting Posteriors](./Exercises_07_posteriors.ipynb) ***(XXXX - needs updating)***
+* [Tutorial: Posteriors and Parameter Uncertainties](./Tutorial_13_posteriors.ipynb) (Angela)
+* [Tutorial: Choice of Parameterization](./Tutorial_parametrization.ipynb) (Angela)
+* [Tutorial: Marginalizing over Additional Parameters](./Tutorial_marginalization.ipynb) (Angela)
+* [Exercises: Getting Posteriors](./Exercises_07_posteriors.ipynb) (Angela)
 
 
 ### Tuesday July 26: Gaussian Processes
