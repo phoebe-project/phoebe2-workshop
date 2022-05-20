@@ -79,10 +79,10 @@ b.plot(show=True)
 b.add_solver('optimizer.nelder_mead', solver='nms', maxfev=100, fatol=0.000241, overwrite=True)
 
 
-# In[12]:
+# In[19]:
 
 
-b['fit_parameters@nms'] = ['teff@primary', 'teff@secondary', 'pblum@primary']
+b['fit_parameters@nms'] = ['teff@primary', 'teff@secondary', 'pblum@primary@mock']
 
 
 # In[13]:
@@ -91,7 +91,7 @@ b['fit_parameters@nms'] = ['teff@primary', 'teff@secondary', 'pblum@primary']
 b.run_solver('nms', solution='adjust_teffs')
 
 
-# In[15]:
+# In[16]:
 
 
 print(b['adjust_teffs'])
@@ -101,6 +101,71 @@ print(b['adjust_teffs'])
 
 
 print(b['enabled'])
+
+
+# In[15]:
+
+
+b.calculate_chi2()
+
+
+# NMS is demonstrably too slow, so we'll implement DC instead.
+
+# In[ ]:
+
+
+
+
+
+# In[17]:
+
+
+def run_dc(steps):
+    obs = b['value@fluxes@mock@dataset']
+    sigs = b['value@sigmas@mock@dataset']
+    fit_params = b['value@fit_parameters@nms']
+    orig_values = [b[f'value@{param}'] for param in fit_params]
+
+    A = np.empty(shape=(len(obs), len(fit_params)))
+    V = np.diag(1/sigs)
+
+    b.run_compute(irrad_method='none', model='baseline', overwrite=True)
+    xi = obs-b['value@fluxes@baseline@model']
+
+    for k, param in enumerate(fit_params):
+        if 'pblum' in param:
+            A[:,k] = 1
+            continue
+        b[param] = orig_values[k] + steps[k]/2
+        b.run_compute(irrad_method='none', model='upper', overwrite=True)
+        b[param] = orig_values[k] - steps[k]/2
+        b.run_compute(irrad_method='none', model='lower', overwrite=True)
+        b[param] = orig_values[k]
+
+        A[:,k] = (b['value@fluxes@upper']-b['value@fluxes@lower'])/steps[k]
+
+    return np.linalg.lstsq(V@A, V@xi, rcond=None)
+
+
+# In[18]:
+
+
+b['teff@secondary'] = 5880
+b['fit_parameters@nms'] = ['teff@secondary', 'pblum@primary@mock', 'requiv@primary', 'requiv@secondary']
+steps = [50, 0.01, 0.05, 0.05]
+corrections = run_dc(steps)
+
+
+# In[19]:
+
+
+corrections
+
+
+# In[48]:
+
+
+b['teff@primary']
 
 
 # In[ ]:
