@@ -57,12 +57,12 @@ sigmas = np.ones_like(times)*0.01
 b.add_dataset('lc', passband='Johnson:V', times=times, fluxes=fluxes, sigmas=sigmas, dataset='mock')
 
 
-# We no longer need the original dataset so we will disable it:
+# We no longer need the original dataset so we will remove it:
 
 # In[6]:
 
 
-b.disable_dataset('ideal_lc')
+b.remove_dataset('ideal_lc')
 
 
 # We now make sure that everything is up to snuff and looks good:
@@ -82,52 +82,12 @@ b.plot(show=True)
 b.calculate_chi2()
 
 
-# This is the chi2 value that the minimizer should gravitate to. Typically, the Nelder & Mead optimizer is favored because it is globally convergent as it depends only on function evaluations, but this pro comes at a cost of prolonged computation time. Instead, we will use the _locally_ convergent differential corrections (DC) algorithm instead. Here's a quick 'n dirty implementation of it:
+# This is the chi2 value that the minimizer should gravitate to. Typically, the Nelder & Mead optimizer is favored because it is globally convergent as it depends only on function evaluations, but this pro comes at a cost of prolonged computation time. Instead, we will use the _locally_ convergent differential corrections (DC) algorithm instead.
 
 # In[9]:
 
 
-def run_dc(adjusts, steps, deriv_method='sym'):
-    obs = b['value@fluxes@mock@dataset']
-    sigs = b['value@sigmas@mock@dataset']
-    fit_params = adjusts
-    orig_values = [b[f'value@{param}'] for param in fit_params]
-
-    A = np.empty(shape=(len(obs), len(fit_params)))
-    V = np.diag(1/sigs)
-
-    b.run_compute(irrad_method='none', model='baseline', overwrite=True, progressbar=False)
-    xi = obs-b['value@fluxes@baseline@model']
-
-    for k, param in enumerate(fit_params):
-        # analytical derivatives:
-        if 'pblum' in param:
-            A[:,k] = 1
-            continue
-        # numerical derivatives:
-        if deriv_method == 'asym':
-            b[param] = orig_values[k] + steps[k]
-            b.run_compute(irrad_method='none', model='upper', overwrite=True, progressbar=False)
-        elif deriv_method == 'sym':
-            b[param] = orig_values[k] + steps[k]/2
-            b.run_compute(irrad_method='none', model='upper', overwrite=True, progressbar=False)
-            b[param] = orig_values[k] - steps[k]/2
-            b.run_compute(irrad_method='none', model='lower', overwrite=True, progressbar=False)
-        else:
-            raise ValueError(f"deriv_method='{deriv_method}' is not recognized ('sym' or 'asym' supported).")
-
-        b[param] = orig_values[k]
-
-        if deriv_method == 'asym':
-            A[:,k] = (b['value@fluxes@upper']-b['value@fluxes@baseline@model'])/steps[k]
-        else:
-            A[:,k] = (b['value@fluxes@upper']-b['value@fluxes@lower'])/steps[k]
-
-    return np.linalg.lstsq(V@A, V@xi, rcond=None)
-
-def adopt_dc(params, corrections):
-    for param, correction in zip(params, corrections):
-        b[param] = b[f'value@{param}'] + correction
+b.add_solver('optimizer.differential_corrections', solver='dc')
 
 
 # In a nutshell, DC minimizes the residuals between the data and the model by evaluating numerical derivatives of the residuals w.r.t. each adjusted parameter. By doing that, it finds the corrections for each adjusted parameter that reduce the overall residuals. In order for DC to work well, the starting point needs to be close to the optimum, steps for numerical derivation need to be chosen reasonably well, and data noise needs to be normally distributed, homoskedastic and uncorrelated. Even a casual reader will have noticed the use of "close" and "reasonably well" that are largely meaningless -- both depend on many aspects of data fitting: from dynamical space spun by the parameters to data noise and adjusted parameter correlations. Trial and error is the only fool-proof way of attributing the quantitative meaning to "close" and "reasonably well".
@@ -140,47 +100,76 @@ def adopt_dc(params, corrections):
 print(f"original T2: {b['value@teff@secondary']}")
 b['teff@secondary'] = 5880
 print(f"modified T2: {b['value@teff@secondary']}")
-adjusts = ['teff@secondary']
-steps = [50]
-for iter in range(1, 4):
-    corrections = run_dc(adjusts, steps, deriv_method='asym')
-    adopt_dc(adjusts, corrections[0])
-    print(f"adjusted T2: {b['value@teff@secondary']} (it {iter})")
+b['fit_parameters@dc'] = 'teff@secondary'
+b['steps@dc@solver'] = {
+    'teff@secondary': 50
+}
+
+b.run_solver(solver='dc', solution='dcsol', progressbar=False, overwrite=True)
+print(f"adjusted T2: {b['value@fitted_values@dcsol'][0]}")
 
 
-# Next, let's try to vary more parameters than just the one we displaced; the obvious choices are passband luminosity (to account for flux scaling) and equivalent radii:
+# Unlike other optimizers, DC steps one iteration of the time. We can run another couple of iterations to get to a converged solution:
 
 # In[11]:
+
+
+b.adopt_solution('dcsol')
+
+for iter in range(2, 4):
+    b.run_solver(solver='dc', solution='dcsol', progressbar=False, overwrite=True)
+    print(f"adjusted T2: {b['value@fitted_values@dcsol'][0]} (iter {iter})")
+    b.adopt_solution(solution='dcsol')
+
+
+# Next, let's try to vary more parameters than just the one we displaced; the obvious choices are passband luminosity (to account for flux scaling) and equivalent radii. We will also leave steps at their defaults, which is 1% of the parameter value.
+
+# In[12]:
 
 
 print(f"original T2: {b['value@teff@secondary']}")
 b['teff@secondary'] = 5880
 print(f"modified T2: {b['value@teff@secondary']}")
-adjusts = ['teff@secondary', 'pblum@primary@mock', 'requiv@primary', 'requiv@secondary']
-steps = [50, 0.01, 0.05, 0.05]
+b['fit_parameters@dc'] = ['teff@secondary', 'pblum@primary@mock', 'requiv@primary', 'requiv@secondary']
+
 for iter in range(1, 4):
-    corrections = run_dc(adjusts, steps, deriv_method='asym')
-    adopt_dc(adjusts, corrections[0])
-    print(f"adjusted T2: {b['value@teff@secondary']} (it {iter})")
+    b.run_solver('dc', solution='dcsol', progressbar=False, overwrite=True)
+    print(f"adjusted T2: {b['value@fitted_values@dcsol'][0]} (it {iter})")
+    b.adopt_solution('dcsol')
+
+
+# In[13]:
+
+
+print(b['dcsol'])
 
 
 # So far this looks quite reasonable; now let's add the primary temperature to the mix, and increase the number of iterations. Let's also track the chi2 value for each iteration:
 
-# In[12]:
+# In[14]:
 
 
-adjusts = ['teff@primary', 'teff@secondary', 'pblum@primary@mock']
-steps = [50, 50, 0.05]
+b['fit_parameters@dc'] = ['teff@primary', 'teff@secondary', 'pblum@primary@mock']
+b['steps@dc@solver'] = {
+    'teff@primary': 50,
+    'teff@secondary': 50,
+    'pblum@primary@mock': 0.05
+}
 
-for i in range(10):
-    corrections = run_dc(adjusts, steps, deriv_method='asym')
-    print(f'iteration: {i+1:02d}, corrections: {corrections[0]}, chi2: {corrections[1][0]}')
-    adopt_dc(adjusts, corrections[0])
+for iter in range(1, 11):
+    b.run_solver('dc', solution='dcsol', progressbar=False, overwrite=True)
+    b.adopt_solution('dcsol')
+    print(f"iteration {iter:02d}: {b['value@fitted_values@dcsol']}, chi2={b['value@fitted_chi2@dcsol']}")
+
+# for i in range(10):
+#     b.run_solver('dc', solution='dcsol', progressbar=False, overwrite=True)
+#     print(f'iteration: {i+1:02d}, corrections: {corrections[0]}, chi2: {corrections[1][0]}')
+#     adopt_dc(adjusts, corrections[0])
 
 
 # Now _that_ looks surprising: both temperatures change by a few hundred K each iteration, yet chi2 does not move much; how is that possible? We should plot the lightcurve to see if chi-by-eye is equally good:
 
-# In[13]:
+# In[15]:
 
 
 b.run_compute(irrad_method='none', model='baseline', overwrite=True)
@@ -191,7 +180,7 @@ b['mock'].plot(show=True, legend=True)
 # 
 # Another significant degeneracy arises between stellar sizes (equivalent radii) and orbital inclination: a slightly larger star at a slightly lower inclination will have a lightcurve indistinguishable from a slightly smaller star at a slightly higher inclination. Let's take a closer look at that! First, reset parameter values:
 
-# In[14]:
+# In[16]:
 
 
 b['requiv@primary'] = 1.35
@@ -202,18 +191,22 @@ b['teff@secondary'] = 5680
 
 # Now we loop over nearby inclinations and adjust other relevant parameters:
 
-# In[15]:
+# In[19]:
 
 
-adjusts = ['requiv@primary', 'requiv@secondary', 'pblum@primary@mock']
-steps = [0.03, 0.03, 0.03]
+b['fit_parameters@dc'] = ['requiv@primary', 'requiv@secondary', 'pblum@primary@mock']
+b['steps@dc@solver'] = {
+    'requiv@primary':0.03,
+    'requiv@secondary': 0.03,
+    'pblum@primary@mock': 0.03
+}
 req1s, req2s = [], []
 
 for incl in np.linspace(81.5, 85.5, 9):
     for iter in range(1, 4):
-        corrections = run_dc(adjusts, steps, deriv_method='asym')
-        adopt_dc(adjusts, corrections[0])
-        print(f'incl: {incl:4.1f}, corrections: {corrections[0]}, chi2: {corrections[1][0]} (it {iter})')
+        b.run_solver('dc', solution='dcsol', progressbar=False, overwrite=True)
+        b.adopt_solution(solution='dcsol')
+        print(f"incl: {incl:4.1f}, solution: {b['value@fitted_values@dcsol']}, chi2: {b['value@fitted_chi2@dcsol']} (it {iter})")
         if iter == 3:
             req1s.append(b['value@requiv@primary'])
             req2s.append(b['value@requiv@secondary'])
@@ -221,12 +214,12 @@ for incl in np.linspace(81.5, 85.5, 9):
 
 # The mere fact that all these chi2 values are in the same ballpark is already alarming and it should help you appreciate that formal errors computed from the covariance matrix (which we deliberately omit from this tutorial because they are largely meaningless) are grossly underestimated. On the flip side, we will show you how to sample the parameter space heuristically and obtain more realistic error estimates. For now, let us see how the equivalent radii correlate with inclination:
 
-# In[16]:
+# In[22]:
 
 
 plt.xlabel('Inclination')
 plt.ylabel('R2/R1')
-plt.plot(np.linspace(81.5, 85.5, 9), req2s, 'bo')
+plt.plot(np.linspace(81.5, 85.5, 9), np.array(req2s)/np.array(req1s), 'bo')
 
 
 # This tutorial only scratched the surface of a very complicated issue. Chances are that, provided you stay in the field, _everything_ you do over the course of your career will be plagued by degeneracy.
