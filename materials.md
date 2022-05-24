@@ -104,7 +104,7 @@ Session Chair: **XXXXX**
 * [Talk: Inverse Problem in PHOEBE](https://docs.google.com/presentation/d/e/2PACX-1vT_GwcoD_0Tz-5V1dEolYYFCMp2qxrfKqfySOCI9QU3rpMuR7ANGY_rDiLRZbXnrvTN57x6qndroC0Z/pub?start=false&loop=false&delayms=3000) (Andrej ***revisit chi2 definition***)
 * [Tutorial: Detrending](./Tutorial_14_detrending.ipynb) (Andrej)
 * [Tutorial: Estimators](./Tutorial_08a_estimators.ipynb) (Angela)
-* [Tutorial: Degeneracies](./Tutorial_degeneracy.ipynb) ***(Andrej -- WIP!)***
+* [Tutorial: Degeneracies](./Tutorial_degeneracy.ipynb) (Andrej)
 * [Exercises: Estimators](./Exercises_04_estimators.ipynb) (Angela)
 
 
