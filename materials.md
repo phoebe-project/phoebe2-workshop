@@ -44,9 +44,9 @@ Please test your installation well in advance of the workshop by running the [te
 Session Chair: **XXXXX**
 
 * [Welcome & Introduction](https://docs.google.com/presentation/d/e/2PACX-1vRMXSVmy3BlJDXqQnmC_PPvuO-kQ1-NAPWEz-gk5laHL0w7kSC75EcXInDY6ZHMPsTJopfPCAfX5z-g/pub?start=false&loop=false&delayms=3000) ***(XXXX - needs updating)***
-* [Talk: PHOEBE Overview - wdgui to PHOEBE](https://docs.google.com/presentation/d/e/2PACX-1vTcg5sbS9wdqg5b5g1fwe_VoyMG1THPX6mQx4VDbvZOUfKMS6FAd8pYcBl0HeyN5prpDzi54nNZfVB7/pub?start=false&loop=false&delayms=3000) ***(XXXX - needs updating)***
-* [Talk: Introduction to PHOEBE 2: why so complicated?](https://docs.google.com/presentation/d/e/2PACX-1vQJKn6aqRFU6eJ34TZRJqllb7fOm6f-vaiBnXMkdaqV2MNGtjCSLM_iVDEP49naPiWH36yjbq1ugbLj/pub?start=false&loop=false&delayms=3000) ***(XXXX - needs updating)***
-* [Tutorial: General Concepts & Bundle Basics](./Tutorial_01_bundle_basics.ipynb) ***(XXXX - needs updating)***
+* [Talk: PHOEBE Overview - wdgui to PHOEBE](https://docs.google.com/presentation/d/e/2PACX-1vTcg5sbS9wdqg5b5g1fwe_VoyMG1THPX6mQx4VDbvZOUfKMS6FAd8pYcBl0HeyN5prpDzi54nNZfVB7/pub?start=false&loop=false&delayms=3000) ***(Andrej - needs updating)***
+* [Talk: Introduction to PHOEBE 2: why so complicated?](https://docs.google.com/presentation/d/e/2PACX-1vQJKn6aqRFU6eJ34TZRJqllb7fOm6f-vaiBnXMkdaqV2MNGtjCSLM_iVDEP49naPiWH36yjbq1ugbLj/pub?start=false&loop=false&delayms=3000) ***(Kyle - needs updating)***
+* [Tutorial: General Concepts & Bundle Basics](./Tutorial_01_bundle_basics.ipynb) ***(Andrej - needs updating)***
 * [Tutorial: Constraints](./Tutorial_02_constraints.ipynb) ***(XXXX - needs updating)***
 * [Exercises: Building Systems](./Exercises_01_building_systems.ipynb) ***(XXXX - needs updating)***
 
@@ -56,9 +56,9 @@ Session Chair: **XXXXX**
 Session Chair: **XXXXX**
 
 * [Talk: Atmospheres, Limb Darkening, Intensity Weighting, Extinction, and Reflection](https://docs.google.com/presentation/d/e/2PACX-1vTX__cTcowjUGuJ18jYY85tWX9VjjYEu7ISEkLgMMFKSFUNNFPHRreGW_LaUjSsQF62-M5od-J37LAu/pub?start=false&loop=false&delayms=3000) (Dave)
-* [Tutorial: Datasets](./Tutorial_03_datasets.ipynb) ***(XXXX - needs updating)***
+* [Tutorial: Datasets](./Tutorial_03_datasets.ipynb) ***(Andrej - needs updating)***
 * [Tutorial: Compute](./Tutorial_04_compute.ipynb) ***(XXXX - needs updating)***
-* [Tutorial: Time and Phase](./Tutorial_04b_time_and_phase.ipynb) ***(XXXX - needs updating)***
+* [Tutorial: Time and Phase](./Tutorial_04b_time_and_phase.ipynb) ***(Andrej - needs updating)***
 * [Tutorial: Plotting](./Tutorial_05_plotting.ipynb) ***(XXXX - needs updating)***
 * [Exercises: Creating Forward Models](./Exercises_02_forward_models.ipynb) ***(XXXX - needs updating)***
 
@@ -72,9 +72,9 @@ Session Chair: **XXXXX**
 * Talk: Scientific Introduction to PHOEBE (Andrej)
 * [Tutorial: Animations](./Tutorial_05b_animations.ipynb) ***(XXXX - needs updating)***
 * [Tutorial: Accessing and Plotting Meshes](./Tutorial_05c_meshes.ipynb) ***(XXXX - needs updating)***
-* [Tutorial: Flux Scaling (Passband Luminosity, Third Light, and Distance)](./Tutorial_pblum_l3_distance.ipynb) ***(XXXX - needs updating)***
+* [Tutorial: Flux Scaling (Passband Luminosity, Third Light, and Distance)](./Tutorial_pblum_l3_distance.ipynb) ***(Andrej - needs updating)***
 * [Tutorial: Features (Spots & Gaussian Processes)](./Tutorial_06_features.ipynb) ***(XXXX - needs updating)***
-* [Tutorial: Optimizing PHOEBE Computations](./Tutorial_optimizing_computations.ipynb) ***(XXXX - needs updating)***
+* [Tutorial: Optimizing PHOEBE Computations](./Tutorial_optimizing_computations.ipynb) ***(Andrej - needs updating)***
 * [Exercises: Forward Model Animations](./Exercises_03_animations.ipynb) ***(XXXX - needs updating)***
 
 
@@ -88,9 +88,9 @@ Session Chair: **XXXXX**
 Session Chair: **XXXXX**
 
 * Group Photo/Screenshot
-* [Talk: In Development - Pulsations](https://docs.google.com/presentation/d/e/2PACX-1vTY9f-XjDgw5knxFRDKpwNzNp8OMFMsH0nC9zYN1_TBxndnFuRSoKejpuDK34JJ_b0wrkfTlu5hy1Ki/pub?start=false&loop=false&delayms=3000) ***(XXXX - needs updating)***
-* [Talk: Line Profiles with PHOEBE and SPAMMS](https://docs.google.com/presentation/d/e/2PACX-1vRT4EwgIf7ocn8JJFyULGhaVJvi7c4zZT36ttaXJ8qN4krQ7uaX1QMUmlTpMcyBo_GhNRIVjlzHmAIM/pub?start=false&loop=false&delayms=3000) ***(XXXX - needs updating)***
-* [Talk: In Development - Blended Atmosphere Tables](https://docs.google.com/presentation/d/e/2PACX-1vStqWOOdGpaQcGbvKVU3uwPxfc70Dr1K_w3dHSas7dv3s48ZeBkWI4gjd0pqffJDc5Gjk9Z1CrCojY2/pub?start=false&loop=false&delayms=3000) ***(XXXX - needs updating)***
+* [Talk: In Development - Pulsations](https://docs.google.com/presentation/d/e/2PACX-1vTY9f-XjDgw5knxFRDKpwNzNp8OMFMsH0nC9zYN1_TBxndnFuRSoKejpuDK34JJ_b0wrkfTlu5hy1Ki/pub?start=false&loop=false&delayms=3000) ***(Andrej - needs updating)***
+* [Talk: Line Profiles with PHOEBE and SPAMMS](https://docs.google.com/presentation/d/e/2PACX-1vRT4EwgIf7ocn8JJFyULGhaVJvi7c4zZT36ttaXJ8qN4krQ7uaX1QMUmlTpMcyBo_GhNRIVjlzHmAIM/pub?start=false&loop=false&delayms=3000) ***(Michael - needs updating)***
+* [Talk: In Development - Blended Atmosphere Tables](https://docs.google.com/presentation/d/e/2PACX-1vStqWOOdGpaQcGbvKVU3uwPxfc70Dr1K_w3dHSas7dv3s48ZeBkWI4gjd0pqffJDc5Gjk9Z1CrCojY2/pub?start=false&loop=false&delayms=3000) ***(Andrej - needs updating)***
 * Wrap Up: volunteer wrap-up contributions and discussion
 * Exercises: finish or continue any of the previous exercises.
 
