@@ -47,7 +47,7 @@ plt.figure(figsize=(16,6))
 _ = plt.errorbar(d[:,0], d[:,1], yerr=d[:,2], fmt='b.')
 
 
-# Now comes the crux of MCMC: the log-likelihood function. This function informs MCMC how consistent the parameters at hand are with the data. We will talk about some of the considerations later on, but right now let us assume the simplest possible case where are modeling function is perfect and our noise is white. In that case, the measure of the likelihood is a simple gaussian:
+# Now comes the crux of MCMC: the log-likelihood function. This function informs MCMC how consistent the parameters at hand are with the data. We will talk about some of the considerations later on, but right now let us assume the simplest possible case where our modeling function is perfect and our noise is white. In that case, the measure of the likelihood is a simple gaussian:
 # 
 # $$ p(\mathcal{D}|\mathbf{r}) = \exp \left( -\frac 12 \sum_k \frac{[y_k - y(x_k; \mathbf{r})]^2}{\sigma_k^2} \right), $$
 # 
