@@ -14,7 +14,7 @@ During the workshop, we will be using the recently-released 2.4 version of PHOEB
 ```
 pip install numpy
 pip install phoebe
-pip install emcee
+pip install emcee scikit-learn celerite2
 ```
 
 Note that PHOEBE only supports Python 3.6+, so you may need to replace `pip` with `pip3` or even `python3 -m pip` depending on your system.
@@ -41,56 +41,49 @@ Please test your installation well in advance of the workshop by running the [te
 
 ### Monday June 20: Overview and Building Systems in PHOEBE
 
-Session Chair: **XXXXX**
-
-* [Welcome & Introduction](https://docs.google.com/presentation/d/e/2PACX-1vRMXSVmy3BlJDXqQnmC_PPvuO-kQ1-NAPWEz-gk5laHL0w7kSC75EcXInDY6ZHMPsTJopfPCAfX5z-g/pub?start=false&loop=false&delayms=3000) ***(XXXX - needs updating)***
-* [Talk: PHOEBE Overview - wdgui to PHOEBE](https://docs.google.com/presentation/d/e/2PACX-1vTcg5sbS9wdqg5b5g1fwe_VoyMG1THPX6mQx4VDbvZOUfKMS6FAd8pYcBl0HeyN5prpDzi54nNZfVB7/pub?start=false&loop=false&delayms=3000) ***(Andrej - needs updating)***
-* [Talk: Introduction to PHOEBE 2: why so complicated?](https://docs.google.com/presentation/d/e/2PACX-1vQJKn6aqRFU6eJ34TZRJqllb7fOm6f-vaiBnXMkdaqV2MNGtjCSLM_iVDEP49naPiWH36yjbq1ugbLj/pub?start=false&loop=false&delayms=3000) ***(Kyle - needs updating)***
-* [Tutorial: General Concepts & Bundle Basics](./Tutorial_01_bundle_basics.ipynb) ***(Andrej - needs updating)***
-* [Tutorial: Constraints](./Tutorial_02_constraints.ipynb) ***(XXXX - needs updating)***
-* [Exercises: Building Systems](./Exercises_01_building_systems.ipynb) ***(XXXX - needs updating)***
+* [Welcome & Introduction](https://docs.google.com/presentation/d/e/2PACX-1vRMXSVmy3BlJDXqQnmC_PPvuO-kQ1-NAPWEz-gk5laHL0w7kSC75EcXInDY6ZHMPsTJopfPCAfX5z-g/pub?start=false&loop=false&delayms=3000) (Kelly)
+* [Talk: PHOEBE Overview - wdgui to PHOEBE](https://docs.google.com/presentation/d/e/2PACX-1vTcg5sbS9wdqg5b5g1fwe_VoyMG1THPX6mQx4VDbvZOUfKMS6FAd8pYcBl0HeyN5prpDzi54nNZfVB7/pub?start=false&loop=false&delayms=3000) (Andrej)
+* [Talk: Introduction to PHOEBE 2: why so complicated?](https://docs.google.com/presentation/d/e/2PACX-1vQJKn6aqRFU6eJ34TZRJqllb7fOm6f-vaiBnXMkdaqV2MNGtjCSLM_iVDEP49naPiWH36yjbq1ugbLj/pub?start=false&loop=false&delayms=3000) (Kyle)
+* [Tutorial: General Concepts & Bundle Basics](./Tutorial_01_bundle_basics.ipynb) (Andrej)
+* [Tutorial: Constraints](./Tutorial_02_constraints.ipynb)
+* [Exercises: Building Systems](./Exercises_01_building_systems.ipynb)
 
 
 ### Tuesday June 21: Creating Forward Models
 
-Session Chair: **XXXXX**
-
 * [Talk: Atmospheres, Limb Darkening, Intensity Weighting, Extinction, and Reflection](https://docs.google.com/presentation/d/e/2PACX-1vTX__cTcowjUGuJ18jYY85tWX9VjjYEu7ISEkLgMMFKSFUNNFPHRreGW_LaUjSsQF62-M5od-J37LAu/pub?start=false&loop=false&delayms=3000) (Dave)
-* [Tutorial: Datasets](./Tutorial_03_datasets.ipynb) ***(Andrej - needs updating)***
-* [Tutorial: Compute](./Tutorial_04_compute.ipynb) ***(XXXX - needs updating)***
-* [Tutorial: Time and Phase](./Tutorial_04b_time_and_phase.ipynb) ***(Andrej - needs updating)***
-* [Tutorial: Plotting](./Tutorial_05_plotting.ipynb) ***(XXXX - needs updating)***
-* [Exercises: Creating Forward Models](./Exercises_02_forward_models.ipynb) ***(XXXX - needs updating)***
+* [Tutorial: Datasets](./Tutorial_03_datasets.ipynb) (Andrej)
+* [Tutorial: Compute](./Tutorial_04_compute.ipynb)
+* [Tutorial: Time and Phase](./Tutorial_04b_time_and_phase.ipynb) (Andrej)
+* [Tutorial: Plotting](./Tutorial_05_plotting.ipynb)
+* [Exercises: Creating Forward Models](./Exercises_02_forward_models.ipynb)
 
 
 ### Wednesday June 22: Advanced Physics & Features
 
-* [Optional Breakout Session: Contact Binaries](./Tutorial_Semidetached_Contact.ipynb) (Angela - **needs updating**)
-
-Session Chair: **XXXXX**
+[Optional Breakout Session: Contact Binaries](./Tutorial_Semidetached_Contact.ipynb) (Angela)
 
 * Talk: Scientific Introduction to PHOEBE (Andrej)
-* [Tutorial: Animations](./Tutorial_05b_animations.ipynb) ***(XXXX - needs updating)***
-* [Tutorial: Accessing and Plotting Meshes](./Tutorial_05c_meshes.ipynb) ***(XXXX - needs updating)***
-* [Tutorial: Flux Scaling (Passband Luminosity, Third Light, and Distance)](./Tutorial_pblum_l3_distance.ipynb) ***(Andrej - needs updating)***
-* [Tutorial: Features (Spots & Gaussian Processes)](./Tutorial_06_features.ipynb) ***(XXXX - needs updating)***
-* [Tutorial: Optimizing PHOEBE Computations](./Tutorial_optimizing_computations.ipynb) ***(Andrej - needs updating)***
-* [Exercises: Forward Model Animations](./Exercises_03_animations.ipynb) ***(XXXX - needs updating)***
+* [Tutorial: Animations](./Tutorial_05b_animations.ipynb)
+* [Tutorial: Accessing and Plotting Meshes](./Tutorial_05c_meshes.ipynb)
+* [Tutorial: Flux Scaling (Passband Luminosity, Third Light, and Distance)](./Tutorial_pblum_l3_distance.ipynb) (Andrej)
+* [Tutorial: Features (Spots & Gaussian Processes)](./Tutorial_06_features.ipynb)
+* [Tutorial: Optimizing PHOEBE Computations](./Tutorial_optimizing_computations.ipynb) (Andrej)
+* [Exercises: Forward Model Animations](./Exercises_03_animations.ipynb)
 
 
 
-### Thursday June 23: Introduction to Fitting
+### Thursday June 23: Hack Day
 
-Session Chair: **XXXXX**
+* Exercises
 
 ### Friday June 24: PHOEBE Development & Upcoming Releases
 
-Session Chair: **XXXXX**
 
 * Group Photo/Screenshot
-* [Talk: In Development - Pulsations](https://docs.google.com/presentation/d/e/2PACX-1vTY9f-XjDgw5knxFRDKpwNzNp8OMFMsH0nC9zYN1_TBxndnFuRSoKejpuDK34JJ_b0wrkfTlu5hy1Ki/pub?start=false&loop=false&delayms=3000) ***(Andrej - needs updating)***
-* [Talk: Line Profiles with PHOEBE and SPAMMS](https://docs.google.com/presentation/d/e/2PACX-1vRT4EwgIf7ocn8JJFyULGhaVJvi7c4zZT36ttaXJ8qN4krQ7uaX1QMUmlTpMcyBo_GhNRIVjlzHmAIM/pub?start=false&loop=false&delayms=3000) ***(Michael - needs updating)***
-* [Talk: In Development - Blended Atmosphere Tables](https://docs.google.com/presentation/d/e/2PACX-1vStqWOOdGpaQcGbvKVU3uwPxfc70Dr1K_w3dHSas7dv3s48ZeBkWI4gjd0pqffJDc5Gjk9Z1CrCojY2/pub?start=false&loop=false&delayms=3000) ***(Andrej - needs updating)***
+* [Talk: In Development - Pulsations](https://docs.google.com/presentation/d/e/2PACX-1vTY9f-XjDgw5knxFRDKpwNzNp8OMFMsH0nC9zYN1_TBxndnFuRSoKejpuDK34JJ_b0wrkfTlu5hy1Ki/pub?start=false&loop=false&delayms=3000) (Andrej)
+* [Talk: Line Profiles with PHOEBE and SPAMMS](https://docs.google.com/presentation/d/e/2PACX-1vRT4EwgIf7ocn8JJFyULGhaVJvi7c4zZT36ttaXJ8qN4krQ7uaX1QMUmlTpMcyBo_GhNRIVjlzHmAIM/pub?start=false&loop=false&delayms=3000) (Michael)
+* [Talk: In Development - Blended Atmosphere Tables](https://docs.google.com/presentation/d/e/2PACX-1vStqWOOdGpaQcGbvKVU3uwPxfc70Dr1K_w3dHSas7dv3s48ZeBkWI4gjd0pqffJDc5Gjk9Z1CrCojY2/pub?start=false&loop=false&delayms=3000) (Andrej)
 * Wrap Up: volunteer wrap-up contributions and discussion
 * Exercises: finish or continue any of the previous exercises.
 
@@ -98,9 +91,7 @@ Session Chair: **XXXXX**
 
 ### Tuesday June 28: Inverse Problem Overview 
 
-Session Chair: **XXXXX**
-
-* [Talk: Introduction to the Inverse Problem](https://docs.google.com/presentation/d/e/2PACX-1vR-fRxNcn5PEMQ6Rvq5dEHALVIDs62OqGDDaWr2liCNMrtcP-h6u4WztVxUhGoGvKQTh9DXyN9xXLYh/pub?start=false&loop=false&delayms=3000) (Angela - ***update section on EBAI and examples with paper testcase***)
+* [Talk: Introduction to the Inverse Problem](https://docs.google.com/presentation/d/e/2PACX-1vR-fRxNcn5PEMQ6Rvq5dEHALVIDs62OqGDDaWr2liCNMrtcP-h6u4WztVxUhGoGvKQTh9DXyN9xXLYh/pub?start=false&loop=false&delayms=3000) (Angela)
 * [Talk: Inverse Problem in PHOEBE](https://docs.google.com/presentation/d/e/2PACX-1vT_GwcoD_0Tz-5V1dEolYYFCMp2qxrfKqfySOCI9QU3rpMuR7ANGY_rDiLRZbXnrvTN57x6qndroC0Z/pub?start=false&loop=false&delayms=3000) (Andrej)
 * [Tutorial: Detrending](./Tutorial_14_detrending.ipynb) (Andrej)
 * [Tutorial: Estimators](./Tutorial_08a_estimators.ipynb) (Angela)
@@ -110,8 +101,6 @@ Session Chair: **XXXXX**
 
 ### Tuesday July 5: Optimizers
 
-Session Chair: **XXXXX**
-
 * [Tutorial: Optimizers](./Tutorial_08b_optimizers.ipynb) (Andrej)
 * [Tutorial: Running Jobs on External Compute Resources](./Tutorial_09_server.ipynb) (Andrej)
 * [Tutorial: Distributions & Priors](./Tutorial_07_distributions.ipynb) (Kyle)
@@ -120,21 +109,17 @@ Session Chair: **XXXXX**
 
 ### Tuesday July 12: MCMC in PHOEBE
 
-Session Chair: **XXXXX**
-
-* [Tutoritalk: MCMC Introduction](./mcmc_generic.ipynb) ***(XXXX - needs updating)***
+* [Tutoritalk: MCMC Introduction](./mcmc_generic.ipynb)
 * [Tutorial: MCMC Basics in PHOEBE](./Tutorial_10_mcmc.ipynb) (Andrej)
 * [Tutorial: Continuing/Resampling in MCMC](./Tutorial_11_mcmc_continued.ipynb) (Andrej)
 * [Exercises: Setting up an MCMC Run](./Exercises_06_mcmc.ipynb) (Andrej)
 
 ### Tuesday July 19: Advanced MCMC
 
-* [Optional Breakout Session: Fitting Contact Binaries](https://docs.google.com/presentation/d/e/2PACX-1vRrcYeotz37WyqXCmBQqwqH7dkHBUi-D6SMvAiZketoqlkGCmZ7vWhPgD46dx_pl_SCs3nPrNB4bOgV/pub?start=false&loop=false&delayms=3000) ***(Angela - needs updating)***
-
-Session Chair: **XXXXX**
+[Optional Breakout Session: Fitting Contact Binaries](https://docs.google.com/presentation/d/e/2PACX-1vRrcYeotz37WyqXCmBQqwqH7dkHBUi-D6SMvAiZketoqlkGCmZ7vWhPgD46dx_pl_SCs3nPrNB4bOgV/pub?start=false&loop=false&delayms=3000) (Angela)
 
 
-* [Tutorial: Interpreting Chains and Convergence in MCMC](./Tutorial_12_convergence.ipynb) ***(XXXX - needs updating)***
+* [Tutorial: Interpreting Chains and Convergence in MCMC](./Tutorial_12_convergence.ipynb) (Andrej)
 * [Tutorial: Posteriors and Parameter Uncertainties](./Tutorial_13_posteriors.ipynb) (Angela)
 * [Tutorial: Choice of Parameterization](./Tutorial_parametrization.ipynb) (Angela)
 * [Tutorial: Marginalizing over Additional Parameters](./Tutorial_marginalization.ipynb) (Angela)
@@ -143,10 +128,9 @@ Session Chair: **XXXXX**
 
 ### Tuesday July 26: Gaussian Processes
 
-Session Chair: **XXXXX**
 
-* ***GAUSSIAN PROCESSES TUTORIALS/TALKS***
+* [Tutorial: Gaussian Processes](./Tutorial_Gaussian_Processes.ipynb) (Angela)
 * Group Photo/Screenshot
-* [Tutorial: Running on OTHER Compute Resources](./Tutorial_server_other.ipynb) ***(XXXX - needs updating)***
-* [Talk: Common Pitfalls when Fitting](https://docs.google.com/presentation/d/e/2PACX-1vTI2tTM7K307S8KRn_agtd_4IoXfwgA2_e4yfH47UzlwEdn0sl59tKSibZxHlfgbF43KPfWCgxgA1Fx/pub?start=false&loop=false&delayms=3000) ***(XXXX - needs updating)***
+* [Tutorial: Running on OTHER Compute Resources](./Tutorial_server_other.ipynb) (Kyle)
+* [Talk: Common Pitfalls when Fitting](https://docs.google.com/presentation/d/e/2PACX-1vTI2tTM7K307S8KRn_agtd_4IoXfwgA2_e4yfH47UzlwEdn0sl59tKSibZxHlfgbF43KPfWCgxgA1Fx/pub?start=false&loop=false&delayms=3000)
 * Wrap Up: volunteer wrap-up contributions and discussion
