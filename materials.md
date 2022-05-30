@@ -33,7 +33,6 @@ If you have any troubles before the meeting, please reach out to us for assistan
 
 ### Testing Your Installation
 
-**[TEST SCRIPT NEEDS UPDATING]**
 
 Please test your installation well in advance of the workshop by running the [test script](https://raw.githubusercontent.com/phoebe-project/phoebe2-workshop/2022june/test_install.py) (should take 10-60 seconds to run) and make sure it completes without any errors (warning messages are not a cause for concern).  If the script does not run successfully, please reach out to us so we can debug any installation issues in advance.
 

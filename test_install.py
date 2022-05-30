@@ -1,14 +1,18 @@
 import phoebe
-# if phoebe.__version__ != '2.4.0':
-#     raise ImportError("PHOEBE version is not 2.4.0")
 import numpy as np
+import time
+from distutils.version import StrictVersion
+
+if StrictVersion(phoebe.__version__) < StrictVersion('2.4.0'):
+     raise ImportError("PHOEBE version is not 2.4.x")
+
+startTime = time.time()
+
+logger = phoebe.logger('error')
 b = phoebe.default_binary()
 b.set_value('incl@binary', 85)
 b.add_dataset('lc', compute_times=phoebe.linspace(0,1,101))
 b.run_compute()
-#b.add_compute('ellc')
-#b.set_value_all('ld_mode', 'lookup')
-#b.run_compute(kind='ellc')
 b.set_value('times@dataset', b.get_value('times@model'))
 b.set_value('fluxes@dataset', b.get_value('fluxes@model'))
 b.set_value('sigmas@dataset', np.ones_like(b.get_value('fluxes@model'))*0.01)
@@ -34,5 +38,8 @@ b.run_compute(model='with_sklearn_gp')
 b.disable_feature('gp_sklearn01')
 b.add_gaussian_process('celerite2')
 b.run_compute(model='with_celerite2_gp')
-#b.run_solver('emcee_solver', detach=True)
-#b.attach_job()
+
+
+executionTime = (time.time() - startTime)
+# should take ~60s
+print('Execution time in seconds: ' + str(executionTime))
