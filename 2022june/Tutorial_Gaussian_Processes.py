@@ -19,6 +19,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 import phoebe
+phoebe.interactive_checks_off()
 
 
 # Let's load the same TESS light curve used in the deterending tutorial and add it to a PHOEBE bundle. Here we'll use a downsampled version of the data, to speed up computations in PHOEBE.
@@ -45,10 +46,6 @@ b.plot(show=True)
 
 # In[4]:
 
-
-b.add_constraint('requivsumfrac')
-b.add_constraint('requivratio')
-b.add_constraint('teffratio')
 
 b.flip_constraint('requivsumfrac', solve_for='requiv@primary')
 b.flip_constraint('requivratio', solve_for='requiv@secondary')
@@ -179,9 +176,15 @@ b.add_gaussian_process('celerite2')
 print(b['gp_celerite201'])
 
 
+# In[18]:
+
+
+b.run_compute()
+
+
 # As of yet, PHOEBE only supports one GPs "backend" at a time, either sklearn or celerite2. The two can't be mixed, however you can mix different kernels from the same module. So, let's disable the sklearn GP feature before moving on to compute the celerite2 GPs.
 
-# In[18]:
+# In[19]:
 
 
 b.disable_feature('gp_sklearn01')
@@ -189,21 +192,21 @@ b.disable_feature('gp_sklearn01')
 
 # Let's run two models, similarly to what we did for the sklearn kernel: first without excluding the eclipses and then with setting the `exclude_phases` parameter to the eclipse edges returned from lc_geometry.
 
-# In[19]:
+# In[20]:
 
 
 b['gp_exclude_phases_enabled@lc01'] = False
 b.run_compute(model='gps_celerite2', overwrite=True)
 
 
-# In[20]:
+# In[21]:
 
 
 b['gp_exclude_phases_enabled@lc01'] = True
 b.run_compute(model='gps_celerite2_noeclipses')
 
 
-# In[21]:
+# In[22]:
 
 
 b.plot(['dataset', 'model'], model=['gps_celerite2', 'gps_celerite2_noeclipses'],
@@ -215,7 +218,7 @@ b.plot(['dataset', 'model'], model=['gps_celerite2', 'gps_celerite2_noeclipses']
 
 # This may look much better than the sklearn model on a first glance, but let's zoom in to see what *really* happens:
 
-# In[22]:
+# In[23]:
 
 
 b.plot(['dataset', 'model'], model=['gps_celerite2', 'gps_celerite2_noeclipses'],
@@ -233,7 +236,7 @@ b.plot(['dataset', 'model'], model=['gps_celerite2', 'gps_celerite2_noeclipses']
 
 # The situation is a little different when we're dealing with astrophysical noise. Let's see, for example, a case with tidally induced pulsations: KIC 3230227. This system has been discussed in great detail in [Guo et al. (2016)](https://ui.adsabs.harvard.edu/abs/2017ApJ...834...59G/abstract) and a working example of fitting the tidally induced pulsations with GPs is available in [this example](link).
 
-# In[23]:
+# In[24]:
 
 
 data = np.loadtxt('data/noise_examples/kic3230227.lc')[:3000]
@@ -241,7 +244,7 @@ data = np.loadtxt('data/noise_examples/kic3230227.lc')[:3000]
 
 # Let's load the data and set the period to its catalog values:
 
-# In[24]:
+# In[25]:
 
 
 b = phoebe.default_binary()
@@ -254,7 +257,7 @@ b.plot(x='phase', show=True)
 # 
 # Let's set some parameters that will help us reproduce the PHOEBE model as closely as possible (estimators won't cut it here!), which will allow us to focus more on the behavior of GPs:
 
-# In[25]:
+# In[26]:
 
 
 b.set_value('t0_supconj', value=54958.702238+0.3233*7.0471062)
@@ -275,7 +278,7 @@ b.set_value('teff@primary', 8000)
 b.set_value('teff@secondary', 8177)
 
 
-# In[26]:
+# In[27]:
 
 
 b.flip_constraint('compute_phases', solve_for='compute_times')
@@ -284,7 +287,7 @@ b.set_value_all('distortion_method', 'sphere')
 b.set_value_all('pblum_mode', 'dataset-scaled')
 
 
-# In[27]:
+# In[28]:
 
 
 b.run_compute()
@@ -299,7 +302,7 @@ b.plot(x='phase', show=True)
 
 # The one periodic kernel available in sklearn is ExpSineSquared, so we'll use a combination of two `exp_sine_squared` kernels in PHOEBE with the above mentioned periodicities:
 
-# In[28]:
+# In[29]:
 
 
 # setting the length scale to the same value as the periodicity helps prevent overfitting in periodic kernels (a good start, but not always ideal!)
@@ -307,13 +310,13 @@ b.add_gaussian_process('sklearn', kernel='exp_sine_squared', periodicity = b.get
 b.add_gaussian_process('sklearn', kernel='exp_sine_squared', periodicity = 1./1.969765, length_scale=1./1.969765)
 
 
-# In[29]:
+# In[30]:
 
 
 print(b['gp_sklearn01'])
 
 
-# In[30]:
+# In[31]:
 
 
 print(b['gp_sklearn02'])
@@ -321,7 +324,7 @@ print(b['gp_sklearn02'])
 
 # Let's also ensure that GPs are not trying to overcompansate for the PHOEBE model not fitting the eclipse (and periastron brightening) well:
 
-# In[31]:
+# In[32]:
 
 
 b['gp_exclude_phases@lc01'] = [[-0.4,-0.2]]
@@ -330,7 +333,7 @@ b.run_compute(model='gps_sklearn_model')
 
 # And the result (zoomed in so we can better see what GPs are doing):
 
-# In[32]:
+# In[33]:
 
 
 b.plot(model='gps_sklearn_model', x='times', xlim=(55004,55015), ylim=(0.9975,1.003), show=True)
@@ -338,20 +341,20 @@ b.plot(model='gps_sklearn_model', x='times', xlim=(55004,55015), ylim=(0.9975,1.
 
 # #### celerite2
 
-# In[33]:
+# In[34]:
 
 
 b.add_gaussian_process('celerite2', kernel='sho', sigma=2e-3, rho=7.0471062, Q=11/2)
 b.add_gaussian_process('celerite2', kernel='sho', sigma=2e-3, rho=1/1.969765, Q=11/2)
 
 
-# In[34]:
+# In[35]:
 
 
 print(b['gp_celerite201'])
 
 
-# In[35]:
+# In[36]:
 
 
 b.disable_feature('gp_sklearn01')
