@@ -45,7 +45,7 @@ Please test your installation well in advance of the workshop by running the [te
 * [Talk: PHOEBE Overview - wdgui to PHOEBE](https://docs.google.com/presentation/d/e/2PACX-1vTcg5sbS9wdqg5b5g1fwe_VoyMG1THPX6mQx4VDbvZOUfKMS6FAd8pYcBl0HeyN5prpDzi54nNZfVB7/pub?start=false&loop=false&delayms=3000) (Andrej)
 * [Talk: Introduction to PHOEBE 2: why so complicated?](https://docs.google.com/presentation/d/e/2PACX-1vQJKn6aqRFU6eJ34TZRJqllb7fOm6f-vaiBnXMkdaqV2MNGtjCSLM_iVDEP49naPiWH36yjbq1ugbLj/pub?start=false&loop=false&delayms=3000) (Kyle)
 * [Tutorial: General Concepts & Bundle Basics](./Tutorial_01_bundle_basics.ipynb) (Andrej)
-* [Tutorial: Constraints](./Tutorial_02_constraints.ipynb)
+* [Tutorial: Constraints](./Tutorial_02_constraints.ipynb) (Angela)
 * [Exercises: Building Systems](./Exercises_01_building_systems.ipynb)
 
 
@@ -53,9 +53,9 @@ Please test your installation well in advance of the workshop by running the [te
 
 * [Talk: Atmospheres, Limb Darkening, Intensity Weighting, Extinction, and Reflection](https://docs.google.com/presentation/d/e/2PACX-1vTX__cTcowjUGuJ18jYY85tWX9VjjYEu7ISEkLgMMFKSFUNNFPHRreGW_LaUjSsQF62-M5od-J37LAu/pub?start=false&loop=false&delayms=3000) (Dave)
 * [Tutorial: Datasets](./Tutorial_03_datasets.ipynb) (Andrej)
-* [Tutorial: Compute](./Tutorial_04_compute.ipynb)
+* [Tutorial: Compute](./Tutorial_04_compute.ipynb) (Angela)
 * [Tutorial: Time and Phase](./Tutorial_04b_time_and_phase.ipynb) (Andrej)
-* [Tutorial: Plotting](./Tutorial_05_plotting.ipynb)
+* [Tutorial: Plotting](./Tutorial_05_plotting.ipynb) (Angela)
 * [Exercises: Creating Forward Models](./Exercises_02_forward_models.ipynb)
 
 
@@ -64,10 +64,10 @@ Please test your installation well in advance of the workshop by running the [te
 [Optional Breakout Session: Contact Binaries](./Tutorial_Semidetached_Contact.ipynb) (Angela)
 
 * Talk: Scientific Introduction to PHOEBE (Andrej)
-* [Tutorial: Animations](./Tutorial_05b_animations.ipynb)
+* [Tutorial: Animations](./Tutorial_05b_animations.ipynb) (Angela)
 * [Tutorial: Accessing and Plotting Meshes](./Tutorial_05c_meshes.ipynb)
 * [Tutorial: Flux Scaling (Passband Luminosity, Third Light, and Distance)](./Tutorial_pblum_l3_distance.ipynb) (Andrej)
-* [Tutorial: Features (Spots & Gaussian Processes)](./Tutorial_06_features.ipynb)
+* [Tutorial: Features (Spots & Gaussian Processes)](./Tutorial_06_features.ipynb) (Angela)
 * [Tutorial: Optimizing PHOEBE Computations](./Tutorial_optimizing_computations.ipynb) (Andrej)
 * [Exercises: Forward Model Animations](./Exercises_03_animations.ipynb)
 
