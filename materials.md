@@ -9,7 +9,7 @@ The Jupyter notebooks (and talks) will all be linked below so that you can pull 
 
 ### Installing PHOEBE
 
-During the workshop, we will be using the recently-released 2.4 version of PHOEBE.  We'll also be using `emcee` for the second on-line component of the workshop (feel free to remove emcee below if you're only attending the first week).  The easiest way to install it is via pip (you're welcome to install within a virtual or conda environment if you'd like, just make sure you know how to activate that environment from within Jupyter):
+During the workshop, we will be using the recently-released 2.4 version of PHOEBE.  We'll also be using `emcee`, `scikit-learn`, and `celerite2` for the second on-line component of the workshop (feel free to skip the last line below if you're only attending the first week).  The easiest way to install is via pip (you're welcome to install within a virtual or conda environment if you'd like, just make sure you know how to activate that environment from within Jupyter):
 
 ```
 pip install numpy
@@ -19,9 +19,9 @@ pip install emcee scikit-learn celerite2
 
 Note that PHOEBE only supports Python 3.6+, so you may need to replace `pip` with `pip3` or even `python3 -m pip` depending on your system.
 
-If you're on a newer mac system and PHOEBE fails to build, you may need to first install a supported compiler.  The easiest way to do this is to install PHOEBE within a conda environment where you first install a compiler (`conda install clangxx_osx-64`).  See the [mac install instructions](http://phoebe-project.org/install/latest/mac/auto) for more details (and just swap out the `pip install phoebe` with the line above to install the workshop version).
+If you're on a newer mac system and PHOEBE fails to build, you may need to first install a supported compiler.  The easiest way to do this is to install PHOEBE within a conda environment where you first install a compiler (`conda install clangxx_osx-64`).  See the [mac install instructions](http://phoebe-project.org/install/latest/mac/auto) for more details.
 
-Similarly, if you are on a Linux system without `g++` or `python3-dev` installed by default, you may need to manually install a few dependencies.  See the [Linux install instructions for 2.3](http://phoebe-project.org/install/latest/linux/auto) and swap out the `pip install phoebe` with the line above to install the workshop version.
+Similarly, if you are on a Linux system without `g++` or `python3-dev` installed by default, you may need to manually install a few dependencies.  See the [Linux install instructions](http://phoebe-project.org/install/latest/linux/auto) for more details.
 
 You can check to make sure the correct version is installed in a Python console (or Jupyter if you plan to use that at the workshop):
 
@@ -34,7 +34,7 @@ If you have any troubles before the meeting, please reach out to us for assistan
 ### Testing Your Installation
 
 
-Please test your installation well in advance of the workshop by running the [test script](https://raw.githubusercontent.com/phoebe-project/phoebe2-workshop/2022june/test_install.py) (should take 10-60 seconds to run) and make sure it completes without any errors (warning messages are not a cause for concern).  If the script does not run successfully, please reach out to us so we can debug any installation issues in advance.
+Please test your installation well in advance of the workshop by running the [test script](https://raw.githubusercontent.com/phoebe-project/phoebe2-workshop/2022june/test_install.py) (should take approximately 60 seconds to run) and make sure it completes without any errors (warning messages are not a cause for concern).  If the script does not run successfully or takes significantly longer than 60 seconds, please reach out to us so we can debug any installation issues in advance.
 
 # Part 1
 
