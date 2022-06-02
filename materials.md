@@ -69,7 +69,7 @@ Please test your installation well in advance of the workshop by running the [te
 * [Tutorial: Features (Spots & Gaussian Processes)](./Tutorial_06_features.ipynb) (Angela)
 * [Tutorial: Optimizing PHOEBE Computations](./Tutorial_optimizing_computations.ipynb) (Andrej)
 * [Exercises: Forward Model Animations](./Exercises_03_animations.ipynb)
-
+* Excursion into Philadelphia and Workshop Dinner.
 
 
 ### Thursday June 23: Hack Day
