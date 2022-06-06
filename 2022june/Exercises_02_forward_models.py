@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# # Excercises #2: Creating Forward Models
+# # Exercises #2: Creating Forward Models
 # 
 # These exercises are designed to be done anytime after Tutorial #5 (plotting)
 
