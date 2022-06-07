@@ -3,147 +3,140 @@
 
 # # Workshop Tutorial: Datasets
 # 
-# In this tutorial, we'll learn about PHOEBE datasets, how to add them to the Bundle, and which options are available for light curve, radial velocity curves, orbits, and meshes.
+# This tutorial covers PHOEBE datasets, adding them to the Bundle, and available options for light curves, radial velocity curves, orbits, and meshes.
 # 
-# This interactive workshop tutorial covers many of the same topics as the corresponding online tutorials:
+# This workshop tutorial covers many of the same topics as the corresponding online tutorials:
 # 
-# * [Datasets](http://phoebe-project.org/docs/2.3/tutorials/datasets.ipynb)
-# * [Advanced: Datasets (passband options, dealing with phases, removing datasets)](http://phoebe-project.org/docs/2.3/tutorials/datasets_advanced.ipynb)
+# * [Datasets](http://phoebe-project.org/docs/2.4/tutorials/datasets.ipynb)
+# * [Advanced: Datasets (passband options, dealing with phases, removing datasets)](http://phoebe-project.org/docs/2.4/tutorials/datasets_advanced.ipynb)
 
 # # Setup
+# 
+# To begin, let us do the usual imports, set up the logger and load the default binary bundle:
 
-# In[1]:
+# In[6]:
 
 
 import phoebe
 from phoebe import u,c
 
-
-# In[2]:
-
-
 logger = phoebe.logger(clevel='WARNING')
-
-
-# In[3]:
-
-
 b = phoebe.default_binary()
 
 
 # # Datasets
 
-# PHOEBE creates synthetic models of our binary system at the times and options provided by datasets (which do not necessarily need to contain observations, but can just be a list of times).  PHOEBE currently supports several different dataset kinds:
+# PHOEBE interfaces data through *datasets*. These datasets can contain actual observations or they can simply parametrize the forward-model observable that PHOEBE can synthesize. The following dataset kinds are currently supported:
 # 
-# * lc (light curves)
-# * rv (radial velocitiy curves)
-# * lp (line profiles)
-# * orb (orbits)
-# * mesh (meshes)
+# * `lc` (light curves)
+# * `rv` (radial velocitiy curves)
+# * `lp` (line profiles)
+# * `orb` (orbits)
+# * `mesh` (meshes)
 # 
-# In order to get the synthetic model, we must first add a dataset to the Bundle via [add_dataset](http://phoebe-project.org/docs/dev/api/phoebe.frontend.bundle.Bundle.add_dataset.md).  The first argument is the shorthand-notation for the kind (listed above).  Although this is the only *required* argument, you will usually also want to provide a list of times at which you want that dataset computed as well as a label for the dataset (if you don't provide a label, one will be created for you using the convention 'dataset_type' followed by a two digit integer, e.g. lc01).
+# In order to compute a synthetic model, we must first add a dataset to the Bundle via the [add_dataset()](http://phoebe-project.org/docs/dev/api/phoebe.frontend.bundle.Bundle.add_dataset.md) method. The first argument is the kind (one among those listed above). Although that is the only *required* argument, we will usually want to provide a list of times at which we want that dataset computed, along with a label for the dataset. If we do not provide a label, the dataset will be labeled automatically by 'kind' + two digit integer, e.g. 'lc01', 'rv02', etc.).
 # 
-# If you're unfamiliar with numpy, we will use two helpful functions: [linspace](https://docs.scipy.org/doc/numpy/reference/generated/numpy.linspace.html) and [arange](https://docs.scipy.org/doc/numpy/reference/generated/numpy.arange.html).  You could call np.linspace and np.arange directly, but PHOEBE also provides a shortcut to these which will save on the memory requirements within the Bundle.
+# For the purposes of this tutorial, we will use two array-generating functions: [linspace](https://docs.scipy.org/doc/numpy/reference/generated/numpy.linspace.html) and [arange](https://docs.scipy.org/doc/numpy/reference/generated/numpy.arange.html). These are numpy functions, but PHOEBE also provides them natively, thus saving memory by storing less within the bundle.
 
 # ## Light Curves
+# 
+# Adding a single light curve with predefined times and a label is accomplished by calling the `add_dataset()` bundle method:
 
-# In[4]:
+# In[7]:
 
 
-b.add_dataset('lc', times=phoebe.linspace(0,1,51), dataset='lc01')
+b.add_dataset('lc', times=phoebe.linspace(0, 1, 51), dataset='lc01')
 
 
-# This attaches a set of new Parameters to the Bundle.  Most have the context='dataset', but a few have context='compute', 'figure', 'constraint', etc.  The 'times' Parameter is set with the provided array, and all Parameters are tagged with dataset='lc01'.
+# This attaches a set of new dataset parameters to the bundle. Most have the context='dataset', but a few have context='compute', 'figure', and 'constraint'. The 'times' parameter is set with the provided array, and all parameters are tagged with dataset='lc01'.
 
-# In[5]:
+# In[8]:
 
 
 b.filter(dataset='lc01').contexts
 
 
-# Let's look at the new Parameters (for our light curve) with context='dataset'.
+# We can now take a closer look at the new parameters with context='dataset':
 
-# In[6]:
+# In[9]:
 
 
 b.filter(dataset='lc01', context='dataset').qualifiers
 
 
-# These Parameters describe the *observational* data (`times`, `fluxes`, `sigmas`), the passband information (`passband`, `pblum_mode`, `pblum_component`), limb-darkening (`ld_mode`), telescope/observational information (`exptime`, `l3_mode`, `l3`, `intens_weighting`), and if/how to phase and mask the data (`mask_enabled`, `mask_phases`, `phases_t0`).
+# These parameters describe *observables* (`times`, `fluxes`, `sigmas`), *passband information* (`passband`, `pblum_mode`, `pblum_component`), *limb darkening* (`ld_mode`), *instrumental information* (`exptime`, `l3_mode`, `l3`, `intens_weighting`), phasing (`phases_t0`) and masking the data (`mask_enabled`, `mask_phases`).
 # 
-# You may also notice the `compute_times` and `compute_phases` parameters.  `compute_times` (or `compute_phases` - but more on that in the next tutorial) allows for overriding the values provided in `times`.  Think of `times` as the observational times that correspond to your actual data (if you have them) - and must have the same length as `fluxes`, if provided.  `compute_times` are the times that you want your model computed.
+# You may also notice the `compute_times` and `compute_phases` parameters. These parameters allow us to override the values contained in the `times` parameter. We may think of `times` as the times of observation that correspond to the actual data -- and they must have the same length as `fluxes`, if provided; `compute_times`, on the other hand, are the timestamps in which we want our model computed. Similarly, `solver_times` determine the timestamp array to be used in the inverse problem. More on that next week.
 
-# Now let's quickly look at the Parameters with `context='compute'`
+# Next, `context='compute'` parameters:
 
-# In[7]:
+# In[10]:
 
 
 b.filter(dataset='lc01', context='compute').qualifiers
 
 
-# These set whether this dataset should be computed or ignored (`enabled`), as well as methods for how to handle [finite exposure times](http://phoebe-project.org/docs/2.3/tutorials/fti) (`fti_method`).
+# These parameters determine whether the dataset should be enabled or disabled, and how to handle [finite times of integration](http://phoebe-project.org/docs/2.4/tutorials/fti).
 
 # ## Radial Velocities
 
-# Now let's do the same for a [radial velocity (rv) dataset](http://phoebe-project.org/docs/2.3/tutorials/RV.ipynb).
+# Now let us do the same for a [radial velocity (rv) dataset](http://phoebe-project.org/docs/2.4/tutorials/RV.ipynb):
 
-# In[8]:
-
-
-b.add_dataset('rv', times=phoebe.linspace(0,1,11), dataset='rv01')
+# In[11]:
 
 
-# Let's look at the Parameters for a radial velocity dataset with `context='dataset'`
+b.add_dataset('rv', times=phoebe.linspace(0, 1, 11), dataset='rv01')
 
-# In[9]:
+
+# Using `dataset='rv01'` will filter on all relevant parameters for the RV dataset:
+
+# In[12]:
 
 
 b.filter(dataset='rv01', context='dataset').qualifiers
 
 
-# Here we see again Parameters describing the *observational* data (`times`, `rvs`, `sigmas`), the passband information (`passband`), limb-darkening (`ld_mode`) and telescope/observational information (`intens_weighting`).  Some of the Parameters we saw in the lc dataset are not applicable when computing rvs, so are not included (`l3_mode`, `pblum_mode`, etc).
+# Here we see again parameters describing observables (`times`, `rvs`, `sigmas`), passband information (`passband`), limb darkening (`ld_mode`), instrumental information (`intens_weighting`), phasing (`phases_t0`), data masking (`mask_enabled`, `mask_phases`) and custom timestamps (`compute_times`, `compute_phases`, `solver_times`). Some of the parameters we saw in the 'lc' dataset are not applicable when computing rvs, so they are not included (`l3_mode`, `pblum_mode`, etc).
 # 
-# Currently, finite exposure times are not supported for radial velocities in PHOEBE, so there is no exptime Parameter.
+# Currently, finite exposure times are not supported for radial velocities in PHOEBE, hence no `exptime` parameter.
 # 
-# Note that there are actually **2** `times` Parameters - one for each star.  When sending `times=np.linspace(...)` to `b.add_dataset`, both times Parameters received that value.  But, we could set separate times for the two components after by setting the values of the individual Parameters.
-# 
-# Note: You can also send a dictionary when creating the dataset: `b.add_dataset('rv', times={'primary': [0,1,2], 'secondary': [1,2,3]})` to send values to individual parameters.
+# Note that there are **2** `times` parameters - one for each star.  When passing `times=np.linspace(...)` to `b.add_dataset`, both `times` parameters are set to that value.  We could have also set separate times for the two components by setting the values of `times@primary` and `times@secondary`. Alternatively, you can also pass a dictionary when creating the dataset: `b.add_dataset('rv', times={'primary': [0,1,2], 'secondary': [1,2,3]})`.
 
-# In[10]:
+# In[13]:
 
 
 b.filter(dataset='rv01', context='dataset', qualifier='times').components
 
 
-# And now look at the added Parameters with context='compute'.
+# We can now take a look at the added parameters with context='compute':
 
-# In[11]:
+# In[14]:
 
 
 b.filter(dataset='rv01', context='compute').qualifiers
 
 
-# Here again we see the `enabled` Parameter, the method for computing radial velocities (`rv_method`), and an option to enable/disable gravitational redshift when computing RVs (`rv_grav`).
+# Here again we see the `enabled` parameter, the method for computing radial velocities (`rv_method`), and an option to enable/disable gravitational redshift when computing RVs (`rv_grav`).
 
 # ## Orbits
 
-# Although you're unlikely to have observational data on an orbit, the [orb dataset](http://phoebe-project.org/docs/2.3/tutorials/ORB.ipynb) allows you to expose the orbital information of the stars in a system at any given time, which can be useful for visualization or debugging purposes.
+# Although it is not common to have astrometric observations of an orbit, the [orb dataset](http://phoebe-project.org/docs/2.4/tutorials/ORB.ipynb) allows you to synthesize orbits of the stars in a system at any given time, which can be useful for visualization.
 
-# In[12]:
-
-
-b.add_dataset('orb', compute_times=phoebe.linspace(0,1,101), dataset='orb01')
+# In[15]:
 
 
-# There are no options for orbits besides providing the compute times/phases and enabling/disabling.  Note that there is no `times` parameter, as there are no observations.  However, if you pass `times` to `add_dataset`, they will be adopted automatically as `compute_times`.
+b.add_dataset('orb', compute_times=phoebe.linspace(0, 1, 101), dataset='orb01')
 
-# In[13]:
+
+# Orbits are parametrized by providing the compute times/phases and enabling/disabling. Note that there is no `times` parameter, as there are no observations. However, if you pass `times` to `add_dataset`, they will be adopted automatically as `compute_times`.
+
+# In[16]:
 
 
 b.filter(dataset='orb01', context='dataset').qualifiers
 
 
-# In[14]:
+# In[17]:
 
 
 b.filter(dataset='orb01', context='compute').qualifiers
@@ -151,24 +144,26 @@ b.filter(dataset='orb01', context='compute').qualifiers
 
 # ## Line Profiles
 
-# [Line profiles](http://phoebe-project.org/docs/2.3/tutorials/LP) are time *and* wavelength dependent.  Note that the times cannot be changed after the dataset is created and attached to the bundle (although the wavelengths can).  **However**, `compute_times` can be changed.  Because of this, the distinction between `times` and `compute_times` is a bit more important for line profiles - you probably only want to provide `times` if you want to attach your actual observations, otherwise just provide `compute_times`.
+# [Line profiles](http://phoebe-project.org/docs/2.4/tutorials/LP) are time- *and* wavelength-dependent.  Note that the times cannot be changed after the dataset has been created and attached to the bundle while the wavelengths can. That said, `compute_times` can be changed and used to synthesize line profiles at any desired timestamp. Because of this, the distinction between `times` and `compute_times` is a bit more important for line profiles - you probably only want to provide `times` if you want to attach your actual observations, otherwise just provide `compute_times`.
 
-# In[15]:
+# In[19]:
 
 
 b.add_dataset('lp', 
-              times=phoebe.linspace(0,1,11), 
-              wavelengths=phoebe.linspace(549,551,101), 
+              times=phoebe.linspace(0, 1, 11), 
+              wavelengths=phoebe.linspace(549, 551, 101), 
               dataset='lp01')
 
 
-# Let's look at the Parameters for a line profile dataset with `context='dataset'`
+# Now we can take a look at the parameters for a line profile dataset with `context='dataset'`:
 
-# In[16]:
+# In[20]:
 
 
 b.filter(dataset='lp01', context='dataset').qualifiers
 
+
+# To reinforce the notion of the `times` vs. `compute_times` difference, let us print the entire parameter set for `lp01`:
 
 # In[17]:
 
@@ -176,27 +171,29 @@ b.filter(dataset='lp01', context='dataset').qualifiers
 print(b.filter(dataset='lp01', context='dataset'))
 
 
-# If we instead provide `compute_times`, we won't have all these extra per-time "observational" parameters.
+# Timestamps (passed as `times`) are provided as tags, to tag each parameter that can change in time; if instead we provided `compute_times`, they would not be tagged:
 
-# In[18]:
+# In[21]:
 
 
 b.add_dataset('lp', 
-              compute_times=phoebe.linspace(0,1,11), 
-              wavelengths=phoebe.linspace(549,551,101), 
+              compute_times=phoebe.linspace(0, 1, 11), 
+              wavelengths=phoebe.linspace(549, 551, 101), 
               dataset='lp01',
               overwrite=True)
 
 
-# In[19]:
+# In[22]:
 
 
 print(b.filter(dataset='lp01', context='dataset'))
 
 
-# And now look at the added Parameters with `context='compute'`.
+# Line profiles are parametrized differently than LCs or RVs; we need to provide a generic profile function (`profile_func`) along with its rest wavelength (`profile_rest`) and subsidiary variable (`profile_sv`), defined as $sv = (p-p_0)/(0.5 \times \mathrm{FWHM})$, where $p_0$ is the rest wavelength and $\mathrm{FWHM}$ is full width at half maximum. Wavelengths are passed as arrays, either to the binary as a whole, or to individual stars.
 
-# In[20]:
+# As far as `context='compute'` parameters are concerned, we only have the enabled/disabled switch:
+
+# In[24]:
 
 
 b.filter(dataset='lp01', context='compute').qualifiers
@@ -204,11 +201,11 @@ b.filter(dataset='lp01', context='compute').qualifiers
 
 # ## Meshes
 
-# Similarly, the [mesh dataset](http://phoebe-project.org/docs/2.3/tutorials/MESH.ipynb) is unlikely to be compared to data, but is very useful for visualization of the system.  This dataset only allows you to define a list of times, columns, and coordinates at which you'd like the meshes used within PHOEBE exposed.
+# Similarly to orbits, the [mesh dataset](http://phoebe-project.org/docs/2.4/tutorials/MESH.ipynb) is unlikely to be compared to data directly, but is very useful for visualization of the system. This dataset takes a list of times, columns, and coordinates at which you would like the meshes used within PHOEBE exposed.
 # 
-# Meshes can't have observational data, so *only* have a `compute_times`.  But if you try to pass `times`, it will accept those as `compute_times` with a warning in the logger.
+# As orbits, meshes do not have associated observables, thus they are parametrized only by `compute_times`. As before, passing `times` will automatically be converted to `compute_times` under the hood.
 
-# In[21]:
+# In[25]:
 
 
 b.add_dataset('mesh', 
@@ -216,21 +213,31 @@ b.add_dataset('mesh',
               dataset='mesh01')
 
 
-# In[22]:
+# Let us take a look at parameters in the 'dataset' and 'compute' contexts:
+
+# In[26]:
 
 
 b.filter(dataset='mesh01', context='dataset').qualifiers
 
 
-# In[23]:
+# In[27]:
 
 
 b.filter(dataset='mesh01', context='compute').qualifiers
 
 
+# A unique aspect of parametrizing meshes is the `columns` parameter; we will revisit that in great detail soon, but at this point let us take a quick look at the available columns. The list is quite extensive and we will not go into any details at this point, but it should be informative to glance through the names of the columns; all these are per-surface-element values that can be exposed and visualized.
+
+# In[29]:
+
+
+b.get_parameter(dataset='mesh01', context='dataset', qualifier='columns').choices
+
+
 # # Exercise
 
-# What choices are available for `rv_method`, `passband`, `pblum_mode`, `ld_mode`, and `intens_weighting` (refer back to the [first tutorial](./Tutorial_01_bundle_basics.ipynb) if you've forgotten how to check the choices)?
+# What choices are available for `rv_method`, `passband`, `pblum_mode`, `ld_mode`, and `intens_weighting`?
 
 # In[ ]:
 
@@ -238,7 +245,7 @@ b.filter(dataset='mesh01', context='compute').qualifiers
 
 
 
-# Let's say we had a single-lined binary system.  Set the times on the RV dataset such that only the primary star would be computed.
+# Say we have a single-lined binary system. Set the RV dataset times so that only primary star observables are computed.
 
 # In[ ]:
 
@@ -246,7 +253,7 @@ b.filter(dataset='mesh01', context='compute').qualifiers
 
 
 
-# Add another RV dataset.  Set the new RV dataset to have `rv_method='dynamical'` while keeping the original 'rv01' dataset with `rv_method='flux-weighted'`.  (You'll notice there is a parameter per-component - you'll either need to set both manually or use [set_value_all](http://phoebe-project.org/docs/latest/api/phoebe.parameters.ParameterSet.set_value_all.md))
+# Add another RV dataset.  Set the new RV dataset to have `rv_method='dynamical'` while keeping the original 'rv01' dataset with `rv_method='flux-weighted'`. This is another example of a per-component parameter: you will either need to set parameters for both components in turn, or use [set_value_all()](http://phoebe-project.org/docs/latest/api/phoebe.parameters.ParameterSet.set_value_all.md).
 
 # In[ ]:
 
