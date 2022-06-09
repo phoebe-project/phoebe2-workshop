@@ -3,68 +3,59 @@
 
 # # Workshop Tutorial: Optimizing Computations
 # 
-# In this tutorial we'll discuss which parts of PHOEBE are the most computationally expensive and how to minimize this cost for individual systems by testing which expensive effects can safely be disabled.
-# 
+# This tutorial covers the parts of PHOEBE that are computationally the most expensive and how to minimize this cost for individual systems.
 # 
 # This interactive workshop tutorial covers many of the same topics as the corresponding online tutorials:
 # 
-# * [Eclipse Detection](http://phoebe-project.org/docs/2.3/tutorials/eclipse.ipynb)
-# * [Eccentricity & Volume Conservation](http://phoebe-project.org/docs/2.3/tutorials/ecc.ipynb)
-# * [Reflection & Heating (irrad_frac_refl_bol, irrad_frac_lost_bol, ld_func_bol, ld_coeffs_bol)](http://phoebe-project.org/docs/2.3/tutorials/reflection_heating.ipynb)
-# * [Reflection & Heating: Lambert Scattering (irrad_method='horvat' vs 'wilson')](http://phoebe-project.org/docs/2.3/tutorials/irrad_method_horvat.ipynb)
-# * [Detached Binary: Roche vs Rotstar](http://phoebe-project.org/docs/2.3/examples/detached_rotstar.ipynb)
-# * [Rossiter-McLaughlin Effect (RVs)](http://phoebe-project.org/docs/2.3/examples/rossiter_mclaughlin.ipynb)
-# * [Finite Time of Integration (LCs - exptime, fti_method, fti_oversample)](http://phoebe-project.org/docs/2.3/tutorials/fti.ipynb)
-# 
-# 
+# * [Eclipse Detection](http://phoebe-project.org/docs/2.4/tutorials/eclipse.ipynb)
+# * [Eccentricity & Volume Conservation](http://phoebe-project.org/docs/2.4/tutorials/ecc.ipynb)
+# * [Reflection & Heating (irrad_frac_refl_bol, irrad_frac_lost_bol, ld_func_bol, ld_coeffs_bol)](http://phoebe-project.org/docs/2.4/tutorials/reflection_heating.ipynb)
+# * [Reflection & Heating: Lambert Scattering (irrad_method='horvat' vs 'wilson')](http://phoebe-project.org/docs/2.4/tutorials/irrad_method_horvat.ipynb)
+# * [Detached Binary: Roche vs Rotstar](http://phoebe-project.org/docs/2.4/examples/detached_rotstar.ipynb)
+# * [Rossiter-McLaughlin Effect (RVs)](http://phoebe-project.org/docs/2.4/examples/rossiter_mclaughlin.ipynb)
+# * [Finite Time of Integration (LCs - exptime, fti_method, fti_oversample)](http://phoebe-project.org/docs/2.4/tutorials/fti.ipynb)
 # 
 # In addition, see the following document on optimizing the performance of the PHOEBE frontend itself in scripts (this will _not_ affect the speed within `run_compute` or `run_solver`):
 # 
-# * [Advanced: Optimizing Performance with PHOEBE](http://phoebe-project.org/docs/2.3/tutorials/optimizing.ipynb)
+# * [Advanced: Optimizing Performance with PHOEBE](http://phoebe-project.org/docs/2.4/tutorials/optimizing.ipynb)
 
 # # Setup
+# 
+# As usual, we start with the imports, logger setup, and default binary initialization:
 
 # In[1]:
 
 
 import phoebe
-from phoebe import u,c
+from phoebe import u, c
+logger = phoebe.logger(clevel='WARNING')
+b = phoebe.default_binary()
 
+
+# Next, we add two datasets: a light curve and a radial velocity curve:
 
 # In[2]:
 
 
-logger = phoebe.logger(clevel='WARNING')
-
-
-# In[3]:
-
-
-b = phoebe.default_binary()
-
-
-# In[4]:
-
-
-b.add_dataset('lc', compute_times=phoebe.linspace(0,1,101))
-b.add_dataset('rv', compute_times=phoebe.linspace(0,1,26))
+b.add_dataset('lc', compute_times=phoebe.linspace(0, 1, 101))
+b.add_dataset('rv', compute_times=phoebe.linspace(0, 1, 26))
 
 
 # # Compute Times/Phases
 # 
 # With the exception of dynamics (dynamical RVs and orbits), PHOEBE computations scale with the number of data points (roughly linearly after some up-front costs).  As discussed in previous tutorials (see [Tutorial: Datasets](./Tutorial_03_datasets.ipynb) and [Tutorial: Time and Phase](./Tutorial_04b_time_and_phase.ipynb)), the model can be computed at different times than the input observations.  
 # 
-# For systems without time-dependence (no apsidal motion, etc), it can therefore be quite advantageous to compute the forward model sampled in phase-space and interpolate when comparing to the observations (PHOEBE will handle this interpolation for you).  Just check to make sure that you sample sufficiently in phase that the linear interpolation won't introduce artifacts.
+# For systems without time-dependence (no apsidal motion, etc), it can therefore be quite advantageous to compute the forward model sampled in phase-space and interpolate when comparing to the observations (PHOEBE will handle this interpolation for you).  Just check to make sure that you sample sufficiently in phase that the linear interpolation won't introduce any systematics.
 
 # # Number of Triangles
 # 
-# Similarly, the expense of building meshes scales with the number of triangles (and so does the expense of irradiation which we'll mention later).  The default number of triangles in PHOEBE is quite low, for this reason.  However, an insufficient number of triangles can result in numerical noise both on the horizon and during the eclipse.  In some cases, it may be worth some extra up-front effort to determine the (approximate) minimum number of triangles needed to achieve the desired signal to noise in the model.
+# Similarly, the expense of building meshes scales with the number of triangles (and so does the expense of irradiation which we return to later).  The default number of triangles in PHOEBE is quite low, for this reason.  However, an insufficient number of triangles can result in numerical noise both on the horizon and during the eclipse.  In some cases, it may be worth some extra up-front effort to determine the (approximate) minimum number of triangles needed to achieve the minimum signal-to-noise ration suitable for the data.
 
 # # Eclipse Detection
 # 
-# For more details, see [Eclipse Detection](http://phoebe-project.org/docs/2.3/tutorials/eclipse.ipynb).
+# For more details, see [Eclipse Detection](http://phoebe-project.org/docs/2.4/tutorials/eclipse.ipynb).
 # 
-# By default, at each time point, PHOEBE will check to see if the maximum radius of all meshes would overlap at all on the sky-projection.  If so, the complete eclipse algorithm is called to determine the visibility of each triangle, and if not, triangles are only checked to determine if facing towards or away from the observer (horizon detection).  In cases where you _know_ eclipses will never occur (ellipsoidal variables, for example), this can be optimized slightly by telling PHOEBE to skip this check and only use horizon detection. 
+# By default, at each time point, PHOEBE will check to see if the maximum radius of all meshes would cause an eclipse in the sky projection.  If so, the complete eclipse algorithm is called to determine the visibility of each triangle, and if not, triangles are only checked to determine if facing towards or away from the observer (horizon detection).  In cases where you _know_ eclipses will never occur (ellipsoidal variables, for example), this can be optimized slightly by telling PHOEBE to skip this check and only use horizon detection. 
 
 # In[5]:
 
@@ -74,7 +65,7 @@ print(b.get_parameter(qualifier='eclipse_method'))
 
 # # Eccentricity
 # 
-# For more details, see [Eccentricity & Volume Conservation](http://phoebe-project.org/docs/2.3/tutorials/ecc.ipynb).
+# For more details, see [Eccentricity & Volume Conservation](http://phoebe-project.org/docs/2.4/tutorials/ecc.ipynb).
 # 
 # Eccentricity on its own does not add significant expense - however, it does when in combination with irradiation or distorted stars (both of which are enabled by default).  Whenever an orbit has a non-zero eccentricity, the stars must be re-meshed at each time point and irradiation must be re-computed.
 # 
@@ -88,7 +79,7 @@ print(b.get_parameter(qualifier='ecc'))
 
 # # Reflection & Heating (irrad_method)
 # 
-# For more details, see [Reflection & Heating (irrad_frac_refl_bol, irrad_frac_lost_bol, ld_func_bol, ld_coeffs_bol)](http://phoebe-project.org/docs/2.3/tutorials/reflection_heating.ipynb) and [Reflection & Heating: Lambert Scattering (irrad_method='horvat' vs 'wilson')](http://phoebe-project.org/docs/2.3/tutorials/irrad_method_horvat.ipynb).
+# For more details, see [Reflection & Heating (irrad_frac_refl_bol, irrad_frac_lost_bol, ld_func_bol, ld_coeffs_bol)](http://phoebe-project.org/docs/2.4/tutorials/reflection_heating.ipynb) and [Reflection & Heating: Lambert Scattering (irrad_method='horvat' vs 'wilson')](http://phoebe-project.org/docs/2.4/tutorials/irrad_method_horvat.ipynb).
 # 
 # In addition to meshing and eclipse detection, irradiation is the next most common culprit in computation expense. In cases where irradiation can safely be ignored, it can be disabled entirely by setting `irrad_method='none'`.  This will only result in marginal gains for circular synchronous systems, but can result in significant savings for eccentric and/or asynchronous systems.
 
@@ -100,7 +91,7 @@ print(b.get_parameter(qualifier='irrad_method'))
 
 # # Stellar Distortion (distortion_method)
 # 
-# For more details, see [Detached Binary: Roche vs Rotstar](http://phoebe-project.org/docs/2.3/examples/detached_rotstar.ipynb)
+# For more details, see [Detached Binary: Roche vs Rotstar](http://phoebe-project.org/docs/2.4/examples/detached_rotstar.ipynb)
 # 
 # In cases where stellar distortion is negligible, stars can be meshed with either a rotating star or spherical star equipotential in place of the full roche treatment.  Similarly to irradiation, this can result in significant savings for eccentric systems as otherwise the instantaneous equipotential needs to be determined at each time point to conserve volume and the stars need to be re-meshed.
 # 
@@ -114,9 +105,9 @@ print(b.get_parameter(qualifier='distortion_method', component='primary'))
 
 # # Dynamical RVs
 # 
-# For more details, see [Rossiter-McLaughlin Effect (RVs)](http://phoebe-project.org/docs/2.3/examples/rossiter_mclaughlin.ipynb).
+# For more details, see [Rossiter-McLaughlin Effect (RVs)](http://phoebe-project.org/docs/2.4/examples/rossiter_mclaughlin.ipynb).
 # 
-# By default, PHOEBE will compute RVs by populating velocities at each surface element and doing an intensity-weighted average over the visible elements.  This allows for Rossiter-McLaughlin effect to be synthesized.  However, in cases where Rossiter-McLaughlin is not important, dynamical RVs can be used instead which use the center of mass velocities instead.
+# By default, PHOEBE will compute RVs by populating velocities at each surface element and doing an intensity-weighted average over the visible elements.  This allows for Rossiter-McLaughlin effect to be synthesized.  However, in cases where Rossiter-McLaughlin is not important, dynamical RVs can be used instead which use the center of mass velocities.
 # 
 # If the mesh is already being created and populated for an LC _at the same time_, then flux-weighted RVs do not add significant additional overhead.
 # 
@@ -130,7 +121,7 @@ print(b.get_parameter(qualifier='rv_method', component='primary'))
 
 # # Integration Time
 # 
-# For more details, see [Finite Time of Integration (LCs - exptime, fti_method, fti_oversample)](http://phoebe-project.org/docs/2.3/tutorials/fti.ipynb)
+# For more details, see [Finite Time of Integration (LCs - exptime, fti_method, fti_oversample)](http://phoebe-project.org/docs/2.4/tutorials/fti.ipynb)
 # 
 # Although we have not discussed this during the workshop, PHOEBE allows for oversampling each synthetic time over the observational exposure time (where the number of samples that will be averaged is provided in `fti_oversample`).
 # 
