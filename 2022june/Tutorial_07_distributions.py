@@ -179,7 +179,7 @@ b.set_value('teff', component='primary', context='component', value=5500)
 b.calculate_lnp('priors@nm_solver')
 
 
-# If we do the same of an _uninformative_ (uniform) distribution, we'll get -inf returned, which within an optimizer or sampler would immediately reject that step before even running the forward model
+# If we do the same of an _uninformative_ (uniform) distribution, we'll get -inf returned if the value is outside the bounds of the boxcar distribution, which within an optimizer or sampler would immediately reject that step before even running the forward model
 
 # In[20]:
 
