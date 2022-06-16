@@ -7,8 +7,8 @@
 # 
 # This interactive workshop tutorial covers many of the same topics as the corresponding online tutorials:
 # 
-# * [Plotting](http://phoebe-project.org/docs/2.3/tutorials/plotting.ipynb)
-# * [Advanced: Plotting Options](http://phoebe-project.org/docs/2.3/tutorials/plotting_advanced.ipynb)
+# * [Plotting](http://phoebe-project.org/docs/latest/tutorials/plotting.ipynb)
+# * [Advanced: Plotting Options](http://phoebe-project.org/docs/latest/tutorials/plotting_advanced.ipynb)
 # 
 
 # # Setup
@@ -37,7 +37,7 @@ logger = phoebe.logger(clevel='WARNING')
 # In[4]:
 
 
-b = phoebe.default_binary()
+b = phoebe.default_binary(force_build=True)
 
 
 # # Plotting
@@ -75,7 +75,7 @@ afig, mplfig = b.plot(show=True)
 # In[9]:
 
 
-afig, mplfig = b.filter(dataset='lc01').plot(show=True)
+afig, mplfig = b.plot(dataset='lc01', show=True)
 
 
 # ### Custom Columns
@@ -85,13 +85,13 @@ afig, mplfig = b.filter(dataset='lc01').plot(show=True)
 # In[10]:
 
 
-afig, mplfig = b.filter(dataset='rv01').plot(x='phase', show=True)
+afig, mplfig = b.plot(dataset='rv01', x='phase', show=True)
 
 
 # In[11]:
 
 
-afig, mplfig = b.filter(dataset='rv01').plot(x='phase', t0='t0_perpass', show=True)
+afig, mplfig = b.plot(dataset='rv01', x='phase', t0='t0_perpass', show=True)
 
 
 # ### Highlighting at a given time
@@ -106,7 +106,7 @@ afig, mplfig = b.plot(time=0.65, show=True)
 
 # ### And much more...
 
-# The [plotting tutorial](http://phoebe-project.org/docs/2.3/tutorials/plotting/) in the docs has a very thorough explanation of other advanced features in plotting.
+# The [plotting tutorial](http://phoebe-project.org/docs/latest/tutorials/plotting/) in the docs has a very thorough explanation of other advanced features in plotting.
 
 # # Exercise
 

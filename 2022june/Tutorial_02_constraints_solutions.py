@@ -81,3 +81,9 @@ b.set_value('incl', component='binary', value=85)
 
 print(b.filter(qualifier=['sma', 'asini', 'incl'], component='binary'))
 
+
+# In[ ]:
+
+
+
+

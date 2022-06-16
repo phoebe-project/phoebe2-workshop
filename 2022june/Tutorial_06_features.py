@@ -6,9 +6,9 @@
 # In this tutorial we'll learn how to add spots on a star and gaussian processes to a light curve.
 # 
 # This interactive workshop tutorial covers many of the same topics as the corresponding online tutorials:
-# * [Features](http://phoebe-project.org/docs/2.3/tutorials/features.ipynb)
-# * [Advanced: Spots](http://phoebe-project.org/docs/2.3/tutorials/spots.ipynb)
-# * [Example: Gaussian Processes](http://phoebe-project.org/docs/2.3/examples/minimal_GPs.ipynb)
+# * [Features](http://phoebe-project.org/docs/latest/tutorials/features.ipynb)
+# * [Advanced: Spots](http://phoebe-project.org/docs/latest/tutorials/spots.ipynb)
+# * [Example: Gaussian Processes](http://phoebe-project.org/docs/latest/examples/minimal_GPs)
 
 # # Setup
 
@@ -28,7 +28,7 @@ logger = phoebe.logger(clevel='WARNING')
 # In[3]:
 
 
-b = phoebe.default_binary()
+b = phoebe.default_binary(force_build=True)
 
 
 # # Spots
@@ -59,9 +59,9 @@ b.add_spot(component='secondary', feature='spot02')
 
 # # Gaussian Processes
 # 
-# Similarly to spots, multiple [gaussian process features](http://phoebe-project.org/docs/2.3/api/phoebe.parameters.feature.gaussian_process.md) can be attached - but instead of being attached to a Star (component), they are attached to a light curve (dataset).
+# Similarly to spots, multiple gaussian process features an be attached - but instead of being attached to a Star (component), they are attached to a light curve (dataset). As of PHOEBE 2.4, we support two "backends" for Gaussian Processes: [gp_celerite2](http://phoebe-project.org/docs/2.4/api/phoebe.parameters.feature.gp_celerite2) and [gp_sklearn](http://phoebe-project.org/docs/2.4/api/phoebe.parameters.feature.gp_sklearn). We will discuss more about the pros and cons of each one towards the end of the second part of the workshop.
 # 
-# **NOTE**: gaussian processes requires [celerite](https://celerite.readthedocs.io) to be installed _before_ importing phoebe (you can install with `pip install celerite` and may need to restart the kernel/notebook).
+# **NOTE**: gaussian processes require [celerite2](https://celerite2.readthedocs.io) and [sklearn](https://scikit-learn.org/stable/index.html) to be installed _before_ importing phoebe (you can install with `pip install celerite2` and `pip install scikit-learn` and may need to restart the kernel/notebook). For the purposes of this tutorial, we'll only use `celerite2`.
 
 # In[7]:
 
@@ -69,12 +69,12 @@ b.add_spot(component='secondary', feature='spot02')
 b.add_dataset('lc', compute_times=phoebe.linspace(0,1,101), dataset='lc01')
 
 
-# This can be done with either [b.add_feature](http://phoebe-project.org/docs/2.3/api/phoebe.frontend.bundle.Bundle.add_feature.md) and passing 'gaussian_process' as the first argument or [b.add_gaussian_process](http://phoebe-project.org/docs/2.3/api/phoebe.frontend.bundle.Bundle.add_gaussian_process.md).
+# We can add a gaussian process with either [b.add_feature](http://phoebe-project.org/docs/latest/api/phoebe.frontend.bundle.Bundle.add_feature.md) and passing either 'gp_celerite2' or 'gp_sklearn' as the first argument or [b.add_gaussian_process](http://phoebe-project.org/docs/latest/api/phoebe.frontend.bundle.Bundle.add_gaussian_process.md), and pass 'celerite2' or 'sklearn' as the first argument.
 
 # In[8]:
 
 
-b.add_feature('gaussian_process', dataset='lc01', feature='gp01')
+b.add_feature('gp_celerite2', dataset='lc01', feature='gp01')
 
 
 # In[9]:
@@ -116,7 +116,7 @@ print(b.run_checks())
 # In[14]:
 
 
-b.run_compute()
+b.run_compute(distortion_method='sphere') # overriding the distortion method here to speed up the computation
 
 
 # Now our model contains two new parameters `gps` (the GP component of the fluxes) and `fluxes_nogps` (such that `fluxes = fluxes_nogps + gps`.  
@@ -159,7 +159,7 @@ _ = b.plot(x='phases', show=True)
 
 
 
-# Try creating a synthetic light curve set as in the [Gaussian Process example online](http://phoebe-project.org/docs/2.3/examples/minimal_GPs) and play with different kernel and plotting options.
+# Try creating a synthetic light curve set as in the [Gaussian Process example online](http://phoebe-project.org/docs/latest/examples/minimal_GPs) and play with different kernel and plotting options.
 
 # In[ ]:
 

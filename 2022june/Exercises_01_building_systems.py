@@ -29,34 +29,15 @@
 
 
 
-# # \#3: Reproduce Systems from the Literature
+# # \#3: Advanced: Reproduce Systems from the Literature
 # 
 # Find (or pick your favorite) EB solution in the literature and try to map the reported values in the paper into PHOEBE.
-
-# In[ ]:
-
-
-
-
-
-# # \#4: Advanced: Reproduce Binaries from the CALEB Catalog
 # 
-# Pick a system from the [Caleb catalog of EBs](http://caleb.eastern.edu/query_stars_by_type.php), click on one of the "library sets", and then view the BM3 input file.  Try to translate as many of these parameters as you can into PHOEBE.  
+# If you'd like to try a semi-detached or contact binary, refer to the following tutorials:
+# * [Advanced: Contact Binary Hierarchy](http://phoebe-project.org/docs/latest/tutorials/contact_binary_hierarchy)
+# * [Advanced: Semidetached Systems](http://phoebe-project.org/docs/latest/tutorials/requiv_crit_semidetached)
 # 
-# Choose a detached binary first.  If you'd like to try a semi-detached or contact binary, refer to the following tutorials:
-# * [Advanced: Contact Binary Hierarchy](http://phoebe-project.org/docs/2.3/tutorials/contact_binary_hierarchy)
-# * [Advanced: Semidetached Systems](http://phoebe-project.org/docs/2.3/tutorials/requiv_crit_semidetached)
-# 
-# 
-# Note that the [morphology definitions in caleb](http://caleb.eastern.edu/binary_type_definitions.php) are slightly different than PHOEBE. You may want to use the following:
-# 
-# * Caleb's detached -> `phoebe.default_binary()`
-# * Caleb's semi-detached or near-contact -> `phoebe.default_binary()` with semi-detached constraint on one component
-# * Caleb's contact -> `phoebe.default_binary()` with semi-detached constraint on both components
-# * Caleb's overcontact -> `phoebe.default_binary(contact_binary=True)`
-# * Caleb's double-contact -> good luck! (you can try semi-detached constraints)
-# 
-# For detached systems, you can try using `R1_BACK`, `R2_BACK` as the equivalent radius, but otherwise you will need to translate the equipotentials `OMEGA_1`, `OMEGA_2` using [phoebe.distortions.roche.pot_to_requiv](http://phoebe-project.org/docs/2.3/api/phoebe.distortions.roche.pot_to_requiv) with `d=1-e` (as potentials are defined at periastron) along with an estimate of the semi-major axis from the RV semi-amplitudes, inclination, and eccentricity.  If you get stuck, don't hesitate to ask for help!
+# Depending on the code used for modeling, the results may be reported using parameters not readily available in PHOEBE. For detached systems, you can use any reported point radii (polar, equatorial, back/front) as approximations for the equivalent radius. If the solution is reported in equipotentials, you can convert them to radii using [phoebe.distortions.roche.pot_to_requiv](http://phoebe-project.org/docs/latest/api/phoebe.distortions.roche.pot_to_requiv) with `d=1-e` (as potentials are defined at periastron) along with an estimate of the semi-major axis from the RV semi-amplitudes, inclination, and eccentricity.  If you get stuck, don't hesitate to ask for help!
 
 # In[ ]:
 

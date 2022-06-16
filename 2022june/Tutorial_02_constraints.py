@@ -7,9 +7,9 @@
 # 
 # This interactive workshop tutorial covers many of the same topics as the corresponding online tutorials:
 # 
-# * [Constraints](http://phoebe-project.org/docs/2.3/tutorials/constraints.ipynb)
-# * [Advanced: Constraints and Changing Hierarchies](http://phoebe-project.org/docs/2.3/tutorials/constraints_hierarchies.ipynb)
-# * [Advanced: Built-In Constraints](http://phoebe-project.org/docs/2.3/tutorials/constraints_builtin.ipynb)
+# * [Constraints](http://phoebe-project.org/docs/latest/tutorials/constraints.ipynb)
+# * [Advanced: Constraints and Changing Hierarchies](http://phoebe-project.org/docs/latest/tutorials/constraints_hierarchies.ipynb)
+# * [Advanced: Built-In Constraints](http://phoebe-project.org/docs/latest/tutorials/constraints_builtin.ipynb)
 
 # # Setup
 
@@ -29,7 +29,7 @@ logger = phoebe.logger(clevel='WARNING')
 # In[3]:
 
 
-b = phoebe.default_binary()
+b = phoebe.default_binary(force_build=True)
 
 
 # # Constraints

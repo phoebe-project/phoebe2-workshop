@@ -47,4 +47,10 @@ b.run_compute(model='changed_incl')
 _ = b.plot(x='us', y='vs', legend=True, show=True)
 
 
-# **Play with plotting.  If you want to try more advanced options, feel free to look at the [plotting tutorial](http://phoebe-project.org/docs/2.3/tutorials/plotting/) in the official docs.**
+# **Play with plotting.  If you want to try more advanced options, feel free to look at the [plotting tutorial](http://phoebe-project.org/docs/latest/tutorials/plotting/) in the official docs.**
+
+# In[ ]:
+
+
+
+

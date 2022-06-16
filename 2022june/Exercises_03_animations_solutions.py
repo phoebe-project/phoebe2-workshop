@@ -5,18 +5,18 @@
 
 # # \# 1: Rossiter-McLaughlin
 # 
-# **See [this example script](http://phoebe-project.org/docs/2.3/examples/rossiter_mclaughlin)**
+# **See [this example script](http://phoebe-project.org/docs/latest/examples/rossiter_mclaughlin)**
 
 # ![animation](rossiter_mclaughlin.gif)
 
 # # \# 2: Eccentric Ellipsoidal Variable (Heartbeat)
 # 
-# **See [this example script](http://phoebe-project.org/docs/2.3/examples/eccentric_ellipsoidal)**
+# **See [this example script](http://phoebe-project.org/docs/latest/examples/eccentric_ellipsoidal)**
 
 # ![animation](eccentric_ellipsoidal.gif)
 
 # # \# 3: Spot Transit
 # 
-# **See [this example script](http://phoebe-project.org/docs/2.3/examples/spot_transit)**
+# **See [this example script](http://phoebe-project.org/docs/latest/examples/spot_transit)**
 
 # ![animation](spot_transit.gif)

@@ -7,11 +7,11 @@
 # 
 # This interactive workshop tutorial covers many of the same topics as the corresponding online tutorials:
 # 
-# * [Computing Observables](http://phoebe-project.org/docs/2.3/tutorials/compute.ipynb)
-# * [Advanced: Compute Times & Phases](http://phoebe-project.org/docs/2.3/tutorials/compute_times_phases.ipynb) (discussed in the next workshop tutorial)
-# * [Advanced: Phase Masking](http://phoebe-project.org/docs/2.3/tutorials/mask_phases.ipynb)
-# * [Advanced: Running Multiple Compute Options Simultaneously](http://phoebe-project.org/docs/2.3/tutorials/compute_multiple.ipynb)
-# * [Advanced: Alternate Backends](http://phoebe-project.org/docs/2.3/tutorials/alternate_backends.ipynb)
+# * [Computing Observables](http://phoebe-project.org/docs/latest/tutorials/compute.ipynb)
+# * [Advanced: Compute Times & Phases](http://phoebe-project.org/docs/latest/tutorials/compute_times_phases.ipynb) (discussed in the next workshop tutorial)
+# * [Advanced: Phase Masking](http://phoebe-project.org/docs/latest/tutorials/mask_phases.ipynb)
+# * [Advanced: Running Multiple Compute Options Simultaneously](http://phoebe-project.org/docs/latest/tutorials/compute_multiple.ipynb)
+# * [Advanced: Alternate Backends](http://phoebe-project.org/docs/latest/tutorials/alternate_backends.ipynb)
 
 # # Setup
 
@@ -31,7 +31,7 @@ logger = phoebe.logger(clevel='WARNING')
 # In[3]:
 
 
-b = phoebe.default_binary()
+b = phoebe.default_binary(force_build=True)
 
 
 # # Compute
@@ -74,7 +74,7 @@ b.filter(context='model', dataset='lc01')
 
 # Note that if we don't pass `model` to `run_compute`, then the model is automatically tagged with `model='latest'` and will automatically be overwritten with the _latest_ version the next time `run_compute` is called (without passing a different `model` and with a warning in the logger).
 # 
-# If we instead were to manually tag the model by passing `model='mymodel'`, for example, then future calls to `run_compute` would either require a unique model name or explicitly passing `overwrite=True`.  Thus, 'latest' does not really refer to the latest run of `b.run_compute()`, it merely labels an overwrite-friendly unnamed instant of the model.
+# If we instead were to manually tag the model by passing `model='mymodel'`, for example, then future calls to `run_compute` would either require a unique model name or explicitly passing `overwrite=True`. If no unique tag is provided, the 'latest' model will be overwritten.  Thus, 'latest' does not really refer to the latest run of `b.run_compute()`, it merely labels an overwrite-friendly unnamed instant of the model.
 
 # In[9]:
 
@@ -149,7 +149,7 @@ b.filter(context='compute', qualifier='ltte')
 # In[18]:
 
 
-b.get_parameter(context='compute', compute='preview', qualifier='ltte').set_value(False)
+b.set_value(qualifier='ltte', context='compute', compute='preview', value=False)
 
 
 # If we try to do the same as above, but use `qualifier='rv_grav'`, we'll get an error saying there are 2 results found.  This is because `rv_grav` can be enabled/disabled for each individual star.  We can see this is the case by doing a filter.
@@ -165,7 +165,7 @@ b.filter(context='compute', compute='preview', qualifier='rv_grav')
 # In[20]:
 
 
-b.filter(context='compute', compute='preview', qualifier='rv_grav').set_value_all(False)
+b.set_value_all(qualifier='rv_grav', context='compute', compute='preview', value=False)
 
 
 # In[21]:
@@ -177,7 +177,7 @@ b.get_parameter(context='compute', compute='preview', qualifier='irrad_method').
 # In[22]:
 
 
-b.get_parameter(context='compute', compute='preview', qualifier='irrad_method').set_value('none')
+b.set_value(qualifier='irrad_method', context='compute', compute='preview', value='none')
 
 
 # And let's also decrease the number of triangles used in the meshes.  Again, we can use set_value_all since there is an entry for each star.
@@ -185,7 +185,7 @@ b.get_parameter(context='compute', compute='preview', qualifier='irrad_method').
 # In[23]:
 
 
-b.filter(context='compute', compute='preview', qualifier='ntriangles').set_value_all(800)
+b.set_value_all(qualifier='ntriangles', context='compute', compute='preview', value=800)
 
 
 # Now if we want to call `run_compute` again, we **must** also pass which set of compute options we want to use (the default 'phoebe01', or our new 'preview' options)

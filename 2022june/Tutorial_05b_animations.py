@@ -7,7 +7,7 @@
 # 
 # This interactive workshop tutorial covers many of the same topics as the corresponding online tutorials:
 # 
-# * [Advanced: Animations](http://phoebe-project.org/docs/2.3/tutorials/animations.ipynb)
+# * [Advanced: Animations](http://phoebe-project.org/docs/latest/tutorials/animations.ipynb)
 
 # # Setup
 
@@ -27,7 +27,7 @@ logger = phoebe.logger(clevel='WARNING')
 # In[3]:
 
 
-b = phoebe.default_binary()
+b = phoebe.default_binary(force_build=True)
 
 
 # # Animating
@@ -58,7 +58,9 @@ b.run_compute()
 
 
 afig, mplanim = b.plot(animate=True, times=phoebe.linspace(0,1,21), 
-                       save='Tutorial_05b_1.gif', save_kwargs={'writer': 'imagemagick'})
+                       save='Tutorial_05b_1.gif', 
+                       # save_kwargs={'writer': 'imagemagick'}
+                      )
 
 
 # ![animation](Tutorial_05b_1.gif)
@@ -68,21 +70,25 @@ afig, mplanim = b.plot(animate=True, times=phoebe.linspace(0,1,21),
 # In[8]:
 
 
-afig, mplanim = b.filter(dataset='lc01').plot(animate=True, times=phoebe.linspace(0,1,101),
-                         save='Tutorial_05b_2.gif', save_kwargs={'writer': 'imagemagick'})
+afig, mplanim = b.plot(dataset='lc01', animate=True, times=phoebe.linspace(0,1,101),
+                       save='Tutorial_05b_2.gif', 
+                       # save_kwargs={'writer': 'imagemagick'}
+                      )
 
 
 # ![animation](Tutorial_05b_2.gif)
 
 # ### Other Options
 
-# The [animations tutorial](http://phoebe-project.org/docs/2.3/tutorials/animations/) in the docs gives many more options.
+# The [animations tutorial](http://phoebe-project.org/docs/latest/tutorials/animations/) in the docs gives many more options.
 
 # In[9]:
 
 
 afig, mplanim = b.plot(animate=True, times=phoebe.linspace(0,1,51), uncover=True,
-                       save='Tutorial_05b_3.gif', save_kwargs={'writer': 'imagemagick'})
+                       save='Tutorial_05b_3.gif', 
+                       # save_kwargs={'writer': 'imagemagick'}
+                      )
 
 
 # ![animation](Intro_Tutorial_09_3.gif)

@@ -12,10 +12,6 @@
 # 
 # **NO EXAMPLE SOLUTION**
 
-# # \#3: Reproduce Systems from the Literature
-# 
-# **NO EXAMPLE SOLUTION**
-
-# # \#4: Advanced: Reproduce Binaries from the CALEB Catalog
+# # \#3: Advanced: Reproduce Systems from the Literature
 # 
 # **See this [example solution](./Exercises_01_solutions_4.ipynb)**
