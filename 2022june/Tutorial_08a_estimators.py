@@ -15,9 +15,9 @@
 # 
 # This interactive workshop tutorial covers many of the same topics as the corresponding online tutorials:
 # 
-# * [Solving the Inverse Problem](http://phoebe-project.org/docs/2.3/tutorials/solver.ipynb)
-# * [Advanced: LC Estimators](http://phoebe-project.org/docs/2.3/tutorials/LC_estimators.ipynb)
-# * [Advanced: RV Geometry Estimator](http://phoebe-project.org/docs/2.3/tutorials/RV_estimators.ipynb)
+# * [Solving the Inverse Problem](http://phoebe-project.org/docs/latest/tutorials/solver.ipynb)
+# * [Advanced: LC Estimators](http://phoebe-project.org/docs/latest/tutorials/LC_estimators.ipynb)
+# * [Advanced: RV Geometry Estimator](http://phoebe-project.org/docs/latest/tutorials/RV_estimators.ipynb)
 
 # ## Setup
 
@@ -38,10 +38,10 @@ get_ipython().run_line_magic('matplotlib', 'inline')
 # * [rv1.data](https://github.com/phoebe-project/phoebe2-workshop/raw/2021june/data/synthetic/rv1.data)
 # * [rv2.data](https://github.com/phoebe-project/phoebe2-workshop/raw/2021june/data/synthetic/rv2.data)
 
-# In[2]:
+# In[3]:
 
 
-b = phoebe.default_binary()
+b = phoebe.default_binary(force_build=True)
 # lc_tess = np.loadtxt('data/adra/photometry/tess_corrected_new.txt')
 lc = np.loadtxt('data/synthetic/lc.data')
 rv1 = np.loadtxt('data/synthetic/rv1.data')
@@ -62,7 +62,7 @@ _ = b.plot(x='times', show=True)
 
 # Let's start with the rv_periodogram first:
 
-# In[3]:
+# In[4]:
 
 
 b.add_solver('estimator.rv_periodogram', solver='rvperiod')
@@ -71,7 +71,7 @@ print(b['rvperiod'])
 
 # We'll leave all the options to their default values for the time being and see what the output of the solver is.
 
-# In[4]:
+# In[5]:
 
 
 b.run_solver('rvperiod', solution='rvperiod_solution')
@@ -84,7 +84,7 @@ print(b['rvperiod_solution'])
 # 
 # The rest of the output parameters refer to the solution and we can see that the fitted value of ~0.6 is not ideal. So let's instead provide manual samples in a narrower range.
 
-# In[5]:
+# In[6]:
 
 
 b.set_value('sample_mode', context='solver', solver='rvperiod', value='manual')
@@ -95,7 +95,7 @@ print(b['rvperiod_solution_2'])
 
 # The new value of the period ~1.67 looks much better now! Let's adopt it and plot our data in phase space to see the result.
 
-# In[6]:
+# In[7]:
 
 
 b.adopt_solution('rvperiod_solution_2')
@@ -106,7 +106,7 @@ b.plot(x='phase', show=True)
 
 # The light curve periodogram follows a similar workflow as the rv_periodogram. Let's add two different ones and assign one of the two algorithm options to each.
 
-# In[7]:
+# In[8]:
 
 
 b.add_solver('estimator.lc_periodogram', solver='lcperiod_bls', algorithm='bls')
@@ -115,7 +115,7 @@ b.add_solver('estimator.lc_periodogram', solver='lcperiod_ls', algorithm='ls')
 
 # Not all parameters are applicable for both algorithms. For more details check: http://phoebe-project.org/docs/2.3/api/phoebe.parameters.solver.estimator.lc_periodogram
 
-# In[8]:
+# In[9]:
 
 
 b.run_solver('lcperiod_bls', solution='lcperiod_bls_solution', overwrite=True)
@@ -126,7 +126,7 @@ print(b['fitted_values@lcperiod_ls_solution'])
 
 # As expected, the bls algorithm performed better in our case, yielding half the period returned from the rv_periodogram. We can easily adopt the correct period by passing the period_factor in .adopt_solution():
 
-# In[9]:
+# In[10]:
 
 
 b.adopt_solution('lcperiod_bls_solution', period_factor=2)
@@ -137,9 +137,9 @@ b.plot(x='phase', show=True)
 
 # ## Parameter estimates from geometry
 
-# Before running the solvers, let's add and flip the required constraints and tweak some of the compute options, so that our computations run faster after adopting the solutions.
+# Before running the solvers, let's flip the required constraints and tweak some of the compute options, so that our computations run faster after adopting the solutions.
 
-# In[10]:
+# In[11]:
 
 
 # ensures the model light curve is scaled to the data
@@ -151,36 +151,28 @@ b.set_value_all('atm', 'blackbody')
 b.set_value_all('ld_mode', 'manual')
 b.set_value_all('ld_mode_bol', 'manual')
 
-# useful constraints
-b.add_constraint('requivsumfrac')
-b.add_constraint('requivratio')
+# constraints that needs to be flipped
+# for lc_geometry
 b.flip_constraint('requivratio', solve_for='requiv@secondary')
 b.flip_constraint('requivsumfrac', solve_for='requiv@primary')
-
-# contraints that need to be flipped for lc_geometry
-b.add_constraint('teffratio')
 b.flip_constraint('teffratio', solve_for='teff@secondary')
 
 # for rv_geometry
 b.flip_constraint('asini@binary', solve_for='sma@binary')
-
-# for EBAI
-# b.flip_constraint('esinw', solve_for='ecc')
-# b.flip_constraint('ecosw', solve_for='per0')
 
 
 # ### rv_geometry
 
 # The rv_geometry solver provides simple estimates for several parameters that can be obtained from the radial velocity curves.
 
-# In[11]:
+# In[12]:
 
 
 b.add_solver('estimator.rv_geometry', solver='rvgeom', overwrite=True)
 b.run_solver('rvgeom', solution='rvgeom_solution')
 
 
-# In[12]:
+# In[13]:
 
 
 for param, value, unit in zip(b.get_value('fitted_twigs', solution='rvgeom_solution'),
@@ -189,7 +181,7 @@ for param, value, unit in zip(b.get_value('fitted_twigs', solution='rvgeom_solut
      print('%s = %.2f %s' % (param,value,unit))
 
 
-# In[13]:
+# In[14]:
 
 
 b.adopt_solution('rvgeom_solution')
@@ -203,14 +195,14 @@ b.plot(x='phase', legend=True, show=True)
 
 # Now we're ready to add and run EBAI:
 
-# In[14]:
+# In[15]:
 
 
 b.add_solver('estimator.ebai', ebai_method='mlp', solver='ebai_mlp_est')
 b.run_solver('ebai_mlp_est', solution='ebai_mlp_solution')
 
 
-# In[15]:
+# In[16]:
 
 
 for param, value, unit in zip(b.get_value('fitted_twigs', solution='ebai_mlp_solution'),
@@ -219,12 +211,14 @@ for param, value, unit in zip(b.get_value('fitted_twigs', solution='ebai_mlp_sol
      print('%s = %.2f %s' % (param,value,unit))
 
 
-# In[16]:
+# In[17]:
 
 
+# flip the esinw/ecosw constraints so we can adopt the solution
 b.flip_constraint('esinw', solve_for='ecc')
 b.flip_constraint('ecosw', solve_for='per0')
 
+# adopt solution and compute the model
 b.adopt_solution('ebai_mlp_solution')
 b.run_compute(model='ebai_mlp_model')
 b.plot(x='phase', legend=True, show=True)
@@ -232,14 +226,14 @@ b.plot(x='phase', legend=True, show=True)
 
 # We can see that EBAI with the 'mlp' method is not particularly good at estimating esinw and ecosw. Let's try the same with the 'knn' method:
 
-# In[17]:
+# In[18]:
 
 
 b.add_solver('estimator.ebai', ebai_method='knn', solver='ebai_knn_est')
 b.run_solver('ebai_knn_est', solution='ebai_knn_solution')
 
 
-# In[18]:
+# In[19]:
 
 
 for param, value, unit in zip(b.get_value('fitted_twigs', solution='ebai_knn_solution'),
@@ -248,7 +242,7 @@ for param, value, unit in zip(b.get_value('fitted_twigs', solution='ebai_knn_sol
      print('%s = %.2f %s' % (param,value,unit))
 
 
-# In[19]:
+# In[20]:
 
 
 b.adopt_solution('ebai_knn_solution')
@@ -256,16 +250,16 @@ b.run_compute(model='ebai_knn_model')
 b.plot(x='phase', legend=True, show=True)
 
 
-# We can see that the 'knn' estimator does a better job at estimating esinw, ecosw and teffratio! Let's finally compare the results of these two machine learning models with a model based on the light curve geometry (lc_geometry), which estimates all of the parameters that EBAI does, with the exception of inclination:
+# We can see that the 'knn' estimator does a better job at estimating esinw and ecosw! Let's finally compare the results of these two machine learning models with a model based on the light curve geometry (lc_geometry), which estimates all of the parameters that EBAI does, with the exception of inclination:
 
-# In[20]:
+# In[21]:
 
 
 b.add_solver('estimator.lc_geometry', solver='lcgeom')
 b.run_solver('lcgeom', solution='lcgeom_solution')
 
 
-# In[24]:
+# In[22]:
 
 
 for param, value, unit in zip(b.get_value('fitted_twigs', solution='lcgeom_solution')[:5],
@@ -274,11 +268,13 @@ for param, value, unit in zip(b.get_value('fitted_twigs', solution='lcgeom_solut
      print('%s = %.2f %s' % (param,value,unit))
 
 
-# In[25]:
+# In[23]:
 
 
+# lc_geometry returns ecc and per0, so we need to flip the constraints back before adopting the solution
 b.flip_constraint('ecc', solve_for='esinw')
 b.flip_constraint('per0', solve_for='ecosw')
+
 b.adopt_solution('lcgeom_solution')
 b.run_compute(model='lcgeom_model')
 b.plot(x='phase', legend=True, show=True)
@@ -288,7 +284,7 @@ b.plot(x='phase', legend=True, show=True)
 
 # Finally, let's return the atmosphere parameters to their default PHOEBE values and ensure that our solution is within the atmosphere table bounds. (Moving forward to optimiziers and samplers, we want to make sure that we're starting from a somewhat physical solution!)
 
-# In[26]:
+# In[24]:
 
 
 b.set_value_all('atm', 'ck2004')
@@ -298,7 +294,7 @@ b.run_compute()
 b.plot(['dataset', 'latest'], x='phase', show=True)
 
 
-# In[27]:
+# In[25]:
 
 
 b.save('data/synthetic/after_estimators.bundle')

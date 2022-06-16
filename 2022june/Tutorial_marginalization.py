@@ -12,10 +12,10 @@
 # So when we reparametrize to fit for the sum and ratio of fractional radii and the temperature ratio, should we omit q, sma@binary and teff@primary from the fitted parameters? 
 
 # You can download the true bundle and data here if you haven't already:
-# * [true.bundle](https://github.com/phoebe-project/phoebe2-workshop/raw/2021june/data/synthetic/true.bundle)
-# * [lc.data](https://github.com/phoebe-project/phoebe2-workshop/raw/2021june/data/synthetic/lc.data)
-# * [rv1.data](https://github.com/phoebe-project/phoebe2-workshop/raw/2021june/data/synthetic/rv1.data)
-# * [rv2.data](https://github.com/phoebe-project/phoebe2-workshop/raw/2021june/data/synthetic/rv2.data)
+# * [true.bundle](https://github.com/phoebe-project/phoebe2-workshop/raw/2022june/data/synthetic/true.bundle)
+# * [lc.data](https://github.com/phoebe-project/phoebe2-workshop/raw/2022june/data/synthetic/lc.data)
+# * [rv1.data](https://github.com/phoebe-project/phoebe2-workshop/raw/2022june/data/synthetic/rv1.data)
+# * [rv2.data](https://github.com/phoebe-project/phoebe2-workshop/raw/2022june/data/synthetic/rv2.data)
 
 # In[1]:
 
@@ -183,7 +183,7 @@ b.add_distribution({
 # b.save('data/synthetic/true_marginalization_case1.bundle')
 
 
-# You can download the bundle used to plot the solution here: [true_marginalization_case1.bundle](https://github.com/phoebe-project/phoebe2-workshop/raw/2021june/data/synthetic/true_marginalization_case1.bundle)
+# You can download the bundle used to plot the solution here: [true_marginalization_case1.bundle](https://github.com/phoebe-project/phoebe2-workshop/raw/2022june/data/synthetic/true_marginalization_case1.bundle)
 
 # In[17]:
 
@@ -210,7 +210,7 @@ b.plot(solution='mcmc_marginalization_solution', style='corner', burnin=400, tru
 # Let's again use the true bundle to remove all other contributions to the solution and attach a light curve of the same system we've been using, only this time the light curve is noiser, we have less observations, but the observational uncertainties are under-estimated.
 # 
 # Download the light curve here:
-# * [lc_noisy.data](https://github.com/phoebe-project/phoebe2-workshop/raw/2021june/data/synthetic/lc_noisy.data)
+# * [lc_noisy.data](https://github.com/phoebe-project/phoebe2-workshop/raw/2022june/data/synthetic/lc_noisy.data)
 
 # In[20]:
 
@@ -325,7 +325,7 @@ b.add_distribution({
 # b.save('data/synthetic/true_marginalization_case2.bundle')
 
 
-# You can download the bundle used to plot the solution here: [true_marginalization_case2.bundle](https://github.com/phoebe-project/phoebe2-workshop/raw/2021june/data/synthetic/true_marginalization_case2.bundle)
+# You can download the bundle used to plot the solution here: [true_marginalization_case2.bundle](https://github.com/phoebe-project/phoebe2-workshop/raw/2022june/data/synthetic/true_marginalization_case2.bundle)
 
 # In[32]:
 

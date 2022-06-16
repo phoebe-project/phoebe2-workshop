@@ -39,7 +39,7 @@ rv2 = np.loadtxt('data/synthetic/rv2.data')
 
 # ### Case 1: only a light curve
 # 
-# Let's load the bundle that has all with all parameters set to their true values. This bundle has no datasets attached to it, so we'll have to add them here, depending on the case we're considering. We'll also set the pblum_mode to dataset-scaled to avoid effects of marginalization over pblum in the light curve.
+# Let's load the bundle that has all parameters set to their true values. This bundle has no datasets attached to it, so we'll have to add them here, depending on the case we're considering. We'll also set the pblum_mode to dataset-scaled to avoid effects of marginalization over pblum in the light curve.
 # 
 # You can download the bundle here:
 # [true.bundle](https://github.com/phoebe-project/phoebe2-workshop/raw/2021june/data/synthetic/true.bundle)
@@ -110,14 +110,14 @@ b.add_distribution({
 # 
 # Download bundle: [true_mcmc_physical.bundle](https://github.com/phoebe-project/phoebe2-workshop/raw/2021june/data/synthetic/true_mcmc_physical.bundle)
 
-# In[5]:
+# In[9]:
 
 
 b = phoebe.load('data/synthetic/true_mcmc_physical.bundle')
 b.plot(solution='mcmc_physical_solution', style='trace', burnin=0, show=True, fig=plt.figure(figsize=(10,10)))
 
 
-# In[6]:
+# In[10]:
 
 
 b.plot(solution='mcmc_physical_solution', style='corner', burnin=600, show=True)
@@ -129,7 +129,7 @@ b.plot(solution='mcmc_physical_solution', style='corner', burnin=600, show=True)
 
 # Let's try sampling the previously constrained parameters instead.
 
-# In[7]:
+# In[11]:
 
 
 b = phoebe.load('data/synthetic/true.bundle')
@@ -137,7 +137,7 @@ b.add_dataset('lc', times=lc[:,0], fluxes=lc[:,1], sigmas=lc[:,2], passband='Joh
 b.set_value('pblum_mode', 'dataset-scaled')
 
 
-# In[8]:
+# In[12]:
 
 
 b.flip_constraint('q', solve_for='mass@secondary')
@@ -152,7 +152,7 @@ b.flip_constraint('requivratio', solve_for='requiv@secondary@component')
 b.flip_constraint('teffratio', solve_for='teff@secondary@component')
 
 
-# In[9]:
+# In[13]:
 
 
 b.add_distribution({
@@ -165,7 +165,7 @@ b.add_distribution({
 
 # _________________________________________
 
-# In[10]:
+# In[14]:
 
 
 # b.add_server('remoteslurm', crimpl_name='clusty', nprocs=48, walltime=48,
@@ -173,7 +173,7 @@ b.add_distribution({
 #              server='clusty')
 
 
-# In[11]:
+# In[15]:
 
 
 # b.add_solver('sampler.emcee', solver='mcmc_sum_ratios',
@@ -181,13 +181,13 @@ b.add_distribution({
 #               compute='phoebe01', nwalkers=48, niters=1000, progress_every_niters=50)
 
 
-# In[12]:
+# In[16]:
 
 
 # b.run_solver('mcmc_sum_ratios', use_server='clusty', solution='mcmc_sum_ratios_solution', detach=True)
 
 
-# In[13]:
+# In[17]:
 
 
 # b.load_job_progress(solution='mcmc_sum_ratios_solution')
@@ -198,14 +198,14 @@ b.add_distribution({
 
 # Download the bundle with solution: [true_mcmc_sum_ratios.bundle](https://github.com/phoebe-project/phoebe2-workshop/raw/2021june/data/synthetic/true_mcmc_sum_ratios.bundle)
 
-# In[14]:
+# In[18]:
 
 
 b = phoebe.load('data/synthetic/true_mcmc_sum_ratios.bundle')
 b.plot(solution='mcmc_sum_ratios_solution', style='trace', burnin=0, show=True, fig=plt.figure(figsize=(10,8)))
 
 
-# In[15]:
+# In[19]:
 
 
 b.plot(solution='mcmc_sum_ratios_solution', style='corner', burnin=500, show=True)
@@ -217,7 +217,7 @@ b.plot(solution='mcmc_sum_ratios_solution', style='corner', burnin=500, show=Tru
 # 
 # Let's see what happens when we sample for q, sma@binary and vgamma and only have a primary RV.
 
-# In[16]:
+# In[20]:
 
 
 b = phoebe.load('data/synthetic/true.bundle')
@@ -226,14 +226,14 @@ b.run_compute()
 b.plot(x='phase', show=True)
 
 
-# In[17]:
+# In[21]:
 
 
 b.flip_constraint('q', solve_for='mass@secondary')
 b.flip_constraint('sma@binary', solve_for='mass@primary')
 
 
-# In[18]:
+# In[22]:
 
 
 b.add_distribution(
@@ -244,7 +244,7 @@ b.add_distribution(
     distribution='dist_rv1')
 
 
-# In[19]:
+# In[23]:
 
 
 # b.add_server('remoteslurm', crimpl_name='clusty', nprocs=48, walltime=48,
@@ -252,7 +252,7 @@ b.add_distribution(
 #              server='clusty')
 
 
-# In[20]:
+# In[24]:
 
 
 # b.add_solver('sampler.emcee', solver='mcmc_rv1',
@@ -260,7 +260,7 @@ b.add_distribution(
 #               compute='phoebe01', nwalkers=48, niters=500, progress_every_niters=50)
 
 
-# In[21]:
+# In[25]:
 
 
 # b.run_solver('mcmc_rv1', use_server='clusty', solution='mcmc_rv1_solution', detach=True)
@@ -270,7 +270,7 @@ b.add_distribution(
 
 # We already saw in the previous tutorial that this case constrains all of the RV-related parameters. Let's sample again for q, vgamma and sma@binary starting from the true values (to compare the solution with the one RV case).
 
-# In[22]:
+# In[26]:
 
 
 b.set_value('times', component='secondary', dataset='rv01', value=rv2[:,0])
@@ -280,7 +280,7 @@ b.run_compute()
 b.plot(x='phase', show=True)
 
 
-# In[23]:
+# In[27]:
 
 
 # b.add_solver('sampler.emcee', solver='mcmc_rvs',
@@ -288,19 +288,19 @@ b.plot(x='phase', show=True)
 #               compute='phoebe01', nwalkers=48, niters=500, progress_every_niters=50)
 
 
-# In[24]:
+# In[28]:
 
 
 # b.run_solver('mcmc_rvs', use_server='clusty', solution='mcmc_rvs_solution', detach=True)
 
 
-# In[25]:
+# In[29]:
 
 
 # b.save('data/synthetic/true_mcmc_rvs.bundle')
 
 
-# In[26]:
+# In[30]:
 
 
 # b = phoebe.load('data/synthetic/true_mcmc_rvs.bundle')
@@ -311,7 +311,7 @@ b.plot(x='phase', show=True)
 
 # Download the bundle with RV solutions: [true_mcmc_rvs.bundle](https://github.com/phoebe-project/phoebe2-workshop/raw/2021june/data/synthetic/true_mcmc_rvs.bundle)
 
-# In[27]:
+# In[31]:
 
 
 b = phoebe.load('data/synthetic/true_mcmc_rvs.bundle')
@@ -319,7 +319,7 @@ b = phoebe.load('data/synthetic/true_mcmc_rvs.bundle')
 
 # Posteriors with one RV:
 
-# In[28]:
+# In[32]:
 
 
 b.plot(solution='mcmc_rv1_solution', style='corner', burnin=250, show=True)
@@ -327,7 +327,7 @@ b.plot(solution='mcmc_rv1_solution', style='corner', burnin=250, show=True)
 
 # Posteriors with both RVs:
 
-# In[29]:
+# In[33]:
 
 
 b.plot(solution='mcmc_rvs_solution', style='corner', burnin=250, show=True)

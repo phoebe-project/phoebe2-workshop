@@ -228,7 +228,7 @@ b.plot(['dataset', 'model'], model=['gps_celerite2', 'gps_celerite2_noeclipses']
        legend=True,show=True)
 
 
-# This is a classic case of GPs overfitting the data: when we include the eclipse points in the fitting, ALL of the signal that originates from our PHOEBE model not fitting the data closely is suppressed by the addition of GPs. This is one safe way to ensure PHOEBE does absolutely nothing and whatever you get back from your PHOEBE model is far fromt he truth. Within MCMC, this will lead the PHOEBE parameteres to be completely unconstrained because all of the signal is accounted for by the GPs!
+# This is a classic case of GPs overfitting the data: when we include the eclipse points in the fitting, ALL of the signal that originates from our PHOEBE model not fitting the data closely is suppressed by the addition of GPs. This is one safe way to ensure PHOEBE does absolutely nothing and whatever you get back from your PHOEBE model is far from the truth. Within MCMC, this will lead the PHOEBE parameteres to be completely unconstrained because all of the signal is accounted for by the GPs!
 
 # Therefore, in cases of instrumental noise, we recommend using the sklearn kernels - even some with basic default values are less prone to overfitting. If you want to delve a little deeper in the optimal kernel choice, see [this example](link) for how to utilize grid search and hyperparameter optimization (outside of Phoebe) to improve the GP model.
 
@@ -296,7 +296,7 @@ b.plot(x='phase', show=True)
 
 # The model is not ideal mainly because of all the shortcuts we have implemented to speed up the computation: the 201 phase points and spherical geometry. It's good enough for our purposes though so we won't bother too much with fixing that right now! 
 # 
-# It's pretty obvious that the "noise" in this case is periodic. So instead of shooting in the dark, we can run FFT to get the most powerful frequencies. It turns out that the two most powerful frequencies are the orbital one (as expected) and one at 1.969765 s$^{-1}$. Let's use this information to kickstart our GP models!
+# It's pretty obvious that the "noise" in this case is periodic. So instead of shooting in the dark, we can run FFT to get the most powerful frequencies. It turns out that the two most powerful frequencies are the orbital one (as expected) and one at 1.969765 d$^{-1}$. Let's use this information to kickstart our GP models!
 
 # #### sklearn
 

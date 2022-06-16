@@ -9,8 +9,8 @@
 # 
 # This interactive workshop tutorial covers many of the same topics as the corresponding online tutorial(s):
 # 
-# * [Advanced: EMCEE Sampler](http://phoebe-project.org/docs/2.3/tutorials/emcee.ipynb)
-# * [Advanced: Convert Posterior Distributions from EMCEE](http://phoebe-project.org/docs/2.3/tutorials/emcee_distributions_convert.ipynb)
+# * [Advanced: EMCEE Sampler](http://phoebe-project.org/docs/latest/tutorials/emcee.ipynb)
+# * [Advanced: Convert Posterior Distributions from EMCEE](http://phoebe-project.org/docs/latest/tutorials/emcee_distributions_convert.ipynb)
 # 
 # As usual, we do the imports first.
 
@@ -39,7 +39,7 @@ b = phoebe.load('./data/synthetic/after_final_round.bundle')
 _ = b.plot(solution='final_round', show=True)
 
 
-# This looks good (and converged, which we already know from the convergence analysis if the previous tutorial!) so let's first adopt the final round, including the distributions, which will give us easier access to the parameter posteriors and uncertainties.
+# This looks good (and converged, which we already know from the convergence analysis of the previous tutorial!) so let's first adopt the final round, including the distributions, which will give us easier access to the parameter posteriors and uncertainties.
 
 # In[4]:
 
