@@ -60,7 +60,8 @@ Please test your installation well in advance of the workshop by running the [te
 
 ### Wednesday June 22: Advanced Physics & Features
 
-[Optional Breakout Session: Contact Binaries](./Tutorial_Semidetached_Contact.ipynb) (Angela)
+[Optional Breakout Session: Contact Binaries](./Tutorial_Semidetached_Contact.ipynb) (Angela) <br>
+[Optional Breakout Session: In-depth look at fluxes and magnitudes](./Tutorial_flux_calibration.ipynb) (Andrej)
 
 * Talk: Scientific Introduction to PHOEBE (Andrej)
 * [Tutorial: Animations](./Tutorial_05b_animations.ipynb) (Angela)
