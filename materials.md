@@ -53,29 +53,31 @@ Please test your installation well in advance of the workshop by running the [te
 * [Talk: Atmospheres, Limb Darkening, Intensity Weighting, Extinction, and Reflection](https://docs.google.com/presentation/d/e/2PACX-1vTX__cTcowjUGuJ18jYY85tWX9VjjYEu7ISEkLgMMFKSFUNNFPHRreGW_LaUjSsQF62-M5od-J37LAu/pub?start=false&loop=false&delayms=3000) (Dave)
 * [Tutorial: Datasets](./Tutorial_03_datasets.ipynb) (Andrej)
 * [Tutorial: Compute](./Tutorial_04_compute.ipynb) (Angela)
-* [Tutorial: Time and Phase](./Tutorial_04b_time_and_phase.ipynb) (Andrej)
-* [Tutorial: Plotting](./Tutorial_05_plotting.ipynb) (Angela)
+* [Tutorial: Time and Phase](./Tutorial_05_time_and_phase.ipynb) (Andrej)
+* [Tutorial: Plotting](./Tutorial_06_plotting.ipynb) (Angela)
 * [Exercises: Creating Forward Models](./Exercises_02_forward_models.ipynb)
 
 
 ### Wednesday June 22: Advanced Physics & Features
 
-[Optional Breakout Session: Contact Binaries](./Tutorial_Semidetached_Contact.ipynb) (Angela) <br>
-[Optional Breakout Session: In-depth look at fluxes and magnitudes](./Tutorial_flux_calibration.ipynb) (Andrej)
 
 * Talk: Scientific Introduction to PHOEBE (Andrej)
-* [Tutorial: Animations](./Tutorial_05b_animations.ipynb) (Angela)
-* [Tutorial: Accessing and Plotting Meshes](./Tutorial_05c_meshes.ipynb)
-* [Tutorial: Flux Scaling (Passband Luminosity, Third Light, and Distance)](./Tutorial_pblum_l3_distance.ipynb) (Andrej)
-* [Tutorial: Features (Spots & Gaussian Processes)](./Tutorial_06_features.ipynb) (Angela)
-* [Tutorial: Optimizing PHOEBE Computations](./Tutorial_optimizing_computations.ipynb) (Andrej)
+* [Tutorial: Animations](./Tutorial_07_animations.ipynb) (Angela)
+* [Tutorial: Accessing and Plotting Meshes](./Tutorial_08_meshes.ipynb)
+* [Tutorial: Flux Scaling (Passband Luminosity, Third Light, and Distance)](./Tutorial_09_pblum_l3_distance.ipynb) (Andrej)
+* [Tutorial: Features (Spots & Gaussian Processes)](./Tutorial_10_features.ipynb) (Angela)
+* [Tutorial: Optimizing PHOEBE Computations](./Tutorial_11_optimizing_computations.ipynb) (Andrej)
 * [Exercises: Forward Model Animations](./Exercises_03_animations.ipynb)
 * Excursion into Philadelphia and Workshop Dinner.
 
 
+[Optional Breakout Session: Contact Binaries](./Tutorial_12_semidetached_contact.ipynb) (Angela) <br>
+[Optional Breakout Session: In-depth look at fluxes and magnitudes](./Tutorial_13_flux_calibration.ipynb) (Andrej)
+
+
 ### Thursday June 23: Hack Day
 
-* Exercises
+* [Exercises: Hack Day](./Exercises_04_hack_day.ipynb)
 
 ### Friday June 24: PHOEBE Development & Upcoming Releases
 
@@ -94,43 +96,43 @@ Please test your installation well in advance of the workshop by running the [te
 * [Talk: Introduction to the Inverse Problem](https://docs.google.com/presentation/d/e/2PACX-1vR-fRxNcn5PEMQ6Rvq5dEHALVIDs62OqGDDaWr2liCNMrtcP-h6u4WztVxUhGoGvKQTh9DXyN9xXLYh/pub?start=false&loop=false&delayms=3000) (Angela)
 * [Talk: Inverse Problem in PHOEBE](https://docs.google.com/presentation/d/e/2PACX-1vT_GwcoD_0Tz-5V1dEolYYFCMp2qxrfKqfySOCI9QU3rpMuR7ANGY_rDiLRZbXnrvTN57x6qndroC0Z/pub?start=false&loop=false&delayms=3000) (Andrej)
 * [Tutorial: Detrending](./Tutorial_14_detrending.ipynb) (Andrej)
-* [Tutorial: Estimators](./Tutorial_08a_estimators.ipynb) (Angela)
-* [Tutorial: Degeneracies](./Tutorial_degeneracy.ipynb) (Andrej)
-* [Exercises: Estimators](./Exercises_04_estimators.ipynb) (Angela)
+* [Tutorial: Estimators](./Tutorial_15_estimators.ipynb) (Angela)
+* [Tutorial: Degeneracies](./Tutorial_16_degeneracy.ipynb) (Andrej)
+* [Exercises: Estimators](./Exercises_06_estimators.ipynb) (Angela)
 
 
 ### Tuesday July 5: Optimizers
 
-* [Tutorial: Optimizers](./Tutorial_08b_optimizers.ipynb) (Andrej)
-* [Tutorial: Running Jobs on External Compute Resources](./Tutorial_09_server.ipynb) (Andrej)
-* [Tutorial: Distributions & Priors](./Tutorial_07_distributions.ipynb) (Kyle)
-* [Exercises: Optimizers](./Exercises_05_optimizers.ipynb) (Andrej)
+* [Tutorial: Optimizers](./Tutorial_17_optimizers.ipynb) (Andrej)
+* [Tutorial: Running Jobs on External Compute Resources](./Tutorial_18_server.ipynb) (Andrej)
+* [Tutorial: Distributions & Priors](./Tutorial_19_distributions.ipynb) (Kyle)
+* [Exercises: Optimizers](./Exercises_07_optimizers.ipynb) (Andrej)
 
 
 ### Tuesday July 12: MCMC in PHOEBE
 
 * [Tutoritalk: MCMC Introduction](./mcmc_generic.ipynb)
-* [Tutorial: MCMC Basics in PHOEBE](./Tutorial_10_mcmc.ipynb) (Andrej)
-* [Tutorial: Continuing/Resampling in MCMC](./Tutorial_11_mcmc_continued.ipynb) (Andrej)
-* [Exercises: Setting up an MCMC Run](./Exercises_06_mcmc.ipynb) (Andrej)
+* [Tutorial: MCMC Basics in PHOEBE](./Tutorial_20_mcmc.ipynb) (Andrej)
+* [Tutorial: Continuing/Resampling in MCMC](./Tutorial_21_mcmc_continued.ipynb) (Andrej)
+* [Exercises: Setting up an MCMC Run](./Exercises_08_mcmc.ipynb) (Andrej)
 
 ### Tuesday July 19: Advanced MCMC
 
 [Optional Breakout Session: Fitting Contact Binaries](https://docs.google.com/presentation/d/e/2PACX-1vRrcYeotz37WyqXCmBQqwqH7dkHBUi-D6SMvAiZketoqlkGCmZ7vWhPgD46dx_pl_SCs3nPrNB4bOgV/pub?start=false&loop=false&delayms=3000) (Angela)
 
 
-* [Tutorial: Interpreting Chains and Convergence in MCMC](./Tutorial_12_convergence.ipynb) (Andrej)
-* [Tutorial: Posteriors and Parameter Uncertainties](./Tutorial_13_posteriors.ipynb) (Angela)
-* [Tutorial: Choice of Parameterization](./Tutorial_parametrization.ipynb) (Angela)
-* [Tutorial: Marginalizing over Additional Parameters](./Tutorial_marginalization.ipynb) (Angela)
+* [Tutorial: Interpreting Chains and Convergence in MCMC](./Tutorial_22_convergence.ipynb) (Andrej)
+* [Tutorial: Posteriors and Parameter Uncertainties](./Tutorial_23_posteriors.ipynb) (Angela)
+* [Tutorial: Choice of Parameterization](./Tutorial_24_parameterization.ipynb) (Angela)
+* [Tutorial: Marginalizing over Additional Parameters](./Tutorial_25_marginalization.ipynb) (Angela)
 * [Exercises: Getting Posteriors](./Exercises_07_posteriors.ipynb) (Angela)
 
 
 ### Tuesday July 26: Gaussian Processes
 
 
-* [Tutorial: Gaussian Processes](./Tutorial_Gaussian_Processes.ipynb) (Angela)
+* [Tutorial: Gaussian Processes](./Tutorial_26_gaussian_processes.ipynb) (Angela)
 * Group Photo/Screenshot
-* [Tutorial: Running on OTHER Compute Resources](./Tutorial_server_other.ipynb) (Kyle)
+* [Tutorial: Running on OTHER Compute Resources](./Tutorial_27_server_other.ipynb) (Kyle)
 * [Talk: Common Pitfalls when Fitting](https://docs.google.com/presentation/d/e/2PACX-1vTI2tTM7K307S8KRn_agtd_4IoXfwgA2_e4yfH47UzlwEdn0sl59tKSibZxHlfgbF43KPfWCgxgA1Fx/pub?start=false&loop=false&delayms=3000)
 * Wrap Up: volunteer wrap-up contributions and discussion
