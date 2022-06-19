@@ -31,7 +31,7 @@ logger = phoebe.logger(clevel='WARNING')
 # In[3]:
 
 
-b = phoebe.default_binary(force_build=True)
+b = phoebe.default_binary()
 
 
 # # Compute
