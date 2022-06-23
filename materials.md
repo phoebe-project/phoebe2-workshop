@@ -62,9 +62,9 @@ Please test your installation well in advance of the workshop by running the [te
 
 
 * Talk: Scientific Introduction to PHOEBE (Andrej)
-* [Tutorial: Animations](./Tutorial_07_animations.ipynb) (Angela)
-* [Tutorial: Accessing and Plotting Meshes](./Tutorial_08_meshes.ipynb) (Kyle)
-* [Tutorial: Flux Scaling (Passband Luminosity, Third Light, and Distance)](./Tutorial_09_pblum_l3_distance.ipynb) (Andrej)
+* [Tutorial: Animations](./Tutorial_07_animations.ipynb) (Angela | [recording](http://phoebe-project.org/static/workshops/2022june/2022.06.22.02_animations.mp4))
+* [Tutorial: Accessing and Plotting Meshes](./Tutorial_08_meshes.ipynb) (Kyle | [recording](http://phoebe-project.org/static/workshops/2022june/2022.06.22.03_meshes.mp4))
+* [Tutorial: Flux Scaling (Passband Luminosity, Third Light, and Distance)](./Tutorial_09_pblum_l3_distance.ipynb) (Andrej | [recording](http://phoebe-project.org/static/workshops/2022june/2022.06.22.04_pblum_l3_distance.mp4))
 * [Exercises: Forward Model Animations](./Exercises_03_animations.ipynb)
 * Excursion into Philadelphia and Workshop Dinner
 
@@ -74,10 +74,10 @@ Please test your installation well in advance of the workshop by running the [te
 
 * [Tutorial: Optimizing PHOEBE Computations](./Tutorial_11_optimizing_computations.ipynb) (Andrej)
 * [Tutorial: Features (Spots & Gaussian Processes)](./Tutorial_10_features.ipynb) (Angela)
-* [Exercises: Forward Model Animations](./Exercises_03_animations.ipynb)
-* [Exercises: Hack Day](./Exercises_04_hack_day.ipynb)
 * [Optional Breakout Session: Contact Binaries](./Tutorial_12_semidetached_contact.ipynb) (Angela)
 * [Optional Breakout Session: In-depth look at fluxes and magnitudes](./Tutorial_13_flux_calibration.ipynb) (Andrej)
+* [Exercises: Forward Model Animations](./Exercises_03_animations.ipynb)
+* [Exercises: Hack Day](./Exercises_04_hack_day.ipynb)
 
 
 ### Friday June 24: PHOEBE Development & Upcoming Releases
