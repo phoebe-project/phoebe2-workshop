@@ -9,7 +9,7 @@
 
 # ## Kepler systems
 # 
-# detached circular system (KIC10661783 https://ui.adsabs.harvard.edu/abs/2011MNRAS.414.2413S/abstract)
+# detached circular system (KIC10661783 https://ui.adsabs.harvard.edu/abs/2021MNRAS.505.3206M/abstract)
 # 
 # detached eccentric system (KIC4862625 https://iopscience.iop.org/article/10.1088/0004-637X/768/2/127/pdf)
 # 
