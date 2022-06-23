@@ -107,7 +107,7 @@ print(cb.filter(context='component', kind='star', component='primary'))
 print(cb.filter(context='component', kind='star', component='secondary'))
 
 
-# As before, the parameters marked with an asterix (\*) are constrained by other parameters. If we compare the primary and secondary, we notice that the equivalent radius (requiv) of the primary is a free parameter, while the secondary requiv is constrained by the envelope potential, mass ratio and semi-major axis of the system:
+# As before, the parameters marked with a `C` are constrained by other parameters. If we compare the primary and secondary, we notice that the equivalent radius (requiv) of the primary is a free parameter, while the secondary requiv is constrained by the envelope potential, mass ratio and semi-major axis of the system:
 
 # In[34]:
 
