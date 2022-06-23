@@ -72,11 +72,12 @@ Please test your installation well in advance of the workshop by running the [te
 ### Thursday June 23: Hack Day
 
 
-* [Tutorial: Features (Spots & Gaussian Processes)](./Tutorial_10_features.ipynb) (Angela)
 * [Tutorial: Optimizing PHOEBE Computations](./Tutorial_11_optimizing_computations.ipynb) (Andrej)
+* [Tutorial: Features (Spots & Gaussian Processes)](./Tutorial_10_features.ipynb) (Angela)
+* [Exercises: Forward Model Animations](./Exercises_03_animations.ipynb)
+* [Exercises: Hack Day](./Exercises_04_hack_day.ipynb)
 * [Optional Breakout Session: Contact Binaries](./Tutorial_12_semidetached_contact.ipynb) (Angela)
 * [Optional Breakout Session: In-depth look at fluxes and magnitudes](./Tutorial_13_flux_calibration.ipynb) (Andrej)
-* [Exercises: Hack Day](./Exercises_04_hack_day.ipynb)
 
 
 ### Friday June 24: PHOEBE Development & Upcoming Releases
