@@ -50,11 +50,11 @@ Please test your installation well in advance of the workshop by running the [te
 
 ### Tuesday June 21: Creating Forward Models
 
-* [Talk: Atmospheres, Limb Darkening, Intensity Weighting, Extinction, and Reflection](https://docs.google.com/presentation/d/e/2PACX-1vTX__cTcowjUGuJ18jYY85tWX9VjjYEu7ISEkLgMMFKSFUNNFPHRreGW_LaUjSsQF62-M5od-J37LAu/pub?start=false&loop=false&delayms=3000) (Dave)
-* [Tutorial: Datasets](./Tutorial_03_datasets.ipynb) (Andrej)
-* [Tutorial: Compute](./Tutorial_04_compute.ipynb) (Angela)
-* [Tutorial: Time and Phase](./Tutorial_05_time_and_phase.ipynb) (Andrej)
-* [Tutorial: Plotting](./Tutorial_06_plotting.ipynb) (Angela)
+* [Talk: Atmospheres, Limb Darkening, Intensity Weighting, Extinction, and Reflection](https://docs.google.com/presentation/d/e/2PACX-1vTX__cTcowjUGuJ18jYY85tWX9VjjYEu7ISEkLgMMFKSFUNNFPHRreGW_LaUjSsQF62-M5od-J37LAu/pub?start=false&loop=false&delayms=3000) (Dave | [recording](https://villanova.zoom.us/rec/play/jnVnZB3zHfvBWyzc05c_BtiNry0Zhs1ZJgNVyzBgT3E4zuvulqKCZAzWzKW_YLkR63fUj52bqMpNSRn_.-KePrQm8hToe0AaH?startTime=1655816634000&_x_zm_rtaid=pF3w6te9StyTu82-N3L2kg.1655987342438.40ced37e340d57c15326873d874d9553&_x_zm_rhtaid=741))
+* [Tutorial: Datasets](./Tutorial_03_datasets.ipynb) (Andrej | [recording](http://phoebe-project.org/static/workshops/2022june/2022.06.21.02_datasets.mp4))
+* [Tutorial: Compute](./Tutorial_04_compute.ipynb) (Angela | [recording](http://phoebe-project.org/static/workshops/2022june/2022.06.21.03_compute.mp4))
+* [Tutorial: Time and Phase](./Tutorial_05_time_and_phase.ipynb) (Andrej | [recording](https://villanova.zoom.us/rec/share/UGQ_6ctjZQC_Wd7pqxVaF6pukjFfsZE0Xpdcv7QK3zNiNoP1COnWyYuZzrCQt1CU.chDhgZpJmlKjtLST?startTime=1655832876000))
+* [Tutorial: Plotting](./Tutorial_06_plotting.ipynb) (Angela | [recording](http://phoebe-project.org/static/workshops/2022june/2022.06.21.05_plotting.mp4))
 * [Exercises: Creating Forward Models](./Exercises_02_forward_models.ipynb)
 
 
