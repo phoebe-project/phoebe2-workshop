@@ -72,10 +72,10 @@ Please test your installation well in advance of the workshop by running the [te
 ### Thursday June 23: Hack Day
 
 
-* [Tutorial: Optimizing PHOEBE Computations](./Tutorial_11_optimizing_computations.ipynb) (Andrej)
-* [Tutorial: Features (Spots & Gaussian Processes)](./Tutorial_10_features.ipynb) (Angela)
-* [Optional Breakout Session: Contact Binaries](./Tutorial_12_semidetached_contact.ipynb) (Angela)
-* [Optional Breakout Session: In-depth look at fluxes and magnitudes](./Tutorial_13_flux_calibration.ipynb) (Andrej)
+* [Tutorial: Optimizing PHOEBE Computations](./Tutorial_11_optimizing_computations.ipynb) (Andrej | [recording](http://phoebe-project.org/static/workshops/2022june/2022.06.23.01_optimizing_computations.mp4))
+* [Tutorial: Features (Spots & Gaussian Processes)](./Tutorial_10_features.ipynb) (Angela | [recording](http://phoebe-project.org/static/workshops/2022june/2022.06.23.02_features.mp4))
+* [Optional Breakout Session: Contact Binaries](./Tutorial_12_semidetached_contact.ipynb) (Angela | [recording](http://phoebe-project.org/static/workshops/2022june/2022.06.23.03_semidetached_contact.mp4))
+* [Optional Breakout Session: In-depth look at fluxes and magnitudes](./Tutorial_13_flux_calibration.ipynb) (Andrej | [recording](http://phoebe-project.org/static/workshops/2022june/2022.06.22.04_flux_calibration.mp4))
 * [Exercises: Forward Model Animations](./Exercises_03_animations.ipynb)
 * [Exercises: Hack Day](./Exercises_04_hack_day.ipynb)
 
