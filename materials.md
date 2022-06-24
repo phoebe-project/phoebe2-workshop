@@ -75,7 +75,7 @@ Please test your installation well in advance of the workshop by running the [te
 * [Tutorial: Optimizing PHOEBE Computations](./Tutorial_11_optimizing_computations.ipynb) (Andrej | [recording](http://phoebe-project.org/static/workshops/2022june/2022.06.23.01_optimizing_computations.mp4))
 * [Tutorial: Features (Spots & Gaussian Processes)](./Tutorial_10_features.ipynb) (Angela | [recording](http://phoebe-project.org/static/workshops/2022june/2022.06.23.02_features.mp4))
 * [Optional Breakout Session: Contact Binaries](./Tutorial_12_semidetached_contact.ipynb) (Angela | [recording](http://phoebe-project.org/static/workshops/2022june/2022.06.23.03_semidetached_contact.mp4))
-* [Optional Breakout Session: In-depth look at fluxes and magnitudes](./Tutorial_13_flux_calibration.ipynb) (Andrej | [recording](http://phoebe-project.org/static/workshops/2022june/2022.06.22.04_flux_calibration.mp4))
+* [Optional Breakout Session: In-depth look at fluxes and magnitudes](./Tutorial_13_flux_calibration.ipynb) (Andrej | [recording](http://phoebe-project.org/static/workshops/2022june/2022.06.23.04_flux_calibration.mp4))
 * [Exercises: Forward Model Animations](./Exercises_03_animations.ipynb)
 * [Exercises: Hack Day](./Exercises_04_hack_day.ipynb)
 
@@ -84,9 +84,9 @@ Please test your installation well in advance of the workshop by running the [te
 
 
 * Group Photo
-* [Talk: In Development - Pulsations](https://docs.google.com/presentation/d/e/2PACX-1vTY9f-XjDgw5knxFRDKpwNzNp8OMFMsH0nC9zYN1_TBxndnFuRSoKejpuDK34JJ_b0wrkfTlu5hy1Ki/pub?start=false&loop=false&delayms=3000) (Andrej)
-* [Talk: Line Profiles with PHOEBE and SPAMMS](https://docs.google.com/presentation/d/e/2PACX-1vRT4EwgIf7ocn8JJFyULGhaVJvi7c4zZT36ttaXJ8qN4krQ7uaX1QMUmlTpMcyBo_GhNRIVjlzHmAIM/pub?start=false&loop=false&delayms=3000) (Michael)
-* [Talk: In Development - Blended Atmosphere Tables](https://docs.google.com/presentation/d/e/2PACX-1vStqWOOdGpaQcGbvKVU3uwPxfc70Dr1K_w3dHSas7dv3s48ZeBkWI4gjd0pqffJDc5Gjk9Z1CrCojY2/pub?start=false&loop=false&delayms=3000) (Andrej)
+* [Talk: In Development - Pulsations](https://docs.google.com/presentation/d/e/2PACX-1vTY9f-XjDgw5knxFRDKpwNzNp8OMFMsH0nC9zYN1_TBxndnFuRSoKejpuDK34JJ_b0wrkfTlu5hy1Ki/pub?start=false&loop=false&delayms=3000) (Andrej | [recording](http://phoebe-project.org/static/workshops/2022june/2022.06.24.01_pulsations.mp4))
+* [Talk: Line Profiles with PHOEBE and SPAMMS](https://docs.google.com/presentation/d/e/2PACX-1vRT4EwgIf7ocn8JJFyULGhaVJvi7c4zZT36ttaXJ8qN4krQ7uaX1QMUmlTpMcyBo_GhNRIVjlzHmAIM/pub?start=false&loop=false&delayms=3000) (Michael | [recording](http://phoebe-project.org/static/workshops/2022june/2022.06.24.02_spamms.mp4))
+* [Talk: In Development - Blended Atmosphere Tables](https://docs.google.com/presentation/d/e/2PACX-1vStqWOOdGpaQcGbvKVU3uwPxfc70Dr1K_w3dHSas7dv3s48ZeBkWI4gjd0pqffJDc5Gjk9Z1CrCojY2/pub?start=false&loop=false&delayms=3000) (Andrej | [recording](http://phoebe-project.org/static/workshops/2022june/2022.06.24.03_blending.mp4))
 * Wrap Up: volunteer wrap-up contributions and discussion
 * Exercises: finish or continue any of the previous exercises.
 
