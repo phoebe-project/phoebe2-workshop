@@ -37,8 +37,9 @@ b = phoebe.open('data/synthetic/after_optimizers.bundle')
 # 
 # The available server types include:
 # * [LocalThread](https://crimpl.readthedocs.io/en/latest/LocalThread/)
+# * [RemoteThread](https://crimpl.readthedocs.io/en/latest/RemoteThread/)
 # * [RemoteSlurm](https://crimpl.readthedocs.io/en/latest/RemoteSlurm/)
-# * [AWSEC2](https://crimpl.readthedocs.io/en/latest/AWSEC2/)
+# 
 # 
 # For the workshop, you already have a temporary account with passwordless ssh to terra, so we will configure that server within crimpl now.
 
@@ -72,9 +73,9 @@ s.install_conda(in_server_directory=True)
 
 # We will have PHOEBE manage installing the dependencies for us at each job submission.  This does add some minimal overhead to check the existing installation, but will fairly quickly see all dependencies met and move on.
 # 
-# Note: if running crimpl in the `development` branch, PHOEBE will force a re-install to the latest `development` version for each job. In that case, or when you want to install a dependency manually, you could reference the same conda environment from within PHOEBE, and set `install_deps=False` to skip having PHOEBE check and install dependencies.
+# Note: if running crimpl on a non-release branch of PHOEBE (`feature-pulsations`, `feature-blending`), this will force a re-install to the latest version of that branch for each job. In that case, or when you want to install a dependency manually, you could reference the same conda environment from within PHOEBE, and set `install_deps=False` to skip having PHOEBE check and install dependencies.
 # 
-# The stable branch, however, will not force a re-install.
+# Any released and tagged version, however, will not force a re-install.
 # 
 # You can always call [b.dependencies()](http://phoebe-project.org/docs/2.4/api/phoebe.frontend.bundle.Bundle.dependencies.md) to see the required pip dependencies for a given bundle:
 
