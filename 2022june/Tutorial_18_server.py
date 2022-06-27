@@ -37,7 +37,6 @@ b = phoebe.open('data/synthetic/after_optimizers.bundle')
 # 
 # The available server types include:
 # * [LocalThread](https://crimpl.readthedocs.io/en/latest/LocalThread/)
-# * [RemoteThread](https://crimpl.readthedocs.io/en/latest/RemoteThread/)
 # * [RemoteSlurm](https://crimpl.readthedocs.io/en/latest/RemoteSlurm/)
 # 
 # 
@@ -110,7 +109,7 @@ s.save('terra', overwrite=True)
 # 
 # * [localthread](http://phoebe-project.org/docs/2.4/api/phoebe.parameters.server.localthread.md)
 # * [remoteslurm](http://phoebe-project.org/docs/2.4/api/phoebe.parameters.server.remoteslurm.md)
-# * [awsec2](http://phoebe-project.org/docs/2.4/api/phoebe.parameters.server.awsec2.md)
+# 
 
 # In[12]:
 
