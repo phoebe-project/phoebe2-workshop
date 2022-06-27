@@ -40,11 +40,11 @@ Please test your installation well in advance of the workshop by running the [te
 
 ### Monday June 20: Overview and Building Systems in PHOEBE
 
-* [Welcome & Introduction](https://docs.google.com/presentation/d/e/2PACX-1vRMXSVmy3BlJDXqQnmC_PPvuO-kQ1-NAPWEz-gk5laHL0w7kSC75EcXInDY6ZHMPsTJopfPCAfX5z-g/pub?start=false&loop=false&delayms=3000) (Kelly)
-* [Talk: PHOEBE Overview - wdgui to PHOEBE](https://docs.google.com/presentation/d/e/2PACX-1vTcg5sbS9wdqg5b5g1fwe_VoyMG1THPX6mQx4VDbvZOUfKMS6FAd8pYcBl0HeyN5prpDzi54nNZfVB7/pub?start=false&loop=false&delayms=3000) (Andrej)
-* [Talk: Introduction to PHOEBE 2: why so complicated?](https://docs.google.com/presentation/d/e/2PACX-1vQJKn6aqRFU6eJ34TZRJqllb7fOm6f-vaiBnXMkdaqV2MNGtjCSLM_iVDEP49naPiWH36yjbq1ugbLj/pub?start=false&loop=false&delayms=3000) (Kyle)
-* [Tutorial: General Concepts & Bundle Basics](./Tutorial_01_bundle_basics.ipynb) (Andrej)
-* [Tutorial: Constraints](./Tutorial_02_constraints.ipynb) (Angela)
+* [Welcome & Introduction](https://docs.google.com/presentation/d/e/2PACX-1vRMXSVmy3BlJDXqQnmC_PPvuO-kQ1-NAPWEz-gk5laHL0w7kSC75EcXInDY6ZHMPsTJopfPCAfX5z-g/pub?start=false&loop=false&delayms=3000) (Kelly | [recording](https://vums-web.villanova.edu/Mediasite/channel/fourth-phoebe-workshop/watch/041b858ed1a545e497789da48172e1041d))
+* [Talk: PHOEBE Overview - wdgui to PHOEBE](https://docs.google.com/presentation/d/e/2PACX-1vTcg5sbS9wdqg5b5g1fwe_VoyMG1THPX6mQx4VDbvZOUfKMS6FAd8pYcBl0HeyN5prpDzi54nNZfVB7/pub?start=false&loop=false&delayms=3000) (Andrej | [recording](https://vums-web.villanova.edu/Mediasite/channel/fourth-phoebe-workshop/watch/6e0fc1a303c7410fb2e1549b070364061d))
+* [Talk: Introduction to PHOEBE 2: why so complicated?](https://docs.google.com/presentation/d/e/2PACX-1vQJKn6aqRFU6eJ34TZRJqllb7fOm6f-vaiBnXMkdaqV2MNGtjCSLM_iVDEP49naPiWH36yjbq1ugbLj/pub?start=false&loop=false&delayms=3000) (Kyle | [recording](https://vums-web.villanova.edu/Mediasite/channel/fourth-phoebe-workshop/watch/deb1dadab3e749869abfa9ccb0e32b8c1d))
+* [Tutorial: General Concepts & Bundle Basics](./Tutorial_01_bundle_basics.ipynb) (Andrej | [recording](https://vums-web.villanova.edu/Mediasite/channel/fourth-phoebe-workshop/watch/abbdddf173f647c79c8ba7816b8ed5171d))
+* [Tutorial: Constraints](./Tutorial_02_constraints.ipynb) (Angela | [recording](https://vums-web.villanova.edu/Mediasite/channel/fourth-phoebe-workshop/watch/8d42ebfc7e884e79949c3c5c0fdd6b821d))
 * [Exercises: Building Systems](./Exercises_01_building_systems.ipynb)
 
 
@@ -83,17 +83,17 @@ Please test your installation well in advance of the workshop by running the [te
 ### Friday June 24: PHOEBE Development & Upcoming Releases
 
 
-* Group Photo
 * [Talk: In Development - Pulsations](https://docs.google.com/presentation/d/e/2PACX-1vTY9f-XjDgw5knxFRDKpwNzNp8OMFMsH0nC9zYN1_TBxndnFuRSoKejpuDK34JJ_b0wrkfTlu5hy1Ki/pub?start=false&loop=false&delayms=3000) (Andrej | [recording](http://phoebe-project.org/static/workshops/2022june/2022.06.24.01_pulsations.mp4))
 * [Talk: Line Profiles with PHOEBE and SPAMMS](https://docs.google.com/presentation/d/e/2PACX-1vRT4EwgIf7ocn8JJFyULGhaVJvi7c4zZT36ttaXJ8qN4krQ7uaX1QMUmlTpMcyBo_GhNRIVjlzHmAIM/pub?start=false&loop=false&delayms=3000) (Michael | [recording](http://phoebe-project.org/static/workshops/2022june/2022.06.24.02_spamms.mp4))
 * [Talk: In Development - Blended Atmosphere Tables](https://docs.google.com/presentation/d/e/2PACX-1vStqWOOdGpaQcGbvKVU3uwPxfc70Dr1K_w3dHSas7dv3s48ZeBkWI4gjd0pqffJDc5Gjk9Z1CrCojY2/pub?start=false&loop=false&delayms=3000) (Andrej | [recording](http://phoebe-project.org/static/workshops/2022june/2022.06.24.03_blending.mp4))
-* Wrap Up: volunteer wrap-up contributions and discussion
+* Group Photo
 * Exercises: finish or continue any of the previous exercises.
 
 # Part 2
 
 ### Tuesday June 28: Inverse Problem Overview
 
+* [Welcome & Introduction](https://docs.google.com/presentation/d/e/2PACX-1vTm3753FQ-NpMrCgPPPLAb2vn0X-05BXoWYgftGLoJyNUXHhd0iih0zxCB4e9kwCEj14B52BL6tRLG9/pub?start=false&loop=false&delayms=3000) (Kelly)
 * [Talk: Introduction to the Inverse Problem](https://docs.google.com/presentation/d/e/2PACX-1vR-fRxNcn5PEMQ6Rvq5dEHALVIDs62OqGDDaWr2liCNMrtcP-h6u4WztVxUhGoGvKQTh9DXyN9xXLYh/pub?start=false&loop=false&delayms=3000) (Angela)
 * [Talk: Inverse Problem in PHOEBE](https://docs.google.com/presentation/d/e/2PACX-1vT_GwcoD_0Tz-5V1dEolYYFCMp2qxrfKqfySOCI9QU3rpMuR7ANGY_rDiLRZbXnrvTN57x6qndroC0Z/pub?start=false&loop=false&delayms=3000) (Andrej)
 * [Tutorial: Detrending](./Tutorial_14_detrending.ipynb) (Andrej)
