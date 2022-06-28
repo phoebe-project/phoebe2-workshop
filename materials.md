@@ -1,4 +1,8 @@
 
+<div style="text-align: center">
+<a href="http://phoebe-project.org/static/workshops/PHOEBE_workshop_4.jpg" target="_blank" rel="noopener noreferrer"><img src="http://phoebe-project.org/images/workshops/PHOEBE_workshop_4_thumb.jpg" height="200" maxWidth="80%"/></a>
+</div>
+
 # Installing & Setup
 
 ### Jupyter Notebooks
@@ -94,17 +98,17 @@ Please test your installation well in advance of the workshop by running the [te
 ### Tuesday June 28: Inverse Problem Overview
 
 * [Welcome & Introduction](https://docs.google.com/presentation/d/e/2PACX-1vTm3753FQ-NpMrCgPPPLAb2vn0X-05BXoWYgftGLoJyNUXHhd0iih0zxCB4e9kwCEj14B52BL6tRLG9/pub?start=false&loop=false&delayms=3000) (Kelly)
-* [Talk: Introduction to the Inverse Problem](https://docs.google.com/presentation/d/e/2PACX-1vR-fRxNcn5PEMQ6Rvq5dEHALVIDs62OqGDDaWr2liCNMrtcP-h6u4WztVxUhGoGvKQTh9DXyN9xXLYh/pub?start=false&loop=false&delayms=3000) (Angela)
-* [Talk: Inverse Problem in PHOEBE](https://docs.google.com/presentation/d/e/2PACX-1vT_GwcoD_0Tz-5V1dEolYYFCMp2qxrfKqfySOCI9QU3rpMuR7ANGY_rDiLRZbXnrvTN57x6qndroC0Z/pub?start=false&loop=false&delayms=3000) (Andrej)
-* [Tutorial: Detrending](./Tutorial_14_detrending.ipynb) (Andrej)
-* [Tutorial: Estimators](./Tutorial_15_estimators.ipynb) (Angela)
-* [Tutorial: Degeneracies](./Tutorial_16_degeneracy.ipynb) (Andrej)
-* [Exercises: Estimators](./Exercises_06_estimators.ipynb) (Angela)
+* [Talk: Introduction to the Inverse Problem](https://docs.google.com/presentation/d/e/2PACX-1vR-fRxNcn5PEMQ6Rvq5dEHALVIDs62OqGDDaWr2liCNMrtcP-h6u4WztVxUhGoGvKQTh9DXyN9xXLYh/pub?start=false&loop=false&delayms=3000) (Angela | [recording](http://phoebe-project.org/static/workshops/2022june/2022.06.28.01_inverse_problem_intro.mp4))
+* [Talk: Inverse Problem in PHOEBE](https://docs.google.com/presentation/d/e/2PACX-1vT_GwcoD_0Tz-5V1dEolYYFCMp2qxrfKqfySOCI9QU3rpMuR7ANGY_rDiLRZbXnrvTN57x6qndroC0Z/pub?start=false&loop=false&delayms=3000) (Andrej | [recording](http://phoebe-project.org/static/workshops/2022june/2022.06.28.02_inverse_problem_phoebe.mp4))
+* [Tutorial: Detrending](./Tutorial_14_detrending.ipynb) (Andrej | [recording](http://phoebe-project.org/static/workshops/2022june/2022.06.28.03_detrending.mp4))
+* [Tutorial: Estimators](./Tutorial_15_estimators.ipynb) (Angela | [recording](http://phoebe-project.org/static/workshops/2022june/2022.06.28.04_estimators.mp4))
+* [Exercises: Estimators](./Exercises_06_estimators.ipynb) (Angela | [recording](http://phoebe-project.org/static/workshops/2022june/2022.06.28.05_exercises.mp4))
 
 
 ### Tuesday July 5: Optimizers
 
 * [Tutorial: Optimizers](./Tutorial_17_optimizers.ipynb) (Andrej)
+* [Tutorial: Degeneracies](./Tutorial_16_degeneracy.ipynb) (Andrej)
 * [Tutorial: Running Jobs on External Compute Resources](./Tutorial_18_server.ipynb) (Andrej)
 * [Tutorial: Distributions & Priors](./Tutorial_19_distributions.ipynb) (Kyle)
 * [Exercises: Optimizers](./Exercises_07_optimizers.ipynb) (Andrej)
