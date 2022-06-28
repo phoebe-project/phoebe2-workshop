@@ -176,7 +176,7 @@ b.run_compute(irrad_method='none', model='baseline', overwrite=True)
 b['mock'].plot(show=True, legend=True)
 
 
-# You guessed it: as flux scaling is prescribed by the parametrized luminosity (`pblum`), absolute temperature have little impact on a single lightcurve. It is their _ratio_ that exacts a significant influence by modifying eclipse depth ratios. Their absolute values, on the other hand, only marginally influence the light curve, mostly through limb darkening and, to an even lesser extent, through reflection (which we turned off anyway). The situation where different parameters yield indistinguishable values of the cost function is called a _degeneracy_.
+# You guessed it: as flux scaling is prescribed by the parametrized luminosity (`pblum`), absolute temperatures have little impact on a single lightcurve. It is their _ratio_ that exacts a significant influence by modifying eclipse depth ratios. Their absolute values, on the other hand, only marginally influence the light curve, mostly through limb darkening and, to an even lesser extent, through reflection (which we turned off anyway). The situation where different parameters yield indistinguishable values of the cost function is called a _degeneracy_.
 # 
 # Another significant degeneracy arises between stellar sizes (equivalent radii) and orbital inclination: a slightly larger star at a slightly lower inclination will have a lightcurve indistinguishable from a slightly smaller star at a slightly higher inclination. Let's take a closer look at that! First, reset parameter values:
 
