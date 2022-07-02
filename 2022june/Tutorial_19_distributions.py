@@ -123,7 +123,7 @@ _ = b.plot_distribution_collection(distribution='mydist', show=True)
 # 
 # `lnprobability = lnlikelihood + lnpriors`
 # 
-# The `lnlikelihood` is `-0.5 * chi^2` (see [b.calculate_residuals](http://phoebe-project.org/docs/2.4/api/phoebe.parameters.ParameterSet.calculate_residuals.md), [b.calculate_chi2](http://phoebe-project.org/docs/2.4/api/phoebe.parameters.ParameterSet.calculate_chi2.md), [b.calculate_lnlikelihood](http://phoebe-project.org/docs/2.4/api/phoebe.parameters.ParameterSet.calculate_lnlikelihood.md))
+# for more information see [this slide from Andrej's talk](https://docs.google.com/presentation/d/e/2PACX-1vT_GwcoD_0Tz-5V1dEolYYFCMp2qxrfKqfySOCI9QU3rpMuR7ANGY_rDiLRZbXnrvTN57x6qndroC0Z/pub?start=false&loop=false&delayms=3000&slide=id.g1257bc21d63_0_13) and the API docs for [b.calculate_residuals](http://phoebe-project.org/docs/2.4/api/phoebe.parameters.ParameterSet.calculate_residuals.md), [b.calculate_chi2](http://phoebe-project.org/docs/2.4/api/phoebe.parameters.ParameterSet.calculate_chi2.md), [b.calculate_lnlikelihood](http://phoebe-project.org/docs/2.4/api/phoebe.parameters.ParameterSet.calculate_lnlikelihood.md).
 # 
 # `lnpriors` is the probability of drawing the _current parameter face-values_ from the distributions assigned as priors.  We can expose the probability of drawing the current values from our `'mydist'` distribution with [b.calculate_lnp](http://phoebe-project.org/docs/2.4/api/phoebe.frontend.bundle.Bundle.calculate_lnp.md).  But note that this _only_ becomes the `lnpriors` when `'mydist'` is included within the `priors` parameter of a given solver.
 
