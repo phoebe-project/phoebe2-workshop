@@ -89,7 +89,7 @@ b.dependencies()
 # In[10]:
 
 
-s.run_script(['export MPICH_CC=clang CC=clang; pip install phoebe mpi4py emcee --ignore-installed'], conda_env='phoebe_workshop')
+s.run_script(['export MPICH_CC=clang CC=clang; pip install numpy phoebe mpi4py emcee --ignore-installed'], conda_env='phoebe_workshop')
 
 
 # This entire process only needed to be run this one time. Now that the environment is built and ready, we will save it and activate it on subsequent use:
