@@ -156,7 +156,7 @@ b['steps@dc@solver'] = {
     'pblum@primary@mock': 0.05
 }
 
-for iter in range(1, 11):
+for iter in range(1, 5):
     b.run_solver('dc', solution='dcsol', progressbar=False, overwrite=True)
     b.adopt_solution('dcsol')
     print(f"iteration {iter:02d}: {b['value@fitted_values@dcsol']}, chi2={b['value@fitted_chi2@dcsol']}")
@@ -186,7 +186,7 @@ b['teff@secondary'] = 5680
 
 # Now we loop over nearby inclinations and adjust other relevant parameters:
 
-# In[19]:
+# In[17]:
 
 
 b['fit_parameters@dc'] = ['requiv@primary', 'requiv@secondary', 'pblum@primary@mock']
@@ -209,7 +209,7 @@ for incl in np.linspace(81.5, 85.5, 9):
 
 # The mere fact that all these chi2 values are in the same ballpark is already alarming and it should help you appreciate that formal errors computed from the covariance matrix (which we deliberately omit from this tutorial because they are largely meaningless) are grossly underestimated. On the flip side, we will show you how to sample the parameter space heuristically and obtain more realistic error estimates. For now, let us see how the equivalent radii correlate with inclination:
 
-# In[22]:
+# In[18]:
 
 
 plt.xlabel('Inclination')
