@@ -112,6 +112,7 @@ Please test your installation well in advance of the workshop by running the [te
 * [Tutorial: Running Jobs on External Compute Resources](./Tutorial_18_server.ipynb) (Andrej)
 * [Tutorial: Distributions & Priors](./Tutorial_19_distributions.ipynb) (Kyle)
 * [Exercises: Optimizers](./Exercises_07_optimizers.ipynb) (Andrej)
+* [Walkthrough: Optimization strategies](./optimizers_showcase.ipynb) (Angela)
 
 
 ### Tuesday July 12: MCMC in PHOEBE
