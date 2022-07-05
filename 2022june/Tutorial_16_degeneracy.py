@@ -161,11 +161,6 @@ for iter in range(1, 11):
     b.adopt_solution('dcsol')
     print(f"iteration {iter:02d}: {b['value@fitted_values@dcsol']}, chi2={b['value@fitted_chi2@dcsol']}")
 
-# for i in range(10):
-#     b.run_solver('dc', solution='dcsol', progressbar=False, overwrite=True)
-#     print(f'iteration: {i+1:02d}, corrections: {corrections[0]}, chi2: {corrections[1][0]}')
-#     adopt_dc(adjusts, corrections[0])
-
 
 # Now _that_ looks surprising: both temperatures change by a few hundred K each iteration, yet chi2 does not move much; how is that possible? We should plot the lightcurve to see if chi-by-eye is equally good:
 

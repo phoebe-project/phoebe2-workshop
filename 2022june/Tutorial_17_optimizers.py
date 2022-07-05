@@ -77,7 +77,7 @@ b.set_value_all('compute_phases', dataset='rv01', value=comp_phases)
 
 # Phoebe has four optimizer methods: 
 # 
-# * differential corrections (`optimizer.dc`);
+# * differential corrections (`optimizer.differential_corrections`);
 # * conjugate gradient (`optimizer.cg`);
 # * powell (`optimizer.powell`);
 # * nelder_mead (`optimizer.nelder_mead`); 
