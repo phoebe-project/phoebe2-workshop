@@ -107,16 +107,16 @@ Please test your installation well in advance of the workshop by running the [te
 
 ### Tuesday July 5: Optimizers
 
-* [Tutorial: Optimizers](./Tutorial_17_optimizers.ipynb) (Andrej)
-* [Tutorial: Degeneracies](./Tutorial_16_degeneracy.ipynb) (Andrej)
-* [Tutorial: Running Jobs on External Compute Resources](./Tutorial_18_server.ipynb) (Andrej)
-* [Tutorial: Distributions & Priors](./Tutorial_19_distributions.ipynb) (Kyle)
-* [Exercises: Optimizers](./Exercises_07_optimizers.ipynb) (Andrej)
-* [Walkthrough: Optimization strategies](./optimizers_showcase.ipynb) (Angela)
+* [Tutorial: Optimizers](./Tutorial_17_optimizers.ipynb) (Andrej | [recording](http://phoebe-project.org/static/workshops/2022june/2022.07.05.01_optimizers.mp4))
+* [Tutorial: Degeneracies](./Tutorial_16_degeneracy.ipynb) (Andrej | [recording](http://phoebe-project.org/static/workshops/2022june/2022.07.05.02_degeneracy.mp4))
+* [Tutorial: Running Jobs on External Compute Resources](./Tutorial_18_server.ipynb) (Andrej | [recording](http://phoebe-project.org/static/workshops/2022june/2022.07.05.03_server.mp4))
+* [Exercises: Optimizers](./Exercises_07_optimizers.ipynb) (Kyle)
+* [Walkthrough: Optimization strategies](./optimizers_showcase.ipynb) (Angela | [recording](http://phoebe-project.org/static/workshops/2022june/2022.07.05.04_optimizers_showcase.mp4))
 
 
 ### Tuesday July 12: MCMC in PHOEBE
 
+* [Tutorial: Distributions & Priors](./Tutorial_19_distributions.ipynb) (Kyle)
 * [Tutoritalk: MCMC Introduction](./mcmc_generic.ipynb)
 * [Tutorial: MCMC Basics in PHOEBE](./Tutorial_20_mcmc.ipynb) (Andrej)
 * [Tutorial: Continuing/Resampling in MCMC](./Tutorial_21_mcmc_continued.ipynb) (Andrej)
