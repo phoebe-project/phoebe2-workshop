@@ -116,10 +116,10 @@ Please test your installation well in advance of the workshop by running the [te
 
 ### Tuesday July 12: MCMC in PHOEBE
 
-* [Tutorial: Distributions & Priors](./Tutorial_19_distributions.ipynb) (Kyle)
-* [Tutoritalk: MCMC Introduction](./mcmc_generic.ipynb)
-* [Tutorial: MCMC Basics in PHOEBE](./Tutorial_20_mcmc.ipynb) (Andrej)
-* [Tutorial: Continuing/Resampling in MCMC](./Tutorial_21_mcmc_continued.ipynb) (Andrej)
+* [Tutorial: Distributions & Priors](./Tutorial_19_distributions.ipynb) (Kyle | [recording](http://phoebe-project.org/static/workshops/2022june/2022.07.12.01_distributions.mp4))
+* [Tutoritalk: MCMC Introduction](./mcmc_generic.ipynb) (Andrej | [recording](http://phoebe-project.org/static/workshops/2022june/2022.07.12.02_mcmc_talk.mp4))
+* [Tutorial: MCMC Basics in PHOEBE](./Tutorial_20_mcmc.ipynb) (Andrej | [recording](http://phoebe-project.org/static/workshops/2022june/2022.07.12.03_mcmc.mp4))
+* [Tutorial: Continuing/Resampling in MCMC](./Tutorial_21_mcmc_continued.ipynb) (Andrej | [recording](http://phoebe-project.org/static/workshops/2022june/2022.07.12.04_mcmc_continued.mp4))
 * [Exercises: Setting up an MCMC Run](./Exercises_08_mcmc.ipynb) (Andrej)
 
 ### Tuesday July 19: Advanced MCMC
