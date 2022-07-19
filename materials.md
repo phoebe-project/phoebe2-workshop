@@ -124,14 +124,16 @@ Please test your installation well in advance of the workshop by running the [te
 
 ### Tuesday July 19: Advanced MCMC
 
-[Optional Breakout Session: Fitting Contact Binaries](https://docs.google.com/presentation/d/e/2PACX-1vRrcYeotz37WyqXCmBQqwqH7dkHBUi-D6SMvAiZketoqlkGCmZ7vWhPgD46dx_pl_SCs3nPrNB4bOgV/pub?start=false&loop=false&delayms=3000) (Angela)
-
-
 * [Tutorial: Interpreting Chains and Convergence in MCMC](./Tutorial_22_convergence.ipynb) (Andrej)
 * [Tutorial: Posteriors and Parameter Uncertainties](./Tutorial_23_posteriors.ipynb) (Angela)
 * [Tutorial: Choice of Parameterization](./Tutorial_24_parameterization.ipynb) (Angela)
 * [Tutorial: Marginalizing over Additional Parameters](./Tutorial_25_marginalization.ipynb) (Angela)
 * [Exercises: Getting Posteriors](./Exercises_07_posteriors.ipynb) (Angela)
+
+
+
+[Optional Breakout Session: Fitting Contact Binaries](https://docs.google.com/presentation/d/e/2PACX-1vRrcYeotz37WyqXCmBQqwqH7dkHBUi-D6SMvAiZketoqlkGCmZ7vWhPgD46dx_pl_SCs3nPrNB4bOgV/pub?start=false&loop=false&delayms=3000) (Angela | [recording from last year](
+http://phoebe-project.org/static/workshops/2021june/2021.06.30.00_breakouts_contacts_fitting.mp4))
 
 
 ### Tuesday July 26: Gaussian Processes
