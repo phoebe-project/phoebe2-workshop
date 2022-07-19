@@ -128,7 +128,7 @@ Please test your installation well in advance of the workshop by running the [te
 * [Tutorial: Posteriors and Parameter Uncertainties](./Tutorial_23_posteriors.ipynb) (Angela)
 * [Tutorial: Choice of Parameterization](./Tutorial_24_parameterization.ipynb) (Angela)
 * [Tutorial: Marginalizing over Additional Parameters](./Tutorial_25_marginalization.ipynb) (Angela)
-* [Exercises: Getting Posteriors](./Exercises_07_posteriors.ipynb) (Angela)
+* [Exercises: Getting Posteriors](./Exercises_09_posteriors.ipynb) (Angela)
 
 
 
