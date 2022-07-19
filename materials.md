@@ -124,10 +124,10 @@ Please test your installation well in advance of the workshop by running the [te
 
 ### Tuesday July 19: Advanced MCMC
 
-* [Tutorial: Interpreting Chains and Convergence in MCMC](./Tutorial_22_convergence.ipynb) (Andrej)
-* [Tutorial: Posteriors and Parameter Uncertainties](./Tutorial_23_posteriors.ipynb) (Angela)
-* [Tutorial: Choice of Parameterization](./Tutorial_24_parameterization.ipynb) (Angela)
-* [Tutorial: Marginalizing over Additional Parameters](./Tutorial_25_marginalization.ipynb) (Angela)
+* [Tutorial: Interpreting Chains and Convergence in MCMC](./Tutorial_22_convergence.ipynb) (Andrej | [recording](http://phoebe-project.org/static/workshops/2022june/2022.07.19.01_convergence.mp4))
+* [Tutorial: Posteriors and Parameter Uncertainties](./Tutorial_23_posteriors.ipynb) (Angela | [recording](http://phoebe-project.org/static/workshops/2022june/2022.07.19.02_posteriors.mp4))
+* [Tutorial: Choice of Parameterization](./Tutorial_24_parameterization.ipynb) (Angela | [recording](http://phoebe-project.org/static/workshops/2022june/2022.07.19.03_parameterization.mp4))
+* [Tutorial: Marginalizing over Additional Parameters](./Tutorial_25_marginalization.ipynb) (Angela | [recording](http://phoebe-project.org/static/workshops/2022june/2022.07.19.04_marginalization.mp4))
 * [Exercises: Getting Posteriors](./Exercises_09_posteriors.ipynb) (Angela)
 
 
