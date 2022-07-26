@@ -139,8 +139,9 @@ http://phoebe-project.org/static/workshops/2021june/2021.06.30.00_breakouts_cont
 ### Tuesday July 26: Gaussian Processes
 
 
+* Safer Bayesian inference with MCMC diagnostics for emcee and zeus (Johannes)
 * [Tutorial: Gaussian Processes](./Tutorial_26_gaussian_processes.ipynb) (Angela)
 * Group Photo/Screenshot
 * [Tutorial: Running on OTHER Compute Resources](./Tutorial_27_server_other.ipynb) (Kyle)
-* [Talk: Common Pitfalls when Fitting](https://docs.google.com/presentation/d/e/2PACX-1vTI2tTM7K307S8KRn_agtd_4IoXfwgA2_e4yfH47UzlwEdn0sl59tKSibZxHlfgbF43KPfWCgxgA1Fx/pub?start=false&loop=false&delayms=3000)
+* [Talk: Common Pitfalls when Fitting](https://docs.google.com/presentation/d/e/2PACX-1vTI2tTM7K307S8KRn_agtd_4IoXfwgA2_e4yfH47UzlwEdn0sl59tKSibZxHlfgbF43KPfWCgxgA1Fx/pub?start=false&loop=false&delayms=3000) (Angela | [recording from last year](http://phoebe-project.org/static/workshops/2021june/2021.07.01.02_fitting_pitfalls.mp4))
 * Wrap Up: volunteer wrap-up contributions and discussion
