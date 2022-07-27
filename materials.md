@@ -1,6 +1,7 @@
 
 <div style="text-align: center">
 <a href="http://phoebe-project.org/static/workshops/PHOEBE_workshop_4.jpg" target="_blank" rel="noopener noreferrer"><img src="http://phoebe-project.org/images/workshops/PHOEBE_workshop_4_thumb.jpg" height="200" maxWidth="80%"/></a>
+<a href="http://phoebe-project.org/static/workshops/PHOEBE_workshop_4b.png" target="_blank" rel="noopener noreferrer"><img src="http://phoebe-project.org/images/workshops/PHOEBE_workshop_4b_thumb.png" height="200" maxWidth="80%"/></a>
 </div>
 
 # Installing & Setup
@@ -139,9 +140,9 @@ http://phoebe-project.org/static/workshops/2021june/2021.06.30.00_breakouts_cont
 ### Tuesday July 26: Gaussian Processes
 
 
-* Safer Bayesian inference with MCMC diagnostics for emcee and zeus (Johannes)
-* [Tutorial: Gaussian Processes](./Tutorial_26_gaussian_processes.ipynb) (Angela)
-* Group Photo/Screenshot
-* [Tutorial: Running on OTHER Compute Resources](./Tutorial_27_server_other.ipynb) (Kyle)
+* Safer Bayesian inference with MCMC diagnostics for emcee and zeus (Johannes | [recording](http://phoebe-project.org/static/workshops/2022june/2022.07.26.01_bayesian_inference.mp4))
+* [Tutorial: Running on OTHER Compute Resources](./Tutorial_27_server_other.ipynb) (Kyle | [recording](http://phoebe-project.org/static/workshops/2022june/2022.07.26.02_server_other.mp4))
+* [Tutorial: Gaussian Processes](./Tutorial_26_gaussian_processes.ipynb) (Angela | [recording](http://phoebe-project.org/static/workshops/2022june/2022.07.26.03_gaussian_processes.mp4))
+* Group Screenshot
 * [Talk: Common Pitfalls when Fitting](https://docs.google.com/presentation/d/e/2PACX-1vTI2tTM7K307S8KRn_agtd_4IoXfwgA2_e4yfH47UzlwEdn0sl59tKSibZxHlfgbF43KPfWCgxgA1Fx/pub?start=false&loop=false&delayms=3000) (Angela | [recording from last year](http://phoebe-project.org/static/workshops/2021june/2021.07.01.02_fitting_pitfalls.mp4))
 * Wrap Up: volunteer wrap-up contributions and discussion
