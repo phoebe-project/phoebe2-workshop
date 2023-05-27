@@ -7,8 +7,8 @@
 # 
 # This interactive workshop tutorial covers many of the same topics as the corresponding online tutorials:
 # 
-# * [Plotting](http://phoebe-project.org/docs/latest/tutorials/plotting.ipynb)
-# * [Advanced: Plotting Options](http://phoebe-project.org/docs/latest/tutorials/plotting_advanced.ipynb)
+# * [Plotting](http://phoebe-project.org/docs/2.4/tutorials/plotting.ipynb)
+# * [Advanced: Plotting Options](http://phoebe-project.org/docs/2.4/tutorials/plotting_advanced.ipynb)
 # 
 
 # # Setup
@@ -106,7 +106,7 @@ afig, mplfig = b.plot(time=0.65, show=True)
 
 # ### And much more...
 
-# The [plotting tutorial](http://phoebe-project.org/docs/latest/tutorials/plotting/) in the docs has a very thorough explanation of other advanced features in plotting.
+# The [plotting tutorial](http://phoebe-project.org/docs/2.4/tutorials/plotting/) in the docs has a very thorough explanation of other advanced features in plotting.
 
 # # Exercise
 
