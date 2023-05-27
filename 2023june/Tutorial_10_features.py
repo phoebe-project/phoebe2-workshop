@@ -6,9 +6,9 @@
 # In this tutorial we'll learn how to add spots on a star and gaussian processes to a light curve.
 # 
 # This interactive workshop tutorial covers many of the same topics as the corresponding online tutorials:
-# * [Features](http://phoebe-project.org/docs/latest/tutorials/features.ipynb)
-# * [Advanced: Spots](http://phoebe-project.org/docs/latest/tutorials/spots.ipynb)
-# * [Example: Gaussian Processes](http://phoebe-project.org/docs/latest/examples/minimal_GPs)
+# * [Features](http://phoebe-project.org/docs/2.4/tutorials/features.ipynb)
+# * [Advanced: Spots](http://phoebe-project.org/docs/2.4/tutorials/spots.ipynb)
+# * [Example: Gaussian Processes](http://phoebe-project.org/docs/2.4/examples/minimal_GPs)
 
 # # Setup
 
@@ -69,7 +69,7 @@ b.add_spot(component='secondary', feature='spot02')
 b.add_dataset('lc', compute_times=phoebe.linspace(0,1,101), dataset='lc01')
 
 
-# We can add a gaussian process with either [b.add_feature](http://phoebe-project.org/docs/latest/api/phoebe.frontend.bundle.Bundle.add_feature.md) and passing either 'gp_celerite2' or 'gp_sklearn' as the first argument or [b.add_gaussian_process](http://phoebe-project.org/docs/latest/api/phoebe.frontend.bundle.Bundle.add_gaussian_process.md), and pass 'celerite2' or 'sklearn' as the first argument.
+# We can add a gaussian process with either [b.add_feature](http://phoebe-project.org/docs/2.4/api/phoebe.frontend.bundle.Bundle.add_feature.md) and passing either 'gp_celerite2' or 'gp_sklearn' as the first argument or [b.add_gaussian_process](http://phoebe-project.org/docs/2.4/api/phoebe.frontend.bundle.Bundle.add_gaussian_process.md), and pass 'celerite2' or 'sklearn' as the first argument.
 
 # In[8]:
 
@@ -91,7 +91,7 @@ print(b.filter(feature='gp01'))
 print(b.run_checks())
 
 
-# So let's add some observational data ([lc.data](https://github.com/phoebe-project/phoebe2-workshop/raw/2022june/data/synthetic/lc.data)) that we'll be using in the second week (and cheat for now and set a period that is close to correct), just so that we can see how the model is exposed.
+# So let's add some observational data ([lc.data](https://github.com/phoebe-project/phoebe2-workshop/raw/2023june/data/synthetic/lc.data)) that we'll be using in the second week (and cheat for now and set a period that is close to correct), just so that we can see how the model is exposed.
 
 # In[11]:
 
@@ -159,7 +159,7 @@ _ = b.plot(x='phases', show=True)
 
 
 
-# Try creating a synthetic light curve set as in the [Gaussian Process example online](http://phoebe-project.org/docs/latest/examples/minimal_GPs) and play with different kernel and plotting options.
+# Try creating a synthetic light curve set as in the [Gaussian Process example online](http://phoebe-project.org/docs/2.4/examples/minimal_GPs.ipynb) and play with different kernel and plotting options.
 
 # In[ ]:
 

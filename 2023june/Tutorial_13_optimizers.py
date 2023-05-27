@@ -7,7 +7,7 @@
 # 
 # Specifically we will cover:
 # 
-# - optimizer.nelder_mead
+# - [optimizer.nelder_mead](http://phoebe-project.org/docs/2.4/api/phoebe.parameters.solver.optimizer.nelder_mead)
 # 
 # This interactive workshop tutorial covers many of the same topics as the corresponding online tutorials:
 # 
@@ -26,7 +26,7 @@ import numpy as np
 logger = phoebe.logger('error')
 
 
-# You may need to update the path below to where you saved the bundle from the previous tutorial, or you can download [after_estimators.bundle](https://github.com/phoebe-project/phoebe2-workshop/raw/2021june/data/synthetic/after_estimators.bundle).
+# You may need to update the path below to where you saved the bundle from the previous tutorial, or you can download [after_estimators.bundle](https://github.com/phoebe-project/phoebe2-workshop/raw/2023june/data/synthetic/after_estimators.bundle).
 
 # In[2]:
 
