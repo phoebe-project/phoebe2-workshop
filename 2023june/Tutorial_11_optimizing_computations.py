@@ -23,7 +23,7 @@
 # 
 # As usual, we start with the imports, logger setup, and default binary initialization:
 
-# In[1]:
+# In[ ]:
 
 
 import phoebe
@@ -34,7 +34,7 @@ b = phoebe.default_binary()
 
 # Next, we add two datasets: a light curve and a radial velocity curve:
 
-# In[2]:
+# In[ ]:
 
 
 b.add_dataset('lc', compute_times=phoebe.linspace(0, 1, 101))
@@ -57,7 +57,7 @@ b.add_dataset('rv', compute_times=phoebe.linspace(0, 1, 26))
 # 
 # By default, at each time point, PHOEBE will check to see if the maximum radius of all meshes would cause an eclipse in the sky projection.  If so, the complete eclipse algorithm is called to determine the visibility of each triangle, and if not, triangles are only checked to determine if facing towards or away from the observer (horizon detection).  In cases where you _know_ eclipses will never occur (ellipsoidal variables, for example), this can be optimized slightly by telling PHOEBE to skip this check and only use horizon detection. 
 
-# In[5]:
+# In[ ]:
 
 
 print(b.get_parameter(qualifier='eclipse_method'))
@@ -71,7 +71,7 @@ print(b.get_parameter(qualifier='eclipse_method'))
 # 
 # Although it is usually a good idea to at least marginalize over eccentricity for the final parameter uncertainties (more on this in the second week), if a system can be assumed to be circular or shows no signs of significant eccentricity, setting the eccentricity to be exactly zero can minimize costs significantly.
 
-# In[6]:
+# In[ ]:
 
 
 print(b.get_parameter(qualifier='ecc'))
@@ -83,7 +83,7 @@ print(b.get_parameter(qualifier='ecc'))
 # 
 # In addition to meshing and eclipse detection, irradiation is the next most common culprit in computation expense. In cases where irradiation can safely be ignored, it can be disabled entirely by setting `irrad_method='none'`.  This will only result in marginal gains for circular synchronous systems, but can result in significant savings for eccentric and/or asynchronous systems.
 
-# In[7]:
+# In[ ]:
 
 
 print(b.get_parameter(qualifier='irrad_method'))
@@ -97,7 +97,7 @@ print(b.get_parameter(qualifier='irrad_method'))
 # 
 # Note: there is a `distortion_method` parameter per-component.
 
-# In[8]:
+# In[ ]:
 
 
 print(b.get_parameter(qualifier='distortion_method', component='primary'))
@@ -113,7 +113,7 @@ print(b.get_parameter(qualifier='distortion_method', component='primary'))
 # 
 # Note: there is an `rv_method` parameter per-component.  However, as the mesh will need to be populated if any are set to flux-weighted, little is to be gained from an optimization perspective by not setting all to 'dynamical'.
 
-# In[9]:
+# In[ ]:
 
 
 print(b.get_parameter(qualifier='rv_method', component='primary'))
@@ -131,19 +131,19 @@ print(b.get_parameter(qualifier='rv_method', component='primary'))
 # 
 # 
 
-# In[10]:
+# In[ ]:
 
 
 print(b.get_parameter(qualifier='fti_method'))
 
 
-# In[11]:
+# In[ ]:
 
 
 b.set_value(qualifier='fti_method', value='oversample')
 
 
-# In[12]:
+# In[ ]:
 
 
 print(b.get_parameter(qualifier='fti_oversample'))
@@ -153,25 +153,25 @@ print(b.get_parameter(qualifier='fti_oversample'))
 # 
 # In order to set any of these approximations, we first want to make sure that the influence of that choice will have no detrimental impact on the resulting model.  In any real case, there will be some impact, of course.  But we can compute forward models both with and without the effect and compare the magnitude of the difference to either the amplitude of the signal or of the observational uncertainties.
 
-# In[13]:
+# In[ ]:
 
 
 b.run_compute(model='full')
 
 
-# In[14]:
+# In[ ]:
 
 
 b.run_compute(irrad_method='none', model='irrad_off')
 
 
-# In[15]:
+# In[ ]:
 
 
 b.run_compute(distortion_method='sphere', model='distortion_off')
 
 
-# In[16]:
+# In[ ]:
 
 
 _ = b.plot(kind='lc', legend=True, show=True)
@@ -179,7 +179,7 @@ _ = b.plot(kind='lc', legend=True, show=True)
 
 # Currently there is no built-in ability to compare two models quantitatively, and there are many different ways you might imagine doing this (relative to the amplitude of the eclipse signal, relative to the uncertainties in observations, etc), but here we'll just quickly plot the relative residuals and check the maximum relative differences.
 
-# In[17]:
+# In[ ]:
 
 
 import numpy as np
@@ -194,14 +194,14 @@ fluxes_irrad_rel = (fluxes_irrad_off - fluxes_full)/fluxes_full
 fluxes_distortion_rel = (fluxes_distortion_off - fluxes_full)/fluxes_full
 
 
-# In[18]:
+# In[ ]:
 
 
 _ = plt.plot(times, fluxes_irrad_rel, 'r.')
 _ = plt.plot(times, fluxes_distortion_rel, 'b.')
 
 
-# In[19]:
+# In[ ]:
 
 
 np.max(abs(fluxes_irrad_rel))

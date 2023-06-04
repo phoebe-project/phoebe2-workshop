@@ -57,22 +57,19 @@ b.plot(model='after_estimators', x='phases', show=True)
 # In[5]:
 
 
-b.add_compute(
-    compute='nm_fit',
-    irrad_method='none',
-    rv_method='dynamical',
-    distortion_method='sphere'
-)
+b.add_compute(compute='nm_fit',
+              irrad_method='none',
+              rv_method='dynamical',
+              distortion_method='sphere')
 
 
-# To save even more time, we can run the optimizer in phase space instead of time space; for that, we need to provide an array of phases in which the model should be computed and optimized:
+# To save even more time, we can run the optimizer in phase-space instead of time-space; for that, we need to provide an array of phases in which the model should be computed and optimized:
 
 # In[6]:
 
 
 b.flip_constraint('compute_phases@rv01', solve_for='compute_times@rv01')
-comp_phases = np.linspace(0,1,25)
-b.set_value_all('compute_phases', dataset='rv01', value=comp_phases)
+b.set_value_all('compute_phases', dataset='rv01', value=phoebe.linspace(0, 1, 25))
 
 
 # Phoebe has four optimizer methods: 
@@ -217,11 +214,9 @@ b.plot(kind='lc', model='after_estimators', x='phases', show='True')
 
 b.flip_constraint('requiv@primary', solve_for='requivsumfrac@binary')
 
-b['fit_parameters'] = [
-    'teffratio@binary',
-    't0_supconj@binary',
-    'incl@binary'
-]
+b['fit_parameters'] = ['teffratio@binary',
+                       't0_supconj@binary',
+                       'incl@binary']
 
 
 # As we set all solver parameters already, we can now simply run it:
@@ -266,6 +261,12 @@ b.adopt_solution('nm_solution')
 
 b.plot(kind='lc', x='phases', model='after_nmlc', xlim=[-0.2,0.2], show=True, legend=True, marker = 'o')
 b.plot(kind='lc', x='phases', model='after_nmlc', xlim=[-0.2,0.2], y='residuals', show=True, legend=True, marker = 'o')
+
+
+# In[ ]:
+
+
+b.save('./data/synthetic/after_optimizers.bundle')
 
 
 # # Exercise

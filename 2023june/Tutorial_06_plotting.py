@@ -15,26 +15,40 @@
 
 # Uncomment the line below if your Jupyter version requires matplotlib inline.
 
-# In[1]:
+# In[ ]:
 
 
-#%matplotlib inline
+get_ipython().run_line_magic('matplotlib', 'inline')
 
 
-# In[2]:
+# In[ ]:
 
 
 import phoebe
 from phoebe import u,c
 
 
-# In[3]:
+# If phoebe still fails to show plots, but matplotlib shows plots _before_ importing phoebe, try forcing the backend manually to override phoebe's defaults.  To see your matplotlib's default (before importing phoebe):
+# 
+# ```
+# import matplotlib
+# print(matplotlib.rcParamsDefault['backend']
+# ```
+
+# In[ ]:
+
+
+import matplotlib
+matplotlib.use('module://matplotlib_inline.backend_inline')
+
+
+# In[ ]:
 
 
 logger = phoebe.logger(clevel='WARNING')
 
 
-# In[4]:
+# In[ ]:
 
 
 b = phoebe.default_binary()
@@ -44,19 +58,19 @@ b = phoebe.default_binary()
 
 # Let's first re-add some simple datasets and run the models
 
-# In[5]:
+# In[ ]:
 
 
 b.add_dataset('lc', compute_times=phoebe.linspace(0,1,51), dataset='lc01')
 
 
-# In[6]:
+# In[ ]:
 
 
 b.add_dataset('rv', compute_times=phoebe.linspace(0,1,21), dataset='rv01')
 
 
-# In[7]:
+# In[ ]:
 
 
 b.run_compute()
@@ -64,7 +78,7 @@ b.run_compute()
 
 # Calling `b.plot` will attempt to plot all datasets and models in the Bundle, splitting into subplots when needed
 
-# In[8]:
+# In[ ]:
 
 
 afig, mplfig = b.plot(show=True)
@@ -72,7 +86,13 @@ afig, mplfig = b.plot(show=True)
 
 # If we don't want to plot EVERYTHING, we can filter either before or within the plot command
 
-# In[9]:
+# In[ ]:
+
+
+afig, mplfig = b.filter(dataset='lc01').plot(show=True)
+
+
+# In[ ]:
 
 
 afig, mplfig = b.plot(dataset='lc01', show=True)
@@ -82,13 +102,13 @@ afig, mplfig = b.plot(dataset='lc01', show=True)
 
 # By default, PHOEBE will plot flux vs time for light curves and RV vs time for radial velocity datasets.  To override this, we can send the name of the column to `x` or `y`.  In addition to the Parameter names, we can also request `'phase'`.  This will use the ephemeris of the system and will use `t0_supconj` by default.
 
-# In[10]:
+# In[ ]:
 
 
 afig, mplfig = b.plot(dataset='rv01', x='phase', show=True)
 
 
-# In[11]:
+# In[ ]:
 
 
 afig, mplfig = b.plot(dataset='rv01', x='phase', t0='t0_perpass', show=True)
@@ -98,7 +118,7 @@ afig, mplfig = b.plot(dataset='rv01', x='phase', t0='t0_perpass', show=True)
 
 # If you pass a time to the plot call, that time will be highlighted in all datasets.
 
-# In[12]:
+# In[ ]:
 
 
 afig, mplfig = b.plot(time=0.65, show=True)
