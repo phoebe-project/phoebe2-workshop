@@ -20,7 +20,7 @@ Note that PHOEBE only supports Python 3.6+, so you may need to replace `pip` wit
 
 If you're on a newer mac system and PHOEBE fails to build, you may need to first install a supported compiler.  The easiest way to do this is to install PHOEBE within a conda environment where you first install a compiler (`conda install clangxx_osx-64`).  See the [mac install instructions](http://phoebe-project.org/install/latest/mac/auto) for more details.
 
-Similarly, if you are on a Linux system without `g++` or `python3-dev` installed by default, you may need to manually install a few dependencies.  See the [Linux install instructions](http://phoebe-project.org/install/latest/linux/auto) for more details.
+Similarly, if you are on a Linux system without `g++` or `python3-dev` installed by default, you may need to manually install a few dependencies.  See the [Linux install instructions](http://phoebe-project.org/install/latest/linux/auto) for more details.  If you're using a conda environment, `conda install -c conda-forge gxx` should install a compatible compiler.
 
 You can check to make sure the correct version is installed in a Python console (or Jupyter if you plan to use that at the workshop):
 
@@ -54,7 +54,7 @@ Please test your installation well in advance of the workshop by running the [te
 * [Tutorial: Datasets](./Tutorial_03_datasets.ipynb) (Andrej | needs updating for 2023)
 * [Tutorial: Compute](./Tutorial_04_compute.ipynb) (Michael)
 * [Tutorial: Time and Phase](./Tutorial_05_time_and_phase.ipynb) (Andrej | needs updating for 2023)
-* [Tutorial: Plotting](./Tutorial_06_plotting.ipynb) (Kyle | needs updating for 2023)
+* [Tutorial: Plotting](./Tutorial_06_plotting.ipynb) (Kyle)
 * [Exercises: Creating Forward Models](./Exercises_02_forward_models.ipynb) (needs updating for 2023)
 * [Optional Breakout Session: Line Profiles with PHOEBE and SPAMMS](https://docs.google.com/presentation/d/e/2PACX-1vTnWRdVfhC4bbrzGyP7kzhoMbZCOzyBbjJaRFJiMIUkpeSitL5Eqd_Dt1Ip3RZhPLhUvlKS1-iqnC0h/pub?start=false&loop=false&delayms=3000) (Michael)
 * [Optional Breakout Session: In Development - Blended Atmosphere Tables](https://docs.google.com/presentation/d/e/2PACX-1vSI-dNQSiGfNqttEuOzEd-iD2HIFfrvPVtFhk__I4YCwqOAo9cy047Tbkk74MkYgiRgO4iePvYf2Ss3/pub?start=false&loop=false&delayms=3000) (Andrej | needs updating for 2023)
@@ -65,10 +65,10 @@ Please test your installation well in advance of the workshop by running the [te
 * Group Photo
 * Talk: Scientific Introduction to PHOEBE (Andrej | needs updating for 2023)
 * [Tutorial: Animations](./Tutorial_07_animations.ipynb) (Michael | needs updating for 2023)
-* [Tutorial: Accessing and Plotting Meshes](./Tutorial_08_meshes.ipynb) (Kyle | needs updating for 2023)
+* [Tutorial: Accessing and Plotting Meshes](./Tutorial_08_meshes.ipynb) (Kyle)
 * [Tutorial: Flux Scaling (Passband Luminosity, Third Light, and Distance)](./Tutorial_09_pblum_l3_distance.ipynb) (Andrej | needs updating for 2023)
-* [Tutorial: Features (Spots & Gaussian Processes)](./Tutorial_10_features.ipynb) (Kyle | needs updating for 2023)
-* [Tutorial: Optimizing PHOEBE Computations](./Tutorial_11_optimizing_computations.ipynb) (Kyle | needs updating for 2023)
+* [Tutorial: Features (Spots & Gaussian Processes)](./Tutorial_10_features.ipynb) (Kyle)
+* [Tutorial: Optimizing PHOEBE Computations](./Tutorial_11_optimizing_computations.ipynb) (Kyle)
 * [Exercises: Forward Model Animations](./Exercises_03_animations.ipynb) (needs updating for 2023)
 * [Optional Breakout Session: In Development - Pulsations](https://docs.google.com/presentation/d/e/2PACX-1vR54syXqzX9MiGxsHdus7A7xDjS3_4ka3TyQiXpoBzCduwAiEymK0zxn40zSrBaNDQ3SodwxlY3p6mm/pub?start=false&loop=false&delayms=3000) (Andrej | needs updating for 2023)
 
@@ -85,7 +85,7 @@ Please test your installation well in advance of the workshop by running the [te
 
 ### Friday June 23: Advanced Fitting
 
-* [Tutorial: Distributions & Priors](./Tutorial_14_distributions.ipynb) (Kyle | needs updating for 2023)
+* [Tutorial: Distributions & Priors](./Tutorial_14_distributions.ipynb) (Kyle)
 * [Tutorial: MCMC Basics in PHOEBE](./Tutorial_15_mcmc.ipynb) (Andrej | needs updating for 2023)
 * [Tutorial: Continuing/Resampling in MCMC](./Tutorial_16_mcmc_continued.ipynb) (Andrej | needs updating for 2023)
 * [Exercises: Setting up an MCMC Run](./Exercises_08_mcmc.ipynb) (needs updating for 2023)
