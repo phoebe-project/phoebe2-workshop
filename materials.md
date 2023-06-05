@@ -43,7 +43,7 @@ Please test your installation well in advance of the workshop by running the [te
 * [Talk: PHOEBE Overview - wdgui to PHOEBE](https://docs.google.com/presentation/d/e/2PACX-1vT1no8csPNugrLUarxISYj_jtFidp6vMzzNj3jUkqTsUTw9ozOQ1wqh79kSaL-xLXZcSWKQ8UyNI_RE/pub?start=false&loop=false&delayms=3000) (Andrej | needs updating for 2023)
 * [Talk: Introduction to PHOEBE 2: why so complicated?](https://docs.google.com/presentation/d/e/2PACX-1vR_okhrCOKLqCW_d_cBiq5CwaIBWREYbIXPwB-AnndvYA8g9Xxs91rlZBjHLpEzzCp622i19hbsaxLh/pub?start=false&loop=false&delayms=3000) (Kyle)
 * [Tutorial: General Concepts & Bundle Basics](./Tutorial_01_bundle_basics.ipynb) (Andrej | needs updating for 2023)
-* [Tutorial: Constraints](./Tutorial_02_constraints.ipynb) (Michael | needs updating for 2023)
+* [Tutorial: Constraints](./Tutorial_02_constraints.ipynb) (Michael)
 * [Exercises: Building Systems](./Exercises_01_building_systems.ipynb)
 * Optional Breakout Session: Preview of lcviz (Kyle | needs updating for 2023)
 
@@ -52,11 +52,11 @@ Please test your installation well in advance of the workshop by running the [te
 
 * [Talk: Atmospheres, Limb Darkening, Intensity Weighting, Extinction, and Reflection](https://docs.google.com/presentation/d/e/2PACX-1vQ9ba54aHX5cwTNN2eJfRdG5nLXFqoOKLLUl9I0_sGwVYX2BEVLQDjQh1po8xti6bzbDAzD7sIT3ACH/pub?start=false&loop=false&delayms=3000) (Dave | needs updating for 2023)
 * [Tutorial: Datasets](./Tutorial_03_datasets.ipynb) (Andrej | needs updating for 2023)
-* [Tutorial: Compute](./Tutorial_04_compute.ipynb) (Michael | needs updating for 2023)
+* [Tutorial: Compute](./Tutorial_04_compute.ipynb) (Michael)
 * [Tutorial: Time and Phase](./Tutorial_05_time_and_phase.ipynb) (Andrej | needs updating for 2023)
 * [Tutorial: Plotting](./Tutorial_06_plotting.ipynb) (Kyle | needs updating for 2023)
 * [Exercises: Creating Forward Models](./Exercises_02_forward_models.ipynb) (needs updating for 2023)
-* [Optional Breakout Session: Line Profiles with PHOEBE and SPAMMS](https://docs.google.com/presentation/d/e/2PACX-1vTnWRdVfhC4bbrzGyP7kzhoMbZCOzyBbjJaRFJiMIUkpeSitL5Eqd_Dt1Ip3RZhPLhUvlKS1-iqnC0h/pub?start=false&loop=false&delayms=3000) (Michael | needs updating for 2023)
+* [Optional Breakout Session: Line Profiles with PHOEBE and SPAMMS](https://docs.google.com/presentation/d/e/2PACX-1vTnWRdVfhC4bbrzGyP7kzhoMbZCOzyBbjJaRFJiMIUkpeSitL5Eqd_Dt1Ip3RZhPLhUvlKS1-iqnC0h/pub?start=false&loop=false&delayms=3000) (Michael)
 * [Optional Breakout Session: In Development - Blended Atmosphere Tables](https://docs.google.com/presentation/d/e/2PACX-1vSI-dNQSiGfNqttEuOzEd-iD2HIFfrvPVtFhk__I4YCwqOAo9cy047Tbkk74MkYgiRgO4iePvYf2Ss3/pub?start=false&loop=false&delayms=3000) (Andrej | needs updating for 2023)
 
 
