@@ -52,23 +52,31 @@ print(b.filter(qualifier='incl'))
 print(b.filter(qualifier='incl', context='component'))
 
 
-# The other inclinations of the stars are (by default) *constrained* to be the same as the inclination of the orbit (i.e., an aligned system).  We can see this by the `C` in the output (to the left of the twigs) above as well as by accessing the `constrained_by` attribute of the Parameter (attempting to call `set_value` will also raise an error).
+# The other inclinations of the stars are (by default) *constrained* to be the same as the inclination of the orbit (i.e., an aligned system).  We can see this by the `C` in the output (to the left of the twigs) above.
 
 # In[6]:
+
+
+b.set_value(qualifier='incl', context='component', component='primary', value=80)
+
+
+# Because the inclination of the primary is constrained, an error will be raised if we try to change the value directly.  The error message tells us that the inclination of the primary is constrained by the inclination of the binary and the pitch of the primary.  We can also get this information by accessing the `constrained_by` attribute of the Parameter
+
+# In[7]:
 
 
 b.get_parameter(qualifier='incl', context='component', component='primary').constrained_by
 
 
-# The other two Parameters with `qualifier='incl'` are the constraints themselves and have `context='constraint'`
+# The other two Parameters with `qualifier='incl'` are the constraints themselves and have `context='constraint'`.  Filtering on this will give us the equation used to calculate the value of the constrained parameter.
 
-# In[7]:
+# In[8]:
 
 
 print(b.filter(qualifier='incl', context='constraint'))
 
 
-# In[8]:
+# In[9]:
 
 
 b.get_parameter(qualifier='incl', context='constraint', component='primary')
@@ -76,13 +84,27 @@ b.get_parameter(qualifier='incl', context='constraint', component='primary')
 
 # Here we see that this is a simple constraint: the inclination of the primary star is being *constrained* to be exactly that of the inclination of the binary orbit (since the `pitch` is set to zero).  If we change the inclination of the orbit, the inclinations of the 'primary' and 'secondary' stars will immediately update to reflect that change.
 
-# In[9]:
+# In[10]:
 
 
 b.set_value(qualifier='incl', component='binary', value=80)
 
 
-# In[10]:
+# In[11]:
+
+
+print(b.filter(qualifier='incl', context='component'))
+
+
+# And similarly, if we change the pitch of the primary, then the inclination of the primary will immediately update to reflect the change.
+
+# In[12]:
+
+
+b.set_value(qualifier='pitch', component='primary', value=-5)
+
+
+# In[13]:
 
 
 print(b.filter(qualifier='incl', context='component'))
@@ -90,13 +112,13 @@ print(b.filter(qualifier='incl', context='component'))
 
 # Other constraints are a little more complicated.
 
-# In[11]:
+# In[14]:
 
 
 b.get_parameter(qualifier='asini', component='binary', context='constraint')
 
 
-# In[12]:
+# In[15]:
 
 
 print("asini: {}, sma: {}, incl: {}".format(
@@ -105,13 +127,13 @@ print("asini: {}, sma: {}, incl: {}".format(
     b.get_value(qualifier='incl', component='binary', context='component')))
 
 
-# In[13]:
+# In[16]:
 
 
 b.set_value(qualifier='sma', component='binary', context='component', value=10.0)
 
 
-# In[14]:
+# In[17]:
 
 
 print("asini: {}, sma: {}, incl: {}".format(
@@ -124,7 +146,7 @@ print("asini: {}, sma: {}, incl: {}".format(
 
 # In the default binary, there are a significant number of constrained Parameters.
 
-# In[15]:
+# In[18]:
 
 
 print(b.filter(context='constraint').qualifiers)
@@ -132,13 +154,13 @@ print(b.filter(context='constraint').qualifiers)
 
 # Let's look at mass, which is _constrained_ by default according to Kepler's third law.
 
-# In[16]:
+# In[19]:
 
 
 print(b.get_parameter('mass', component='primary', context='component'))
 
 
-# In[17]:
+# In[20]:
 
 
 print(b.get_parameter('mass', component='primary', context='constraint'))
@@ -148,15 +170,15 @@ print(b.get_parameter('mass', component='primary', context='constraint'))
 # 
 # However, let's say that you wanted to set the mass (perhaps you know the mass, but don't know the semi-major axis as well). This can be done via the `flip_constraint` method. The easiest way to use this correctly is to make sure our keywords return the correct Constraint Parameter via `get_constraint` and then use `flip_constraint`.
 
-# In[18]:
+# In[21]:
 
 
 b.get_constraint(qualifier='mass', component='primary')
 
 
-# Now we just add `solve_for='sma'` to "flip" this constraint to solve for 'sma' instead of 'mass'.
+# Now we can use `flip_constraint` just add `solve_for='sma'` to "flip" this constraint to solve for 'sma' instead of 'mass'.
 
-# In[19]:
+# In[22]:
 
 
 b.flip_constraint(qualifier='mass', component='primary', solve_for='sma')
@@ -164,13 +186,13 @@ b.flip_constraint(qualifier='mass', component='primary', solve_for='sma')
 
 # Now we're allowed to set the mass and we'll see that the value of sma is automatically computed.
 
-# In[20]:
+# In[23]:
 
 
 b.set_value('mass', component='primary', value=1.2)
 
 
-# In[21]:
+# In[24]:
 
 
 b.get_value('sma', component='binary', context='component')
