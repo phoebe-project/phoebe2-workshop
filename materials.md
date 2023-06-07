@@ -66,7 +66,7 @@ Please test your installation well in advance of the workshop by running the [te
 * Talk: Scientific Introduction to PHOEBE (Andrej | needs updating for 2023)
 * [Tutorial: Animations](./Tutorial_07_animations.ipynb) (Michael | needs updating for 2023)
 * [Tutorial: Accessing and Plotting Meshes](./Tutorial_08_meshes.ipynb) (Kyle)
-* [Tutorial: Flux Scaling (Passband Luminosity, Third Light, and Distance)](./Tutorial_09_pblum_l3_distance.ipynb) (Andrej | needs updating for 2023)
+* [Tutorial: Flux Scaling (Passband Luminosity, Third Light, and Distance)](./Tutorial_09_pblum_l3_distance.ipynb) (Andrej)
 * [Tutorial: Features (Spots & Gaussian Processes)](./Tutorial_10_features.ipynb) (Kyle)
 * [Tutorial: Optimizing PHOEBE Computations](./Tutorial_11_optimizing_computations.ipynb) (Kyle)
 * [Exercises: Forward Model Animations](./Exercises_03_animations.ipynb) (needs updating for 2023)
@@ -79,7 +79,7 @@ Please test your installation well in advance of the workshop by running the [te
 * [Tutorial: Estimators](./Tutorial_12_estimators.ipynb) (Michael | needs updating for 2023 - mention need for detrending and link to prev tutorial/resources)
 * [Tutorial: Optimizers](./Tutorial_13_optimizers.ipynb) (Kyle | needs updating for 2023)
 * [Exercises: Estimators & Optimizers](./Exercises_04_estimators_optimizers.ipynb) (needs updating for 2023)
-* [Optional Breakout Session: In-depth look at fluxes and magnitudes](./Tutorial_flux_calibration.ipynb) (Andrej | needs updating for 2023)
+* [Optional Breakout Session: In-depth look at fluxes and magnitudes](./Tutorial_flux_calibration.ipynb) (Andrej)
 * [Optional Breakout Session: Detrending](./Tutorial_detrending.ipynb) (Kelly | needs updating for 2023)
 
 
