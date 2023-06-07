@@ -40,9 +40,9 @@ Please test your installation well in advance of the workshop by running the [te
 ### Monday June 19: Overview and Building Systems in PHOEBE
 
 * [Welcome & Introduction](https://docs.google.com/presentation/d/e/2PACX-1vS8VXgvYJV4cXrnwF8XMLbZoKJqiTRQJcFv_GXnJrLOcn6QyU7JHJJ7ZH5totNOQIPSu1yawF1kL1m1/pub?start=false&loop=false&delayms=3000) (Kelly | needs updating for 2023)
-* [Talk: PHOEBE Overview - wdgui to PHOEBE](https://docs.google.com/presentation/d/e/2PACX-1vT1no8csPNugrLUarxISYj_jtFidp6vMzzNj3jUkqTsUTw9ozOQ1wqh79kSaL-xLXZcSWKQ8UyNI_RE/pub?start=false&loop=false&delayms=3000) (Andrej | needs updating for 2023)
+* [Talk: PHOEBE Overview - wdgui to PHOEBE](https://docs.google.com/presentation/d/e/2PACX-1vT1no8csPNugrLUarxISYj_jtFidp6vMzzNj3jUkqTsUTw9ozOQ1wqh79kSaL-xLXZcSWKQ8UyNI_RE/pub?start=false&loop=false&delayms=3000) (Andrej)
 * [Talk: Introduction to PHOEBE 2: why so complicated?](https://docs.google.com/presentation/d/e/2PACX-1vR_okhrCOKLqCW_d_cBiq5CwaIBWREYbIXPwB-AnndvYA8g9Xxs91rlZBjHLpEzzCp622i19hbsaxLh/pub?start=false&loop=false&delayms=3000) (Kyle)
-* [Tutorial: General Concepts & Bundle Basics](./Tutorial_01_bundle_basics.ipynb) (Andrej | needs updating for 2023)
+* [Tutorial: General Concepts & Bundle Basics](./Tutorial_01_bundle_basics.ipynb) (Andrej)
 * [Tutorial: Constraints](./Tutorial_02_constraints.ipynb) (Michael)
 * [Exercises: Building Systems](./Exercises_01_building_systems.ipynb)
 * Optional Breakout Session: Preview of lcviz (Kyle | needs updating for 2023)
@@ -51,9 +51,9 @@ Please test your installation well in advance of the workshop by running the [te
 ### Tuesday June 20: Creating Forward Models
 
 * [Talk: Atmospheres, Limb Darkening, Intensity Weighting, Extinction, and Reflection](https://docs.google.com/presentation/d/e/2PACX-1vQ9ba54aHX5cwTNN2eJfRdG5nLXFqoOKLLUl9I0_sGwVYX2BEVLQDjQh1po8xti6bzbDAzD7sIT3ACH/pub?start=false&loop=false&delayms=3000) (Dave | needs updating for 2023)
-* [Tutorial: Datasets](./Tutorial_03_datasets.ipynb) (Andrej | needs updating for 2023)
+* [Tutorial: Datasets](./Tutorial_03_datasets.ipynb) (Andrej)
 * [Tutorial: Compute](./Tutorial_04_compute.ipynb) (Michael)
-* [Tutorial: Time and Phase](./Tutorial_05_time_and_phase.ipynb) (Andrej | needs updating for 2023)
+* [Tutorial: Time and Phase](./Tutorial_05_time_and_phase.ipynb) (Andrej)
 * [Tutorial: Plotting](./Tutorial_06_plotting.ipynb) (Kyle)
 * [Exercises: Creating Forward Models](./Exercises_02_forward_models.ipynb) (needs updating for 2023)
 * [Optional Breakout Session: Line Profiles with PHOEBE and SPAMMS](https://docs.google.com/presentation/d/e/2PACX-1vTnWRdVfhC4bbrzGyP7kzhoMbZCOzyBbjJaRFJiMIUkpeSitL5Eqd_Dt1Ip3RZhPLhUvlKS1-iqnC0h/pub?start=false&loop=false&delayms=3000) (Michael)
