@@ -16,7 +16,7 @@
 # 
 # As usual, let us import phoebe, constants, units, initialize logging and load the default binary:
 
-# In[2]:
+# In[1]:
 
 
 import phoebe
@@ -27,10 +27,10 @@ b = phoebe.default_binary()
 
 # Add a light curve:
 
-# In[3]:
+# In[2]:
 
 
-b.add_dataset('lc', compute_times=phoebe.linspace(0,1,101))
+b.add_dataset('lc', compute_times=phoebe.linspace(0, 1, 101))
 
 
 # ## Passband Luminosities
@@ -55,7 +55,7 @@ b.add_dataset('lc', compute_times=phoebe.linspace(0,1,101))
 # 
 # The mode of operation regarding passband luminosity is set by using the `pblum_mode` parameter. Let us take a closer look:
 
-# In[4]:
+# In[3]:
 
 
 print(b.get_parameter(qualifier='pblum_mode'))
@@ -70,7 +70,7 @@ print(b.get_parameter(qualifier='pblum_mode'))
 
 # For all modes (except dataset-scaled), we can compute the relative and absolute luminosities outside of `run_compute` by calling [compute_pblums](http://phoebe-project.org/docs/devel/api/phoebe.frontend.bundle.Bundle.compute_pblums.md):
 
-# In[5]:
+# In[4]:
 
 
 print(b.compute_pblums())
@@ -78,7 +78,7 @@ print(b.compute_pblums())
 
 # The units of 'W' here are "just for show": we assume that fluxes are measured in $\mathrm{W}/\mathrm{m}^2$, so passband luminosity needs to be in watts. Now let us change the mode to `absolute` and compute the flux from the Sun at Earth's distance in Johnson V passband:
 
-# In[6]:
+# In[5]:
 
 
 s = phoebe.default_star()
@@ -90,19 +90,19 @@ s.set_value(qualifier='ntriangles', value=10000)
 s.set_value(qualifier='distance', value=1*u.AU)
 
 
-# In[7]:
+# In[6]:
 
 
 s.compute_pblums()
 
 
-# In[8]:
+# In[7]:
 
 
 s.run_compute()
 
 
-# In[9]:
+# In[8]:
 
 
 s.get_value(context='model', dataset='lc01', qualifier='fluxes')
@@ -110,7 +110,7 @@ s.get_value(context='model', dataset='lc01', qualifier='fluxes')
 
 # Compare this to the (quasi)-bolometric flux:
 
-# In[10]:
+# In[9]:
 
 
 s.add_dataset('lc', times=[0.0], passband='Bolometric:900-40000', dataset='bolo')
@@ -125,7 +125,7 @@ s.get_value(context='model', dataset='bolo', qualifier='fluxes')
 # 
 # Third light can either be provided in flux units or in fractional amount:
 
-# In[11]:
+# In[10]:
 
 
 print(s.get_parameter(qualifier='l3_mode', dataset='lc01'))
@@ -136,7 +136,7 @@ print(s.get_parameter(qualifier='l3_mode', dataset='lc01'))
 
 # Similarly to `compute_pblums`, we can compute and expose the translation between `l3` and `l3_frac` via [compute_l3s](http://phoebe-project.org/docs/2.4/api/phoebe.frontend.bundle.Bundle.compute_l3s.md). For example, going back to our binary star bundle:
 
-# In[12]:
+# In[11]:
 
 
 b['pblum_mode@lc01'] = 'component-coupled'
@@ -146,7 +146,7 @@ print(b.compute_l3s())
 
 # Alternatively, we can switch `l3_mode` to `fraction`; `compute_l3s()` will then compute third light fluxes:
 
-# In[13]:
+# In[12]:
 
 
 b['l3_mode'] = 'fraction'
@@ -159,7 +159,7 @@ print(b.compute_l3s())
 # 
 # Finally, the `distance` parameter impacts flux attenuation by way of the inverse square law. By default the distance is set to a canonical 1m, which sets the relationship between luminosity per steradian and flux: `pblum`=4pi corresponds to unity flux.
 
-# In[18]:
+# In[13]:
 
 
 b['l3_frac@lc01'] = 0
@@ -170,7 +170,7 @@ print(b['fluxes@lc01@model'])
 
 # Thus, if we increase the distance by a factor of 2, the flux will go down by a factor of 4:
 
-# In[20]:
+# In[14]:
 
 
 b['distance'] = 2*u.m
