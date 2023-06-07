@@ -14,11 +14,11 @@
 # 
 # To begin, let us do the usual imports, set up the logger and load the default binary bundle:
 
-# In[6]:
+# In[1]:
 
 
 import phoebe
-from phoebe import u,c
+from phoebe import u, c
 
 logger = phoebe.logger(clevel='WARNING')
 b = phoebe.default_binary()
@@ -42,7 +42,7 @@ b = phoebe.default_binary()
 # 
 # Adding a single light curve with predefined times and a label is accomplished by calling the `add_dataset()` bundle method:
 
-# In[7]:
+# In[2]:
 
 
 b.add_dataset('lc', times=phoebe.linspace(0, 1, 51), dataset='lc01')
@@ -50,7 +50,7 @@ b.add_dataset('lc', times=phoebe.linspace(0, 1, 51), dataset='lc01')
 
 # This attaches a set of new dataset parameters to the bundle. Most have the context='dataset', but a few have context='compute', 'figure', and 'constraint'. The 'times' parameter is set with the provided array, and all parameters are tagged with dataset='lc01'.
 
-# In[8]:
+# In[3]:
 
 
 b.filter(dataset='lc01').contexts
@@ -58,7 +58,7 @@ b.filter(dataset='lc01').contexts
 
 # We can now take a closer look at the new parameters with context='dataset':
 
-# In[9]:
+# In[4]:
 
 
 b.filter(dataset='lc01', context='dataset').qualifiers
@@ -70,7 +70,7 @@ b.filter(dataset='lc01', context='dataset').qualifiers
 
 # Next, `context='compute'` parameters:
 
-# In[10]:
+# In[5]:
 
 
 b.filter(dataset='lc01', context='compute').qualifiers
@@ -82,7 +82,7 @@ b.filter(dataset='lc01', context='compute').qualifiers
 
 # Now let us do the same for a [radial velocity (rv) dataset](http://phoebe-project.org/docs/2.4/tutorials/RV.ipynb):
 
-# In[11]:
+# In[6]:
 
 
 b.add_dataset('rv', times=phoebe.linspace(0, 1, 11), dataset='rv01')
@@ -90,7 +90,7 @@ b.add_dataset('rv', times=phoebe.linspace(0, 1, 11), dataset='rv01')
 
 # Using `dataset='rv01'` will filter on all relevant parameters for the RV dataset:
 
-# In[12]:
+# In[7]:
 
 
 b.filter(dataset='rv01', context='dataset').qualifiers
@@ -102,7 +102,7 @@ b.filter(dataset='rv01', context='dataset').qualifiers
 # 
 # Note that there are **2** `times` parameters - one for each star.  When passing `times=np.linspace(...)` to `b.add_dataset`, both `times` parameters are set to that value.  We could have also set separate times for the two components by setting the values of `times@primary` and `times@secondary`. Alternatively, you can also pass a dictionary when creating the dataset: `b.add_dataset('rv', times={'primary': [0,1,2], 'secondary': [1,2,3]})`.
 
-# In[13]:
+# In[8]:
 
 
 b.filter(dataset='rv01', context='dataset', qualifier='times').components
@@ -110,7 +110,7 @@ b.filter(dataset='rv01', context='dataset', qualifier='times').components
 
 # We can now take a look at the added parameters with context='compute':
 
-# In[14]:
+# In[9]:
 
 
 b.filter(dataset='rv01', context='compute').qualifiers
@@ -122,7 +122,7 @@ b.filter(dataset='rv01', context='compute').qualifiers
 
 # Although it is not common to have astrometric observations of an orbit, the [orb dataset](http://phoebe-project.org/docs/2.4/tutorials/ORB.ipynb) allows you to synthesize orbits of the stars in a system at any given time, which can be useful for visualization.
 
-# In[15]:
+# In[10]:
 
 
 b.add_dataset('orb', compute_times=phoebe.linspace(0, 1, 101), dataset='orb01')
@@ -130,13 +130,13 @@ b.add_dataset('orb', compute_times=phoebe.linspace(0, 1, 101), dataset='orb01')
 
 # Orbits are parametrized by providing the compute times/phases and enabling/disabling. Note that there is no `times` parameter, as there are no observations. However, if you pass `times` to `add_dataset`, they will be adopted automatically as `compute_times`.
 
-# In[16]:
+# In[11]:
 
 
 b.filter(dataset='orb01', context='dataset').qualifiers
 
 
-# In[17]:
+# In[12]:
 
 
 b.filter(dataset='orb01', context='compute').qualifiers
@@ -146,7 +146,7 @@ b.filter(dataset='orb01', context='compute').qualifiers
 
 # [Line profiles](http://phoebe-project.org/docs/2.4/tutorials/LP) are time- *and* wavelength-dependent.  Note that the times cannot be changed after the dataset has been created and attached to the bundle while the wavelengths can. That said, `compute_times` can be changed and used to synthesize line profiles at any desired timestamp. Because of this, the distinction between `times` and `compute_times` is a bit more important for line profiles - you probably only want to provide `times` if you want to attach your actual observations, otherwise just provide `compute_times`.
 
-# In[19]:
+# In[13]:
 
 
 b.add_dataset('lp', 
@@ -157,7 +157,7 @@ b.add_dataset('lp',
 
 # Now we can take a look at the parameters for a line profile dataset with `context='dataset'`:
 
-# In[20]:
+# In[14]:
 
 
 b.filter(dataset='lp01', context='dataset').qualifiers
@@ -165,7 +165,7 @@ b.filter(dataset='lp01', context='dataset').qualifiers
 
 # To reinforce the notion of the `times` vs. `compute_times` difference, let us print the entire parameter set for `lp01`:
 
-# In[17]:
+# In[15]:
 
 
 print(b.filter(dataset='lp01', context='dataset'))
@@ -173,7 +173,7 @@ print(b.filter(dataset='lp01', context='dataset'))
 
 # Timestamps (passed as `times`) are provided as tags, to tag each parameter that can change in time; if instead we provided `compute_times`, they would not be tagged:
 
-# In[21]:
+# In[16]:
 
 
 b.add_dataset('lp', 
@@ -183,7 +183,7 @@ b.add_dataset('lp',
               overwrite=True)
 
 
-# In[22]:
+# In[17]:
 
 
 print(b.filter(dataset='lp01', context='dataset'))
@@ -193,7 +193,7 @@ print(b.filter(dataset='lp01', context='dataset'))
 
 # As far as `context='compute'` parameters are concerned, we only have the enabled/disabled switch:
 
-# In[24]:
+# In[18]:
 
 
 b.filter(dataset='lp01', context='compute').qualifiers
@@ -205,7 +205,7 @@ b.filter(dataset='lp01', context='compute').qualifiers
 # 
 # As orbits, meshes do not have associated observables, thus they are parametrized only by `compute_times`. As before, passing `times` will automatically be converted to `compute_times` under the hood.
 
-# In[25]:
+# In[19]:
 
 
 b.add_dataset('mesh', 
@@ -215,13 +215,13 @@ b.add_dataset('mesh',
 
 # Let us take a look at parameters in the 'dataset' and 'compute' contexts:
 
-# In[26]:
+# In[20]:
 
 
 b.filter(dataset='mesh01', context='dataset').qualifiers
 
 
-# In[27]:
+# In[21]:
 
 
 b.filter(dataset='mesh01', context='compute').qualifiers
@@ -229,7 +229,7 @@ b.filter(dataset='mesh01', context='compute').qualifiers
 
 # A unique aspect of parametrizing meshes is the `columns` parameter; we will revisit that in great detail soon, but at this point let us take a quick look at the available columns. The list is quite extensive and we will not go into any details at this point, but it should be informative to glance through the names of the columns; all these are per-surface-element values that can be exposed and visualized.
 
-# In[29]:
+# In[22]:
 
 
 b.get_parameter(dataset='mesh01', context='dataset', qualifier='columns').choices

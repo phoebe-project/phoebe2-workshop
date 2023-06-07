@@ -21,7 +21,7 @@
 
 
 import phoebe
-from phoebe import u,c
+from phoebe import u, c
 
 
 # In[2]:
@@ -74,7 +74,7 @@ b.contexts
 
 # All available tags are stored in the `b.tags` dictionary; to display all its keys, we would do:
 
-# In[12]:
+# In[8]:
 
 
 b.tags.keys()
@@ -84,7 +84,7 @@ b.tags.keys()
 
 # Using the plural form of the tag as an attribute also works on a filtered `ParameterSet`:
 
-# In[7]:
+# In[9]:
 
 
 b.filter(context='compute').components
@@ -92,7 +92,7 @@ b.filter(context='compute').components
 
 # This then tells us what can be used to filter further.
 
-# In[8]:
+# In[10]:
 
 
 b.filter(context='compute').filter(component='primary')
@@ -100,7 +100,7 @@ b.filter(context='compute').filter(component='primary')
 
 # You can also filter in a single call to `filter()`, by naming keyword arguments appropriately:
 
-# In[13]:
+# In[11]:
 
 
 b.filter(context='compute', component='primary')
@@ -108,7 +108,7 @@ b.filter(context='compute', component='primary')
 
 # The "qualifier" tag is the shorthand name of the parameter itself.  If you do not know what is the name of the parameter you need, it is often useful to list all the qualifiers of the `Bundle` or a given `ParameterSet`:
 
-# In[14]:
+# In[12]:
 
 
 b.filter(context='compute', component='primary').qualifiers
@@ -116,7 +116,7 @@ b.filter(context='compute', component='primary').qualifiers
 
 # Now that we know the options for qualifier within this filter, we can choose to filter on one of those. For example, let us filter on the `ntriangles` qualifier.
 
-# In[15]:
+# In[13]:
 
 
 b.filter(context='compute', component='primary', qualifier='ntriangles')
@@ -124,7 +124,7 @@ b.filter(context='compute', component='primary', qualifier='ntriangles')
 
 # Once we filter to a single Parameter, we can use `get_parameter()` to return the `Parameter` object itself (instead of the `ParameterSet`).
 
-# In[16]:
+# In[14]:
 
 
 b.filter(context='compute', component='primary', qualifier='ntriangles').get_parameter()
@@ -132,7 +132,7 @@ b.filter(context='compute', component='primary', qualifier='ntriangles').get_par
 
 # Note that `get_parameter()` also takes filtering keywords. The above line is thus equivalent to the following:
 
-# In[17]:
+# In[15]:
 
 
 b.get_parameter(context='compute', component='primary', qualifier='ntriangles')
@@ -140,7 +140,7 @@ b.get_parameter(context='compute', component='primary', qualifier='ntriangles')
 
 # Finally, all tags can be concatenated together, using "@" as the separator; we refer to these constructs as "twigs" (nomenclature was inspired by "a bundle of twigs"):
 
-# In[18]:
+# In[16]:
 
 
 b['ntriangles@primary@compute']
@@ -150,13 +150,13 @@ b['ntriangles@primary@compute']
 
 # Each `Parameter` object contains several keys that provide information about that parameter.  The keys `description` and `value` are always included, with additional keys available depending on the type of parameter. While these keys exist as properties of the `Parameter` object (i.e., `p.value` and `p.description`), there are dedicated methods `get_value()` and `get_description()` that should be used instead; they take keyword arguments that can further modify the return value, for example to specify units.
 
-# In[19]:
+# In[17]:
 
 
 b.get_parameter(context='compute', component='primary', qualifier='ntriangles').get_value()
 
 
-# In[21]:
+# In[18]:
 
 
 b.get_parameter(context='compute', component='primary', qualifier='ntriangles').get_description()
@@ -164,7 +164,7 @@ b.get_parameter(context='compute', component='primary', qualifier='ntriangles').
 
 # The `get_*()` family of methods works on the bundle as well, and can be filtered using keyword arguments. For example:
 
-# In[22]:
+# In[19]:
 
 
 b.get_value(context='compute', component='primary', qualifier='ntriangles')
@@ -172,7 +172,7 @@ b.get_value(context='compute', component='primary', qualifier='ntriangles')
 
 # Finally, adding a key to the twig will also provide access to it:
 
-# In[23]:
+# In[20]:
 
 
 b['description@ntriangles@primary@compute']
@@ -180,7 +180,7 @@ b['description@ntriangles@primary@compute']
 
 # As the `ntriangles` parameter is an integer parameter, it also includes a key for the allowable limits.
 
-# In[24]:
+# In[21]:
 
 
 b.get_parameter(context='compute', component='primary', qualifier='ntriangles').get_limits()
@@ -190,13 +190,13 @@ b.get_parameter(context='compute', component='primary', qualifier='ntriangles').
 # 
 # If we wanted a finer mesh, we would change the value:
 
-# In[37]:
+# In[22]:
 
 
 b.get_parameter(context='compute', component='primary', qualifier='ntriangles').set_value(2000)
 
 
-# In[38]:
+# In[23]:
 
 
 b.get_parameter(context='compute', component='primary', qualifier='ntriangles')
@@ -204,7 +204,7 @@ b.get_parameter(context='compute', component='primary', qualifier='ntriangles')
 
 # Twig access attempts to simplify the interface even more, so it is not necessary to explicitly provide `value` as part of the twig; it is also not necessary to provide *all* tags, just the ones that uniquely qualify the parameter:
 
-# In[45]:
+# In[24]:
 
 
 b['ntriangles@primary'] = 1500
@@ -213,7 +213,7 @@ b['ntriangles@primary']
 
 # This is a very important distinction between the filtered interface and the twig interface to parameters and their values: when a set of tags uniquely identifies a parameter, the corresponding twig (via dictionary access) will *always* return a `Parameter`, whereas the `filter()` interface will *always* return a `ParameterSet`:
 
-# In[49]:
+# In[25]:
 
 
 b.filter(component='primary', qualifier='ntriangles')
@@ -221,7 +221,7 @@ b.filter(component='primary', qualifier='ntriangles')
 
 # As with the tags, you can call `.twigs` on any `ParameterSet` to see the "smallest unique twigs" of the contained parameters:
 
-# In[ ]:
+# In[26]:
 
 
 b['compute'].twigs
@@ -229,13 +229,13 @@ b['compute'].twigs
 
 # Now let us take a look at another parameter, say the `distortion_method` qualifier from that same `ParameterSet`. It has an added key, `choices`:
 
-# In[39]:
+# In[27]:
 
 
 b.get_parameter(context='compute', component='primary', qualifier='distortion_method')
 
 
-# In[40]:
+# In[28]:
 
 
 b.get_parameter(context='compute', component='primary', qualifier='distortion_method').get_choices()
@@ -243,13 +243,13 @@ b.get_parameter(context='compute', component='primary', qualifier='distortion_me
 
 # We can only set a value if it is contained within this list - if you attempt to set a non-valid value, an error will be raised.
 
-# In[41]:
+# In[29]:
 
 
 b.get_parameter(context='compute', component='primary', qualifier='distortion_method').set_value('rotstar')
 
 
-# In[42]:
+# In[30]:
 
 
 b.get_parameter(context='compute', component='primary', qualifier='distortion_method').get_value()
@@ -269,13 +269,13 @@ b.get_parameter(context='compute', component='primary', qualifier='distortion_me
 
 # To see a convenient representation of the names (twigs or qualifiers) of all parameters and their descriptions, we can look at the `info` attribute for any `Bundle` or `ParameterSet`:
 
-# In[50]:
+# In[31]:
 
 
 print(b.info)
 
 
-# In[51]:
+# In[32]:
 
 
 print(b.filter(context='component').info)
@@ -285,7 +285,7 @@ print(b.filter(context='component').info)
 # 
 # Each float parameter has an associated unit. Let us take a look at the semi-major axis ('sma') parameter for the binary orbit.
 
-# In[52]:
+# In[33]:
 
 
 b.get_parameter(qualifier='sma', component='binary', context='component')
@@ -293,7 +293,7 @@ b.get_parameter(qualifier='sma', component='binary', context='component')
 
 # From the representation above, we can already see that the units are in solar radii. We can access the units directly via get_default_unit:
 
-# In[53]:
+# In[34]:
 
 
 b.get_parameter(qualifier='sma', component='binary', context='component').get_default_unit()
@@ -301,7 +301,7 @@ b.get_parameter(qualifier='sma', component='binary', context='component').get_de
 
 # Calling get_value returns only the float of the value in these units:
 
-# In[54]:
+# In[35]:
 
 
 b.get_parameter(qualifier='sma', component='binary', context='component').get_value()
@@ -309,7 +309,7 @@ b.get_parameter(qualifier='sma', component='binary', context='component').get_va
 
 # Alternatively, you can access an actual "quantity" object that contains the value and unit by calling `get_quantity()`:
 
-# In[55]:
+# In[36]:
 
 
 b.get_parameter(qualifier='sma', component='binary', context='component').get_quantity()
@@ -317,7 +317,7 @@ b.get_parameter(qualifier='sma', component='binary', context='component').get_qu
 
 # Of course, recall from above that the entire family of get_*() methods can be used for filtering directly:
 
-# In[57]:
+# In[37]:
 
 
 b.get_quantity(qualifier='sma', component='binary')
@@ -325,7 +325,7 @@ b.get_quantity(qualifier='sma', component='binary')
 
 # Both `get_value()` and `get_quantity()` also accept a unit argument which will return the value or quantity in the requested units (if possible to convert). This unit argument takes either a unit object or a string representation that can be parsed:
 
-# In[58]:
+# In[38]:
 
 
 b.get_parameter(qualifier='sma', component='binary', context='component').get_value(unit=u.km)
@@ -333,19 +333,19 @@ b.get_parameter(qualifier='sma', component='binary', context='component').get_va
 
 # If for some reason you want to change the default units, you can, but just be careful that this could cause some float-point precision issue
 
-# In[59]:
+# In[39]:
 
 
 b.get_parameter(qualifier='sma', component='binary', context='component').set_default_unit('mm')
 
 
-# In[60]:
+# In[40]:
 
 
 b.get_parameter(qualifier='sma', component='binary', context='component').get_quantity()
 
 
-# In[61]:
+# In[41]:
 
 
 b.get_parameter(qualifier='sma', component='binary', context='component').get_quantity(unit='solRad')
@@ -355,13 +355,13 @@ b.get_parameter(qualifier='sma', component='binary', context='component').get_qu
 
 # The entire bundle object can be saved to (and reloaded from) and ASCII file:
 
-# In[62]:
+# In[42]:
 
 
 b.save('test.phoebe')
 
 
-# In[63]:
+# In[43]:
 
 
 b = phoebe.load('test.phoebe')
