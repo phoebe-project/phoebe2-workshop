@@ -63,7 +63,7 @@ Please test your installation well in advance of the workshop by running the [te
 ### Wednesday June 21: Advanced Physics & Features
 
 * Group Photo
-* Talk: Scientific Introduction to PHOEBE (Andrej | needs updating for 2023)
+* Talk: Scientific Introduction to PHOEBE (Andrej)
 * [Tutorial: Animations](./Tutorial_07_animations.ipynb) (Michael | needs updating for 2023)
 * [Tutorial: Accessing and Plotting Meshes](./Tutorial_08_meshes.ipynb) (Kyle)
 * [Tutorial: Flux Scaling (Passband Luminosity, Third Light, and Distance)](./Tutorial_09_pblum_l3_distance.ipynb) (Andrej)
@@ -75,7 +75,7 @@ Please test your installation well in advance of the workshop by running the [te
 
 ### Thursday June 22: Introduction to Fitting
 
-* [Talk: Inverse Problem in PHOEBE](https://docs.google.com/presentation/d/e/2PACX-1vSZxGLuuJAf2_imhVVhGAW_xoeOgmEI-0YWbnfES2XaUz8YO1jGdHe8652c8flxiSGotJQQF1eGp16R/pub?start=false&loop=false&delayms=3000) (Andrej | needs updating for 2023)
+* [Talk: Inverse Problem in PHOEBE](https://docs.google.com/presentation/d/e/2PACX-1vSZxGLuuJAf2_imhVVhGAW_xoeOgmEI-0YWbnfES2XaUz8YO1jGdHe8652c8flxiSGotJQQF1eGp16R/pub?start=false&loop=false&delayms=3000) (Andrej)
 * [Tutorial: Estimators](./Tutorial_12_estimators.ipynb) (Michael | needs updating for 2023 - mention need for detrending and link to prev tutorial/resources)
 * [Tutorial: Optimizers](./Tutorial_13_optimizers.ipynb) (Kyle | needs updating for 2023)
 * [Exercises: Estimators & Optimizers](./Exercises_04_estimators_optimizers.ipynb) (needs updating for 2023)
