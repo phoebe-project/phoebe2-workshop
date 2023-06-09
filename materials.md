@@ -64,7 +64,7 @@ Please test your installation well in advance of the workshop by running the [te
 
 * Group Photo
 * Talk: Scientific Introduction to PHOEBE (Andrej)
-* [Tutorial: Animations](./Tutorial_07_animations.ipynb) (Michael | needs updating for 2023)
+* [Tutorial: Animations](./Tutorial_07_animations.ipynb) (Michael)
 * [Tutorial: Accessing and Plotting Meshes](./Tutorial_08_meshes.ipynb) (Kyle)
 * [Tutorial: Flux Scaling (Passband Luminosity, Third Light, and Distance)](./Tutorial_09_pblum_l3_distance.ipynb) (Andrej)
 * [Tutorial: Features (Spots & Gaussian Processes)](./Tutorial_10_features.ipynb) (Kyle)
