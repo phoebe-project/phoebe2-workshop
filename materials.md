@@ -76,8 +76,8 @@ Please test your installation well in advance of the workshop by running the [te
 ### Thursday June 22: Introduction to Fitting
 
 * [Talk: Inverse Problem in PHOEBE](https://docs.google.com/presentation/d/e/2PACX-1vSZxGLuuJAf2_imhVVhGAW_xoeOgmEI-0YWbnfES2XaUz8YO1jGdHe8652c8flxiSGotJQQF1eGp16R/pub?start=false&loop=false&delayms=3000) (Andrej)
-* [Tutorial: Estimators](./Tutorial_12_estimators.ipynb) (Michael | needs updating for 2023 - mention need for detrending and link to prev tutorial/resources)
-* [Tutorial: Optimizers](./Tutorial_13_optimizers.ipynb) (Kyle | needs updating for 2023)
+* [Tutorial: Estimators](./Tutorial_12_estimators.ipynb) (Michael)
+* [Tutorial: Optimizers](./Tutorial_13_optimizers.ipynb) (Kyle)
 * [Exercises: Estimators & Optimizers](./Exercises_04_estimators_optimizers.ipynb) (needs updating for 2023)
 * [Optional Breakout Session: In-depth look at fluxes and magnitudes](./Tutorial_flux_calibration.ipynb) (Andrej)
 * [Optional Breakout Session: Detrending](./Tutorial_detrending.ipynb) (Kelly | needs updating for 2023)
