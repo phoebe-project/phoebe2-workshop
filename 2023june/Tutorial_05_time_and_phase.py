@@ -23,7 +23,7 @@ logger = phoebe.logger(clevel='WARNING')
 b = phoebe.default_binary()
 
 
-# # Times and phases
+# # Reference time
 
 # You may have noticed while adding datasets that PHOEBE works entirely in time space. This is done to allow proper parametrization of time-dependent quantities in the system but can cause difficulties if our data are given in phase-space or if we wanted to inspect a phased light curve. For this reason, PHOEBE provides several methods to help translate between the time space and phase space.
 # 
@@ -33,35 +33,46 @@ b = phoebe.default_binary()
 # * `dpdt` (change in orbital period in time)
 # * `t0` (reference time-point)
 # 
-# The value of `t0` could follow several conventions, all of which are defined in the bundle:
+# The value of `t0` can follow several conventions, all of which are defined in the bundle:
 # 
 # * `t0_supconj`: time of superior conjunction
 # * `t0_perpass`: time of periastron passage
-# * `t0_ref`: time of the reference point w.r.t. apsidal motion
+# * `t0_ref`: time of the reference point w.r.t. the sky (useful for apsidal motion)
 # 
-# The `t0_supconj`, `t0_perpass`, and `t0_ref` parameters are defined for the orbit (so `context='component', component='binary'` for our default binary).  By default, `t0_supconj` is the free parameter, with `t0_perpass` and `t0_ref` being constrained by a other parameters. We will look at changing that in an upcoming tutorial.
+# The `t0_supconj`, `t0_perpass`, and `t0_ref` parameters are defined at the orbit level rather than system level.  By default, `t0_supconj` is the free parameter, with `t0_perpass` and `t0_ref` being constrained:
 
-# In[2]:
-
-
-b.get_parameter(qualifier='t0_supconj', context='component')
+# In[7]:
 
 
-# In[3]:
+print(b.filter(qualifier='t0*'))
 
 
-b.get_parameter(qualifier='t0_perpass', context='component')
+# For eclipsing systems, `t0_supconj` is the handy choice because the ephemerides typically provide the time of deepest minimum as the reference point, i.e. the time of superior conjunction. For non-eclipsing systems, most frequently in astrometric solutions, orbital elements provide the periastron passage time as the reference point, so in those cases we would benefit from `t0_perpass` being independent and `t0_supconj` to be constrained. Finally, for systems with eccentric orbits and apsidal motion (`dperdt` != 0), `t0_ref` defines the reference point with respect to a fixed point in the sky rather than the orbit.
+# 
+# Note that, when `dperdt` != 0, the role of the orbital period also becomes ambiguous: one full revolution w.r.t. orbit (the sidereal period) is different from one full revolution w.r.t. the background stars (the anomalistic period). In particular, when `dperdt`==0:
+
+# In[8]:
 
 
-# In[4]:
+print(b.filter(qualifier='period*'))
 
 
-b.get_parameter(qualifier='t0_ref', context='component')
+# Here we see that there is only one period, _sidereal_; but if we introduce apsidal motion:
+
+# In[15]:
 
 
+b.set_value(qualifier='dperdt', component='binary', value=(1, 'deg/day'))
+print(b.filter(qualifier='period*'))
+
+
+# Now the distinction between the sidereal and anomalistic orbital periods is important and the anomalistic period, `period_anom`, is now an exposed parameter. By default it is constrained, and the sidereal period is used as a free parameter.
+
+# # Phase-folding
+# 
 # For demonstration purposes let us change the orbital period so that the times and phases are not identical:
 
-# In[5]:
+# In[16]:
 
 
 b.set_value(qualifier='period', component='binary', value=2.5)
@@ -69,19 +80,19 @@ b.set_value(qualifier='period', component='binary', value=2.5)
 
 # The first helper method related to times and phases is `get_ephemeris()`. We can access the current ephemeris of our system using any of the predefined `t0`s, or any custom time:
 
-# In[6]:
+# In[17]:
 
 
 b.get_ephemeris(t0='t0_supconj')
 
 
-# In[7]:
+# In[18]:
 
 
 b.get_ephemeris(t0='t0_perpass')
 
 
-# In[8]:
+# In[19]:
 
 
 b.get_ephemeris(t0=5)
@@ -89,13 +100,13 @@ b.get_ephemeris(t0=5)
 
 # The next helper method is `to_phase()`. It transforms any time (float or list/array) to phase using any of these ephemerides:
 
-# In[9]:
+# In[20]:
 
 
 b.to_phase([0, 0.1], t0='t0_supconj')
 
 
-# In[10]:
+# In[21]:
 
 
 b.to_phase([0, 0.1], t0='t0_perpass')
@@ -103,13 +114,13 @@ b.to_phase([0, 0.1], t0='t0_perpass')
 
 # Finally, there is a `to_time()` method. It converts phases to times (where the returned time will be the first instance of that phase after the provided `t0`):
 
-# In[11]:
+# In[22]:
 
 
 b.to_time(0.5, t0='t0_supconj')
 
 
-# In[12]:
+# In[23]:
 
 
 b.to_time(0.5, t0=2455000)
@@ -120,31 +131,33 @@ b.to_time(0.5, t0=2455000)
 # 
 # As we have seen in the previous tutorial, datasets have a `compute_phases` parameter, with a constraint between `compute_times` and `compute_phases`. If we wanted to compute a model in phase-space, we can achieve this by passing `compute_phases`:
 
-# In[13]:
+# In[24]:
 
 
 b.add_dataset('lc', compute_phases=phoebe.linspace(0, 1, 101), dataset='lc01')
 
 
-# In[14]:
+# In[25]:
 
 
 print(b.filter(qualifier=['compute_times', 'compute_phases'], context='dataset'))
 
 
-# In[15]:
+# If we were to change the orbital period, that would not affect the phases:
+
+# In[26]:
 
 
 b.set_value('period', component='binary', value=3.14)
 
 
-# In[16]:
+# In[27]:
 
 
 print(b.filter(qualifier=['compute_times', 'compute_phases'], context='dataset'))
 
 
-# Important: if your data are in phases, you should **not** use this to convert times and phases (and PHOEBE will raise an error as the `times` array is required if `fluxes` or `rvs` are provided). You will need to convert your phases to times (i.e., `to_time()`) using whatever information you have on the ephemeris that was used originally for the dataset:
+# Important: if your data are phase-folded, you should **not** use this to convert times and phases (and PHOEBE will raise an error as the `times` array is required if `fluxes` or `rvs` are provided). You will need to convert your phases to times (say, by using `to_time()`):
 
 # In[17]:
 
@@ -156,7 +169,7 @@ b.add_dataset('lc', times=times, fluxes=phoebe.linspace(1, 1, 101))
 
 # # Exercise
 
-# Find and print the constraints between the various t0s.
+# Explore the effects of `dperdt` on the anomalistic period. So far we kept our orbit circular; what happens to the times and phases if you introduce eccentricity and retain apsidal motion?
 
 # In[ ]:
 
