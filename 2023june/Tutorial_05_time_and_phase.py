@@ -8,7 +8,7 @@
 # This interactive workshop tutorial covers many of the same topics as the corresponding online tutorials:
 # 
 # * [Advanced: Compute Times & Phases](http://phoebe-project.org/docs/2.4/tutorials/compute_times_phases.ipynb)
-# 
+# * [Apsidal motion (dperdt, period vs period_anom)](http://phoebe-project.org/docs/2.4/tutorials/apsidal_motion)
 
 # # Setup
 # 
