@@ -31,18 +31,19 @@ logger = phoebe.logger('WARNING')
 get_ipython().run_line_magic('matplotlib', 'inline')
 
 
-# For this tutorial and the upcoming fitting tutorials, we'll use a synthetic data set comprised of one light curve and radial velocity curves of the primary and secondary component. Let's load the data in our bundle and plot them first!
+# For this tutorial and the upcoming fitting tutorials, we'll use a synthetic data set comprised of one light curve and radial velocity curves of the primary and secondary component. 
 # 
 # You can find the data files in the workshop github repository, or download them from the following links (just note you may need to adjust the paths below when loading):
-# * [lc.data](https://github.com/phoebe-project/phoebe2-workshop/raw/2021june/data/synthetic/lc.data)
-# * [rv1.data](https://github.com/phoebe-project/phoebe2-workshop/raw/2021june/data/synthetic/rv1.data)
-# * [rv2.data](https://github.com/phoebe-project/phoebe2-workshop/raw/2021june/data/synthetic/rv2.data)
+# * [lc.data](https://github.com/phoebe-project/phoebe2-workshop/raw/2023june/data/synthetic/lc.data)
+# * [rv1.data](https://github.com/phoebe-project/phoebe2-workshop/raw/2023june/data/synthetic/rv1.data)
+# * [rv2.data](https://github.com/phoebe-project/phoebe2-workshop/raw/2023june/data/synthetic/rv2.data)
+# 
+# Recall from the Datasets tutorial (Tutorial_3) that when we add a dataset, we have the option of providing observables.  While this can be done after `add_dataset` is called, we can also do it directly in the initial call by assigning the appropriate values to the corresponding observables. Let's load the data in our bundle and plot them first!
 
-# In[3]:
+# In[2]:
 
 
 b = phoebe.default_binary(force_build=True)
-# lc_tess = np.loadtxt('data/adra/photometry/tess_corrected_new.txt')
 lc = np.loadtxt('data/synthetic/lc.data')
 rv1 = np.loadtxt('data/synthetic/rv1.data')
 rv2 = np.loadtxt('data/synthetic/rv2.data')
@@ -54,6 +55,8 @@ b['times@rv@secondary'], b['rvs@rv@secondary'], b['sigmas@rv@secondary'] = rv2[:
 _ = b.plot(x='times', show=True)
 
 
+# PHOEBE currently offers 5 estimator methods and these all fall under the umbrella of solvers.  Later we will learn about optimizers and samplers which are other types of solvers offered by PHOEBE.  In order to use any of these solvers, we will call the `add_solver` method.  Lets go over the estimators that are available and how to use them
+
 # ## Periodograms
 
 # PHOEBE offers both light curve and radial velocity curve periodograms. The light curve periodogram supports the box least-squares (BLS) algorithm, which is more suitable for "boxy" eclipses of detached stars, and Lomb-Scargle (LS), which is more suitable for stars with strong ellipsoidal variations. The radial velocity periodogram only supports the LS algorithm.
@@ -62,7 +65,7 @@ _ = b.plot(x='times', show=True)
 
 # Let's start with the rv_periodogram first:
 
-# In[4]:
+# In[3]:
 
 
 b.add_solver('estimator.rv_periodogram', solver='rvperiod')
@@ -71,7 +74,7 @@ print(b['rvperiod'])
 
 # We'll leave all the options to their default values for the time being and see what the output of the solver is.
 
-# In[5]:
+# In[6]:
 
 
 b.run_solver('rvperiod', solution='rvperiod_solution')
@@ -84,7 +87,7 @@ print(b['rvperiod_solution'])
 # 
 # The rest of the output parameters refer to the solution and we can see that the fitted value of ~0.6 is not ideal. So let's instead provide manual samples in a narrower range.
 
-# In[6]:
+# In[7]:
 
 
 b.set_value('sample_mode', context='solver', solver='rvperiod', value='manual')
@@ -95,7 +98,7 @@ print(b['rvperiod_solution_2'])
 
 # The new value of the period ~1.67 looks much better now! Let's adopt it and plot our data in phase space to see the result.
 
-# In[7]:
+# In[8]:
 
 
 b.adopt_solution('rvperiod_solution_2')
@@ -106,7 +109,7 @@ b.plot(x='phase', show=True)
 
 # The light curve periodogram follows a similar workflow as the rv_periodogram. Let's add two different ones and assign one of the two algorithm options to each.
 
-# In[8]:
+# In[9]:
 
 
 b.add_solver('estimator.lc_periodogram', solver='lcperiod_bls', algorithm='bls')
@@ -115,7 +118,7 @@ b.add_solver('estimator.lc_periodogram', solver='lcperiod_ls', algorithm='ls')
 
 # Not all parameters are applicable for both algorithms. For more details check: http://phoebe-project.org/docs/2.4/api/phoebe.parameters.solver.estimator.lc_periodogram
 
-# In[9]:
+# In[10]:
 
 
 b.run_solver('lcperiod_bls', solution='lcperiod_bls_solution', overwrite=True)
@@ -126,7 +129,7 @@ print(b['fitted_values@lcperiod_ls_solution'])
 
 # As expected, the bls algorithm performed better in our case, yielding half the period returned from the rv_periodogram. We can easily adopt the correct period by passing the period_factor in .adopt_solution():
 
-# In[10]:
+# In[11]:
 
 
 b.adopt_solution('lcperiod_bls_solution', period_factor=2)
@@ -139,7 +142,7 @@ b.plot(x='phase', show=True)
 
 # Before running the solvers, let's flip the required constraints and tweak some of the compute options, so that our computations run faster after adopting the solutions.
 
-# In[11]:
+# In[12]:
 
 
 # ensures the model light curve is scaled to the data
@@ -165,14 +168,14 @@ b.flip_constraint('asini@binary', solve_for='sma@binary')
 
 # The rv_geometry solver provides simple estimates for several parameters that can be obtained from the radial velocity curves.
 
-# In[12]:
+# In[13]:
 
 
 b.add_solver('estimator.rv_geometry', solver='rvgeom', overwrite=True)
 b.run_solver('rvgeom', solution='rvgeom_solution')
 
 
-# In[13]:
+# In[14]:
 
 
 for param, value, unit in zip(b.get_value('fitted_twigs', solution='rvgeom_solution'),
@@ -181,7 +184,7 @@ for param, value, unit in zip(b.get_value('fitted_twigs', solution='rvgeom_solut
      print('%s = %.2f %s' % (param,value,unit))
 
 
-# In[14]:
+# In[15]:
 
 
 b.adopt_solution('rvgeom_solution')
@@ -195,14 +198,14 @@ b.plot(x='phase', legend=True, show=True)
 
 # Now we're ready to add and run EBAI:
 
-# In[15]:
+# In[16]:
 
 
 b.add_solver('estimator.ebai', ebai_method='mlp', solver='ebai_mlp_est')
 b.run_solver('ebai_mlp_est', solution='ebai_mlp_solution')
 
 
-# In[16]:
+# In[17]:
 
 
 for param, value, unit in zip(b.get_value('fitted_twigs', solution='ebai_mlp_solution'),
@@ -211,7 +214,7 @@ for param, value, unit in zip(b.get_value('fitted_twigs', solution='ebai_mlp_sol
      print('%s = %.2f %s' % (param,value,unit))
 
 
-# In[17]:
+# In[18]:
 
 
 # flip the esinw/ecosw constraints so we can adopt the solution
@@ -226,14 +229,14 @@ b.plot(x='phase', legend=True, show=True)
 
 # We can see that EBAI with the 'mlp' method is not particularly good at estimating esinw and ecosw. Let's try the same with the 'knn' method:
 
-# In[18]:
+# In[19]:
 
 
 b.add_solver('estimator.ebai', ebai_method='knn', solver='ebai_knn_est')
 b.run_solver('ebai_knn_est', solution='ebai_knn_solution')
 
 
-# In[19]:
+# In[20]:
 
 
 for param, value, unit in zip(b.get_value('fitted_twigs', solution='ebai_knn_solution'),
@@ -242,7 +245,7 @@ for param, value, unit in zip(b.get_value('fitted_twigs', solution='ebai_knn_sol
      print('%s = %.2f %s' % (param,value,unit))
 
 
-# In[20]:
+# In[21]:
 
 
 b.adopt_solution('ebai_knn_solution')
@@ -252,14 +255,14 @@ b.plot(x='phase', legend=True, show=True)
 
 # We can see that the 'knn' estimator does a better job at estimating esinw and ecosw! Let's finally compare the results of these two machine learning models with a model based on the light curve geometry (lc_geometry), which estimates all of the parameters that EBAI does, with the exception of inclination:
 
-# In[21]:
+# In[22]:
 
 
 b.add_solver('estimator.lc_geometry', solver='lcgeom')
 b.run_solver('lcgeom', solution='lcgeom_solution')
 
 
-# In[22]:
+# In[23]:
 
 
 for param, value, unit in zip(b.get_value('fitted_twigs', solution='lcgeom_solution')[:5],
@@ -268,7 +271,7 @@ for param, value, unit in zip(b.get_value('fitted_twigs', solution='lcgeom_solut
      print('%s = %.2f %s' % (param,value,unit))
 
 
-# In[23]:
+# In[24]:
 
 
 # lc_geometry returns ecc and per0, so we need to flip the constraints back before adopting the solution
@@ -284,7 +287,7 @@ b.plot(x='phase', legend=True, show=True)
 
 # Finally, let's return the atmosphere parameters to their default PHOEBE values and ensure that our solution is within the atmosphere table bounds. (Moving forward to optimiziers and samplers, we want to make sure that we're starting from a somewhat physical solution!)
 
-# In[24]:
+# In[25]:
 
 
 b.set_value_all('atm', 'ck2004')
@@ -294,7 +297,7 @@ b.run_compute()
 b.plot(['dataset', 'latest'], x='phase', show=True)
 
 
-# In[25]:
+# In[26]:
 
 
 b.save('data/synthetic/after_estimators.bundle')

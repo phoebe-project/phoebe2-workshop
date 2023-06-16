@@ -79,7 +79,7 @@ afig, mplfig = b.plot(show=True)
 
 # A contact binary Bundle is created by passing **contact_binary=True** to the default binary bundle.
 
-# In[30]:
+# In[10]:
 
 
 cb = phoebe.default_binary(contact_binary = True)
@@ -87,7 +87,7 @@ cb = phoebe.default_binary(contact_binary = True)
 
 # The main difference between the detached and contact binary Bundles is in the *hierarchy* of the system. In addition to the two star components, contact binaries have an **envelope component** as well.
 
-# In[31]:
+# In[11]:
 
 
 print(cb.hierarchy)
@@ -95,13 +95,13 @@ print(cb.hierarchy)
 
 # The parameters of the system are distributed between the star and envelope components. The stellar parameters, like mass, radius, temperature, etc. are attached to the primary and secondary star components. The overall (shared) parameters, like potential, fillout factor, metallicity, etc. are attached to the envelope component. For a full list of parameters associated with each component, we can filter on them:
 
-# In[32]:
+# In[12]:
 
 
 print(cb.filter(context='component', kind='star', component='primary'))
 
 
-# In[33]:
+# In[13]:
 
 
 print(cb.filter(context='component', kind='star', component='secondary'))
@@ -109,7 +109,7 @@ print(cb.filter(context='component', kind='star', component='secondary'))
 
 # As before, the parameters marked with a `C` are constrained by other parameters. If we compare the primary and secondary, we notice that the equivalent radius (requiv) of the primary is a free parameter, while the secondary requiv is constrained by the envelope potential, mass ratio and semi-major axis of the system:
 
-# In[34]:
+# In[14]:
 
 
 print(cb['requiv@secondary@constraint'])
@@ -119,7 +119,7 @@ print(cb['requiv@secondary@constraint'])
 
 # Let's filter on the envelope component:
 
-# In[35]:
+# In[15]:
 
 
 print(cb.filter(context='component', kind='envelope'))
@@ -127,13 +127,13 @@ print(cb.filter(context='component', kind='envelope'))
 
 # As you can see, all of the envelope parameters except the abundance are constrained. Let's check which parameters constrain the fillout factor and potential:
 
-# In[36]:
+# In[16]:
 
 
 print(cb['fillout_factor@contact_envelope@constraint'])
 
 
-# In[37]:
+# In[17]:
 
 
 print(cb['pot@contact_envelope@constraint'])
@@ -151,7 +151,7 @@ print(cb['pot@contact_envelope@constraint'])
 
 # To be able to set the potential, you just need to flip the constraint to solve for requiv@primary:
 
-# In[38]:
+# In[18]:
 
 
 cb.flip_constraint('pot@contact_envelope', solve_for='requiv@primary')
@@ -159,7 +159,7 @@ cb.flip_constraint('pot@contact_envelope', solve_for='requiv@primary')
 
 # The fillout factor is constrained by the potential, so to be able to set it, we need to do another constraint flip:
 
-# In[39]:
+# In[19]:
 
 
 cb.flip_constraint('fillout_factor', solve_for='pot@contact_envelope')
@@ -171,20 +171,20 @@ cb.flip_constraint('fillout_factor', solve_for='pot@contact_envelope')
 
 # Let's add a mesh and light curve dataset, compute and plot the model.
 
-# In[40]:
+# In[20]:
 
 
 cb.add_dataset('mesh', times=[0.125], dataset='mesh01', columns=['teffs'], overwrite=True)
 cb.add_dataset('lc', times=np.linspace(0.,0.5,50), dataset='lc01', overwrite=True)
 
 
-# In[41]:
+# In[21]:
 
 
 cb.run_compute()
 
 
-# In[42]:
+# In[22]:
 
 
 _ = cb.plot('mesh01', fc='teffs', ec='face', fcmap='plasma', show=True)
@@ -192,13 +192,15 @@ _ = cb.plot('mesh01', fc='teffs', ec='face', fcmap='plasma', show=True)
 
 # *Fun, but impractical* - since the mesh is still assigned to each component separately, we can also plot just a half of the envelope that pertains to one star:
 
-# In[43]:
+# In[23]:
 
 
 _ = cb.plot('mesh01@primary', fc='teffs', ec='face', fcmap='plasma', show=True)
 
 
-# In[44]:
+# While the plot may not be super useful scientifically, accessing the mesh parameters for the primary and secondary separately could be quite useful if you are interested in the relative light ratios of the two components at a specific phase.  While this is not included in PHOEBE natively, you can use the mesh elements and calculate this yourself.
+
+# In[24]:
 
 
 _ = cb.plot('lc01', show=True)
@@ -208,26 +210,26 @@ _ = cb.plot('lc01', show=True)
 
 # To illustrate the component splitting in terms of temperature distribution, let's change one of the effective temperatures and the recommended values of gravity brightening and reflection coefficient for that temperature:
 
-# In[45]:
+# In[25]:
 
 
 cb.set_value('teff', component='primary', value=9000.)
 
 
-# In[46]:
+# In[26]:
 
 
 cb.set_value('gravb_bol', component='primary', value=1.)
 cb.set_value('irrad_frac_refl_bol', component='primary', value=1.)
 
 
-# In[47]:
+# In[27]:
 
 
 cb.run_compute()
 
 
-# In[48]:
+# In[28]:
 
 
 _ = cb.plot('mesh01', facecolor='teffs', ec='face', fcmap='plasma', show=True)
@@ -237,44 +239,50 @@ _ = cb.plot('mesh01', facecolor='teffs', ec='face', fcmap='plasma', show=True)
 
 # Because the mesh of a contact binary envelope is not convex, certain combinations of parameters (i.e. very low or very high fillout factor, very low mass ratio) can lead to failing or weird marching meshes.
 
-# In[49]:
+# In[29]:
 
 
 cb['q'] = 0.1
 cb['fillout_factor'] = 0.05
 
 
-# In[50]:
+# In[30]:
 
 
 cb.run_compute()
 
 
-# There is no direct solution to an issue like this one - in cases of small fillout factors it might work to use a detached system close to fillout instead or increase the value of the fillout factor until a mesh can be created successfully. 
+# There is no direct solution to an issue like this one - in cases of small fillout factors it might work to use a detached system close to contact instead or increase the value of the fillout factor until a mesh can be created successfully. 
 # 
 # In other cases it's sufficient to increase the number of triangles. For example:
 
-# In[51]:
+# In[31]:
 
 
 cb['q'] = 0.1
 cb['fillout_factor'] = 0.1
 
 
-# In[52]:
+# In[32]:
 
 
 cb.run_compute()
 
 
-# In[53]:
+# In[33]:
 
 
 cb.run_compute(ntriangles=5000) # will compute successfully
 
 
-# In[54]:
+# In[34]:
 
 
 ax, artists = cb.plot('mesh01', show=True)
+
+
+# In[ ]:
+
+
+
 
