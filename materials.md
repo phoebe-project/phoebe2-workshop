@@ -89,6 +89,6 @@ Please test your installation well in advance of the workshop by running the [te
 * [Tutorial: MCMC Basics in PHOEBE](./Tutorial_15_mcmc.ipynb) (Andrej | needs updating for 2023)
 * [Tutorial: Continuing/Resampling in MCMC](./Tutorial_16_mcmc_continued.ipynb) (Andrej | needs updating for 2023)
 * [Exercises: Setting up an MCMC Run](./Exercises_08_mcmc.ipynb) (needs updating for 2023)
-* [Optional Breakout Session: Contact Binaries](./Tutorial_semidetached_contact.ipynb) (Michael | needs updating for 2023)
+* [Optional Breakout Session: Contact Binaries](./Tutorial_semidetached_contact.ipynb) (Michael)
 * Optional Breakout Session: PHOEBE Backend Under-the-Hood (Martin | needs updating for 2023)
 * [Exercises: Hack Day](./Exercises_05_mcmc_hack_day.ipynb) (needs updating for 2023)
