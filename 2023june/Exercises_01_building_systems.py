@@ -9,7 +9,7 @@
 
 # # \#1: Sun-Jupiter
 # 
-# Create a default binary Bundle, re-parameterize so that you can set both.  Now set the value of the masses and the respective radii such that you have a Jupiter around a Sun.
+# Create a default binary Bundle, re-parameterize so that you can set both masses.  Now set the the masses and the radii such that you have a Jupiter around a Sun.
 # 
 # Hint: try using units to handle the conversion between Jupiter and Solar masses/radii.  You can always do `dir(phoebe.u)` to see a list of all available units, or `phoebe.u.solMass.find_equivalent_units()`.  For other quantities (orbital/rotation periods, sma, etc), you may need to lookup the values since they do not have units/constants available.
 
