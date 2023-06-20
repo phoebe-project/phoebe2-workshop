@@ -281,7 +281,7 @@ b.plot(solution='round_3', style='trace', show=True)
 # 
 # # Exercises
 
-# **Exercise 1**: increase the number of walkers to 48 and run 500 iterations on terra, using 48 processors. Compare the results from above to the results you obtained. What conclusions can you draw from the comparison?
+# **Exercise 1**: increase the number of walkers to 48 and run 25 iterations. Compare the results from above to the results you obtained. What conclusions can you draw from the comparison?
 
 # In[ ]:
 
