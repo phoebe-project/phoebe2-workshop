@@ -32,7 +32,7 @@ from phoebe import u,c
 # 
 # ```
 # import matplotlib
-# print(matplotlib.rcParamsDefault['backend']
+# print(matplotlib.rcParamsDefault['backend'])
 # ```
 
 # In[ ]:
