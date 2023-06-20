@@ -52,11 +52,11 @@ Please test your installation well in advance of the workshop by running the [te
 ### Tuesday June 20: Creating Forward Models
 
 * [Tutorial: Datasets](./Tutorial_03_datasets.ipynb) (Andrej)
-* [Talk: Atmospheres, Limb Darkening, Intensity Weighting, Extinction, and Reflection](https://docs.google.com/presentation/d/e/2PACX-1vQ9ba54aHX5cwTNN2eJfRdG5nLXFqoOKLLUl9I0_sGwVYX2BEVLQDjQh1po8xti6bzbDAzD7sIT3ACH/pub?start=false&loop=false&delayms=3000) (Dave | needs updating for 2023)
+* [Talk: Atmospheres, Limb Darkening, Intensity Weighting, Extinction, and Reflection](https://docs.google.com/presentation/d/e/2PACX-1vQ9ba54aHX5cwTNN2eJfRdG5nLXFqoOKLLUl9I0_sGwVYX2BEVLQDjQh1po8xti6bzbDAzD7sIT3ACH/pub?start=false&loop=false&delayms=3000) (Dave)
 * [Tutorial: Compute](./Tutorial_04_compute.ipynb) (Michael)
 * [Tutorial: Time and Phase](./Tutorial_05_time_and_phase.ipynb) (Andrej)
 * [Tutorial: Plotting](./Tutorial_06_plotting.ipynb) (Kyle)
-* [Exercises: Creating Forward Models](./Exercises_02_forward_models.ipynb) (needs updating for 2023)
+* [Exercises: Creating Forward Models](./Exercises_02_forward_models.ipynb)
 * Optional Breakout Session: Preview of lcviz (Kyle)
 
 
