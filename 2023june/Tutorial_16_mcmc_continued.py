@@ -3,14 +3,14 @@
 
 # # Workshop Tutorial: Fun with MCMC continued!
 # 
-# In the previous tutorial we started scratching the surface of sampling the parameter space with MCMC. In this tutorial we will focus on convergence (or lack thereof) and on offloading computations to an external computing cluster.
+# In the previous tutorial we started scratching the surface of sampling the parameter space with MCMC. In this tutorial we will focus on convergence (or lack thereof).
 # 
-# This interactive workshop tutorial covers many of the same topics as the corresponding online tutorial(s):
+# This interactive workshop tutorial covers some of the topics as the corresponding online tutorial(s):
 # 
 # * [Advanced: EMCEE Sampler](http://phoebe-project.org/docs/2.4/tutorials/emcee.ipynb)
-# * [Advanced: Running Solvers on an External Machine](http://phoebe-project.org/docs/2.4/tutorials/export_solver.ipynb)
 # * [Advanced: Continuing EMCEE from a Previous Run](http://phoebe-project.org/docs/2.4/tutorials/emcee_continue_from.ipynb)
 # * [Advanced: Resampling EMCEE from a Previous Run](http://phoebe-project.org/docs/2.4/tutorials/emcee_resampling.ipynb)
+# * [Advanced: Running Solvers on an External Machine](http://phoebe-project.org/docs/2.4/tutorials/export_solver.ipynb)
 # 
 # Let's start with the usual imports.
 
@@ -18,13 +18,12 @@
 
 
 import phoebe
-import numpy as np
 import matplotlib.pyplot as plt
 
 
 # Load the [data from the previous run](https://github.com/phoebe-project/phoebe2-workshop/raw/2021june/data/synthetic/after_initial_sampling.bundle):
 
-# In[4]:
+# In[2]:
 
 
 b = phoebe.load('./data/synthetic/after_initial_sampling.bundle')
@@ -32,7 +31,7 @@ b = phoebe.load('./data/synthetic/after_initial_sampling.bundle')
 
 # When running the sampler, we focused on the depiction of the results; let us now take a more systematic look at the sampler output:
 
-# In[5]:
+# In[3]:
 
 
 print(b['round_1'].qualifiers)
@@ -78,7 +77,7 @@ print(b['round_1'].qualifiers)
 
 # Remember that you can always print a certain parameter to get more verbose help on its purpose; for example:
 
-# In[6]:
+# In[4]:
 
 
 print(b['distributions_convert'])
@@ -86,7 +85,7 @@ print(b['distributions_convert'])
 
 # As we ran the sampler, some combinations of parameters resulted in 0 likelihood. We refer to those as failed samples and, as seen above, they are stored as part of the solution. We can easily plot those in a corner plot:
 
-# In[7]:
+# In[5]:
 
 
 b.plot(solution='round_1', style='failed', burnin=50, show=True)
@@ -96,7 +95,7 @@ b.plot(solution='round_1', style='failed', burnin=50, show=True)
 
 # We can now compute the average RV curve from, say, 25 samples drawn from the round 1 solution:
 
-# In[8]:
+# In[6]:
 
 
 b.run_compute(compute='dyn_rv', sample_from='round_1', sample_num=25, model='from_posteriors')
@@ -104,7 +103,7 @@ b.run_compute(compute='dyn_rv', sample_from='round_1', sample_num=25, model='fro
 
 # Once computed, let's plot all 25 samples in the phase plot:
 
-# In[9]:
+# In[7]:
 
 
 b.plot(model='from_posteriors', x='phase', show=True)
@@ -112,7 +111,7 @@ b.plot(model='from_posteriors', x='phase', show=True)
 
 # Happy with this? We can *inspect* the solution by running the `adopt_solution()` method with the `trial_run` argument set to `True`:
 
-# In[10]:
+# In[8]:
 
 
 print(b.adopt_solution(solution='round_1', trial_run=True))
@@ -120,13 +119,13 @@ print(b.adopt_solution(solution='round_1', trial_run=True))
 
 # Before we adopt, though, let's have another (quick) coffee break -- let's continue sampling for another 25 iterations. The solvers and solutions that we have so far are:
 
-# In[11]:
+# In[9]:
 
 
 b.solvers
 
 
-# In[12]:
+# In[10]:
 
 
 b.solutions
@@ -134,13 +133,13 @@ b.solutions
 
 # Remember the `continue_from` parameter of the solver? That's what we want to set!
 
-# In[13]:
+# In[11]:
 
 
 print(b['continue_from@mcmc'])
 
 
-# In[14]:
+# In[12]:
 
 
 b['continue_from@mcmc'] = 'round_1'
@@ -148,13 +147,13 @@ b['continue_from@mcmc'] = 'round_1'
 
 # The `niters` parameter will now correspond to the number of additional iterations; note that we need to specify here that we are setting `niters@solver` and not `niters@solution` (which is read-only anyway).
 
-# In[15]:
+# In[13]:
 
 
 b['niters@mcmc@solver'] = 25
 
 
-# In[16]:
+# In[14]:
 
 
 b.run_solver('mcmc', solution='round_2')
@@ -162,7 +161,7 @@ b.run_solver('mcmc', solution='round_2')
 
 # We can now compare the results from the first sample (`round_1`) and from the second sample (`round_2`):
 
-# In[17]:
+# In[15]:
 
 
 b.plot(solution='round_1', style='lnprobability', show=True)
@@ -173,7 +172,7 @@ b.plot(solution='round_2', style='lnprobability', show=True)
 # 
 # How does phoebe estimate the value of `burnin`? It looks at the autocorrelation times, which emcee returns for each parameter. It then pick the longest autocorrelation time and multiplies it by the `burnin_factor`. Thus:
 
-# In[18]:
+# In[16]:
 
 
 print('burnin iterations for round 1: %d' % 
@@ -182,51 +181,11 @@ print('burnin iterations for round 2: %d' %
       (int(max(b['value@autocorr_times@round_2'])*b['value@burnin_factor@mcmc'])))
 
 
-# The value of log-probability, as well as the fact that it's still rising, hints that the solution has not yet converged. So we need to run a longer chain. As running 25 iterations locally took 3 minutes, we will offload this computation to a computer cluster. We covered the server setup in [Tutorial: Server](Tutorial_18_server.ipynb), so we won't recreate it here; instead, we will rely on the already saved server (named `terra`) and add the server to the bundle. As a reminder, we keep the aggregated steps to initialize a server commented out here for simpler reference.
+# The value of log-probability, as well as the fact that it's still rising, hints that the solution has not yet converged, so we'd need to run a longer chain. As running 25 iterations locally took 3 minutes, we would ideally offload this computation to a computer cluster (see the optional breakout session today for details).
 
-# In[27]:
+# If we were to offload this computation to the HPC, it would make sense to increase the number of walkers from the current 16 to, say, 24, so that the sampler can traverse the parameter space more efficiently. The parameter `nwalkers` is in the solver parameter set:
 
-
-# from phoebe.dependencies import crimpl
-# s = crimpl.RemoteSlurmServer(host='terra', directory='~/workshop/crimpl')
-# s.install_conda()
-# s.save('terra', overwrite=True)
-
-
-# Let's add a server to the bundle; as always, parameters can either be added as arguments, or by editing the instantiated parameter set later on.
-
-# In[19]:
-
-
-b.add_server('remoteslurm',
-    crimpl_name='terra',
-    conda_env='workshop',
-    nprocs=48,
-    server='terra',
-    walltime=(12,'h'),
-    use_mpi=False
-)
-
-
-# In[30]:
-
-
-print(b['terra@server'])
-
-
-# Once the server is initialized, we assign the `use_server` parameter to it:
-
-# In[21]:
-
-
-print(f"original server: {b['value@use_server@dyn_rv']}")
-b['use_server@dyn_rv'] = 'terra'
-print(f"updated server: {b['value@use_server@dyn_rv']}")
-
-
-# Given that we are offloading this computation to the HPC, let's increase the number of walkers from the current  16 to, say, 24, so that the sampler can traverse the parameter space more efficiently. The parameter `nwalkers` is in the solver parameter set:
-
-# In[22]:
+# In[17]:
 
 
 print(b['mcmc@solver'])
@@ -234,7 +193,7 @@ print(b['mcmc@solver'])
 
 # Wait, it disappeared? No, it hasn't disappeared, it is hidden because we have `continue_from` set to the previous run, from which any new run will inherit all sampling parameters. Thus, we first need to set `continue_from` to none:
 
-# In[23]:
+# In[18]:
 
 
 b['continue_from@mcmc@solver'] = 'None'
@@ -243,15 +202,15 @@ print(b['mcmc@solver'])
 
 # There it is! Now we can change it!
 
-# In[24]:
+# In[19]:
 
 
 b['nwalkers@mcmc@solver'] = 24
 
 
-# But now how do we continue from the previous run? We obviously cannot literally continue because we have changed the sampler properties; instead, we need to *resample* from the last run. We do that by using the `init_from` parameter. In order to have something to initialize from, we first need to adopt parameters from the last run:
+# But now how do we continue from the previous run? We obviously cannot _literally_ continue because we have changed the sampler properties; instead, we need to *resample* from the last run. We do that by using the `init_from` parameter. In order to have something to initialize from, we first need to adopt parameters from the last run:
 
-# In[25]:
+# In[20]:
 
 
 b.adopt_solution(solution='round_2',
@@ -263,7 +222,7 @@ b.adopt_solution(solution='round_2',
 
 # Now we have a new distribution:
 
-# In[26]:
+# In[21]:
 
 
 b.distributions
@@ -271,22 +230,22 @@ b.distributions
 
 # We can use this new distribution to set the `init_from` parameter. The sampler will then use `ndg_2` to get a new sample for all initial values and continue from there.
 
-# In[27]:
+# In[22]:
 
 
 b['init_from@mcmc@solver'] = 'ndg_2'
 
 
-# We're now ready to run the sampler! If you feel like taking a lunch break, you might want to uncomment the line below and run the sampler; in the interest of time for this tutorial, though, we will load the precomputed results instead.
+# We're now ready to run the sampler! As we are not _actually_ submitting this to a cluster, we will load the precomputed results instead.
 
-# In[31]:
-
-
-b.run_solver('mcmc', solution='round_3', nprocs=24, niters=500, overwrite=True)
-b.save('./data/synthetic/after_terra.bundle')
+# In[23]:
 
 
-# In[28]:
+# b.run_solver('mcmc', solution='round_3', nprocs=24, niters=500, overwrite=True)
+# b.save('./data/synthetic/after_terra.bundle')
+
+
+# In[24]:
 
 
 b = phoebe.load('./data/synthetic/after_terra.bundle')
@@ -296,7 +255,7 @@ b = phoebe.load('./data/synthetic/after_terra.bundle')
 
 # Log-probability plot:
 
-# In[32]:
+# In[25]:
 
 
 b.plot(solution='round_3', style='lnprobability', show=True)
@@ -304,7 +263,7 @@ b.plot(solution='round_3', style='lnprobability', show=True)
 
 # Corner plot:
 
-# In[33]:
+# In[26]:
 
 
 b.plot(solution='round_3', style='corner', burnin=400, show=True)
@@ -312,7 +271,7 @@ b.plot(solution='round_3', style='corner', burnin=400, show=True)
 
 # And finally the trace plot:
 
-# In[34]:
+# In[27]:
 
 
 b.plot(solution='round_3', style='trace', show=True)
