@@ -62,17 +62,16 @@ Please test your installation well in advance of the workshop by running the [te
 
 ### Wednesday June 21: Advanced Physics & Features
 
-* Group Photo
+* Talk: Scientific Introduction to PHOEBE (Andrej)
 * [Tutorial: Animations](./Tutorial_07_animations.ipynb) (Michael)
 * [Tutorial: Accessing and Plotting Meshes](./Tutorial_08_meshes.ipynb) (Kyle)
 * [Tutorial: Flux Scaling (Passband Luminosity, Third Light, and Distance)](./Tutorial_09_pblum_l3_distance.ipynb) (Andrej)
-* Talk: Scientific Introduction to PHOEBE (Andrej)
 * [Tutorial: Features (Spots & Gaussian Processes)](./Tutorial_10_features.ipynb) (Kyle)
 * [Tutorial: Optimizing PHOEBE Computations](./Tutorial_11_optimizing_computations.ipynb) (Kyle)
 * [Exercises: Forward Model Animations](./Exercises_03_animations.ipynb)
 * [Optional Breakout Session: In Development - Pulsations](https://docs.google.com/presentation/d/e/2PACX-1vR54syXqzX9MiGxsHdus7A7xDjS3_4ka3TyQiXpoBzCduwAiEymK0zxn40zSrBaNDQ3SodwxlY3p6mm/pub?start=false&loop=false&delayms=3000) (Andrej)
-* Optional: Public Talk (4:00)
-* Evening: Open House at Observatory
+* Optional: Public Seminar - Modelling of solar filaments and prominences with non-LTE radiative transfer in 1D and 2D (4:00 pm in F2)
+* Evening: Open House at Observatory (8:30-11:00+ pm at Golovec)
 
 
 ### Thursday June 22: Introduction to Fitting
@@ -88,6 +87,7 @@ Please test your installation well in advance of the workshop by running the [te
 
 ### Friday June 23: Advanced Fitting
 
+* Group Photo
 * [Tutorial: Distributions & Priors](./Tutorial_14_distributions.ipynb) (Kyle)
 * [Tutorial: MCMC Basics in PHOEBE](./Tutorial_15_mcmc.ipynb) (Andrej | needs updating for 2023)
 * [Tutorial: Continuing/Resampling in MCMC](./Tutorial_16_mcmc_continued.ipynb) (Andrej | needs updating for 2023)
