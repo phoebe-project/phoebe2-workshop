@@ -63,14 +63,16 @@ Please test your installation well in advance of the workshop by running the [te
 ### Wednesday June 21: Advanced Physics & Features
 
 * Group Photo
-* Talk: Scientific Introduction to PHOEBE (Andrej)
 * [Tutorial: Animations](./Tutorial_07_animations.ipynb) (Michael)
 * [Tutorial: Accessing and Plotting Meshes](./Tutorial_08_meshes.ipynb) (Kyle)
 * [Tutorial: Flux Scaling (Passband Luminosity, Third Light, and Distance)](./Tutorial_09_pblum_l3_distance.ipynb) (Andrej)
+* Talk: Scientific Introduction to PHOEBE (Andrej)
 * [Tutorial: Features (Spots & Gaussian Processes)](./Tutorial_10_features.ipynb) (Kyle)
 * [Tutorial: Optimizing PHOEBE Computations](./Tutorial_11_optimizing_computations.ipynb) (Kyle)
-* [Exercises: Forward Model Animations](./Exercises_03_animations.ipynb) (needs updating for 2023)
-* [Optional Breakout Session: In Development - Pulsations](https://docs.google.com/presentation/d/e/2PACX-1vR54syXqzX9MiGxsHdus7A7xDjS3_4ka3TyQiXpoBzCduwAiEymK0zxn40zSrBaNDQ3SodwxlY3p6mm/pub?start=false&loop=false&delayms=3000) (Andrej | needs updating for 2023)
+* [Exercises: Forward Model Animations](./Exercises_03_animations.ipynb)
+* [Optional Breakout Session: In Development - Pulsations](https://docs.google.com/presentation/d/e/2PACX-1vR54syXqzX9MiGxsHdus7A7xDjS3_4ka3TyQiXpoBzCduwAiEymK0zxn40zSrBaNDQ3SodwxlY3p6mm/pub?start=false&loop=false&delayms=3000) (Andrej)
+* Optional: Public Talk (4:00)
+* Evening: Open House at Observatory
 
 
 ### Thursday June 22: Introduction to Fitting
@@ -78,9 +80,10 @@ Please test your installation well in advance of the workshop by running the [te
 * [Talk: Inverse Problem in PHOEBE](https://docs.google.com/presentation/d/e/2PACX-1vSZxGLuuJAf2_imhVVhGAW_xoeOgmEI-0YWbnfES2XaUz8YO1jGdHe8652c8flxiSGotJQQF1eGp16R/pub?start=false&loop=false&delayms=3000) (Andrej)
 * [Tutorial: Estimators](./Tutorial_12_estimators.ipynb) (Michael)
 * [Tutorial: Optimizers](./Tutorial_13_optimizers.ipynb) (Kyle)
-* [Exercises: Estimators & Optimizers](./Exercises_04_estimators_optimizers.ipynb) (needs updating for 2023)
+* [Exercises: Estimators & Optimizers](./Exercises_04_estimators_optimizers.ipynb)
 * [Optional Breakout Session: In-depth look at fluxes and magnitudes](./Tutorial_flux_calibration.ipynb) (Andrej)
-* [Optional Breakout Session: Detrending](./Tutorial_detrending.ipynb) (Kelly | needs updating for 2023)
+* [Optional Breakout Session: Detrending](./Tutorial_detrending.ipynb) (Kelly)
+* Evening: Conference Dinner
 
 
 ### Friday June 23: Advanced Fitting
