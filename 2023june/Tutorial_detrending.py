@@ -9,11 +9,11 @@
 # 
 # In this tutorial we will take a TESS lightcurve and treat the trend as purely multiplicative; in other words, we will model it and then _divide_ it out of the data in the hope that the leftover signal is a reasonable approximation for the underlying astrophysical signal of the binary.
 # 
-# While the long-term goal is to provide the detrending and noise modeling framework in PHOEBE, we are currently largely left to our own devices when it comes to mitigating trends; here we will demonstrate a strawman's approach to detrending and defer a more substantial discussion of removing trends when we talk about Gaussian processes.
+# While we recommend using a noise model or Gaussian processes to model the noise when applying mcmc, for estimators and optimizers, it is necessary to remove these trends to arrive at an initial model. Here we will demonstrate a strawman's approach to detrending, which we recomend for the initial stagest of detrending.
 
 # To begin, let us import numpy and pyplot:
 
-# In[1]:
+# In[19]:
 
 
 import numpy as np
@@ -22,7 +22,7 @@ import matplotlib.pyplot as plt
 
 # Now we need to make sure the plots look a little nicer. If you are running this notebook from the cloned github repo, you can use the included mplstyle; if not, we will set mpl properties manually:
 
-# In[2]:
+# In[20]:
 
 
 try:
@@ -37,7 +37,7 @@ except:
 
 # Next, we load a TESS lightcurve of [TIC 91961](http://tessEBs.villanova.edu/91961). Here is the [data file](https://github.com/phoebe-project/phoebe2-workshop/blob/2022june/data/noise_examples/tic91961.lc) if you need it. Let's take a look at what we're working with:
 
-# In[3]:
+# In[21]:
 
 
 data = np.loadtxt('data/noise_examples/tic91961.lc')
@@ -47,13 +47,15 @@ plt.ylabel('Normalized flux')
 plt.plot(data[:,0], data[:,1], 'b.')
 
 
-# The idea here is to try and remove the baseline variation; whether this variation is caused by instrumental, observational or astrophysical circumstances is largely irrelevant (beyond any introspection to the type of stipulated noise, i.e. additive or multiplicative) -- PHOEBE model does not include the noise model, so if we are to consider chi2 to be a reasonable merit function, we need to normalize the residuals. We can achieve that by fitting the baseline trend and removing it from the data.
+# The resulting light curve has already been normalized by dividing by the median flux value. This should be done on a per-sector (or quarter) basis.
+
+# The idea here is to try and remove the baseline variation; whether this variation is caused by instrumental, observational or astrophysical circumstances is largely irrelevant (beyond any introspection to the type of stipulated noise, i.e. additive or multiplicative).
 # 
-# One of the simplest approaches might be to decompose the lightcurve into a suitable orthogonal basis, such as Legendre polynomials. Eclipses are obviously making this more difficult, so instead of just fitting the entire timeseries, we will remove any obvious non-trend parts of the lightcurve by sigma-clipping.
+# One of the simplest approaches might be to decompose the lightcurve into a suitable orthogonal basis, such as Legendre polynomials. Eclipses are obviously making this more difficult, so instead of just fitting the entire timeseries, we will remove any obvious non-trend parts of the lightcurve (i.e. eclipses) by sigma-clipping.
 # 
 # Legendre polynomials are best behaved on the unit interval, so we start by renormalizing the temporal axis of our dataset:
 
-# In[4]:
+# In[22]:
 
 
 tmin, tmax = data[:,0][0], data[:,0][-1]
@@ -74,28 +76,35 @@ data[:,0] = (data[:,0]-tmin)/(tmax-tmin)
 # 
 # These parameters are user-provided, so it takes a bit of trial-and-error to figure out reasonable values. Let's start with something that makes sense and we'll refine it later.
 
-# In[5]:
+# In[41]:
 
 
 initial_sigma = np.std(data[:,1])
 order = 20
-xi_hi = 5
+xi_hi = 2
 xi_lo = 0.5
 
 
-# Now we fit the Legendre series, use the coefficients to compute the baseline, and filter out the outliers:
+# Now we fit the Legendre series and use the coefficients to compute the baseline:
 
-# In[6]:
+# In[42]:
 
 
 coeffs = np.polynomial.legendre.legfit(data[:,0], data[:,1], order, w=data[:,2])
 baseline = np.polynomial.legendre.legval(data[:,0], coeffs, tensor=False)
+
+
+# Now we filter out the outliers given our sigma low and high values:
+
+# In[43]:
+
+
 flt = (data[:,1]-baseline < xi_hi*initial_sigma) & (data[:,1]-baseline > -xi_lo*initial_sigma)
 
 
 # Let's take a look at what that looks like: the data, the baseline, and the remaining datapoints:
 
-# In[7]:
+# In[44]:
 
 
 plt.plot(data[:,0], data[:,1], 'b.')
@@ -104,9 +113,9 @@ plt.plot(data[:,0], baseline, 'r-')
 plt.show()
 
 
-# This looks like a reasonable first step. Now let's iterate this until no datapoints are culled:
+# Let's see how many points we removed:
 
-# In[8]:
+# In[45]:
 
 
 culled_data = data[flt]
@@ -114,13 +123,15 @@ culled_points = len(data)-len(culled_data)
 print(f'{culled_points} datapoints culled')
 
 
-# In[9]:
+# This looks like a reasonable first step. Now let's refit the baseline to the lightcurve with the points removed (culled), cull again, and refit (iteratively) until no more datapoints are culled:
+
+# In[46]:
 
 
 while culled_points > 0:
     coeffs = np.polynomial.legendre.legfit(culled_data[:,0], culled_data[:,1], 10, w=culled_data[:,2])
     baseline = np.polynomial.legendre.legval(culled_data[:,0], coeffs, tensor=False)
-    flt = (culled_data[:,1]-baseline < initial_sigma) & (culled_data[:,1]-baseline > -initial_sigma)
+    flt = (culled_data[:,1]-baseline < xi_hi*initial_sigma) & (culled_data[:,1]-baseline > -xi_lo*initial_sigma)
     culled_points = len(culled_data)-len(culled_data[flt])
     culled_data = culled_data[flt]
     print(f'{culled_points} datapoints culled')
@@ -128,7 +139,7 @@ while culled_points > 0:
 
 # Plot the converged fit:
 
-# In[10]:
+# In[47]:
 
 
 plt.plot(data[:,0], data[:,1], 'b.')
@@ -139,13 +150,13 @@ plt.show()
 
 # The baseline is our approximation for the trend. One final step is to divide the data by the baseline (i.e., detrend the data) and rescale the temporal axis back:
 
-# In[11]:
+# In[40]:
 
 
-times = tmin + data[:,0]*tmax
+times = tmin + data[:,0]*(tmax-tmin)
 detrended_timeseries = data[:,1]/np.polynomial.legendre.legval(data[:,0], coeffs, tensor=False)
-
-plt.plot(times, detrended_timeseries, 'b.')
+plt.plot(times, data[:,1], 'b.',alpha=0.4)
+plt.plot(times, detrended_timeseries, 'r.')
 plt.show()
 
 
