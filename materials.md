@@ -69,7 +69,6 @@ Please test your installation well in advance of the workshop by running the [te
 * [Tutorial: Features (Spots & Gaussian Processes)](./Tutorial_10_features.ipynb) (Kyle)
 * [Tutorial: Optimizing PHOEBE Computations](./Tutorial_11_optimizing_computations.ipynb) (Kyle)
 * [Exercises: Forward Model Animations](./Exercises_03_animations.ipynb)
-* [Optional Breakout Session: In Development - Pulsations](https://docs.google.com/presentation/d/e/2PACX-1vR54syXqzX9MiGxsHdus7A7xDjS3_4ka3TyQiXpoBzCduwAiEymK0zxn40zSrBaNDQ3SodwxlY3p6mm/pub?start=false&loop=false&delayms=3000) (Andrej)
 * Optional: Public Seminar - Modelling of solar filaments and prominences with non-LTE radiative transfer in 1D and 2D (4:00 pm in F2)
 * Evening: Open House at Observatory (8:30-11:00+ pm at Golovec)
 
@@ -82,6 +81,7 @@ Please test your installation well in advance of the workshop by running the [te
 * [Exercises: Estimators & Optimizers](./Exercises_04_estimators_optimizers.ipynb)
 * [Optional Breakout Session: In-depth look at fluxes and magnitudes](./Tutorial_flux_calibration.ipynb) (Andrej)
 * [Optional Breakout Session: Detrending](./Tutorial_detrending.ipynb) (Kelly)
+* [Optional Breakout Session: In Development - Pulsations](https://docs.google.com/presentation/d/e/2PACX-1vR54syXqzX9MiGxsHdus7A7xDjS3_4ka3TyQiXpoBzCduwAiEymK0zxn40zSrBaNDQ3SodwxlY3p6mm/pub?start=false&loop=false&delayms=3000) (Andrej)
 * Evening: Conference Dinner
 
 
