@@ -87,7 +87,7 @@ Please test your installation well in advance of the workshop by running the [te
 
 ### Friday June 23: Advanced Fitting
 
-* [Tutorial: MCMC Basics in PHOEBE](./Tutorial_15_mcmc.ipynb) (Kyle)
+* [Tutorial: MCMC Basics in PHOEBE](./Tutorial_15_mcmc.ipynb) (Andrej)
 * [Tutorial: Continuing/Resampling in MCMC](./Tutorial_16_mcmc_continued.ipynb) (Andrej)
 * [Exercises: Setting up an MCMC Run](./Exercises_08_mcmc.ipynb)
 * [Optional Breakout Session: Contact Binaries](./Tutorial_semidetached_contact.ipynb) (Michael)
