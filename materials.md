@@ -79,7 +79,7 @@ Please test your installation well in advance of the workshop by running the [te
 * [Tutorial: Estimators](./Tutorial_12_estimators.ipynb) (Michael)
 * [Tutorial: Optimizers](./Tutorial_13_optimizers.ipynb) (Kyle)
 * [Exercises: Estimators & Optimizers](./Exercises_04_estimators_optimizers.ipynb)
-* [Optional Breakout Session: In-depth look at fluxes and magnitudes](./Tutorial_flux_calibration.ipynb) (Andrej)
+* [Tutorial: Distributions & Priors](./Tutorial_14_distributions.ipynb) (Kyle)
 * [Optional Breakout Session: Detrending](./Tutorial_detrending.ipynb) (Kelly)
 * [Optional Breakout Session: In Development - Pulsations](https://docs.google.com/presentation/d/e/2PACX-1vR54syXqzX9MiGxsHdus7A7xDjS3_4ka3TyQiXpoBzCduwAiEymK0zxn40zSrBaNDQ3SodwxlY3p6mm/pub?start=false&loop=false&delayms=3000) (Andrej)
 * Evening: Conference Dinner
@@ -87,11 +87,9 @@ Please test your installation well in advance of the workshop by running the [te
 
 ### Friday June 23: Advanced Fitting
 
-* Group Photo
-* [Tutorial: Distributions & Priors](./Tutorial_14_distributions.ipynb) (Kyle)
-* [Tutorial: MCMC Basics in PHOEBE](./Tutorial_15_mcmc.ipynb) (Andrej | needs updating for 2023)
-* [Tutorial: Continuing/Resampling in MCMC](./Tutorial_16_mcmc_continued.ipynb) (Andrej | needs updating for 2023)
-* [Exercises: Setting up an MCMC Run](./Exercises_08_mcmc.ipynb) (needs updating for 2023)
+* [Tutorial: MCMC Basics in PHOEBE](./Tutorial_15_mcmc.ipynb) (Kyle)
+* [Tutorial: Continuing/Resampling in MCMC](./Tutorial_16_mcmc_continued.ipynb) (Andrej)
+* [Exercises: Setting up an MCMC Run](./Exercises_08_mcmc.ipynb)
 * [Optional Breakout Session: Contact Binaries](./Tutorial_semidetached_contact.ipynb) (Michael)
-* Optional Breakout Session: PHOEBE Backend Under-the-Hood (Martin | needs updating for 2023)
-* [Exercises: Hack Day](./Exercises_05_mcmc_hack_day.ipynb) (needs updating for 2023)
+* Optional Breakout Session: PHOEBE Backend Under-the-Hood (Martin)
+* [Exercises: Hack Day](./Exercises_05_mcmc_hack_day.ipynb)
