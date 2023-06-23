@@ -80,7 +80,6 @@ Please test your installation well in advance of the workshop by running the [te
 * [Tutorial: Optimizers](./Tutorial_13_optimizers.ipynb) (Kyle)
 * [Exercises: Estimators & Optimizers](./Exercises_04_estimators_optimizers.ipynb)
 * [Tutorial: Distributions & Priors](./Tutorial_14_distributions.ipynb) (Kyle)
-* [Optional Breakout Session: In-depth look at fluxes and magnitudes](./Tutorial_flux_calibration.ipynb) (Andrej)
 * [Optional Breakout Session: Detrending](./Tutorial_detrending.ipynb) (Kelly)
 * [Optional Breakout Session: In Development - Pulsations](https://docs.google.com/presentation/d/e/2PACX-1vR54syXqzX9MiGxsHdus7A7xDjS3_4ka3TyQiXpoBzCduwAiEymK0zxn40zSrBaNDQ3SodwxlY3p6mm/pub?start=false&loop=false&delayms=3000) (Andrej)
 * Evening: Conference Dinner
