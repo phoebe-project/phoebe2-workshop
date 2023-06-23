@@ -13,7 +13,7 @@
 
 # To begin, let us import numpy and pyplot:
 
-# In[19]:
+# In[21]:
 
 
 import numpy as np
@@ -22,7 +22,7 @@ import matplotlib.pyplot as plt
 
 # Now we need to make sure the plots look a little nicer. If you are running this notebook from the cloned github repo, you can use the included mplstyle; if not, we will set mpl properties manually:
 
-# In[20]:
+# In[22]:
 
 
 try:
@@ -37,7 +37,7 @@ except:
 
 # Next, we load a TESS lightcurve of [TIC 91961](http://tessEBs.villanova.edu/91961). Here is the [data file](https://github.com/phoebe-project/phoebe2-workshop/blob/2022june/data/noise_examples/tic91961.lc) if you need it. Let's take a look at what we're working with:
 
-# In[21]:
+# In[23]:
 
 
 data = np.loadtxt('data/noise_examples/tic91961.lc')
@@ -55,7 +55,7 @@ plt.plot(data[:,0], data[:,1], 'b.')
 # 
 # Legendre polynomials are best behaved on the unit interval, so we start by renormalizing the temporal axis of our dataset:
 
-# In[22]:
+# In[24]:
 
 
 tmin, tmax = data[:,0][0], data[:,0][-1]
@@ -76,18 +76,18 @@ data[:,0] = (data[:,0]-tmin)/(tmax-tmin)
 # 
 # These parameters are user-provided, so it takes a bit of trial-and-error to figure out reasonable values. Let's start with something that makes sense and we'll refine it later.
 
-# In[41]:
+# In[67]:
 
 
 initial_sigma = np.std(data[:,1])
-order = 20
-xi_hi = 2
+order = 25
+xi_hi = 1
 xi_lo = 0.5
 
 
 # Now we fit the Legendre series and use the coefficients to compute the baseline:
 
-# In[42]:
+# In[68]:
 
 
 coeffs = np.polynomial.legendre.legfit(data[:,0], data[:,1], order, w=data[:,2])
@@ -96,7 +96,7 @@ baseline = np.polynomial.legendre.legval(data[:,0], coeffs, tensor=False)
 
 # Now we filter out the outliers given our sigma low and high values:
 
-# In[43]:
+# In[69]:
 
 
 flt = (data[:,1]-baseline < xi_hi*initial_sigma) & (data[:,1]-baseline > -xi_lo*initial_sigma)
@@ -104,7 +104,7 @@ flt = (data[:,1]-baseline < xi_hi*initial_sigma) & (data[:,1]-baseline > -xi_lo*
 
 # Let's take a look at what that looks like: the data, the baseline, and the remaining datapoints:
 
-# In[44]:
+# In[70]:
 
 
 plt.plot(data[:,0], data[:,1], 'b.')
@@ -115,7 +115,7 @@ plt.show()
 
 # Let's see how many points we removed:
 
-# In[45]:
+# In[71]:
 
 
 culled_data = data[flt]
@@ -125,7 +125,7 @@ print(f'{culled_points} datapoints culled')
 
 # This looks like a reasonable first step. Now let's refit the baseline to the lightcurve with the points removed (culled), cull again, and refit (iteratively) until no more datapoints are culled:
 
-# In[46]:
+# In[72]:
 
 
 while culled_points > 0:
@@ -139,7 +139,7 @@ while culled_points > 0:
 
 # Plot the converged fit:
 
-# In[47]:
+# In[73]:
 
 
 plt.plot(data[:,0], data[:,1], 'b.')
@@ -150,7 +150,7 @@ plt.show()
 
 # The baseline is our approximation for the trend. One final step is to divide the data by the baseline (i.e., detrend the data) and rescale the temporal axis back:
 
-# In[40]:
+# In[74]:
 
 
 times = tmin + data[:,0]*(tmax-tmin)
@@ -162,7 +162,7 @@ plt.show()
 
 # This is certainly better than it was initially, but remaining trends are still quite obvious. One aspect worth checking is the distribution of the residuals about the fitted baseline:
 
-# In[12]:
+# In[75]:
 
 
 _ = plt.hist(culled_data[:,1]-baseline, bins=50)
@@ -172,7 +172,7 @@ _ = plt.hist(culled_data[:,1]-baseline, bins=50)
 # 
 # Let's start by plotting the residual timeseries:
 
-# In[13]:
+# In[76]:
 
 
 residuals = culled_data[:,1]-baseline
@@ -189,14 +189,14 @@ plt.plot(culled_data[:,0], residuals, 'b-')
 # 
 # where $r$ is the array of the residuals, $N$ is the number of data points, and $\bar r$ is the mean value of the residuals. The value of $d$ is between 0 and 4; if $d$ is close to 2, then there is no significant serial correlation in the residuals; for $d < 2$ we have positive correlation and for $d > 2$ we have negative correlation. For the Abbe value, if $\mathcal A$ is close to 1, there is no significant correlation; for smaller values of $\mathcal A$ there is serial correlation in the residuals.
 
-# In[14]:
+# In[77]:
 
 
 dw = np.sum((residuals[1:]-residuals[:-1])**2)/np.sum(residuals**2)
 print(dw)
 
 
-# In[15]:
+# In[78]:
 
 
 abbe = len(residuals)/2/(len(residuals)-1) * np.sum((residuals[1:]-residuals[:-1])**2)/np.sum((residuals-np.mean(residuals))**2)
