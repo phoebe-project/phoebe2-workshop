@@ -95,5 +95,4 @@ Please test your installation well in advance of the workshop by running the [te
 * [Tutorial: Continuing/Resampling in MCMC](./Tutorial_16_mcmc_continued.ipynb) (Andrej)
 * [Exercises: Setting up an MCMC Run](./Exercises_08_mcmc.ipynb)
 * [Optional Breakout Session: Contact Binaries](./Tutorial_semidetached_contact.ipynb) (Michael)
-* Optional Breakout Session: PHOEBE Backend Under-the-Hood (Martin)
-* [Exercises: Hack Day](./Exercises_05_mcmc_hack_day.ipynb)
+* [Optional Breakout Session: PHOEBE Backend Under-the-Hood](./libphoebe_intro.ipynb) (Martin)
