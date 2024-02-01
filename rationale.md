@@ -1,5 +1,5 @@
 # Announcement
-The PHOEBE team is excited to announce the Sixth PHOEBE Workshop! The aim of the workshop is to give participants a chance to work on their own personal science with PHOEBE as well as the option to collaboratively contribute to PHOEBE. This year, the workshop will focus on advanced topics and follow a hack-week format (using PHOEBE for real science use-cases alongside implementing new features in PHOEBE). 
+The PHOEBE team is excited to announce the Sixth PHOEBE Workshop! The aim of the workshop is to give participants a chance to work on their own personal science with PHOEBE as well as the option to collaboratively contribute. This year, the workshop will focus on advanced topics and follow a hack-week format (using PHOEBE for real science use-cases alongside implementing new features). 
 
 General knowledge and comfort with PHOEBE is considered a prerequisite - previous workshop participants are encouraged to attend as are new participants who commit to completing the online tutorials (and/or recordings) from last year's workshop prior to attendance. The workshop will take place at the University of Ljubljana on June 10th - June 14th, 2024.
 
