@@ -5,9 +5,6 @@ Jadranska ulica 19,
 1000 Ljubljana, 
 Slovenia. 
 
-The (in-person) one-week meeting will be held in room F3.
-
-
 # Accommodation
 
 There are many hotels in the center of Ljubljana that are within walking distance of the Department of Mathematics and Physics. From experience, we recommend the following three:
