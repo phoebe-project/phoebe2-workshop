@@ -32,9 +32,3 @@ Please test your installation well in advance of the workshop by running the [te
 
 Unlike previous PHOEBE Workshops, where participants were taught the basics of PHOEBE, the purpose of this workshop is to improve on existing models, generate publishable results, and for participants to become advanced PHOEBE users. For this reason, workshop participants are expected to have either already attended a PHOEBE Workshop or to be actively using PHOEBE. Prior to the workshop, participants should be familiar with concepts including: setting parameter values, manipulating constraints, running forward models, and using estimators, optimizers, and samplers.  If you are not regularly using PHOEBE, please consider running through the online tutorials or videos from last year's workshop before arrival.
 
-# Workshop Schedule
-
-### Monday June 10: Introduction and Hack Pitches
-
-* [Welcome & Introduction](https://docs.google.com/presentation/d/e/2PACX-1vS8VXgvYJV4cXrnwF8XMLbZoKJqiTRQJcFv_GXnJrLOcn6QyU7JHJJ7ZH5totNOQIPSu1yawF1kL1m1/pub?start=false&loop=false&delayms=3000) (Kelly)
-* [Exercises: Setting up an MCMC Run](./Exercises_08_mcmc.ipynb)
