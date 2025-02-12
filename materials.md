@@ -26,9 +26,6 @@ If you have any troubles before the meeting, please reach out to us for assistan
 ### Testing Your Installation
 
 
-Please test your installation well in advance of the workshop by running the [test script](https://raw.githubusercontent.com/phoebe-project/phoebe2-workshop/2024june/test_install.py) (should take approximately 60 seconds to run) and make sure it completes without any errors (warning messages are not a cause for concern).  If the script does not run successfully or takes significantly longer than 60 seconds, please reach out to us so we can debug any installation issues in advance.
+Please test your installation well in advance of the workshop by running the [test script](https://raw.githubusercontent.com/phoebe-project/phoebe2-workshop/2025aug/test_install.py) (should take approximately 60 seconds to run) and make sure it completes without any errors (warning messages are not a cause for concern).  If the script does not run successfully or takes significantly longer than 60 seconds, please reach out to us so we can debug any installation issues in advance.
 
-### Prerequsite Comfort with PHOEBE
-
-Unlike previous PHOEBE Workshops, where participants were taught the basics of PHOEBE, the purpose of this workshop is to improve on existing models, generate publishable results, and for participants to become advanced PHOEBE users. For this reason, workshop participants are expected to have either already attended a PHOEBE Workshop or to be actively using PHOEBE. Prior to the workshop, participants should be familiar with concepts including: setting parameter values, manipulating constraints, running forward models, and using estimators, optimizers, and samplers.  If you are not regularly using PHOEBE, please consider running through the online tutorials or videos from last year's workshop before arrival.
 

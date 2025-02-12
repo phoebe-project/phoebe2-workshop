@@ -1,6 +1,6 @@
 # Meeting Location
 
-The 2024 meeting will be held the University of Ljubljana, Slovenia in the Department of Mathematics and Physics, which is located at: 
+The 2025 meeting will be held the University of Ljubljana, Slovenia in the Department of Mathematics and Physics, which is located at: 
 Jadranska ulica 19, 
 1000 Ljubljana, 
 Slovenia. 
