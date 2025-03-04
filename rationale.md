@@ -1,15 +1,11 @@
-# Announcement
-The PHOEBE team is excited to announce the Seventh PHOEBE Workshop taking place in Yunnan, China!  
+# Announcement  
+The PHOEBE team is excited to announce the Seventh PHOEBE Workshop, which will be held in Yunnan, China!
 
-The in-person Workshop will provide participants with an introduction to PHOEBE. The Workshop will take place at XXX on XXXX.
+This in-person workshop offers an introduction to PHOEBE and will take place at the Yunnan University Astronomical Observatory in Kunming, China, from 4th to 15th August 2025. The two-week workshop is designed to provide participants with a comprehensive introduction to PHOEBE 2, offering hands-on experience in creating and fitting binary star models. 
 
-The aim of the Workshop is to give participants a thorough introduction to modeling binary systems using PHOEBE 2, including a day that is dedicated to fitting with estimators, optimizers and samplers.
+# Scientific Rationale  
+PHOEBE 2 (Prša et al. 2016, Horvat et al. 2018, Jones et al. 2020, Conroy et al. 2020) is a highly versatile binary star modeling code, renowned for its advanced features. The code includes an extensive fitting suite, support for extinction, spin-orbit misalignment, and many additional capabilities. Furthermore, the interface has been completely updated and is now built on the Python programming language.
 
-# Scientific Rationale
-PHOEBE 2 (Prša et al. 2016, Horvat et al. 2018, Jones et al. 2020, Conroy et al. 2020) is a highly flexible binary star modeling code with many advanced features.  The model includes an extensive fitting suite, support for extinction, support for spin-orbit misalignment, and many more features. Additionally, the interface has been updated and is now based on the python programming language.
-
-# Main Objectives
-The Workshop will take place over two four day weeks where each day will contain talks and tutorials with targeted assignments so that the participants become familiar with the workings of PHOEBE 2. During the first week, participants will take part in introductory walk-through tutorials to PHOEBE 2 and will acquire hands-on experience with creating binary star models. The second week will be dedicated to the inverse problem and fitting methods.  By the end of the Workshop, participants should be able to independently use PHOEBE 2 to create a forward model of a binary system and will be able to apply PHOEBE's basic fitting functionality to fit a model to data.
-
-
+# Main Objectives  
+The workshop spans two intensive four-day weeks, with each day featuring lectures and tutorials accompanied by targeted assignments to ensure participants become well-versed in PHOEBE 2. During the first week, attendees will participate in introductory tutorials and gain practical experience in creating binary star models. The second week will explore solving the inverse problem using PHOEBE, with a focus on heuristics and probabilistic inference. By the conclusion of the workshop, participants will be equipped to independently use PHOEBE 2 to develop forward models of binary systems and to apply its fundamental fitting functionalities to match models to observational data.
 
