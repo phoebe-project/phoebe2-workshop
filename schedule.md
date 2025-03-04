@@ -1,9 +1,3 @@
 # Schedule
 
-Preliminary schedule (subject to change):
-
-* Monday Morning: Hack Pitches and Breakout Refresher Tutorials
-* Monday Afternoon: Start Hacks
-* Tuesday-Friday Morning: Requests for collaboration and breakout discussion/tutorial sessions, continue working on hacks
-* Tuesday-Thursday Afternoon: 5-minute progress presentations
-* Friday Afternoon: Present results and wrap-up
+The Workshop will run Monday through Thursday, from August 4th to August 15th. The Workshop will feature a blend of lectures and hands-on tutorials, complete with exercises. In the first week, the focus will be on constructing single star and binary system models using the forward method. The second week will primarily concentrate on applying the inverse method with PHOEBE, including the use of heuristics and probabilistic inference.
