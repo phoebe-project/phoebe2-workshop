@@ -56,7 +56,7 @@ Please test your installation well in advance of the workshop by running the [te
 
 
 * Talk: Scientific Introduction to PHOEBE (Andrej)
-* [Tutorial: Animations](./Tutorial_07_animations.ipynb) (Matthias)
+* [Tutorial: Animations](./Tutorial_07_animations.ipynb) (Kyle)
 * [Tutorial: Accessing and Plotting Meshes](./Tutorial_08_meshes.ipynb) (Michael)
 * [Tutorial: Flux Scaling (Passband Luminosity, Third Light, and Distance)](./Tutorial_09_pblum_l3_distance.ipynb) (Dave)
 * [Exercises: Forward Model Animations](./Exercises_03_animations.ipynb)
@@ -67,7 +67,7 @@ Please test your installation well in advance of the workshop by running the [te
 
 * [Tutorial: Optimizing PHOEBE Computations](./Tutorial_11_optimizing_computations.ipynb) (Kelly)
 * [Tutorial: Features (Spots & Gaussian Processes)](./Tutorial_10_features.ipynb) (Michael)
-* [Optional Breakout Session: Contact Binaries](./Tutorial_12_semidetached_contact.ipynb) (Matthias)
+* [Optional Breakout Session: Contact Binaries](./Tutorial_12_semidetached_contact.ipynb) (Michael)
 * [Optional Breakout Session: In-depth look at fluxes and magnitudes](./Tutorial_13_flux_calibration.ipynb) (Andrej)
 * [Optional Breakout Talk: In Development - Pulsations](https://docs.google.com/presentation/d/e/2PACX-1vT1itS6W6Z0FOOnPGFud2TWg-sIxdLXYLX-GquIB-lssk2aiD33VL1TSSsBBs4bwwxOMC3M4jwQuadS/pub?start=false&loop=false&delayms=3000) (Andrej)
 * [Optional Breakout Talk: Line Profiles with PHOEBE and SPAMMS](https://docs.google.com/presentation/d/e/2PACX-1vTw7p9Hlh0F2GOWZIFTiTIaKD20hTE_pWxsurxARzg10SU8VOVh4IbqtctM0J6tpd6xO7NU25GHY6aR/pub?start=false&loop=false&delayms=3000) (Michael)
@@ -89,7 +89,7 @@ Please test your installation well in advance of the workshop by running the [te
 
 ### Tuesday August 12: Optimizers
 
-* [Tutorial: Optimizers](./Tutorial_17_optimizers.ipynb) (Matthias)
+* [Tutorial: Optimizers](./Tutorial_17_optimizers.ipynb) (Kelly)
 * [Tutorial: Degeneracies](./Tutorial_16_degeneracy.ipynb) (Marcin)
 * [Tutorial: Running Jobs on External Compute Resources](./Tutorial_18_server.ipynb) (Kyle)
 * [Exercises: Optimizers](./Exercises_07_optimizers.ipynb) 
@@ -102,7 +102,7 @@ Please test your installation well in advance of the workshop by running the [te
 * [Tutorial: MCMC Basics in PHOEBE](./Tutorial_20_mcmc.ipynb) (Marcin)
 * [Tutorial: Continuing/Resampling in MCMC](./Tutorial_21_mcmc_continued.ipynb) (Michael)
 * [Exercises: Setting up an MCMC Run](./Exercises_08_mcmc.ipynb)
-* [Optional Breakout Session: Fitting Contact Binaries](https://docs.google.com/presentation/d/e/2PACX-1vT_Cx34ifFzE_vM_75IRGXVFcIplju_VOsUNK0w-FjPJ9mlNI9riUZk5nb0iUzwrwQ4oGYnEYNzDiJK/pub?start=false&loop=false&delayms=3000) (Matthias)
+* [Optional Breakout Session: Fitting Contact Binaries](https://docs.google.com/presentation/d/e/2PACX-1vT_Cx34ifFzE_vM_75IRGXVFcIplju_VOsUNK0w-FjPJ9mlNI9riUZk5nb0iUzwrwQ4oGYnEYNzDiJK/pub?start=false&loop=false&delayms=3000) (Michael)
 
 
 ### Thursday August 14: Advanced MCMC
