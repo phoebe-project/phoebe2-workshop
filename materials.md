@@ -91,13 +91,13 @@ Please test your installation well in advance of the workshop by running the [te
 
 * [Tutorial: Optimizers](./Tutorial_17_optimizers.ipynb) (Kelly)
 * [Tutorial: Degeneracies](./Tutorial_16_degeneracy.ipynb) (Marcin)
-* [Tutorial: Running Jobs on External Compute Resources](./Tutorial_18_server.ipynb) (Kyle)
+* [Tutorial: Running Jobs on External Compute Resources](./Tutorial_server.ipynb) (Kyle)
 * [Exercises: Optimizers](./Exercises_07_optimizers.ipynb) 
 
 
 ### Wednesday August 13: MCMC in PHOEBE
 
-* [Tutorial: Distributions & Priors](./Tutorial_19_distributions.ipynb) (Kyle)
+* [Tutorial: Distributions & Priors](./Tutorial_14_distributions.ipynb) (Kyle)
 * [Tutoritalk: MCMC Introduction](./mcmc_generic.ipynb) (Andrej)
 * [Tutorial: MCMC Basics in PHOEBE](./Tutorial_20_mcmc.ipynb) (Marcin)
 * [Tutorial: Continuing/Resampling in MCMC](./Tutorial_21_mcmc_continued.ipynb) (Michael)
@@ -111,7 +111,7 @@ Please test your installation well in advance of the workshop by running the [te
 * Talk: PHOEBAI (Marcin)
 * [Tutorial: Interpreting Chains and Convergence in MCMC](./Tutorial_22_convergence.ipynb) (Andrej)
 * [Tutorial: Posteriors and Parameter Uncertainties](./Tutorial_23_posteriors.ipynb) (Kelly)
-* [Tutorial: Choice of Parameterization](./Tutorial_24_parameterization.ipynb) (Kyle)
+* [Tutorial: Choice of Parameterization](./Tutorial_parameterization.ipynb) (Kyle)
 * [Tutorial: Marginalizing over Additional Parameters](./Tutorial_25_marginalization.ipynb) (Michael)
 * [Exercises: Getting Posteriors](./Exercises_09_posteriors.ipynb)
 * Wrap Up: volunteer wrap-up contributions and discussion (Kelly)
