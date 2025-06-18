@@ -108,7 +108,7 @@ Please test your installation well in advance of the workshop by running the [te
 ### Thursday August 14: Advanced MCMC
 
 * [Talk: Common Pitfalls when Fitting](https://docs.google.com/presentation/d/e/2PACX-1vTwak5SRgicPcFJMHosg6AC1gnHqiEkVLiPT1H97bgJ40W1r39rtsgmf4eJitHb02rMtKKUtTW-PtkK/pub?start=false&loop=false&delayms=3000) (Dave?)
-* Talk: PHOEBAI (Marcin)
+* [Talk: PHOEBAI](https://docs.google.com/presentation/d/e/2PACX-1vRLvSKCzA_BTZN7vl_tTXxKe6Y3wIKMCAuuZhwh0LIkfoZKiDCOzZBSuHwyhe7tu4o_lm0aANAOFv7o/pub?start=false&loop=false&delayms=3000) (Marcin)
 * [Tutorial: Interpreting Chains and Convergence in MCMC](./Tutorial_22_convergence.ipynb) (Andrej)
 * [Tutorial: Posteriors and Parameter Uncertainties](./Tutorial_23_posteriors.ipynb) (Kelly)
 * [Tutorial: Choice of Parameterization](./Tutorial_parameterization.ipynb) (Kyle)
