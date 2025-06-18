@@ -38,7 +38,7 @@ Please test your installation well in advance of the workshop by running the [te
 * [Talk: Introduction to PHOEBE 2: why so complicated?](https://docs.google.com/presentation/d/e/2PACX-1vQZF_BRCGQZEjNlLhzznY5i_T5WNj6y7RJMvqxat7aDzTq7l1qDx7CnInoiNtIFZWL2BczoHf3RWnTK/pub?start=false&loop=false&delayms=3000) (Kyle)
 * [Tutorial: General Concepts & Bundle Basics](./Tutorial_01_bundle_basics.ipynb) (Michael)
 * [Tutorial: Constraints](./Tutorial_02_constraints.ipynb) (Kyle)
-* Talk: Parameterization (Marcin)
+* [Talk: Parameterization](https://docs.google.com/presentation/d/e/2PACX-1vQ_WFnIM5ZubzjF0JWQrkLNkB84m8NJokQ93kafYry8J9Nd01cCr0ib59fVrKqdHPNVFJpMacNzKjRS/pub?start=false&loop=false&delayms=3000) (Marcin)
 * [Exercises: Building Systems](./Exercises_01_building_systems.ipynb)
 
 
