@@ -90,7 +90,7 @@ Please test your installation well in advance of the workshop by running the [te
 ### Tuesday August 12: Optimizers
 
 * [Tutorial: Optimizers](./Tutorial_17_optimizers.ipynb) (Kelly)
-* [Tutorial: Degeneracies](./Tutorial_16_degeneracy.ipynb) (Marcin)
+* [Tutorial: Degeneracies](./Tutorial_degeneracy.ipynb) (Marcin)
 * [Tutorial: Running Jobs on External Compute Resources](./Tutorial_server.ipynb) (Kyle)
 * [Exercises: Optimizers](./Exercises_07_optimizers.ipynb) 
 
@@ -99,8 +99,8 @@ Please test your installation well in advance of the workshop by running the [te
 
 * [Tutorial: Distributions & Priors](./Tutorial_14_distributions.ipynb) (Kyle)
 * [Tutoritalk: MCMC Introduction](./mcmc_generic.ipynb) (Andrej)
-* [Tutorial: MCMC Basics in PHOEBE](./Tutorial_20_mcmc.ipynb) (Marcin)
-* [Tutorial: Continuing/Resampling in MCMC](./Tutorial_21_mcmc_continued.ipynb) (Michael)
+* [Tutorial: MCMC Basics in PHOEBE](./Tutorial_15_mcmc.ipynb) (Marcin)
+* [Tutorial: Continuing/Resampling in MCMC](./Tutorial_16_mcmc_continued.ipynb) (Michael)
 * [Exercises: Setting up an MCMC Run](./Exercises_08_mcmc.ipynb)
 * [Optional Breakout Session: Fitting Contact Binaries](https://docs.google.com/presentation/d/e/2PACX-1vT_Cx34ifFzE_vM_75IRGXVFcIplju_VOsUNK0w-FjPJ9mlNI9riUZk5nb0iUzwrwQ4oGYnEYNzDiJK/pub?start=false&loop=false&delayms=3000) (Michael)
 
