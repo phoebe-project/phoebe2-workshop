@@ -36,7 +36,7 @@ Please test your installation well in advance of the workshop by running the [te
 * [Welcome & Introduction](https://docs.google.com/presentation/d/e/2PACX-1vTH436zb5IPSMPoCq0AbAW0lzJrQjhRINJyoUOZxAYyaFHPyx8TM1jXeqcs2NOC-mWmXxiTh7B0cQd7/pub?start=false&loop=false&delayms=3000) (Kelly)
 * [Talk: PHOEBE Overview - wdgui to PHOEBE](https://docs.google.com/presentation/d/e/2PACX-1vRDgAr5NEH738njEqj4LS4YtxUs6T8TA5EHe3jry454n7cRdzRBvGuxpn_5QAgjeykQnx8er97c3_VD/pub?start=false&loop=false&delayms=3000) (Andrej - cut down to 45 mins)
 * [Talk: Introduction to PHOEBE 2: why so complicated?](https://docs.google.com/presentation/d/e/2PACX-1vQZF_BRCGQZEjNlLhzznY5i_T5WNj6y7RJMvqxat7aDzTq7l1qDx7CnInoiNtIFZWL2BczoHf3RWnTK/pub?start=false&loop=false&delayms=3000) (Kyle)
-* [Tutorial: General Concepts & Bundle Basics](./Tutorial_01_bundle_basics.ipynb) (Michael)
+* [Tutorial: General Concepts & Bundle Basics](./Tutorial_01_bundle_basics.ipynb) (Kelly)
 * [Tutorial: Constraints](./Tutorial_02_constraints.ipynb) (Kyle)
 * [Talk: Parameterization](https://docs.google.com/presentation/d/e/2PACX-1vQ_WFnIM5ZubzjF0JWQrkLNkB84m8NJokQ93kafYry8J9Nd01cCr0ib59fVrKqdHPNVFJpMacNzKjRS/pub?start=false&loop=false&delayms=3000) (Marcin)
 * [Exercises: Building Systems](./Exercises_01_building_systems.ipynb)
@@ -66,7 +66,7 @@ Please test your installation well in advance of the workshop by running the [te
 
 
 * [Tutorial: Optimizing PHOEBE Computations](./Tutorial_11_optimizing_computations.ipynb) (Kelly)
-* [Tutorial: Features (Spots & Gaussian Processes)](./Tutorial_10_features.ipynb) (Michael)
+* [Tutorial: Features (Spots & Gaussian Processes)](./Tutorial_10_features.ipynb) (Kyle)
 * [Optional Breakout Session: Contact Binaries](./Tutorial_12_semidetached_contact.ipynb) (Michael)
 * [Optional Breakout Session: In-depth look at fluxes and magnitudes](./Tutorial_13_flux_calibration.ipynb) (Andrej)
 * [Optional Breakout Talk: In Development - Pulsations](https://docs.google.com/presentation/d/e/2PACX-1vT1itS6W6Z0FOOnPGFud2TWg-sIxdLXYLX-GquIB-lssk2aiD33VL1TSSsBBs4bwwxOMC3M4jwQuadS/pub?start=false&loop=false&delayms=3000) (Andrej)
@@ -83,7 +83,7 @@ Please test your installation well in advance of the workshop by running the [te
 * [Talk: Introduction to the Inverse Problem](https://docs.google.com/presentation/d/e/2PACX-1vQJUYYl3Y9zxWceapJ9cjbgRyHjkb8xw9qmdZ1Ve4-q4MorCS2OgjpAVYDkyfLQLm7mb_zbnvBMEI-h/pub?start=false&loop=false&delayms=3000) (Kelly)
 * [Talk: Inverse Problem in PHOEBE](https://docs.google.com/presentation/d/e/2PACX-1vQnOikYGaIVd1O6Aj4jp6_A26T41h-pid6IOh-qwQdafZIGvSWNo89SvRHz-6JVtUoKXlin0g_KdguZ/pub?start=false&loop=false&delayms=3000) (Kyle)
 * [Optional Breakout Tutorial: Detrending](./Tutorial_14_detrending.ipynb) (Andrej)
-* [Tutorial: Estimators](./Tutorial_15_estimators.ipynb) (Michael)
+* [Tutorial: Estimators](./Tutorial_15_estimators.ipynb) (Marcin)
 * [Exercises: Estimators](./Exercises_06_estimators.ipynb)
 
 
@@ -100,7 +100,7 @@ Please test your installation well in advance of the workshop by running the [te
 * [Tutorial: Distributions & Priors](./Tutorial_14_distributions.ipynb) (Kyle)
 * [Tutoritalk: MCMC Introduction](./mcmc_generic.ipynb) (Andrej)
 * [Tutorial: MCMC Basics in PHOEBE](./Tutorial_15_mcmc.ipynb) (Marcin)
-* [Tutorial: Continuing/Resampling in MCMC](./Tutorial_16_mcmc_continued.ipynb) (Michael)
+* [Tutorial: Continuing/Resampling in MCMC](./Tutorial_16_mcmc_continued.ipynb) (Kelly)
 * [Exercises: Setting up an MCMC Run](./Exercises_08_mcmc.ipynb)
 * [Optional Breakout Session: Fitting Contact Binaries](https://docs.google.com/presentation/d/e/2PACX-1vT_Cx34ifFzE_vM_75IRGXVFcIplju_VOsUNK0w-FjPJ9mlNI9riUZk5nb0iUzwrwQ4oGYnEYNzDiJK/pub?start=false&loop=false&delayms=3000) (Michael)
 
@@ -112,6 +112,6 @@ Please test your installation well in advance of the workshop by running the [te
 * [Tutorial: Interpreting Chains and Convergence in MCMC](./Tutorial_22_convergence.ipynb) (Andrej)
 * [Tutorial: Posteriors and Parameter Uncertainties](./Tutorial_23_posteriors.ipynb) (Kelly)
 * [Tutorial: Choice of Parameterization](./Tutorial_parameterization.ipynb) (Kyle)
-* [Tutorial: Marginalizing over Additional Parameters](./Tutorial_25_marginalization.ipynb) (Michael)
+* [Tutorial: Marginalizing over Additional Parameters](./Tutorial_25_marginalization.ipynb) (Andrej)
 * [Exercises: Getting Posteriors](./Exercises_09_posteriors.ipynb)
 * Wrap Up: volunteer wrap-up contributions and discussion (Kelly)
