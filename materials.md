@@ -65,10 +65,10 @@ Please test your installation well in advance of the workshop by running the [te
 ### Thursday August 7: Hack Day
 
 
-* [Tutorial: Optimizing PHOEBE Computations](./Tutorial_11_optimizing_computations.ipynb) (Kelly)
-* [Tutorial: Features (Spots & Gaussian Processes)](./Tutorial_10_features.ipynb) (Kyle)
-* [Optional Breakout Session: Contact Binaries](./Tutorial_12_semidetached_contact.ipynb) (Michael)
-* [Optional Breakout Session: In-depth look at fluxes and magnitudes](./Tutorial_13_flux_calibration.ipynb) (Andrej)
+* [Tutorial: Optimizing PHOEBE Computations](./Tutorial_10_optimizing_computations.ipynb) (Kelly)
+* [Tutorial: Features (Spots & Gaussian Processes)](./Tutorial_11_features.ipynb) (Kyle)
+* [Optional Breakout Session: Contact Binaries](./Tutorial_semidetached_contact.ipynb) (Michael)
+* [Optional Breakout Session: In-depth look at fluxes and magnitudes](./Tutorial_flux_calibration.ipynb) (Andrej)
 * [Optional Breakout Talk: In Development - Pulsations](https://docs.google.com/presentation/d/e/2PACX-1vT1itS6W6Z0FOOnPGFud2TWg-sIxdLXYLX-GquIB-lssk2aiD33VL1TSSsBBs4bwwxOMC3M4jwQuadS/pub?start=false&loop=false&delayms=3000) (Andrej)
 * [Optional Breakout Talk: Line Profiles with PHOEBE and SPAMMS](https://docs.google.com/presentation/d/e/2PACX-1vTw7p9Hlh0F2GOWZIFTiTIaKD20hTE_pWxsurxARzg10SU8VOVh4IbqtctM0J6tpd6xO7NU25GHY6aR/pub?start=false&loop=false&delayms=3000) (Michael)
 * [Optional Breakout Talk: In Development - Blended Atmosphere Tables](https://docs.google.com/presentation/d/e/2PACX-1vQHs4n5LMhZMyXVueHRnACte2bUZ80zALfLxXsy6DtlXMG1UAopoJMkxEmQ6teEz-IH0nWb8KjobeYx/pub?start=false&loop=false&delayms=3000) (Andrej)
@@ -82,25 +82,25 @@ Please test your installation well in advance of the workshop by running the [te
 
 * [Talk: Introduction to the Inverse Problem](https://docs.google.com/presentation/d/e/2PACX-1vQJUYYl3Y9zxWceapJ9cjbgRyHjkb8xw9qmdZ1Ve4-q4MorCS2OgjpAVYDkyfLQLm7mb_zbnvBMEI-h/pub?start=false&loop=false&delayms=3000) (Kelly)
 * [Talk: Inverse Problem in PHOEBE](https://docs.google.com/presentation/d/e/2PACX-1vQnOikYGaIVd1O6Aj4jp6_A26T41h-pid6IOh-qwQdafZIGvSWNo89SvRHz-6JVtUoKXlin0g_KdguZ/pub?start=false&loop=false&delayms=3000) (Kyle)
-* [Optional Breakout Tutorial: Detrending](./Tutorial_14_detrending.ipynb) (Andrej)
-* [Tutorial: Estimators](./Tutorial_15_estimators.ipynb) (Marcin)
+* [Optional Breakout Tutorial: Detrending](./Tutorial_detrending.ipynb) (Andrej)
+* [Tutorial: Estimators](./Tutorial_12_estimators.ipynb) (Marcin)
 * [Exercises: Estimators](./Exercises_06_estimators.ipynb)
 
 
 ### Tuesday August 12: Optimizers
 
-* [Tutorial: Optimizers](./Tutorial_17_optimizers.ipynb) (Kelly)
-* [Tutorial: Degeneracies](./Tutorial_degeneracy.ipynb) (Marcin)
-* [Tutorial: Running Jobs on External Compute Resources](./Tutorial_server.ipynb) (Kyle)
+* [Tutorial: Optimizers](./Tutorial_13_optimizers.ipynb) (Kelly)
+* [Tutorial: Degeneracies](./Tutorial_14_degeneracy.ipynb) (Marcin)
+* [Tutorial: Running Jobs on External Compute Resources](./Tutorial_15_server.ipynb) (Kyle)
 * [Exercises: Optimizers](./Exercises_07_optimizers.ipynb) 
 
 
 ### Wednesday August 13: MCMC in PHOEBE
 
-* [Tutorial: Distributions & Priors](./Tutorial_14_distributions.ipynb) (Kyle)
+* [Tutorial: Distributions & Priors](./Tutorial_16_distributions.ipynb) (Kyle)
 * [Tutoritalk: MCMC Introduction](./mcmc_generic.ipynb) (Andrej)
-* [Tutorial: MCMC Basics in PHOEBE](./Tutorial_15_mcmc.ipynb) (Marcin)
-* [Tutorial: Continuing/Resampling in MCMC](./Tutorial_16_mcmc_continued.ipynb) (Kelly)
+* [Tutorial: MCMC Basics in PHOEBE](./Tutorial_17_mcmc.ipynb) (Marcin)
+* [Tutorial: Continuing/Resampling in MCMC](./Tutorial_18_mcmc_continued.ipynb) (Kelly)
 * [Exercises: Setting up an MCMC Run](./Exercises_08_mcmc.ipynb)
 * [Optional Breakout Session: Fitting Contact Binaries](https://docs.google.com/presentation/d/e/2PACX-1vT_Cx34ifFzE_vM_75IRGXVFcIplju_VOsUNK0w-FjPJ9mlNI9riUZk5nb0iUzwrwQ4oGYnEYNzDiJK/pub?start=false&loop=false&delayms=3000) (Michael)
 
@@ -109,9 +109,9 @@ Please test your installation well in advance of the workshop by running the [te
 
 * [Talk: Common Pitfalls when Fitting](https://docs.google.com/presentation/d/e/2PACX-1vTwak5SRgicPcFJMHosg6AC1gnHqiEkVLiPT1H97bgJ40W1r39rtsgmf4eJitHb02rMtKKUtTW-PtkK/pub?start=false&loop=false&delayms=3000) (Dave?)
 * [Talk: PHOEBAI](https://docs.google.com/presentation/d/e/2PACX-1vRLvSKCzA_BTZN7vl_tTXxKe6Y3wIKMCAuuZhwh0LIkfoZKiDCOzZBSuHwyhe7tu4o_lm0aANAOFv7o/pub?start=false&loop=false&delayms=3000) (Marcin)
-* [Tutorial: Interpreting Chains and Convergence in MCMC](./Tutorial_22_convergence.ipynb) (Andrej)
-* [Tutorial: Posteriors and Parameter Uncertainties](./Tutorial_23_posteriors.ipynb) (Kelly)
-* [Tutorial: Choice of Parameterization](./Tutorial_parameterization.ipynb) (Kyle)
-* [Tutorial: Marginalizing over Additional Parameters](./Tutorial_25_marginalization.ipynb) (Andrej)
+* [Tutorial: Interpreting Chains and Convergence in MCMC](./Tutorial_19_convergence.ipynb) (Andrej)
+* [Tutorial: Posteriors and Parameter Uncertainties](./Tutorial_20_posteriors.ipynb) (Kelly)
+* [Tutorial: Choice of Parameterization](./Tutorial_21_parameterization.ipynb) (Kyle)
+* [Tutorial: Marginalizing over Additional Parameters](./Tutorial_22_marginalization.ipynb) (Andrej)
 * [Exercises: Getting Posteriors](./Exercises_09_posteriors.ipynb)
 * Wrap Up: volunteer wrap-up contributions and discussion (Kelly)
