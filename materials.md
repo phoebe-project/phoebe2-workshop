@@ -5,7 +5,6 @@
 During the workshop, we will be using the 2.4 version of PHOEBE.  `emcee`, `scikit-learn`, and `celerite2` will also be useful for any fitting.  The easiest way to install is via pip (you're welcome to install within a virtual or conda environment if you'd like, just make sure you know how to activate that environment from within Jupyter):
 
 ```
-pip install numpy
 pip install phoebe
 pip install emcee scikit-learn celerite2
 ```
