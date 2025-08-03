@@ -34,7 +34,7 @@ Please test your installation well in advance of the workshop by running the [te
 ### Monday August 4: Overview and Building Systems in PHOEBE
 
 * [Welcome & Introduction](https://docs.google.com/presentation/d/e/2PACX-1vTH436zb5IPSMPoCq0AbAW0lzJrQjhRINJyoUOZxAYyaFHPyx8TM1jXeqcs2NOC-mWmXxiTh7B0cQd7/pub?start=false&loop=false&delayms=3000) (Kelly)
-* [Talk: PHOEBE Overview - wdgui to PHOEBE](https://docs.google.com/presentation/d/e/2PACX-1vRDgAr5NEH738njEqj4LS4YtxUs6T8TA5EHe3jry454n7cRdzRBvGuxpn_5QAgjeykQnx8er97c3_VD/pub?start=false&loop=false&delayms=3000) (Andrej - cut down to 45 mins)
+* [Talk: PHOEBE Overview - wdgui to PHOEBE](https://docs.google.com/presentation/d/e/2PACX-1vRDgAr5NEH738njEqj4LS4YtxUs6T8TA5EHe3jry454n7cRdzRBvGuxpn_5QAgjeykQnx8er97c3_VD/pub?start=false&loop=false&delayms=3000) (Andrej)
 * [Talk: Introduction to PHOEBE 2: why so complicated?](https://docs.google.com/presentation/d/e/2PACX-1vQZF_BRCGQZEjNlLhzznY5i_T5WNj6y7RJMvqxat7aDzTq7l1qDx7CnInoiNtIFZWL2BczoHf3RWnTK/pub?start=false&loop=false&delayms=3000) (Kyle)
 * [Tutorial: General Concepts & Bundle Basics](./Tutorial_01_bundle_basics.ipynb) (Kelly)
 * [Tutorial: Constraints](./Tutorial_02_constraints.ipynb) (Kyle)
