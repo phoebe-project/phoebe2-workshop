@@ -30,12 +30,6 @@ logger = phoebe.logger('error')
 b = phoebe.open('data/synthetic/after_optimizers.bundle')
 
 
-# In[ ]:
-
-
-phoebe.update_all_passbands()
-
-
 # Server Configuration
 # -----------------------------
 # 
