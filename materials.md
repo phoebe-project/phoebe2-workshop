@@ -33,7 +33,7 @@ Please test your installation well in advance of the workshop by running the [te
 ### Monday August 4: Overview and Building Systems in PHOEBE
 
 * [Welcome & Introduction](https://docs.google.com/presentation/d/e/2PACX-1vTH436zb5IPSMPoCq0AbAW0lzJrQjhRINJyoUOZxAYyaFHPyx8TM1jXeqcs2NOC-mWmXxiTh7B0cQd7/pub?start=false&loop=false&delayms=3000) (Kelly)
-* Opening Ceremony and Self-Introductions (Shengbang)
+* Opening Ceremony and Self-Introductions (Sheng-Bang)
 * [Talk: PHOEBE Overview - wdgui to PHOEBE](https://docs.google.com/presentation/d/e/2PACX-1vRDgAr5NEH738njEqj4LS4YtxUs6T8TA5EHe3jry454n7cRdzRBvGuxpn_5QAgjeykQnx8er97c3_VD/pub?start=false&loop=false&delayms=3000) (Andrej)
 * Jupyter  and PHOEBE Setup (Andrej)
 * Group Photo, Coffee Break, Installation Debugging
