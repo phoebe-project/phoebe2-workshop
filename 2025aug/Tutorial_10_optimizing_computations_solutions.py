@@ -23,7 +23,7 @@
 # 
 # As usual, we start with the imports, logger setup, and default binary initialization:
 
-# In[43]:
+# In[35]:
 
 
 get_ipython().run_line_magic('matplotlib', 'inline')
@@ -32,6 +32,8 @@ get_ipython().run_line_magic('matplotlib', 'inline')
 # In[2]:
 
 
+import numpy as np
+import matplotlib.pyplot as plt
 import phoebe
 from phoebe import u, c
 logger = phoebe.logger(clevel='WARNING')
@@ -205,7 +207,7 @@ b.run_compute(irrad_method='none', model='irrad_off')
 b.run_compute(distortion_method='sphere', model='distortion_off')
 
 
-# In[44]:
+# In[36]:
 
 
 _ = b.plot(kind='lc', legend=True, show=True)
@@ -216,9 +218,6 @@ _ = b.plot(kind='lc', legend=True, show=True)
 # In[20]:
 
 
-import numpy as np
-import matplotlib.pyplot as plt
-
 times = b.get_value('times', dataset='lc01', model='full')
 fluxes_full = b.get_value('fluxes', model='full')
 fluxes_irrad_off = b.get_value('fluxes', model='irrad_off')
@@ -228,7 +227,7 @@ fluxes_irrad_rel = (fluxes_irrad_off - fluxes_full)/fluxes_full
 fluxes_distortion_rel = (fluxes_distortion_off - fluxes_full)/fluxes_full
 
 
-# In[45]:
+# In[37]:
 
 
 _ = plt.plot(times, fluxes_irrad_rel, 'r.')
@@ -246,6 +245,98 @@ np.max(abs(fluxes_irrad_rel))
 # # Exercise
 # 
 # Take any of the systems you've built and determine which (if any) expensive effects can safely be ignored.
+
+# Here we will make a new binary:
+
+# In[23]:
+
+
+b = phoebe.default_binary()
+
+
+# In[24]:
+
+
+b['ecc@binary'] = 0.3
+b['period@binary'] = 7
+b['sma@binary@component'] = 35
+b['q@binary@component']=0.7
+b['teff@primary@component']=10000
+b['teff@secondary@component']=8000
+
+
+# In[25]:
+
+
+b.flip_constraint(qualifier='requivratio', component='binary', solve_for='requiv@primary@component')
+
+
+# In[26]:
+
+
+b['requivratio@binary@component']=0.8
+b['requiv@secondary@component']=6.2
+b['gravb_bol'].set_value_all(1.0)
+b['irrad_frac_refl_bol'].set_value_all(1.0)
+
+
+# In[27]:
+
+
+b.add_dataset('lc',compute_times=phoebe.linspace(0, 7, 101), dataset='lc01')
+
+
+# In[28]:
+
+
+b.run_compute(model='all_on',overwrite=True)
+
+
+# In[29]:
+
+
+b.run_compute(ntriangles=300,model='300_triangles',overwrite=True)
+
+
+# In[30]:
+
+
+b.run_compute(irrad_method='none',model='no_irrad',overwrite=True)
+
+
+# In[31]:
+
+
+b.run_compute(distortion_method='sphere',model='no_distort',overwrite=True)
+
+
+# In[38]:
+
+
+_ = b.plot(kind='lc', legend=True, show=True)
+
+
+# In[33]:
+
+
+times = b.get_value('times', dataset='lc01', model='all_on')
+fluxes_all_on = b.get_value('fluxes', model='all_on')
+fluxes_triangles = b.get_value('fluxes', model='300_triangles')
+fluxes_irrad_off = b.get_value('fluxes', model='no_irrad')
+fluxes_distortion_off = b.get_value('fluxes', model='no_distort')
+
+fluxes_triangles_rel = (fluxes_triangles - fluxes_all_on)/fluxes_all_on
+fluxes_irrad_rel = (fluxes_irrad_off - fluxes_all_on)/fluxes_all_on
+fluxes_distortion_rel = (fluxes_distortion_off - fluxes_all_on)/fluxes_all_on
+
+
+# In[39]:
+
+
+_ = plt.plot(times, fluxes_triangles_rel, 'k.')
+_ = plt.plot(times, fluxes_irrad_rel, 'r.')
+_ = plt.plot(times, fluxes_distortion_rel, 'b.')
+
 
 # In[ ]:
 
