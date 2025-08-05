@@ -50,8 +50,8 @@ Please test your installation well in advance of the workshop by running the [te
 * [Tutorial: Datasets](./Tutorial_03_datasets.ipynb) (Kelly)
 * [Tutorial: Compute](./Tutorial_04_compute.ipynb) (Michael)
 * [Tutorial: Time and Phase](./Tutorial_05_time_and_phase.ipynb) (Andrej)
-* [Tutorial: Plotting](./Tutorial_06_plotting.ipynb) (Kyle)
 * [Talk: Atmospheres, Limb Darkening, Intensity Weighting, Extinction, and Reflection](https://docs.google.com/presentation/d/e/2PACX-1vQBFsBHcaE1ZJV4hETfCvv03D3Y_rFZEIuz5m0QhApM5mRdceEc78iGCF1FfmY-ID23jC7unqvtofNj/pub?start=false&loop=false&delayms=3000) (Dave)
+* [Tutorial: Plotting](./Tutorial_06_plotting.ipynb) (Kyle)
 * [Exercises: Creating Forward Models](./Exercises_02_forward_models.ipynb)
 
 
