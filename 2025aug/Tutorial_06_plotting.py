@@ -34,13 +34,13 @@ from phoebe import u,c
 # import matplotlib
 # print(matplotlib.rcParamsDefault['backend'])
 # ```
-
-# In[ ]:
-
-
-import matplotlib
-matplotlib.use('module://matplotlib_inline.backend_inline')
-
+# 
+# and to set a custom backend:
+# 
+# ```
+# import matplotlib
+# matplotlib.use('module://matplotlib_inline.backend_inline')
+# ```
 
 # In[ ]:
 
@@ -100,7 +100,7 @@ afig, mplfig = b.plot(dataset='lc01', show=True)
 
 # ### Custom Columns
 
-# By default, PHOEBE will plot flux vs time for light curves and RV vs time for radial velocity datasets.  To override this, we can send the name of the column to `x` or `y`.  In addition to the Parameter names, we can also request `'phase'`.  This will use the ephemeris of the system and will use `t0_supconj` by default.
+# By default, PHOEBE will plot flux vs time for light curves and RV vs time for radial velocity datasets.  To override this, we can send the qualifier of the parameter to `x` or `y`.  In addition to the Parameter names, we can also request `'phase'`.  This will use the ephemeris of the system (via `b.to_phase()` seen previously) and will use `t0_supconj` by default unless also passed.
 
 # In[ ]:
 
