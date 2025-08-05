@@ -34,13 +34,12 @@ Please test your installation well in advance of the workshop by running the [te
 
 * [Welcome & Introduction](https://docs.google.com/presentation/d/e/2PACX-1vTH436zb5IPSMPoCq0AbAW0lzJrQjhRINJyoUOZxAYyaFHPyx8TM1jXeqcs2NOC-mWmXxiTh7B0cQd7/pub?start=false&loop=false&delayms=3000) (Kelly)
 * Opening Ceremony and Self-Introductions (Sheng-Bang)
-* [Talk: PHOEBE Overview - wdgui to PHOEBE](https://docs.google.com/presentation/d/e/2PACX-1vRDgAr5NEH738njEqj4LS4YtxUs6T8TA5EHe3jry454n7cRdzRBvGuxpn_5QAgjeykQnx8er97c3_VD/pub?start=false&loop=false&delayms=3000) (Andrej)
 * Jupyter  and PHOEBE Setup (Andrej)
 * Group Photo, Coffee Break, Installation Debugging
+* [Talk: PHOEBE Overview - wdgui to PHOEBE](https://docs.google.com/presentation/d/e/2PACX-1vRDgAr5NEH738njEqj4LS4YtxUs6T8TA5EHe3jry454n7cRdzRBvGuxpn_5QAgjeykQnx8er97c3_VD/pub?start=false&loop=false&delayms=3000) (Andrej)
 * [Talk: Introduction to PHOEBE 2: why so complicated?](https://docs.google.com/presentation/d/e/2PACX-1vQZF_BRCGQZEjNlLhzznY5i_T5WNj6y7RJMvqxat7aDzTq7l1qDx7CnInoiNtIFZWL2BczoHf3RWnTK/pub?start=false&loop=false&delayms=3000) (Kyle)
 * [Tutorial: General Concepts & Bundle Basics](./Tutorial_01_bundle_basics.ipynb) (Kelly)
 * [Tutorial: Constraints](./Tutorial_02_constraints.ipynb) (Kyle)
-
 * [Exercises: Building Systems](./Exercises_01_building_systems.ipynb)
 
 
@@ -52,8 +51,8 @@ Please test your installation well in advance of the workshop by running the [te
 * [Tutorial: Compute](./Tutorial_04_compute.ipynb) (Michael)
 * [Tutorial: Time and Phase](./Tutorial_05_time_and_phase.ipynb) (Andrej)
 * [Tutorial: Plotting](./Tutorial_06_plotting.ipynb) (Kyle)
-* [Exercises: Creating Forward Models](./Exercises_02_forward_models.ipynb)
 * [Talk: Atmospheres, Limb Darkening, Intensity Weighting, Extinction, and Reflection](https://docs.google.com/presentation/d/e/2PACX-1vQBFsBHcaE1ZJV4hETfCvv03D3Y_rFZEIuz5m0QhApM5mRdceEc78iGCF1FfmY-ID23jC7unqvtofNj/pub?start=false&loop=false&delayms=3000) (Dave)
+* [Exercises: Creating Forward Models](./Exercises_02_forward_models.ipynb)
 
 
 ### Wednesday August 6: Advanced Physics & Features
