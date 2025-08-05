@@ -87,7 +87,6 @@ Please test your installation well in advance of the workshop by running the [te
 * [Talk: Inverse Problem in PHOEBE](https://docs.google.com/presentation/d/e/2PACX-1vQnOikYGaIVd1O6Aj4jp6_A26T41h-pid6IOh-qwQdafZIGvSWNo89SvRHz-6JVtUoKXlin0g_KdguZ/pub?start=false&loop=false&delayms=3000) (Kyle)
 * [Optional Breakout Tutorial: Detrending](./Tutorial_detrending.ipynb) (Andrej)
 * [Tutorial: Estimators](./Tutorial_12_estimators.ipynb) (Marcin)
-* [Exercises: Estimators](./Exercises_06_estimators.ipynb)
 
 
 ### Tuesday August 12: Optimizers
@@ -95,7 +94,7 @@ Please test your installation well in advance of the workshop by running the [te
 * [Tutorial: Optimizers](./Tutorial_13_optimizers.ipynb) (Kelly)
 * [Tutorial: Degeneracies](./Tutorial_14_degeneracy.ipynb) (Marcin)
 * [Tutorial: Running Jobs on External Compute Resources](./Tutorial_15_server.ipynb) (Kyle)
-* [Exercises: Optimizers](./Exercises_07_optimizers.ipynb) 
+* [Exercises: Optimizers](./Exercises_06_estimators_optimizers.ipynb) 
 
 
 ### Wednesday August 13: MCMC in PHOEBE
@@ -104,7 +103,7 @@ Please test your installation well in advance of the workshop by running the [te
 * [Tutoritalk: MCMC Introduction](./mcmc_generic.ipynb) (Andrej)
 * [Tutorial: MCMC Basics in PHOEBE](./Tutorial_17_mcmc.ipynb) (Marcin)
 * [Tutorial: Continuing/Resampling in MCMC](./Tutorial_18_mcmc_continued.ipynb) (Kelly)
-* [Exercises: Setting up an MCMC Run](./Exercises_08_mcmc.ipynb)
+* [Exercises: Setting up an MCMC Run](./Exercises_07_mcmc.ipynb)
 * [Optional Breakout Session: Fitting Contact Binaries](https://docs.google.com/presentation/d/e/2PACX-1vT_Cx34ifFzE_vM_75IRGXVFcIplju_VOsUNK0w-FjPJ9mlNI9riUZk5nb0iUzwrwQ4oGYnEYNzDiJK/pub?start=false&loop=false&delayms=3000) (Michael)
 
 
@@ -116,5 +115,5 @@ Please test your installation well in advance of the workshop by running the [te
 * [Tutorial: Posteriors and Parameter Uncertainties](./Tutorial_20_posteriors.ipynb) (Kelly)
 * [Tutorial: Choice of Parameterization](./Tutorial_21_parameterization.ipynb) (Kyle)
 * [Tutorial: Marginalizing over Additional Parameters](./Tutorial_22_marginalization.ipynb) (Andrej)
-* [Exercises: Getting Posteriors](./Exercises_09_posteriors.ipynb)
+* [Exercises: Getting Posteriors](./Exercises_08_posteriors.ipynb)
 * Wrap Up: volunteer wrap-up contributions and discussion (Kelly)
