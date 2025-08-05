@@ -98,7 +98,7 @@ afig, mplfig = b.filter(dataset='lc01').plot(show=True)
 afig, mplfig = b.plot(dataset='lc01', show=True)
 
 
-# ### Custom Columns
+# ### Custom Parameters/Arrays on Axes
 
 # By default, PHOEBE will plot flux vs time for light curves and RV vs time for radial velocity datasets.  To override this, we can send the qualifier of the parameter to `x` or `y`.  In addition to the Parameter names, we can also request `'phase'`.  This will use the ephemeris of the system (via `b.to_phase()` seen previously) and will use `t0_supconj` by default unless also passed.
 
@@ -126,7 +126,19 @@ afig, mplfig = b.plot(time=0.65, show=True)
 
 # ### And much more...
 
-# The [plotting tutorial](http://phoebe-project.org/docs/2.4/tutorials/plotting/) in the docs has a very thorough explanation of other advanced features in plotting.
+# The [plotting tutorial](http://phoebe-project.org/docs/2.4/tutorials/plotting/) in the docs has a very thorough explanation of other advanced features in plotting, as well as styling options.  Note that you can target individual arrays with styling options by passing a dictionary.  For example:
+
+# In[ ]:
+
+
+afig, mplfig = b.plot(c='red', show=True)
+
+
+# In[ ]:
+
+
+afig, mplfig = b.plot(c={'primary@rv01': 'blue', 'secondary@rv01': 'red', 'lc01': 'green'}, show=True)
+
 
 # # Exercise
 
