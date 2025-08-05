@@ -30,21 +30,18 @@ b = phoebe.default_binary()
 # 
 # On the other hand, we need to associate a position of a celestial body in its orbit with a reference time. This time is related with the orbit and, depending on the convention, we can provide the time of superior conjunction, periastron passage, or any other referential point. PHOEBE refers to these times as **ephemeral times**.
 # 
-# Both the reference time and the ephemeral times impact time-to-phase conversions.
-# 
-# PHOEBE defines the following parameters that determine data phasing:
-# 
-# * `t0` (reference time)
-# * `period` (orbital period of the binary at reference time)
-# * `dpdt` (temporal change in orbital period, in days/day, w.r.t. reference time)
-# 
 # The defined ephemeral times are:
 # 
 # * `t0_supconj`: time of superior conjunction
 # * `t0_perpass`: time of periastron passage
 # * `t0_ref`: time of the reference point w.r.t. the sky (useful when a system exhibits apsidal motion)
 # 
-# Unlike `t0`, the `t0_supconj`, `t0_perpass`, and `t0_ref` are all *orbital* parameters rather than system parameters, one per each orbit in a multi-body system. By default, `t0_supconj` is the free parameter, with `t0_perpass` and `t0_ref` being constrained:
+# Unlike `t0`, the `t0_supconj`, `t0_perpass`, and `t0_ref` are all *orbital* parameters rather than system parameters, one per each orbit in a multi-body system. By default, `t0_supconj` is the free parameter, with `t0_perpass` and `t0_ref` being constrained.
+# 
+# In addition to ephemeral times, PHOEBE uses the following parameters that determine data phasing:
+# 
+# * `period` (orbital period of the binary at reference time)
+# * `dpdt` (temporal change in orbital period, in days/day, w.r.t. reference time)
 
 # In[2]:
 
