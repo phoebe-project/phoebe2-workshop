@@ -26,3 +26,17 @@
 
 
 
+
+# # \#3: Illustrate Concepts from Previous Tutorials
+# 
+# Create plots that illustrate concepts from previous talks/tutorials, for example:
+# * light curve plot of an eclipsing system where only one eclipse is visible
+# * light curve plot with "expensive" vs "cheap" compute options to decide which shortcuts are reasonable
+# * effects of different choices of parameterizations or how changing a parameter affects the resulting light curve
+# * apsidal motion and influence of phasing with sidereal vs anomalistic period and/or different t0s
+
+# In[ ]:
+
+
+
+
