@@ -10,6 +10,14 @@
 # * [Advanced: Spots](http://phoebe-project.org/docs/2.4/tutorials/spots.ipynb)
 # * [Example: Gaussian Processes](http://phoebe-project.org/docs/2.4/examples/minimal_GPs)
 
+# **NOTE**: gaussian processes require [celerite2](https://celerite2.readthedocs.io) and [sklearn](https://scikit-learn.org/stable/index.html) to be installed _before_ importing phoebe (you can install with `pip install celerite2` and `pip install scikit-learn` and may need to restart the kernel/notebook). For the purposes of this tutorial, we'll only use `celerite2`.
+
+# In[ ]:
+
+
+get_ipython().system('pip install celerite2')
+
+
 # # Setup
 
 # In[ ]:
@@ -59,9 +67,7 @@ b.add_spot(component='secondary', feature='spot02')
 
 # # Gaussian Processes
 # 
-# Similarly to spots, multiple gaussian process features an be attached - but instead of being attached to a Star (component), they are attached to a light curve (dataset). As of PHOEBE 2.4, we support two "backends" for Gaussian Processes: [gp_celerite2](http://phoebe-project.org/docs/2.4/api/phoebe.parameters.feature.gp_celerite2) and [gp_sklearn](http://phoebe-project.org/docs/2.4/api/phoebe.parameters.feature.gp_sklearn). We will discuss more about the pros and cons of each one towards the end of the second part of the workshop.
-# 
-# **NOTE**: gaussian processes require [celerite2](https://celerite2.readthedocs.io) and [sklearn](https://scikit-learn.org/stable/index.html) to be installed _before_ importing phoebe (you can install with `pip install celerite2` and `pip install scikit-learn` and may need to restart the kernel/notebook). For the purposes of this tutorial, we'll only use `celerite2`.
+# Similarly to spots, multiple gaussian process features can be attached - but instead of being attached to a Star (component), they are attached to a light curve (dataset). As of PHOEBE 2.4, we support two "backends" for Gaussian Processes: [gp_celerite2](http://phoebe-project.org/docs/2.4/api/phoebe.parameters.feature.gp_celerite2) and [gp_sklearn](http://phoebe-project.org/docs/2.4/api/phoebe.parameters.feature.gp_sklearn). We will discuss more about the pros and cons of each one towards the end of the second part of the workshop.
 
 # In[ ]:
 
@@ -83,7 +89,7 @@ b.add_feature('gp_celerite2', dataset='lc01', feature='gp01')
 print(b.filter(feature='gp01'))
 
 
-# Gaussian processes do not do anything unless there are observational data attached to the dataset.
+# Gaussian processes do not do anything unless there are observations included in the dataset.
 
 # In[ ]:
 
