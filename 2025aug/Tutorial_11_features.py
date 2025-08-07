@@ -23,6 +23,12 @@ get_ipython().system('pip install celerite2')
 # In[ ]:
 
 
+get_ipython().run_line_magic('matplotlib', 'inline')
+
+
+# In[ ]:
+
+
 import phoebe
 from phoebe import u,c
 
@@ -98,6 +104,16 @@ print(b.run_checks())
 
 
 # So let's add some observational data ([lc.data](https://github.com/phoebe-project/phoebe2-workshop/raw/2023june/data/synthetic/lc.data)) that we'll be using in the second week (and cheat for now and set a period that is close to correct), just so that we can see how the model is exposed.
+
+# If you don't have the file, you can either download from the link above or run the following block (otherwise skip it):
+
+# In[ ]:
+
+
+get_ipython().system('wget https://github.com/phoebe-project/phoebe2-workshop/raw/2023june/data/synthetic/lc.data')
+get_ipython().system('mkdir -p ./data/synthetic')
+get_ipython().system('mv lc.data ./data/synthetic/')
+
 
 # In[ ]:
 
