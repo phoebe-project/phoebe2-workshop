@@ -69,12 +69,11 @@ Please test your installation well in advance of the workshop by running the [te
 
 
 * [Tutorial: Optimizing PHOEBE Computations](./Tutorial_10_optimizing_computations.ipynb) (Kelly)
-* [Tutorial: Features (Spots & Gaussian Processes)](./Tutorial_11_features.ipynb) (Kyle)
 * [Optional Breakout Session: Contact Binaries](./Tutorial_semidetached_contact.ipynb) (Michael)
+* [Optional Breakout Talk: Line Profiles with PHOEBE and SPAMMS](https://docs.google.com/presentation/d/e/2PACX-1vTw7p9Hlh0F2GOWZIFTiTIaKD20hTE_pWxsurxARzg10SU8VOVh4IbqtctM0J6tpd6xO7NU25GHY6aR/pub?start=false&loop=false&delayms=3000) (Michael)
+* [Tutorial: Features (Spots & Gaussian Processes)](./Tutorial_11_features.ipynb) (Kyle)
 * [Optional Breakout Session: In-depth look at fluxes and magnitudes](./Tutorial_flux_calibration.ipynb) (Andrej)
 * [Optional Breakout Talk: In Development - Pulsations](https://docs.google.com/presentation/d/e/2PACX-1vT1itS6W6Z0FOOnPGFud2TWg-sIxdLXYLX-GquIB-lssk2aiD33VL1TSSsBBs4bwwxOMC3M4jwQuadS/pub?start=false&loop=false&delayms=3000) (Andrej)
-* [Optional Breakout Talk: Line Profiles with PHOEBE and SPAMMS](https://docs.google.com/presentation/d/e/2PACX-1vTw7p9Hlh0F2GOWZIFTiTIaKD20hTE_pWxsurxARzg10SU8VOVh4IbqtctM0J6tpd6xO7NU25GHY6aR/pub?start=false&loop=false&delayms=3000) (Michael)
-* [Optional Breakout Talk: In Development - Blended Atmosphere Tables](https://docs.google.com/presentation/d/e/2PACX-1vQHs4n5LMhZMyXVueHRnACte2bUZ80zALfLxXsy6DtlXMG1UAopoJMkxEmQ6teEz-IH0nWb8KjobeYx/pub?start=false&loop=false&delayms=3000) (Andrej)
 * [Exercises: Forward Model Animations](./Exercises_03_animations.ipynb)
 * [Exercises: Hack Day](./Exercises_04_hack_day.ipynb)
 
