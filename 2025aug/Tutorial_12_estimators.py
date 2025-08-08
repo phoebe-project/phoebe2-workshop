@@ -43,7 +43,7 @@ get_ipython().run_line_magic('matplotlib', 'inline')
 # In[2]:
 
 
-b = phoebe.default_binary(force_build=True)
+b = phoebe.default_binary()
 lc = np.loadtxt('data/synthetic/lc.data')
 rv1 = np.loadtxt('data/synthetic/rv1.data')
 rv2 = np.loadtxt('data/synthetic/rv2.data')
