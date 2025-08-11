@@ -198,6 +198,7 @@ b['steps@dc@solver'] = {
 req1s, req2s = [], []
 
 for incl in np.linspace(81.5, 85.5, 9):
+    b['incl@binary'] = incl
     for iter in range(1, 4):
         b.run_solver('dc', solution='dcsol', progressbar=False, overwrite=True)
         b.adopt_solution(solution='dcsol')
