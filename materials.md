@@ -86,19 +86,20 @@ Please test your installation well in advance of the workshop by running the [te
 * [Talk: Inverse Problem in PHOEBE](https://docs.google.com/presentation/d/e/2PACX-1vQnOikYGaIVd1O6Aj4jp6_A26T41h-pid6IOh-qwQdafZIGvSWNo89SvRHz-6JVtUoKXlin0g_KdguZ/pub?start=false&loop=false&delayms=3000) (Kyle)
 * [Optional Breakout Tutorial: Detrending](./Tutorial_detrending.ipynb) (Andrej)
 * [Tutorial: Estimators](./Tutorial_12_estimators.ipynb) (Marcin)
+* [Tutorial: Optimizers](./Tutorial_13_optimizers.ipynb) (Kelly)
+* [Exercises: Optimizers](./Exercises_06_estimators_optimizers.ipynb) 
 
 
 ### Tuesday August 12: Optimizers
 
-* [Tutorial: Optimizers](./Tutorial_13_optimizers.ipynb) (Kelly)
 * [Tutorial: Degeneracies](./Tutorial_14_degeneracy.ipynb) (Marcin)
 * [Tutorial: Running Jobs on External Compute Resources](./Tutorial_15_server.ipynb) (Kyle)
+* [Tutorial: Distributions & Priors](./Tutorial_16_distributions.ipynb) (Kyle)
 * [Exercises: Optimizers](./Exercises_06_estimators_optimizers.ipynb) 
 
 
 ### Wednesday August 13: MCMC in PHOEBE
 
-* [Tutorial: Distributions & Priors](./Tutorial_16_distributions.ipynb) (Kyle)
 * [Tutoritalk: MCMC Introduction](./mcmc_generic.ipynb) (Andrej)
 * [Tutorial: MCMC Basics in PHOEBE](./Tutorial_17_mcmc.ipynb) (Marcin)
 * [Tutorial: Continuing/Resampling in MCMC](./Tutorial_18_mcmc_continued.ipynb) (Kelly)
