@@ -92,9 +92,9 @@ Please test your installation well in advance of the workshop by running the [te
 
 ### Tuesday August 12: Optimizers
 
+* [Tutorial: Distributions & Priors](./Tutorial_16_distributions.ipynb) (Kyle)
 * [Tutorial: Degeneracies](./Tutorial_14_degeneracy.ipynb) (Marcin)
 * [Tutorial: Running Jobs on External Compute Resources](./Tutorial_15_server.ipynb) (Kyle)
-* [Tutorial: Distributions & Priors](./Tutorial_16_distributions.ipynb) (Kyle)
 * [Exercises: Optimizers](./Exercises_06_estimators_optimizers.ipynb) 
 
 
