@@ -22,7 +22,7 @@
 # 
 # Refer to the [solver API docs](http://phoebe-project.org/docs/2.4/api/phoebe.parameters.solver) if you need to tweak additional parameters that haven't been covered in the tutorials.  If you have any questions - feel free to ask!
 # 
-# For optimization runs, feel free to submit the jobs remotely and make use of `progress_every_niters` and `b.load_job_progress`.  Once you get somewhat close to a good solution, make sure to determine if any of the expensive effects can safely be disabled (see [optimizing computations](./Tutorial_11_optimizing_computations.ipynb)) before adding a bunch of extra free parameters or running for extended iterations overnight.  For any approximations you do take, make sure to re-evaluate their validity as you go!
+# For optimization runs, feel free to submit the jobs remotely and make use of `progress_every_niters` and `b.load_job_progress`.  Once you get somewhat close to a good solution, make sure to determine if any of the expensive effects can safely be disabled (see [optimizing computations](./Tutorial_10_optimizing_computations.ipynb)) before adding a bunch of extra free parameters or running for extended iterations overnight.  For any approximations you do take, make sure to re-evaluate their validity as you go!
 
 # In[ ]:
 
