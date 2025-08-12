@@ -1,0 +1,38 @@
+{
+  "name": "PHOEBE Workshop - JupyterLab Environment",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+  
+  "features": {
+    "ghcr.io/devcontainers/features/python:1": {
+      "version": "3.11",
+      "installJupyterlab": true
+    }
+  },
+  
+  "postCreateCommand": "pip install --upgrade phoebe && mkdir -p ~/.ssh && if [ -n \"${localEnv:TERRA_SSH_PRIVATE_KEY}\" ]; then echo \"${localEnv:TERRA_SSH_PRIVATE_KEY}\" > ~/.ssh/id_rsa && chmod 600 ~/.ssh/id_rsa && eval \"$(ssh-agent -s)\" && ssh-add ~/.ssh/id_rsa; fi",
+  
+  "postStartCommand": "nohup jupyter lab --ip=0.0.0.0 --port=8888 --no-browser --allow-root --ServerApp.token='' --ServerApp.password='' --ServerApp.allow_origin='*' --ServerApp.disable_check_xsrf=True > /tmp/jupyter.log 2>&1 &",
+  
+  "forwardPorts": [8888],
+  "portsAttributes": {
+    "8888": {
+      "label": "JupyterLab",
+      "onAutoForward": "openBrowser",
+      "visibility": "public"
+    }
+  },
+  
+  "customizations": {
+    "codespaces": {
+      "openFiles": [
+        "README.md"
+      ]
+    },
+    "vscode": {
+      "extensions": [
+        "ms-python.python",
+        "ms-toolsai.jupyter"
+      ]
+    }
+  }
+}
