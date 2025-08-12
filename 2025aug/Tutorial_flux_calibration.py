@@ -5,20 +5,18 @@
 
 # In this tutorial we will explore basic photometric properties of observed objects as built into PHOEBE, along with the implementation rationale. First let's import all the modules we will need along the way:
 
-# In[1]:
+# In[ ]:
 
 
 import phoebe
-import numpy as np
 import astropy.units as u
-from astropy.io import fits
 import matplotlib as mpl
 import matplotlib.pyplot as plt
 
 
 # Set up some useful plotting defaults:
 
-# In[5]:
+# In[ ]:
 
 
 mpl.rcParams['figure.figsize'] = (16, 6)
@@ -56,7 +54,7 @@ mpl.rcParams['font.size'] = 16
 # 
 # Given an input of uniform flux density, a passband transmission function determines flux density transmission at each wavelength. Transmission of 0 means no light gets through, transmission of 1 means all light gets through. Let us take a look at Johnson B and V passbands as an example:
 
-# In[6]:
+# In[ ]:
 
 
 jB = phoebe.get_passband('Johnson:B')
@@ -71,7 +69,7 @@ plt.legend()
 
 # Now let's read in theoretical spectral energy distributions (SEDs) of 4 spectral types (M, G, A and B) as calculated by Castelli & Kurucz (2004)'s model atmospheres. If you are running this notebook from the cloned workshop repository, you are all set; otherwise you will need to download supporting files from [this link](http://phoebe-project.org/static/flux_calibration_files.tgz). Once you have downloaded them, unpack the archive into the same directly where the notebook is and you will be all set.
 
-# In[7]:
+# In[ ]:
 
 
 import numpy as np
@@ -95,7 +93,7 @@ for i, (sptype, spectrum) in enumerate(zip(sptypes, spectra)):
 
 # Stars of different spectral types will of course differ vastly in their flux densities. In all functions below we will compute quantities for all spectral types, but we will focus on the G2 spectral type and then let you compare the results for other spectral types. To begin, let's plot the SED:
 
-# In[8]:
+# In[ ]:
 
 
 plt.xlabel('$\lambda \ [\mathrm{m}]$')
@@ -107,7 +105,7 @@ plt.show()
 
 # Now we can take a closer look at the parts covered by the Johnson B and V passbands:
 
-# In[9]:
+# In[ ]:
 
 
 flt = (wls >= jB.ptf_table['wl'][0]) & (wls <= jV.ptf_table['wl'][-1])
@@ -129,7 +127,7 @@ plt.legend(loc='upper right')
 # 
 # Confused about the $\lambda/hc$ term? This is because we are measuring *photon* flux and not *energy* flux. As $E = hc/\lambda$, $f_P = (\lambda/hc) f_E$. Note that this $f$ is an actual flux (i.e., we can convert it to $\mathrm{W}/\mathrm{m}^2$). Let's compute the integrand and plot it, to get a better idea of what we're integrating:
 
-# In[10]:
+# In[ ]:
 
 
 hc = 1.98644586e-25
@@ -167,7 +165,7 @@ plt.legend(loc='upper right')
 
 # The *flux* measurement is the integral of this integrand; let's compute it!
 
-# In[11]:
+# In[ ]:
 
 
 dwl = wls[1]-wls[0]
@@ -204,7 +202,7 @@ print(f'flux in B-band: {fl_B:.3e} photons/m^2\nflux in V-band: {fl_V:.3e} photo
 # 
 # Let us explore this in more detail. We can compute an effective wavelength for several scenarios. First, let's load two additional response curves: that of Earth's atmosphere, and that of an off-the-shelf CCD.
 
-# In[12]:
+# In[ ]:
 
 
 atm = phoebe.atmospheres.passbands.Passband(
@@ -240,7 +238,7 @@ qe = phoebe.atmospheres.passbands.Passband(
 
 # In reality, the passband *should* already account for the quantum efficiency and atmospheric extinction *should* be corrected during data reduction, but this situation is unusually common, *especially* for QE. For the sake of the argument assume that observations are not atmosphere-corrected and that the passband contains optics and filter response, but no CCD's quantum efficiency. How do all these contributions affect effective wavelength? For the record, the filter manufacturer quotes $\lambda_\mathrm{eff} = 440$ nm for the B-band and $\lambda_\mathrm{eff} = 550$ nm for the V-band.
 
-# In[13]:
+# In[ ]:
 
 
 def effwl(wls, pb, qe, atm, sed):
@@ -288,7 +286,7 @@ effwl(fwls_V, jV, qe, atm, fseds_V[:,1])
 
 # Now let's load another Johnson V filter, kindly provided by Phill Reed from Kutztown.
 
-# In[14]:
+# In[ ]:
 
 
 import astropy.units as u
@@ -311,7 +309,7 @@ jV1 = phoebe.atmospheres.passbands.Passband(
 
 # This filter is being sold as Johnson V, so let's compare its transmission curve and effective wavelengths:
 
-# In[15]:
+# In[ ]:
 
 
 plt.xlim(4.9e-7, 5.8e-7)
@@ -319,7 +317,7 @@ plt.plot(jV1.ptf_table['wl'], jV1.ptf_table['fl'], 'b-', lw=5)
 plt.plot(jV1.ptf_table['wl'], jV1.ptf(jV1.ptf_table['wl']), 'r-')
 
 
-# In[16]:
+# In[ ]:
 
 
 # flt = (wls >= pb.ptf_table['wl'][0]) & (wls <= pb.ptf_table['wl'][-1])
@@ -348,7 +346,7 @@ effwl(fwls_V1, jV1, qe, atm, fseds_V1[:,1])
 # 
 # Let's compute $\langle f_\lambda \rangle$ for our case and see what that gives us:
 
-# In[17]:
+# In[ ]:
 
 
 # compute the photon area manually and read it out from the passband file; they must match:
@@ -374,7 +372,7 @@ plt.show()
 
 # It is precisely these values that PHOEBE pre-computes and stores in the lookup tables:
 
-# In[18]:
+# In[ ]:
 
 
 fld_B_phoebe = jB.Inorm(atm='ck2004', Teff=5750, logg=4.5, abun=0, photon_weighted=True)[0]
@@ -431,7 +429,7 @@ print(f"V-band <f_lambda>: {fld_V_phoebe:.5e} photons/m^3")
 # 
 # Let's start by plotting a maximum-normalized SEDs for all 4 spectral types:
 
-# In[19]:
+# In[ ]:
 
 
 plt.xlabel('$\lambda$ [m]')
@@ -443,7 +441,7 @@ plt.legend(loc='upper right')
 
 # This showcases how the peak of the SED curve shifts to the red with later spectral types. Limiting the wavelength span to Johnson B and V passbands:
 
-# In[20]:
+# In[ ]:
 
 
 plt.xlabel('Wavelength [m]')
@@ -459,7 +457,7 @@ plt.legend(loc='lower right')
 
 # Note that the relative flux density of each spectral type is normalized to the maximum flux density, which can be outside the visible interval (i.e. for spectral types B0 and M3). This does *not* mean that the B0 star is the faintest in the optical. If we were to plot the actual flux densities, we would get a completely different picture:
 
-# In[21]:
+# In[ ]:
 
 
 plt.xlabel('Wavelength [m]')
@@ -475,7 +473,7 @@ plt.legend(loc='lower right')
 
 # Likewise, if we were to normalize flux densities to their peak *within* this wavelength interval:
 
-# In[22]:
+# In[ ]:
 
 
 plt.xlabel('Wavelength [m]')
@@ -500,6 +498,18 @@ plt.legend(loc='lower right')
 
 
 # **Exercise: take spectral type A0 to be your reference spectrum. Let $B=V=0$ for it by definition. Calculate $B-V$ color indices for all other spectral types and compare them to the values from the literature.**
+
+# In[ ]:
+
+
+
+
+
+# In[ ]:
+
+
+
+
 
 # In[ ]:
 
