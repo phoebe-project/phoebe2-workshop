@@ -52,12 +52,12 @@ b = phoebe.open('data/synthetic/after_optimizers.bundle')
 from phoebe.dependencies import crimpl
 
 
-# Note that whatever you put as `host` needs to be ssh-able without a password.  If you do not have `terra` as an alias in your ssh config, you may need `host="username@terra.villanova.edu"` instead.
+# Note that whatever you put as `host` needs to be ssh-able without a password (if you have an alias defined in your ssh config, you can pass that to `host`).
 
 # In[ ]:
 
 
-s = crimpl.RemoteSlurmServer(host='terra',
+s = crimpl.RemoteSlurmServer(host='username@terra.villanova.edu',
                              directory='~/workshop/crimpl',
                              openmpi_path='/opt/openmpi-4.1.6/bin',
                              openmpi_ld_library_path='/opt/openmpi-4.1.6/lib')
@@ -79,7 +79,7 @@ s.install_conda(in_server_directory=True)
 
 # We will have PHOEBE manage installing the dependencies for us at each job submission.  This does add some minimal overhead to check the existing installation, but will fairly quickly see all dependencies met and move on.
 # 
-# Note: if running crimpl on a non-release branch of PHOEBE (`feature-pulsations`, `feature-blending`), this will force a re-install to the latest version of that branch for each job. In that case, or when you want to install a dependency manually, you could reference the same conda environment from within PHOEBE, and set `install_deps=False` to skip having PHOEBE check and install dependencies.
+# Note: if running crimpl on a feature branch of PHOEBE (`feature-pulsations`, `feature-blending`), this will force a re-install to the latest version of that branch for each job. In that case, or when you want to install a dependency manually, you could reference the same conda environment from within PHOEBE, and set `install_deps=False` to skip having PHOEBE check and install dependencies.
 # 
 # Any released and tagged version, however, will not force a re-install.
 # 
@@ -117,7 +117,7 @@ b.add_server(
     kind='remoteslurm',
     server='terra',
     crimpl_name='terra',
-    conda_env='phoebe_workshop_TEST',
+    conda_env='phoebe_workshop',
     nprocs=48,
     overwrite=True
 )
@@ -187,12 +187,12 @@ print(b.get_solver('nm_solver'))
 print(b.get_parameter(qualifier='progress_every_niters', solver='nm_solver'))
 
 
-# Here we'll set `progress_every_niters=10`, `maxiter=1e6`, and `fatol=xatol=1e-12`... essentially telling the optimizer to continue running until its manually terminated or exceeds the walltime.
+# Here we'll set `progress_every_niters=4`, `maxiter=1e6`, and `fatol=xatol=1e-12`... essentially telling the optimizer to continue running until its manually terminated or exceeds the walltime.
 
 # In[ ]:
 
 
-b.set_value('progress_every_niters', solver='nm_solver', value=10)
+b.set_value('progress_every_niters', solver='nm_solver', value=4)
 b.set_value('maxiter', solver='nm_solver', value=1e6)
 b.set_value('xatol', solver='nm_solver', value=1e-12)
 b.set_value('fatol', solver='nm_solver', value=1e-12)
@@ -266,7 +266,7 @@ print(b.filter(qualifier=['fitted_twigs', '*_values', '*_lnprobability', 'niter'
 # In[ ]:
 
 
-b.run_compute(compute='nm_fit', solution='nm_solution_progress', model='progress_model')
+b.run_compute(compute='nm_compute_options', solution='nm_solution_progress', model='progress_model')
 
 
 # Plot it:
