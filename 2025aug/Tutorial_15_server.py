@@ -4,9 +4,6 @@
 # Workshop Tutorial: Running Jobs on External Compute Resources
 # ============================
 # 
-# **IMPORTANT NOTE**: this entire tutorial covers new capabilities _since_ the 2.3 release. To run this, you need the 2.4 release of PHOEBE.
-# 
-# 
 # In this tutorial we cover the setup of external compute resources, with an emphasis on Villanova's departmental cluster 'terra', submission, and job management.
 # 
 # This interactive workshop tutorial covers many of the same topics as the corresponding online tutorials:
@@ -17,7 +14,14 @@
 # Setup
 # -----------------------------
 # 
-# We start with the bundle from the previous tutorial to show examples of running both a forward-model and the solver remotely on terra.
+# We start with the [after_optimizers.bundle](https://github.com/phoebe-project/phoebe2-workshop/raw/2025aug/data/synthetic/after_optimizers.bundle) from the previous tutorial to show examples of running both a forward-model and the solver remotely on terra.
+
+# In[ ]:
+
+
+get_ipython().system('mkdir -p data/synthetic')
+get_ipython().system('wget -P data/synthetic/ https://github.com/phoebe-project/phoebe2-workshop/raw/2025aug/data/synthetic/after_optimizers.bundle')
+
 
 # In[ ]:
 

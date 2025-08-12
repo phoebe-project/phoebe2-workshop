@@ -247,7 +247,7 @@ _ = b.plot(show=True)
 
 # # Exercises
 # 
-# Start from scratch, add constraints on both `sma@binary` and `incl@binary` and see how those propagate through to `asini@binary`.
+# Start from scratch, add distributions on both `sma@binary` and `incl@binary` and see how those propagate through to `asini@binary`.
 
 # In[ ]:
 
