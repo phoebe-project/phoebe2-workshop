@@ -88,7 +88,7 @@ null,
 null
 ],
 "qualifier": "ebv",
-"uniqueid": "zTSisbQRIGQgAPHKFJYNSzTlwkMHYr",
+"uniqueid": "osAIyFxzxdplrCmWfpwmrBerXnYddT",
 "value": 0.0
 },
 {
@@ -162,7 +162,7 @@ null
 null
 ],
 "qualifier": "requiv_max",
-"uniqueid": "LOwIygcxGzNKmvaJIGcpcBbMaaiJHt",
+"uniqueid": "QSVLEONbONEJtQJnNXbrqhIpuvUNeg",
 "value": 3.0678186543944057
 },
 {
@@ -231,8 +231,8 @@ null,
 null
 ],
 "qualifier": "logg",
-"uniqueid": "eBRoDOsjbqJYAkfWJLEmNFPimWVwml",
-"value": 4.165066360202714
+"uniqueid": "nFidFVdujSBBRvAXyJTvQBZUWjapOj",
+"value": 4.1650663558503265
 },
 {
 "Class": "FloatParameter",
@@ -267,7 +267,7 @@ null
 null
 ],
 "qualifier": "period",
-"uniqueid": "iwLNOMNWaBRgaIVcnvkgBUIUSWWGWU",
+"uniqueid": "zSNQGGlUblXHEdyckybgFehDSJHfRQ",
 "value": 1.67
 },
 {
@@ -285,8 +285,8 @@ null
 null
 ],
 "qualifier": "freq",
-"uniqueid": "dXNljsscGNbRTqArRrtplwVNjXXOnF",
-"value": 3.7623862275449103
+"uniqueid": "ToVynWfOMKnFMQksebLbNVNrcjQeco",
+"value": 3.7623864114847825
 },
 {
 "Class": "FloatParameter",
@@ -339,7 +339,7 @@ null,
 null
 ],
 "qualifier": "incl",
-"uniqueid": "JJvtciloWOTlLVFmgKqqZWtbjRjqRH",
+"uniqueid": "UUPIrEssmbBUqVUUmLTlmhmkUCHKYb",
 "value": 89.751,
 "visible_if": "hierarchy.is_contact_binary:False"
 },
@@ -357,7 +357,7 @@ null,
 null
 ],
 "qualifier": "long_an",
-"uniqueid": "gqFJYKoWMYLBiVCBAfprGTBddeLfnM",
+"uniqueid": "FRGRTTqffosYGyBsEOJmVgpqFOoILY",
 "value": 0.0,
 "visible_if": "hierarchy.is_contact_binary:False"
 },
@@ -369,7 +369,7 @@ null
 "default_unit": "",
 "description": "Bolometric gravity brightening",
 "kind": "star",
-"latexfmt": "\\Beta_{{ \\mathrm{{bol}}, \\mathrm{{ {component} }} }}",
+"latexfmt": "\\beta_{{ \\mathrm{{bol}}, \\mathrm{{ {component} }} }}",
 "limits": [
 0.0,
 1.0
@@ -409,7 +409,7 @@ null
 1.0
 ],
 "qualifier": "irrad_frac_lost_bol",
-"uniqueid": "DxSjVQcxnsjquYVejcOXfXLCZdPsmq",
+"uniqueid": "HsYaaROulWfqobipLMxcTgJDoBdPRn",
 "value": 0.4
 },
 {
@@ -450,8 +450,8 @@ null
 "advanced": true,
 "choices": [
 "auto",
-"ck2004",
-"phoenix"
+"phoenix",
+"ck2004"
 ],
 "component": "primary",
 "context": "component",
@@ -493,12 +493,12 @@ null
 "kind": "star",
 "latexfmt": "M_\\mathrm{{ {component} }}",
 "limits": [
-null,
+1e-12,
 null
 ],
 "qualifier": "mass",
-"uniqueid": "lTqKhtnPZaPFlQqWAsnrXOgaPuhaTG",
-"value": 1.1999999999999995
+"uniqueid": "FfdpIoStviOEasBJkYbopZIxvkYUCL",
+"value": 1.1999999879739078
 },
 {
 "Class": "FloatParameter",
@@ -531,7 +531,7 @@ null
 null
 ],
 "qualifier": "requiv_max",
-"uniqueid": "SDpWsvNvTfHGgmTHZLytTaDmdURDJU",
+"uniqueid": "HiHQKJjGXWKcqDCZIjgMZEaWaatQJY",
 "value": 2.7255126939353826
 },
 {
@@ -600,8 +600,8 @@ null,
 null
 ],
 "qualifier": "logg",
-"uniqueid": "GQjkZfjkoXiKfwjbeRNSijaKgpCpmW",
-"value": 4.469584683712517
+"uniqueid": "orkqotKIFBaahWAqJbRzMJihVFeDkS",
+"value": 4.469584679360129
 },
 {
 "Class": "FloatParameter",
@@ -636,7 +636,7 @@ null
 null
 ],
 "qualifier": "period",
-"uniqueid": "EqJpEVvfDFaAAcEdMVSolIyVIhYuGQ",
+"uniqueid": "OsVPRrxFFsHiNotXWPOzdxaTIWSwns",
 "value": 1.67
 },
 {
@@ -654,8 +654,8 @@ null
 null
 ],
 "qualifier": "freq",
-"uniqueid": "spYSkvsRzdzFJidNPtPjfAalcFYmpi",
-"value": 3.7623862275449103
+"uniqueid": "ooGaNOsjZHavsxqrwFmptJysNciwLM",
+"value": 3.7623864114847825
 },
 {
 "Class": "FloatParameter",
@@ -708,7 +708,7 @@ null,
 null
 ],
 "qualifier": "incl",
-"uniqueid": "fNBLnlVoRLrvniuveWbNqWOxdAmGcb",
+"uniqueid": "kWDUCrZinOdEOFlSURmjrSFUYjcIIE",
 "value": 89.751,
 "visible_if": "hierarchy.is_contact_binary:False"
 },
@@ -726,7 +726,7 @@ null,
 null
 ],
 "qualifier": "long_an",
-"uniqueid": "KoDXDXvagfcrqMmcrdVHgLTYOPdKnz",
+"uniqueid": "zHxeAPmQcpsnwyWKCRryAgvAqEyPgR",
 "value": 0.0,
 "visible_if": "hierarchy.is_contact_binary:False"
 },
@@ -738,7 +738,7 @@ null
 "default_unit": "",
 "description": "Bolometric gravity brightening",
 "kind": "star",
-"latexfmt": "\\Beta_{{ \\mathrm{{bol}}, \\mathrm{{ {component} }} }}",
+"latexfmt": "\\beta_{{ \\mathrm{{bol}}, \\mathrm{{ {component} }} }}",
 "limits": [
 0.0,
 1.0
@@ -778,7 +778,7 @@ null
 1.0
 ],
 "qualifier": "irrad_frac_lost_bol",
-"uniqueid": "iGypmhSrQVxkSjyINUnHdErUsmRLqx",
+"uniqueid": "LOXcdaUEzWjwBMSsdATwQgtAJiVGDR",
 "value": 0.4
 },
 {
@@ -819,8 +819,8 @@ null
 "advanced": true,
 "choices": [
 "auto",
-"ck2004",
-"phoenix"
+"phoenix",
+"ck2004"
 ],
 "component": "secondary",
 "context": "component",
@@ -862,12 +862,12 @@ null
 "kind": "star",
 "latexfmt": "M_\\mathrm{{ {component} }}",
 "limits": [
-null,
+1e-12,
 null
 ],
 "qualifier": "mass",
-"uniqueid": "xDPnYTUZYOhieJbJJdMzUtJNzGgYlo",
-"value": 0.9299999999999996
+"uniqueid": "RLuQKXrEkgciKzaPUlaKhJNjOguqFu",
+"value": 0.9299999906797786
 },
 {
 "Class": "FloatParameter",
@@ -900,7 +900,7 @@ null,
 null
 ],
 "qualifier": "period_anom",
-"uniqueid": "PdNoKrCvbLsJRtLnChfFmNDOVPQCvB",
+"uniqueid": "KklNPUUSATiXwobHAJNdwGgrpjkBRx",
 "value": 1.67,
 "visible_if": "dperdt:!0.0"
 },
@@ -919,8 +919,8 @@ null,
 null
 ],
 "qualifier": "freq",
-"uniqueid": "RZYlkPDpQpqNIfXXQtQtpmoFdHbjUi",
-"value": 3.7623862275449103
+"uniqueid": "YnTiLZpGJZfuIJmyZSYPvkwxuiDLpC",
+"value": 3.7623864114847825
 },
 {
 "Class": "FloatParameter",
@@ -1006,7 +1006,7 @@ null,
 null
 ],
 "qualifier": "t0_perpass",
-"uniqueid": "qRdGqayXOOlpmINWCEXdJqoSZrZArA",
+"uniqueid": "cARihcRzLOEBiqRTcPYzNNgTxzzqew",
 "value": 1.2114444444444445
 },
 {
@@ -1040,7 +1040,7 @@ null,
 null
 ],
 "qualifier": "t0_ref",
-"uniqueid": "kwDLDXQKfWLhFzqFTzWbBeBlJnrepN",
+"uniqueid": "zIFlxpzBAhjOEPYHNJZQeHxZsicbCd",
 "value": 1.23
 },
 {
@@ -1057,8 +1057,8 @@ null,
 null
 ],
 "qualifier": "mean_anom",
-"uniqueid": "SSYFurubdFtVQGEZzrpyTZwzFnWkur",
-"value": 98.85031216858437
+"uniqueid": "hgJWjtaFnSyoWcZqtgVslDkUJPBEmE",
+"value": 98.85029940119756
 },
 {
 "Class": "FloatParameter",
@@ -1142,7 +1142,7 @@ null,
 null
 ],
 "qualifier": "asini",
-"uniqueid": "pQytiyjTzfIymgJfbzZcQeSlyndonf",
+"uniqueid": "PPGWeNaYtnYibTbWUvwEyWGRYWlxmR",
 "value": 7.621454653842904
 },
 {
@@ -1159,7 +1159,7 @@ null
 1.0
 ],
 "qualifier": "ecosw",
-"uniqueid": "NaDlkzkyfEQqBjSDGTcZsaNfpXobRw",
+"uniqueid": "KzJwZYYnuXRbnXTERMfZaKTxEBMAHg",
 "value": 0.0
 },
 {
@@ -1176,8 +1176,59 @@ null
 1.0
 ],
 "qualifier": "esinw",
-"uniqueid": "zOmDzyyQpgCnjhSLlBtOFsVUjDqblI",
+"uniqueid": "xcAPiAkgNyDKlZNBBLhFePdNjnhwGw",
 "value": 0.0
+},
+{
+"Class": "FloatParameter",
+"component": "binary",
+"context": "component",
+"copy_for": false,
+"default_unit": "",
+"description": "ratio between effective temperatures of children stars",
+"kind": "orbit",
+"latexfmt": "T_\\mathrm{{ eff, {children1} }} / T_\\mathrm{{ eff, {children0} }}",
+"limits": [
+0.0,
+null
+],
+"qualifier": "teffratio",
+"uniqueid": "JICuYgwnhpSPJjenTHBpzlliaBWasc",
+"value": 0.9349999999999999
+},
+{
+"Class": "FloatParameter",
+"component": "binary",
+"context": "component",
+"copy_for": false,
+"default_unit": "",
+"description": "ratio between equivalent radii of children stars",
+"kind": "orbit",
+"latexfmt": "R_\\mathrm{{ equiv, {children1} }} / R_\\mathrm{{ equiv, {children0} }}",
+"limits": [
+0.0,
+null
+],
+"qualifier": "requivratio",
+"uniqueid": "uJybEmBuCxlACtAysSZEtpidmZnxkz",
+"value": 0.62
+},
+{
+"Class": "FloatParameter",
+"component": "binary",
+"context": "component",
+"copy_for": false,
+"default_unit": "",
+"description": "sum of fractional equivalent radii of children stars",
+"kind": "orbit",
+"latexfmt": "(R_\\mathrm{{ equiv, {children0} }} + R_\\mathrm{{ equiv, {children1} }}) / a_\\mathrm{{ {component} }}",
+"limits": [
+0.0,
+null
+],
+"qualifier": "requivsumfrac",
+"uniqueid": "ZONBSxlCTloVyZcKuUBilFMKiySedJ",
+"value": 0.31883376116533424
 },
 {
 "Class": "FloatParameter",
@@ -1194,7 +1245,7 @@ null,
 null
 ],
 "qualifier": "sma",
-"uniqueid": "HylzExKFoDYMWlAbXuWEuzsapRYjdv",
+"uniqueid": "pzlwDUsmXZbPFcjTbLSLhcIOuOCGxy",
 "value": 3.3277088085498376
 },
 {
@@ -1212,7 +1263,7 @@ null,
 null
 ],
 "qualifier": "asini",
-"uniqueid": "XmdmifeQnHSjCFPmPuwnewPIQwIxQv",
+"uniqueid": "uCMvCNDQwnZOwomRjLPaJQAoFePwaH",
 "value": 3.3276773840722544
 },
 {
@@ -1230,7 +1281,7 @@ null,
 null
 ],
 "qualifier": "sma",
-"uniqueid": "fXgrUaXYWcZBhisnvPwYVVIeEMRmea",
+"uniqueid": "HUhunekqAExycXnSDIQytsnezxGeMT",
 "value": 4.293817817483661
 },
 {
@@ -1248,7 +1299,7 @@ null,
 null
 ],
 "qualifier": "asini",
-"uniqueid": "gDInxuEGCdFkjqZwCTtZbyzyGMDvFG",
+"uniqueid": "yXxEOAwJTOBvWOAOYmcUbFdEKkljXI",
 "value": 4.293777269770651
 },
 {
@@ -1387,7 +1438,7 @@ null
 "required_shape": [
 null
 ],
-"uniqueid": "KXUQXVYlILQJaOQuBgEDwbzphPiKIe",
+"uniqueid": "cIureDZlBiMlPabLMxZuNoUrAeagxN",
 "value": []
 },
 {
@@ -1590,55 +1641,84 @@ null
 {
 "Class": "ChoiceParameter",
 "choices": [
-"TESS:T",
-"Gaia:G",
-"SDSS:uprime",
-"LSST:u",
-"PanStarrs:w",
-"KELT:R",
-"SWASP:pre2004",
-"Stromgren:y",
-"PanStarrs:y",
-"Tycho:B",
-"SDSS:z",
-"SDSS:gprime",
-"Cousins:R",
-"SDSS:iprime",
-"SDSS:zprime",
-"LSST:y3",
-"Johnson:B",
-"Gaia:RVS",
-"Johnson:I",
-"Cousins:I",
-"Johnson:V",
-"PanStarrs:i",
-"Bolometric:900-40000",
-"Stromgren:u",
-"SDSS:g",
 "SDSS:i",
-"Stromgren:v",
-"LSST:z",
-"SDSS:r",
-"Tycho:V",
+"CoRoT:sis",
 "Stromgren:b",
+"CoRoT:exo",
+"Johnson:J",
+"TESS:T",
+"Ultracam:rs",
+"GoChile:L",
+"Gaia:RP",
+"SDSS:r",
 "LSST:r",
-"PanStarrs:g",
+"Gaia:BP",
+"GoChile:B",
+"Walraven:W",
+"ZTF:r_filter",
+"Johnson:V",
+"Pan-Starrs:g",
+"SuperWASP:post2004",
+"SDSS:u",
+"ATLAS:orange",
+"Walraven:L",
+"Johnson:I",
+"SDSS:gprime",
+"SDSS:iprime",
+"SDSS:rprime",
+"Walraven:B",
+"Pan-Starrs:i",
+"Gaia:RVS",
+"Kepler:mean",
+"LSST:z",
+"LSST:u",
+"Ultracam:zs",
+"Johnson:K",
+"Pan-Starrs:z",
+"Bolometric:900-40000",
+"Pan-Starrs:r",
+"Gaia:G",
+"ZTF:i",
+"Cousins:I",
+"SDSS:zprime",
+"SuperWASP:pre2004",
+"SMEI:white",
+"Pan-Starrs:w",
+"Tycho:V",
+"Johnson:U",
+"Ultracam:is",
+"Stromgren:v",
+"WISE:W1",
+"ZTF:i_filter",
+"BRITE:red",
+"LSST:y",
+"Pan-Starrs:open",
+"ZTF:g",
+"SDSS:uprime",
+"GoChile:G",
+"SDSS:z",
+"Ultracam:gs",
+"Stromgren:y",
+"LSST:i",
+"GoChile:R",
+"Johnson:B",
+"ZTF:g_filter",
+"ATLAS:cyan",
+"Walraven:U",
+"Johnson:H",
+"LSST:g",
 "Johnson:R",
 "BRITE:blue",
-"SDSS:rprime",
-"PanStarrs:z",
+"Cousins:R",
+"Walraven:V",
+"KELT:R",
+"SDSS:g",
 "Hipparcos:Hp",
-"PanStarrs:open",
-"LSST:g",
-"PanStarrs:r",
-"Gaia:BP",
-"LSST:i",
-"Kepler:mean",
-"BRITE:red",
-"Gaia:RP",
-"Johnson:U",
-"SDSS:u",
-"SWASP:default"
+"Stromgren:u",
+"Pan-Starrs:y",
+"Tycho:B",
+"Ultracam:us",
+"ZTF:r"
 ],
 "context": "dataset",
 "copy_for": false,
@@ -3449,8 +3529,72 @@ null
 },
 {
 "Class": "ConstraintParameter",
+"component": "binary",
+"constraint_addl_vars": [],
+"constraint_func": "teffratio",
+"constraint_kwargs": {
+"orbit": "binary"
+},
+"context": "constraint",
+"default_unit": "",
+"description": "expression that determines the constraint",
+"in_solar_units": true,
+"kind": "orbit",
+"qualifier": "teffratio",
+"uniqueid": "eERQmrEvMzcALfqwWYIFIuENPVivgj",
+"value": "{teff@secondary@component} / {teff@primary@component}"
+},
+{
+"Class": "ConstraintParameter",
+"component": "binary",
+"constraint_addl_vars": [
+"requivratio@binary@orbit@component",
+"requiv@primary@star@component",
+"requiv@secondary@star@component",
+"sma@binary@orbit@component",
+"requivsumfrac@binary@orbit@component"
+],
+"constraint_func": "requivratio",
+"constraint_kwargs": {
+"orbit": "binary"
+},
+"context": "constraint",
+"default_unit": "",
+"description": "expression that determines the constraint",
+"in_solar_units": true,
+"kind": "orbit",
+"qualifier": "requivratio",
+"uniqueid": "jBrZratLSTIzQAITIxtxfjirGxIoqZ",
+"value": "{requiv@secondary@component} / {requiv@primary@component}"
+},
+{
+"Class": "ConstraintParameter",
+"component": "binary",
+"constraint_addl_vars": [
+"requivratio@binary@orbit@component",
+"requivsumfrac@binary@orbit@component",
+"requiv@primary@star@component",
+"requiv@secondary@star@component",
+"sma@binary@orbit@component"
+],
+"constraint_func": "requivsumfrac",
+"constraint_kwargs": {
+"orbit": "binary"
+},
+"context": "constraint",
+"default_unit": "",
+"description": "expression that determines the constraint",
+"in_solar_units": true,
+"kind": "orbit",
+"qualifier": "requivsumfrac",
+"uniqueid": "nKNnazkfvVVSLmPJAeApDEXxDUTjut",
+"value": "({requiv@primary@component} + {requiv@secondary@component}) / {sma@binary@component}"
+},
+{
+"Class": "ConstraintParameter",
 "component": "primary",
 "constraint_addl_vars": [
+"mass@primary@star@component",
 "mass@secondary@star@component",
 "period@binary@orbit@component",
 "sma@binary@orbit@component",
@@ -3575,6 +3719,7 @@ null
 "Class": "ConstraintParameter",
 "component": "secondary",
 "constraint_addl_vars": [
+"mass@secondary@star@component",
 "mass@primary@star@component",
 "period@binary@orbit@component",
 "sma@binary@orbit@component",
@@ -3875,7 +4020,7 @@ null
 "Class": "ChoiceParameter",
 "choices": [
 "none",
-"clusty"
+"terra"
 ],
 "compute": "phoebe01",
 "context": "compute",
@@ -3917,6 +4062,51 @@ null
 "value": true
 },
 {
+"Class": "BoolParameter",
+"compute": "phoebe01",
+"context": "compute",
+"copy_for": {
+"dataset": "*",
+"kind": [
+"lc",
+"rv",
+"lp"
+]
+},
+"dataset": "_default",
+"description": "Whether to apply the mask in gp_exclude_phases during gaussian process fitting.",
+"kind": "phoebe",
+"qualifier": "gp_exclude_phases_enabled",
+"uniqueid": "ouigylpXRiEPeLBPymQXordqEmRkHE",
+"value": true,
+"visible_if": "ds_has_enabled_feature:gp_*"
+},
+{
+"Class": "FloatArrayParameter",
+"compute": "phoebe01",
+"context": "compute",
+"copy_for": {
+"dataset": "*",
+"kind": [
+"lc",
+"rv",
+"lp"
+]
+},
+"dataset": "_default",
+"default_unit": "",
+"description": "List of phase-tuples.  Any observations inside the range set by any of the tuples will be ignored by the gaussian process features.",
+"kind": "phoebe",
+"qualifier": "gp_exclude_phases",
+"required_shape": [
+null,
+2
+],
+"uniqueid": "eDCWQdoKJWquaAXyIpBDbMNemqBREO",
+"value": [],
+"visible_if": "ds_has_enabled_feature:gp_*,gp_exclude_phases_enabled:True"
+},
+{
 "Class": "ChoiceParameter",
 "choices": [
 "keplerian"
@@ -3951,7 +4141,7 @@ null
 "compute": "phoebe01",
 "context": "compute",
 "copy_for": false,
-"description": "Which method to use to handle all irradiation effects (reflection, redistribution)",
+"description": "Which method to use to handle all irradiation effects (reflection)",
 "kind": "phoebe",
 "qualifier": "irrad_method",
 "uniqueid": "XqLGeaSFHpOUjspMXiaUQFRzxkQBjd",
@@ -4076,11 +4266,11 @@ null
 {
 "Class": "ChoiceParameter",
 "choices": [
-"phoenix",
-"ck2004",
 "extern_planckint",
-"blackbody",
-"extern_atmx"
+"ck2004",
+"extern_atmx",
+"phoenix",
+"blackbody"
 ],
 "component": "_default",
 "compute": "phoebe01",
@@ -4184,18 +4374,6 @@ null
 "uniqueid": "HWRdSgMHJlwAdrbELjeyNdWwtfdVSg",
 "value": false,
 "visible_if": "rv_method:flux-weighted"
-},
-{
-"Class": "BoolParameter",
-"compute": "phoebe01",
-"context": "compute",
-"copy_for": false,
-"dataset": "rv01",
-"description": "Whether to create synthetics in compute/solver run",
-"kind": "phoebe",
-"qualifier": "enabled",
-"uniqueid": "DnwtnbbKapKdWEhwfXKLVkkamQeuoJ",
-"value": true
 },
 {
 "Class": "ChoiceParameter",
@@ -4304,11 +4482,11 @@ null
 {
 "Class": "ChoiceParameter",
 "choices": [
-"phoenix",
-"ck2004",
 "extern_planckint",
-"blackbody",
-"extern_atmx"
+"ck2004",
+"extern_atmx",
+"phoenix",
+"blackbody"
 ],
 "component": "primary",
 "compute": "phoebe01",
@@ -4323,11 +4501,11 @@ null
 {
 "Class": "ChoiceParameter",
 "choices": [
-"phoenix",
-"ck2004",
 "extern_planckint",
-"blackbody",
-"extern_atmx"
+"ck2004",
+"extern_atmx",
+"phoenix",
+"blackbody"
 ],
 "component": "secondary",
 "compute": "phoebe01",
@@ -4338,6 +4516,49 @@ null
 "qualifier": "atm",
 "uniqueid": "tiwViauzZbqGErqTyNGYGwPlgMYSVw",
 "value": "ck2004"
+},
+{
+"Class": "BoolParameter",
+"compute": "phoebe01",
+"context": "compute",
+"copy_for": false,
+"dataset": "rv01",
+"description": "Whether to create synthetics in compute/solver run",
+"kind": "phoebe",
+"qualifier": "enabled",
+"uniqueid": "DnwtnbbKapKdWEhwfXKLVkkamQeuoJ",
+"value": true
+},
+{
+"Class": "BoolParameter",
+"compute": "phoebe01",
+"context": "compute",
+"copy_for": false,
+"dataset": "rv01",
+"description": "Whether to apply the mask in gp_exclude_phases during gaussian process fitting.",
+"kind": "phoebe",
+"qualifier": "gp_exclude_phases_enabled",
+"uniqueid": "uZsSTcGmIgrlSJYHEBSegEcjoxbVUT",
+"value": true,
+"visible_if": "ds_has_enabled_feature:gp_*"
+},
+{
+"Class": "FloatArrayParameter",
+"compute": "phoebe01",
+"context": "compute",
+"copy_for": false,
+"dataset": "rv01",
+"default_unit": "",
+"description": "List of phase-tuples.  Any observations inside the range set by any of the tuples will be ignored by the gaussian process features.",
+"kind": "phoebe",
+"qualifier": "gp_exclude_phases",
+"required_shape": [
+null,
+2
+],
+"uniqueid": "LlMIaiPQHyglQGiRcnLnSywoGcYrVe",
+"value": [],
+"visible_if": "ds_has_enabled_feature:gp_*,gp_exclude_phases_enabled:True"
 },
 {
 "Class": "ChoiceParameter",
@@ -5300,7 +5521,7 @@ null
 "choices": [
 "none",
 "compute",
-"clusty"
+"terra"
 ],
 "context": "solver",
 "copy_for": false,
@@ -5340,6 +5561,23 @@ null
 "solver": "mcmc_rv1",
 "uniqueid": "qtifMDxmktXypyGzRAPNGGAwxTToAk",
 "value": "None"
+},
+{
+"Class": "IntParameter",
+"advanced": true,
+"context": "solver",
+"copy_for": false,
+"description": "Iteration from which to continue the previous run (supports negative indexing: -1 will continue from the last iteration.  Does not affect failed_samples or acceptance_fractions)",
+"kind": "emcee",
+"limits": [
+null,
+null
+],
+"qualifier": "continue_from_iter",
+"solver": "mcmc_rv1",
+"uniqueid": "ilCQdQpkGIcuhsHgnrDURkDbgdHQpE",
+"value": -1,
+"visible_if": "continue_from:!None"
 },
 {
 "Class": "SelectParameter",
@@ -5395,7 +5633,7 @@ null
 "limits",
 "priors"
 ],
-"visible_if": "contine_from:None,init_from:<notempty>"
+"visible_if": "continue_from:None,init_from:<notempty>"
 },
 {
 "Class": "SelectParameter",
@@ -5427,7 +5665,7 @@ null
 "solver": "mcmc_rv1",
 "uniqueid": "JcSnlAkyloIchLKKTAONzCvBQaTjga",
 "value": "and",
-"visible_if": "priors:<notempty>"
+"visible_if": "priors:<plural>"
 },
 {
 "Class": "IntParameter",
@@ -5481,10 +5719,10 @@ null
 "context": "solver",
 "copy_for": false,
 "default_unit": "",
-"description": "factor of min(autocorr_times) to apply for the default solution thinning (thinning not applied until adopting the solution)",
+"description": "factor of min(autocorr_times) to apply for the default solution thinning (thinning not applied until adopting the solution).  If results in thin < 1, thin=1 will be adopted.",
 "kind": "emcee",
 "limits": [
-0.001,
+0.0,
 1000.0
 ],
 "qualifier": "thin_factor",
@@ -5551,7 +5789,7 @@ null
 "choices": [
 "none",
 "compute",
-"clusty"
+"terra"
 ],
 "context": "solver",
 "copy_for": false,
@@ -5591,6 +5829,23 @@ null
 "solver": "mcmc_rvs",
 "uniqueid": "iCemjxHZqayKglJldmYnZqZTKWpkVT",
 "value": "None"
+},
+{
+"Class": "IntParameter",
+"advanced": true,
+"context": "solver",
+"copy_for": false,
+"description": "Iteration from which to continue the previous run (supports negative indexing: -1 will continue from the last iteration.  Does not affect failed_samples or acceptance_fractions)",
+"kind": "emcee",
+"limits": [
+null,
+null
+],
+"qualifier": "continue_from_iter",
+"solver": "mcmc_rvs",
+"uniqueid": "uXQnXqqyJKlSkmvcqeDqLHklKhWtYR",
+"value": -1,
+"visible_if": "continue_from:!None"
 },
 {
 "Class": "SelectParameter",
@@ -5646,7 +5901,7 @@ null
 "limits",
 "priors"
 ],
-"visible_if": "contine_from:None,init_from:<notempty>"
+"visible_if": "continue_from:None,init_from:<notempty>"
 },
 {
 "Class": "SelectParameter",
@@ -5678,7 +5933,7 @@ null
 "solver": "mcmc_rvs",
 "uniqueid": "qVKKvaLGRRwDZUYPLPQWjiYASkYcVO",
 "value": "and",
-"visible_if": "priors:<notempty>"
+"visible_if": "priors:<plural>"
 },
 {
 "Class": "IntParameter",
@@ -5732,10 +5987,10 @@ null
 "context": "solver",
 "copy_for": false,
 "default_unit": "",
-"description": "factor of min(autocorr_times) to apply for the default solution thinning (thinning not applied until adopting the solution)",
+"description": "factor of min(autocorr_times) to apply for the default solution thinning (thinning not applied until adopting the solution).  If results in thin < 1, thin=1 will be adopted.",
 "kind": "emcee",
 "limits": [
-0.001,
+0.0,
 1000.0
 ],
 "qualifier": "thin_factor",
@@ -5785,54 +6040,6 @@ null
 "uniqueid": "uniojbibiulolqeoXHTnfQCSNpJNWC",
 "value": true,
 "visible_if": "continue_from:None"
-},
-{
-"Class": "JobParameter",
-"context": "solution",
-"description": "",
-"job_name": "2021.06.09-21.46.59",
-"qualifier": "detached_job",
-"readonly": true,
-"server": "clusty",
-"solution": "mcmc_rv1_solution",
-"solver": "mcmc_rv1",
-"uniqueid": "CDfVbYJYjkAfrQYCXdkgDFDzknrpNi",
-"value": "loaded"
-},
-{
-"Class": "StringParameter",
-"context": "solution",
-"copy_for": false,
-"description": "User-provided comments for this solution.  Feel free to place any notes here.",
-"qualifier": "comments",
-"solution": "mcmc_rv1_solution",
-"solver": "mcmc_rv1",
-"uniqueid": "wltKzjaqWozBvRINSKZHVfuXzRPkuH",
-"value": ""
-},
-{
-"Class": "JobParameter",
-"context": "solution",
-"description": "",
-"job_name": "2021.06.09-21.49.06",
-"qualifier": "detached_job",
-"readonly": true,
-"server": "clusty",
-"solution": "mcmc_rvs_solution",
-"solver": "mcmc_rvs",
-"uniqueid": "YJbZRAgGADsBXXruRvmJkkmPwZRYib",
-"value": "loaded"
-},
-{
-"Class": "StringParameter",
-"context": "solution",
-"copy_for": false,
-"description": "User-provided comments for this solution.  Feel free to place any notes here.",
-"qualifier": "comments",
-"solution": "mcmc_rvs_solution",
-"solver": "mcmc_rvs",
-"uniqueid": "lenxcXJaellaxTVKqMZoMmlGVhVXSc",
-"value": ""
 },
 {
 "Class": "DictParameter",
@@ -299193,7 +299400,7 @@ null
 "figure": "rvfig01",
 "kind": "rv",
 "qualifier": "xunit",
-"uniqueid": "AtfmAqFPqGvvnINaMLOwGzCcTzRQkI",
+"uniqueid": "KnqszrLMSSiOEsoEhLIyLWNXvEVOrL",
 "value": "d",
 "visible_if": "xunit_source:manual,x:times"
 },
@@ -299206,7 +299413,7 @@ null
 "figure": "rvfig01",
 "kind": "rv",
 "qualifier": "xlim",
-"uniqueid": "GHkGeYUFKkXusovKhKClWtYYDjKwIN",
+"uniqueid": "kIlTTUUzpYAOWHvhAxpasWvySPlnXo",
 "value": [],
 "visible_if": "xlim_source:manual,x:times"
 },
@@ -299218,7 +299425,7 @@ null
 "figure": "rvfig01",
 "kind": "rv",
 "qualifier": "xunit",
-"uniqueid": "JYtmweSpPdarvqpnazRBhUuWJegZXw",
+"uniqueid": "MbYUaDuYnrQqdLBhrXyncZuFjcXMRK",
 "value": "",
 "visible_if": "xunit_source:manual,x:!times"
 },
@@ -299231,7 +299438,7 @@ null
 "figure": "rvfig01",
 "kind": "rv",
 "qualifier": "xlim",
-"uniqueid": "OjYpaDzMUPhSBxGZGXjoeloLjHVIFv",
+"uniqueid": "flRRsLQoBHYwsRwlKedKQSopaDKbDp",
 "value": [],
 "visible_if": "xlim_source:manual,x:!times"
 },
@@ -299760,7 +299967,7 @@ null
 "description": "Name of server saved in crimpl.  Must be available on the local machine.  See docs for more details.",
 "kind": "remoteslurm",
 "qualifier": "crimpl_name",
-"server": "clusty",
+"server": "terra",
 "uniqueid": "tdaieOiJGotTdncDiaLccNizdwcxpw",
 "value": "clusty"
 },
@@ -299771,7 +299978,7 @@ null
 "description": "Whether to use a conda environment on the server.",
 "kind": "remoteslurm",
 "qualifier": "use_conda",
-"server": "clusty",
+"server": "terra",
 "uniqueid": "uRfeTfqyxCrANUJYmOSzVLWxtLMnHd",
 "value": true
 },
@@ -299782,7 +299989,7 @@ null
 "description": "Name of conda environment on remote machine to run jobs.  Will be created if does not exist.",
 "kind": "remoteslurm",
 "qualifier": "conda_env",
-"server": "clusty",
+"server": "terra",
 "uniqueid": "sjCZJWexzFeJIdvvHCLajJwnQyltBR",
 "value": "phoebe-workshop",
 "visible_if": "use_conda:true"
@@ -299795,7 +300002,7 @@ null
 "description": "Whether to clone the conda_env environment per-job.",
 "kind": "remoteslurm",
 "qualifier": "isolate_env",
-"server": "clusty",
+"server": "terra",
 "uniqueid": "NxLSsjiQBvdHhnInbRTZUilgKEvcwz",
 "value": false,
 "visible_if": "use_conda:true"
@@ -299811,7 +300018,7 @@ null,
 null
 ],
 "qualifier": "nprocs",
-"server": "clusty",
+"server": "terra",
 "uniqueid": "YDMYYHmEDdtGvrovFWjcQHtxUaRbvO",
 "value": 48
 },
@@ -299822,7 +300029,7 @@ null
 "description": "Whether to use mpi on the remote machine",
 "kind": "remoteslurm",
 "qualifier": "use_mpi",
-"server": "clusty",
+"server": "terra",
 "uniqueid": "gGEUXXGIzrnRYbSCNJSBLnkHtEOSzv",
 "value": true
 },
@@ -299833,7 +300040,7 @@ null
 "description": "Whether to ensure required dependencies are installed in conda_env on the remote machine (adds some overhead)",
 "kind": "remoteslurm",
 "qualifier": "install_deps",
-"server": "clusty",
+"server": "terra",
 "uniqueid": "EtDupmavSDKNsVihagsAelWOBzhWKv",
 "value": true
 },
@@ -299844,7 +300051,7 @@ null
 "description": "Jobname to use within slurm on the remote machine (optional)",
 "kind": "remoteslurm",
 "qualifier": "slurm_job_name",
-"server": "clusty",
+"server": "terra",
 "uniqueid": "XXgyArWwKlTEgJHUlkJaTGPgkQxBhe",
 "value": ""
 },
@@ -299860,7 +300067,7 @@ null
 null
 ],
 "qualifier": "walltime",
-"server": "clusty",
+"server": "terra",
 "uniqueid": "CstFmjXsdDpKKeNDABDvNcAcIfriSS",
 "value": 48.0
 },
@@ -299871,7 +300078,7 @@ null
 "description": "Email to have slurm notify about events matching mail_type",
 "kind": "remoteslurm",
 "qualifier": "mail_user",
-"server": "clusty",
+"server": "terra",
 "uniqueid": "xznbhqiZCYwkXItbYdgQMBmFoQnSWd",
 "value": ""
 },
@@ -299889,13 +300096,24 @@ null
 "description": "Scenarios in which to request slurm to notify mail_user by email",
 "kind": "remoteslurm",
 "qualifier": "mail_type",
-"server": "clusty",
+"server": "terra",
 "uniqueid": "FKSTiZwCzFZVVLChAgMrxmgivycKQP",
 "value": [
 "END",
 "FAIL"
 ],
 "visible_if": "mail_user:<notempty>"
+},
+{
+"Class": "DictParameter",
+"context": "server",
+"copy_for": false,
+"description": "List of addition slurm arguments.  Keys with single characters will be passed to slurm as \"#SBATCH -<key> <value>\".  Keys with multiple characters will be passed to slurm as \"#SBATCH --<key>=<value>\"",
+"kind": "remoteslurm",
+"qualifier": "addl_slurm_kwargs",
+"server": "terra",
+"uniqueid": "ERLjXNUpGWqAHBYAaiVruDdOuLNveT",
+"value": {}
 },
 {
 "Class": "StringParameter",
@@ -299905,8 +300123,8 @@ null
 "description": "Version of PHOEBE",
 "qualifier": "phoebe_version",
 "readonly": true,
-"uniqueid": "NOTcySLCKuZuQnwtVSuuXPUkElmpVG",
-"value": "2.4.0.dev1"
+"uniqueid": "cYTxjlgZGQYebHnHIzCECirtPzQCKv",
+"value": "2.4.20"
 },
 {
 "Class": "DictParameter",
@@ -299991,7 +300209,7 @@ null
 {
 "Class": "SelectParameter",
 "choices": [
-"clusty"
+"terra"
 ],
 "context": "setting",
 "copy_for": false,
