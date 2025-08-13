@@ -5,8 +5,6 @@
 # 
 # In this tutorial we'll look at several examples of how the choice of parameters to sample with MCMC can affect the resulting posteriors. This task depends heavily on the available data, so we'll only cover some scenarios here.
 
-# ### The joys of Phoebe
-# 
 # Unlike many other EB modeling codes, which have a fixed set of available parameters, Phoebe offers a wide parameter space to play with, in which (as we have seen in week 1) related parameters are linked through constraints. Constraints can be flipped in any direction to allow for setting (and consequently, fitting) different parameters, while constraining others. Let's remind ourselves of some of the constraints we've used often throughout the tutorials so far:
 # - q = mass@secondary/mass@primary
 # - asini@binary = sma@binary * sin(incl@binary)
@@ -19,6 +17,20 @@
 # 
 # Now let's see how flipping these constraints can help us achieve more robust MCMC posteriors.
 # In this tutorial, we'll be using a Phoebe bundle in which all parameters are set to their *true values*. This will help us **only explore the effect of different parametrization**. 
+
+# In[ ]:
+
+
+get_ipython().system('mkdir -p ./data/synthetic')
+
+get_ipython().system('wget -P ./data/synthetic https://github.com/phoebe-project/phoebe2-workshop/raw/2025aug/data/synthetic/lc.data')
+get_ipython().system('wget -P ./data/synthetic https://github.com/phoebe-project/phoebe2-workshop/raw/2025aug/data/synthetic/rv1.data')
+get_ipython().system('wget -P ./data/synthetic https://github.com/phoebe-project/phoebe2-workshop/raw/2025aug/data/synthetic/rv2.data')
+get_ipython().system('wget -P ./data/synthetic https://github.com/phoebe-project/phoebe2-workshop/raw/2025aug/data/synthetic/true.bundle')
+get_ipython().system('wget -P ./data/synthetic https://github.com/phoebe-project/phoebe2-workshop/raw/2025aug/data/synthetic/true_mcmc_physical.bundle')
+get_ipython().system('wget -P ./data/synthetic https://github.com/phoebe-project/phoebe2-workshop/raw/2025aug/data/synthetic/true_mcmc_sum_ratios.bundle')
+get_ipython().system('wget -P ./data/synthetic https://github.com/phoebe-project/phoebe2-workshop/raw/2025aug/data/synthetic/true_mcmc_rvs.bundle')
+
 
 # In[1]:
 
@@ -42,7 +54,7 @@ rv2 = np.loadtxt('data/synthetic/rv2.data')
 # Let's load the bundle that has all parameters set to their true values. This bundle has no datasets attached to it, so we'll have to add them here, depending on the case we're considering. We'll also set the pblum_mode to dataset-scaled to avoid effects of marginalization over pblum in the light curve.
 # 
 # You can download the bundle here:
-# [true.bundle](https://github.com/phoebe-project/phoebe2-workshop/raw/2021june/data/synthetic/true.bundle)
+# [true.bundle](https://github.com/phoebe-project/phoebe2-workshop/raw/2025aug/data/synthetic/true.bundle)
 
 # In[3]:
 
@@ -79,9 +91,9 @@ b.add_distribution({
 # In[5]:
 
 
-# b.add_server('remoteslurm', crimpl_name='clusty', nprocs=48, walltime=48,
+# b.add_server('remoteslurm', crimpl_name='terra', nprocs=48, walltime=48,
 #              use_conda=True, conda_env='phoebe-workshop',
-#              server='clusty')
+#              server='terra')
 
 
 # In[6]:
@@ -95,7 +107,7 @@ b.add_distribution({
 # In[7]:
 
 
-# b.run_solver('mcmc_physical', use_server='clusty', solution='mcmc_physical_solution', detach=True)
+# b.run_solver('mcmc_physical', use_server='terra', solution='mcmc_physical_solution', detach=True)
 
 
 # In[8]:
@@ -108,7 +120,7 @@ b.add_distribution({
 # ______________________________________________________
 # Let's load the bundle with the solution after 1000 solutions and see how it performed. Keep in mind that all parameters are set to their *true* values and we initialized the MCMC sample *around the true values* of the sampled parameters.
 # 
-# Download bundle: [true_mcmc_physical.bundle](https://github.com/phoebe-project/phoebe2-workshop/raw/2021june/data/synthetic/true_mcmc_physical.bundle)
+# Download bundle: [true_mcmc_physical.bundle](https://github.com/phoebe-project/phoebe2-workshop/raw/2025aug/data/synthetic/true_mcmc_physical.bundle)
 
 # In[9]:
 
@@ -143,10 +155,6 @@ b.set_value('pblum_mode', 'dataset-scaled')
 b.flip_constraint('q', solve_for='mass@secondary')
 b.flip_constraint('sma@binary', solve_for='mass@primary') # optional since lc also doesn't constrain sma
 
-b.add_constraint('requivsumfrac')
-b.add_constraint('requivratio')
-b.add_constraint('teffratio')
-
 b.flip_constraint('requivsumfrac', solve_for='requiv@primary@component')
 b.flip_constraint('requivratio', solve_for='requiv@secondary@component')
 b.flip_constraint('teffratio', solve_for='teff@secondary@component')
@@ -168,9 +176,9 @@ b.add_distribution({
 # In[14]:
 
 
-# b.add_server('remoteslurm', crimpl_name='clusty', nprocs=48, walltime=48,
+# b.add_server('remoteslurm', crimpl_name='terra', nprocs=48, walltime=48,
 #              use_conda=True, conda_env='phoebe-workshop',
-#              server='clusty')
+#              server='terra')
 
 
 # In[15]:
@@ -184,7 +192,7 @@ b.add_distribution({
 # In[16]:
 
 
-# b.run_solver('mcmc_sum_ratios', use_server='clusty', solution='mcmc_sum_ratios_solution', detach=True)
+# b.run_solver('mcmc_sum_ratios', use_server='terra', solution='mcmc_sum_ratios_solution', detach=True)
 
 
 # In[17]:
@@ -196,7 +204,7 @@ b.add_distribution({
 
 # ______________________________________________________
 
-# Download the bundle with solution: [true_mcmc_sum_ratios.bundle](https://github.com/phoebe-project/phoebe2-workshop/raw/2021june/data/synthetic/true_mcmc_sum_ratios.bundle)
+# Download the bundle with solution: [true_mcmc_sum_ratios.bundle](https://github.com/phoebe-project/phoebe2-workshop/raw/2025aug/data/synthetic/true_mcmc_sum_ratios.bundle)
 
 # In[18]:
 
@@ -247,9 +255,9 @@ b.add_distribution(
 # In[23]:
 
 
-# b.add_server('remoteslurm', crimpl_name='clusty', nprocs=48, walltime=48,
+# b.add_server('remoteslurm', crimpl_name='terra', nprocs=48, walltime=48,
 #              use_conda=True, conda_env='phoebe-workshop',
-#              server='clusty')
+#              server='terra')
 
 
 # In[24]:
@@ -263,7 +271,7 @@ b.add_distribution(
 # In[25]:
 
 
-# b.run_solver('mcmc_rv1', use_server='clusty', solution='mcmc_rv1_solution', detach=True)
+# b.run_solver('mcmc_rv1', use_server='terra', solution='mcmc_rv1_solution', detach=True)
 
 
 # ### Case 3: Both RVs
@@ -291,7 +299,7 @@ b.plot(x='phase', show=True)
 # In[28]:
 
 
-# b.run_solver('mcmc_rvs', use_server='clusty', solution='mcmc_rvs_solution', detach=True)
+# b.run_solver('mcmc_rvs', use_server='terra', solution='mcmc_rvs_solution', detach=True)
 
 
 # In[29]:
@@ -309,7 +317,7 @@ b.plot(x='phase', show=True)
 # b.save('data/synthetic/true_mcmc_rvs.bundle')
 
 
-# Download the bundle with RV solutions: [true_mcmc_rvs.bundle](https://github.com/phoebe-project/phoebe2-workshop/raw/2021june/data/synthetic/true_mcmc_rvs.bundle)
+# Download the bundle with RV solutions: [true_mcmc_rvs.bundle](https://github.com/phoebe-project/phoebe2-workshop/raw/2025aug/data/synthetic/true_mcmc_rvs.bundle)
 
 # In[31]:
 
