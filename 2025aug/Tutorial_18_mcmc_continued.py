@@ -21,7 +21,7 @@ import phoebe
 import matplotlib.pyplot as plt
 
 
-# Load the [data from the previous run](https://github.com/phoebe-project/phoebe2-workshop/raw/2025aug/data/synthetic/after_initial_sampling.bundle):
+# Load the [bundle from the previous run](https://github.com/phoebe-project/phoebe2-workshop/raw/2025aug/data/synthetic/after_initial_sampling.bundle):
 
 # In[2]:
 
@@ -158,10 +158,20 @@ b['niters@mcmc@solver'] = 25
 
 b.run_solver('mcmc', solution='round_2')
 
+b.save('./data/synthetic/after_more_sampling.bundle')
+
+
+# Load the [bundle from the previous run](https://github.com/phoebe-project/phoebe2-workshop/raw/2025aug/data/synthetic/after_more_sampling.bundle):
+
+# In[15]:
+
+
+b = phoebe.load('./data/synthetic/after_more_sampling.bundle')
+
 
 # We can now compare the results from the first sample (`round_1`) and from the second sample (`round_2`):
 
-# In[15]:
+# In[16]:
 
 
 b.plot(solution='round_1', style='lnprobability', show=True)
@@ -172,7 +182,7 @@ b.plot(solution='round_2', style='lnprobability', show=True)
 # 
 # How does phoebe estimate the value of `burnin`? It looks at the autocorrelation times, which emcee returns for each parameter. It then pick the longest autocorrelation time and multiplies it by the `burnin_factor`. Thus:
 
-# In[16]:
+# In[17]:
 
 
 print('burnin iterations for round 1: %d' % 
@@ -187,7 +197,7 @@ print('the burnin factor is: %d' %
 
 # If we were to offload this computation to the HPC, it would make sense to increase the number of walkers from the current 16 to, say, 24 or 48, so that the sampler can traverse the parameter space more efficiently. The parameter `nwalkers` is in the solver parameter set:
 
-# In[17]:
+# In[18]:
 
 
 print(b['mcmc@solver'])
@@ -195,7 +205,7 @@ print(b['mcmc@solver'])
 
 # Wait, it disappeared? No, it hasn't disappeared, it is hidden because we have `continue_from` set to the previous run, from which any new run will inherit all sampling parameters. Thus, we first need to set `continue_from` to none:
 
-# In[18]:
+# In[19]:
 
 
 b['continue_from@mcmc@solver'] = 'None'
@@ -204,7 +214,7 @@ print(b['mcmc@solver'])
 
 # There it is! Now we can change it!
 
-# In[19]:
+# In[20]:
 
 
 b['nwalkers@mcmc@solver'] = 24
@@ -212,7 +222,7 @@ b['nwalkers@mcmc@solver'] = 24
 
 # But now how do we continue from the previous run? We cannot continue as before because we have changed the sampler properties (specifically, the number of walkers); instead, we need to *resample* from the last run. We do that by using the `init_from` parameter. In order to have something to initialize from, we first need to adopt parameters from the last run. We will call the distributions "ndg_2":
 
-# In[20]:
+# In[21]:
 
 
 b.adopt_solution(solution='round_2',
@@ -224,7 +234,7 @@ b.adopt_solution(solution='round_2',
 
 # Now we have a new distribution:
 
-# In[21]:
+# In[22]:
 
 
 b.distributions
@@ -232,7 +242,7 @@ b.distributions
 
 # We can use this new distribution to set the `init_from` parameter. The sampler will then use `ndg_2` to get a new sample for all initial values and continue from there.
 
-# In[22]:
+# In[23]:
 
 
 b['init_from@mcmc@solver'] = 'ndg_2'
@@ -240,7 +250,7 @@ b['init_from@mcmc@solver'] = 'ndg_2'
 
 # We're now ready to run the sampler! Below is the code to do this on a cluster. For now, however, we will load the precomputed results so that we can continue through the tutorial, but we'll talk about the setup to make sure you're comfortable:
 
-# In[23]:
+# In[24]:
 
 
 #b.add_server(
@@ -254,43 +264,45 @@ b['init_from@mcmc@solver'] = 'ndg_2'
 #)
 
 
-# In[24]:
+# In[25]:
 
 
 #b.run_solver('mcmc', solution='round_3', use_server='terra', nprocs=24, progress_every_niters=20, niters=500, detach=True)
 
 
-# In[25]:
-
-
-#b.save('./data/synthetic/after_terra.bundle')
-
-
 # In[26]:
 
 
-#b.get_job_status(solution='round_3')
+#b.save('./data/synthetic/after_terra.bundle')
 
 
 # In[27]:
 
 
-#b.load_job_progress(solution='round_3')
+#b.get_job_status(solution='round_3')
 
 
 # In[28]:
 
 
-#print(b.get_solution('round_3'))
+#b.load_job_progress(solution='round_3')
 
 
 # In[29]:
 
 
-#b.save('./data/synthetic/after_terra.bundle')
+#print(b.get_solution('round_3'))
 
 
 # In[30]:
+
+
+#b.save('./data/synthetic/after_terra.bundle')
+
+
+# Load the [bundle from the terra run](https://github.com/phoebe-project/phoebe2-workshop/raw/2025aug/data/synthetic/after_terra.bundle):
+
+# In[31]:
 
 
 b = phoebe.load('./data/synthetic/after_terra.bundle')
@@ -300,7 +312,7 @@ b = phoebe.load('./data/synthetic/after_terra.bundle')
 
 # Log-probability plot:
 
-# In[31]:
+# In[32]:
 
 
 b.plot(solution='round_3', style='lnprobability', show=True)
@@ -308,13 +320,13 @@ b.plot(solution='round_3', style='lnprobability', show=True)
 
 # Imagine that one or a few of our walkers landed in a local minimum and have a log probability well below the rest of the walkers. We can specify a log probability cutoff so that these walkers don't affect our resulting distributions. Warning: Do not abuse this - if many walkers are getting stuck, it is likely due to your parameterization. Consider how your parameterize your system (i.e. esinw and ecosw instead of e and w).
 
-# In[32]:
+# In[33]:
 
 
 b['lnprob_cutoff@round_3'] = - 2800
 
 
-# In[33]:
+# In[34]:
 
 
 b.plot(solution='round_3', style='lnprobability', show=True)
@@ -322,19 +334,19 @@ b.plot(solution='round_3', style='lnprobability', show=True)
 
 # Corner plot:
 
-# In[34]:
+# In[35]:
 
 
 b.plot(solution='round_3', style='corner', show=True)
 
 
-# In[35]:
+# In[36]:
 
 
 print(b['burnin@round_3'])
 
 
-# In[36]:
+# In[37]:
 
 
 b.plot(solution='round_3', style='corner', burnin=420, show=True)
@@ -342,7 +354,7 @@ b.plot(solution='round_3', style='corner', burnin=420, show=True)
 
 # And finally the trace plot:
 
-# In[37]:
+# In[38]:
 
 
 b.plot(solution='round_3', style='trace', burnin=400, show=True)
