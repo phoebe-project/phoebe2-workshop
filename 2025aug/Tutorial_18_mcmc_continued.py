@@ -21,7 +21,7 @@ import phoebe
 import matplotlib.pyplot as plt
 
 
-# Load the [data from the previous run](https://github.com/phoebe-project/phoebe2-workshop/raw/2021june/data/synthetic/after_initial_sampling.bundle):
+# Load the [data from the previous run](https://github.com/phoebe-project/phoebe2-workshop/raw/2025aug/data/synthetic/after_initial_sampling.bundle):
 
 # In[2]:
 
@@ -80,12 +80,18 @@ print(b['round_1'].qualifiers)
 # In[4]:
 
 
-print(b['distributions_convert'])
+print(b['acceptance_fractions'])
 
 
 # As we ran the sampler, some combinations of parameters resulted in 0 likelihood. We refer to those as failed samples and, as seen above, they are stored as part of the solution. We can easily plot those in a corner plot:
 
 # In[5]:
+
+
+get_ipython().run_line_magic('matplotlib', 'inline')
+
+
+# In[6]:
 
 
 b.plot(solution='round_1', style='failed', burnin=50, show=True)
@@ -95,7 +101,7 @@ b.plot(solution='round_1', style='failed', burnin=50, show=True)
 
 # We can now compute the average RV curve from, say, 25 samples drawn from the round 1 solution:
 
-# In[6]:
+# In[7]:
 
 
 b.run_compute(compute='dyn_rv', sample_from='round_1', sample_num=25, model='from_posteriors')
@@ -103,27 +109,21 @@ b.run_compute(compute='dyn_rv', sample_from='round_1', sample_num=25, model='fro
 
 # Once computed, let's plot all 25 samples in the phase plot:
 
-# In[7]:
+# In[8]:
 
 
-b.plot(model='from_posteriors', x='phase', show=True)
+b.plot(model='from_posteriors', x='phase', s=0.005, m="o", show=True)
 
 
 # Happy with this? We can *inspect* the solution by running the `adopt_solution()` method with the `trial_run` argument set to `True`:
 
-# In[8]:
+# In[9]:
 
 
 print(b.adopt_solution(solution='round_1', trial_run=True))
 
 
-# Before we adopt, though, let's have another (quick) coffee break -- let's continue sampling for another 25 iterations. The solvers and solutions that we have so far are:
-
-# In[9]:
-
-
-b.solvers
-
+# The solutions that we have so far are:
 
 # In[10]:
 
@@ -131,7 +131,7 @@ b.solvers
 b.solutions
 
 
-# Remember the `continue_from` parameter of the solver? That's what we want to set!
+# Remember the `continue_from` parameter? That's what we want to set so that we can continue fitting starting from end point of this run.
 
 # In[11]:
 
@@ -179,11 +179,13 @@ print('burnin iterations for round 1: %d' %
       (int(max(b['value@autocorr_times@round_1'])*b['value@burnin_factor@mcmc'])))
 print('burnin iterations for round 2: %d' % 
       (int(max(b['value@autocorr_times@round_2'])*b['value@burnin_factor@mcmc'])))
+print('the burnin factor is: %d' % 
+      (b['value@burnin_factor@mcmc']))
 
 
-# The value of log-probability, as well as the fact that it's still rising, hints that the solution has not yet converged, so we'd need to run a longer chain. As running 25 iterations locally took 3 minutes, we would ideally offload this computation to a computer cluster (see the optional breakout session today for details).
+# The value of log-probability, as well as the fact that it's still rising, hints that the solution has not yet converged, so we'd need to run a longer chain. As running 25 iterations locally took 3 minutes, we would ideally offload this computation to a computer cluster.
 
-# If we were to offload this computation to the HPC, it would make sense to increase the number of walkers from the current 16 to, say, 24, so that the sampler can traverse the parameter space more efficiently. The parameter `nwalkers` is in the solver parameter set:
+# If we were to offload this computation to the HPC, it would make sense to increase the number of walkers from the current 16 to, say, 24 or 48, so that the sampler can traverse the parameter space more efficiently. The parameter `nwalkers` is in the solver parameter set:
 
 # In[17]:
 
@@ -208,7 +210,7 @@ print(b['mcmc@solver'])
 b['nwalkers@mcmc@solver'] = 24
 
 
-# But now how do we continue from the previous run? We obviously cannot _literally_ continue because we have changed the sampler properties; instead, we need to *resample* from the last run. We do that by using the `init_from` parameter. In order to have something to initialize from, we first need to adopt parameters from the last run:
+# But now how do we continue from the previous run? We cannot continue as before because we have changed the sampler properties (specifically, the number of walkers); instead, we need to *resample* from the last run. We do that by using the `init_from` parameter. In order to have something to initialize from, we first need to adopt parameters from the last run. We will call the distributions "ndg_2":
 
 # In[20]:
 
@@ -236,16 +238,59 @@ b.distributions
 b['init_from@mcmc@solver'] = 'ndg_2'
 
 
-# We're now ready to run the sampler! As we are not _actually_ submitting this to a cluster, we will load the precomputed results instead.
+# We're now ready to run the sampler! Below is the code to do this on a cluster. For now, however, we will load the precomputed results so that we can continue through the tutorial, but we'll talk about the setup to make sure you're comfortable:
 
 # In[23]:
 
 
-# b.run_solver('mcmc', solution='round_3', nprocs=24, niters=500, overwrite=True)
-# b.save('./data/synthetic/after_terra.bundle')
+#b.add_server(
+#    kind='remoteslurm',
+#    server='terra',
+#    crimpl_name='terra',
+#    conda_env='phoebe_workshop',
+#    nprocs=24,
+#    walltime=2,
+#    overwrite=True
+#)
 
 
 # In[24]:
+
+
+#b.run_solver('mcmc', solution='round_3', use_server='terra', nprocs=24, progress_every_niters=20, niters=500, detach=True)
+
+
+# In[25]:
+
+
+#b.save('./data/synthetic/after_terra.bundle')
+
+
+# In[26]:
+
+
+#b.get_job_status(solution='round_3')
+
+
+# In[27]:
+
+
+#b.load_job_progress(solution='round_3')
+
+
+# In[28]:
+
+
+#print(b.get_solution('round_3'))
+
+
+# In[29]:
+
+
+#b.save('./data/synthetic/after_terra.bundle')
+
+
+# In[30]:
 
 
 b = phoebe.load('./data/synthetic/after_terra.bundle')
@@ -255,7 +300,21 @@ b = phoebe.load('./data/synthetic/after_terra.bundle')
 
 # Log-probability plot:
 
-# In[25]:
+# In[31]:
+
+
+b.plot(solution='round_3', style='lnprobability', show=True)
+
+
+# Imagine that one or a few of our walkers landed in a local minimum and have a log probability well below the rest of the walkers. We can specify a log probability cutoff so that these walkers don't affect our resulting distributions. Warning: Do not abuse this - if many walkers are getting stuck, it is likely due to your parameterization. Consider how your parameterize your system (i.e. esinw and ecosw instead of e and w).
+
+# In[32]:
+
+
+b['lnprob_cutoff@round_3'] = - 2800
+
+
+# In[33]:
 
 
 b.plot(solution='round_3', style='lnprobability', show=True)
@@ -263,25 +322,37 @@ b.plot(solution='round_3', style='lnprobability', show=True)
 
 # Corner plot:
 
-# In[26]:
+# In[34]:
 
 
-b.plot(solution='round_3', style='corner', burnin=400, show=True)
+b.plot(solution='round_3', style='corner', show=True)
+
+
+# In[35]:
+
+
+print(b['burnin@round_3'])
+
+
+# In[36]:
+
+
+b.plot(solution='round_3', style='corner', burnin=420, show=True)
 
 
 # And finally the trace plot:
 
-# In[27]:
+# In[37]:
 
 
-b.plot(solution='round_3', style='trace', show=True)
+b.plot(solution='round_3', style='trace', burnin=400, show=True)
 
 
-# So how do we know when to stop? Is it converged yet? We will explore that in our [next tutorial](./Tutorial_22_convergence.ipynb).
+# So how do we know when to stop? Is it converged yet? We will explore that in our [next tutorial](./Tutorial_19_convergence.ipynb).
 # 
 # # Exercises
 
-# **Exercise 1**: increase the number of walkers to 48 and run 25 iterations. Compare the results from above to the results you obtained. What conclusions can you draw from the comparison?
+# **Exercise 1**: increase the number of walkers to 48 and run an additional 25 iterations. Compare the results from above to the results you obtained. What conclusions can you draw from the comparison? (Hint: you'll need to start from distributions)
 
 # In[ ]:
 
@@ -289,7 +360,7 @@ b.plot(solution='round_3', style='trace', show=True)
 
 
 
-# **Exercise 2**: drop dynamical RVs and use a light curve. Start from the optimized parameter set from the Nelder & Mead run and build a starting distribution around it. Use 5 parameters: inclination, temperature ratio, primary and secondary equivalent radii, and passband luminosity. Don't run any samples yet -- we will defer that to self-study exercises.
+# **Exercise 2**: disable RVs and enable the light curve. Start from the optimized parameter set from the Nelder & Mead run and build a starting distribution around it. Use 5 parameters: inclination, temperature ratio, primary and secondary equivalent radii, and passband luminosity. Don't run any samples yet -- we will defer this to self-study exercises.
 
 # In[ ]:
 
