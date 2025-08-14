@@ -232,7 +232,7 @@ null
 ],
 "qualifier": "logg",
 "uniqueid": "cIHoyUBFzISZLVJmFfBzVLwxXNSWiG",
-"value": 4.3357992726833485
+"value": 4.335799268330961
 },
 {
 "Class": "FloatParameter",
@@ -496,7 +496,7 @@ null
 ],
 "qualifier": "mass",
 "uniqueid": "dunoTLFBeRgXcDdYcvBJgmyPGdlOkR",
-"value": 1.2916650485543941
+"value": 1.2916650356096588
 },
 {
 "Class": "FloatParameter",
@@ -513,7 +513,7 @@ null
 ],
 "qualifier": "requiv",
 "uniqueid": "JNAIYinbSaPHMPfXhyfltkBTjqHqOA",
-"value": 1.3832137479478623
+"value": 1.3832137479478626
 },
 {
 "Class": "FloatParameter",
@@ -530,7 +530,7 @@ null
 ],
 "qualifier": "requiv_max",
 "uniqueid": "bQUKWVPScDDUWrCYayjixSDNsEZKdW",
-"value": 2.76531009145548
+"value": 2.7653100914554787
 },
 {
 "Class": "FloatParameter",
@@ -599,7 +599,7 @@ null
 ],
 "qualifier": "logg",
 "uniqueid": "dzILyKgkHKdjcECioTHCGPljnaDhXP",
-"value": 4.14612023090387
+"value": 4.146120226551482
 },
 {
 "Class": "FloatParameter",
@@ -863,7 +863,7 @@ null
 ],
 "qualifier": "mass",
 "uniqueid": "smfwdcvlWlgYOVbZILAaQQJpIbeFaR",
-"value": 0.976857448285834
+"value": 0.9768574384960196
 },
 {
 "Class": "FloatParameter",
@@ -1279,7 +1279,7 @@ null
 ],
 "qualifier": "requivratio",
 "uniqueid": "HkSmCllXCXfjqDOqaLmQFhjFQeFIvv",
-"value": 1.0818826670433095
+"value": 1.0818826670482098
 },
 {
 "Class": "FloatParameter",
@@ -4046,32 +4046,32 @@ null
 "qualifier": "sigmas",
 "uniqueid": "ChJLXizfOazvRHyTpruepNaPgAXrmB",
 "value": [
--5.755014720705742,
--2.132612354276348,
--0.7407359558865089,
+5.755014720705742,
+2.132612354276348,
+0.7407359558865089,
 7.5071845762828895,
 4.3479909877247245,
--5.435452874212208,
+5.435452874212208,
 3.32110706697815,
 3.6744233387047593,
--5.306828719654191,
--0.5425841195949224,
--9.252019868957381,
+5.306828719654191,
+0.5425841195949224,
+9.252019868957381,
 1.652440319994601,
--1.5784660515138682,
--6.750010513327722,
--3.490854987914464,
+1.5784660515138682,
+6.750010513327722,
+3.490854987914464,
 1.199755991364432,
--2.764747197816111,
+2.764747197816111,
 1.4976340659007916,
 2.763318478020995,
--4.202215062457483,
--1.5613533482932187,
+4.202215062457483,
+1.5613533482932187,
 10.723390445555186,
 0.6055279078916432,
--4.234143759709467,
+4.234143759709467,
 0.30231224501456044,
--6.692944399342615,
+6.692944399342615,
 5.663730379666742,
 1.8515242137362007,
 5.429032020110483,
@@ -4079,114 +4079,114 @@ null
 1.9514822490538104,
 4.877547061142825,
 0.9578682330388903,
--3.3110450589712443,
--5.117574923990151,
--2.240874116721843,
--12.527290660371975,
+3.3110450589712443,
+5.117574923990151,
+2.240874116721843,
+12.527290660371975,
 9.129972285673345,
--8.570337055480165,
--0.38319781998684466,
--6.587836348770187,
--10.127967959172935,
--0.4112268751656516,
--1.5233329242482851,
--0.7986206506069322,
+8.570337055480165,
+0.38319781998684466,
+6.587836348770187,
+10.127967959172935,
+0.4112268751656516,
+1.5233329242482851,
+0.7986206506069322,
 2.7447327991130943,
--3.0918774254383945,
+3.0918774254383945,
 1.8939723285348733,
 2.566257221546665,
--1.6742206272885929,
--1.417597581816554,
+1.6742206272885929,
+1.417597581816554,
 2.6921213139530953,
 0.2862547326055529,
 0.7954424332510978,
--11.87201342033127,
+11.87201342033127,
 0.2925996764033568,
 1.8827295551702052,
--0.6773988215159106,
+0.6773988215159106,
 1.6795419755467986,
 9.521879545901266,
 0.42682216711325127,
 3.3266713896111333,
--4.24997751357533,
--4.261708983442089,
--2.3999255576632548,
--5.098245497379647,
--0.038005692066478296,
--4.669153307084467,
--0.8749842186737998,
--7.185717161153899,
--8.261001456207904,
--3.378308945004152,
--5.3353356189166155,
--3.264655725691394,
--3.0604737508390514,
--1.7563123054638647,
+4.24997751357533,
+4.261708983442089,
+2.3999255576632548,
+5.098245497379647,
+0.038005692066478296,
+4.669153307084467,
+0.8749842186737998,
+7.185717161153899,
+8.261001456207904,
+3.378308945004152,
+5.3353356189166155,
+3.264655725691394,
+3.0604737508390514,
+1.7563123054638647,
 5.227389938192527,
 6.845080122004842,
 3.6267662967852927,
--1.7973722957251503,
+1.7973722957251503,
 7.48475894761243,
--7.655555537962201,
--10.11681969503927,
+7.655555537962201,
+10.11681969503927,
 1.339862882393157,
--0.01103222704830861,
--0.6964594138431295,
+0.01103222704830861,
+0.6964594138431295,
 0.16282734656245693,
--8.202801124024209,
--5.783495852590708,
+8.202801124024209,
+5.783495852590708,
 6.170173406822875,
 5.140924495780719,
--3.6093986305495163,
+3.6093986305495163,
 9.66578483174539,
--5.353981628185868,
--2.856908039416213,
+5.353981628185868,
+2.856908039416213,
 1.4621603366496778,
--5.9749994746244175,
--2.439652720959324,
--0.8653558261273742,
--1.9767320058340418,
+5.9749994746244175,
+2.439652720959324,
+0.8653558261273742,
+1.9767320058340418,
 4.354203823041046,
 2.9640339839056233,
--5.496486545642121,
--3.4076532223201284,
+5.496486545642121,
+3.4076532223201284,
 0.9003334246760651,
--0.3346552199825862,
--3.938747701596503,
+0.3346552199825862,
+3.938747701596503,
 2.1237683613764564,
 4.099425582671917,
--3.155593412925481,
+3.155593412925481,
 3.9452982429115675,
--8.108369014906655,
--8.052496292554816,
+8.108369014906655,
+8.052496292554816,
 2.4996988198502375,
--4.17257603692739,
--4.984798435370889,
--1.316940385252441,
--3.38680245871537,
+4.17257603692739,
+4.984798435370889,
+1.316940385252441,
+3.38680245871537,
 1.635335190093684,
--7.276797224891244,
--1.8575956217790404,
+7.276797224891244,
+1.8575956217790404,
 15.804829847729419,
 0.5497550641037915,
--9.567616091485426,
+9.567616091485426,
 2.9991021472911106,
 2.7469223272958487,
 6.918905174347011,
 0.7417462170074298,
--3.267707220172732,
+3.267707220172732,
 7.044169919812373,
 3.5603061371292655,
--9.003580203929607,
+9.003580203929607,
 3.737994708896339,
--1.164485005243885,
+1.164485005243885,
 5.553226401570624,
--1.866694064682338,
+1.866694064682338,
 3.9307303491164394,
 0.9708434782911411,
 2.9310204886038305,
--0.10193645886039825,
--2.072042987646478,
+0.10193645886039825,
+2.072042987646478,
 0.33656706176010875,
 3.158994618921832,
 2.08796365263132,
@@ -4196,45 +4196,45 @@ null
 10.511146337262844,
 0.3306320841725135,
 2.677791752917849,
--3.0157039607899576,
+3.0157039607899576,
 0.20978814598496665,
 8.209573187359734,
 1.558488533311104,
 7.2558494989075815,
--5.324639400393567,
--7.004227274057806,
+5.324639400393567,
+7.004227274057806,
 1.5376276334863057,
--6.848193363131342,
+6.848193363131342,
 13.35168622399847,
 6.242251490099885,
--6.228632765271752,
--0.8358438717519,
--2.883054651425173,
+6.228632765271752,
+0.8358438717519,
+2.883054651425173,
 2.080108745338813,
--0.2892363132095007,
+0.2892363132095007,
 4.65943678946156,
 7.341660663598246,
--1.1066047136564603,
--5.865778107213919,
+1.1066047136564603,
+5.865778107213919,
 2.813345390646789,
--0.8225752864672777,
+0.8225752864672777,
 5.724276880003044,
--0.7605884340040819,
+0.7605884340040819,
 4.148945229425541,
 1.6803297582492918,
--0.945220257328761,
--2.246643003581622,
+0.945220257328761,
+2.246643003581622,
 3.5676222385056007,
 12.648674371067237,
 4.188078969830106,
--0.6584120162592204,
+0.6584120162592204,
 3.537964330204696,
 0.570269389636794,
--6.4044758897133525,
+6.4044758897133525,
 1.5492313869237564,
 7.74145346981339,
--1.5791402158618448,
--5.62951890348703,
+1.5791402158618448,
+5.62951890348703,
 2.4424833296921014,
 9.154733284923141,
 4.700879963688644,
@@ -4242,9 +4242,9 @@ null
 11.51189144271175,
 8.105464888365528,
 3.56341636739749,
--1.043518145562573,
+1.043518145562573,
 0.6880899565248045,
--0.5167608415033754
+0.5167608415033754
 ],
 "visible_if": "times:<notempty>"
 },
@@ -4260,32 +4260,32 @@ null
 "qualifier": "sigmas",
 "uniqueid": "FoKAolvZvDAaPwaCFzbSHdHdzBYnIv",
 "value": [
--5.755014720705742,
--2.132612354276348,
--0.7407359558865089,
+5.755014720705742,
+2.132612354276348,
+0.7407359558865089,
 7.5071845762828895,
 4.3479909877247245,
--5.435452874212208,
+5.435452874212208,
 3.32110706697815,
 3.6744233387047593,
--5.306828719654191,
--0.5425841195949224,
--9.252019868957381,
+5.306828719654191,
+0.5425841195949224,
+9.252019868957381,
 1.652440319994601,
--1.5784660515138682,
--6.750010513327722,
--3.490854987914464,
+1.5784660515138682,
+6.750010513327722,
+3.490854987914464,
 1.199755991364432,
--2.764747197816111,
+2.764747197816111,
 1.4976340659007916,
 2.763318478020995,
--4.202215062457483,
--1.5613533482932187,
+4.202215062457483,
+1.5613533482932187,
 10.723390445555186,
 0.6055279078916432,
--4.234143759709467,
+4.234143759709467,
 0.30231224501456044,
--6.692944399342615,
+6.692944399342615,
 5.663730379666742,
 1.8515242137362007,
 5.429032020110483,
@@ -4293,114 +4293,114 @@ null
 1.9514822490538104,
 4.877547061142825,
 0.9578682330388903,
--3.3110450589712443,
--5.117574923990151,
--2.240874116721843,
--12.527290660371975,
+3.3110450589712443,
+5.117574923990151,
+2.240874116721843,
+12.527290660371975,
 9.129972285673345,
--8.570337055480165,
--0.38319781998684466,
--6.587836348770187,
--10.127967959172935,
--0.4112268751656516,
--1.5233329242482851,
--0.7986206506069322,
+8.570337055480165,
+0.38319781998684466,
+6.587836348770187,
+10.127967959172935,
+0.4112268751656516,
+1.5233329242482851,
+0.7986206506069322,
 2.7447327991130943,
--3.0918774254383945,
+3.0918774254383945,
 1.8939723285348733,
 2.566257221546665,
--1.6742206272885929,
--1.417597581816554,
+1.6742206272885929,
+1.417597581816554,
 2.6921213139530953,
 0.2862547326055529,
 0.7954424332510978,
--11.87201342033127,
+11.87201342033127,
 0.2925996764033568,
 1.8827295551702052,
--0.6773988215159106,
+0.6773988215159106,
 1.6795419755467986,
 9.521879545901266,
 0.42682216711325127,
 3.3266713896111333,
--4.24997751357533,
--4.261708983442089,
--2.3999255576632548,
--5.098245497379647,
--0.038005692066478296,
--4.669153307084467,
--0.8749842186737998,
--7.185717161153899,
--8.261001456207904,
--3.378308945004152,
--5.3353356189166155,
--3.264655725691394,
--3.0604737508390514,
--1.7563123054638647,
+4.24997751357533,
+4.261708983442089,
+2.3999255576632548,
+5.098245497379647,
+0.038005692066478296,
+4.669153307084467,
+0.8749842186737998,
+7.185717161153899,
+8.261001456207904,
+3.378308945004152,
+5.3353356189166155,
+3.264655725691394,
+3.0604737508390514,
+1.7563123054638647,
 5.227389938192527,
 6.845080122004842,
 3.6267662967852927,
--1.7973722957251503,
+1.7973722957251503,
 7.48475894761243,
--7.655555537962201,
--10.11681969503927,
+7.655555537962201,
+10.11681969503927,
 1.339862882393157,
--0.01103222704830861,
--0.6964594138431295,
+0.01103222704830861,
+0.6964594138431295,
 0.16282734656245693,
--8.202801124024209,
--5.783495852590708,
+8.202801124024209,
+5.783495852590708,
 6.170173406822875,
 5.140924495780719,
--3.6093986305495163,
+3.6093986305495163,
 9.66578483174539,
--5.353981628185868,
--2.856908039416213,
+5.353981628185868,
+2.856908039416213,
 1.4621603366496778,
--5.9749994746244175,
--2.439652720959324,
--0.8653558261273742,
--1.9767320058340418,
+5.9749994746244175,
+2.439652720959324,
+0.8653558261273742,
+1.9767320058340418,
 4.354203823041046,
 2.9640339839056233,
--5.496486545642121,
--3.4076532223201284,
+5.496486545642121,
+3.4076532223201284,
 0.9003334246760651,
--0.3346552199825862,
--3.938747701596503,
+0.3346552199825862,
+3.938747701596503,
 2.1237683613764564,
 4.099425582671917,
--3.155593412925481,
+3.155593412925481,
 3.9452982429115675,
--8.108369014906655,
--8.052496292554816,
+8.108369014906655,
+8.052496292554816,
 2.4996988198502375,
--4.17257603692739,
--4.984798435370889,
--1.316940385252441,
--3.38680245871537,
+4.17257603692739,
+4.984798435370889,
+1.316940385252441,
+3.38680245871537,
 1.635335190093684,
--7.276797224891244,
--1.8575956217790404,
+7.276797224891244,
+1.8575956217790404,
 15.804829847729419,
 0.5497550641037915,
--9.567616091485426,
+9.567616091485426,
 2.9991021472911106,
 2.7469223272958487,
 6.918905174347011,
 0.7417462170074298,
--3.267707220172732,
+3.267707220172732,
 7.044169919812373,
 3.5603061371292655,
--9.003580203929607,
+9.003580203929607,
 3.737994708896339,
--1.164485005243885,
+1.164485005243885,
 5.553226401570624,
--1.866694064682338,
+1.866694064682338,
 3.9307303491164394,
 0.9708434782911411,
 2.9310204886038305,
--0.10193645886039825,
--2.072042987646478,
+0.10193645886039825,
+2.072042987646478,
 0.33656706176010875,
 3.158994618921832,
 2.08796365263132,
@@ -4410,45 +4410,45 @@ null
 10.511146337262844,
 0.3306320841725135,
 2.677791752917849,
--3.0157039607899576,
+3.0157039607899576,
 0.20978814598496665,
 8.209573187359734,
 1.558488533311104,
 7.2558494989075815,
--5.324639400393567,
--7.004227274057806,
+5.324639400393567,
+7.004227274057806,
 1.5376276334863057,
--6.848193363131342,
+6.848193363131342,
 13.35168622399847,
 6.242251490099885,
--6.228632765271752,
--0.8358438717519,
--2.883054651425173,
+6.228632765271752,
+0.8358438717519,
+2.883054651425173,
 2.080108745338813,
--0.2892363132095007,
+0.2892363132095007,
 4.65943678946156,
 7.341660663598246,
--1.1066047136564603,
--5.865778107213919,
+1.1066047136564603,
+5.865778107213919,
 2.813345390646789,
--0.8225752864672777,
+0.8225752864672777,
 5.724276880003044,
--0.7605884340040819,
+0.7605884340040819,
 4.148945229425541,
 1.6803297582492918,
--0.945220257328761,
--2.246643003581622,
+0.945220257328761,
+2.246643003581622,
 3.5676222385056007,
 12.648674371067237,
 4.188078969830106,
--0.6584120162592204,
+0.6584120162592204,
 3.537964330204696,
 0.570269389636794,
--6.4044758897133525,
+6.4044758897133525,
 1.5492313869237564,
 7.74145346981339,
--1.5791402158618448,
--5.62951890348703,
+1.5791402158618448,
+5.62951890348703,
 2.4424833296921014,
 9.154733284923141,
 4.700879963688644,
@@ -4456,9 +4456,9 @@ null
 11.51189144271175,
 8.105464888365528,
 3.56341636739749,
--1.043518145562573,
+1.043518145562573,
 0.6880899565248045,
--0.5167608415033754
+0.5167608415033754
 ],
 "visible_if": "times:<notempty>"
 },
@@ -4955,28 +4955,6 @@ null
 {
 "Class": "ConstraintParameter",
 "component": "primary",
-"constraint_addl_vars": [
-"mass@secondary@star@component",
-"period@binary@orbit@component",
-"sma@binary@orbit@component",
-"q@binary@orbit@component"
-],
-"constraint_func": "mass",
-"constraint_kwargs": {
-"component": "primary"
-},
-"context": "constraint",
-"default_unit": "solMass",
-"description": "expression that determines the constraint",
-"in_solar_units": true,
-"kind": "star",
-"qualifier": "mass",
-"uniqueid": "CzGHJijLQGFDfPuhVdjhqkfERwPeGy",
-"value": "(39.478418 * ({sma@binary@component} ** 3.000000)) / ((({period@binary@component} ** 2.000000) * ({q@binary@component} + 1.000000)) * 2942.206217504419328179210424423218)"
-},
-{
-"Class": "ConstraintParameter",
-"component": "primary",
 "constraint_addl_vars": [],
 "constraint_func": "comp_sma",
 "constraint_kwargs": {
@@ -5075,28 +5053,6 @@ null
 "qualifier": "requiv_max",
 "uniqueid": "WOcuSjxcfihDXFuIqXPkjTwqZEutkq",
 "value": "requiv_L1({q@binary@component}, {syncpar@primary@component}, {ecc@binary@component}, {sma@binary@component}, {incl@primary@component}, {long_an@primary@component}, {incl@binary@component}, {long_an@binary@component}, 1)"
-},
-{
-"Class": "ConstraintParameter",
-"component": "secondary",
-"constraint_addl_vars": [
-"mass@primary@star@component",
-"period@binary@orbit@component",
-"sma@binary@orbit@component",
-"q@binary@orbit@component"
-],
-"constraint_func": "mass",
-"constraint_kwargs": {
-"component": "secondary"
-},
-"context": "constraint",
-"default_unit": "solMass",
-"description": "expression that determines the constraint",
-"in_solar_units": true,
-"kind": "star",
-"qualifier": "mass",
-"uniqueid": "vMAwLioaHWgoebHykfhHgDiYopYkOv",
-"value": "(39.478418 * ({sma@binary@component} ** 3.000000)) / ((({period@binary@component} ** 2.000000) * ((1.000000 / {q@binary@component}) + 1.000000)) * 2942.206217504419328179210424423218)"
 },
 {
 "Class": "ConstraintParameter",
@@ -5238,57 +5194,6 @@ null
 },
 {
 "Class": "ConstraintParameter",
-"component": "binary",
-"constraint_addl_vars": [
-"requivsumfrac@binary@orbit@component",
-"requiv@primary@star@component",
-"requiv@secondary@star@component",
-"sma@binary@orbit@component",
-"requivratio@binary@orbit@component",
-"requivratio@binary@orbit@component",
-"requivratio@binary@orbit@component"
-],
-"constraint_func": "requivsumfrac",
-"constraint_kwargs": {
-"orbit": "binary",
-"requivratio_constrained": false,
-"requivsumfrac_constrained": true
-},
-"context": "constraint",
-"default_unit": "",
-"description": "expression that determines the constraint",
-"in_solar_units": true,
-"kind": "orbit",
-"qualifier": "requivsumfrac",
-"uniqueid": "sHuNXOGnmHFyzlnmAFarwrqWAUDhSV",
-"value": "({requiv@primary@component} + {requiv@secondary@component}) / {sma@binary@component}"
-},
-{
-"Class": "ConstraintParameter",
-"component": "secondary",
-"constraint_addl_vars": [
-"requivratio@binary@orbit@component",
-"requivsumfrac@binary@orbit@component",
-"requiv@primary@star@component",
-"requiv@secondary@star@component",
-"sma@binary@orbit@component"
-],
-"constraint_func": "requivratio",
-"constraint_kwargs": {
-"orbit": "binary",
-"requivsumfrac_constrained": false
-},
-"context": "constraint",
-"default_unit": "solRad",
-"description": "expression that determines the constraint",
-"in_solar_units": true,
-"kind": "star",
-"qualifier": "requiv",
-"uniqueid": "AOYaNzAmPmRMJnpnjklLAsUKAyaLxY",
-"value": "(({requivratio@binary@component} * {requivsumfrac@binary@component}) * {sma@binary@component}) / ({requivratio@binary@component} + 1.000000)"
-},
-{
-"Class": "ConstraintParameter",
 "component": "secondary",
 "constraint_addl_vars": [],
 "constraint_func": "teffratio",
@@ -5303,6 +5208,98 @@ null
 "qualifier": "teff",
 "uniqueid": "biyvevCELjeCALjKjKnXCsGOzyyaBC",
 "value": "{teffratio@binary@component} * {teff@primary@component}"
+},
+{
+"Class": "ConstraintParameter",
+"component": "primary",
+"constraint_addl_vars": [
+"mass@primary@star@component",
+"mass@secondary@star@component",
+"period@binary@orbit@component",
+"sma@binary@orbit@component",
+"q@binary@orbit@component"
+],
+"constraint_func": "mass",
+"constraint_kwargs": {
+"component": "primary"
+},
+"context": "constraint",
+"default_unit": "solMass",
+"description": "expression that determines the constraint",
+"in_solar_units": true,
+"kind": "star",
+"qualifier": "mass",
+"uniqueid": "rUOQNnNclAJQemzlzjtegjMhwYXjCM",
+"value": "(3.94784176043574320e+01 * ({sma@binary@component} ** 3.000000)) / ((({period@binary@component} ** 2.000000) * ({q@binary@component} + 1.000000)) * 2.94220621750441933e+03)"
+},
+{
+"Class": "ConstraintParameter",
+"component": "secondary",
+"constraint_addl_vars": [
+"mass@secondary@star@component",
+"mass@primary@star@component",
+"period@binary@orbit@component",
+"sma@binary@orbit@component",
+"q@binary@orbit@component"
+],
+"constraint_func": "mass",
+"constraint_kwargs": {
+"component": "secondary"
+},
+"context": "constraint",
+"default_unit": "solMass",
+"description": "expression that determines the constraint",
+"in_solar_units": true,
+"kind": "star",
+"qualifier": "mass",
+"uniqueid": "wQgJCTLHNRbikpOwPOPgcgmsainfVr",
+"value": "(3.94784176043574320e+01 * ({sma@binary@component} ** 3.000000)) / ((({period@binary@component} ** 2.000000) * ((1.00000000000000000e+00 / {q@binary@component}) + 1.00000000000000000e+00)) * 2.94220621750441933e+03)"
+},
+{
+"Class": "ConstraintParameter",
+"component": "binary",
+"constraint_addl_vars": [
+"requivratio@binary@orbit@component",
+"requivsumfrac@binary@orbit@component",
+"requiv@primary@star@component",
+"requiv@secondary@star@component",
+"sma@binary@orbit@component"
+],
+"constraint_func": "requivsumfrac",
+"constraint_kwargs": {
+"orbit": "binary"
+},
+"context": "constraint",
+"default_unit": "",
+"description": "expression that determines the constraint",
+"in_solar_units": true,
+"kind": "orbit",
+"qualifier": "requivsumfrac",
+"uniqueid": "SDVNEccWBjfgnLlKWOJjFXWsYBWIYC",
+"value": "({requiv@primary@component} + {requiv@secondary@component}) / {sma@binary@component}"
+},
+{
+"Class": "ConstraintParameter",
+"component": "secondary",
+"constraint_addl_vars": [
+"requivratio@binary@orbit@component",
+"requivsumfrac@binary@orbit@component",
+"requiv@primary@star@component",
+"requiv@secondary@star@component",
+"sma@binary@orbit@component"
+],
+"constraint_func": "requivratio",
+"constraint_kwargs": {
+"orbit": "binary"
+},
+"context": "constraint",
+"default_unit": "solRad",
+"description": "expression that determines the constraint",
+"in_solar_units": true,
+"kind": "star",
+"qualifier": "requiv",
+"uniqueid": "bTQGMjkCClvAFWxLeHdIgKdhWjoozz",
+"value": "{requivratio@binary@component} * {requiv@primary@component}"
 },
 {
 "Class": "DistributionParameter",
@@ -16338,7 +16335,7 @@ null
 "description": "distributions or solutions to use for sampling.  If pointing to a solution, adopt_solution(as_distributions=True, **kwargs) will be called to create a temporary distribution which will be removed automatically.  If all distributions are delta functions (face-values), sample_mode and sample_num will be ignored with a warning.",
 "kind": "phoebe",
 "qualifier": "sample_from",
-"uniqueid": "wBUdgcfvuSaIjLhOunAnlMNkiGjESf",
+"uniqueid": "WmOYlIcfLDKHNmRjxdvveNdezOazGH",
 "value": []
 },
 {
@@ -16352,7 +16349,7 @@ null
 "description": "Method to use to combine multiple distributions from sample_from for the same parameter.  first: ignore duplicate entries and take the first in the sample_from parameter",
 "kind": "phoebe",
 "qualifier": "sample_from_combine",
-"uniqueid": "nwaDWZFrNhjWGUYHWNmNfxoKgcHmYO",
+"uniqueid": "BzEPlynrAgYFTVFKxmHBQflCTefRwx",
 "value": "first",
 "visible_if": "sample_from:<notempty>"
 },
@@ -16368,7 +16365,7 @@ null
 1000000.0
 ],
 "qualifier": "sample_num",
-"uniqueid": "YjJHhiiPaqHEcGHDygBoOvqktMmePm",
+"uniqueid": "PkrrYKqGXvrwnpUherYXjsvGzYxCgg",
 "value": 10,
 "visible_if": "sample_from:<notempty>"
 },
@@ -16387,7 +16384,7 @@ null
 "description": "Mode to use when exposing model after sampling.  all: expose all sampled forward-models.  median: only return the median of all sampled models.  1/3/5-sigma: expose the synthetic variable at the median and +/- n-sigma.",
 "kind": "phoebe",
 "qualifier": "sample_mode",
-"uniqueid": "cWEpRvCiUHUdWtBofcYsebUbwnwXDy",
+"uniqueid": "dyppMOUbEMTaooutMSeaEouNVUgtgN",
 "value": "1-sigma",
 "visible_if": "sample_from:<notempty>"
 },
@@ -16399,7 +16396,7 @@ null
 "description": "Whether to expose failed samples along with the simplified error messages.",
 "kind": "phoebe",
 "qualifier": "expose_samples",
-"uniqueid": "BmjDsqBjsdeknFvvuwnWrkrWQwWiHA",
+"uniqueid": "JuBRzlifWyBsNuUnsIIqXhMxRBmQSk",
 "value": true,
 "visible_if": "sample_from:<notempty>"
 },
@@ -16411,7 +16408,7 @@ null
 "description": "Whether to expose failed samples along with the simplified error messages.",
 "kind": "phoebe",
 "qualifier": "expose_failed",
-"uniqueid": "ozlxTKicKYlmbKRTxWYycDMIzjNnsk",
+"uniqueid": "HlMyggsNaAWyGCHWWqhGqZahrJhusy",
 "value": true,
 "visible_if": "sample_from:<notempty>"
 },
@@ -16423,7 +16420,7 @@ null
 "description": "User-provided comments for these compute-options.  Feel free to place any notes here - if not overridden, they will be copied to any resulting models.",
 "kind": "phoebe",
 "qualifier": "comments",
-"uniqueid": "ZffzdvcAdSCEcvlqTSYoPyWzCorfsa",
+"uniqueid": "HeRcscocpiHJoqoxoEfNQuAUjdpGVx",
 "value": ""
 },
 {
@@ -16438,7 +16435,7 @@ null
 "description": "Server to use when running the forward model (or \"none\" to run locally) via run_compute.",
 "kind": "phoebe",
 "qualifier": "use_server",
-"uniqueid": "qgvITjVJnWVdlqwdBnjctusokRubng",
+"uniqueid": "pVdcefXtyCZdLEJLMYbsIzdvkrifui",
 "value": "none"
 },
 {
@@ -16453,7 +16450,7 @@ null
 "description": "Whether to create synthetics in compute/solver run",
 "kind": "phoebe",
 "qualifier": "enabled",
-"uniqueid": "ZSCnjdsFXpCgHhOZcGTvBrdBlRtHYi",
+"uniqueid": "NRzgqInaWQPZkFmRhMpfXvBEbNqNRN",
 "value": true
 },
 {
@@ -16468,8 +16465,53 @@ null
 "feature": "_default",
 "kind": "phoebe",
 "qualifier": "enabled",
-"uniqueid": "uUmahjyynsQFxWUoaGIakvktELLdIo",
+"uniqueid": "QkyqfcOpxWMNUNfgJoWKBSjxZucboq",
 "value": true
+},
+{
+"Class": "BoolParameter",
+"compute": "phoebe01",
+"context": "compute",
+"copy_for": {
+"dataset": "*",
+"kind": [
+"lc",
+"rv",
+"lp"
+]
+},
+"dataset": "_default",
+"description": "Whether to apply the mask in gp_exclude_phases during gaussian process fitting.",
+"kind": "phoebe",
+"qualifier": "gp_exclude_phases_enabled",
+"uniqueid": "PrdEdPFobNmZeEjmGHVOMFEKflLrqR",
+"value": true,
+"visible_if": "ds_has_enabled_feature:gp_*"
+},
+{
+"Class": "FloatArrayParameter",
+"compute": "phoebe01",
+"context": "compute",
+"copy_for": {
+"dataset": "*",
+"kind": [
+"lc",
+"rv",
+"lp"
+]
+},
+"dataset": "_default",
+"default_unit": "",
+"description": "List of phase-tuples.  Any observations inside the range set by any of the tuples will be ignored by the gaussian process features.",
+"kind": "phoebe",
+"qualifier": "gp_exclude_phases",
+"required_shape": [
+null,
+2
+],
+"uniqueid": "VpuYuRZgSXhiaGsmYkFLPIwqvtNdHT",
+"value": [],
+"visible_if": "ds_has_enabled_feature:gp_*,gp_exclude_phases_enabled:True"
 },
 {
 "Class": "ChoiceParameter",
@@ -16482,7 +16524,7 @@ null
 "description": "Which method to use to determine the dynamics of components",
 "kind": "phoebe",
 "qualifier": "dynamics_method",
-"uniqueid": "HamgdMfCrdyKgDsQTBsHIpNYYTrafR",
+"uniqueid": "riVooYsbBmxmJKZnMdVSqrnGzyxiba",
 "value": "keplerian"
 },
 {
@@ -16493,7 +16535,7 @@ null
 "description": "Correct for light travel time effects",
 "kind": "phoebe",
 "qualifier": "ltte",
-"uniqueid": "UjGOUmnCZsbamPuVkVUpVnqpDkXRpb",
+"uniqueid": "kBLksCksrDxUTZQkPwfnoQbofaZEcj",
 "value": false
 },
 {
@@ -16506,10 +16548,10 @@ null
 "compute": "phoebe01",
 "context": "compute",
 "copy_for": false,
-"description": "Which method to use to handle all irradiation effects (reflection, redistribution)",
+"description": "Which method to use to handle all irradiation effects (reflection)",
 "kind": "phoebe",
 "qualifier": "irrad_method",
-"uniqueid": "eNxkaqcZZgqeKzRlshlbRNhCqzmkPz",
+"uniqueid": "IEROaCjIZxqmleXEPYBtcSlRKGXwbx",
 "value": "horvat"
 },
 {
@@ -16524,7 +16566,7 @@ null
 "description": "Type of boosting method",
 "kind": "phoebe",
 "qualifier": "boosting_method",
-"uniqueid": "zhRxQWeutHHsyjTriGtySsPjxIQUob",
+"uniqueid": "haKcQxFOjsCzSZEAMfiKSmIZaiDTSs",
 "value": "none"
 },
 {
@@ -16545,7 +16587,7 @@ null
 "description": "Which method to use for discretizing the surface",
 "kind": "phoebe",
 "qualifier": "mesh_method",
-"uniqueid": "DzsjkGnCdQbSWNZVxRuKroMfelmaUN",
+"uniqueid": "EFJTtoyhgDQwjJoGwMaZzFMBLwyKOf",
 "value": "marching",
 "visible_if": "hierarchy.is_meshable:true"
 },
@@ -16568,7 +16610,7 @@ null
 null
 ],
 "qualifier": "ntriangles",
-"uniqueid": "iqNulbXnmqohLJRgjzMaDPfOimhTqP",
+"uniqueid": "zMoyBdOpTWNtVbQxqhcaAPRIOtBmkm",
 "value": 1500,
 "visible_if": "mesh_method:marching,hierarchy.is_meshable:true"
 },
@@ -16592,7 +16634,7 @@ null
 "description": "Method to use for distorting stars",
 "kind": "phoebe",
 "qualifier": "distortion_method",
-"uniqueid": "PSqonyeeqnVHCbaupRwUvVAtcFVnKg",
+"uniqueid": "eQwIoicFyVDUxmVlRiQRXFWDkcRfEX",
 "value": "roche",
 "visible_if": "mesh_method:marching,hierarchy.is_meshable:true"
 },
@@ -16609,7 +16651,7 @@ null
 "description": "Type of eclipse algorithm",
 "kind": "phoebe",
 "qualifier": "eclipse_method",
-"uniqueid": "vAuwTonEAkjVwnSdHeLEFvzBfxAzGM",
+"uniqueid": "FgRrLpXsdIKZlSYnPJdoAeeQZrNfbS",
 "value": "native"
 },
 {
@@ -16624,18 +16666,18 @@ null
 "description": "Type of horizon method",
 "kind": "phoebe",
 "qualifier": "horizon_method",
-"uniqueid": "HpiwNYaEwlvMQDwiPaQCAvpZmpfyZn",
+"uniqueid": "myeXrPTNxydmGpfswLsBGoyuCyrhfd",
 "value": "boolean",
 "visible_if": "eclipse_method:native"
 },
 {
 "Class": "ChoiceParameter",
 "choices": [
-"phoenix",
-"blackbody",
 "extern_atmx",
 "ck2004",
-"extern_planckint"
+"phoenix",
+"extern_planckint",
+"blackbody"
 ],
 "component": "_default",
 "compute": "phoebe01",
@@ -16649,7 +16691,7 @@ null
 "description": "Atmosphere table",
 "kind": "phoebe",
 "qualifier": "atm",
-"uniqueid": "pBpwJbCHSOGHENTSXMyMjwcWNQhRDS",
+"uniqueid": "VAXQYTpddoYaUMTKyfyJQQWpKcXbkn",
 "value": "ck2004"
 },
 {
@@ -16670,7 +16712,7 @@ null
 "description": "How to handle finite-time integration (when non-zero exptime)",
 "kind": "phoebe",
 "qualifier": "fti_method",
-"uniqueid": "sKdrrjUEyAltagEIvulilDEGUiFEiz",
+"uniqueid": "AqlvwFUuXJdydlERrhsfBMfALSzncx",
 "value": "none"
 },
 {
@@ -16691,7 +16733,7 @@ null
 null
 ],
 "qualifier": "fti_oversample",
-"uniqueid": "eisoXNgfQdfwBrKFQnFMqZBGctbcWF",
+"uniqueid": "noZzPCDMQNMPSsBKKQvXHiRarbUSZI",
 "value": 5,
 "visible_if": "fti_method:oversample"
 },
@@ -16716,7 +16758,7 @@ null
 "description": "Method to use for computing RVs (must be flux-weighted for Rossiter-McLaughlin effects)",
 "kind": "phoebe",
 "qualifier": "rv_method",
-"uniqueid": "NWxAxfnYMQPRMrmUhoyTWCQmKBlQvk",
+"uniqueid": "WBjTgOnXrwyNBMhqxZCTrBjyVlynYR",
 "value": "flux-weighted"
 },
 {
@@ -16736,7 +16778,7 @@ null
 "description": "Whether gravitational redshift effects are enabled for RVs",
 "kind": "phoebe",
 "qualifier": "rv_grav",
-"uniqueid": "nhJAEYqFumsTwUbrfeFxLkWfHqEXnh",
+"uniqueid": "OfkPwvxvYQElUibSJaeSEOZUPARLeo",
 "value": false,
 "visible_if": "rv_method:flux-weighted"
 },
@@ -16749,7 +16791,7 @@ null
 "description": "Whether to create synthetics in compute/solver run",
 "kind": "phoebe",
 "qualifier": "enabled",
-"uniqueid": "UtLPiCpCoaAAZJkxxZwRcVsnyNXBmT",
+"uniqueid": "QgkmpvqaIirQdKjoAxMIyRFLGKAzGl",
 "value": true
 },
 {
@@ -16761,10 +16803,72 @@ null
 "description": "Whether to create synthetics in compute/solver run",
 "kind": "phoebe",
 "qualifier": "enabled",
-"uniqueid": "DkEOjscKUOImcCRhkYqPSskarbbwLb",
+"uniqueid": "JpIrlGYBekDqeqFOaMOlnWpaEejbbC",
 "value": true
 },
 {
+"Class": "BoolParameter",
+"compute": "phoebe01",
+"context": "compute",
+"copy_for": false,
+"dataset": "lc01",
+"description": "Whether to apply the mask in gp_exclude_phases during gaussian process fitting.",
+"kind": "phoebe",
+"qualifier": "gp_exclude_phases_enabled",
+"uniqueid": "LNsIMuKtEJLkiUBEEZIXDRLlZfJQcn",
+"value": true,
+"visible_if": "ds_has_enabled_feature:gp_*"
+},
+{
+"Class": "BoolParameter",
+"compute": "phoebe01",
+"context": "compute",
+"copy_for": false,
+"dataset": "rv01",
+"description": "Whether to apply the mask in gp_exclude_phases during gaussian process fitting.",
+"kind": "phoebe",
+"qualifier": "gp_exclude_phases_enabled",
+"uniqueid": "LzMrosouLHptxKvLEVutxqWrectOEY",
+"value": true,
+"visible_if": "ds_has_enabled_feature:gp_*"
+},
+{
+"Class": "FloatArrayParameter",
+"compute": "phoebe01",
+"context": "compute",
+"copy_for": false,
+"dataset": "lc01",
+"default_unit": "",
+"description": "List of phase-tuples.  Any observations inside the range set by any of the tuples will be ignored by the gaussian process features.",
+"kind": "phoebe",
+"qualifier": "gp_exclude_phases",
+"required_shape": [
+null,
+2
+],
+"uniqueid": "CZZuSwEkYktApNbTXIfPUyrCvZTfLq",
+"value": [],
+"visible_if": "ds_has_enabled_feature:gp_*,gp_exclude_phases_enabled:True"
+},
+{
+"Class": "FloatArrayParameter",
+"compute": "phoebe01",
+"context": "compute",
+"copy_for": false,
+"dataset": "rv01",
+"default_unit": "",
+"description": "List of phase-tuples.  Any observations inside the range set by any of the tuples will be ignored by the gaussian process features.",
+"kind": "phoebe",
+"qualifier": "gp_exclude_phases",
+"required_shape": [
+null,
+2
+],
+"uniqueid": "xWZzYrJyteLCELLEesNIlIWHuqKRhM",
+"value": [],
+"visible_if": "ds_has_enabled_feature:gp_*,gp_exclude_phases_enabled:True"
+},
+{
 "Class": "ChoiceParameter",
 "choices": [
 "marching"
@@ -16776,7 +16880,7 @@ null
 "description": "Which method to use for discretizing the surface",
 "kind": "phoebe",
 "qualifier": "mesh_method",
-"uniqueid": "lLCAVrlWeMePDJQnQQKWikZHZXuOmS",
+"uniqueid": "qfPoWXBIxDlofCDYvTVcgCQJooYmRc",
 "value": "marching",
 "visible_if": "hierarchy.is_meshable:true"
 },
@@ -16792,7 +16896,7 @@ null
 "description": "Which method to use for discretizing the surface",
 "kind": "phoebe",
 "qualifier": "mesh_method",
-"uniqueid": "IlDYygSFauPMWkvZkxjvqAoXsiGdAc",
+"uniqueid": "LyuheVjfRFAbhwljcjjjvqzvJZPIRy",
 "value": "marching",
 "visible_if": "hierarchy.is_meshable:true"
 },
@@ -16809,7 +16913,7 @@ null
 null
 ],
 "qualifier": "ntriangles",
-"uniqueid": "TIvDfaQqFGMIRmoYsfJSEBZdGBFIZS",
+"uniqueid": "qCyjNVqrIQISzrzziKoZqXVQuWzsfC",
 "value": 1500,
 "visible_if": "mesh_method:marching,hierarchy.is_meshable:true"
 },
@@ -16826,7 +16930,7 @@ null
 null
 ],
 "qualifier": "ntriangles",
-"uniqueid": "HhCQHHcVwpeFlyMzVelTmshXIbbxnS",
+"uniqueid": "taZsttgKYNpAAuiZCEbovtqdOWXHVd",
 "value": 1500,
 "visible_if": "mesh_method:marching,hierarchy.is_meshable:true"
 },
@@ -16845,7 +16949,7 @@ null
 "description": "Method to use for distorting stars",
 "kind": "phoebe",
 "qualifier": "distortion_method",
-"uniqueid": "AvacbNDTLaIXJLqwGZCaLDuyLjVDxX",
+"uniqueid": "hByvKgPxrxCiDKFRlrzdITgPBmhiMg",
 "value": "sphere",
 "visible_if": "mesh_method:marching,hierarchy.is_meshable:true"
 },
@@ -16864,18 +16968,18 @@ null
 "description": "Method to use for distorting stars",
 "kind": "phoebe",
 "qualifier": "distortion_method",
-"uniqueid": "VKjYfOpOlBNXfTNpeyGNiNVnczMxiW",
+"uniqueid": "vnfZsojYAXKcJgcUeBqycvhBzsUOqt",
 "value": "sphere",
 "visible_if": "mesh_method:marching,hierarchy.is_meshable:true"
 },
 {
 "Class": "ChoiceParameter",
 "choices": [
-"phoenix",
-"blackbody",
 "extern_atmx",
 "ck2004",
-"extern_planckint"
+"phoenix",
+"extern_planckint",
+"blackbody"
 ],
 "component": "primary",
 "compute": "phoebe01",
@@ -16884,17 +16988,17 @@ null
 "description": "Atmosphere table",
 "kind": "phoebe",
 "qualifier": "atm",
-"uniqueid": "xzytqXDelkHdDKYxupwNBVaxmxCuWt",
+"uniqueid": "vhUfqVcWHSWUmNbMTXcbilZhVihRAt",
 "value": "ck2004"
 },
 {
 "Class": "ChoiceParameter",
 "choices": [
-"phoenix",
-"blackbody",
 "extern_atmx",
 "ck2004",
-"extern_planckint"
+"phoenix",
+"extern_planckint",
+"blackbody"
 ],
 "component": "secondary",
 "compute": "phoebe01",
@@ -16903,7 +17007,7 @@ null
 "description": "Atmosphere table",
 "kind": "phoebe",
 "qualifier": "atm",
-"uniqueid": "kJjKTpKRxqRmWZexVFRXgcxMyswFxc",
+"uniqueid": "WhEPTXFqxuotHJeSCOZhVuloyZnVcg",
 "value": "ck2004"
 },
 {
@@ -16919,7 +17023,7 @@ null
 "description": "How to handle finite-time integration (when non-zero exptime)",
 "kind": "phoebe",
 "qualifier": "fti_method",
-"uniqueid": "zfBbmTYQKekVHiXAsHqtfMrGRbQpcH",
+"uniqueid": "xuUowjFrjKVeSNoJBiAmzoUvmgdOoO",
 "value": "none"
 },
 {
@@ -16935,7 +17039,7 @@ null
 null
 ],
 "qualifier": "fti_oversample",
-"uniqueid": "YukWRfnJCSLDxeCapBQYUIHYqdqoYO",
+"uniqueid": "rmmQuZDdyFZSeEGbylwpTSnxRzJBAt",
 "value": 5,
 "visible_if": "fti_method:oversample"
 },
@@ -16953,7 +17057,7 @@ null
 "description": "Method to use for computing RVs (must be flux-weighted for Rossiter-McLaughlin effects)",
 "kind": "phoebe",
 "qualifier": "rv_method",
-"uniqueid": "EOGGmkbcFHlHEUrVjnUUxzWfHYyVLY",
+"uniqueid": "UpTUhrfrIabIvzRWgXWRNVQsEAYBJD",
 "value": "flux-weighted"
 },
 {
@@ -16970,7 +17074,7 @@ null
 "description": "Method to use for computing RVs (must be flux-weighted for Rossiter-McLaughlin effects)",
 "kind": "phoebe",
 "qualifier": "rv_method",
-"uniqueid": "TAtPGYvweqRzPQHKXShSajaXUyrSic",
+"uniqueid": "ZrQDkxyxMkTKjYJgYnHZmJArywPFiF",
 "value": "flux-weighted"
 },
 {
@@ -16983,7 +17087,7 @@ null
 "description": "Whether gravitational redshift effects are enabled for RVs",
 "kind": "phoebe",
 "qualifier": "rv_grav",
-"uniqueid": "VGtvHPQvfHjajCJGNOXESPFdHtllur",
+"uniqueid": "BXEOsOkPdqzQfzozddHDIWyjecgBxd",
 "value": false,
 "visible_if": "rv_method:flux-weighted"
 },
@@ -16997,7 +17101,7 @@ null
 "description": "Whether gravitational redshift effects are enabled for RVs",
 "kind": "phoebe",
 "qualifier": "rv_grav",
-"uniqueid": "KKoJAlttIvqTyIRMEpMaFBzLdfoRQx",
+"uniqueid": "nnSpVyNALFVBmwgEKPDIkmjAaTFzPl",
 "value": false,
 "visible_if": "rv_method:flux-weighted"
 },
@@ -17027,7 +17131,7 @@ null
 "description": "distributions or solutions to use for sampling.  If pointing to a solution, adopt_solution(as_distributions=True, **kwargs) will be called to create a temporary distribution which will be removed automatically.  If all distributions are delta functions (face-values), sample_mode and sample_num will be ignored with a warning.",
 "kind": "phoebe",
 "qualifier": "sample_from",
-"uniqueid": "RaRDSPHSriKgubnHnJAvgwXvbSnUkA",
+"uniqueid": "fBDxrIfHROhofLeSzHItkoqEaKXfpH",
 "value": []
 },
 {
@@ -17041,7 +17145,7 @@ null
 "description": "Method to use to combine multiple distributions from sample_from for the same parameter.  first: ignore duplicate entries and take the first in the sample_from parameter",
 "kind": "phoebe",
 "qualifier": "sample_from_combine",
-"uniqueid": "DTKfqqaHvpEJucVNcFLFSfdNHrODpe",
+"uniqueid": "MQGmYxZbIFVJZaAyWpFiXEJRYXlBjU",
 "value": "first",
 "visible_if": "sample_from:<notempty>"
 },
@@ -17057,7 +17161,7 @@ null
 1000000.0
 ],
 "qualifier": "sample_num",
-"uniqueid": "HQDsuaTjbpVKQwVAxIbNPIpKQCdFLp",
+"uniqueid": "TwzmYhETYLHNuMWqcRXadIeWhrHutv",
 "value": 10,
 "visible_if": "sample_from:<notempty>"
 },
@@ -17076,7 +17180,7 @@ null
 "description": "Mode to use when exposing model after sampling.  all: expose all sampled forward-models.  median: only return the median of all sampled models.  1/3/5-sigma: expose the synthetic variable at the median and +/- n-sigma.",
 "kind": "phoebe",
 "qualifier": "sample_mode",
-"uniqueid": "yiUuzvudrPgyEOwjqxBUPQyJYmhTeS",
+"uniqueid": "gPNsKeETYJsVaVebRIjxGpRnXKEXJq",
 "value": "1-sigma",
 "visible_if": "sample_from:<notempty>"
 },
@@ -17088,7 +17192,7 @@ null
 "description": "Whether to expose failed samples along with the simplified error messages.",
 "kind": "phoebe",
 "qualifier": "expose_samples",
-"uniqueid": "TeayvtBVgZKskCNEnRdQcrtyPuJPrt",
+"uniqueid": "cdLuiBagyERsytVhOIXmZoWdhsDzlF",
 "value": true,
 "visible_if": "sample_from:<notempty>"
 },
@@ -17100,7 +17204,7 @@ null
 "description": "Whether to expose failed samples along with the simplified error messages.",
 "kind": "phoebe",
 "qualifier": "expose_failed",
-"uniqueid": "rgRNcXFKskypLQJThnohOCeTniIZlH",
+"uniqueid": "RfAbucAOXKPJmkNuhyZufCEmPwLBlz",
 "value": true,
 "visible_if": "sample_from:<notempty>"
 },
@@ -17112,7 +17216,7 @@ null
 "description": "User-provided comments for these compute-options.  Feel free to place any notes here - if not overridden, they will be copied to any resulting models.",
 "kind": "phoebe",
 "qualifier": "comments",
-"uniqueid": "GjkXmwMltLrNLhpMrdSZiTGjKPlINC",
+"uniqueid": "kwbqrlfvwxwtOxqBPsBAWHISUjKQSQ",
 "value": ""
 },
 {
@@ -17127,7 +17231,7 @@ null
 "description": "Server to use when running the forward model (or \"none\" to run locally) via run_compute.",
 "kind": "phoebe",
 "qualifier": "use_server",
-"uniqueid": "BukOMKTMzjLaoeuxIInqumLTLnegth",
+"uniqueid": "CAPydLFdTDrpXMIKibyozbBowBXOLX",
 "value": "none"
 },
 {
@@ -17142,7 +17246,7 @@ null
 "description": "Whether to create synthetics in compute/solver run",
 "kind": "phoebe",
 "qualifier": "enabled",
-"uniqueid": "MAJwInPLVbJtfSfEBPcYqgOXcvAgDp",
+"uniqueid": "SHTGQASwRymecjEgGRNBcPphxTdKeD",
 "value": true
 },
 {
@@ -17157,8 +17261,53 @@ null
 "feature": "_default",
 "kind": "phoebe",
 "qualifier": "enabled",
-"uniqueid": "QlPkOsojoNkYPrYDxgVIRySVyUYWAG",
+"uniqueid": "RjnIGonaJFSOinIQTriDdrOoJBUUEQ",
 "value": true
+},
+{
+"Class": "BoolParameter",
+"compute": "nm_fit",
+"context": "compute",
+"copy_for": {
+"dataset": "*",
+"kind": [
+"lc",
+"rv",
+"lp"
+]
+},
+"dataset": "_default",
+"description": "Whether to apply the mask in gp_exclude_phases during gaussian process fitting.",
+"kind": "phoebe",
+"qualifier": "gp_exclude_phases_enabled",
+"uniqueid": "FRFrplMYlBbcWdBhWoFRapllvxFRCK",
+"value": true,
+"visible_if": "ds_has_enabled_feature:gp_*"
+},
+{
+"Class": "FloatArrayParameter",
+"compute": "nm_fit",
+"context": "compute",
+"copy_for": {
+"dataset": "*",
+"kind": [
+"lc",
+"rv",
+"lp"
+]
+},
+"dataset": "_default",
+"default_unit": "",
+"description": "List of phase-tuples.  Any observations inside the range set by any of the tuples will be ignored by the gaussian process features.",
+"kind": "phoebe",
+"qualifier": "gp_exclude_phases",
+"required_shape": [
+null,
+2
+],
+"uniqueid": "aIxiDvRGhmleeavWAKrDFTnTyQEFUa",
+"value": [],
+"visible_if": "ds_has_enabled_feature:gp_*,gp_exclude_phases_enabled:True"
 },
 {
 "Class": "ChoiceParameter",
@@ -17171,7 +17320,7 @@ null
 "description": "Which method to use to determine the dynamics of components",
 "kind": "phoebe",
 "qualifier": "dynamics_method",
-"uniqueid": "qACRUkLjiYqmbsYMjFLzvxQdmnrrMi",
+"uniqueid": "yslrPdyQluylNLfvtsHMzedGAuHreI",
 "value": "keplerian"
 },
 {
@@ -17182,7 +17331,7 @@ null
 "description": "Correct for light travel time effects",
 "kind": "phoebe",
 "qualifier": "ltte",
-"uniqueid": "fgjsBCvqobDYTZZgCCEfjEnqnSlyRM",
+"uniqueid": "FSUfpzSxSaSKLwUbeKqEzzwBOLiJAV",
 "value": false
 },
 {
@@ -17195,10 +17344,10 @@ null
 "compute": "nm_fit",
 "context": "compute",
 "copy_for": false,
-"description": "Which method to use to handle all irradiation effects (reflection, redistribution)",
+"description": "Which method to use to handle all irradiation effects (reflection)",
 "kind": "phoebe",
 "qualifier": "irrad_method",
-"uniqueid": "EBfYdzYfVWPwNoASpGbHvXpdBaYzUy",
+"uniqueid": "gNxVMnvVhSOnXqDvDjkXytKSJxxcmr",
 "value": "none"
 },
 {
@@ -17213,7 +17362,7 @@ null
 "description": "Type of boosting method",
 "kind": "phoebe",
 "qualifier": "boosting_method",
-"uniqueid": "CtLDHrZcRqhhyrxIUrAOLdAMSBLEiF",
+"uniqueid": "IQOcOgZCqTZMJvPmuCWBeGukToJNjA",
 "value": "none"
 },
 {
@@ -17234,7 +17383,7 @@ null
 "description": "Which method to use for discretizing the surface",
 "kind": "phoebe",
 "qualifier": "mesh_method",
-"uniqueid": "RWjguYQBnaFNlSKXWBHPgJpjQSiGnl",
+"uniqueid": "ckerfLWHyVwqCsyQPOTAbJXEmbKwoY",
 "value": "marching",
 "visible_if": "hierarchy.is_meshable:true"
 },
@@ -17257,7 +17406,7 @@ null
 null
 ],
 "qualifier": "ntriangles",
-"uniqueid": "YdYiWYaSxScMMRRdKiwTlGHMWOWjSp",
+"uniqueid": "mbtgUqdnywFKYerWsDChknOxxgNYHU",
 "value": 1500,
 "visible_if": "mesh_method:marching,hierarchy.is_meshable:true"
 },
@@ -17281,7 +17430,7 @@ null
 "description": "Method to use for distorting stars",
 "kind": "phoebe",
 "qualifier": "distortion_method",
-"uniqueid": "MhhbmNBcWXPESDoDVrCQMflnDUyATO",
+"uniqueid": "zTRipQLaIzuMyDaJcONHtQJwwMlJNH",
 "value": "roche",
 "visible_if": "mesh_method:marching,hierarchy.is_meshable:true"
 },
@@ -17298,7 +17447,7 @@ null
 "description": "Type of eclipse algorithm",
 "kind": "phoebe",
 "qualifier": "eclipse_method",
-"uniqueid": "zOOLZbFcCoIhoBmenOALNCBXMuNodu",
+"uniqueid": "SrTiyFOwjFQiHYxiXlcPXvJNEpWEIc",
 "value": "native"
 },
 {
@@ -17313,18 +17462,18 @@ null
 "description": "Type of horizon method",
 "kind": "phoebe",
 "qualifier": "horizon_method",
-"uniqueid": "jcxFCzWzOuWJtxvVRjVGDqqugBsBHQ",
+"uniqueid": "SdaVkzleYLOwGPAzgsdmJHChmDUEbL",
 "value": "boolean",
 "visible_if": "eclipse_method:native"
 },
 {
 "Class": "ChoiceParameter",
 "choices": [
-"phoenix",
-"blackbody",
 "extern_atmx",
 "ck2004",
-"extern_planckint"
+"phoenix",
+"extern_planckint",
+"blackbody"
 ],
 "component": "_default",
 "compute": "nm_fit",
@@ -17338,7 +17487,7 @@ null
 "description": "Atmosphere table",
 "kind": "phoebe",
 "qualifier": "atm",
-"uniqueid": "mKHIobxoXjLSyHoAvMiIzkCBIsBtGr",
+"uniqueid": "zrztMeqbiKwePPWMmeEZapJLfNxpxi",
 "value": "ck2004"
 },
 {
@@ -17359,7 +17508,7 @@ null
 "description": "How to handle finite-time integration (when non-zero exptime)",
 "kind": "phoebe",
 "qualifier": "fti_method",
-"uniqueid": "PhZhujXRFFiWAWUixvbFGPvOWhzwwh",
+"uniqueid": "nJRWdSuWClWMJWdsFmyZplWQFnDaoz",
 "value": "none"
 },
 {
@@ -17380,7 +17529,7 @@ null
 null
 ],
 "qualifier": "fti_oversample",
-"uniqueid": "zJsTsMPTAPzLvDMGAqvtxvUoIJFZwD",
+"uniqueid": "jnflNphJUfOoQpBvPeWkPDGveGKWwd",
 "value": 5,
 "visible_if": "fti_method:oversample"
 },
@@ -17405,7 +17554,7 @@ null
 "description": "Method to use for computing RVs (must be flux-weighted for Rossiter-McLaughlin effects)",
 "kind": "phoebe",
 "qualifier": "rv_method",
-"uniqueid": "pQtMBScmzZjDSDKCLhuNyaAUMRIHcB",
+"uniqueid": "BIwabVVjKRmMtpjltNMEsHarIgdcWX",
 "value": "dynamical"
 },
 {
@@ -17425,7 +17574,7 @@ null
 "description": "Whether gravitational redshift effects are enabled for RVs",
 "kind": "phoebe",
 "qualifier": "rv_grav",
-"uniqueid": "hIsrrqsFotUJrQmHEDLsVUklBaTsRR",
+"uniqueid": "DcZuxNTTnpiBtDBnZpIuQtCQqyhJlm",
 "value": false,
 "visible_if": "rv_method:flux-weighted"
 },
@@ -17438,7 +17587,7 @@ null
 "description": "Whether to create synthetics in compute/solver run",
 "kind": "phoebe",
 "qualifier": "enabled",
-"uniqueid": "tJRfLGHRyjFjBwKYodaKPGmeTEjMUY",
+"uniqueid": "sMaRizrJJswxkMtTVHhwHwsGBiqesg",
 "value": true
 },
 {
@@ -17450,10 +17599,72 @@ null
 "description": "Whether to create synthetics in compute/solver run",
 "kind": "phoebe",
 "qualifier": "enabled",
-"uniqueid": "hYldDGqeXPUDaAparQBrOtuLtxjEOm",
+"uniqueid": "HitkVHsCeeLwnLEHZWAKBUzYWzeuWO",
 "value": true
 },
 {
+"Class": "BoolParameter",
+"compute": "nm_fit",
+"context": "compute",
+"copy_for": false,
+"dataset": "lc01",
+"description": "Whether to apply the mask in gp_exclude_phases during gaussian process fitting.",
+"kind": "phoebe",
+"qualifier": "gp_exclude_phases_enabled",
+"uniqueid": "HKrWtfCaYwLvlkAHVzXpvAWRfvmcNj",
+"value": true,
+"visible_if": "ds_has_enabled_feature:gp_*"
+},
+{
+"Class": "BoolParameter",
+"compute": "nm_fit",
+"context": "compute",
+"copy_for": false,
+"dataset": "rv01",
+"description": "Whether to apply the mask in gp_exclude_phases during gaussian process fitting.",
+"kind": "phoebe",
+"qualifier": "gp_exclude_phases_enabled",
+"uniqueid": "toVZtEuZjfJiWiTjHPmEwuDECYkORn",
+"value": true,
+"visible_if": "ds_has_enabled_feature:gp_*"
+},
+{
+"Class": "FloatArrayParameter",
+"compute": "nm_fit",
+"context": "compute",
+"copy_for": false,
+"dataset": "lc01",
+"default_unit": "",
+"description": "List of phase-tuples.  Any observations inside the range set by any of the tuples will be ignored by the gaussian process features.",
+"kind": "phoebe",
+"qualifier": "gp_exclude_phases",
+"required_shape": [
+null,
+2
+],
+"uniqueid": "tFQeELCEWoearscuNjxoBTPhMunfca",
+"value": [],
+"visible_if": "ds_has_enabled_feature:gp_*,gp_exclude_phases_enabled:True"
+},
+{
+"Class": "FloatArrayParameter",
+"compute": "nm_fit",
+"context": "compute",
+"copy_for": false,
+"dataset": "rv01",
+"default_unit": "",
+"description": "List of phase-tuples.  Any observations inside the range set by any of the tuples will be ignored by the gaussian process features.",
+"kind": "phoebe",
+"qualifier": "gp_exclude_phases",
+"required_shape": [
+null,
+2
+],
+"uniqueid": "JtKQJCYtIdCHhkcHPHIavdTdPjaaDW",
+"value": [],
+"visible_if": "ds_has_enabled_feature:gp_*,gp_exclude_phases_enabled:True"
+},
+{
 "Class": "ChoiceParameter",
 "choices": [
 "marching"
@@ -17465,7 +17676,7 @@ null
 "description": "Which method to use for discretizing the surface",
 "kind": "phoebe",
 "qualifier": "mesh_method",
-"uniqueid": "qnGqdhYicWYNTRkmKcaBrESOMEpMcR",
+"uniqueid": "nYYOyadPWUZaFzwacsakfgajGfqrzb",
 "value": "marching",
 "visible_if": "hierarchy.is_meshable:true"
 },
@@ -17481,7 +17692,7 @@ null
 "description": "Which method to use for discretizing the surface",
 "kind": "phoebe",
 "qualifier": "mesh_method",
-"uniqueid": "HusqXXCvJADbkBJZCwpCUhQusJKCqd",
+"uniqueid": "jDBcpGLsaqbygwLbZVFdzGGZrCBjWw",
 "value": "marching",
 "visible_if": "hierarchy.is_meshable:true"
 },
@@ -17498,7 +17709,7 @@ null
 null
 ],
 "qualifier": "ntriangles",
-"uniqueid": "TbrPMoErYmpYfrsUOUiacHUgnxNwLz",
+"uniqueid": "wHOomZVNCqKsRibfJAZkIolaSPqjgg",
 "value": 1500,
 "visible_if": "mesh_method:marching,hierarchy.is_meshable:true"
 },
@@ -17515,7 +17726,7 @@ null
 null
 ],
 "qualifier": "ntriangles",
-"uniqueid": "WAOODZjYOYnyyHmSFzMcFVXmpOzuiB",
+"uniqueid": "hnsMkfCovHLYGllvsKlsvRjZyUkDjJ",
 "value": 1500,
 "visible_if": "mesh_method:marching,hierarchy.is_meshable:true"
 },
@@ -17534,7 +17745,7 @@ null
 "description": "Method to use for distorting stars",
 "kind": "phoebe",
 "qualifier": "distortion_method",
-"uniqueid": "tBgSTJulAaaSBnmeeNtxxNFJzUppMC",
+"uniqueid": "hkRjOsnuAbLsuumpfrYPoeheegONiF",
 "value": "sphere",
 "visible_if": "mesh_method:marching,hierarchy.is_meshable:true"
 },
@@ -17553,18 +17764,18 @@ null
 "description": "Method to use for distorting stars",
 "kind": "phoebe",
 "qualifier": "distortion_method",
-"uniqueid": "AzbNqjvMQqAonqaqhOBtlePZNJPgQg",
+"uniqueid": "njRYbtHxkzlFpenVoLcKbvHKRdDVLM",
 "value": "sphere",
 "visible_if": "mesh_method:marching,hierarchy.is_meshable:true"
 },
 {
 "Class": "ChoiceParameter",
 "choices": [
-"phoenix",
-"blackbody",
 "extern_atmx",
 "ck2004",
-"extern_planckint"
+"phoenix",
+"extern_planckint",
+"blackbody"
 ],
 "component": "primary",
 "compute": "nm_fit",
@@ -17573,17 +17784,17 @@ null
 "description": "Atmosphere table",
 "kind": "phoebe",
 "qualifier": "atm",
-"uniqueid": "YZhkjTuptctLirOCaTFCbBcyrkSVbw",
+"uniqueid": "IfKWvKWizJFRwJrBtAbpsPpsJZXBFc",
 "value": "ck2004"
 },
 {
 "Class": "ChoiceParameter",
 "choices": [
-"phoenix",
-"blackbody",
 "extern_atmx",
 "ck2004",
-"extern_planckint"
+"phoenix",
+"extern_planckint",
+"blackbody"
 ],
 "component": "secondary",
 "compute": "nm_fit",
@@ -17592,7 +17803,7 @@ null
 "description": "Atmosphere table",
 "kind": "phoebe",
 "qualifier": "atm",
-"uniqueid": "zWhZieKXxXtTEaPLQkIGctHFNXjytZ",
+"uniqueid": "aAjZrwktUyMvxnPGtzYmWFsTfKVNQX",
 "value": "ck2004"
 },
 {
@@ -17608,7 +17819,7 @@ null
 "description": "How to handle finite-time integration (when non-zero exptime)",
 "kind": "phoebe",
 "qualifier": "fti_method",
-"uniqueid": "btIcEkBhIEGVvuhvDbGWUIyvqJWRoh",
+"uniqueid": "MuTRjuHCcVagJiOkAhakSaPQnEZohO",
 "value": "none"
 },
 {
@@ -17624,7 +17835,7 @@ null
 null
 ],
 "qualifier": "fti_oversample",
-"uniqueid": "bPCEdgLwzGBHKXapQjBEEkbRbTDYhx",
+"uniqueid": "pimjeXrhuDhzAEklCSVaGpsMmVMWRr",
 "value": 5,
 "visible_if": "fti_method:oversample"
 },
@@ -17642,7 +17853,7 @@ null
 "description": "Method to use for computing RVs (must be flux-weighted for Rossiter-McLaughlin effects)",
 "kind": "phoebe",
 "qualifier": "rv_method",
-"uniqueid": "xKusoMtbZsrbLjACiEBCbmWkOyqKCA",
+"uniqueid": "rHKMRDHsPLMRVDmZOvbPMuGPIxQWWP",
 "value": "dynamical"
 },
 {
@@ -17659,7 +17870,7 @@ null
 "description": "Method to use for computing RVs (must be flux-weighted for Rossiter-McLaughlin effects)",
 "kind": "phoebe",
 "qualifier": "rv_method",
-"uniqueid": "PTJimBgHBmEDkEjHixWUyFGVzFelRX",
+"uniqueid": "tTegxALPbTDuQqbpXwrkykGKnvEhlZ",
 "value": "dynamical"
 },
 {
@@ -17672,7 +17883,7 @@ null
 "description": "Whether gravitational redshift effects are enabled for RVs",
 "kind": "phoebe",
 "qualifier": "rv_grav",
-"uniqueid": "TkqqIeapkVHrLEFZjFypYbafoTTTeq",
+"uniqueid": "KmmcXtOpVruRNyHeWXkgldUDClhdtz",
 "value": false,
 "visible_if": "rv_method:flux-weighted"
 },
@@ -17686,7 +17897,7 @@ null
 "description": "Whether gravitational redshift effects are enabled for RVs",
 "kind": "phoebe",
 "qualifier": "rv_grav",
-"uniqueid": "PQiCQKsRvfFjKAbzjnQDrmsDIRjGOe",
+"uniqueid": "kcGfTFqaNFAQLUYqnVEZsXmbYKmmKT",
 "value": false,
 "visible_if": "rv_method:flux-weighted"
 },
@@ -17716,7 +17927,7 @@ null
 "description": "distributions or solutions to use for sampling.  If pointing to a solution, adopt_solution(as_distributions=True, **kwargs) will be called to create a temporary distribution which will be removed automatically.  If all distributions are delta functions (face-values), sample_mode and sample_num will be ignored with a warning.",
 "kind": "phoebe",
 "qualifier": "sample_from",
-"uniqueid": "VLgnQVgVKlIeidMfHrKoEqKqcbqLGj",
+"uniqueid": "CWJnaMnkPUDrxHrDmANNRUbfNnGjkz",
 "value": []
 },
 {
@@ -17730,7 +17941,7 @@ null
 "description": "Method to use to combine multiple distributions from sample_from for the same parameter.  first: ignore duplicate entries and take the first in the sample_from parameter",
 "kind": "phoebe",
 "qualifier": "sample_from_combine",
-"uniqueid": "abMonIeVRxmJujHsANNnLjBYHxPvfP",
+"uniqueid": "xnHDpfbtVyIYWUJAaFEBAHinkFzWeo",
 "value": "first",
 "visible_if": "sample_from:<notempty>"
 },
@@ -17746,7 +17957,7 @@ null
 1000000.0
 ],
 "qualifier": "sample_num",
-"uniqueid": "ainpTwCseDSGBzBCUMYQAnycTSZruo",
+"uniqueid": "rShtntBJDzRGuFcEKClyaATfiMjWBH",
 "value": 10,
 "visible_if": "sample_from:<notempty>"
 },
@@ -17765,7 +17976,7 @@ null
 "description": "Mode to use when exposing model after sampling.  all: expose all sampled forward-models.  median: only return the median of all sampled models.  1/3/5-sigma: expose the synthetic variable at the median and +/- n-sigma.",
 "kind": "phoebe",
 "qualifier": "sample_mode",
-"uniqueid": "VTkFGHJJRqLSwFwCiwSDnWLzOjeGsW",
+"uniqueid": "fEYQNlIktguakJSYWlPmrtPSdGemeD",
 "value": "1-sigma",
 "visible_if": "sample_from:<notempty>"
 },
@@ -17777,7 +17988,7 @@ null
 "description": "Whether to expose failed samples along with the simplified error messages.",
 "kind": "phoebe",
 "qualifier": "expose_samples",
-"uniqueid": "MvmJfOvUpOVmRZenPHFPViqEHzjDIq",
+"uniqueid": "IdlrFGzyHatrlGCKrfQeBwwWkFLuPD",
 "value": true,
 "visible_if": "sample_from:<notempty>"
 },
@@ -17789,7 +18000,7 @@ null
 "description": "Whether to expose failed samples along with the simplified error messages.",
 "kind": "phoebe",
 "qualifier": "expose_failed",
-"uniqueid": "rLePXQvhYtgQdclkkKeECnkRlCJwbK",
+"uniqueid": "WCqBCUeeURrWJFsjlamiWsjWxheriu",
 "value": true,
 "visible_if": "sample_from:<notempty>"
 },
@@ -17801,7 +18012,7 @@ null
 "description": "User-provided comments for these compute-options.  Feel free to place any notes here - if not overridden, they will be copied to any resulting models.",
 "kind": "phoebe",
 "qualifier": "comments",
-"uniqueid": "AorGNZbzIEkqYmHuBAFQrKGyVyxsQF",
+"uniqueid": "wDyXOKbIKepWnzdzHAjVNlLEHTgiGG",
 "value": ""
 },
 {
@@ -17816,7 +18027,7 @@ null
 "description": "Server to use when running the forward model (or \"none\" to run locally) via run_compute.",
 "kind": "phoebe",
 "qualifier": "use_server",
-"uniqueid": "cXYZVKQfbALsCkJkURWquWcFINzDUL",
+"uniqueid": "zMoNdzDrBPIcyOMoncvnXrEjAltYgW",
 "value": "terra"
 },
 {
@@ -17831,7 +18042,7 @@ null
 "description": "Whether to create synthetics in compute/solver run",
 "kind": "phoebe",
 "qualifier": "enabled",
-"uniqueid": "LxlQphffYqRIjoqqrpfkyCLkAUnPUk",
+"uniqueid": "KxMdDBqDzSBTpcBoOiHkQhJhYYpyuD",
 "value": true
 },
 {
@@ -17846,8 +18057,53 @@ null
 "feature": "_default",
 "kind": "phoebe",
 "qualifier": "enabled",
-"uniqueid": "OqjGRYBqsWEbNrwJuWPmAszYDnahfX",
+"uniqueid": "GPGMNbXHWeTeVdcTjobHsKeqgjHAjC",
 "value": true
+},
+{
+"Class": "BoolParameter",
+"compute": "dyn_rv",
+"context": "compute",
+"copy_for": {
+"dataset": "*",
+"kind": [
+"lc",
+"rv",
+"lp"
+]
+},
+"dataset": "_default",
+"description": "Whether to apply the mask in gp_exclude_phases during gaussian process fitting.",
+"kind": "phoebe",
+"qualifier": "gp_exclude_phases_enabled",
+"uniqueid": "MVvyRafCWnsXXMHAGeReikiHfjPUxJ",
+"value": true,
+"visible_if": "ds_has_enabled_feature:gp_*"
+},
+{
+"Class": "FloatArrayParameter",
+"compute": "dyn_rv",
+"context": "compute",
+"copy_for": {
+"dataset": "*",
+"kind": [
+"lc",
+"rv",
+"lp"
+]
+},
+"dataset": "_default",
+"default_unit": "",
+"description": "List of phase-tuples.  Any observations inside the range set by any of the tuples will be ignored by the gaussian process features.",
+"kind": "phoebe",
+"qualifier": "gp_exclude_phases",
+"required_shape": [
+null,
+2
+],
+"uniqueid": "kvMlWopLPOzLhyOXoNIgMLNILGflZe",
+"value": [],
+"visible_if": "ds_has_enabled_feature:gp_*,gp_exclude_phases_enabled:True"
 },
 {
 "Class": "ChoiceParameter",
@@ -17860,7 +18116,7 @@ null
 "description": "Which method to use to determine the dynamics of components",
 "kind": "phoebe",
 "qualifier": "dynamics_method",
-"uniqueid": "CSQgAQxASwUNZoqmobikuLvEOHkPgc",
+"uniqueid": "IumrzdxInIpvsygJOUDcPemfJkvtiQ",
 "value": "keplerian"
 },
 {
@@ -17871,7 +18127,7 @@ null
 "description": "Correct for light travel time effects",
 "kind": "phoebe",
 "qualifier": "ltte",
-"uniqueid": "DVFvFzzocGTWjEtRfYDuqbPaCFuUlV",
+"uniqueid": "ckCeyGwbdBorYlzbEHrKgDyxDEDnUX",
 "value": false
 },
 {
@@ -17884,10 +18140,10 @@ null
 "compute": "dyn_rv",
 "context": "compute",
 "copy_for": false,
-"description": "Which method to use to handle all irradiation effects (reflection, redistribution)",
+"description": "Which method to use to handle all irradiation effects (reflection)",
 "kind": "phoebe",
 "qualifier": "irrad_method",
-"uniqueid": "tBiwKlzMfCptZqvXfhFxnlTqdwQCDq",
+"uniqueid": "NzxaDGrLQSxumPexkpWgVAzKpnYwmE",
 "value": "none"
 },
 {
@@ -17902,7 +18158,7 @@ null
 "description": "Type of boosting method",
 "kind": "phoebe",
 "qualifier": "boosting_method",
-"uniqueid": "KMxbMqMJyukSITyVvXTakvYQCKBWae",
+"uniqueid": "wwEpHddFCurTDWkcOcdoxsMnMoutSP",
 "value": "none"
 },
 {
@@ -17923,7 +18179,7 @@ null
 "description": "Which method to use for discretizing the surface",
 "kind": "phoebe",
 "qualifier": "mesh_method",
-"uniqueid": "tCXjgLyPTNODlBziulPVDNvZtOywer",
+"uniqueid": "nUlETzWbULKuTCZEecadXvuXVenwHu",
 "value": "marching",
 "visible_if": "hierarchy.is_meshable:true"
 },
@@ -17946,7 +18202,7 @@ null
 null
 ],
 "qualifier": "ntriangles",
-"uniqueid": "lPuJKqDDOLVoyybjaIuQyCsJCqyoGT",
+"uniqueid": "jLAbpSTFCovgfnBCIHEySrlAMQdqkr",
 "value": 1500,
 "visible_if": "mesh_method:marching,hierarchy.is_meshable:true"
 },
@@ -17970,7 +18226,7 @@ null
 "description": "Method to use for distorting stars",
 "kind": "phoebe",
 "qualifier": "distortion_method",
-"uniqueid": "JZNqVtqWZsycFUeoEORJUhCNFhbLsE",
+"uniqueid": "GXXSGHOxpejOpDgUVysbqSdXmlXPJM",
 "value": "roche",
 "visible_if": "mesh_method:marching,hierarchy.is_meshable:true"
 },
@@ -17987,7 +18243,7 @@ null
 "description": "Type of eclipse algorithm",
 "kind": "phoebe",
 "qualifier": "eclipse_method",
-"uniqueid": "QOtazarTtaIZkkmKtelfPhGBsmsaXD",
+"uniqueid": "JvVPefQDzrIhBHYSfUytJSJKEVzIGH",
 "value": "native"
 },
 {
@@ -18002,18 +18258,18 @@ null
 "description": "Type of horizon method",
 "kind": "phoebe",
 "qualifier": "horizon_method",
-"uniqueid": "tbaqBBSoJBtUhPkSTRSmMSqoBVYjSn",
+"uniqueid": "stcVecXaFgIFHIhdSWRNCnZcIBJkph",
 "value": "boolean",
 "visible_if": "eclipse_method:native"
 },
 {
 "Class": "ChoiceParameter",
 "choices": [
-"phoenix",
-"blackbody",
 "extern_atmx",
 "ck2004",
-"extern_planckint"
+"phoenix",
+"extern_planckint",
+"blackbody"
 ],
 "component": "_default",
 "compute": "dyn_rv",
@@ -18027,7 +18283,7 @@ null
 "description": "Atmosphere table",
 "kind": "phoebe",
 "qualifier": "atm",
-"uniqueid": "iBfmcaFZFQhnAUirjvKCWSuibYqUcX",
+"uniqueid": "UgolpPETdDGenbosoltlhQLlqyqOIj",
 "value": "ck2004"
 },
 {
@@ -18048,7 +18304,7 @@ null
 "description": "How to handle finite-time integration (when non-zero exptime)",
 "kind": "phoebe",
 "qualifier": "fti_method",
-"uniqueid": "zVOhvnCTnvjpyCItrzqeRRTwoYJUWl",
+"uniqueid": "NqxUqCcpfwqYViIgpeGQyhOHilsjLK",
 "value": "none"
 },
 {
@@ -18069,7 +18325,7 @@ null
 null
 ],
 "qualifier": "fti_oversample",
-"uniqueid": "slyOBgbStaMADNbrzbPtOilBRowdKr",
+"uniqueid": "WDwbNRwGHDPnDweezjUhxZAAUbYTZx",
 "value": 5,
 "visible_if": "fti_method:oversample"
 },
@@ -18094,7 +18350,7 @@ null
 "description": "Method to use for computing RVs (must be flux-weighted for Rossiter-McLaughlin effects)",
 "kind": "phoebe",
 "qualifier": "rv_method",
-"uniqueid": "KMhcVmTTFGIOQNFvBsDzsRJRAwzRby",
+"uniqueid": "qPSMdOcPEsEEeHGLaXiRUjefkRITEh",
 "value": "flux-weighted"
 },
 {
@@ -18114,7 +18370,7 @@ null
 "description": "Whether gravitational redshift effects are enabled for RVs",
 "kind": "phoebe",
 "qualifier": "rv_grav",
-"uniqueid": "LQgGtkfAXjAMmlOjOZsUrZPHeyKspZ",
+"uniqueid": "OtAaRyJsZMJgYhQijCNhSsTGkbkyaq",
 "value": false,
 "visible_if": "rv_method:flux-weighted"
 },
@@ -18127,7 +18383,7 @@ null
 "description": "Whether to create synthetics in compute/solver run",
 "kind": "phoebe",
 "qualifier": "enabled",
-"uniqueid": "qEFAdikLiPJLpLbmMxemkGRyUxMaUJ",
+"uniqueid": "UJMkZSEfZknqbGsWjNzcZCaAAwFbiA",
 "value": false
 },
 {
@@ -18139,10 +18395,72 @@ null
 "description": "Whether to create synthetics in compute/solver run",
 "kind": "phoebe",
 "qualifier": "enabled",
-"uniqueid": "zCjyZFlVfmOkvYDUAWFrscICsthlJH",
+"uniqueid": "jyMMwJltYzmSTZJkLPsKjTGkPZLfZW",
 "value": true
 },
 {
+"Class": "BoolParameter",
+"compute": "dyn_rv",
+"context": "compute",
+"copy_for": false,
+"dataset": "lc01",
+"description": "Whether to apply the mask in gp_exclude_phases during gaussian process fitting.",
+"kind": "phoebe",
+"qualifier": "gp_exclude_phases_enabled",
+"uniqueid": "TgrSoIVLIPxhFqjsLBvqJpDzisaJOJ",
+"value": true,
+"visible_if": "ds_has_enabled_feature:gp_*"
+},
+{
+"Class": "BoolParameter",
+"compute": "dyn_rv",
+"context": "compute",
+"copy_for": false,
+"dataset": "rv01",
+"description": "Whether to apply the mask in gp_exclude_phases during gaussian process fitting.",
+"kind": "phoebe",
+"qualifier": "gp_exclude_phases_enabled",
+"uniqueid": "tFLlFdPYsQNzKoWloeyrRVhuuNFDLb",
+"value": true,
+"visible_if": "ds_has_enabled_feature:gp_*"
+},
+{
+"Class": "FloatArrayParameter",
+"compute": "dyn_rv",
+"context": "compute",
+"copy_for": false,
+"dataset": "lc01",
+"default_unit": "",
+"description": "List of phase-tuples.  Any observations inside the range set by any of the tuples will be ignored by the gaussian process features.",
+"kind": "phoebe",
+"qualifier": "gp_exclude_phases",
+"required_shape": [
+null,
+2
+],
+"uniqueid": "PKvGpqcXpEfTPaWIpzqMzuIIcuvdEB",
+"value": [],
+"visible_if": "ds_has_enabled_feature:gp_*,gp_exclude_phases_enabled:True"
+},
+{
+"Class": "FloatArrayParameter",
+"compute": "dyn_rv",
+"context": "compute",
+"copy_for": false,
+"dataset": "rv01",
+"default_unit": "",
+"description": "List of phase-tuples.  Any observations inside the range set by any of the tuples will be ignored by the gaussian process features.",
+"kind": "phoebe",
+"qualifier": "gp_exclude_phases",
+"required_shape": [
+null,
+2
+],
+"uniqueid": "iqIwxdtEqehtQtaNEFSJDgAatCgiRe",
+"value": [],
+"visible_if": "ds_has_enabled_feature:gp_*,gp_exclude_phases_enabled:True"
+},
+{
 "Class": "ChoiceParameter",
 "choices": [
 "marching"
@@ -18154,7 +18472,7 @@ null
 "description": "Which method to use for discretizing the surface",
 "kind": "phoebe",
 "qualifier": "mesh_method",
-"uniqueid": "YdLiQAmCYptNacLtOKhfZyQIUBIMtz",
+"uniqueid": "UziJQIHfrYeiJXvTtxiGrZoWUZxVsx",
 "value": "marching",
 "visible_if": "hierarchy.is_meshable:true"
 },
@@ -18170,7 +18488,7 @@ null
 "description": "Which method to use for discretizing the surface",
 "kind": "phoebe",
 "qualifier": "mesh_method",
-"uniqueid": "LkBqvvpbQLKeBiTihmmvWcFXPwpvHM",
+"uniqueid": "odDxdqKMQpzDkdmDIBqZkWrOmOZzCd",
 "value": "marching",
 "visible_if": "hierarchy.is_meshable:true"
 },
@@ -18187,7 +18505,7 @@ null
 null
 ],
 "qualifier": "ntriangles",
-"uniqueid": "VBIggxMFialKHxiCCYDPeZstQgGsSh",
+"uniqueid": "dIVIdKSMPMmAOrIhMtTPsWpPwVhJNY",
 "value": 1500,
 "visible_if": "mesh_method:marching,hierarchy.is_meshable:true"
 },
@@ -18204,7 +18522,7 @@ null
 null
 ],
 "qualifier": "ntriangles",
-"uniqueid": "DapaOEValsVQLDWcSBKSKGiZdqModj",
+"uniqueid": "viYCQYVJMfbwmiOoXNBUiewcfJKxoI",
 "value": 1500,
 "visible_if": "mesh_method:marching,hierarchy.is_meshable:true"
 },
@@ -18223,7 +18541,7 @@ null
 "description": "Method to use for distorting stars",
 "kind": "phoebe",
 "qualifier": "distortion_method",
-"uniqueid": "bRVnImXqjzbxvLHYOGCmPZurllBuwA",
+"uniqueid": "ugtVWHjsCrWIGMfUKDNuJaLUyhGvoE",
 "value": "roche",
 "visible_if": "mesh_method:marching,hierarchy.is_meshable:true"
 },
@@ -18242,18 +18560,18 @@ null
 "description": "Method to use for distorting stars",
 "kind": "phoebe",
 "qualifier": "distortion_method",
-"uniqueid": "EbcUypUeODVvgTZTVrFQpzQiWqNYIG",
+"uniqueid": "qGxvaPgNoNluDTfLKYcUUhMymJzfzW",
 "value": "roche",
 "visible_if": "mesh_method:marching,hierarchy.is_meshable:true"
 },
 {
 "Class": "ChoiceParameter",
 "choices": [
-"phoenix",
-"blackbody",
 "extern_atmx",
 "ck2004",
-"extern_planckint"
+"phoenix",
+"extern_planckint",
+"blackbody"
 ],
 "component": "primary",
 "compute": "dyn_rv",
@@ -18262,17 +18580,17 @@ null
 "description": "Atmosphere table",
 "kind": "phoebe",
 "qualifier": "atm",
-"uniqueid": "orNsruhHSSomwfNJkDcYTAITQdzjxw",
+"uniqueid": "pDmkZekuJXaWoLHoplcojZqYvQroaC",
 "value": "ck2004"
 },
 {
 "Class": "ChoiceParameter",
 "choices": [
-"phoenix",
-"blackbody",
 "extern_atmx",
 "ck2004",
-"extern_planckint"
+"phoenix",
+"extern_planckint",
+"blackbody"
 ],
 "component": "secondary",
 "compute": "dyn_rv",
@@ -18281,7 +18599,7 @@ null
 "description": "Atmosphere table",
 "kind": "phoebe",
 "qualifier": "atm",
-"uniqueid": "AojcCDyAwRgGzbvWMJtEhYeBjTqiGj",
+"uniqueid": "bEUZNbIWPSmBVZyELXrzjcnFRxIHzB",
 "value": "ck2004"
 },
 {
@@ -18297,7 +18615,7 @@ null
 "description": "How to handle finite-time integration (when non-zero exptime)",
 "kind": "phoebe",
 "qualifier": "fti_method",
-"uniqueid": "NYrFndljQJFxYVZiTFLcvllvoOiZIm",
+"uniqueid": "pwLSZEMSSgfXqnWlWCIsYMuWJsKxGB",
 "value": "none"
 },
 {
@@ -18313,7 +18631,7 @@ null
 null
 ],
 "qualifier": "fti_oversample",
-"uniqueid": "IBhcbAYALPRIgEZwRRrrkSCGNXHTdw",
+"uniqueid": "bzHJJDCZBPzIyoKfJYQYjiVmxTxDVW",
 "value": 5,
 "visible_if": "fti_method:oversample"
 },
@@ -18331,7 +18649,7 @@ null
 "description": "Method to use for computing RVs (must be flux-weighted for Rossiter-McLaughlin effects)",
 "kind": "phoebe",
 "qualifier": "rv_method",
-"uniqueid": "rZnnTbZPipSBpwYgIBwLFoPHvsqAWe",
+"uniqueid": "TRlaxRWvRSxdmgiDwhazicEwkBOZaE",
 "value": "dynamical"
 },
 {
@@ -18348,7 +18666,7 @@ null
 "description": "Method to use for computing RVs (must be flux-weighted for Rossiter-McLaughlin effects)",
 "kind": "phoebe",
 "qualifier": "rv_method",
-"uniqueid": "sufDYOSKObsFOCLkbDXActNUmyuEUK",
+"uniqueid": "nkpifVujsSaPgoxTkddlEJjYxOMFIZ",
 "value": "dynamical"
 },
 {
@@ -18361,7 +18679,7 @@ null
 "description": "Whether gravitational redshift effects are enabled for RVs",
 "kind": "phoebe",
 "qualifier": "rv_grav",
-"uniqueid": "XMvYdukGGXZLqeLqHvniOBVXLelrMh",
+"uniqueid": "FlovoxaLxLMaALzHwzjMHrFNbTwMrN",
 "value": false,
 "visible_if": "rv_method:flux-weighted"
 },
@@ -18375,7 +18693,7 @@ null
 "description": "Whether gravitational redshift effects are enabled for RVs",
 "kind": "phoebe",
 "qualifier": "rv_grav",
-"uniqueid": "XABSWHspmtJdIehrBLOFzFHpRTPvbX",
+"uniqueid": "gqBkwlzrWGciiqVXrdwnAuJKlxbFKm",
 "value": false,
 "visible_if": "rv_method:flux-weighted"
 },
@@ -24217,7 +24535,7 @@ null
 "kind": "rv_periodogram",
 "qualifier": "comments",
 "solver": "rvperiod",
-"uniqueid": "jxTpLdHQwFtWwPihjqKPRZRLTBXZZi",
+"uniqueid": "VIQLPLvgZFmINwNBksycdYfKeFfNYG",
 "value": ""
 },
 {
@@ -24232,7 +24550,7 @@ null
 "kind": "rv_periodogram",
 "qualifier": "use_server",
 "solver": "rvperiod",
-"uniqueid": "GCBGFImZIiVDlqFfnDSRKgDKKuvrcp",
+"uniqueid": "nnnAgSYtCQpitlqMEGjbSMEDbjxsEv",
 "value": "none"
 },
 {
@@ -24246,7 +24564,7 @@ null
 "kind": "rv_periodogram",
 "qualifier": "algorithm",
 "solver": "rvperiod",
-"uniqueid": "fbTaOqZvhgGQYGRfyUYWzXzmXUHtyv",
+"uniqueid": "inDklYVzJZEMiBDAiKapCrGkgXTnNR",
 "value": "ls"
 },
 {
@@ -24260,7 +24578,7 @@ null
 "kind": "rv_periodogram",
 "qualifier": "rv_datasets",
 "solver": "rvperiod",
-"uniqueid": "gxNocfZNlLtZxbrgpAUjRIilVpVsoX",
+"uniqueid": "xVLayxkUPyyDkzxwdiyUaSTWBsakdN",
 "value": [
 "*"
 ]
@@ -24278,7 +24596,7 @@ null
 "kind": "rv_periodogram",
 "qualifier": "component",
 "solver": "rvperiod",
-"uniqueid": "btzXhvZZVkuzEUAXozrFtQqBAfWRgw",
+"uniqueid": "JlESJQfVbGlwWvBOigXiKJIMGpUQpu",
 "value": "binary"
 },
 {
@@ -24293,7 +24611,7 @@ null
 "kind": "rv_periodogram",
 "qualifier": "sample_mode",
 "solver": "rvperiod",
-"uniqueid": "RGOmpytzFekBADKxaGcvEBdqZGpoRt",
+"uniqueid": "vVdCHafMGwOpJBpvZBQqNKbNGYsvTV",
 "value": "manual"
 },
 {
@@ -24305,7 +24623,7 @@ null
 "kind": "rv_periodogram",
 "qualifier": "sample_periods",
 "solver": "rvperiod",
-"uniqueid": "sICASierFPuEeTodFaIprryyhUWtuH",
+"uniqueid": "ZhXGiTiGUIZNSANAykNDLOCiXlibPu",
 "value": [
 0.5,
 0.5045045045045045,
@@ -25323,7 +25641,7 @@ null
 ],
 "qualifier": "samples_per_peak",
 "solver": "rvperiod",
-"uniqueid": "fUcdBFGEzYtHxUCpcrNGAGivEkmqpP",
+"uniqueid": "YdmguLJOhDwQRfZeiegKOzCDlqxFnR",
 "value": 10,
 "visible_if": "sample_mode:auto,algorithm:ls"
 },
@@ -25340,7 +25658,7 @@ null
 ],
 "qualifier": "nyquist_factor",
 "solver": "rvperiod",
-"uniqueid": "CANJUpwuvhBHeXGrfykQWiigkCbuEK",
+"uniqueid": "bwcjOozVeOchMMKBpVMlnHBhmeCJGI",
 "value": 5,
 "visible_if": "sample_mode:auto,algorithm:ls"
 },
@@ -25352,7 +25670,7 @@ null
 "kind": "lc_periodogram",
 "qualifier": "comments",
 "solver": "lcperiod_bls",
-"uniqueid": "cHONWejdDlSfMzNxHBDBsvxilxsDbC",
+"uniqueid": "azGVHIdwHuqJVLVEWBnTkvxwtkGwxC",
 "value": ""
 },
 {
@@ -25367,7 +25685,7 @@ null
 "kind": "lc_periodogram",
 "qualifier": "use_server",
 "solver": "lcperiod_bls",
-"uniqueid": "yiuEkNhFUyTgwKhIrnkZcHgrCxwqiF",
+"uniqueid": "QuFWUtaUgDXOTJruuumGUuaRqYQcVY",
 "value": "none"
 },
 {
@@ -25382,7 +25700,7 @@ null
 "kind": "lc_periodogram",
 "qualifier": "algorithm",
 "solver": "lcperiod_bls",
-"uniqueid": "tJhAFdslmCWfTjvrNSRGssSzFBaZdA",
+"uniqueid": "qXnOzIALQLPLocAGKbgqKNOEGynYGw",
 "value": "bls"
 },
 {
@@ -25396,7 +25714,7 @@ null
 "kind": "lc_periodogram",
 "qualifier": "lc_datasets",
 "solver": "lcperiod_bls",
-"uniqueid": "WErVKpCjdYLkfcGScKJyCTleFDbcjO",
+"uniqueid": "KisusMreYkMWdKSvOejnlzVLNKKxOT",
 "value": [
 "*"
 ]
@@ -25414,7 +25732,7 @@ null
 "kind": "lc_periodogram",
 "qualifier": "lc_combine",
 "solver": "lcperiod_bls",
-"uniqueid": "lVXdKhTrJGVAyGHpdvmDMSprmSrXlp",
+"uniqueid": "mioxYxJOZftcQvkYEKZTYqSBlWCJoT",
 "value": "median",
 "visible_if": "lc_datasets:<plural>"
 },
@@ -25431,7 +25749,7 @@ null
 "kind": "lc_periodogram",
 "qualifier": "component",
 "solver": "lcperiod_bls",
-"uniqueid": "OVHXAOLDhgzRYbOOetAgxVchuYFFGU",
+"uniqueid": "fWYgjHNCZGVdVrHwxcHAHPGEMZwbVD",
 "value": "binary"
 },
 {
@@ -25446,7 +25764,7 @@ null
 "kind": "lc_periodogram",
 "qualifier": "sample_mode",
 "solver": "lcperiod_bls",
-"uniqueid": "GacRoDhfPyWVlFWlJNDBdhbhLAFrZg",
+"uniqueid": "FQuZtXCCrCFfHEiEaPiTrqOpRAESaN",
 "value": "auto"
 },
 {
@@ -25458,7 +25776,7 @@ null
 "kind": "lc_periodogram",
 "qualifier": "sample_periods",
 "solver": "lcperiod_bls",
-"uniqueid": "nmNsreMvNNuJSCAaTvRIUIAFTiQOyP",
+"uniqueid": "ltmvgqDMIpIgSCNvFaImnWBUxQocar",
 "value": [],
 "visible_if": "sample_mode:manual"
 },
@@ -25471,7 +25789,7 @@ null
 "kind": "lc_periodogram",
 "qualifier": "duration",
 "solver": "lcperiod_bls",
-"uniqueid": "NrRIdaGViUIINlGTRZOlOGPpSlkYxr",
+"uniqueid": "weRLdWyHkofaOGXVRFiKqrmfVTrPpL",
 "value": [
 0.1
 ],
@@ -25489,7 +25807,7 @@ null
 "kind": "lc_periodogram",
 "qualifier": "objective",
 "solver": "lcperiod_bls",
-"uniqueid": "jyndVDbfYGvXkAScDIqHSAxugNnKrv",
+"uniqueid": "QAlweRJcWRYSMEhWhOaYUaRJJKxTaq",
 "value": "likelihood",
 "visible_if": "algorithm:bls"
 },
@@ -25506,7 +25824,7 @@ null
 ],
 "qualifier": "minimum_n_cycles",
 "solver": "lcperiod_bls",
-"uniqueid": "LjgybnZaArQlvgPaqVwVtLpGUUdlww",
+"uniqueid": "AvuEcrBHepmXCSbhIKWROpzqlRRuon",
 "value": 3,
 "visible_if": "sample_mode:auto,algorithm:bls"
 },
@@ -25523,7 +25841,7 @@ null
 ],
 "qualifier": "samples_per_peak",
 "solver": "lcperiod_bls",
-"uniqueid": "ihripIOKIlpxEgxpWRrZzjfIOpDmXf",
+"uniqueid": "lbzImFtoxyWtyOKAQJGUNKfaLcMwma",
 "value": 10,
 "visible_if": "sample_mode:auto,algorithm:ls"
 },
@@ -25540,7 +25858,7 @@ null
 ],
 "qualifier": "nyquist_factor",
 "solver": "lcperiod_bls",
-"uniqueid": "BODPpsMwxkOaBADDvNFYBQcCfiTALM",
+"uniqueid": "zKcVoZuthaVZIPSqQnskNcROpCqDBU",
 "value": 5,
 "visible_if": "sample_mode:auto,algorithm:ls"
 },
@@ -25552,7 +25870,7 @@ null
 "kind": "lc_periodogram",
 "qualifier": "comments",
 "solver": "lcperiod_ls",
-"uniqueid": "zuFSNyExAcoQdbXWPLWGKeTmlepeaR",
+"uniqueid": "OEGEnujumGyiwWkvwyRqIYwUolPOJb",
 "value": ""
 },
 {
@@ -25567,7 +25885,7 @@ null
 "kind": "lc_periodogram",
 "qualifier": "use_server",
 "solver": "lcperiod_ls",
-"uniqueid": "xgwTFWUMTGeLClzpkVGrVercxgaqjk",
+"uniqueid": "GLIbrfGTENxjIWGawhQzUQiodealDj",
 "value": "none"
 },
 {
@@ -25582,7 +25900,7 @@ null
 "kind": "lc_periodogram",
 "qualifier": "algorithm",
 "solver": "lcperiod_ls",
-"uniqueid": "swXaIPqaWxTqiVkBugOcgESEcqctDS",
+"uniqueid": "XQxsAWLDFFDUoDNhzZgbmlxGSNuMEU",
 "value": "ls"
 },
 {
@@ -25596,7 +25914,7 @@ null
 "kind": "lc_periodogram",
 "qualifier": "lc_datasets",
 "solver": "lcperiod_ls",
-"uniqueid": "KqkFUWLAnDfsFGdRGWeKQEARUlKkba",
+"uniqueid": "qAUrrRsAGohboYBRpqohPUmVnGaHLE",
 "value": [
 "*"
 ]
@@ -25614,7 +25932,7 @@ null
 "kind": "lc_periodogram",
 "qualifier": "lc_combine",
 "solver": "lcperiod_ls",
-"uniqueid": "WotvwhJfxrVmagKLFIksYkbnSdHrFd",
+"uniqueid": "CzZJfHdCXWSQyZTOZjWoxxliqJhXaJ",
 "value": "median",
 "visible_if": "lc_datasets:<plural>"
 },
@@ -25631,7 +25949,7 @@ null
 "kind": "lc_periodogram",
 "qualifier": "component",
 "solver": "lcperiod_ls",
-"uniqueid": "ViXKFuBzjjKONhgWLKlxBFtGzaYADR",
+"uniqueid": "wcvqYdxNjrOBMVvaJYPpFrcFNeyjZv",
 "value": "binary"
 },
 {
@@ -25646,7 +25964,7 @@ null
 "kind": "lc_periodogram",
 "qualifier": "sample_mode",
 "solver": "lcperiod_ls",
-"uniqueid": "LepCDkrQoQzOKAteQXCYTDrzSouAsH",
+"uniqueid": "BseMgcBlBEQZGkjWDkcfIbNCXygVMh",
 "value": "auto"
 },
 {
@@ -25658,7 +25976,7 @@ null
 "kind": "lc_periodogram",
 "qualifier": "sample_periods",
 "solver": "lcperiod_ls",
-"uniqueid": "hvOqPoGjqMVhxaUdTjtUbeNALmnIES",
+"uniqueid": "UfmKyqdZOKvuvuVcuUtJndyiwQidep",
 "value": [],
 "visible_if": "sample_mode:manual"
 },
@@ -25671,7 +25989,7 @@ null
 "kind": "lc_periodogram",
 "qualifier": "duration",
 "solver": "lcperiod_ls",
-"uniqueid": "CJYsBDiOADcElwcMWDPZtdLVJrGhUA",
+"uniqueid": "wNHkCQMsElRIfGrvgQdjvtWiwIaXhe",
 "value": [
 0.1
 ],
@@ -25689,7 +26007,7 @@ null
 "kind": "lc_periodogram",
 "qualifier": "objective",
 "solver": "lcperiod_ls",
-"uniqueid": "NQYCpoaFKXyQKwKuLyOsRTBAgtnSJx",
+"uniqueid": "srkWGtImvczBpHCeaJSSfGNklGpOom",
 "value": "likelihood",
 "visible_if": "algorithm:bls"
 },
@@ -25706,7 +26024,7 @@ null
 ],
 "qualifier": "minimum_n_cycles",
 "solver": "lcperiod_ls",
-"uniqueid": "gjIXZuOLfXRZwLLPAxeMLcugTvLpCK",
+"uniqueid": "xvUBQSgAtkGnqUbJgjugRSgAVirotN",
 "value": 3,
 "visible_if": "sample_mode:auto,algorithm:bls"
 },
@@ -25723,7 +26041,7 @@ null
 ],
 "qualifier": "samples_per_peak",
 "solver": "lcperiod_ls",
-"uniqueid": "sdTXfPvRHFwhpyRgUqJIwkWDoXCHYt",
+"uniqueid": "RYlHhtcPmjamEpEllaykzatVSoOgba",
 "value": 10,
 "visible_if": "sample_mode:auto,algorithm:ls"
 },
@@ -25740,7 +26058,7 @@ null
 ],
 "qualifier": "nyquist_factor",
 "solver": "lcperiod_ls",
-"uniqueid": "GcvWeaSSnsOTDtYxVvFPaGTedeIGlA",
+"uniqueid": "uWIdBAJbcEobmkFBounPBUhjniamQh",
 "value": 5,
 "visible_if": "sample_mode:auto,algorithm:ls"
 },
@@ -25752,7 +26070,7 @@ null
 "kind": "rv_geometry",
 "qualifier": "comments",
 "solver": "rvgeom",
-"uniqueid": "LpJIPxRefRNzPdvtxjxUejeUrEEgMs",
+"uniqueid": "DkloCrdtslZDoVtvRObOPybxzDaOYl",
 "value": ""
 },
 {
@@ -25767,7 +26085,7 @@ null
 "kind": "rv_geometry",
 "qualifier": "use_server",
 "solver": "rvgeom",
-"uniqueid": "GbfShEeKJBtWfhpELTNScyqaJNAvBE",
+"uniqueid": "lLvATBlljGkkavdutLwldwMFjBFrqW",
 "value": "none"
 },
 {
@@ -25781,7 +26099,7 @@ null
 "kind": "rv_geometry",
 "qualifier": "rv_datasets",
 "solver": "rvgeom",
-"uniqueid": "RydiiklROpMEROcMWEBIaBSehHSauh",
+"uniqueid": "ufmKtYCncyepYRHHgrmbCWyQwSsgVH",
 "value": [
 "*"
 ]
@@ -25797,7 +26115,7 @@ null
 "kind": "rv_geometry",
 "qualifier": "orbit",
 "solver": "rvgeom",
-"uniqueid": "nUCbazGIObBvZiItcsHvehRjcobySR",
+"uniqueid": "nvUPMuziPLFECitCfRAuPsHOyVtBCJ",
 "value": "binary"
 },
 {
@@ -25808,7 +26126,7 @@ null
 "kind": "rv_geometry",
 "qualifier": "phase_bin",
 "solver": "rvgeom",
-"uniqueid": "xiyNKpHIbsxPzmniKLUIOxTxueCqIk",
+"uniqueid": "EUKedlkRywLxwXyxCTWbUFdvbNxueP",
 "value": true
 },
 {
@@ -25823,7 +26141,7 @@ null
 ],
 "qualifier": "phase_nbins",
 "solver": "rvgeom",
-"uniqueid": "DaooVWFjBKkoOgxWRAgphcrzRjBurt",
+"uniqueid": "qWEGLVuXSmmMKdUXyEhpSrgCpdMQck",
 "value": 500,
 "visible_if": "phase_bin:True"
 },
@@ -25835,7 +26153,7 @@ null
 "kind": "rv_geometry",
 "qualifier": "expose_model",
 "solver": "rvgeom",
-"uniqueid": "TmKXWEwqxWmoVxKOoRlFUExwxZJSPj",
+"uniqueid": "YNzZrZHJQvHlRxcEvPaiMhDceoSxTO",
 "value": true
 },
 {
@@ -25846,7 +26164,7 @@ null
 "kind": "ebai",
 "qualifier": "comments",
 "solver": "ebai_est",
-"uniqueid": "QMXwDqdegANjPYzIVSVuHHsmmplbbE",
+"uniqueid": "ICubDnVnnJyHVtIhtJsOOmxbMjHFqF",
 "value": ""
 },
 {
@@ -25861,7 +26179,7 @@ null
 "kind": "ebai",
 "qualifier": "use_server",
 "solver": "ebai_est",
-"uniqueid": "SSVmceYSIaSkmAXHxKXbacSItQCfLJ",
+"uniqueid": "HqbdsGHFEgVYqDXcSlPvdeOLcVCdPF",
 "value": "none"
 },
 {
@@ -25875,7 +26193,7 @@ null
 "kind": "ebai",
 "qualifier": "lc_datasets",
 "solver": "ebai_est",
-"uniqueid": "XeqbFnIaOrpjdJaMfqxaWBKmqoZagc",
+"uniqueid": "QgFHYpVJdVPzRnCxCwRJuMSaRTrLRc",
 "value": [
 "*"
 ]
@@ -25893,7 +26211,7 @@ null
 "kind": "ebai",
 "qualifier": "lc_combine",
 "solver": "ebai_est",
-"uniqueid": "wvxuUlKXHeURhZJvoTClyMCwEPNAhY",
+"uniqueid": "zaYKpXNcmknlbQYeblgWjCBkhHrYlt",
 "value": "median",
 "visible_if": "lc_datasets:<plural>"
 },
@@ -25905,7 +26223,7 @@ null
 "kind": "ebai",
 "qualifier": "phase_bin",
 "solver": "ebai_est",
-"uniqueid": "UETRbPuJoiPfXInvkbPqcgShFdwXyo",
+"uniqueid": "IinJArBjRKTxEcjKFpGQXMsHvmUDsl",
 "value": true
 },
 {
@@ -25920,9 +26238,24 @@ null
 ],
 "qualifier": "phase_nbins",
 "solver": "ebai_est",
-"uniqueid": "PoPSPMsFwyhytSvfNdoFQktGSWWtso",
+"uniqueid": "FsOdJGgiwhuxbmUdKusaEnyZoAKmXE",
 "value": 500,
 "visible_if": "phase_bin:True"
+},
+{
+"Class": "ChoiceParameter",
+"choices": [
+"knn",
+"mlp"
+],
+"context": "solver",
+"copy_for": false,
+"description": "Choice of machine learning model to use for prediction. knn uses a trained sklearn kNeighborsRegressor, while mlp uses a trained neural network.",
+"kind": "ebai",
+"qualifier": "ebai_method",
+"solver": "ebai_est",
+"uniqueid": "nfsLtAufbBfbDtJjLgRUScHNYhCCmz",
+"value": "mlp"
 },
 {
 "Class": "ChoiceParameter",
@@ -25935,7 +26268,7 @@ null
 "kind": "ebai",
 "qualifier": "orbit",
 "solver": "ebai_est",
-"uniqueid": "wiACDGXwdiDxgexMOZiWGPQPhzkRTb",
+"uniqueid": "NVxCDGxIgWvDuBYVZQgnzuFkolapKR",
 "value": "binary"
 },
 {
@@ -25946,7 +26279,7 @@ null
 "kind": "lc_geometry",
 "qualifier": "comments",
 "solver": "lcgeom",
-"uniqueid": "NTRTYQCHRCHURqnvAPaLMnQsSscrFJ",
+"uniqueid": "zOXoFykFvPOFDDxasBOwJTdkblnopB",
 "value": ""
 },
 {
@@ -25961,7 +26294,7 @@ null
 "kind": "lc_geometry",
 "qualifier": "use_server",
 "solver": "lcgeom",
-"uniqueid": "LsDzSeakVxluClPYOUKPZAAcsbMxJz",
+"uniqueid": "hDChGjNPNEVNasBxmvPeTWshtsccXM",
 "value": "none"
 },
 {
@@ -25975,7 +26308,7 @@ null
 "kind": "lc_geometry",
 "qualifier": "lc_datasets",
 "solver": "lcgeom",
-"uniqueid": "BLreUoTXblfUeFBbYVejGbnOjIVAai",
+"uniqueid": "lDyqmwZPQLdQiJGLSDMRabXqWheCFb",
 "value": [
 "*"
 ]
@@ -25993,7 +26326,7 @@ null
 "kind": "lc_geometry",
 "qualifier": "lc_combine",
 "solver": "lcgeom",
-"uniqueid": "ABDadlmHMtmYTjNALphrzIPNUGtnBo",
+"uniqueid": "aLaqZrOjpnGZkkQMcRfiApItmcwEXT",
 "value": "median",
 "visible_if": "lc_datasets:<plural>"
 },
@@ -26005,7 +26338,7 @@ null
 "kind": "lc_geometry",
 "qualifier": "phase_bin",
 "solver": "lcgeom",
-"uniqueid": "gpHvspHURmHAVsytSxksFUXiDUGDYx",
+"uniqueid": "WwtlAzYFkaWKLcMoztdsIvHsZoYRNn",
 "value": true
 },
 {
@@ -26020,7 +26353,7 @@ null
 ],
 "qualifier": "phase_nbins",
 "solver": "lcgeom",
-"uniqueid": "lywPkhxhaskUjmRuVrtlsyLAFEjqfW",
+"uniqueid": "brLysEJCbzmkFZWZZmzzdHYVxrAxFk",
 "value": 500,
 "visible_if": "phase_bin:True"
 },
@@ -26035,8 +26368,34 @@ null
 "kind": "lc_geometry",
 "qualifier": "orbit",
 "solver": "lcgeom",
-"uniqueid": "deSbuRBCcKJdLtdYLsgfSRtWsqpkhg",
+"uniqueid": "NEzxFOLOFEHbkgBgonItphBYAzbPsZ",
 "value": "binary"
+},
+{
+"Class": "ChoiceParameter",
+"choices": [
+"two-gaussian",
+"polyfit"
+],
+"context": "solver",
+"copy_for": false,
+"description": "Analytical model to fit the light curve with.",
+"kind": "lc_geometry",
+"qualifier": "analytical_model",
+"solver": "lcgeom",
+"uniqueid": "zihmcHqaxeySDXTboWftkHecsOQgSn",
+"value": "two-gaussian"
+},
+{
+"Class": "BoolParameter",
+"context": "solver",
+"copy_for": false,
+"description": "Whether to open results in interactive mode for manual adjustment.",
+"kind": "lc_geometry",
+"qualifier": "interactive",
+"solver": "lcgeom",
+"uniqueid": "VaUBxmWvEpBmzeuvtzOrKlDlabgPSH",
+"value": false
 },
 {
 "Class": "BoolParameter",
@@ -26046,7 +26405,7 @@ null
 "kind": "lc_geometry",
 "qualifier": "t0_near_times",
 "solver": "lcgeom",
-"uniqueid": "iirzQZbhGOyeYEBsCqPplHdeGTgzXk",
+"uniqueid": "gMiMpWHukzLayZeWxCEiLslrrzSLtc",
 "value": true
 },
 {
@@ -26057,7 +26416,7 @@ null
 "kind": "lc_geometry",
 "qualifier": "expose_model",
 "solver": "lcgeom",
-"uniqueid": "VvwdGmudGgefQnoWTQfrLAwdHlttnK",
+"uniqueid": "izaJQiLlsyYSJcrekqPApduBKciELR",
 "value": true
 },
 {
@@ -26068,7 +26427,7 @@ null
 "kind": "nelder_mead",
 "qualifier": "comments",
 "solver": "nm_solver",
-"uniqueid": "yXjrYjnWwHBrBgYiyTZZrknjPYEDKg",
+"uniqueid": "azpIURoDXiKQuJgHKCoWhEDnUwgyLW",
 "value": ""
 },
 {
@@ -26084,7 +26443,7 @@ null
 "kind": "nelder_mead",
 "qualifier": "use_server",
 "solver": "nm_solver",
-"uniqueid": "KqHvDdTRBrgpJZfGjgayKoYjbdFWVo",
+"uniqueid": "qBkBJPtxHAgGaJWbXHXJLdwKxoxUMh",
 "value": "compute"
 },
 {
@@ -26100,7 +26459,7 @@ null
 "kind": "nelder_mead",
 "qualifier": "compute",
 "solver": "nm_solver",
-"uniqueid": "KTSTvoaTLINnaAiBUeWeiJZIgjGPnM",
+"uniqueid": "pLJLvldsaEInSkatHoKwLPPjryiMSf",
 "value": "nm_fit"
 },
 {
@@ -26111,7 +26470,7 @@ null
 "kind": "nelder_mead",
 "qualifier": "expose_lnprobabilities",
 "solver": "nm_solver",
-"uniqueid": "IVYcrnkwNPefZkQJeKlhRekXYzHiys",
+"uniqueid": "BylfQEFBNeXoEEcfsdBMWGpnwcNOQN",
 "value": false
 },
 {
@@ -26126,7 +26485,7 @@ null
 "kind": "nelder_mead",
 "qualifier": "continue_from",
 "solver": "nm_solver",
-"uniqueid": "RoeVKDFdLJdOqlVfjykYIvVYVRnsUz",
+"uniqueid": "uwFRzrMsNNbcTmrbhYvWtGiheZYiJr",
 "value": "None"
 },
 {
@@ -26226,7 +26585,7 @@ null
 "kind": "nelder_mead",
 "qualifier": "fit_parameters",
 "solver": "nm_solver",
-"uniqueid": "hHwmBzljYMMdKSRsjOLsCxPsJhXvbp",
+"uniqueid": "IbnkFjljqJwxOCTfxhRhxOnOHOFQYD",
 "value": [
 "teffratio@binary",
 "requiv@primary",
@@ -26242,7 +26601,7 @@ null
 "kind": "nelder_mead",
 "qualifier": "initial_values",
 "solver": "nm_solver",
-"uniqueid": "libljouKjZGWMVWRdiKMEQqrMiJVTY",
+"uniqueid": "YYsxzxgXXlMGSIcrRFzMwoNlsjEUHq",
 "value": {},
 "visible_if": "continue_from:None"
 },
@@ -26259,7 +26618,7 @@ null
 "kind": "nelder_mead",
 "qualifier": "priors",
 "solver": "nm_solver",
-"uniqueid": "xkfxcEZlYVOQkUDDnrVruyuTKOKkWK",
+"uniqueid": "cjDeNrdZFetxXtuplYlDKEcffhSYIe",
 "value": [
 "dist01"
 ]
@@ -26277,9 +26636,9 @@ null
 "kind": "nelder_mead",
 "qualifier": "priors_combine",
 "solver": "nm_solver",
-"uniqueid": "JFtmDtxWRZPQLbnvPJhVMRItqLYmPH",
+"uniqueid": "TBjQdPUoIaCoxkJEdkfBPekizzbGHt",
 "value": "and",
-"visible_if": "priors:<notempty>"
+"visible_if": "priors:<plural>"
 },
 {
 "Class": "IntParameter",
@@ -26293,7 +26652,7 @@ null
 ],
 "qualifier": "maxiter",
 "solver": "nm_solver",
-"uniqueid": "fEkhACzejBJVbUcvwYfOoFeXfiguCb",
+"uniqueid": "LJaZZHHGzuxFoFGChwQmJCJUXjOyhm",
 "value": 20
 },
 {
@@ -26304,7 +26663,7 @@ null
 "kind": "nelder_mead",
 "qualifier": "adaptive",
 "solver": "nm_solver",
-"uniqueid": "bcZVBHkucqukRnXYzZPiNMFXZFVHYy",
+"uniqueid": "HoIaOlBLqEDmVTvVuYGZcWfXmBzuzL",
 "value": false
 },
 {
@@ -26320,7 +26679,7 @@ null
 ],
 "qualifier": "xatol",
 "solver": "nm_solver",
-"uniqueid": "YNaXLPknHyouLctTeAATVgdcRKXzqG",
+"uniqueid": "vaZqGjPwwSZXLYbuLyLwHWutlHmsKM",
 "value": 0.0001
 },
 {
@@ -26336,7 +26695,7 @@ null
 ],
 "qualifier": "fatol",
 "solver": "nm_solver",
-"uniqueid": "syFsDpLxvNSTbWxEMDIuvZomyMQDzf",
+"uniqueid": "FHGlAudDLqfAMGJzaZNJSOibKPhTXc",
 "value": 0.0001
 },
 {
@@ -26351,7 +26710,7 @@ null
 ],
 "qualifier": "progress_every_niters",
 "solver": "nm_solver",
-"uniqueid": "kXmbLhiAXQIFrInosZiqIXrGOnEMPB",
+"uniqueid": "pJAfgxeqzGtpcksWxRgiboUILyRgWh",
 "value": 0
 },
 {
@@ -26362,7 +26721,7 @@ null
 "kind": "emcee",
 "qualifier": "comments",
 "solver": "mcmc",
-"uniqueid": "taSCpBAOMnBesXKcvgXhiEKdPhcirk",
+"uniqueid": "uCbYBKQOyXiFETsgogrgKyrhpACdRk",
 "value": ""
 },
 {
@@ -26378,7 +26737,7 @@ null
 "kind": "emcee",
 "qualifier": "use_server",
 "solver": "mcmc",
-"uniqueid": "mYKptDQbMErepiiKClYExcZOUDNLGc",
+"uniqueid": "QlSIkfAbKBJleSKyRfbhEvobciiZyO",
 "value": "compute"
 },
 {
@@ -26394,7 +26753,7 @@ null
 "kind": "emcee",
 "qualifier": "compute",
 "solver": "mcmc",
-"uniqueid": "tJuPZmZDkHURcVRasEoBoJLnUsFnSN",
+"uniqueid": "UigLzAynEClGsMOZmhSgvQptTxumMg",
 "value": "dyn_rv"
 },
 {
@@ -26413,8 +26772,25 @@ null
 "kind": "emcee",
 "qualifier": "continue_from",
 "solver": "mcmc",
-"uniqueid": "bIzgwrPpzeoiDLjPZAaKEWwkybzJfQ",
+"uniqueid": "uPwKHCnHnRQtYYQMIdjYrzmLLfrWyc",
 "value": "round_4"
+},
+{
+"Class": "IntParameter",
+"advanced": true,
+"context": "solver",
+"copy_for": false,
+"description": "Iteration from which to continue the previous run (supports negative indexing: -1 will continue from the last iteration.  Does not affect failed_samples or acceptance_fractions)",
+"kind": "emcee",
+"limits": [
+null,
+null
+],
+"qualifier": "continue_from_iter",
+"solver": "mcmc",
+"uniqueid": "LVjkvsvDUfVHUnPHDJxiTMtaPAINns",
+"value": -1,
+"visible_if": "continue_from:!None"
 },
 {
 "Class": "SelectParameter",
@@ -26429,7 +26805,7 @@ null
 "kind": "emcee",
 "qualifier": "init_from",
 "solver": "mcmc",
-"uniqueid": "qREwGhosVltfjzeAmuHhzmGNuBlwgk",
+"uniqueid": "kOqzOdIXbnFkzvAFKqbvrJoicujQrj",
 "value": [
 "ndg_2"
 ],
@@ -26449,7 +26825,7 @@ null
 "kind": "emcee",
 "qualifier": "init_from_combine",
 "solver": "mcmc",
-"uniqueid": "grLEDJslqzXrZvFWvywqiXfvkLCNYW",
+"uniqueid": "kteLPeVSVWqycpBMzhSHZXMTCSmYdX",
 "value": "first",
 "visible_if": "continue_from:None,init_from:<notempty>"
 },
@@ -26467,12 +26843,12 @@ null
 "kind": "emcee",
 "qualifier": "init_from_requires",
 "solver": "mcmc",
-"uniqueid": "TKZCnrUrtUyUugWEKJQFNpuJZymZaR",
+"uniqueid": "dEBfzETNdsOYAfzHDycdlbWzlpaySK",
 "value": [
 "limits",
 "priors"
 ],
-"visible_if": "contine_from:None,init_from:<notempty>"
+"visible_if": "continue_from:None,init_from:<notempty>"
 },
 {
 "Class": "SelectParameter",
@@ -26487,7 +26863,7 @@ null
 "kind": "emcee",
 "qualifier": "priors",
 "solver": "mcmc",
-"uniqueid": "KZezbEWFwcAFJdHlvJFWNlOsRbvbQq",
+"uniqueid": "jbcTLxwxvjWByaBnwBzueZJhmxhYwV",
 "value": []
 },
 {
@@ -26504,9 +26880,9 @@ null
 "kind": "emcee",
 "qualifier": "priors_combine",
 "solver": "mcmc",
-"uniqueid": "sqniISwcVhzddqIyDdQBuOcCAWGMRl",
+"uniqueid": "liBbHxfvJmTNcchosKtrVfTQLhJHco",
 "value": "and",
-"visible_if": "priors:<notempty>"
+"visible_if": "priors:<plural>"
 },
 {
 "Class": "IntParameter",
@@ -26520,7 +26896,7 @@ null
 ],
 "qualifier": "nwalkers",
 "solver": "mcmc",
-"uniqueid": "hxuPiNHSKaYRjlcMAJkGojugvLYMoj",
+"uniqueid": "kwXBzlKjyugdUESvtThwCAGOWyJRSk",
 "value": 24,
 "visible_if": "continue_from:None"
 },
@@ -26536,7 +26912,7 @@ null
 ],
 "qualifier": "niters",
 "solver": "mcmc",
-"uniqueid": "RwHGOZDBhCepanYuRCRydHDqnCywaX",
+"uniqueid": "lyYXVeZwrRJAPvKfKmHxEZkgUhQvCE",
 "value": 25
 },
 {
@@ -26552,7 +26928,7 @@ null
 ],
 "qualifier": "burnin_factor",
 "solver": "mcmc",
-"uniqueid": "MaTaHjgBHBwAnVMmsUNsvVpolfDiyO",
+"uniqueid": "oIlUCbeezIRAnfFvOIvIshvCXDtDFw",
 "value": 2.0
 },
 {
@@ -26560,15 +26936,15 @@ null
 "context": "solver",
 "copy_for": false,
 "default_unit": "",
-"description": "factor of min(autocorr_times) to apply for the default solution thinning (thinning not applied until adopting the solution)",
+"description": "factor of min(autocorr_times) to apply for the default solution thinning (thinning not applied until adopting the solution).  If results in thin < 1, thin=1 will be adopted.",
 "kind": "emcee",
 "limits": [
-0.001,
+0.0,
 1000.0
 ],
 "qualifier": "thin_factor",
 "solver": "mcmc",
-"uniqueid": "VxgieHHUFYZPOfYlMpOLFDhiUlyZbJ",
+"uniqueid": "BtTyolgzHrVkEfgBcSZJQXPWifEVPC",
 "value": 0.5
 },
 {
@@ -26584,7 +26960,7 @@ null
 ],
 "qualifier": "nlags_factor",
 "solver": "mcmc",
-"uniqueid": "RoPSWlbmcxvSwkEXyIQWqCxPiKUtWo",
+"uniqueid": "CvCjwxmoGnSFYtZOVDybaTGRpXuslv",
 "value": 3.0
 },
 {
@@ -26599,7 +26975,7 @@ null
 ],
 "qualifier": "progress_every_niters",
 "solver": "mcmc",
-"uniqueid": "sZscjScZtaVZyKPGqqTozsiCprnqeW",
+"uniqueid": "qNsAxziJzvsotAoahLloxcUKkoHXmu",
 "value": 0
 },
 {
@@ -26610,7 +26986,7 @@ null
 "kind": "emcee",
 "qualifier": "expose_failed",
 "solver": "mcmc",
-"uniqueid": "idgxMYXOJAqIbuarSuRQJCvNCUDTGL",
+"uniqueid": "ENOpYulocszNiSJIlFIUJrnicvCdzS",
 "value": true,
 "visible_if": "continue_from:None"
 },
@@ -382981,7 +383357,7 @@ null
 "solution": "final_round",
 "solver": "mcmc",
 "uniqueid": "feEapuWEspynXbJdOrvddOEpTnJxWx",
-"value": "loaded"
+"value": "unknown"
 },
 {
 "Class": "StringParameter",
@@ -876103,8 +876479,8 @@ null
 "description": "Version of PHOEBE",
 "qualifier": "phoebe_version",
 "readonly": true,
-"uniqueid": "aTONtLFBEoFkGfCrGPEAQElkDntikl",
-"value": "2.4.0.dev1"
+"uniqueid": "HaBZnmmKmkddWpPocrgBOpXDeuMxLC",
+"value": "2.4.20"
 },
 {
 "Class": "DictParameter",
@@ -876113,7 +876489,7 @@ null
 "copy_for": false,
 "description": "Filters to use when using dictionary access",
 "qualifier": "dict_filter",
-"uniqueid": "cYurIRXWJUCHtOSKyArwQthMzOQHga",
+"uniqueid": "NImNRaOQYoRojKCFMauqogxDPsaxRX",
 "value": {}
 },
 {
@@ -876123,7 +876499,7 @@ null
 "copy_for": false,
 "description": "Whether to set all values for dictionary access that returns more than 1 result",
 "qualifier": "dict_set_all",
-"uniqueid": "MaXfREduiyjUZZGlOrFqhWDjQhifQX",
+"uniqueid": "oeEIfiaYbjrpJoqTCefsHwxlULowBL",
 "value": false
 },
 {
@@ -876137,7 +876513,7 @@ null
 "copy_for": false,
 "description": "Compute options to use when calling run_checks/run_checks_compute or within interactive checks.",
 "qualifier": "run_checks_compute",
-"uniqueid": "pghVMUHikKzUzwwaLMVLKtLFcTIqJg",
+"uniqueid": "bZUsDiHeusZjgjvpOpXuGlPsrinrpy",
 "value": [
 "*"
 ]
@@ -876158,7 +876534,7 @@ null
 "copy_for": false,
 "description": "Solver options to use when calling run_checks/run_checks_solver or within interactive checks.",
 "qualifier": "run_checks_solver",
-"uniqueid": "BHPVtDpOjztoIizLrIcqmbRflrNSoM",
+"uniqueid": "nIxYQfqyBoVTJvMMWbHNxTrAHbfxgQ",
 "value": [
 "*"
 ]
@@ -876184,32 +876560,17 @@ null
 "copy_for": false,
 "description": "Solutions to use when calling run_checks/run_checks_solution or within interactive checks.",
 "qualifier": "run_checks_solution",
-"uniqueid": "BKWoqvAQNpQeXCyRXZLkRzmKbJZNYu",
+"uniqueid": "SxahhtCVZlvFAZSLOKjcnzpafRZsEB",
 "value": []
 },
 {
 "Class": "SelectParameter",
-"choices": [
-"lcfig01",
-"rvfig01",
-"rv_periodogramfig01",
-"rv_periodogramfig02",
-"lc_periodogramfig01",
-"lc_periodogramfig02",
-"rv_geometryfig01",
-"ebaifig01",
-"lc_geometryfig01",
-"emceefig01",
-"emceefig02",
-"emceefig03",
-"emceefig04",
-"emceefig05"
-],
+"choices": [],
 "context": "setting",
 "copy_for": false,
 "description": "Figures to use when calling run_checks/run_checks_figure or within interactive checks.",
 "qualifier": "run_checks_figure",
-"uniqueid": "kyJAtoZIwnNNQeqXVVBFLnhQoVOuPU",
+"uniqueid": "DJFxyldufRFZUUtdpVQUSnmtZWCrea",
 "value": []
 },
 {
@@ -876221,7 +876582,7 @@ null
 "copy_for": false,
 "description": "Servers to use when calling run_checks/run_checks_server or within interactive checks.",
 "qualifier": "run_checks_server",
-"uniqueid": "GcfZlLXQRhlOqxlLdbUPsYJrinJtkC",
+"uniqueid": "hRYvqwgXXcfrMahDRrewjQQeZqRmYB",
 "value": [
 "*"
 ]
@@ -876232,7 +876593,7 @@ null
 "copy_for": false,
 "description": "Whether to automatically add figure parameters when a dataset is added with a new dataset type, or a solution is added.",
 "qualifier": "auto_add_figure",
-"uniqueid": "XYVsQADvCKLBNNMZEwzATvbWbQQiqv",
+"uniqueid": "JHZYOQuTafATaLHInsXYZorTHMBLfO",
 "value": true
 },
 {
@@ -876241,7 +876602,7 @@ null
 "copy_for": false,
 "description": "Whether to automatically remove figure parameters when the referenced dataset/solution are removed.",
 "qualifier": "auto_remove_figure",
-"uniqueid": "BpWKPHISdJzMgpnlPpZHuPEcnSmhjh",
+"uniqueid": "AhaJyFdRpgBmEaRhabhFaZeHuCMZft",
 "value": true
 },
 {
@@ -876251,7 +876612,7 @@ null
 "copy_for": false,
 "description": "Whether to default to using the web-client over a locally installed desktop-client when opening the UI from the desktop client.",
 "qualifier": "web_client",
-"uniqueid": "AkDxZmCNXXvgbAvUyDkoTcheMcaQAu",
+"uniqueid": "LRWHkSvLZJVZmLvlTntxmddXJXFyRG",
 "value": false
 },
 {
@@ -876261,7 +876622,7 @@ null
 "copy_for": false,
 "description": "Default location of web-client.  Will only be used if web_client is True.",
 "qualifier": "web_client_url",
-"uniqueid": "TMXyQlZvsVOCYzFLXnKdyWRvHqEGFP",
+"uniqueid": "IDqwuLydxViJuDwTEmjvdxiXuxmzGw",
 "value": "ui.phoebe-project.org"
 }
 ]
