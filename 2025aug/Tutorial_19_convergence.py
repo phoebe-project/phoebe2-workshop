@@ -24,7 +24,7 @@ from scipy.special import erfinv
 from scipy.stats import norm
 
 
-# Load the [data from the previous run](https://github.com/phoebe-project/phoebe2-workshop/raw/2021june/data/synthetic/after_terra.bundle):
+# Load the [data from the previous run](https://github.com/phoebe-project/phoebe2-workshop/raw/2025aug/data/synthetic/after_terra.bundle):
 
 # In[3]:
 
@@ -199,7 +199,7 @@ b['continue_from@mcmc'] = 'round_3'
 # b.save('./data/synthetic/after_terra_2.bundle')
 
 
-# We'll skip and load the [pre-computed results](https://github.com/phoebe-project/phoebe2-workshop/raw/2021june/data/synthetic/after_terra_2.bundle)
+# We'll skip and load the [pre-computed results](https://github.com/phoebe-project/phoebe2-workshop/raw/2025aug/data/synthetic/after_terra_2.bundle)
 
 # In[18]:
 
@@ -248,7 +248,7 @@ b.plot(solution='round_4', style='acf', nlags=100, burnin=400, show=True)
 # b.save('./data/synthetic/after_final_round.bundle')
 
 
-# Again, let's load the [pre-computed results](https://github.com/phoebe-project/phoebe2-workshop/raw/2021june/data/synthetic/after_final_round.bundle)
+# Again, let's load the [pre-computed results](https://github.com/phoebe-project/phoebe2-workshop/raw/2025aug/data/synthetic/after_final_round.bundle)
 
 # In[24]:
 
