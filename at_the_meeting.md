@@ -1,14 +1,13 @@
 # Meeting Location
 
-The 2024 meeting will be held the University of Ljubljana, Slovenia in the Department of Mathematics and Physics, which is located at: 
-Jadranska ulica 19, 
-1000 Ljubljana, 
-Slovenia. 
+The 2026 meeting will be held at The Inn at Villanova Univeristy, which is located at: 
+601 County Line Rd, 
+Wayne, 
+PA 19087
+USA
 
 # Accommodation
 
-There are many hotels in the center of Ljubljana that are within walking distance of the Department of Mathematics and Physics. From experience, we recommend the following three:
+We encourage participants to stay at the Inn at Villanova for convenience and easy access to the workshop. After acceptance, you’ll be able to book accommodation at the workshop rate of $209 per night through the registration form.
 
-* [Vila Teslova](https://www.facebook.com/vilateslova/?locale=sl_SI)
-* [Hotel Mrak](https://hotelmrak.si/en/)
-* [City Hotel](https://www.cityhotel.si/)
+Limited financial support is available to help offset accommodation costs. Applicants should indicate their interest in applying for support during registration.
