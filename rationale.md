@@ -1,13 +1,20 @@
 # Announcement
-The PHOEBE team is excited to announce the Sixth PHOEBE Workshop! Following five successful PHOEBE Workshops focused on introducing PHOEBE, we have decided that the sixth workshop will be devoted to advanced PHOEBE users to support them in their quest for binary star models worthy of publication. The aim of the workshop is to support participants as they work on their own personal science with PHOEBE as well as provide the option to collaboratively contribute. This year, the workshop will focus on advanced topics and follow a hack-week format (using PHOEBE for real science use-cases alongside implementing new features). 
 
-General knowledge and comfort with PHOEBE is considered a prerequisite - previous workshop participants are encouraged to attend as are experienced PHOEBE users and those who commit to completing the online tutorials (and/or recordings) from last year's workshop prior to attendance. The workshop will take place at the University of Ljubljana on June 10th - June 14th, 2024.
+The PHOEBE team is excited to announce the Eighth PHOEBE Workshop! This will be our second workshop geared toward advanced PHOEBE users, designed to support participants in developing binary-star models worthy of publication. The workshop aims to help attendees make progress on their own science projects using PHOEBE, while also providing opportunities for collaborative contributions.
+
+This year’s workshop will focus on advanced topics and follow a hack-week format, combining PHOEBE-based science use cases with hands-on work to implement new features and improvements. General familiarity and comfort with PHOEBE is a prerequisite. Previous workshop participants are encouraged to attend, as are experienced PHOEBE users and those who commit to completing the online tutorials (and/or recordings) from previous workshops prior to attendance.
+
+The workshop will take place at the Inn at Villanova University on August 10–14, 2026.
 
 # Scientific Rationale
-PHOEBE 2 (Prša et al. 2016, Horvat et al. 2018, Jones et al. 2020, Conroy et al. 2020) is a highly flexible binary star modeling code with many advanced features.  The model includes an extensive fitting suite, support for extinction, support for spin-orbit misalignment, and many more features. Additionally, the interface has been updated and is now based on the python programming language.
+
+PHOEBE 2 (Prša et al. 2016; Horvat et al. 2018; Jones et al. 2020; Conroy et al. 2020) is a highly flexible binary-star modeling code with a wide range of advanced capabilities. It includes an extensive fitting suite, support for extinction and spin–orbit misalignment, and a framework for user-defined features, among many other tools. The PHOEBE 2 interface is based on the Python programming language.
 
 # Main Objectives
-The workshop will take place over five days and follow a loosely scheduled hack-week format.  The majority of the time will be dedicated to working on individual or small-group hacks. At the workshop, participants will: use PHOEBE to fit real data, create new example notebooks that illustrate advanced workflows, and learn how to fix bugs and implement features.  We will work to create a collaborative and open environment where everyone feels comfortable sharing their progress and challenges as well as asking and answering questions.  By the end of the workshop, participants can expect to have made progress on their own science using PHOEBE and/or feel more confident modifying and contributing to the source code.
+
+The workshop will run for five days and follow a loosely structured hack-week format. Most of the time will be dedicated to individual or small-group projects. During the workshop, participants will: use PHOEBE to fit real data, create new example notebooks that demonstrate advanced workflows, and learn how to diagnose bugs and implement new features.
+
+We aim to foster a collaborative and welcoming environment where everyone feels comfortable sharing progress and challenges, as well as asking and answering questions. By the end of the workshop, participants can expect to have made meaningful progress on their own PHOEBE-based science and/or feel more confident modifying and contributing to the source code.
 
 
 
