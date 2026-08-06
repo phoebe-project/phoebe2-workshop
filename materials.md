@@ -81,37 +81,37 @@ Please test your installation well in advance of the workshop by running the [te
 
 ### Monday August 11: Inverse Problem Overview
 
-* [Talk: Introduction to the Inverse Problem](https://docs.google.com/presentation/d/e/2PACX-1vQJUYYl3Y9zxWceapJ9cjbgRyHjkb8xw9qmdZ1Ve4-q4MorCS2OgjpAVYDkyfLQLm7mb_zbnvBMEI-h/pub?start=false&loop=false&delayms=3000) (Kelly)
-* [Talk: Inverse Problem in PHOEBE](https://docs.google.com/presentation/d/e/2PACX-1vQnOikYGaIVd1O6Aj4jp6_A26T41h-pid6IOh-qwQdafZIGvSWNo89SvRHz-6JVtUoKXlin0g_KdguZ/pub?start=false&loop=false&delayms=3000) (Kyle)
-* [Optional Breakout Tutorial: Detrending](./Tutorial_detrending.ipynb) (Andrej)
-* [Tutorial: Estimators](./Tutorial_12_estimators.ipynb) (Marcin)
-* [Tutorial: Optimizers](./Tutorial_13_optimizers.ipynb) (Kelly)
+* [Talk: Introduction to the Inverse Problem](https://docs.google.com/presentation/d/e/2PACX-1vQJUYYl3Y9zxWceapJ9cjbgRyHjkb8xw9qmdZ1Ve4-q4MorCS2OgjpAVYDkyfLQLm7mb_zbnvBMEI-h/pub?start=false&loop=false&delayms=3000) (Kelly | [recording](https://phoebe-project.org/static/workshops/2025aug/2025-08-11_01_inverse_problem.mp4))
+* [Talk: Inverse Problem in PHOEBE](https://docs.google.com/presentation/d/e/2PACX-1vQnOikYGaIVd1O6Aj4jp6_A26T41h-pid6IOh-qwQdafZIGvSWNo89SvRHz-6JVtUoKXlin0g_KdguZ/pub?start=false&loop=false&delayms=3000) (Kyle | [recording](https://phoebe-project.org/static/workshops/2025aug/2025-08-11_02_inverse_problem_in_phoebe.mp4))
+* [Optional Breakout Tutorial: Detrending](./Tutorial_detrending.ipynb) (Andrej | [recording](https://phoebe-project.org/static/workshops/2025aug/2025-08-11_04_detrending.mp4))
+* [Tutorial: Estimators](./Tutorial_12_estimators.ipynb) (Marcin | [recording](https://phoebe-project.org/static/workshops/2025aug/2025-08-11_05_estimators.mp4))
+* [Tutorial: Optimizers](./Tutorial_13_optimizers.ipynb) (Kelly | [recording](https://phoebe-project.org/static/workshops/2025aug/2025-08-11_06_optimizers.mp4))
 * [Exercises: Optimizers](./Exercises_06_estimators_optimizers.ipynb) 
 
 
 ### Tuesday August 12: Optimizers
 
-* [Tutorial: Distributions & Priors](./Tutorial_16_distributions.ipynb) (Kyle)
-* [Tutorial: Degeneracies](./Tutorial_14_degeneracy.ipynb) (Marcin)
-* [Tutorial: Running Jobs on External Compute Resources](./Tutorial_15_server.ipynb) (Kyle)
-* [Exercises: Optimizers](./Exercises_06_estimators_optimizers.ipynb) 
+* [Tutorial: Distributions & Priors](./Tutorial_16_distributions.ipynb) (Kyle | [recording](https://phoebe-project.org/static/workshops/2025aug/2025-08-12_01_distributions.mp4))
+* [Tutorial: Degeneracies](./Tutorial_14_degeneracy.ipynb) (Marcin | [recording](https://phoebe-project.org/static/workshops/2025aug/2025-08-12_02_degeneracy.mp4))
+* [Tutorial: Running Jobs on External Compute Resources](./Tutorial_15_server.ipynb) (Kyle | [recording](https://phoebe-project.org/static/workshops/2025aug/2025-08-12_03_external_resources.mp4))
+* [Exercises: Optimizers](./Exercises_06_estimators_optimizers.ipynb)
 
 
 ### Wednesday August 13: MCMC in PHOEBE
 
-* [Tutoritalk: MCMC Introduction](./mcmc_generic.ipynb) (Andrej)
-* [Tutorial: MCMC Basics in PHOEBE](./Tutorial_17_mcmc.ipynb) (Marcin)
-* [Tutorial: Continuing/Resampling in MCMC](./Tutorial_18_mcmc_continued.ipynb) (Kelly)
+* [Tutoritalk: MCMC Introduction](./mcmc_generic.ipynb) (Andrej | [recording](https://phoebe-project.org/static/workshops/2025aug/2025-08-13_01_mcmc_intro.mp4))
+* [Tutorial: MCMC Basics in PHOEBE](./Tutorial_17_mcmc.ipynb) (Marcin | [recording](https://phoebe-project.org/static/workshops/2025aug/2025-08-13_02_mcmc_in_phoebe.mp4))
+* [Tutorial: Continuing/Resampling in MCMC](./Tutorial_18_mcmc_continued.ipynb) (Kelly | [recording](https://phoebe-project.org/static/workshops/2025aug/2025-08-13_03_mcmc_continued.mp4))
 * [Exercises: Setting up an MCMC Run](./Exercises_07_mcmc.ipynb)
 * [Optional Breakout Session: Fitting Contact Binaries](https://docs.google.com/presentation/d/e/2PACX-1vT_Cx34ifFzE_vM_75IRGXVFcIplju_VOsUNK0w-FjPJ9mlNI9riUZk5nb0iUzwrwQ4oGYnEYNzDiJK/pub?start=false&loop=false&delayms=3000) (Michael)
 
 
 ### Thursday August 14: Advanced MCMC
 
-* [Talk: Common Pitfalls when Fitting](https://docs.google.com/presentation/d/e/2PACX-1vTwak5SRgicPcFJMHosg6AC1gnHqiEkVLiPT1H97bgJ40W1r39rtsgmf4eJitHb02rMtKKUtTW-PtkK/pub?start=false&loop=false&delayms=3000) (Dave)
-* [Optional Breakout Tutorial: Interpreting Chains and Convergence in MCMC](./Tutorial_19_convergence.ipynb) (Andrej)
-* [Talk: PHOEBAI](https://docs.google.com/presentation/d/e/2PACX-1vRLvSKCzA_BTZN7vl_tTXxKe6Y3wIKMCAuuZhwh0LIkfoZKiDCOzZBSuHwyhe7tu4o_lm0aANAOFv7o/pub?start=false&loop=false&delayms=3000) (Marcin)
-* [Optional Breakout Tutorial: Posteriors and Parameter Uncertainties](./Tutorial_20_posteriors.ipynb) (Kelly)
-* [Optional Breakout Tutorial: Choice of Parameterization](./Tutorial_21_parameterization.ipynb) (Kyle)
+* [Talk: Common Pitfalls when Fitting](https://docs.google.com/presentation/d/e/2PACX-1vTwak5SRgicPcFJMHosg6AC1gnHqiEkVLiPT1H97bgJ40W1r39rtsgmf4eJitHb02rMtKKUtTW-PtkK/pub?start=false&loop=false&delayms=3000) (Dave | [recording](https://phoebe-project.org/static/workshops/2025aug/2025-08-14_01_pitfalls.mp4))
+* [Optional Breakout Tutorial: Interpreting Chains and Convergence in MCMC](./Tutorial_19_convergence.ipynb) (Andrej | [recording](https://phoebe-project.org/static/workshops/2025aug/2025-08-14_03_mcmc_convergence.mp4))
+* [Talk: PHOEBAI](https://docs.google.com/presentation/d/e/2PACX-1vRLvSKCzA_BTZN7vl_tTXxKe6Y3wIKMCAuuZhwh0LIkfoZKiDCOzZBSuHwyhe7tu4o_lm0aANAOFv7o/pub?start=false&loop=false&delayms=3000) (Marcin | [recording](https://phoebe-project.org/static/workshops/2025aug/2025-08-14_02_phoebai.mp4))
+* [Optional Breakout Tutorial: Posteriors and Parameter Uncertainties](./Tutorial_20_posteriors.ipynb) (Kelly | [recording](https://phoebe-project.org/static/workshops/2025aug/2025-08-14_04_posteriors.mp4))
+* [Optional Breakout Tutorial: Choice of Parameterization](./Tutorial_21_parameterization.ipynb) (Kyle | [recording](https://phoebe-project.org/static/workshops/2025aug/2025-08-14_05_parametrization.mp4))
 * [Exercises: Getting Posteriors](./Exercises_08_posteriors.ipynb)
 * Wrap Up: volunteer wrap-up contributions and discussion (Kelly)
