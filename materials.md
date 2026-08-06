@@ -34,46 +34,45 @@ Please test your installation well in advance of the workshop by running the [te
 
 * [Welcome & Introduction](https://docs.google.com/presentation/d/e/2PACX-1vTH436zb5IPSMPoCq0AbAW0lzJrQjhRINJyoUOZxAYyaFHPyx8TM1jXeqcs2NOC-mWmXxiTh7B0cQd7/pub?start=false&loop=false&delayms=3000) (Kelly)
 * Opening Ceremony and Self-Introductions (Sheng-Bang)
-* Jupyter  and PHOEBE Setup (Andrej)
+* Jupyter and PHOEBE Setup (Andrej | [recording](https://phoebe-project.org/static/workshops/2025aug/2025-08-04_02_jupyter_and_phoebe_setup.mp4))
 * Group Photo, Coffee Break, Installation Debugging
-* [Talk: PHOEBE Overview - wdgui to PHOEBE](https://docs.google.com/presentation/d/e/2PACX-1vRDgAr5NEH738njEqj4LS4YtxUs6T8TA5EHe3jry454n7cRdzRBvGuxpn_5QAgjeykQnx8er97c3_VD/pub?start=false&loop=false&delayms=3000) (Andrej)
-* [Talk: Introduction to PHOEBE 2: why so complicated?](https://docs.google.com/presentation/d/e/2PACX-1vQZF_BRCGQZEjNlLhzznY5i_T5WNj6y7RJMvqxat7aDzTq7l1qDx7CnInoiNtIFZWL2BczoHf3RWnTK/pub?start=false&loop=false&delayms=3000) (Kyle)
-* [Tutorial: General Concepts & Bundle Basics](./Tutorial_01_bundle_basics.ipynb) (Kelly)
-* [Tutorial: Constraints](./Tutorial_02_constraints.ipynb) (Kyle)
+* [Talk: PHOEBE Overview - wdgui to PHOEBE](https://docs.google.com/presentation/d/e/2PACX-1vRDgAr5NEH738njEqj4LS4YtxUs6T8TA5EHe3jry454n7cRdzRBvGuxpn_5QAgjeykQnx8er97c3_VD/pub?start=false&loop=false&delayms=3000) (Andrej | [recording](https://phoebe-project.org/static/workshops/2025aug/2025-08-04_03_phoebe_overview.mp4))
+* [Talk: Introduction to PHOEBE 2: why so complicated?](https://docs.google.com/presentation/d/e/2PACX-1vQZF_BRCGQZEjNlLhzznY5i_T5WNj6y7RJMvqxat7aDzTq7l1qDx7CnInoiNtIFZWL2BczoHf3RWnTK/pub?start=false&loop=false&delayms=3000) (Kyle | [recording](https://phoebe-project.org/static/workshops/2025aug/2025-08-04_04_introduction_to_phoebe2.mp4))
+* [Tutorial: General Concepts & Bundle Basics](./Tutorial_01_bundle_basics.ipynb) (Kelly | [recording](https://phoebe-project.org/static/workshops/2025aug/2025-08-04_05_general_concepts.mp4))
+* [Tutorial: Constraints](./Tutorial_02_constraints.ipynb) (Kyle | [recording](https://phoebe-project.org/static/workshops/2025aug/2025-08-04_06_constraints.mp4))
 * [Exercises: Building Systems](./Exercises_01_building_systems.ipynb)
 
 
 ### Tuesday August 5: Creating Forward Models
 
-
-* [Talk: Parameterization](https://docs.google.com/presentation/d/e/2PACX-1vQ_WFnIM5ZubzjF0JWQrkLNkB84m8NJokQ93kafYry8J9Nd01cCr0ib59fVrKqdHPNVFJpMacNzKjRS/pub?start=false&loop=false&delayms=3000) (Marcin)
-* [Tutorial: Datasets](./Tutorial_03_datasets.ipynb) (Kelly)
-* [Tutorial: Compute](./Tutorial_04_compute.ipynb) (Michael)
-* [Tutorial: Time and Phase](./Tutorial_05_time_and_phase.ipynb) (Andrej)
-* [Talk: Atmospheres, Limb Darkening, Intensity Weighting, Extinction, and Reflection](https://docs.google.com/presentation/d/e/2PACX-1vQBFsBHcaE1ZJV4hETfCvv03D3Y_rFZEIuz5m0QhApM5mRdceEc78iGCF1FfmY-ID23jC7unqvtofNj/pub?start=false&loop=false&delayms=3000) (Dave)
-* [Tutorial: Plotting](./Tutorial_06_plotting.ipynb) (Kyle)
+* [Talk: Parameterization](https://docs.google.com/presentation/d/e/2PACX-1vQ_WFnIM5ZubzjF0JWQrkLNkB84m8NJokQ93kafYry8J9Nd01cCr0ib59fVrKqdHPNVFJpMacNzKjRS/pub?start=false&loop=false&delayms=3000) (Marcin | [recording](https://phoebe-project.org/static/workshops/2025aug/2025-08-05_01_parametrization.mp4))
+* [Tutorial: Datasets](./Tutorial_03_datasets.ipynb) (Kelly | [recording](https://phoebe-project.org/static/workshops/2025aug/2025-08-05_02_datasets.mp4))
+* [Tutorial: Compute](./Tutorial_04_compute.ipynb) (Michael | [recording](https://phoebe-project.org/static/workshops/2025aug/2025-08-05_03_compute.mp4))
+* [Tutorial: Time and Phase](./Tutorial_05_time_and_phase.ipynb) (Andrej | [recording](https://phoebe-project.org/static/workshops/2025aug/2025-08-05_04_time_and_phase.mp4))
+* [Talk: Atmospheres, Limb Darkening, Intensity Weighting, Extinction, and Reflection](https://docs.google.com/presentation/d/e/2PACX-1vQBFsBHcaE1ZJV4hETfCvv03D3Y_rFZEIuz5m0QhApM5mRdceEc78iGCF1FfmY-ID23jC7unqvtofNj/pub?start=false&loop=false&delayms=3000) (Dave | [recording](https://phoebe-project.org/static/workshops/2025aug/2025-08-05_05_atmospheres.mp4))
+* [Tutorial: Plotting](./Tutorial_06_plotting.ipynb) (Kyle | [recording](https://phoebe-project.org/static/workshops/2025aug/2025-08-05_06_plotting.mp4))
 * [Exercises: Creating Forward Models](./Exercises_02_forward_models.ipynb)
 
 
 ### Wednesday August 6: Advanced Physics & Features
 
 
-* Talk: Scientific Introduction to PHOEBE (Andrej)
-* [Tutorial: Animations](./Tutorial_07_animations.ipynb) (Kyle)
-* [Tutorial: Accessing and Plotting Meshes](./Tutorial_08_meshes.ipynb) (Michael)
-* [Tutorial: Flux Scaling (Passband Luminosity, Third Light, and Distance)](./Tutorial_09_pblum_l3_distance.ipynb) (Dave)
+* Talk: Scientific Introduction to PHOEBE (Andrej | [recording](https://phoebe-project.org/static/workshops/2025aug/2025-08-06_01_scientific_intro_to_phoebe.mp4))
+* [Tutorial: Animations](./Tutorial_07_animations.ipynb) (Kyle | [recording](https://phoebe-project.org/static/workshops/2025aug/2025-08-06_02_animations.mp4))
+* [Tutorial: Accessing and Plotting Meshes](./Tutorial_08_meshes.ipynb) (Michael | [recording](https://phoebe-project.org/static/workshops/2025aug/2025-08-06_03_meshes.mp4))
+* [Tutorial: Flux Scaling (Passband Luminosity, Third Light, and Distance)](./Tutorial_09_pblum_l3_distance.ipynb) (Dave | [recording](https://phoebe-project.org/static/workshops/2025aug/2025-08-06_04_flux_scaling.mp4))
 * [Exercises: Forward Model Animations](./Exercises_03_animations.ipynb)
 
 
 ### Thursday August 7: Hack Day
 
 
-* [Tutorial: Optimizing PHOEBE Computations](./Tutorial_10_optimizing_computations.ipynb) (Kelly)
-* [Optional Breakout Session: Contact Binaries](./Tutorial_semidetached_contact.ipynb) (Michael)
-* [Optional Breakout Talk: Line Profiles with PHOEBE and SPAMMS](https://docs.google.com/presentation/d/e/2PACX-1vTw7p9Hlh0F2GOWZIFTiTIaKD20hTE_pWxsurxARzg10SU8VOVh4IbqtctM0J6tpd6xO7NU25GHY6aR/pub?start=false&loop=false&delayms=3000) (Michael)
-* [Tutorial: Features (Spots & Gaussian Processes)](./Tutorial_11_features.ipynb) (Kyle)
-* [Optional Breakout Session: In-depth look at fluxes and magnitudes](./Tutorial_flux_calibration.ipynb) (Andrej)
-* [Optional Breakout Talk: In Development - Pulsations](https://docs.google.com/presentation/d/e/2PACX-1vT1itS6W6Z0FOOnPGFud2TWg-sIxdLXYLX-GquIB-lssk2aiD33VL1TSSsBBs4bwwxOMC3M4jwQuadS/pub?start=false&loop=false&delayms=3000) (Andrej)
+* [Tutorial: Optimizing PHOEBE Computations](./Tutorial_10_optimizing_computations.ipynb) (Kelly | [recording](https://phoebe-project.org/static/workshops/2025aug/2025-08-07_01_optimizations.mp4))
+* [Optional Breakout Session: Contact Binaries](./Tutorial_semidetached_contact.ipynb) (Michael | [recording](https://phoebe-project.org/static/workshops/2025aug/2025-08-07_02_contact_binaries.mp4))
+* [Optional Breakout Talk: Line Profiles with PHOEBE and SPAMMS](https://docs.google.com/presentation/d/e/2PACX-1vTw7p9Hlh0F2GOWZIFTiTIaKD20hTE_pWxsurxARzg10SU8VOVh4IbqtctM0J6tpd6xO7NU25GHY6aR/pub?start=false&loop=false&delayms=3000) (Michael | [recording](https://phoebe-project.org/static/workshops/2025aug/2025-08-07_03_spamms.mp4))
+* [Tutorial: Features (Spots & Gaussian Processes)](./Tutorial_11_features.ipynb) (Kyle | [recording](https://phoebe-project.org/static/workshops/2025aug/2025-08-07_04_features.mp4))
+* [Optional Breakout Session: In-depth look at fluxes and magnitudes](./Tutorial_flux_calibration.ipynb) (Andrej | [recording](https://phoebe-project.org/static/workshops/2025aug/2025-08-07_06_fluxes_vs_mags.mp4))
+* [Optional Breakout Talk: In Development - Pulsations](https://docs.google.com/presentation/d/e/2PACX-1vT1itS6W6Z0FOOnPGFud2TWg-sIxdLXYLX-GquIB-lssk2aiD33VL1TSSsBBs4bwwxOMC3M4jwQuadS/pub?start=false&loop=false&delayms=3000) (Andrej | [recording](https://phoebe-project.org/static/workshops/2025aug/2025-08-07_05_pulsations.mp4))
 * [Exercises: Forward Model Animations](./Exercises_03_animations.ipynb)
 * [Exercises: Hack Day](./Exercises_04_hack_day.ipynb)
 
