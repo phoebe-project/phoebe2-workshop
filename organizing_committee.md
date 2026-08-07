@@ -2,6 +2,7 @@
 
 * Andrej Prša
 * Kyle Conroy
-* Michael Abdul-Masih
-* Tomaz Zwitter
-* Kelly Hambleton (LOC Chair: kelly.hambleton@villanova.edu)
+* Marcin Wrona
+* Matthias Fabry
+* Tilak Pawar
+* Kelly Hambleton Prša (LOC Chair: kelly.prsa@villanova.edu)
